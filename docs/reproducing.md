@@ -8,7 +8,7 @@ From the package root, run:
 make verify
 ~~~
 
-This checks every bundled file against `SHA256SUMS`, checks copied research files against `source_manifest.csv`, and verifies the main archived counts and estimates. It does not recalculate inference or fit a model.
+This checks copied research files against `source_manifest.csv` and verifies the main archived counts and estimates. It does not recalculate inference or fit a model.
 
 ## 2. Rebuild the supplied figures
 

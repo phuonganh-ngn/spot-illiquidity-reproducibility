@@ -26,7 +26,6 @@ The check validates the saved files and headline values, then rebuilds the two s
 - `tables/` contains cleanly numbered manuscript-ready tables in CSV and Markdown.
 - `figures/` contains the two supplied summary figures; `scripts/render_figures.py` rebuilds them from the archived tables.
 - `source_manifest.csv` maps each bundled research artifact to its original project path and SHA-256.
-- `SHA256SUMS` checks the contents of this package.
 
 ## Re-running estimation
 

@@ -16,6 +16,6 @@
   },
   "integrity": {
     "source_map": "source_manifest.csv",
-    "package_checksums": "SHA256SUMS"
+    "note": "Package-wide checksum list omitted; the source manifest retains hashes for mapped research artifacts."
   }
 }
