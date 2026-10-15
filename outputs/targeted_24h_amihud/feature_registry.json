@@ -1,0 +1,55 @@
+{
+  "assets": [
+    "BTC",
+    "ETH"
+  ],
+  "common_sample_policy": "S0 and S1 are evaluated on identical dates, requiring every S1 field to be finite even for S0.",
+  "complete_case": "same asset-date rows for all information sets; all required S0 and S1 fields finite and target finite; no imputation",
+  "derived_definitions": {
+    "basis_change": "basis_mean[t]-basis_mean[t-1]",
+    "flow_shock_30d_robust": "same formula for futures_taker_imbalance",
+    "funding_change": "funding_rate_state[t]-funding_rate_state[t-1]",
+    "interactions": "current t products as named; no other polynomial/pairwise terms",
+    "oi_shock_30d_robust": "(oi_log_change[t]-median(oi_log_change[t-180:t-1]))/(1.4826*MAD(oi_log_change[t-180:t-1])); exactly 180 prior four-hour intervals, no current value in denominator; zero MAD -> missing"
+  },
+  "feature_timing": "six current/past 4-hour intervals t-5..t; interval-t values are available only at its end; target starts at t+1",
+  "history_intervals": 6,
+  "source_panel": "data/processed/phase7/market_liquidity_panel_4h.csv.gz",
+  "spot_only": {
+    "base_variables": [
+      "spot_return",
+      "spot_realized_volatility",
+      "spot_downside_semivariance",
+      "spot_amihud",
+      "spot_taker_imbalance",
+      "spot_quote_volume_growth"
+    ],
+    "calendar_controls": [
+      "utc_slot_1..utc_slot_5 (utc_slot_0 reference)",
+      "weekday_1..weekday_6 (weekday_0 reference)",
+      "funding_schedule_window"
+    ],
+    "lag_order": "t-5 through t inclusive"
+  },
+  "spot_plus_derivatives": {
+    "adds_base_variables": [
+      "funding_rate_state",
+      "oi_log_change",
+      "futures_taker_imbalance",
+      "basis_mean"
+    ],
+    "lag_order": "t-5 through t inclusive",
+    "static_derivative_features": [
+      "funding_change",
+      "basis_change",
+      "oi_shock_30d_robust",
+      "flow_shock_30d_robust",
+      "funding_x_oi_shock",
+      "oi_shock_x_flow_shock",
+      "funding_x_basis",
+      "flow_x_basis"
+    ]
+  },
+  "target": "future_amihud_24h_mean",
+  "target_definition": "arithmetic mean of spot_amihud at t+1,...,t+6; all six future intervals required"
+}

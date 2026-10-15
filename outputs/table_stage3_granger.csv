@@ -1,0 +1,17 @@
+channel_id,asset,pair,n_consecutive_dates,first_date,last_date,direction,lag_order,wald_stat,hac_p,standard_granger_p,spectral_radius,whiteness_p,diagnostic_status,reason,holm_p
+C1,BTC,FUNDING<->RV,454,2021-12-25,2023-03-23,FORWARD,,,,,,,LINEAR_DIAGNOSTIC_FAIL,fewer than 400 consecutive dates or ADF/KPSS admissibility failed,1.0
+C1,BTC,FUNDING<->RV,454,2021-12-25,2023-03-23,REVERSE,,,,,,,LINEAR_DIAGNOSTIC_FAIL,fewer than 400 consecutive dates or ADF/KPSS admissibility failed,1.0
+C1,ETH,FUNDING<->RV,454,2021-12-25,2023-03-23,FORWARD,,,,,,,LINEAR_DIAGNOSTIC_FAIL,fewer than 400 consecutive dates or ADF/KPSS admissibility failed,1.0
+C1,ETH,FUNDING<->RV,454,2021-12-25,2023-03-23,REVERSE,,,,,,,LINEAR_DIAGNOSTIC_FAIL,fewer than 400 consecutive dates or ADF/KPSS admissibility failed,1.0
+C2,BTC,OI<->RV,328,2023-03-25,2024-02-15,FORWARD,,,,,,,LINEAR_DIAGNOSTIC_FAIL,fewer than 400 consecutive dates or ADF/KPSS admissibility failed,1.0
+C2,BTC,OI<->RV,328,2023-03-25,2024-02-15,REVERSE,,,,,,,LINEAR_DIAGNOSTIC_FAIL,fewer than 400 consecutive dates or ADF/KPSS admissibility failed,1.0
+C2,ETH,OI<->RV,328,2023-03-25,2024-02-15,FORWARD,,,,,,,LINEAR_DIAGNOSTIC_FAIL,fewer than 400 consecutive dates or ADF/KPSS admissibility failed,1.0
+C2,ETH,OI<->RV,328,2023-03-25,2024-02-15,REVERSE,,,,,,,LINEAR_DIAGNOSTIC_FAIL,fewer than 400 consecutive dates or ADF/KPSS admissibility failed,1.0
+C3,BTC,OI<->DOWNSIDE,328,2023-03-25,2024-02-15,FORWARD,,,,,,,LINEAR_DIAGNOSTIC_FAIL,fewer than 400 consecutive dates or ADF/KPSS admissibility failed,1.0
+C3,BTC,OI<->DOWNSIDE,328,2023-03-25,2024-02-15,REVERSE,,,,,,,LINEAR_DIAGNOSTIC_FAIL,fewer than 400 consecutive dates or ADF/KPSS admissibility failed,1.0
+C3,ETH,OI<->DOWNSIDE,328,2023-03-25,2024-02-15,FORWARD,,,,,,,LINEAR_DIAGNOSTIC_FAIL,fewer than 400 consecutive dates or ADF/KPSS admissibility failed,1.0
+C3,ETH,OI<->DOWNSIDE,328,2023-03-25,2024-02-15,REVERSE,,,,,,,LINEAR_DIAGNOSTIC_FAIL,fewer than 400 consecutive dates or ADF/KPSS admissibility failed,1.0
+C4,BTC,FLOW<->AMIHUD,453,2021-12-26,2023-03-23,FORWARD,,,,,,,LINEAR_DIAGNOSTIC_FAIL,fewer than 400 consecutive dates or ADF/KPSS admissibility failed,1.0
+C4,BTC,FLOW<->AMIHUD,453,2021-12-26,2023-03-23,REVERSE,,,,,,,LINEAR_DIAGNOSTIC_FAIL,fewer than 400 consecutive dates or ADF/KPSS admissibility failed,1.0
+C4,ETH,FLOW<->AMIHUD,453,2021-12-26,2023-03-23,FORWARD,,,,,,,LINEAR_DIAGNOSTIC_FAIL,fewer than 400 consecutive dates or ADF/KPSS admissibility failed,1.0
+C4,ETH,FLOW<->AMIHUD,453,2021-12-26,2023-03-23,REVERSE,,,,,,,LINEAR_DIAGNOSTIC_FAIL,fewer than 400 consecutive dates or ADF/KPSS admissibility failed,1.0

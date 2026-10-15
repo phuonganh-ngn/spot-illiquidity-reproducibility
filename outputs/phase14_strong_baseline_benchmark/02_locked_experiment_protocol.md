@@ -1,0 +1,28 @@
+# Phase 14 locked protocol — strong-baseline retrospective benchmark
+
+## Status and question
+This is a retrospective reanalysis of the BTC/ETH 24-hour future Amihud task. The historical Phase 6 test interval has already been examined. The primary question is whether a system selected using only pooled chronological development MAE, and allowed to use the frozen S1 features, has lower test MAE than the independently selected S0 system. No result is independent confirmation and no Phase 6–13 conclusion or artifact is replaced.
+
+## Frozen data, target and information
+Use the exact Phase 6 certified 4-hour panel and task constructor. Target Y_t is the archived mean of spot Amihud over t+1…t+6, where spot Amihud and all eligibility rules remain as implemented in `src/phase6_benchmark_core.py`; score Z_t=log1p(max(Y_t,0)). Inputs are exactly six frozen rows t−5,…,t, ordered oldest to newest. S0 is the six spot features; S1 is the same spot features plus the four frozen Funding/OI-change/futures-flow/basis features. All ten features must be complete in both information sets. No new features, imputation, or data download.
+
+## Chronology and purging
+Use the original F1/F2/F3 expanding development folds and final test dates from the Phase 6 protocol. In each fold, training label endpoints must be strictly before validation start, and validation target endpoints strictly before validation end. Final training labels must end before 2023-07-01. Test forecast origins must be in 2023-07-01 00:00 through 2024-03-03 20:00 UTC with target endpoints before 2024-03-04 00:00. Do not parse test values until all family configs and BEST_S0/BEST_S1 identities have been selected from development predictions and their freeze file is hashed.
+
+## Models and bounded tuning
+The exact candidate registry is `03_frozen_model_registry.json`. It reuses the Phase 6 three-config Ridge, ExtraTrees and HistGradientBoosting grids; uses the Phase 13 selected BTC/ETH MLP width-8 and GRU hidden-width-16 settings with their registered optimizers, regularization, iteration/epoch limits and no early stopping; and defines three fixed, small depth grids each for CatBoost and XGBoost because Phase 6 explicitly excluded those libraries. CatBoost/XGBoost package versions and parameters are locked. Training mean and persistence are included as fixed references and as eligible system candidates. Each model-family/config is evaluated under both information sets. No grid expansion, test tuning, new architecture, or seed search.
+
+## Preprocessing and scoring
+Use training-only StandardScaler for predictors as in Phase 6. For MLP/GRU only, standardize Z using a StandardScaler fit to eligible training labels; inverse-transform predictions with that fold's training-only mean and scale. A degenerate target scale is a logged failure, with no fallback. Score every model's un-clipped prediction on the original Z scale; no model-specific clipping or postprocessing. Record convergence, fit warnings, train loss, iteration/epoch count, runtime, and forecast distributions. All metrics are on identical origins.
+
+## Development selection
+For each model family × asset × information set, choose its configuration with the smallest pooled MAE over concatenated eligible F1–F3 validation predictions; ties use the frozen candidate order. BEST_S0 and BEST_S1 are selected independently for each asset as the lowest pooled development-MAE system among the nine registered families/references. If numerical ties remain, apply the fixed complexity order in the registry, then lexicographic model identifier. Save selection evidence and SHA-256 freeze before loading any final-test feature/target values. The test set is never used to change these choices.
+
+## Primary endpoint and inference
+For each asset, d_t=|Z_t−pBEST_S0,t|−|Z_t−pBEST_S1,t| and Delta_best=mean(d_t). Positive values favor S1. Primary metric is absolute MAE on Z; relative reduction is 100×Delta_best/MAE(BEST_S0). Use a 42-row moving-block bootstrap (1,000 draws) as primary and 84 rows as sensitivity, with fixed asset/block seeds in the registry. Sample contiguous non-circular blocks uniformly from all valid starts, concatenate ceil(n/block) blocks and truncate to n. Report nominal percentile 95% intervals. For the two-sided p-value, bootstrap d_t−mean(d), compare absolute replicate means to |Delta_best| using inclusive tails and add-one p=(1+tail count)/(B+1). Holm-adjust raw p-values across BTC/ETH separately for each block length; 42-block family is primary. Intervals are nominal and not multiplicity-adjusted. These are retrospective diagnostics on previously viewed test data.
+
+## Descriptive result labels
+For the primary 42-row analysis, label an asset `FAVORABLE` only when Delta_best > 0, the nominal 95% interval is entirely positive, and the two-asset Holm-adjusted p < 0.05. Label `ADVERSE` only when Delta_best < 0, the interval is entirely negative, and Holm-adjusted p < 0.05. Otherwise label `INCONCLUSIVE`, while retaining the point-estimate sign. These are retrospective inferential labels, not fresh confirmation.
+
+## Reporting and integrity
+Report every family under S0/S1, all selected configurations, development and test metrics, paired dates, convergence and runtime, baselines, the primary selected-system comparison, Phase 6 and Phase 13 results as different estimands, and the negative/uncertain outcomes. Preserve frozen Phase 6 outcome 2/18, Phase 7–8 generalization failure, historical QML record and Bybit `NO_EXTERNAL_QML_REPLICATION`. Do not modify previous outputs, data, QML, Bybit, or manuscript; do not claim causality, trading value, or quantum advantage. All Phase 14 results are retrospective reanalysis.

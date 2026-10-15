@@ -1,0 +1,33 @@
+{
+  "development_fit_count": 204,
+  "development_fit_failures": 0,
+  "development_prediction_file_count": 228,
+  "development_predictions_reconstruct_all_metrics": true,
+  "final_metrics_reconstruct_from_predictions": true,
+  "final_prediction_rows": 51012,
+  "final_test_failures": 0,
+  "final_test_fit_count": 28,
+  "manuscript_modified": false,
+  "market_data_downloaded": false,
+  "phase13_source_hashes_unchanged": true,
+  "phase13_test_dates_targets_match": {
+    "BTC": {
+      "identical_target_log1p": true,
+      "identical_test_origin_vector": true,
+      "n_phase13": 1417,
+      "n_phase14": 1417
+    },
+    "ETH": {
+      "identical_target_log1p": true,
+      "identical_test_origin_vector": true,
+      "n_phase13": 1417,
+      "n_phase14": 1417
+    }
+  },
+  "pretraining_lock_sha256": "f36f1be8a3b6768a7d873c8a77087ed9d6b48df185974de97f7151b1b3add603",
+  "qml_or_bybit_touched": false,
+  "selection_freeze_sha256": "086e74619225256873ad376c5dcb7ca21e74db29e29be9936b067a09410bbf8c",
+  "source_hashes_unchanged": true,
+  "status": "PASS",
+  "test_data_loaded_after_selection_freeze": true
+}

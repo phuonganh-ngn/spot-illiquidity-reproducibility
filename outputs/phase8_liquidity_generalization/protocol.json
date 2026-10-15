@@ -1,0 +1,58 @@
+{
+  "protocol_id": "phase8_liquidity_generalization_001",
+  "purpose": "Reproducible audit and secondary reanalysis of the existing Phase-6/7 24-hour spot-liquidity forecasting evidence",
+  "claim_type": "predictive validation only; no causal identification",
+  "external_data_status": "2024-03 onward outcomes and forecast scores were already inspected in Phase 7; no fresh untouched confirmation",
+  "prior_artifacts_immutable": ["Stage 3", "Phase 5", "Phase 6", "Phase 7"],
+  "data_policy": "reuse cached panel and raw archives only; no network or new market-data download",
+  "panel": {
+    "path": "data/processed/phase7/market_liquidity_panel_4h.csv.gz",
+    "sha256": "5a339c5c4a8778ceb74344a10c67806c2323ffac80556be18bf7a9c99de8dcf6",
+    "frequency": "4-hour UTC",
+    "external_feature_start": "2024-03-04T00:00:00Z",
+    "last_external_feature": "2026-09-29T20:00:00Z",
+    "label_end_limit": "2026-09-30T20:00:00Z"
+  },
+  "assets": ["BTC", "ETH", "SOL", "BNB", "XRP"],
+  "asset_rule": "reuse all assets mechanically selected before Phase-7 estimation under the frozen outcome-blind coverage/timestamp rules",
+  "primary_target": "future_amihud_24h_mean",
+  "other_measurement_targets": ["future_kyle_abs_lambda_24h", "future_corwin_schultz_spread_24h"],
+  "information_sets": {
+    "primary": ["legacy_spot_only", "legacy_spot_plus_derivatives"],
+    "robustness": ["enhanced_spot_only", "enhanced_spot_plus_derivatives"]
+  },
+  "model_families": ["Ridge", "RBF_SVR", "ExtraTrees", "HistGradientBoosting", "MLP", "GRU"],
+  "development_selected_best_family": "minimum development-only pooled transformed OOF MAE separately within each matched information set; no external model selection",
+  "stress_warning": {
+    "event_threshold": "development target q90",
+    "alarm_threshold": "development OOF prediction q90 per asset/target/info-set/family",
+    "metrics": ["precision", "recall", "F1", "lift"],
+    "aggregation": "average MLP/GRU within the neural category, then equal-weight the five independent categories"
+  },
+  "negative_controls": [
+    {
+      "name": "future_derivatives_after_target",
+      "derivative_source_rows": "t+7 through t+12",
+      "matched_baseline": "six Spot Only lags through t",
+      "model": "Ridge(alpha=1), training-only StandardScaler",
+      "target": "Phase-7 development-selected Amihud transform"
+    },
+    {
+      "name": "42_interval_forward_displacement",
+      "displacement_intervals": 42,
+      "wraparound": false,
+      "matched_baseline": "six Spot Only lags through t",
+      "model": "Ridge(alpha=1), training-only StandardScaler",
+      "target": "Phase-7 development-selected Amihud transform"
+    }
+  ],
+  "bootstrap": {
+    "method": "paired moving date-block bootstrap",
+    "replications": 2000,
+    "block_lengths_4h": [42, 84],
+    "seed_base": 724051
+  },
+  "temporal_segments": ["2024-03-04/2024-12-31", "2025-01-01/2025-12-31", "2026-01-01/2026-09-30"],
+  "classification": "retain the frozen Phase-7 external replication and cross-proxy rules; exploratory reanalysis cannot override them",
+  "no_estimation_changes": true
+}

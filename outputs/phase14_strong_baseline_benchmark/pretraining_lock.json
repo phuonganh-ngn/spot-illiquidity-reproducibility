@@ -1,0 +1,11 @@
+{
+  "created_utc": "2026-10-13T06:11:16.291188+00:00",
+  "files": {
+    "00_source_audit.md": "158dd0e75247e970bbe376bf6fff734ceea91fbd36631b60d35f67a69ab75370",
+    "01_source_manifest_before.json": "0677573e2b55ef2828d31e5439038a8c2be9206d8d33f8198d65a5408b1499de",
+    "02_locked_experiment_protocol.md": "84e47245395e0b37f03970d1141805dec26fabf83c1833572ab53ad59a36d532",
+    "03_frozen_model_registry.json": "d3db7b62c523ca894ad5b73bf5fb0daa8676edfc039585e69293421ab2135843",
+    "04_chronological_split_audit.md": "87881c04069939d8e4b9360670d3478eeebfa7aff8a4bbda1d610823c25a2185"
+  },
+  "status": "LOCKED_BEFORE_FIT"
+}

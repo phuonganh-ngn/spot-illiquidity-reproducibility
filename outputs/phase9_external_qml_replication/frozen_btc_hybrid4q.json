@@ -1,0 +1,49 @@
+{
+  "asset": "BTC",
+  "backend": "PennyLane default.qubit exact CPU statevector",
+  "batch_size": 64,
+  "circuit": "AngleEmbedding(Y) plus 2 StronglyEntanglingLayers; Pauli-Z vector, trainable linear output",
+  "epochs": 40,
+  "frozen_primary_model": "Hybrid variational QNN",
+  "input_scaler": "training-only StandardScaler",
+  "layers": 2,
+  "learning_rate": 0.01,
+  "matched_classical": {
+    "alpha": 0.01,
+    "early_stopping": false,
+    "family": "one-hidden-layer MLP",
+    "hidden_width": 4,
+    "input_scaler": "training-only StandardScaler",
+    "learning_rate_init": 0.001,
+    "max_iter": 2000,
+    "pca_components": 16,
+    "post_pca_scaler": "training-only StandardScaler",
+    "same_seed_for_each_pair": true,
+    "solver": "adam",
+    "tol": 1e-05
+  },
+  "optimizer": "Adam",
+  "pca_components": 16,
+  "post_pca_scaler": "training-only StandardScaler",
+  "qubits": 4,
+  "seed_lineage": {
+    "derivation": "stable_seed(20261007, asset, method, qubits, source_seed_base); matched MLP uses the same derived seed as its QML pair",
+    "note": "The five seed integers in each frozen model config are the exact derived seeds used by the prior frozen Phase-6/targeted study run.",
+    "source_execution_plan": "outputs/targeted_24h_amihud/qml_residual_execution_plan.json",
+    "source_seed_bases": [
+      101,
+      211,
+      307,
+      401,
+      503
+    ]
+  },
+  "seeds": [
+    927195332,
+    1778310776,
+    766736717,
+    870829452,
+    1414450591
+  ],
+  "shots": null
+}

@@ -1,0 +1,132 @@
+{
+  "description": "Deterministic synthetic regression; verifies finite QML fitting, repeatability, and training-only PCA/scaling independence from evaluation input distribution.",
+  "external_market_data_used": false,
+  "fixtures": [
+    {
+      "all_five_frozen_seeds_finite": true,
+      "asset_configuration": "BTC",
+      "finite_loss_and_predictions": true,
+      "five_seed_fixture": [
+        {
+          "finite_predictions": true,
+          "prediction_mean": 0.1441037505865097,
+          "prediction_std": 0.18685825169086456,
+          "seed": 927195332
+        },
+        {
+          "finite_predictions": true,
+          "prediction_mean": -0.02555149793624878,
+          "prediction_std": 0.2592970132827759,
+          "seed": 1778310776
+        },
+        {
+          "finite_predictions": true,
+          "prediction_mean": 0.0770244151353836,
+          "prediction_std": 0.20408344268798828,
+          "seed": 766736717
+        },
+        {
+          "finite_predictions": true,
+          "prediction_mean": 0.06731947511434555,
+          "prediction_std": 0.23512357473373413,
+          "seed": 870829452
+        },
+        {
+          "finite_predictions": true,
+          "prediction_mean": 0.05591612309217453,
+          "prediction_std": 0.258387953042984,
+          "seed": 1414450591
+        }
+      ],
+      "fixture_type": "synthetic nonlinear interaction regression; fixed train/test split",
+      "metadata": {
+        "backend": "default.qubit exact statevector",
+        "batch_size": 64,
+        "circuit": "AngleEmbedding(Y) plus 2 StronglyEntanglingLayers; Pauli-Z vector, trainable linear output",
+        "epochs": 40,
+        "hybrid_encoder": "single linear layer from training-only PCA scores",
+        "input_scaler": "training-only StandardScaler",
+        "learning_rate": 0.01,
+        "method": "hybrid variational quantum regressor",
+        "n_qubits": 4,
+        "pca_components": 16,
+        "pca_explained_variance_ratio_sum": 0.9147846505641266,
+        "post_pca_scaler": "training-only StandardScaler",
+        "seed": 927195332,
+        "seeds": [
+          927195332
+        ],
+        "shots": null
+      },
+      "qubits": 4,
+      "repeat_max_abs_prediction_delta": 0.0,
+      "reproducible_fixed_seed": true,
+      "test_distribution_change_max_abs_delta": 0.0,
+      "training_only_preprocessing_pass": true
+    },
+    {
+      "all_five_frozen_seeds_finite": true,
+      "asset_configuration": "ETH",
+      "finite_loss_and_predictions": true,
+      "five_seed_fixture": [
+        {
+          "finite_predictions": true,
+          "prediction_mean": -0.021868087351322174,
+          "prediction_std": 0.1774161458015442,
+          "seed": 809355672
+        },
+        {
+          "finite_predictions": true,
+          "prediction_mean": 0.0740232765674591,
+          "prediction_std": 0.1628555804491043,
+          "seed": 1377247200
+        },
+        {
+          "finite_predictions": true,
+          "prediction_mean": 0.04998689889907837,
+          "prediction_std": 0.15464451909065247,
+          "seed": 456611996
+        },
+        {
+          "finite_predictions": true,
+          "prediction_mean": 0.007067454047501087,
+          "prediction_std": 0.10286641865968704,
+          "seed": 615602774
+        },
+        {
+          "finite_predictions": true,
+          "prediction_mean": -0.025523442775011063,
+          "prediction_std": 0.21498601138591766,
+          "seed": 2079287096
+        }
+      ],
+      "fixture_type": "synthetic nonlinear interaction regression; fixed train/test split",
+      "metadata": {
+        "backend": "default.qubit exact statevector",
+        "batch_size": 64,
+        "circuit": "AngleEmbedding(Y) plus 2 StronglyEntanglingLayers; Pauli-Z vector, trainable linear output",
+        "epochs": 40,
+        "hybrid_encoder": null,
+        "input_scaler": "training-only StandardScaler",
+        "learning_rate": 0.01,
+        "method": "variational quantum regressor",
+        "n_qubits": 6,
+        "pca_components": 6,
+        "pca_explained_variance_ratio_sum": 0.45525899752345256,
+        "post_pca_scaler": "training-only StandardScaler",
+        "seed": 809355672,
+        "seeds": [
+          809355672
+        ],
+        "shots": null
+      },
+      "qubits": 6,
+      "repeat_max_abs_prediction_delta": 0.0,
+      "reproducible_fixed_seed": true,
+      "test_distribution_change_max_abs_delta": 0.0,
+      "training_only_preprocessing_pass": true
+    }
+  ],
+  "seed": 9092401,
+  "status": "VALID"
+}

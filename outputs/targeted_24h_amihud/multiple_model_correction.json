@@ -1,0 +1,114 @@
+{
+  "method": "Holm on two-sided paired moving-block-bootstrap p-values (42 intervals)",
+  "primary_family": "per asset across nine frozen classical family comparisons",
+  "results": [
+    {
+      "asset": "BTC",
+      "family": "ElasticNet",
+      "holm_p": 1.0,
+      "raw_p": 1.0
+    },
+    {
+      "asset": "BTC",
+      "family": "RBF_SVR",
+      "holm_p": 1.0,
+      "raw_p": 1.0
+    },
+    {
+      "asset": "BTC",
+      "family": "ExtraTrees",
+      "holm_p": 0.017982017982017984,
+      "raw_p": 0.001998001998001998
+    },
+    {
+      "asset": "BTC",
+      "family": "HistGradientBoosting",
+      "holm_p": 0.017982017982017984,
+      "raw_p": 0.001998001998001998
+    },
+    {
+      "asset": "BTC",
+      "family": "XGBoost",
+      "holm_p": 1.0,
+      "raw_p": 1.0
+    },
+    {
+      "asset": "BTC",
+      "family": "LightGBM",
+      "holm_p": 0.017982017982017984,
+      "raw_p": 0.001998001998001998
+    },
+    {
+      "asset": "BTC",
+      "family": "CatBoost",
+      "holm_p": 0.017982017982017984,
+      "raw_p": 0.001998001998001998
+    },
+    {
+      "asset": "BTC",
+      "family": "MLP",
+      "holm_p": 0.017982017982017984,
+      "raw_p": 0.001998001998001998
+    },
+    {
+      "asset": "BTC",
+      "family": "GRU",
+      "holm_p": 0.017982017982017984,
+      "raw_p": 0.001998001998001998
+    },
+    {
+      "asset": "ETH",
+      "family": "ElasticNet",
+      "holm_p": 1.0,
+      "raw_p": 1.0
+    },
+    {
+      "asset": "ETH",
+      "family": "RBF_SVR",
+      "holm_p": 1.0,
+      "raw_p": 1.0
+    },
+    {
+      "asset": "ETH",
+      "family": "ExtraTrees",
+      "holm_p": 1.0,
+      "raw_p": 0.18581418581418582
+    },
+    {
+      "asset": "ETH",
+      "family": "HistGradientBoosting",
+      "holm_p": 1.0,
+      "raw_p": 0.25574425574425574
+    },
+    {
+      "asset": "ETH",
+      "family": "XGBoost",
+      "holm_p": 1.0,
+      "raw_p": 1.0
+    },
+    {
+      "asset": "ETH",
+      "family": "LightGBM",
+      "holm_p": 0.017982017982017984,
+      "raw_p": 0.001998001998001998
+    },
+    {
+      "asset": "ETH",
+      "family": "CatBoost",
+      "holm_p": 0.5594405594405595,
+      "raw_p": 0.07992007992007992
+    },
+    {
+      "asset": "ETH",
+      "family": "MLP",
+      "holm_p": 0.017982017982017984,
+      "raw_p": 0.001998001998001998
+    },
+    {
+      "asset": "ETH",
+      "family": "GRU",
+      "holm_p": 1.0,
+      "raw_p": 0.24775224775224775
+    }
+  ]
+}

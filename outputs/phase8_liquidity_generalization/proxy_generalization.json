@@ -1,0 +1,183 @@
+{
+  "any_distinct_proxy_passes": false,
+  "proxies": [
+    {
+      "all_asset_legacy_results": [
+        {
+          "asset": "BTC",
+          "ci95": [
+            -0.00655852080749232,
+            0.004053830519573157
+          ],
+          "delta": -0.0010979062076531113
+        },
+        {
+          "asset": "ETH",
+          "ci95": [
+            1.6507919021208614e-05,
+            0.01261268406128588
+          ],
+          "delta": 0.005621372923549429
+        },
+        {
+          "asset": "SOL",
+          "ci95": [
+            0.10969666778902895,
+            0.12050191585360859
+          ],
+          "delta": 0.11502121345298681
+        },
+        {
+          "asset": "BNB",
+          "ci95": [
+            -0.017983063968081886,
+            -0.010088980507625592
+          ],
+          "delta": -0.014043265435206134
+        },
+        {
+          "asset": "XRP",
+          "ci95": [
+            -0.0032422060850325995,
+            0.004171476073198037
+          ],
+          "delta": 0.0004908375971281493
+        }
+      ],
+      "btc": {
+        "categories_improving": 2,
+        "ci95": [
+          -0.00655852080749232,
+          0.004053830519573157
+        ],
+        "delta": -0.0010979062076531113
+      },
+      "btc_eth_bootstrap_condition": false,
+      "btc_eth_category_condition": false,
+      "btc_eth_direction_condition": false,
+      "eth": {
+        "categories_improving": 1,
+        "ci95": [
+          1.6507919021208614e-05,
+          0.01261268406128588
+        ],
+        "delta": 0.005621372923549429
+      },
+      "frozen_proxy_generalization_pass": false,
+      "target": "future_kyle_abs_lambda_24h"
+    },
+    {
+      "all_asset_legacy_results": [
+        {
+          "asset": "BTC",
+          "ci95": [
+            0.0003575500078567544,
+            0.0042372781093095845
+          ],
+          "delta": 0.002231535356618838
+        },
+        {
+          "asset": "ETH",
+          "ci95": [
+            0.0010238495544508104,
+            0.0036081754396399047
+          ],
+          "delta": 0.002339145679380245
+        },
+        {
+          "asset": "SOL",
+          "ci95": [
+            0.00281582496815595,
+            0.003491675684309161
+          ],
+          "delta": 0.0031465699130562934
+        },
+        {
+          "asset": "BNB",
+          "ci95": [
+            -0.0057188704823838525,
+            -0.0016196922299663373
+          ],
+          "delta": -0.0036663174093945253
+        },
+        {
+          "asset": "XRP",
+          "ci95": [
+            -0.013501296220765034,
+            -0.00836679019831933
+          ],
+          "delta": -0.010959066342152605
+        }
+      ],
+      "btc": {
+        "categories_improving": 1,
+        "ci95": [
+          0.0003575500078567544,
+          0.0042372781093095845
+        ],
+        "delta": 0.002231535356618838
+      },
+      "btc_eth_bootstrap_condition": false,
+      "btc_eth_category_condition": false,
+      "btc_eth_direction_condition": false,
+      "eth": {
+        "categories_improving": 2,
+        "ci95": [
+          0.0010238495544508104,
+          0.0036081754396399047
+        ],
+        "delta": 0.002339145679380245
+      },
+      "frozen_proxy_generalization_pass": false,
+      "target": "future_corwin_schultz_spread_24h"
+    }
+  ],
+  "proxy_semantics": {
+    "amihud": {
+      "definition": "1e6 * abs(4-hour log return) / positive Binance spot quote turnover in USDT",
+      "larger_means": "greater measured price impact / illiquidity",
+      "max_abs_reconstruction_error": 9.993633524885137e-17,
+      "missingness_identical": true,
+      "negative_count_external": 0,
+      "nonpositive_quote_volume_missing": true,
+      "numerical_tail_quantiles_external": {
+        "0.001": 0.0,
+        "0.01": 8.325664957041467e-07,
+        "0.5": 7.73493632640646e-05,
+        "0.99": 0.0010018255391994373,
+        "0.999": 0.001558376993893525
+      },
+      "zero_count_external": 53
+    },
+    "asset_audit_pass": true,
+    "future_amihud": {
+      "definition": "arithmetic mean of six 4-hour Amihud observations t+1:t+6",
+      "max_abs_reconstruction_error": 9.578926193909432e-17,
+      "missingness_identical": true
+    },
+    "future_corwin_schultz_spread_24h": {
+      "coverage_external_pct": 100.0,
+      "definition": "mean of five consecutive 4-hour Corwin-Schultz high-low estimates based on adjacent bars wholly within t+1:t+6",
+      "interpretation_limit": "range-based spread proxy can also reflect volatility; not an observed bid-ask quote",
+      "max_abs_reconstruction_error": 9.386480308293255e-17,
+      "missingness_identical": true
+    },
+    "future_kyle_abs_lambda_24h": {
+      "construction_evidence": "verified deterministic Phase-7 builder source and 6,195 cached archive hashes; Phase-7 offline panel rebuild and full source audit passed; not independently reconstructed from 5-minute bars in this reanalysis",
+      "coverage_external_pct": 100.0,
+      "definition": "absolute intercept-adjusted OLS slope of 288 following 5-minute spot log returns on signed spot USDT quote flow (2*taker-buy quote volume - total quote volume)",
+      "nonnegative": true,
+      "unit": "return per USDT signed quote flow"
+    },
+    "future_window": {
+      "exclusive_end_equals_t_plus_28h_on_valid_labels": true,
+      "labels_with_metadata": 54701,
+      "no_future_labels_after_sample_end": true,
+      "start_equals_t_plus_4h_on_valid_labels": true,
+      "terminal_unlabelled_rows_with_missing_window_metadata": 30
+    },
+    "panel_rows": 54780,
+    "panel_unique_asset_dates": true,
+    "post_2024_timestamp_audit": "valid under frozen per-date OI offset mapping; unresolved concern is piecewise source timestamp harmonization, retained as measurement limitation"
+  }
+}

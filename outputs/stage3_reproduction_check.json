@@ -1,0 +1,26 @@
+{
+  "network_access": "none; invoked Stage-3 scripts use only cached local data",
+  "report_sha256": {
+    "fig_channel1_funding_rv.png": "3c187a0e4bb0fa55b73ac7be129b837e168a8123d45164b70e72400067e95668",
+    "fig_channel2_oi_rv.png": "643e42658b39c0d66c8d78b0bee5cbea42002570a3adb5bb142d24ed4956cd4c",
+    "fig_channel3_oi_downside.png": "8c8176e6cc6b6966c8f77461f036a249ac2e41a0887800977b08d5c2006bff8e",
+    "fig_channel4_flow_amihud.png": "ba5b126ee23ef23e240880aa4c8153bf39495c886a972d8f04684515dd99ed51",
+    "fig_direction_summary_btc.png": "234b8cfb4071c6b769863c9fc56430edc975af8e8ee57ea7ae04c217d14f9e99",
+    "fig_direction_summary_eth.png": "d465f98230bf14c4ad670fb081a53a7d2f60f6595673e4f93fa78e19958d69ee",
+    "fig_time_variation_core_channels.png": "4a5c758c21d0f373136a0821ec91bf01538ca0f6d46f327f6dd0dbc60a11b557",
+    "fig_tvp_volatility_btc.png": "22c708349b158d56702cd157516d6e0b3dc6b63d5544a50893329f0a562e33a4",
+    "fig_tvp_volatility_eth.png": "ef1741d5ca18a07dad3358aad1fce13fded1050d3c30a294cbd039679a813b27",
+    "stage3_model_manifest.csv": "09afa870b6e4912c80c1412b76adffd2ba7d9d23dff0f9db5d16220e63aac309",
+    "stage3_research_summary.md": "acfcf4c847410091ae003e1b7d4209b42ca4921a19ba983c5e056c4cebc949e8",
+    "table_stage3_multiple_testing.csv": "8f749ce8c524458f4ea722438d96ffe59703267c110e8906661deff2a35b5846",
+    "table_stage3_robustness_matrix.csv": "0f28c438a4bf740df5923e5527cd35853bfcbd7843267f54f52f1619b646c253"
+  },
+  "reporting_two_run_byte_identity": true,
+  "secondary_extended_sha256": {
+    "table_stage3_extended_horizons.csv": "72cc35502294ad9ad1aa2ddf1ac0e91f84efbae466ca8248776e479dc587633b",
+    "table_stage3_extended_sample.csv": "d6c7048a291488ba6d8f652cb67a2a6e9611d5f0e8ac50035fc00ea279f36271",
+    "table_stage3_secondary.csv": "4565ba70eb59b7fa10f69c1b1898751c56411fb2f4e89a869dabe352afe3a9b4"
+  },
+  "secondary_extended_two_run_byte_identity": true,
+  "status": "PASS"
+}

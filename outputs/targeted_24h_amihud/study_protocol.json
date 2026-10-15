@@ -1,0 +1,1672 @@
+{
+  "asset_frequency": {
+    "assets": [
+      "BTC",
+      "ETH"
+    ],
+    "frequency": "4-hour UTC",
+    "venue": "Binance spot and USD\u24c8-M perpetual, same-venue limitation retained"
+  },
+  "claim_scope": "Predictive information only. No causal, structural, or quantum-advantage claim.",
+  "classification_rules": {
+    "historical_data_status": "All post-development periods have been inspected in prior phases; no classification can be called fresh external confirmation.",
+    "nonlinear": "linear/regularized benefit weak but >=3 independent nonlinear families among kernel, tree/boosting, neural, QML improve consistently.",
+    "quantum": "QML beats matched classical nonlinear benchmark with seed stability and positive paired-block support; replicated quantum value requires both BTC and ETH.",
+    "robust_incremental": "median direct family Delta>0; >=3 independent families improve; >=2 have Holm-corrected paired-block support; >=1 supporting non-neural family; residual learning supported; best S1 competitive with/better than best S0 on historical reused periods; no serious negative-control contradiction.",
+    "sensitive": "any promising gain depends on a narrow subset of models/assets/periods."
+  },
+  "component_ablation": {
+    "models": "all nine families using hyperparameters selected on full development CV; no component-specific tuning.",
+    "role": "secondary; cannot replace primary matched information-set comparison.",
+    "sets": [
+      "all derivatives",
+      "Funding only",
+      "OI only",
+      "Futures Flow only",
+      "Basis only",
+      "drop Funding",
+      "drop OI",
+      "drop Futures Flow",
+      "drop Basis"
+    ]
+  },
+  "data_policy": {
+    "development": "2021-12-01 through 2023-06-30 20:00 UTC; prior development was already used in Phase 6 and is not pristine.",
+    "no_download": true,
+    "phase7_2024_03_to_2026_09": "Previously inspected; exploratory reuse only, not external confirmation.",
+    "sources": [
+      "outputs/phase5_dynamic_discovery/dataset_4h.jsonl",
+      "data/processed/phase7/market_liquidity_panel_4h.csv.gz"
+    ],
+    "stage6_2023_07_to_2024_03": "Previously inspected; historical reuse is exploratory, not a new confirmatory holdout."
+  },
+  "families": {
+    "CatBoost": [
+      {
+        "allow_writing_files": false,
+        "depth": 4,
+        "iterations": 250,
+        "l2_leaf_reg": 3.0,
+        "learning_rate": 0.03,
+        "loss_function": "RMSE",
+        "thread_count": 1,
+        "verbose": false
+      },
+      {
+        "allow_writing_files": false,
+        "depth": 4,
+        "iterations": 250,
+        "l2_leaf_reg": 10.0,
+        "learning_rate": 0.03,
+        "loss_function": "RMSE",
+        "thread_count": 1,
+        "verbose": false
+      },
+      {
+        "allow_writing_files": false,
+        "depth": 4,
+        "iterations": 250,
+        "l2_leaf_reg": 3.0,
+        "learning_rate": 0.1,
+        "loss_function": "RMSE",
+        "thread_count": 1,
+        "verbose": false
+      },
+      {
+        "allow_writing_files": false,
+        "depth": 4,
+        "iterations": 250,
+        "l2_leaf_reg": 10.0,
+        "learning_rate": 0.1,
+        "loss_function": "RMSE",
+        "thread_count": 1,
+        "verbose": false
+      },
+      {
+        "allow_writing_files": false,
+        "depth": 6,
+        "iterations": 250,
+        "l2_leaf_reg": 3.0,
+        "learning_rate": 0.03,
+        "loss_function": "RMSE",
+        "thread_count": 1,
+        "verbose": false
+      },
+      {
+        "allow_writing_files": false,
+        "depth": 6,
+        "iterations": 250,
+        "l2_leaf_reg": 10.0,
+        "learning_rate": 0.03,
+        "loss_function": "RMSE",
+        "thread_count": 1,
+        "verbose": false
+      },
+      {
+        "allow_writing_files": false,
+        "depth": 6,
+        "iterations": 250,
+        "l2_leaf_reg": 3.0,
+        "learning_rate": 0.1,
+        "loss_function": "RMSE",
+        "thread_count": 1,
+        "verbose": false
+      },
+      {
+        "allow_writing_files": false,
+        "depth": 6,
+        "iterations": 250,
+        "l2_leaf_reg": 10.0,
+        "learning_rate": 0.1,
+        "loss_function": "RMSE",
+        "thread_count": 1,
+        "verbose": false
+      },
+      {
+        "allow_writing_files": false,
+        "depth": 8,
+        "iterations": 250,
+        "l2_leaf_reg": 3.0,
+        "learning_rate": 0.03,
+        "loss_function": "RMSE",
+        "thread_count": 1,
+        "verbose": false
+      },
+      {
+        "allow_writing_files": false,
+        "depth": 8,
+        "iterations": 250,
+        "l2_leaf_reg": 10.0,
+        "learning_rate": 0.03,
+        "loss_function": "RMSE",
+        "thread_count": 1,
+        "verbose": false
+      },
+      {
+        "allow_writing_files": false,
+        "depth": 8,
+        "iterations": 250,
+        "l2_leaf_reg": 3.0,
+        "learning_rate": 0.1,
+        "loss_function": "RMSE",
+        "thread_count": 1,
+        "verbose": false
+      },
+      {
+        "allow_writing_files": false,
+        "depth": 8,
+        "iterations": 250,
+        "l2_leaf_reg": 10.0,
+        "learning_rate": 0.1,
+        "loss_function": "RMSE",
+        "thread_count": 1,
+        "verbose": false
+      },
+      {
+        "allow_writing_files": false,
+        "depth": 10,
+        "iterations": 250,
+        "l2_leaf_reg": 3.0,
+        "learning_rate": 0.03,
+        "loss_function": "RMSE",
+        "thread_count": 1,
+        "verbose": false
+      },
+      {
+        "allow_writing_files": false,
+        "depth": 10,
+        "iterations": 250,
+        "l2_leaf_reg": 10.0,
+        "learning_rate": 0.03,
+        "loss_function": "RMSE",
+        "thread_count": 1,
+        "verbose": false
+      },
+      {
+        "allow_writing_files": false,
+        "depth": 10,
+        "iterations": 250,
+        "l2_leaf_reg": 3.0,
+        "learning_rate": 0.1,
+        "loss_function": "RMSE",
+        "thread_count": 1,
+        "verbose": false
+      },
+      {
+        "allow_writing_files": false,
+        "depth": 10,
+        "iterations": 250,
+        "l2_leaf_reg": 10.0,
+        "learning_rate": 0.1,
+        "loss_function": "RMSE",
+        "thread_count": 1,
+        "verbose": false
+      },
+      {
+        "allow_writing_files": false,
+        "depth": 12,
+        "iterations": 250,
+        "l2_leaf_reg": 3.0,
+        "learning_rate": 0.03,
+        "loss_function": "RMSE",
+        "thread_count": 1,
+        "verbose": false
+      },
+      {
+        "allow_writing_files": false,
+        "depth": 12,
+        "iterations": 250,
+        "l2_leaf_reg": 10.0,
+        "learning_rate": 0.03,
+        "loss_function": "RMSE",
+        "thread_count": 1,
+        "verbose": false
+      },
+      {
+        "allow_writing_files": false,
+        "depth": 12,
+        "iterations": 250,
+        "l2_leaf_reg": 3.0,
+        "learning_rate": 0.1,
+        "loss_function": "RMSE",
+        "thread_count": 1,
+        "verbose": false
+      },
+      {
+        "allow_writing_files": false,
+        "depth": 12,
+        "iterations": 250,
+        "l2_leaf_reg": 10.0,
+        "learning_rate": 0.1,
+        "loss_function": "RMSE",
+        "thread_count": 1,
+        "verbose": false
+      }
+    ],
+    "ElasticNet": [
+      {
+        "alpha": 0.0001,
+        "l1_ratio": 0.05,
+        "max_iter": 10000,
+        "scaler": "standard",
+        "tol": 0.0001
+      },
+      {
+        "alpha": 0.0001,
+        "l1_ratio": 0.05,
+        "max_iter": 10000,
+        "scaler": "robust",
+        "tol": 0.0001
+      },
+      {
+        "alpha": 0.0001,
+        "l1_ratio": 0.5,
+        "max_iter": 10000,
+        "scaler": "standard",
+        "tol": 0.0001
+      },
+      {
+        "alpha": 0.0001,
+        "l1_ratio": 0.5,
+        "max_iter": 10000,
+        "scaler": "robust",
+        "tol": 0.0001
+      },
+      {
+        "alpha": 0.001,
+        "l1_ratio": 0.05,
+        "max_iter": 10000,
+        "scaler": "standard",
+        "tol": 0.0001
+      },
+      {
+        "alpha": 0.001,
+        "l1_ratio": 0.05,
+        "max_iter": 10000,
+        "scaler": "robust",
+        "tol": 0.0001
+      },
+      {
+        "alpha": 0.001,
+        "l1_ratio": 0.5,
+        "max_iter": 10000,
+        "scaler": "standard",
+        "tol": 0.0001
+      },
+      {
+        "alpha": 0.001,
+        "l1_ratio": 0.5,
+        "max_iter": 10000,
+        "scaler": "robust",
+        "tol": 0.0001
+      },
+      {
+        "alpha": 0.01,
+        "l1_ratio": 0.05,
+        "max_iter": 10000,
+        "scaler": "standard",
+        "tol": 0.0001
+      },
+      {
+        "alpha": 0.01,
+        "l1_ratio": 0.05,
+        "max_iter": 10000,
+        "scaler": "robust",
+        "tol": 0.0001
+      },
+      {
+        "alpha": 0.01,
+        "l1_ratio": 0.5,
+        "max_iter": 10000,
+        "scaler": "standard",
+        "tol": 0.0001
+      },
+      {
+        "alpha": 0.01,
+        "l1_ratio": 0.5,
+        "max_iter": 10000,
+        "scaler": "robust",
+        "tol": 0.0001
+      },
+      {
+        "alpha": 0.1,
+        "l1_ratio": 0.05,
+        "max_iter": 10000,
+        "scaler": "standard",
+        "tol": 0.0001
+      },
+      {
+        "alpha": 0.1,
+        "l1_ratio": 0.05,
+        "max_iter": 10000,
+        "scaler": "robust",
+        "tol": 0.0001
+      },
+      {
+        "alpha": 0.1,
+        "l1_ratio": 0.5,
+        "max_iter": 10000,
+        "scaler": "standard",
+        "tol": 0.0001
+      },
+      {
+        "alpha": 0.1,
+        "l1_ratio": 0.5,
+        "max_iter": 10000,
+        "scaler": "robust",
+        "tol": 0.0001
+      },
+      {
+        "alpha": 1.0,
+        "l1_ratio": 0.05,
+        "max_iter": 10000,
+        "scaler": "standard",
+        "tol": 0.0001
+      },
+      {
+        "alpha": 1.0,
+        "l1_ratio": 0.05,
+        "max_iter": 10000,
+        "scaler": "robust",
+        "tol": 0.0001
+      },
+      {
+        "alpha": 1.0,
+        "l1_ratio": 0.5,
+        "max_iter": 10000,
+        "scaler": "standard",
+        "tol": 0.0001
+      },
+      {
+        "alpha": 1.0,
+        "l1_ratio": 0.5,
+        "max_iter": 10000,
+        "scaler": "robust",
+        "tol": 0.0001
+      }
+    ],
+    "ExtraTrees": [
+      {
+        "max_depth": null,
+        "max_features": "sqrt",
+        "min_samples_leaf": 1,
+        "n_estimators": 300,
+        "n_jobs": 1
+      },
+      {
+        "max_depth": null,
+        "max_features": "sqrt",
+        "min_samples_leaf": 2,
+        "n_estimators": 300,
+        "n_jobs": 1
+      },
+      {
+        "max_depth": null,
+        "max_features": "sqrt",
+        "min_samples_leaf": 5,
+        "n_estimators": 300,
+        "n_jobs": 1
+      },
+      {
+        "max_depth": null,
+        "max_features": "sqrt",
+        "min_samples_leaf": 10,
+        "n_estimators": 300,
+        "n_jobs": 1
+      },
+      {
+        "max_depth": null,
+        "max_features": "sqrt",
+        "min_samples_leaf": 20,
+        "n_estimators": 300,
+        "n_jobs": 1
+      },
+      {
+        "max_depth": null,
+        "max_features": 0.3,
+        "min_samples_leaf": 1,
+        "n_estimators": 300,
+        "n_jobs": 1
+      },
+      {
+        "max_depth": null,
+        "max_features": 0.3,
+        "min_samples_leaf": 2,
+        "n_estimators": 300,
+        "n_jobs": 1
+      },
+      {
+        "max_depth": null,
+        "max_features": 0.3,
+        "min_samples_leaf": 5,
+        "n_estimators": 300,
+        "n_jobs": 1
+      },
+      {
+        "max_depth": null,
+        "max_features": 0.3,
+        "min_samples_leaf": 10,
+        "n_estimators": 300,
+        "n_jobs": 1
+      },
+      {
+        "max_depth": null,
+        "max_features": 0.3,
+        "min_samples_leaf": 20,
+        "n_estimators": 300,
+        "n_jobs": 1
+      },
+      {
+        "max_depth": null,
+        "max_features": 0.6,
+        "min_samples_leaf": 1,
+        "n_estimators": 300,
+        "n_jobs": 1
+      },
+      {
+        "max_depth": null,
+        "max_features": 0.6,
+        "min_samples_leaf": 2,
+        "n_estimators": 300,
+        "n_jobs": 1
+      },
+      {
+        "max_depth": null,
+        "max_features": 0.6,
+        "min_samples_leaf": 5,
+        "n_estimators": 300,
+        "n_jobs": 1
+      },
+      {
+        "max_depth": null,
+        "max_features": 0.6,
+        "min_samples_leaf": 10,
+        "n_estimators": 300,
+        "n_jobs": 1
+      },
+      {
+        "max_depth": null,
+        "max_features": 0.6,
+        "min_samples_leaf": 20,
+        "n_estimators": 300,
+        "n_jobs": 1
+      },
+      {
+        "max_depth": null,
+        "max_features": 1.0,
+        "min_samples_leaf": 1,
+        "n_estimators": 300,
+        "n_jobs": 1
+      },
+      {
+        "max_depth": null,
+        "max_features": 1.0,
+        "min_samples_leaf": 2,
+        "n_estimators": 300,
+        "n_jobs": 1
+      },
+      {
+        "max_depth": null,
+        "max_features": 1.0,
+        "min_samples_leaf": 5,
+        "n_estimators": 300,
+        "n_jobs": 1
+      },
+      {
+        "max_depth": null,
+        "max_features": 1.0,
+        "min_samples_leaf": 10,
+        "n_estimators": 300,
+        "n_jobs": 1
+      },
+      {
+        "max_depth": null,
+        "max_features": 1.0,
+        "min_samples_leaf": 20,
+        "n_estimators": 300,
+        "n_jobs": 1
+      }
+    ],
+    "GRU": [
+      {
+        "batch_size": 128,
+        "epochs": 50,
+        "hidden_size": 8,
+        "learning_rate": 0.001,
+        "scaler": "standard",
+        "weight_decay": 0.0
+      },
+      {
+        "batch_size": 128,
+        "epochs": 50,
+        "hidden_size": 8,
+        "learning_rate": 0.001,
+        "scaler": "standard",
+        "weight_decay": 0.001
+      },
+      {
+        "batch_size": 128,
+        "epochs": 50,
+        "hidden_size": 8,
+        "learning_rate": 0.0003,
+        "scaler": "standard",
+        "weight_decay": 0.0
+      },
+      {
+        "batch_size": 128,
+        "epochs": 50,
+        "hidden_size": 8,
+        "learning_rate": 0.0003,
+        "scaler": "standard",
+        "weight_decay": 0.001
+      },
+      {
+        "batch_size": 128,
+        "epochs": 50,
+        "hidden_size": 16,
+        "learning_rate": 0.001,
+        "scaler": "standard",
+        "weight_decay": 0.0
+      },
+      {
+        "batch_size": 128,
+        "epochs": 50,
+        "hidden_size": 16,
+        "learning_rate": 0.001,
+        "scaler": "standard",
+        "weight_decay": 0.001
+      },
+      {
+        "batch_size": 128,
+        "epochs": 50,
+        "hidden_size": 16,
+        "learning_rate": 0.0003,
+        "scaler": "standard",
+        "weight_decay": 0.0
+      },
+      {
+        "batch_size": 128,
+        "epochs": 50,
+        "hidden_size": 16,
+        "learning_rate": 0.0003,
+        "scaler": "standard",
+        "weight_decay": 0.001
+      },
+      {
+        "batch_size": 128,
+        "epochs": 50,
+        "hidden_size": 32,
+        "learning_rate": 0.001,
+        "scaler": "standard",
+        "weight_decay": 0.0
+      },
+      {
+        "batch_size": 128,
+        "epochs": 50,
+        "hidden_size": 32,
+        "learning_rate": 0.001,
+        "scaler": "standard",
+        "weight_decay": 0.001
+      },
+      {
+        "batch_size": 128,
+        "epochs": 50,
+        "hidden_size": 32,
+        "learning_rate": 0.0003,
+        "scaler": "standard",
+        "weight_decay": 0.0
+      },
+      {
+        "batch_size": 128,
+        "epochs": 50,
+        "hidden_size": 32,
+        "learning_rate": 0.0003,
+        "scaler": "standard",
+        "weight_decay": 0.001
+      },
+      {
+        "batch_size": 128,
+        "epochs": 50,
+        "hidden_size": 48,
+        "learning_rate": 0.001,
+        "scaler": "standard",
+        "weight_decay": 0.0
+      },
+      {
+        "batch_size": 128,
+        "epochs": 50,
+        "hidden_size": 48,
+        "learning_rate": 0.001,
+        "scaler": "standard",
+        "weight_decay": 0.001
+      },
+      {
+        "batch_size": 128,
+        "epochs": 50,
+        "hidden_size": 48,
+        "learning_rate": 0.0003,
+        "scaler": "standard",
+        "weight_decay": 0.0
+      },
+      {
+        "batch_size": 128,
+        "epochs": 50,
+        "hidden_size": 48,
+        "learning_rate": 0.0003,
+        "scaler": "standard",
+        "weight_decay": 0.001
+      },
+      {
+        "batch_size": 128,
+        "epochs": 50,
+        "hidden_size": 64,
+        "learning_rate": 0.001,
+        "scaler": "standard",
+        "weight_decay": 0.0
+      },
+      {
+        "batch_size": 128,
+        "epochs": 50,
+        "hidden_size": 64,
+        "learning_rate": 0.001,
+        "scaler": "standard",
+        "weight_decay": 0.001
+      },
+      {
+        "batch_size": 128,
+        "epochs": 50,
+        "hidden_size": 64,
+        "learning_rate": 0.0003,
+        "scaler": "standard",
+        "weight_decay": 0.0
+      },
+      {
+        "batch_size": 128,
+        "epochs": 50,
+        "hidden_size": 64,
+        "learning_rate": 0.0003,
+        "scaler": "standard",
+        "weight_decay": 0.001
+      }
+    ],
+    "HistGradientBoosting": [
+      {
+        "l2_regularization": 0.0,
+        "learning_rate": 0.03,
+        "max_iter": 150,
+        "max_leaf_nodes": 7
+      },
+      {
+        "l2_regularization": 1.0,
+        "learning_rate": 0.03,
+        "max_iter": 150,
+        "max_leaf_nodes": 7
+      },
+      {
+        "l2_regularization": 0.0,
+        "learning_rate": 0.1,
+        "max_iter": 150,
+        "max_leaf_nodes": 7
+      },
+      {
+        "l2_regularization": 1.0,
+        "learning_rate": 0.1,
+        "max_iter": 150,
+        "max_leaf_nodes": 7
+      },
+      {
+        "l2_regularization": 0.0,
+        "learning_rate": 0.03,
+        "max_iter": 150,
+        "max_leaf_nodes": 15
+      },
+      {
+        "l2_regularization": 1.0,
+        "learning_rate": 0.03,
+        "max_iter": 150,
+        "max_leaf_nodes": 15
+      },
+      {
+        "l2_regularization": 0.0,
+        "learning_rate": 0.1,
+        "max_iter": 150,
+        "max_leaf_nodes": 15
+      },
+      {
+        "l2_regularization": 1.0,
+        "learning_rate": 0.1,
+        "max_iter": 150,
+        "max_leaf_nodes": 15
+      },
+      {
+        "l2_regularization": 0.0,
+        "learning_rate": 0.03,
+        "max_iter": 150,
+        "max_leaf_nodes": 31
+      },
+      {
+        "l2_regularization": 1.0,
+        "learning_rate": 0.03,
+        "max_iter": 150,
+        "max_leaf_nodes": 31
+      },
+      {
+        "l2_regularization": 0.0,
+        "learning_rate": 0.1,
+        "max_iter": 150,
+        "max_leaf_nodes": 31
+      },
+      {
+        "l2_regularization": 1.0,
+        "learning_rate": 0.1,
+        "max_iter": 150,
+        "max_leaf_nodes": 31
+      },
+      {
+        "l2_regularization": 0.0,
+        "learning_rate": 0.03,
+        "max_iter": 150,
+        "max_leaf_nodes": 63
+      },
+      {
+        "l2_regularization": 1.0,
+        "learning_rate": 0.03,
+        "max_iter": 150,
+        "max_leaf_nodes": 63
+      },
+      {
+        "l2_regularization": 0.0,
+        "learning_rate": 0.1,
+        "max_iter": 150,
+        "max_leaf_nodes": 63
+      },
+      {
+        "l2_regularization": 1.0,
+        "learning_rate": 0.1,
+        "max_iter": 150,
+        "max_leaf_nodes": 63
+      },
+      {
+        "l2_regularization": 0.0,
+        "learning_rate": 0.03,
+        "max_iter": 150,
+        "max_leaf_nodes": 127
+      },
+      {
+        "l2_regularization": 1.0,
+        "learning_rate": 0.03,
+        "max_iter": 150,
+        "max_leaf_nodes": 127
+      },
+      {
+        "l2_regularization": 0.0,
+        "learning_rate": 0.1,
+        "max_iter": 150,
+        "max_leaf_nodes": 127
+      },
+      {
+        "l2_regularization": 1.0,
+        "learning_rate": 0.1,
+        "max_iter": 150,
+        "max_leaf_nodes": 127
+      }
+    ],
+    "LightGBM": [
+      {
+        "learning_rate": 0.03,
+        "min_child_samples": 20,
+        "n_estimators": 250,
+        "n_jobs": 1,
+        "num_leaves": 7,
+        "verbosity": -1
+      },
+      {
+        "learning_rate": 0.03,
+        "min_child_samples": 50,
+        "n_estimators": 250,
+        "n_jobs": 1,
+        "num_leaves": 7,
+        "verbosity": -1
+      },
+      {
+        "learning_rate": 0.1,
+        "min_child_samples": 20,
+        "n_estimators": 250,
+        "n_jobs": 1,
+        "num_leaves": 7,
+        "verbosity": -1
+      },
+      {
+        "learning_rate": 0.1,
+        "min_child_samples": 50,
+        "n_estimators": 250,
+        "n_jobs": 1,
+        "num_leaves": 7,
+        "verbosity": -1
+      },
+      {
+        "learning_rate": 0.03,
+        "min_child_samples": 20,
+        "n_estimators": 250,
+        "n_jobs": 1,
+        "num_leaves": 15,
+        "verbosity": -1
+      },
+      {
+        "learning_rate": 0.03,
+        "min_child_samples": 50,
+        "n_estimators": 250,
+        "n_jobs": 1,
+        "num_leaves": 15,
+        "verbosity": -1
+      },
+      {
+        "learning_rate": 0.1,
+        "min_child_samples": 20,
+        "n_estimators": 250,
+        "n_jobs": 1,
+        "num_leaves": 15,
+        "verbosity": -1
+      },
+      {
+        "learning_rate": 0.1,
+        "min_child_samples": 50,
+        "n_estimators": 250,
+        "n_jobs": 1,
+        "num_leaves": 15,
+        "verbosity": -1
+      },
+      {
+        "learning_rate": 0.03,
+        "min_child_samples": 20,
+        "n_estimators": 250,
+        "n_jobs": 1,
+        "num_leaves": 31,
+        "verbosity": -1
+      },
+      {
+        "learning_rate": 0.03,
+        "min_child_samples": 50,
+        "n_estimators": 250,
+        "n_jobs": 1,
+        "num_leaves": 31,
+        "verbosity": -1
+      },
+      {
+        "learning_rate": 0.1,
+        "min_child_samples": 20,
+        "n_estimators": 250,
+        "n_jobs": 1,
+        "num_leaves": 31,
+        "verbosity": -1
+      },
+      {
+        "learning_rate": 0.1,
+        "min_child_samples": 50,
+        "n_estimators": 250,
+        "n_jobs": 1,
+        "num_leaves": 31,
+        "verbosity": -1
+      },
+      {
+        "learning_rate": 0.03,
+        "min_child_samples": 20,
+        "n_estimators": 250,
+        "n_jobs": 1,
+        "num_leaves": 63,
+        "verbosity": -1
+      },
+      {
+        "learning_rate": 0.03,
+        "min_child_samples": 50,
+        "n_estimators": 250,
+        "n_jobs": 1,
+        "num_leaves": 63,
+        "verbosity": -1
+      },
+      {
+        "learning_rate": 0.1,
+        "min_child_samples": 20,
+        "n_estimators": 250,
+        "n_jobs": 1,
+        "num_leaves": 63,
+        "verbosity": -1
+      },
+      {
+        "learning_rate": 0.1,
+        "min_child_samples": 50,
+        "n_estimators": 250,
+        "n_jobs": 1,
+        "num_leaves": 63,
+        "verbosity": -1
+      },
+      {
+        "learning_rate": 0.03,
+        "min_child_samples": 20,
+        "n_estimators": 250,
+        "n_jobs": 1,
+        "num_leaves": 127,
+        "verbosity": -1
+      },
+      {
+        "learning_rate": 0.03,
+        "min_child_samples": 50,
+        "n_estimators": 250,
+        "n_jobs": 1,
+        "num_leaves": 127,
+        "verbosity": -1
+      },
+      {
+        "learning_rate": 0.1,
+        "min_child_samples": 20,
+        "n_estimators": 250,
+        "n_jobs": 1,
+        "num_leaves": 127,
+        "verbosity": -1
+      },
+      {
+        "learning_rate": 0.1,
+        "min_child_samples": 50,
+        "n_estimators": 250,
+        "n_jobs": 1,
+        "num_leaves": 127,
+        "verbosity": -1
+      }
+    ],
+    "MLP": [
+      {
+        "alpha": 0.0001,
+        "early_stopping": false,
+        "hidden_layer_sizes": [
+          16
+        ],
+        "max_iter": 300,
+        "scaler": "standard",
+        "tol": 0.0001
+      },
+      {
+        "alpha": 0.0001,
+        "early_stopping": false,
+        "hidden_layer_sizes": [
+          16
+        ],
+        "max_iter": 300,
+        "scaler": "robust",
+        "tol": 0.0001
+      },
+      {
+        "alpha": 0.01,
+        "early_stopping": false,
+        "hidden_layer_sizes": [
+          16
+        ],
+        "max_iter": 300,
+        "scaler": "standard",
+        "tol": 0.0001
+      },
+      {
+        "alpha": 0.01,
+        "early_stopping": false,
+        "hidden_layer_sizes": [
+          16
+        ],
+        "max_iter": 300,
+        "scaler": "robust",
+        "tol": 0.0001
+      },
+      {
+        "alpha": 0.0001,
+        "early_stopping": false,
+        "hidden_layer_sizes": [
+          32
+        ],
+        "max_iter": 300,
+        "scaler": "standard",
+        "tol": 0.0001
+      },
+      {
+        "alpha": 0.0001,
+        "early_stopping": false,
+        "hidden_layer_sizes": [
+          32
+        ],
+        "max_iter": 300,
+        "scaler": "robust",
+        "tol": 0.0001
+      },
+      {
+        "alpha": 0.01,
+        "early_stopping": false,
+        "hidden_layer_sizes": [
+          32
+        ],
+        "max_iter": 300,
+        "scaler": "standard",
+        "tol": 0.0001
+      },
+      {
+        "alpha": 0.01,
+        "early_stopping": false,
+        "hidden_layer_sizes": [
+          32
+        ],
+        "max_iter": 300,
+        "scaler": "robust",
+        "tol": 0.0001
+      },
+      {
+        "alpha": 0.0001,
+        "early_stopping": false,
+        "hidden_layer_sizes": [
+          64
+        ],
+        "max_iter": 300,
+        "scaler": "standard",
+        "tol": 0.0001
+      },
+      {
+        "alpha": 0.0001,
+        "early_stopping": false,
+        "hidden_layer_sizes": [
+          64
+        ],
+        "max_iter": 300,
+        "scaler": "robust",
+        "tol": 0.0001
+      },
+      {
+        "alpha": 0.01,
+        "early_stopping": false,
+        "hidden_layer_sizes": [
+          64
+        ],
+        "max_iter": 300,
+        "scaler": "standard",
+        "tol": 0.0001
+      },
+      {
+        "alpha": 0.01,
+        "early_stopping": false,
+        "hidden_layer_sizes": [
+          64
+        ],
+        "max_iter": 300,
+        "scaler": "robust",
+        "tol": 0.0001
+      },
+      {
+        "alpha": 0.0001,
+        "early_stopping": false,
+        "hidden_layer_sizes": [
+          96
+        ],
+        "max_iter": 300,
+        "scaler": "standard",
+        "tol": 0.0001
+      },
+      {
+        "alpha": 0.0001,
+        "early_stopping": false,
+        "hidden_layer_sizes": [
+          96
+        ],
+        "max_iter": 300,
+        "scaler": "robust",
+        "tol": 0.0001
+      },
+      {
+        "alpha": 0.01,
+        "early_stopping": false,
+        "hidden_layer_sizes": [
+          96
+        ],
+        "max_iter": 300,
+        "scaler": "standard",
+        "tol": 0.0001
+      },
+      {
+        "alpha": 0.01,
+        "early_stopping": false,
+        "hidden_layer_sizes": [
+          96
+        ],
+        "max_iter": 300,
+        "scaler": "robust",
+        "tol": 0.0001
+      },
+      {
+        "alpha": 0.0001,
+        "early_stopping": false,
+        "hidden_layer_sizes": [
+          128
+        ],
+        "max_iter": 300,
+        "scaler": "standard",
+        "tol": 0.0001
+      },
+      {
+        "alpha": 0.0001,
+        "early_stopping": false,
+        "hidden_layer_sizes": [
+          128
+        ],
+        "max_iter": 300,
+        "scaler": "robust",
+        "tol": 0.0001
+      },
+      {
+        "alpha": 0.01,
+        "early_stopping": false,
+        "hidden_layer_sizes": [
+          128
+        ],
+        "max_iter": 300,
+        "scaler": "standard",
+        "tol": 0.0001
+      },
+      {
+        "alpha": 0.01,
+        "early_stopping": false,
+        "hidden_layer_sizes": [
+          128
+        ],
+        "max_iter": 300,
+        "scaler": "robust",
+        "tol": 0.0001
+      }
+    ],
+    "RBF_SVR": [
+      {
+        "C": 0.1,
+        "epsilon": 0.01,
+        "gamma": "scale",
+        "scaler": "standard"
+      },
+      {
+        "C": 0.1,
+        "epsilon": 0.01,
+        "gamma": "scale",
+        "scaler": "robust"
+      },
+      {
+        "C": 0.1,
+        "epsilon": 0.1,
+        "gamma": "scale",
+        "scaler": "standard"
+      },
+      {
+        "C": 0.1,
+        "epsilon": 0.1,
+        "gamma": "scale",
+        "scaler": "robust"
+      },
+      {
+        "C": 1,
+        "epsilon": 0.01,
+        "gamma": "scale",
+        "scaler": "standard"
+      },
+      {
+        "C": 1,
+        "epsilon": 0.01,
+        "gamma": "scale",
+        "scaler": "robust"
+      },
+      {
+        "C": 1,
+        "epsilon": 0.1,
+        "gamma": "scale",
+        "scaler": "standard"
+      },
+      {
+        "C": 1,
+        "epsilon": 0.1,
+        "gamma": "scale",
+        "scaler": "robust"
+      },
+      {
+        "C": 10,
+        "epsilon": 0.01,
+        "gamma": "scale",
+        "scaler": "standard"
+      },
+      {
+        "C": 10,
+        "epsilon": 0.01,
+        "gamma": "scale",
+        "scaler": "robust"
+      },
+      {
+        "C": 10,
+        "epsilon": 0.1,
+        "gamma": "scale",
+        "scaler": "standard"
+      },
+      {
+        "C": 10,
+        "epsilon": 0.1,
+        "gamma": "scale",
+        "scaler": "robust"
+      },
+      {
+        "C": 50,
+        "epsilon": 0.01,
+        "gamma": "scale",
+        "scaler": "standard"
+      },
+      {
+        "C": 50,
+        "epsilon": 0.01,
+        "gamma": "scale",
+        "scaler": "robust"
+      },
+      {
+        "C": 50,
+        "epsilon": 0.1,
+        "gamma": "scale",
+        "scaler": "standard"
+      },
+      {
+        "C": 50,
+        "epsilon": 0.1,
+        "gamma": "scale",
+        "scaler": "robust"
+      },
+      {
+        "C": 100,
+        "epsilon": 0.01,
+        "gamma": "scale",
+        "scaler": "standard"
+      },
+      {
+        "C": 100,
+        "epsilon": 0.01,
+        "gamma": "scale",
+        "scaler": "robust"
+      },
+      {
+        "C": 100,
+        "epsilon": 0.1,
+        "gamma": "scale",
+        "scaler": "standard"
+      },
+      {
+        "C": 100,
+        "epsilon": 0.1,
+        "gamma": "scale",
+        "scaler": "robust"
+      }
+    ],
+    "XGBoost": [
+      {
+        "colsample_bytree": 0.8,
+        "learning_rate": 0.03,
+        "max_depth": 2,
+        "n_estimators": 250,
+        "n_jobs": 1,
+        "objective": "reg:squarederror",
+        "reg_lambda": 1.0,
+        "subsample": 0.7,
+        "tree_method": "hist"
+      },
+      {
+        "colsample_bytree": 0.8,
+        "learning_rate": 0.03,
+        "max_depth": 2,
+        "n_estimators": 250,
+        "n_jobs": 1,
+        "objective": "reg:squarederror",
+        "reg_lambda": 1.0,
+        "subsample": 1.0,
+        "tree_method": "hist"
+      },
+      {
+        "colsample_bytree": 0.8,
+        "learning_rate": 0.1,
+        "max_depth": 2,
+        "n_estimators": 250,
+        "n_jobs": 1,
+        "objective": "reg:squarederror",
+        "reg_lambda": 1.0,
+        "subsample": 0.7,
+        "tree_method": "hist"
+      },
+      {
+        "colsample_bytree": 0.8,
+        "learning_rate": 0.1,
+        "max_depth": 2,
+        "n_estimators": 250,
+        "n_jobs": 1,
+        "objective": "reg:squarederror",
+        "reg_lambda": 1.0,
+        "subsample": 1.0,
+        "tree_method": "hist"
+      },
+      {
+        "colsample_bytree": 0.8,
+        "learning_rate": 0.03,
+        "max_depth": 3,
+        "n_estimators": 250,
+        "n_jobs": 1,
+        "objective": "reg:squarederror",
+        "reg_lambda": 1.0,
+        "subsample": 0.7,
+        "tree_method": "hist"
+      },
+      {
+        "colsample_bytree": 0.8,
+        "learning_rate": 0.03,
+        "max_depth": 3,
+        "n_estimators": 250,
+        "n_jobs": 1,
+        "objective": "reg:squarederror",
+        "reg_lambda": 1.0,
+        "subsample": 1.0,
+        "tree_method": "hist"
+      },
+      {
+        "colsample_bytree": 0.8,
+        "learning_rate": 0.1,
+        "max_depth": 3,
+        "n_estimators": 250,
+        "n_jobs": 1,
+        "objective": "reg:squarederror",
+        "reg_lambda": 1.0,
+        "subsample": 0.7,
+        "tree_method": "hist"
+      },
+      {
+        "colsample_bytree": 0.8,
+        "learning_rate": 0.1,
+        "max_depth": 3,
+        "n_estimators": 250,
+        "n_jobs": 1,
+        "objective": "reg:squarederror",
+        "reg_lambda": 1.0,
+        "subsample": 1.0,
+        "tree_method": "hist"
+      },
+      {
+        "colsample_bytree": 0.8,
+        "learning_rate": 0.03,
+        "max_depth": 4,
+        "n_estimators": 250,
+        "n_jobs": 1,
+        "objective": "reg:squarederror",
+        "reg_lambda": 1.0,
+        "subsample": 0.7,
+        "tree_method": "hist"
+      },
+      {
+        "colsample_bytree": 0.8,
+        "learning_rate": 0.03,
+        "max_depth": 4,
+        "n_estimators": 250,
+        "n_jobs": 1,
+        "objective": "reg:squarederror",
+        "reg_lambda": 1.0,
+        "subsample": 1.0,
+        "tree_method": "hist"
+      },
+      {
+        "colsample_bytree": 0.8,
+        "learning_rate": 0.1,
+        "max_depth": 4,
+        "n_estimators": 250,
+        "n_jobs": 1,
+        "objective": "reg:squarederror",
+        "reg_lambda": 1.0,
+        "subsample": 0.7,
+        "tree_method": "hist"
+      },
+      {
+        "colsample_bytree": 0.8,
+        "learning_rate": 0.1,
+        "max_depth": 4,
+        "n_estimators": 250,
+        "n_jobs": 1,
+        "objective": "reg:squarederror",
+        "reg_lambda": 1.0,
+        "subsample": 1.0,
+        "tree_method": "hist"
+      },
+      {
+        "colsample_bytree": 0.8,
+        "learning_rate": 0.03,
+        "max_depth": 5,
+        "n_estimators": 250,
+        "n_jobs": 1,
+        "objective": "reg:squarederror",
+        "reg_lambda": 1.0,
+        "subsample": 0.7,
+        "tree_method": "hist"
+      },
+      {
+        "colsample_bytree": 0.8,
+        "learning_rate": 0.03,
+        "max_depth": 5,
+        "n_estimators": 250,
+        "n_jobs": 1,
+        "objective": "reg:squarederror",
+        "reg_lambda": 1.0,
+        "subsample": 1.0,
+        "tree_method": "hist"
+      },
+      {
+        "colsample_bytree": 0.8,
+        "learning_rate": 0.1,
+        "max_depth": 5,
+        "n_estimators": 250,
+        "n_jobs": 1,
+        "objective": "reg:squarederror",
+        "reg_lambda": 1.0,
+        "subsample": 0.7,
+        "tree_method": "hist"
+      },
+      {
+        "colsample_bytree": 0.8,
+        "learning_rate": 0.1,
+        "max_depth": 5,
+        "n_estimators": 250,
+        "n_jobs": 1,
+        "objective": "reg:squarederror",
+        "reg_lambda": 1.0,
+        "subsample": 1.0,
+        "tree_method": "hist"
+      },
+      {
+        "colsample_bytree": 0.8,
+        "learning_rate": 0.03,
+        "max_depth": 6,
+        "n_estimators": 250,
+        "n_jobs": 1,
+        "objective": "reg:squarederror",
+        "reg_lambda": 1.0,
+        "subsample": 0.7,
+        "tree_method": "hist"
+      },
+      {
+        "colsample_bytree": 0.8,
+        "learning_rate": 0.03,
+        "max_depth": 6,
+        "n_estimators": 250,
+        "n_jobs": 1,
+        "objective": "reg:squarederror",
+        "reg_lambda": 1.0,
+        "subsample": 1.0,
+        "tree_method": "hist"
+      },
+      {
+        "colsample_bytree": 0.8,
+        "learning_rate": 0.1,
+        "max_depth": 6,
+        "n_estimators": 250,
+        "n_jobs": 1,
+        "objective": "reg:squarederror",
+        "reg_lambda": 1.0,
+        "subsample": 0.7,
+        "tree_method": "hist"
+      },
+      {
+        "colsample_bytree": 0.8,
+        "learning_rate": 0.1,
+        "max_depth": 6,
+        "n_estimators": 250,
+        "n_jobs": 1,
+        "objective": "reg:squarederror",
+        "reg_lambda": 1.0,
+        "subsample": 1.0,
+        "tree_method": "hist"
+      }
+    ]
+  },
+  "historical_reuse_evaluation": {
+    "fit": "Choose each family configuration using all eligible development CV through 2023-06-30; refit using development rows only.",
+    "label": "EXPLORATORY_REUSE; no claim of fresh confirmation.",
+    "periods": [
+      "2023-07-01 through 2024-03-03 20:00 UTC (Phase-6 period already inspected)",
+      "2024-03-04 through 2026-09-29 20:00 UTC (Phase-7 period already inspected)"
+    ]
+  },
+  "information_sets": {
+    "S0": "36 lags (6 variables x t-5..t) + fixed 12 calendar indicators.",
+    "S1": "exact S0 features + 24 lags (4 derivatives x t-5..t) + 8 fixed derivative-state/change/interaction features.",
+    "comparison": "identical complete-case dates; only derivatives information differs."
+  },
+  "innovation_features": {
+    "changes": "one-step first differences for funding and basis.",
+    "oi_flow": "30-day robust shock: subtract median of exactly 180 preceding 4-hour observations and divide by 1.4826*MAD; no centered windows; zero MAD missing.",
+    "robustness": "14-day and 60-day windows are secondary only and are not used in main feature set."
+  },
+  "multiplicity": {
+    "best_model": "separate per-asset comparison.",
+    "direct_model_families": "Holm within each asset across 9 frozen model families.",
+    "exploratory_outputs": "reported transparently; no result may upgrade an independent confirmatory claim.",
+    "qml": "Holm within each asset across frozen quantum configurations/families versus matched classical."
+  },
+  "negative_controls": {
+    "post_target": "future derivative history t+7..t+12 predicting target t+1..t+6; compare matched SpotOnly and SpotPlusFutureDerivatives models.",
+    "random_features": "not primary; omitted."
+  },
+  "outer_development_evaluation": {
+    "folds": [
+      {
+        "id": "F1",
+        "train_start": "2021-12-01T00:00:00Z",
+        "validation_end_exclusive": "2023-01-01T00:00:00Z",
+        "validation_start": "2022-10-01T00:00:00Z"
+      },
+      {
+        "id": "F2",
+        "train_start": "2021-12-01T00:00:00Z",
+        "validation_end_exclusive": "2023-04-01T00:00:00Z",
+        "validation_start": "2023-01-01T00:00:00Z"
+      },
+      {
+        "id": "F3",
+        "train_start": "2021-12-01T00:00:00Z",
+        "validation_end_exclusive": "2023-07-01T00:00:00Z",
+        "validation_start": "2023-04-01T00:00:00Z"
+      }
+    ],
+    "inner": "For each outer fold use the 180 calendar days preceding its validation start split into three consecutive 60-day blocks; expanding train history only. Purge at least 6 four-hour intervals at each boundary; no target window crosses boundaries. Hyperparameters selected from inner folds only; outer block is scored once.",
+    "interpretation": "Nested walk-forward development OOF is internal predictive evaluation on previously used development history, not untouched confirmation."
+  },
+  "preprocessing": {
+    "GRU": "Actual six-step sequence for base variables; static calendar/derivative features appended to GRU representation; feature scaler fit on training folds only.",
+    "imputation": "none",
+    "linear_kernel_neural": "Compare StandardScaler and RobustScaler (median/IQR) where in the 20-config family grids; fitted independently on each inner training fold.",
+    "tree_boosting": "Raw features.",
+    "winsorization": "none; preserve and report tails."
+  },
+  "primary_inference": {
+    "dm_loss_difference": "HAC Bartlett Newey-West with 6 lags, secondary supporting evidence only.",
+    "paired_temporal_moving_block_bootstrap": {
+      "block_lengths_4h_intervals": [
+        42,
+        84
+      ],
+      "replications": 1000,
+      "same_resampled_dates_for_S0_S1": true,
+      "seed": 20261007
+    }
+  },
+  "primary_target": {
+    "assets": [
+      "BTC",
+      "ETH"
+    ],
+    "definition": "mean(spot_amihud[t+1:t+6]); spot_amihud=1e6*abs(4-hour log return)/4-hour spot quote volume (USDT); target requires all six future intervals and ends at t+6.",
+    "name": "future_amihud_24h_mean",
+    "other_targets": "excluded from primary study"
+  },
+  "prohibitions": [
+    "No causal interpretation.",
+    "No new market data downloads.",
+    "No changes to Stage 3 or Phase 5-7.",
+    "No sample/target/feature/model changes after results.",
+    "No evaluation period described as fresh confirmation."
+  ],
+  "purpose": "Test whether joint Binance USD\u24c8-M perpetual derivatives history adds predictive information for 24-hour future Binance spot Amihud beyond a matched strong spot-only model; targeted classical/QML comparison.",
+  "qml": {
+    "claims": "no hardware run or quantum-advantage claim.",
+    "encoding": "angle encoding primary only; no encoding search.",
+    "hybrid": "single linear classical encoder to 4/6/8 latent angles, shallow quantum layer, scalar classical output; 5 seeds; constrained encoder; matched compact classical model.",
+    "kernel": "fidelity quantum kernel with fixed angle encoding and one fixed entangling layer; 4, 6, 8 qubits; training-only PCA and scaling; deterministic 128-landmark Nystr\u00f6m approximation. Matched RBF kernel on identical PCA scores, dates, and landmark count.",
+    "packages": "PennyLane CPU simulator, installed/version recorded before use.",
+    "qnn": "shallow two-layer variational circuit; angle encoding; 4/6/8 qubits; 5 seeds; Adam; training-only PCA/scaling. Matched compact MLP on identical compressed dimensions and splits."
+  },
+  "qml_fixtures": {
+    "checks": "finite loss, non-degenerate prediction, fixed-seed reproducibility, performance above mean baseline on linear and nonlinear fixture; otherwise method validation fails and empirical method is not used.",
+    "linear": "y=x0+noise",
+    "nonlinear": "y=x0*x1+noise",
+    "null": "independent Gaussian noise"
+  },
+  "random_seeds": {
+    "bootstrap": 20261007,
+    "model_search": 20261007,
+    "qml_seeds": [
+      101,
+      211,
+      307,
+      401,
+      503
+    ]
+  },
+  "regimes": {
+    "regimes": [
+      "high/low spot RV at development median",
+      "high/normal absolute OI shock at development 90th percentile",
+      "extreme/normal absolute funding at development 90th percentile",
+      "positive/negative basis at zero",
+      "high/low Amihud at development median"
+    ],
+    "role": "exploratory, no primary model selection.",
+    "threshold_source": "development only"
+  },
+  "residual_learning": {
+    "interpretation": "one method only -> MODEL_SENSITIVE_RESIDUAL_SIGNAL; at least two independent validated model families with paired block-bootstrap support -> RESIDUAL_INCREMENTAL_INFORMATION.",
+    "target": "Observed 24h future Amihud minus strict forward OOF prediction from the development-selected strongest SPOT_ONLY model.",
+    "training_rule": "All training residuals must be generated strictly out of fold with the spot-only model fit only to earlier dates; residual derivative learners use derivatives-only information and chronological nested folds."
+  },
+  "search_budget": {
+    "configs_per_family": 20,
+    "inner_folds_per_outer": 3,
+    "primary_metric": "MAE on frozen selected target transformation",
+    "same_grid_and_trial_count_for_S0_and_S1": true,
+    "tie_rule": "registry order"
+  },
+  "study_id": "targeted_24h_amihud_001",
+  "target_transform": {
+    "candidates": [
+      "T1 raw y",
+      "T2 log1p(y)",
+      "T3 log(y+1e-8)",
+      "T4 log(10000*y+1e-8)"
+    ],
+    "epsilon": 1e-08,
+    "rationale": "epsilon/c are fixed from the certified 1e6 Amihud units and numerical stability; no evaluation data or significance-based selection.",
+    "scale_c": 10000,
+    "selection": "select once using fixed Ridge(alpha=1), StandardScaler within each train fold and three expanding validation folds restricted to 2021-12..2022-09; score mean asset/fold MAE divided by the training-fold IQR of transformed target; lower wins; same selected transform for BTC and ETH; tie order T1,T2,T3,T4. No model-family or S0/S1 comparison is used for transformation selection. Freeze realized choice before main comparison."
+  }
+}

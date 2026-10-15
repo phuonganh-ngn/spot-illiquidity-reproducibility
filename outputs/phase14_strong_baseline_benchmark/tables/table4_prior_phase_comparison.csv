@@ -1,0 +1,4 @@
+experiment,endpoint,BTC,ETH,evidence_status
+Phase 6,Six-category average relative log-MAE reduction (%),18.56477335524347,13.644812507260147,ORIGINAL_FROZEN_HISTORICAL_REGISTERED_RESULT; 2/18 tasks passed
+Phase 13,Six-category retrospective sensitivity (%),-0.9744155837036567,0.8080744892608575,RETROSPECTIVE_TARGET_SCALING_SENSITIVITY
+Phase 14,Development-selected best-system Delta/relative reduction,Delta=1.2196702e-07; relative=1.9920%,Delta=7.6050104e-07; relative=5.1018%,RETROSPECTIVE_REANALYSIS; different endpoint

@@ -1,0 +1,74 @@
+{
+  "empirical_results_inspected": false,
+  "fixture_validation": "VALID",
+  "packages": {
+    "arch": "8.0.0",
+    "catboost": "1.2.10",
+    "lightgbm": "4.7.0",
+    "numpy": "2.5.3",
+    "pandas": "3.0.6",
+    "pennylane": "0.45.1",
+    "pennylane-lightning": "0.45.0",
+    "scikit-learn": "1.9.1",
+    "scipy": "1.18.1",
+    "statsmodels": "0.15.0",
+    "torch": "2.14.1",
+    "xgboost": "3.4.1"
+  },
+  "python": "3.12.3",
+  "qml_backend": "PennyLane default.qubit exact CPU statevector; no shots or hardware",
+  "qml_models": {
+    "hybrid": {
+      "batch_size": 64,
+      "encoder": "single linear map from <=16 training-only PCA scores",
+      "epochs": 40,
+      "layers": 2,
+      "learning_rate": 0.01,
+      "optimizer": "Adam",
+      "qubits": [
+        4,
+        6,
+        8
+      ],
+      "seeds": [
+        101,
+        211,
+        307,
+        401,
+        503
+      ]
+    },
+    "matched_classical": "RBF kernel ridge and compact MLP use same training-only PCA inputs, folds, rows, and 128 landmarks / latent dimension",
+    "qnn": {
+      "batch_size": 64,
+      "embedding": "Y angle encoding",
+      "epochs": 40,
+      "layers": 2,
+      "learning_rate": 0.01,
+      "optimizer": "Adam",
+      "qubits": [
+        4,
+        6,
+        8
+      ],
+      "seeds": [
+        101,
+        211,
+        307,
+        401,
+        503
+      ]
+    },
+    "quantum_kernel": {
+      "embedding": "Hadamard + Y angle embedding + RZ(x/2) + cyclic CNOT ring",
+      "landmark_selection": "equally spaced chronological training indices",
+      "nystrom_landmarks": 128,
+      "qubits": [
+        4,
+        6,
+        8
+      ]
+    }
+  },
+  "status": "INSTALLED_AND_IMPORTED"
+}

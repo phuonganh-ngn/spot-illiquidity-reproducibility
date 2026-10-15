@@ -1,0 +1,83 @@
+{
+  "fixtures": [
+    {
+      "finite": true,
+      "fixture": "linear",
+      "max_abs_prediction_delta": 0.0,
+      "metadata": {
+        "alpha": 0.01,
+        "converged": true,
+        "hidden_width": 4,
+        "input_components": 4,
+        "input_scaler": "training-only StandardScaler",
+        "matched_classical": "one-hidden-layer MLP",
+        "max_iter": 2000,
+        "n_iter": 1705,
+        "pca_components": 4,
+        "pca_explained_variance_ratio_sum": 0.4301407648470148,
+        "post_pca_scaler": "training-only StandardScaler",
+        "seed": 81723,
+        "tolerance": 1e-05,
+        "warnings": []
+      },
+      "reproducible_fixed_seed": true,
+      "test_mae": 0.7442713753638828,
+      "training_mean_baseline_mae": 0.8145018230090711
+    },
+    {
+      "finite": true,
+      "fixture": "nonlinear_interaction",
+      "max_abs_prediction_delta": 0.0,
+      "metadata": {
+        "alpha": 0.01,
+        "converged": true,
+        "hidden_width": 4,
+        "input_components": 4,
+        "input_scaler": "training-only StandardScaler",
+        "matched_classical": "one-hidden-layer MLP",
+        "max_iter": 2000,
+        "n_iter": 935,
+        "pca_components": 4,
+        "pca_explained_variance_ratio_sum": 0.4301407648470148,
+        "post_pca_scaler": "training-only StandardScaler",
+        "seed": 81723,
+        "tolerance": 1e-05,
+        "warnings": []
+      },
+      "reproducible_fixed_seed": true,
+      "test_mae": 0.6892152566300824,
+      "training_mean_baseline_mae": 0.6589799505155967
+    },
+    {
+      "finite": true,
+      "fixture": "null_noise",
+      "max_abs_prediction_delta": 0.0,
+      "metadata": {
+        "alpha": 0.01,
+        "converged": true,
+        "hidden_width": 4,
+        "input_components": 4,
+        "input_scaler": "training-only StandardScaler",
+        "matched_classical": "one-hidden-layer MLP",
+        "max_iter": 2000,
+        "n_iter": 1309,
+        "pca_components": 4,
+        "pca_explained_variance_ratio_sum": 0.4301407648470148,
+        "post_pca_scaler": "training-only StandardScaler",
+        "seed": 81723,
+        "tolerance": 1e-05,
+        "warnings": []
+      },
+      "reproducible_fixed_seed": true,
+      "test_mae": 0.8240943010741322,
+      "training_mean_baseline_mae": 0.7221434596124444
+    }
+  ],
+  "max_iter": 2000,
+  "n_test": 40,
+  "n_train": 120,
+  "no_empirical_data_loaded": true,
+  "seed": 81723,
+  "status": "VALID",
+  "tolerance": 1e-05
+}

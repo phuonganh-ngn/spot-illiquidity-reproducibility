@@ -1,0 +1,9 @@
+{
+  "features": [
+    "5 UTC four-hour-slot dummies; slot 0 reference",
+    "6 UTC weekday dummies; Monday reference",
+    "funding schedule window = interval start hour in {00,08,16} UTC"
+  ],
+  "frozen": true,
+  "usage": "included identically in both information sets; deterministic calendar only"
+}

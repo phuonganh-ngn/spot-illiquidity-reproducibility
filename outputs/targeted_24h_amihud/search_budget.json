@@ -1,0 +1,30 @@
+{
+  "configs_per_family": 20,
+  "family_trials": {
+    "CatBoost": 20,
+    "ElasticNet": 20,
+    "ExtraTrees": 20,
+    "GRU": 20,
+    "HistGradientBoosting": 20,
+    "LightGBM": 20,
+    "MLP": 20,
+    "RBF_SVR": 20,
+    "XGBoost": 20
+  },
+  "inner_folds_per_outer": 3,
+  "primary_metric": "MAE on frozen selected target transformation",
+  "qml_qubits": [
+    4,
+    6,
+    8
+  ],
+  "qml_seeds": [
+    101,
+    211,
+    307,
+    401,
+    503
+  ],
+  "same_grid_and_trial_count_for_S0_and_S1": true,
+  "tie_rule": "registry order"
+}

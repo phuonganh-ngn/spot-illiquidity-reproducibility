@@ -1,0 +1,184 @@
+{
+  "epochs": 40,
+  "fixture_definitions": {
+    "linear": "y=x0+0.35*x1+N(0,0.08^2)",
+    "nonlinear_interaction": "y=x0*x1+0.3*sin(pi*x2)+N(0,0.08^2)",
+    "null_noise": "y independent N(0,1)"
+  },
+  "n_test": 40,
+  "n_train": 120,
+  "no_empirical_data_loaded": true,
+  "qubits": 4,
+  "results": [
+    {
+      "finite": true,
+      "fixture": "linear",
+      "max_abs_prediction_delta": 0.0,
+      "metadata": {
+        "backend": "default.qubit exact statevector",
+        "batch_size": 64,
+        "circuit": "AngleEmbedding(Y) plus 2 StronglyEntanglingLayers; Pauli-Z vector, trainable linear output",
+        "epochs": 40,
+        "hybrid_encoder": null,
+        "input_scaler": "training-only StandardScaler",
+        "learning_rate": 0.01,
+        "method": "variational quantum regressor",
+        "n_qubits": 4,
+        "pca_components": 4,
+        "pca_explained_variance_ratio_sum": 1.0,
+        "post_pca_scaler": "training-only StandardScaler",
+        "seed": 81723,
+        "seeds": [
+          81723
+        ],
+        "shots": null
+      },
+      "method": "qnn",
+      "reproducible_fixed_seed": true,
+      "test_mae": 0.35938684189728304,
+      "training_mean_baseline_mae": 0.481390586028631
+    },
+    {
+      "finite": true,
+      "fixture": "linear",
+      "max_abs_prediction_delta": 0.0,
+      "metadata": {
+        "backend": "default.qubit exact statevector",
+        "batch_size": 64,
+        "circuit": "AngleEmbedding(Y) plus 2 StronglyEntanglingLayers; Pauli-Z vector, trainable linear output",
+        "epochs": 40,
+        "hybrid_encoder": "single linear layer from training-only PCA scores",
+        "input_scaler": "training-only StandardScaler",
+        "learning_rate": 0.01,
+        "method": "hybrid variational quantum regressor",
+        "n_qubits": 4,
+        "pca_components": 4,
+        "pca_explained_variance_ratio_sum": 1.0,
+        "post_pca_scaler": "training-only StandardScaler",
+        "seed": 81723,
+        "seeds": [
+          81723
+        ],
+        "shots": null
+      },
+      "method": "hybrid_qnn",
+      "reproducible_fixed_seed": true,
+      "test_mae": 0.0863247885722849,
+      "training_mean_baseline_mae": 0.481390586028631
+    },
+    {
+      "finite": true,
+      "fixture": "nonlinear_interaction",
+      "max_abs_prediction_delta": 0.0,
+      "metadata": {
+        "backend": "default.qubit exact statevector",
+        "batch_size": 64,
+        "circuit": "AngleEmbedding(Y) plus 2 StronglyEntanglingLayers; Pauli-Z vector, trainable linear output",
+        "epochs": 40,
+        "hybrid_encoder": null,
+        "input_scaler": "training-only StandardScaler",
+        "learning_rate": 0.01,
+        "method": "variational quantum regressor",
+        "n_qubits": 4,
+        "pca_components": 4,
+        "pca_explained_variance_ratio_sum": 1.0,
+        "post_pca_scaler": "training-only StandardScaler",
+        "seed": 81723,
+        "seeds": [
+          81723
+        ],
+        "shots": null
+      },
+      "method": "qnn",
+      "reproducible_fixed_seed": true,
+      "test_mae": 0.1938781421345599,
+      "training_mean_baseline_mae": 0.24321762075515346
+    },
+    {
+      "finite": true,
+      "fixture": "nonlinear_interaction",
+      "max_abs_prediction_delta": 0.0,
+      "metadata": {
+        "backend": "default.qubit exact statevector",
+        "batch_size": 64,
+        "circuit": "AngleEmbedding(Y) plus 2 StronglyEntanglingLayers; Pauli-Z vector, trainable linear output",
+        "epochs": 40,
+        "hybrid_encoder": "single linear layer from training-only PCA scores",
+        "input_scaler": "training-only StandardScaler",
+        "learning_rate": 0.01,
+        "method": "hybrid variational quantum regressor",
+        "n_qubits": 4,
+        "pca_components": 4,
+        "pca_explained_variance_ratio_sum": 1.0,
+        "post_pca_scaler": "training-only StandardScaler",
+        "seed": 81723,
+        "seeds": [
+          81723
+        ],
+        "shots": null
+      },
+      "method": "hybrid_qnn",
+      "reproducible_fixed_seed": true,
+      "test_mae": 0.1829981698604666,
+      "training_mean_baseline_mae": 0.24321762075515346
+    },
+    {
+      "finite": true,
+      "fixture": "null_noise",
+      "max_abs_prediction_delta": 0.0,
+      "metadata": {
+        "backend": "default.qubit exact statevector",
+        "batch_size": 64,
+        "circuit": "AngleEmbedding(Y) plus 2 StronglyEntanglingLayers; Pauli-Z vector, trainable linear output",
+        "epochs": 40,
+        "hybrid_encoder": null,
+        "input_scaler": "training-only StandardScaler",
+        "learning_rate": 0.01,
+        "method": "variational quantum regressor",
+        "n_qubits": 4,
+        "pca_components": 4,
+        "pca_explained_variance_ratio_sum": 1.0,
+        "post_pca_scaler": "training-only StandardScaler",
+        "seed": 81723,
+        "seeds": [
+          81723
+        ],
+        "shots": null
+      },
+      "method": "qnn",
+      "reproducible_fixed_seed": true,
+      "test_mae": 0.6197766864862865,
+      "training_mean_baseline_mae": 0.6036848620755965
+    },
+    {
+      "finite": true,
+      "fixture": "null_noise",
+      "max_abs_prediction_delta": 0.0,
+      "metadata": {
+        "backend": "default.qubit exact statevector",
+        "batch_size": 64,
+        "circuit": "AngleEmbedding(Y) plus 2 StronglyEntanglingLayers; Pauli-Z vector, trainable linear output",
+        "epochs": 40,
+        "hybrid_encoder": "single linear layer from training-only PCA scores",
+        "input_scaler": "training-only StandardScaler",
+        "learning_rate": 0.01,
+        "method": "hybrid variational quantum regressor",
+        "n_qubits": 4,
+        "pca_components": 4,
+        "pca_explained_variance_ratio_sum": 1.0,
+        "post_pca_scaler": "training-only StandardScaler",
+        "seed": 81723,
+        "seeds": [
+          81723
+        ],
+        "shots": null
+      },
+      "method": "hybrid_qnn",
+      "reproducible_fixed_seed": true,
+      "test_mae": 0.7011816237236295,
+      "training_mean_baseline_mae": 0.6036848620755965
+    }
+  ],
+  "seed": 81723,
+  "status": "VALID"
+}

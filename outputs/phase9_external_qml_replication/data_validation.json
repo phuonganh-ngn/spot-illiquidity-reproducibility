@@ -1,0 +1,251 @@
+{
+  "all_model_evaluation_performed_after_freeze": true,
+  "assets": {
+    "BTC": {
+      "basis_complete_4h_rows": 4388,
+      "common_complete_model_rows": 4201,
+      "decision": {
+        "delta_i_supported": false,
+        "delta_q_supported": false,
+        "material_placebo_warning": false,
+        "primary_model": "Hybrid QNN 4 qubits",
+        "requirements": {
+          "at_least_four_of_five_seeds_favor_qml": false,
+          "delta_i_positive_and_42block_ci_positive_and_holm_lt_0_05": false,
+          "delta_q_positive_and_42block_ci_positive_and_holm_lt_0_05": false,
+          "no_material_impossible_time_placebo": true
+        },
+        "seed_requirement_pass": false,
+        "seeds_favoring_qml": 3,
+        "status": "FAIL"
+      },
+      "delta_i": 3.592009504958662e-07,
+      "delta_i_ci42": [
+        -3.9301147647779404e-08,
+        6.959473947088667e-07
+      ],
+      "delta_i_ci84": [
+        -8.802611160965063e-08,
+        6.95138426223774e-07
+      ],
+      "delta_i_hac_p": 0.039104101957754274,
+      "delta_i_holm42": 0.057942057942057944,
+      "delta_i_p42": 0.057942057942057944,
+      "delta_i_p84": 0.08391608391608392,
+      "delta_q": 2.6475050637110474e-07,
+      "delta_q_ci42": [
+        -6.128829290986868e-08,
+        6.232505071190659e-07
+      ],
+      "delta_q_ci84": [
+        -9.537541625186186e-08,
+        6.299807782181384e-07
+      ],
+      "delta_q_holm42": 0.26373626373626374,
+      "delta_q_p42": 0.13186813186813187,
+      "delta_q_p84": 0.16783216783216784,
+      "duplicate_period_start": 0,
+      "expected_rows": 4381,
+      "first_date": "2024-10-06T20:00:00+00:00",
+      "funding_8h_interval_count": 2192,
+      "funding_settlement_events": 2193,
+      "holdout_first": "2026-03-01T20:00:00+00:00",
+      "holdout_last": "2026-10-06T20:00:00+00:00",
+      "holdout_n": 1315,
+      "last_date": "2026-10-06T20:00:00+00:00",
+      "negative_control": {
+        "ci42": [
+          -3.9371092224483436e-08,
+          4.67884539008566e-07
+        ],
+        "delta": 1.8895619352175175e-07,
+        "holm_p42": 0.14385614385614387,
+        "material_positive_warning": false,
+        "p42": 0.14385614385614387
+      },
+      "oi_log_change_gt_10pct_count": 7,
+      "oi_log_change_gt_25pct_count": 1,
+      "panel_rows": 4381,
+      "required_coverage_pass": true,
+      "required_coverage_pct": {
+        "basis_mean": 100.0,
+        "funding_rate_state": 100.0,
+        "future_amihud_24h_mean": 100.0,
+        "futures_taker_imbalance": 100.0,
+        "oi_log_change": 100.0,
+        "spot_amihud": 100.0,
+        "spot_realized_volatility": 100.0,
+        "spot_return": 100.0
+      },
+      "seed_deltas_qml_vs_mlp": [
+        2.1522352122869824e-07,
+        -9.85946357739896e-07,
+        8.229382107570517e-09,
+        3.864676185980514e-07,
+        -5.238955882894241e-07
+      ],
+      "seeds_favoring_qml": 3,
+      "spot_5m_duplicates": 0,
+      "spot_5m_missing": 0,
+      "spotonly_mlp_transformed_mae": 1.4289508370220447e-05,
+      "spotonly_original_mae": 1.4384751777891482e-05,
+      "spotonly_qml_transformed_mae": 1.4024757863849345e-05,
+      "spotonly_transformed_mae": 1.4383958814345209e-05
+    },
+    "ETH": {
+      "basis_complete_4h_rows": 4388,
+      "common_complete_model_rows": 4201,
+      "decision": {
+        "delta_i_supported": false,
+        "delta_q_supported": false,
+        "material_placebo_warning": false,
+        "primary_model": "QNN 6 qubits",
+        "requirements": {
+          "at_least_four_of_five_seeds_favor_qml": false,
+          "delta_i_positive_and_42block_ci_positive_and_holm_lt_0_05": false,
+          "delta_q_positive_and_42block_ci_positive_and_holm_lt_0_05": false,
+          "no_material_impossible_time_placebo": true
+        },
+        "seed_requirement_pass": false,
+        "seeds_favoring_qml": 1,
+        "status": "FAIL"
+      },
+      "delta_i": -1.9259230369914844e-06,
+      "delta_i_ci42": [
+        -3.590651220072142e-06,
+        -2.986881949008769e-07
+      ],
+      "delta_i_ci84": [
+        -3.5058717972355982e-06,
+        -3.08645295268452e-07
+      ],
+      "delta_i_hac_p": 0.006268628661953235,
+      "delta_i_holm42": 0.029970029970029972,
+      "delta_i_p42": 0.014985014985014986,
+      "delta_i_p84": 0.022977022977022976,
+      "delta_q": -3.4300983657158433e-07,
+      "delta_q_ci42": [
+        -1.2309467060671176e-06,
+        4.3798405940782684e-07
+      ],
+      "delta_q_ci84": [
+        -1.2755212381663857e-06,
+        5.660304353195717e-07
+      ],
+      "delta_q_holm42": 0.44255744255744256,
+      "delta_q_p42": 0.44255744255744256,
+      "delta_q_p84": 0.46353646353646355,
+      "duplicate_period_start": 0,
+      "expected_rows": 4381,
+      "first_date": "2024-10-06T20:00:00+00:00",
+      "funding_8h_interval_count": 2192,
+      "funding_settlement_events": 2193,
+      "holdout_first": "2026-03-01T20:00:00+00:00",
+      "holdout_last": "2026-10-06T20:00:00+00:00",
+      "holdout_n": 1315,
+      "last_date": "2026-10-06T20:00:00+00:00",
+      "negative_control": {
+        "ci42": [
+          -3.988720464163492e-06,
+          -1.4647961353975276e-06
+        ],
+        "delta": -2.806471068102829e-06,
+        "holm_p42": 0.001998001998001998,
+        "material_positive_warning": false,
+        "p42": 0.000999000999000999
+      },
+      "oi_log_change_gt_10pct_count": 8,
+      "oi_log_change_gt_25pct_count": 1,
+      "panel_rows": 4381,
+      "required_coverage_pass": true,
+      "required_coverage_pct": {
+        "basis_mean": 100.0,
+        "funding_rate_state": 100.0,
+        "future_amihud_24h_mean": 100.0,
+        "futures_taker_imbalance": 100.0,
+        "oi_log_change": 100.0,
+        "spot_amihud": 100.0,
+        "spot_realized_volatility": 100.0,
+        "spot_return": 100.0
+      },
+      "seed_deltas_qml_vs_mlp": [
+        -8.238797419793087e-08,
+        -1.0027734718397278e-07,
+        -1.4903188246856717e-06,
+        -8.44718409505808e-07,
+        5.442513720313742e-07
+      ],
+      "seeds_favoring_qml": 1,
+      "spot_5m_duplicates": 0,
+      "spot_5m_missing": 0,
+      "spotonly_mlp_transformed_mae": 7.20959256878543e-05,
+      "spotonly_original_mae": 7.05298280904266e-05,
+      "spotonly_qml_transformed_mae": 7.243893552442588e-05,
+      "spotonly_transformed_mae": 7.05130124874344e-05
+    }
+  },
+  "common_model_dates": 4201,
+  "common_train_cut": "2026-03-01T20:00:00+00:00",
+  "notes": [
+    "Pandas 3 timestamp-unit mismatch was discovered during pre-model QA and corrected by normalizing as-of timestamps to nanoseconds; the synthetic as-of fixture and 100% core coverage passed after correction.",
+    "The 180-observation robust-shock warm-up is intentional and leaves 4201 complete common model rows from 4381 calendar origins."
+  ],
+  "pre_model_freeze_hash_verified": true,
+  "pre_model_freeze_sha256": "11344198427465e1b28e99694520252b1a7c1dea8d8f08f64ead1f76119dcb68",
+  "pre_model_freeze_validation": {
+    "common_calendar_split": "PASS",
+    "horizon_purge": "PASS",
+    "model_fitting_performed": false,
+    "model_results_absent_before_freeze": true,
+    "panel_rows_unique_and_complete": {
+      "BTC": true,
+      "ETH": true
+    },
+    "pre_model_freeze_manifest_sha256": "11344198427465e1b28e99694520252b1a7c1dea8d8f08f64ead1f76119dcb68",
+    "prior_stage_immutability": "PASS",
+    "protocol_amendment_hashes": "PASS",
+    "qml_fixture": "VALID",
+    "raw_integrity": "PASS",
+    "sample_dates_and_calendar": "PASS",
+    "sample_window_hash": "PASS",
+    "semantic_parity": {
+      "Basis": "PASS",
+      "Funding": "PASS",
+      "Futures Taker Imbalance": "PASS",
+      "OI Log Change": "PASS",
+      "Open Interest": "PASS",
+      "Spot Price": "PASS",
+      "Spot Quote Volume": "PASS"
+    },
+    "status": "PASS"
+  },
+  "previous_stage_hashes_unchanged": true,
+  "raw_archive_integrity": {
+    "duplicate_parsed_paths": 0,
+    "duplicate_required_paths": 0,
+    "fully_parsed_archives": 2924,
+    "missing_parse_records": 0,
+    "required_archives": 2924,
+    "status": "PASS"
+  },
+  "raw_hash_after_model": "PASS",
+  "raw_hash_before_model": "PASS",
+  "raw_hash_post_model_count": 2924,
+  "sample_amendment_sha256_verified": true,
+  "sample_window": {
+    "end_inclusive": "2026-10-06T20:00:00Z",
+    "expected_4h_timestamps_per_asset": 4381,
+    "start": "2024-10-06T20:00:00Z"
+  },
+  "sample_window_sha256_verified": true,
+  "semantic_parity": {
+    "Basis": "PASS",
+    "Funding": "PASS",
+    "Futures Taker Imbalance": "PASS",
+    "OI Log Change": "PASS",
+    "Open Interest": "PASS",
+    "Spot Price": "PASS",
+    "Spot Quote Volume": "PASS"
+  },
+  "status": "PASS"
+}

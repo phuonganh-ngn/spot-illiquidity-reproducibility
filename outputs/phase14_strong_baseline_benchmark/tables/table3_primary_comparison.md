@@ -1,0 +1,6 @@
+Table 3. Primary development-selected system comparison. CIs are nominal percentile moving-block intervals; p-values use the locked centered two-sided bootstrap; Holm adjusts BTC/ETH raw p-values. The test period was previously inspected.
+
+| Asset | Selected S0 model    | Selected S1 model    | S0 MAE                | S1 MAE                | Delta_best            | Relative reduction (%) | 42-bar CI lower        | 42-bar CI upper        | Raw p              | Holm p             | Result       |
+| ----- | -------------------- | -------------------- | --------------------- | --------------------- | --------------------- | ---------------------- | ---------------------- | ---------------------- | ------------------ | ------------------ | ------------ |
+| BTC   | HistGradientBoosting | HistGradientBoosting | 6.122879881677108e-06 | 6.000912862245633e-06 | 1.21967019431474e-07  | 1.991987786604532      | -1.43615904348024e-08  | 2.413317255135773e-07  | 0.0679320679320679 | 0.0679320679320679 | INCONCLUSIVE |
+| ETH   | Ridge                | ExtraTrees           | 1.490654075941996e-05 | 1.414603971596146e-05 | 7.605010434584972e-07 | 5.1017942776422505     | 1.8482545990312785e-07 | 1.1749991916863115e-06 | 0.0049950049950049 | 0.0099900099900099 | FAVORABLE    |

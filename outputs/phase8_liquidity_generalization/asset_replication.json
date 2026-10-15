@@ -1,0 +1,72 @@
+{
+  "asset_order": [
+    "BTC",
+    "ETH",
+    "SOL",
+    "BNB",
+    "XRP"
+  ],
+  "assets_with_improving_equal_category_loss": 3,
+  "frozen_phase7_rule_conditions": {
+    "at_least_2_of_3_segments_improve_without_material_deterioration": true,
+    "at_least_3_of_5_categories_improve_for_btc_and_eth": false,
+    "at_least_4_of_5_assets_improve": false,
+    "btc_and_eth_bootstrap_ci_upper_below_zero": false,
+    "btc_and_eth_equal_category_delta_below_zero": true
+  },
+  "frozen_phase7_rule_passed": false,
+  "legacy_amihud_results": [
+    {
+      "asset": "BTC",
+      "categories_improving": 2,
+      "equal_category_delta_plus_minus_spot": -0.004434152150869244,
+      "frozen_phase7_bootstrap_ci95": [
+        -0.006738564054443379,
+        -0.002148980039384867
+      ],
+      "n_unique_dates": 5517
+    },
+    {
+      "asset": "ETH",
+      "categories_improving": 3,
+      "equal_category_delta_plus_minus_spot": -0.001936007770949017,
+      "frozen_phase7_bootstrap_ci95": [
+        -0.0040807982521863535,
+        0.0003612410181851809
+      ],
+      "n_unique_dates": 5525
+    },
+    {
+      "asset": "SOL",
+      "categories_improving": 0,
+      "equal_category_delta_plus_minus_spot": 0.00475664726874219,
+      "frozen_phase7_bootstrap_ci95": [
+        0.004467172528420095,
+        0.005023644203564798
+      ],
+      "n_unique_dates": 5494
+    },
+    {
+      "asset": "BNB",
+      "categories_improving": 1,
+      "equal_category_delta_plus_minus_spot": 0.0009156399433638849,
+      "frozen_phase7_bootstrap_ci95": [
+        -0.0029485285490903615,
+        0.004910279188039138
+      ],
+      "n_unique_dates": 5512
+    },
+    {
+      "asset": "XRP",
+      "categories_improving": 3,
+      "equal_category_delta_plus_minus_spot": -0.0023696329525121304,
+      "frozen_phase7_bootstrap_ci95": [
+        -0.007488519391755404,
+        0.0026587289996823278
+      ],
+      "n_unique_dates": 5509
+    }
+  ],
+  "required_assets_improving": 4,
+  "selection": "BTC/ETH core plus SOL/BNB/XRP mechanically selected before estimation by the frozen outcome-blind eligibility protocol"
+}

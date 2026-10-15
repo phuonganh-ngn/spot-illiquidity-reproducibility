@@ -1,0 +1,7 @@
+{
+  "btc": "QUANTUM_INCREMENTAL_VALUE",
+  "classification": "QUANTUM_ENHANCED_24H_AMIHUD_INFORMATION",
+  "eth": "QUANTUM_INCREMENTAL_VALUE",
+  "quantum_replicated_in_both_assets": true,
+  "rule": "Both assets are required for paper-level robust, nonlinear, joint-state or replicated quantum labels; otherwise an apparent asset/model-dependent signal is classified MODEL_SENSITIVE."
+}

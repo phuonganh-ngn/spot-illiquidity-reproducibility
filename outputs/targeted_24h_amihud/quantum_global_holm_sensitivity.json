@@ -1,0 +1,131 @@
+{
+  "definition": "Sensitivity correction across all three QML families and all three qubit counts within each asset. The frozen primary QML correction remains Holm within each family across qubit counts.",
+  "results": [
+    {
+      "asset": "BTC",
+      "family": "quantum_kernel",
+      "holm_p_across_all_nine_qml_comparisons": 0.08391608391608392,
+      "qubits": 4,
+      "raw_p": 0.011988011988011988
+    },
+    {
+      "asset": "BTC",
+      "family": "quantum_kernel",
+      "holm_p_across_all_nine_qml_comparisons": 1.0,
+      "qubits": 6,
+      "raw_p": 0.5814185814185814
+    },
+    {
+      "asset": "BTC",
+      "family": "quantum_kernel",
+      "holm_p_across_all_nine_qml_comparisons": 0.5494505494505495,
+      "qubits": 8,
+      "raw_p": 0.10989010989010989
+    },
+    {
+      "asset": "BTC",
+      "family": "qnn",
+      "holm_p_across_all_nine_qml_comparisons": 0.08391608391608392,
+      "qubits": 4,
+      "raw_p": 0.011988011988011988
+    },
+    {
+      "asset": "BTC",
+      "family": "qnn",
+      "holm_p_across_all_nine_qml_comparisons": 0.017982017982017984,
+      "qubits": 6,
+      "raw_p": 0.001998001998001998
+    },
+    {
+      "asset": "BTC",
+      "family": "qnn",
+      "holm_p_across_all_nine_qml_comparisons": 0.5494505494505495,
+      "qubits": 8,
+      "raw_p": 0.11388611388611389
+    },
+    {
+      "asset": "BTC",
+      "family": "hybrid_qnn",
+      "holm_p_across_all_nine_qml_comparisons": 0.017982017982017984,
+      "qubits": 4,
+      "raw_p": 0.001998001998001998
+    },
+    {
+      "asset": "BTC",
+      "family": "hybrid_qnn",
+      "holm_p_across_all_nine_qml_comparisons": 0.6293706293706294,
+      "qubits": 6,
+      "raw_p": 0.2097902097902098
+    },
+    {
+      "asset": "BTC",
+      "family": "hybrid_qnn",
+      "holm_p_across_all_nine_qml_comparisons": 1.0,
+      "qubits": 8,
+      "raw_p": 0.7072927072927073
+    },
+    {
+      "asset": "ETH",
+      "family": "quantum_kernel",
+      "holm_p_across_all_nine_qml_comparisons": 1.0,
+      "qubits": 4,
+      "raw_p": 0.9250749250749251
+    },
+    {
+      "asset": "ETH",
+      "family": "quantum_kernel",
+      "holm_p_across_all_nine_qml_comparisons": 0.3776223776223776,
+      "qubits": 6,
+      "raw_p": 0.053946053946053944
+    },
+    {
+      "asset": "ETH",
+      "family": "quantum_kernel",
+      "holm_p_across_all_nine_qml_comparisons": 1.0,
+      "qubits": 8,
+      "raw_p": 0.2837162837162837
+    },
+    {
+      "asset": "ETH",
+      "family": "qnn",
+      "holm_p_across_all_nine_qml_comparisons": 1.0,
+      "qubits": 4,
+      "raw_p": 0.9010989010989011
+    },
+    {
+      "asset": "ETH",
+      "family": "qnn",
+      "holm_p_across_all_nine_qml_comparisons": 0.017982017982017984,
+      "qubits": 6,
+      "raw_p": 0.001998001998001998
+    },
+    {
+      "asset": "ETH",
+      "family": "qnn",
+      "holm_p_across_all_nine_qml_comparisons": 0.45554445554445555,
+      "qubits": 8,
+      "raw_p": 0.07592407592407592
+    },
+    {
+      "asset": "ETH",
+      "family": "hybrid_qnn",
+      "holm_p_across_all_nine_qml_comparisons": 1.0,
+      "qubits": 4,
+      "raw_p": 0.7092907092907093
+    },
+    {
+      "asset": "ETH",
+      "family": "hybrid_qnn",
+      "holm_p_across_all_nine_qml_comparisons": 1.0,
+      "qubits": 6,
+      "raw_p": 0.35764235764235763
+    },
+    {
+      "asset": "ETH",
+      "family": "hybrid_qnn",
+      "holm_p_across_all_nine_qml_comparisons": 0.11188811188811189,
+      "qubits": 8,
+      "raw_p": 0.013986013986013986
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "T_cut": "2026-03-01T20:00:00+00:00",
+  "T_end_inclusive": "2026-10-06T20:00:00+00:00",
+  "T_start": "2024-10-06T20:00:00+00:00",
+  "assets": [
+    "BTC",
+    "ETH"
+  ],
+  "calendar_timestamps_per_asset": 4381,
+  "common_complete_first": "2024-11-05T20:00:00+00:00",
+  "common_complete_last": "2026-10-06T20:00:00+00:00",
+  "common_complete_rows": 4201,
+  "holdout_interval": {
+    "end_inclusive": "2026-10-06T20:00:00+00:00",
+    "start_inclusive": "2026-03-01T20:00:00+00:00"
+  },
+  "holdout_predictions_unopened": true,
+  "model_fitting_performed": false,
+  "oof_schedule": {
+    "folds": [
+      {
+        "fold": "OOF1",
+        "purge_first": "2025-07-02T20:00:00+00:00",
+        "purge_last_inclusive": "2025-07-03T16:00:00+00:00",
+        "purge_rows": 6,
+        "training_first": "2024-11-05T20:00:00+00:00",
+        "training_last_inclusive": "2025-07-02T16:00:00+00:00",
+        "training_rows": 1434,
+        "validation_first": "2025-07-03T20:00:00+00:00",
+        "validation_last_inclusive": "2025-08-20T16:00:00+00:00",
+        "validation_rows": 288
+      },
+      {
+        "fold": "OOF2",
+        "purge_first": "2025-08-19T20:00:00+00:00",
+        "purge_last_inclusive": "2025-08-20T16:00:00+00:00",
+        "purge_rows": 6,
+        "training_first": "2024-11-05T20:00:00+00:00",
+        "training_last_inclusive": "2025-08-19T16:00:00+00:00",
+        "training_rows": 1722,
+        "validation_first": "2025-08-20T20:00:00+00:00",
+        "validation_last_inclusive": "2025-10-07T16:00:00+00:00",
+        "validation_rows": 288
+      },
+      {
+        "fold": "OOF3",
+        "purge_first": "2025-10-06T20:00:00+00:00",
+        "purge_last_inclusive": "2025-10-07T16:00:00+00:00",
+        "purge_rows": 6,
+        "training_first": "2024-11-05T20:00:00+00:00",
+        "training_last_inclusive": "2025-10-06T16:00:00+00:00",
+        "training_rows": 2010,
+        "validation_first": "2025-10-07T20:00:00+00:00",
+        "validation_last_inclusive": "2025-11-24T16:00:00+00:00",
+        "validation_rows": 288
+      },
+      {
+        "fold": "OOF4",
+        "purge_first": "2025-11-23T20:00:00+00:00",
+        "purge_last_inclusive": "2025-11-24T16:00:00+00:00",
+        "purge_rows": 6,
+        "training_first": "2024-11-05T20:00:00+00:00",
+        "training_last_inclusive": "2025-11-23T16:00:00+00:00",
+        "training_rows": 2298,
+        "validation_first": "2025-11-24T20:00:00+00:00",
+        "validation_last_inclusive": "2026-01-11T16:00:00+00:00",
+        "validation_rows": 288
+      },
+      {
+        "fold": "OOF5",
+        "purge_first": "2026-01-10T20:00:00+00:00",
+        "purge_last_inclusive": "2026-01-11T16:00:00+00:00",
+        "purge_rows": 6,
+        "training_first": "2024-11-05T20:00:00+00:00",
+        "training_last_inclusive": "2026-01-10T16:00:00+00:00",
+        "training_rows": 2586,
+        "validation_first": "2026-01-11T20:00:00+00:00",
+        "validation_last_inclusive": "2026-02-28T16:00:00+00:00",
+        "validation_rows": 288
+      }
+    ],
+    "initial_warmup_rows": 1440,
+    "rule": "50% initial expanding warm-up; five equal chronological validation blocks; six 4h origins embargoed at each fold boundary."
+  },
+  "purge_interval": {
+    "end_exclusive": "2026-03-01T20:00:00+00:00",
+    "expected_4h_rows": 6,
+    "start_inclusive": "2026-02-28T20:00:00+00:00"
+  },
+  "purge_rule": "A training origin is eligible only when origin + 28h target end <= T_cut; final six origins before T_cut are purged.",
+  "split_rule": "One common 70/30 chronological calendar split from T_start to T_end; mapped to nearest 4h UTC boundary before model fitting.",
+  "train_interval": {
+    "end_exclusive": "2026-03-01T20:00:00+00:00",
+    "start_inclusive": "2024-10-06T20:00:00+00:00"
+  },
+  "usable_observations": {
+    "BTC": {
+      "holdout": 1315,
+      "purge": 6,
+      "training_after_purge": 2880
+    },
+    "ETH": {
+      "holdout": 1315,
+      "purge": 6,
+      "training_after_purge": 2880
+    },
+    "common_holdout": 1315,
+    "common_purge": 6,
+    "common_training_after_purge": 2880
+  },
+  "venue": "Bybit"
+}

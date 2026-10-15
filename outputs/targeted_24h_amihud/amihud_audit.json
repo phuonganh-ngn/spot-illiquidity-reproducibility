@@ -1,0 +1,311 @@
+{
+  "assets": {
+    "BTC": {
+      "future_target": {
+        "max": 7.7202241894976e-05,
+        "mean": 2.169926554910173e-05,
+        "min": 7.731257022883548e-07,
+        "n": 10570,
+        "quantiles": {
+          "0.001": 1.6624388149077975e-06,
+          "0.01": 3.055387820552973e-06,
+          "0.05": 5.056898696641642e-06,
+          "0.25": 1.4215317036155323e-05,
+          "0.5": 2.079847309012558e-05,
+          "0.75": 2.8142170251393498e-05,
+          "0.95": 4.11252594603503e-05,
+          "0.99": 5.224016151942972e-05,
+          "0.999": 6.324169059002242e-05
+        },
+        "std": 1.0856528592042337e-05
+      },
+      "largest_10_target_observations": [
+        {
+          "date": "2022-01-23T08:00:00+00:00",
+          "value": 7.7202241894976e-05
+        },
+        {
+          "date": "2022-01-23T12:00:00+00:00",
+          "value": 7.268242851263378e-05
+        },
+        {
+          "date": "2022-01-23T16:00:00+00:00",
+          "value": 7.21791086236697e-05
+        },
+        {
+          "date": "2022-01-23T04:00:00+00:00",
+          "value": 7.16188097532394e-05
+        },
+        {
+          "date": "2021-12-31T12:00:00+00:00",
+          "value": 7.062601339828476e-05
+        },
+        {
+          "date": "2022-05-15T04:00:00+00:00",
+          "value": 6.847443558320481e-05
+        },
+        {
+          "date": "2022-01-23T00:00:00+00:00",
+          "value": 6.81573888127556e-05
+        },
+        {
+          "date": "2026-06-10T00:00:00+00:00",
+          "value": 6.73342486491936e-05
+        },
+        {
+          "date": "2022-07-03T08:00:00+00:00",
+          "value": 6.522973689179614e-05
+        },
+        {
+          "date": "2026-06-10T04:00:00+00:00",
+          "value": 6.511109990445439e-05
+        }
+      ],
+      "log1p_scale_diagnostic": {
+        "interpretation": "log1p is numerically almost identity on this target scale; it does not materially compress the upper tail.",
+        "max_abs_difference_log1p_vs_raw": 2.979939705774091e-09,
+        "max_relative_difference": 3.8599134333792104e-05,
+        "median_relative_difference": 1.039909235508157e-05
+      },
+      "missing_spot_amihud": 4,
+      "near_zero_denominator_min_positive": 20351720.8297947,
+      "negative_quote_volume": 0,
+      "negative_spot_amihud": 0,
+      "quote_volume_le_1000_usdt": 0,
+      "quote_volume_le_1_usdt": 0,
+      "spot_amihud": {
+        "max": 0.0001489363591682,
+        "mean": 2.1695038479132293e-05,
+        "min": 9.985327107828143e-10,
+        "n": 10580,
+        "quantiles": {
+          "0.001": 3.332339831108227e-08,
+          "0.01": 2.9606666366740574e-07,
+          "0.05": 1.2867556671526547e-06,
+          "0.25": 6.937788656630734e-06,
+          "0.5": 1.6791466285364198e-05,
+          "0.75": 3.1394061552966166e-05,
+          "0.95": 5.827070119245645e-05,
+          "0.99": 8.150168189101063e-05,
+          "0.999": 0.0001185637536585336
+        },
+        "std": 1.8905542715364985e-05
+      },
+      "spot_amihud_formula": "1e6 * abs(spot_return) / spot_quote_volume, where spot_quote_volume > 0; quote-volume units are USDT per 4h Binance spot interval.",
+      "spot_quote_volume_positive": {
+        "max": 5457623882.23572,
+        "mean": 392910669.59047514,
+        "min": 20351720.8297947,
+        "n": 10582,
+        "quantiles": {
+          "0.001": 31990016.07901953,
+          "0.01": 49589604.93421825,
+          "0.05": 75959621.58818331,
+          "0.25": 153165636.2103041,
+          "0.5": 262912731.4937405,
+          "0.75": 478145468.73866016,
+          "0.95": 1134218000.6639674,
+          "0.99": 2059744261.3481207,
+          "0.999": 3149292046.462234
+        },
+        "std": 400228225.5163818
+      },
+      "spot_return": {
+        "max": 0.0814138575802645,
+        "mean": 3.7294323804847416e-05,
+        "min": -0.0959447272408188,
+        "n": 10580,
+        "quantiles": {
+          "0.001": -0.05744088594345538,
+          "0.01": -0.03157308911297887,
+          "0.05": -0.016346829286782,
+          "0.25": -0.0040808301944375,
+          "0.5": 0.00012429589429965,
+          "0.75": 0.004306493587556776,
+          "0.95": 0.015912183982255437,
+          "0.99": 0.03121403812094836,
+          "0.999": 0.05665281429034689
+        },
+        "std": 0.010606172598439656
+      },
+      "target_negative_count": 0,
+      "target_zero_count": 0,
+      "zero_quote_volume": 0,
+      "zero_spot_amihud": 0
+    },
+    "ETH": {
+      "future_target": {
+        "max": 0.0002453419895322,
+        "mean": 5.3397475553267254e-05,
+        "min": 7.968597016926619e-06,
+        "n": 10570,
+        "quantiles": {
+          "0.001": 9.783479756362932e-06,
+          "0.01": 1.5536141547562877e-05,
+          "0.05": 2.2465878591312932e-05,
+          "0.25": 3.634312215428529e-05,
+          "0.5": 4.9966408504547154e-05,
+          "0.75": 6.592707522396075e-05,
+          "0.95": 9.592166719974382e-05,
+          "0.99": 0.0001241025481995738,
+          "0.999": 0.00018450469857615693
+        },
+        "std": 2.3537847202053352e-05
+      },
+      "largest_10_target_observations": [
+        {
+          "date": "2026-08-02T04:00:00+00:00",
+          "value": 0.0002453419895322
+        },
+        {
+          "date": "2026-08-02T00:00:00+00:00",
+          "value": 0.0002261523260053
+        },
+        {
+          "date": "2026-08-01T16:00:00+00:00",
+          "value": 0.0002135537456963
+        },
+        {
+          "date": "2026-07-11T12:00:00+00:00",
+          "value": 0.0001981726260149
+        },
+        {
+          "date": "2026-08-01T20:00:00+00:00",
+          "value": 0.0001979273001501
+        },
+        {
+          "date": "2026-08-01T12:00:00+00:00",
+          "value": 0.0001965387084454
+        },
+        {
+          "date": "2026-03-28T00:00:00+00:00",
+          "value": 0.000189334213277
+        },
+        {
+          "date": "2026-08-02T08:00:00+00:00",
+          "value": 0.0001883119275212
+        },
+        {
+          "date": "2026-07-11T16:00:00+00:00",
+          "value": 0.0001881559300611
+        },
+        {
+          "date": "2026-07-11T08:00:00+00:00",
+          "value": 0.0001864938737802
+        }
+      ],
+      "log1p_scale_diagnostic": {
+        "interpretation": "log1p is numerically almost identity on this target scale; it does not materially compress the upper tail.",
+        "max_abs_difference_log1p_vs_raw": 3.009142422115115e-08,
+        "max_relative_difference": 0.0001226509342266575,
+        "median_relative_difference": 2.4982372069460588e-05
+      },
+      "missing_spot_amihud": 4,
+      "near_zero_denominator_min_positive": 10515565.309757,
+      "negative_quote_volume": 0,
+      "negative_spot_amihud": 0,
+      "quote_volume_le_1000_usdt": 0,
+      "quote_volume_le_1_usdt": 0,
+      "spot_amihud": {
+        "max": 0.0004435155253641,
+        "mean": 5.337798516206693e-05,
+        "min": 0.0,
+        "n": 10580,
+        "quantiles": {
+          "0.001": 9.107130930933518e-08,
+          "0.01": 7.739337727958139e-07,
+          "0.05": 4.1798284628382055e-06,
+          "0.25": 1.9984767733855327e-05,
+          "0.5": 4.268080777404372e-05,
+          "0.75": 7.522251106101147e-05,
+          "0.95": 0.00013822421624844496,
+          "0.99": 0.0001959060228428086,
+          "0.999": 0.00028394062153965356
+        },
+        "std": 4.408539378064326e-05
+      },
+      "spot_amihud_formula": "1e6 * abs(spot_return) / spot_quote_volume, where spot_quote_volume > 0; quote-volume units are USDT per 4h Binance spot interval.",
+      "spot_quote_volume_positive": {
+        "max": 3207830473.28364,
+        "mean": 194994351.3116049,
+        "min": 10515565.309757,
+        "n": 10582,
+        "quantiles": {
+          "0.001": 13187330.52400608,
+          "0.01": 21394472.76832205,
+          "0.05": 36345007.65127205,
+          "0.25": 80470468.38894776,
+          "0.5": 140697473.226421,
+          "0.75": 244168603.66805726,
+          "0.95": 532461096.8289572,
+          "0.99": 894784465.8781707,
+          "0.999": 1585393308.9443138
+        },
+        "std": 184694659.7486528
+      },
+      "spot_return": {
+        "max": 0.109062094530941,
+        "mean": -5.0086775598336296e-05,
+        "min": -0.1507153049929021,
+        "n": 10580,
+        "quantiles": {
+          "0.001": -0.07714610623091349,
+          "0.01": -0.04408943050619637,
+          "0.05": -0.02210680225839928,
+          "0.25": -0.0055223592009098245,
+          "0.5": 9.60742310583886e-05,
+          "0.75": 0.005793476474220275,
+          "0.95": 0.02117960636683703,
+          "0.99": 0.041429279770403796,
+          "0.999": 0.07240469610398088
+        },
+        "std": 0.014199493210557993
+      },
+      "target_negative_count": 0,
+      "target_zero_count": 0,
+      "zero_quote_volume": 0,
+      "zero_spot_amihud": 2
+    }
+  },
+  "cross_source_parity_phase5": {
+    "spot_amihud": {
+      "max_abs_difference": 8.999962233802172e-16,
+      "median_abs_difference": 1.2705494208814505e-21,
+      "overlap_rows": 9888
+    },
+    "spot_quote_volume": {
+      "max_abs_difference": 9.5367431640625e-07,
+      "median_abs_difference": 0.0,
+      "overlap_rows": 9888
+    },
+    "spot_return": {
+      "max_abs_difference": 9.020562075079397e-16,
+      "median_abs_difference": 4.926614671774132e-16,
+      "overlap_rows": 9888
+    }
+  },
+  "formula": {
+    "denominator": "four-hour spot quote volume in USDT for the same interval",
+    "near_zero_denominator": "small positive quote volume can create large Amihud; preserved, no clipping or winsorization",
+    "numerator": "absolute four-hour log return computed from spot close-to-close price ratio for interval t",
+    "scale_factor": 1000000,
+    "unit": "1e6 * absolute log return / USDT quote notional",
+    "zero_denominator": "returns missing when quote volume <= 0; no replacement or epsilon in raw Amihud"
+  },
+  "pooled_target_log1p_max_relative_difference": 0.0001226509342266575,
+  "pooled_target_max": 0.0002453419895322,
+  "structural_notes": [
+    "Negative Amihud is impossible; none should be present.",
+    "Zero Amihud is valid when the interval absolute return is zero and quote volume is positive.",
+    "Log1p is nearly identity at the observed small numerical scale, so transform candidates include explicit log scaling based only on the fixed Amihud units.",
+    "No tails are removed; high values remain part of the dataset."
+  ],
+  "target": {
+    "aggregation": "arithmetic mean of six four-hour Amihud observations at t+1...t+6",
+    "future_window_end_exclusive": "t+28 hours",
+    "future_window_start": "t+4 hours",
+    "name": "future_amihud_24h_mean",
+    "requires_six_valid_future_intervals": true
+  },
+  "timestamp_alignment": "period_start_utc identifies interval start; interval-t aggregates become available at interval end t+4h; label starts at the next interval t+4h. This is the certified Phase-6/7 operational alignment; no same-interval label overlap."
+}

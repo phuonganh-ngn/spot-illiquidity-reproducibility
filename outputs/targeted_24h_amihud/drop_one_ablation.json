@@ -1,0 +1,359 @@
+{
+  "definition": "Each drop-one variant removes the component, its univariate transformation, and every frozen interaction involving that component. Same inner-CV selected model family/config per outer fold; no retuning.",
+  "fit_records": [
+    {
+      "asset": "BTC",
+      "family": "GRU",
+      "first_test_date": "2022-10-01T00:00:00+00:00",
+      "fit_warnings": [],
+      "fold": "F1",
+      "last_test_date": "2022-12-30T20:00:00+00:00",
+      "n_test": 359,
+      "n_train": 841,
+      "selected_config_index": 4,
+      "specification": "drop_funding"
+    },
+    {
+      "asset": "BTC",
+      "family": "GRU",
+      "first_test_date": "2022-10-01T00:00:00+00:00",
+      "fit_warnings": [],
+      "fold": "F1",
+      "last_test_date": "2022-12-30T20:00:00+00:00",
+      "n_test": 359,
+      "n_train": 841,
+      "selected_config_index": 4,
+      "specification": "drop_oi"
+    },
+    {
+      "asset": "BTC",
+      "family": "GRU",
+      "first_test_date": "2022-10-01T00:00:00+00:00",
+      "fit_warnings": [],
+      "fold": "F1",
+      "last_test_date": "2022-12-30T20:00:00+00:00",
+      "n_test": 359,
+      "n_train": 841,
+      "selected_config_index": 4,
+      "specification": "drop_flow"
+    },
+    {
+      "asset": "BTC",
+      "family": "GRU",
+      "first_test_date": "2022-10-01T00:00:00+00:00",
+      "fit_warnings": [],
+      "fold": "F1",
+      "last_test_date": "2022-12-30T20:00:00+00:00",
+      "n_test": 359,
+      "n_train": 841,
+      "selected_config_index": 4,
+      "specification": "drop_basis"
+    },
+    {
+      "asset": "BTC",
+      "family": "GRU",
+      "first_test_date": "2023-01-01T00:00:00+00:00",
+      "fit_warnings": [],
+      "fold": "F2",
+      "last_test_date": "2023-03-30T20:00:00+00:00",
+      "n_test": 347,
+      "n_train": 1206,
+      "selected_config_index": 16,
+      "specification": "drop_funding"
+    },
+    {
+      "asset": "BTC",
+      "family": "GRU",
+      "first_test_date": "2023-01-01T00:00:00+00:00",
+      "fit_warnings": [],
+      "fold": "F2",
+      "last_test_date": "2023-03-30T20:00:00+00:00",
+      "n_test": 347,
+      "n_train": 1206,
+      "selected_config_index": 16,
+      "specification": "drop_oi"
+    },
+    {
+      "asset": "BTC",
+      "family": "GRU",
+      "first_test_date": "2023-01-01T00:00:00+00:00",
+      "fit_warnings": [],
+      "fold": "F2",
+      "last_test_date": "2023-03-30T20:00:00+00:00",
+      "n_test": 347,
+      "n_train": 1206,
+      "selected_config_index": 16,
+      "specification": "drop_flow"
+    },
+    {
+      "asset": "BTC",
+      "family": "GRU",
+      "first_test_date": "2023-01-01T00:00:00+00:00",
+      "fit_warnings": [],
+      "fold": "F2",
+      "last_test_date": "2023-03-30T20:00:00+00:00",
+      "n_test": 347,
+      "n_train": 1206,
+      "selected_config_index": 16,
+      "specification": "drop_basis"
+    },
+    {
+      "asset": "BTC",
+      "family": "LightGBM",
+      "first_test_date": "2023-04-01T00:00:00+00:00",
+      "fit_warnings": [],
+      "fold": "F3",
+      "last_test_date": "2023-06-06T04:00:00+00:00",
+      "n_test": 199,
+      "n_train": 1559,
+      "selected_config_index": 1,
+      "specification": "drop_funding"
+    },
+    {
+      "asset": "BTC",
+      "family": "LightGBM",
+      "first_test_date": "2023-04-01T00:00:00+00:00",
+      "fit_warnings": [],
+      "fold": "F3",
+      "last_test_date": "2023-06-06T04:00:00+00:00",
+      "n_test": 199,
+      "n_train": 1559,
+      "selected_config_index": 1,
+      "specification": "drop_oi"
+    },
+    {
+      "asset": "BTC",
+      "family": "LightGBM",
+      "first_test_date": "2023-04-01T00:00:00+00:00",
+      "fit_warnings": [],
+      "fold": "F3",
+      "last_test_date": "2023-06-06T04:00:00+00:00",
+      "n_test": 199,
+      "n_train": 1559,
+      "selected_config_index": 1,
+      "specification": "drop_flow"
+    },
+    {
+      "asset": "BTC",
+      "family": "LightGBM",
+      "first_test_date": "2023-04-01T00:00:00+00:00",
+      "fit_warnings": [],
+      "fold": "F3",
+      "last_test_date": "2023-06-06T04:00:00+00:00",
+      "n_test": 199,
+      "n_train": 1559,
+      "selected_config_index": 1,
+      "specification": "drop_basis"
+    },
+    {
+      "asset": "ETH",
+      "family": "ElasticNet",
+      "first_test_date": "2022-10-01T00:00:00+00:00",
+      "fit_warnings": [],
+      "fold": "F1",
+      "last_test_date": "2022-12-30T20:00:00+00:00",
+      "n_test": 359,
+      "n_train": 748,
+      "selected_config_index": 0,
+      "specification": "drop_funding"
+    },
+    {
+      "asset": "ETH",
+      "family": "ElasticNet",
+      "first_test_date": "2022-10-01T00:00:00+00:00",
+      "fit_warnings": [],
+      "fold": "F1",
+      "last_test_date": "2022-12-30T20:00:00+00:00",
+      "n_test": 359,
+      "n_train": 748,
+      "selected_config_index": 0,
+      "specification": "drop_oi"
+    },
+    {
+      "asset": "ETH",
+      "family": "ElasticNet",
+      "first_test_date": "2022-10-01T00:00:00+00:00",
+      "fit_warnings": [],
+      "fold": "F1",
+      "last_test_date": "2022-12-30T20:00:00+00:00",
+      "n_test": 359,
+      "n_train": 748,
+      "selected_config_index": 0,
+      "specification": "drop_flow"
+    },
+    {
+      "asset": "ETH",
+      "family": "ElasticNet",
+      "first_test_date": "2022-10-01T00:00:00+00:00",
+      "fit_warnings": [],
+      "fold": "F1",
+      "last_test_date": "2022-12-30T20:00:00+00:00",
+      "n_test": 359,
+      "n_train": 748,
+      "selected_config_index": 0,
+      "specification": "drop_basis"
+    },
+    {
+      "asset": "ETH",
+      "family": "RBF_SVR",
+      "first_test_date": "2023-01-01T00:00:00+00:00",
+      "fit_warnings": [],
+      "fold": "F2",
+      "last_test_date": "2023-03-30T20:00:00+00:00",
+      "n_test": 347,
+      "n_train": 1113,
+      "selected_config_index": 0,
+      "specification": "drop_funding"
+    },
+    {
+      "asset": "ETH",
+      "family": "RBF_SVR",
+      "first_test_date": "2023-01-01T00:00:00+00:00",
+      "fit_warnings": [],
+      "fold": "F2",
+      "last_test_date": "2023-03-30T20:00:00+00:00",
+      "n_test": 347,
+      "n_train": 1113,
+      "selected_config_index": 0,
+      "specification": "drop_oi"
+    },
+    {
+      "asset": "ETH",
+      "family": "RBF_SVR",
+      "first_test_date": "2023-01-01T00:00:00+00:00",
+      "fit_warnings": [],
+      "fold": "F2",
+      "last_test_date": "2023-03-30T20:00:00+00:00",
+      "n_test": 347,
+      "n_train": 1113,
+      "selected_config_index": 0,
+      "specification": "drop_flow"
+    },
+    {
+      "asset": "ETH",
+      "family": "RBF_SVR",
+      "first_test_date": "2023-01-01T00:00:00+00:00",
+      "fit_warnings": [],
+      "fold": "F2",
+      "last_test_date": "2023-03-30T20:00:00+00:00",
+      "n_test": 347,
+      "n_train": 1113,
+      "selected_config_index": 0,
+      "specification": "drop_basis"
+    },
+    {
+      "asset": "ETH",
+      "family": "GRU",
+      "first_test_date": "2023-04-01T00:00:00+00:00",
+      "fit_warnings": [],
+      "fold": "F3",
+      "last_test_date": "2023-06-06T04:00:00+00:00",
+      "n_test": 216,
+      "n_train": 1466,
+      "selected_config_index": 4,
+      "specification": "drop_funding"
+    },
+    {
+      "asset": "ETH",
+      "family": "GRU",
+      "first_test_date": "2023-04-01T00:00:00+00:00",
+      "fit_warnings": [],
+      "fold": "F3",
+      "last_test_date": "2023-06-06T04:00:00+00:00",
+      "n_test": 216,
+      "n_train": 1466,
+      "selected_config_index": 4,
+      "specification": "drop_oi"
+    },
+    {
+      "asset": "ETH",
+      "family": "GRU",
+      "first_test_date": "2023-04-01T00:00:00+00:00",
+      "fit_warnings": [],
+      "fold": "F3",
+      "last_test_date": "2023-06-06T04:00:00+00:00",
+      "n_test": 216,
+      "n_train": 1466,
+      "selected_config_index": 4,
+      "specification": "drop_flow"
+    },
+    {
+      "asset": "ETH",
+      "family": "GRU",
+      "first_test_date": "2023-04-01T00:00:00+00:00",
+      "fit_warnings": [],
+      "fold": "F3",
+      "last_test_date": "2023-06-06T04:00:00+00:00",
+      "n_test": 216,
+      "n_train": 1466,
+      "selected_config_index": 4,
+      "specification": "drop_basis"
+    }
+  ],
+  "summary": [
+    {
+      "asset": "BTC",
+      "n": 905,
+      "n_dates": 905,
+      "original_scale_mae": 5.456177712466984e-06,
+      "specification": "drop_funding",
+      "transformed_mae": 5.486145842772536e-06
+    },
+    {
+      "asset": "BTC",
+      "n": 905,
+      "n_dates": 905,
+      "original_scale_mae": 6.816738426838363e-06,
+      "specification": "drop_oi",
+      "transformed_mae": 6.8296261702894384e-06
+    },
+    {
+      "asset": "BTC",
+      "n": 905,
+      "n_dates": 905,
+      "original_scale_mae": 5.667453784531409e-06,
+      "specification": "drop_flow",
+      "transformed_mae": 5.670377951856206e-06
+    },
+    {
+      "asset": "BTC",
+      "n": 905,
+      "n_dates": 905,
+      "original_scale_mae": 5.061036258735594e-06,
+      "specification": "drop_basis",
+      "transformed_mae": 5.12176308580887e-06
+    },
+    {
+      "asset": "ETH",
+      "n": 922,
+      "n_dates": 922,
+      "original_scale_mae": 2.1175126392791344e-05,
+      "specification": "drop_funding",
+      "transformed_mae": 2.1173790463088016e-05
+    },
+    {
+      "asset": "ETH",
+      "n": 922,
+      "n_dates": 922,
+      "original_scale_mae": 2.1123581568836262e-05,
+      "specification": "drop_oi",
+      "transformed_mae": 2.11222479995106e-05
+    },
+    {
+      "asset": "ETH",
+      "n": 922,
+      "n_dates": 922,
+      "original_scale_mae": 2.1559987265285235e-05,
+      "specification": "drop_flow",
+      "transformed_mae": 2.1558628186392514e-05
+    },
+    {
+      "asset": "ETH",
+      "n": 922,
+      "n_dates": 922,
+      "original_scale_mae": 2.1135114512514807e-05,
+      "specification": "drop_basis",
+      "transformed_mae": 2.113378162769339e-05
+    }
+  ]
+}

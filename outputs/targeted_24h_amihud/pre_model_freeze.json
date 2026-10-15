@@ -1,0 +1,27 @@
+{
+  "all_candidate_packages_importable": true,
+  "data_source_downloads": 0,
+  "feature_registry_sha256": "d0e3e47bfc021f84d468eb63ee2c5ec3019668538a1df0cc265eb0e35df2a110",
+  "interaction_registry_sha256": "4349823f4dac48a1cf4da22254e4d81ebaabc914e009e0b8d5818febac53c0e4",
+  "model_registry_sha256": "ad303ced5e609d44870856ba3dd7a3a3bc0abbcc4c894baf8cc2509e499c6c55",
+  "primary_model_comparison_not_run_before_freeze": true,
+  "protocol_hashes": {
+    "feature_registry.json": "d0e3e47bfc021f84d468eb63ee2c5ec3019668538a1df0cc265eb0e35df2a110",
+    "interaction_registry.json": "4349823f4dac48a1cf4da22254e4d81ebaabc914e009e0b8d5818febac53c0e4",
+    "model_registry.json": "ad303ced5e609d44870856ba3dd7a3a3bc0abbcc4c894baf8cc2509e499c6c55",
+    "search_budget.json": "f804659ed35ad259127d40cdab3e656daf046cfc2fdde8a6f34262083a3158d3",
+    "seasonality_registry.json": "888da8971d5a8cf6018e7a04a3b7dc51d61d9c68b7d0031208dea980047d36e9",
+    "study_protocol.json": "79aac3e86d6a14b620693af7fd0fa4b6a0f2d6af58025ffb354bbde01923276a",
+    "study_protocol.md": "04f098f72386afa38f9e42c5a0aac351c4f65ac8e87919626639f00e97c90b5c",
+    "temporal_folds.json": "f133ca6ed58deff0a28719821c086c3b01ac386e171195af809190902af53456"
+  },
+  "qml_environment_sha256": "d39c1d7615449d57f15e22a6772827f9e38c8c5640d152ead10aba0fa2ccae98",
+  "qml_fixture_validation_sha256": "2f6efbf7bdcfee0abc5bacd347ad2559900766a19e2af7b9c1133ca86a9e6cd1",
+  "search_budget_sha256": "f804659ed35ad259127d40cdab3e656daf046cfc2fdde8a6f34262083a3158d3",
+  "seasonality_registry_sha256": "888da8971d5a8cf6018e7a04a3b7dc51d61d9c68b7d0031208dea980047d36e9",
+  "selected_target_transform": "T2_log1p",
+  "source_dataset_sha256": "1dc8090d5f0e06d11cfaa7a51697db4590c7a5fc3bba48d983b1849a76897a9c",
+  "status": "FROZEN_BEFORE_MAIN_MODEL_COMPARISON",
+  "target_transform_selection_sha256": "8d75ad1e2de6a0118470e9cff7218b49b1894a7cde830d588da90e95365046b3",
+  "temporal_folds_sha256": "f133ca6ed58deff0a28719821c086c3b01ac386e171195af809190902af53456"
+}

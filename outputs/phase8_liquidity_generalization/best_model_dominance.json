@@ -1,0 +1,206 @@
+{
+  "external_scores_used_for_selection": false,
+  "results": [
+    {
+      "asset": "BTC",
+      "delta_plus_minus_spot": 0.0014896064431842507,
+      "feature_pair": "legacy",
+      "first_date": "2024-03-05T04:00:00+00:00",
+      "last_date": "2026-09-29T20:00:00+00:00",
+      "n_unique_dates": 5517,
+      "paired_block_bootstrap": {
+        "42": {
+          "block_length_4h": 42,
+          "bootstrap_mean": 0.0014743084420183617,
+          "ci95_percentile": [
+            0.00036474985067090106,
+            0.002608744072534549
+          ],
+          "probability_delta_above_zero": 0.9945,
+          "probability_delta_below_zero": 0.0055,
+          "replications": 2000
+        },
+        "84": {
+          "block_length_4h": 84,
+          "bootstrap_mean": 0.0014958126645201381,
+          "ci95_percentile": [
+            0.0002926919420279686,
+            0.002678851136837353
+          ],
+          "probability_delta_above_zero": 0.996,
+          "probability_delta_below_zero": 0.004,
+          "replications": 2000
+        }
+      },
+      "selection_rule": "minimum development-only transformed OOF MAE separately by information set",
+      "spot_only_development_oof_mae": 0.13103124133166713,
+      "spot_only_external_transformed_mae": 0.16720002394224984,
+      "spot_only_selected_family": "HistGradientBoosting",
+      "spot_plus_development_oof_mae": 0.13844729597945046,
+      "spot_plus_external_transformed_mae": 0.16868963038543408,
+      "spot_plus_selected_family": "HistGradientBoosting",
+      "target": "future_amihud_24h_mean"
+    },
+    {
+      "asset": "ETH",
+      "delta_plus_minus_spot": -0.002388587428154594,
+      "feature_pair": "legacy",
+      "first_date": "2024-03-05T04:00:00+00:00",
+      "last_date": "2026-09-29T20:00:00+00:00",
+      "n_unique_dates": 5525,
+      "paired_block_bootstrap": {
+        "42": {
+          "block_length_4h": 42,
+          "bootstrap_mean": -0.002573005117416755,
+          "ci95_percentile": [
+            -0.006765139309500998,
+            0.0018966444172096228
+          ],
+          "probability_delta_above_zero": 0.123,
+          "probability_delta_below_zero": 0.877,
+          "replications": 2000
+        },
+        "84": {
+          "block_length_4h": 84,
+          "bootstrap_mean": -0.002929285787800982,
+          "ci95_percentile": [
+            -0.008248151822263902,
+            0.002547434878325345
+          ],
+          "probability_delta_above_zero": 0.147,
+          "probability_delta_below_zero": 0.853,
+          "replications": 2000
+        }
+      },
+      "selection_rule": "minimum development-only transformed OOF MAE separately by information set",
+      "spot_only_development_oof_mae": 0.13261148149650226,
+      "spot_only_external_transformed_mae": 0.15890733503227147,
+      "spot_only_selected_family": "Ridge",
+      "spot_plus_development_oof_mae": 0.136402862636312,
+      "spot_plus_external_transformed_mae": 0.15651874760411688,
+      "spot_plus_selected_family": "RBF_SVR",
+      "target": "future_amihud_24h_mean"
+    },
+    {
+      "asset": "SOL",
+      "delta_plus_minus_spot": 4.4645638294154846e-05,
+      "feature_pair": "legacy",
+      "first_date": "2024-03-05T04:00:00+00:00",
+      "last_date": "2026-09-29T20:00:00+00:00",
+      "n_unique_dates": 5494,
+      "paired_block_bootstrap": {
+        "42": {
+          "block_length_4h": 42,
+          "bootstrap_mean": 4.509732950368067e-05,
+          "ci95_percentile": [
+            3.841920455094043e-05,
+            5.1615113217756974e-05
+          ],
+          "probability_delta_above_zero": 1.0,
+          "probability_delta_below_zero": 0.0,
+          "replications": 2000
+        },
+        "84": {
+          "block_length_4h": 84,
+          "bootstrap_mean": 4.561156032623747e-05,
+          "ci95_percentile": [
+            3.669680802627739e-05,
+            5.36471035671577e-05
+          ],
+          "probability_delta_above_zero": 1.0,
+          "probability_delta_below_zero": 0.0,
+          "replications": 2000
+        }
+      },
+      "selection_rule": "minimum development-only transformed OOF MAE separately by information set",
+      "spot_only_development_oof_mae": 0.0003289613855674685,
+      "spot_only_external_transformed_mae": 0.00022513825251684505,
+      "spot_only_selected_family": "Ridge",
+      "spot_plus_development_oof_mae": 0.00033400905315722474,
+      "spot_plus_external_transformed_mae": 0.0002697838908109999,
+      "spot_plus_selected_family": "Ridge",
+      "target": "future_amihud_24h_mean"
+    },
+    {
+      "asset": "BNB",
+      "delta_plus_minus_spot": 0.007415162613074184,
+      "feature_pair": "legacy",
+      "first_date": "2024-03-05T04:00:00+00:00",
+      "last_date": "2026-09-29T20:00:00+00:00",
+      "n_unique_dates": 5512,
+      "paired_block_bootstrap": {
+        "42": {
+          "block_length_4h": 42,
+          "bootstrap_mean": 0.007355920657570355,
+          "ci95_percentile": [
+            0.004084897114863714,
+            0.010776004462143739
+          ],
+          "probability_delta_above_zero": 1.0,
+          "probability_delta_below_zero": 0.0,
+          "replications": 2000
+        },
+        "84": {
+          "block_length_4h": 84,
+          "bootstrap_mean": 0.0072689461101525165,
+          "ci95_percentile": [
+            0.003455482677312789,
+            0.011611850738419185
+          ],
+          "probability_delta_above_zero": 1.0,
+          "probability_delta_below_zero": 0.0,
+          "replications": 2000
+        }
+      },
+      "selection_rule": "minimum development-only transformed OOF MAE separately by information set",
+      "spot_only_development_oof_mae": 0.15209426192686107,
+      "spot_only_external_transformed_mae": 0.13544721679034072,
+      "spot_only_selected_family": "HistGradientBoosting",
+      "spot_plus_development_oof_mae": 0.15767005181218874,
+      "spot_plus_external_transformed_mae": 0.1428623794034149,
+      "spot_plus_selected_family": "HistGradientBoosting",
+      "target": "future_amihud_24h_mean"
+    },
+    {
+      "asset": "XRP",
+      "delta_plus_minus_spot": -0.00038331177735621234,
+      "feature_pair": "legacy",
+      "first_date": "2024-03-05T04:00:00+00:00",
+      "last_date": "2026-09-29T20:00:00+00:00",
+      "n_unique_dates": 5509,
+      "paired_block_bootstrap": {
+        "42": {
+          "block_length_4h": 42,
+          "bootstrap_mean": -0.0002900038888120251,
+          "ci95_percentile": [
+            -0.0027183082301070363,
+            0.0021872898335643276
+          ],
+          "probability_delta_above_zero": 0.411,
+          "probability_delta_below_zero": 0.589,
+          "replications": 2000
+        },
+        "84": {
+          "block_length_4h": 84,
+          "bootstrap_mean": -0.00015468663491840088,
+          "ci95_percentile": [
+            -0.003023729485845462,
+            0.0027243932506313064
+          ],
+          "probability_delta_above_zero": 0.453,
+          "probability_delta_below_zero": 0.547,
+          "replications": 2000
+        }
+      },
+      "selection_rule": "minimum development-only transformed OOF MAE separately by information set",
+      "spot_only_development_oof_mae": 0.1440181778735719,
+      "spot_only_external_transformed_mae": 0.18002788536956427,
+      "spot_only_selected_family": "HistGradientBoosting",
+      "spot_plus_development_oof_mae": 0.14223070454562092,
+      "spot_plus_external_transformed_mae": 0.17964457359220806,
+      "spot_plus_selected_family": "HistGradientBoosting",
+      "target": "future_amihud_24h_mean"
+    }
+  ],
+  "selection_source": "phase7 development OOF only"
+}

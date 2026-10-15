@@ -1,0 +1,3 @@
+decomposition_path,total_delta_mae,component_1_delta,component_2_delta,interpretation
+Ridge S0 -> ExtraTrees S1,7.605010434584077e-07,8.767529192352014e-07,-1.1625187577679366e-07,Ridge S0 vs ExtraTrees S0; then ExtraTrees S0 vs S1. ExtraTrees selected settings differ across info sets; descriptive/path-dependent.
+Ridge S0 -> ExtraTrees S1 via Ridge S1,7.605010434584077e-07,2.7992839099324643e-07,4.805726524651613e-07,Ridge cfg03 (alpha=10) aligned across sets; model-family change on S1 leg. Descriptive/path-dependent.

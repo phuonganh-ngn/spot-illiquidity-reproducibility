@@ -1,0 +1,54 @@
+{
+  "assets": [
+    "BTC",
+    "ETH"
+  ],
+  "bootstrap": {
+    "block_length": "max(7,h+1)",
+    "fixed_oof_nuisance_predictions": true,
+    "longer_block": "2B",
+    "replications": 999,
+    "seed_base": 314159
+  },
+  "clean_sample_end": "2024-03-03",
+  "clean_sample_start": "2021-12-01",
+  "confirmatory_test_count": 48,
+  "controls": [
+    "spot_log_return_1d_lag1",
+    "spot_realized_volatility_lag1",
+    "spot_amihud_lag1",
+    "spot_downside_semivariance_lag1",
+    "spot_quote_volume_growth_1d_lag1",
+    "funding_mean_lag1",
+    "oi_log_change_1d_lag1",
+    "futures_taker_imbalance_lag1",
+    "spot_log_return_1d_lag2",
+    "spot_realized_volatility_lag7",
+    "funding_mean_lag2"
+  ],
+  "crossfit": "4 fixed contiguous blocks; blocked and forward-only; calendar embargo h+8; timing-gap h+9; no row shuffling",
+  "hac": "Bartlett Newey-West; L=max(7,2h-1); calendar-spine scores, gaps remain gaps",
+  "interpretation": "conditional directional associations; no structural causal identification",
+  "network_access": "none; cached certified inputs only",
+  "numpy": "2.3.5",
+  "pandas": "2.3.3",
+  "primary_hyperparameters": {
+    "early_stopping": false,
+    "l2_regularization": 1.0,
+    "learning_rate": 0.05,
+    "loss": "squared_error",
+    "max_bins": 255,
+    "max_iter": 200,
+    "max_leaf_nodes": 7,
+    "min_samples_leaf": 25,
+    "random_state": 314159
+  },
+  "primary_learner": "HistGradientBoostingRegressor",
+  "protocol_v2": "PASS",
+  "python": "3.12.3",
+  "robust_learner": "Ridge(alpha=1.0,fit_intercept=True), training-fold StandardScaler",
+  "scikit_learn": "1.9.1",
+  "scipy": "1.18.1",
+  "secondary_original_dml_tests": 60,
+  "unique_dates": 824
+}

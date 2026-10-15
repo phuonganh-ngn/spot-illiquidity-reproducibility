@@ -1,0 +1,13 @@
+{
+  "cached_raw_archive_hashes_verified": {
+    "archive_count": 6195,
+    "manifest_sha256": "98c99d218ac810269bf70cfb48301b0630fba22f6383f071cc5e0d29cecb164a",
+    "pass": true,
+    "sha256_verified": 6195
+  },
+  "frozen_phase8_inputs_unchanged": true,
+  "phase7_external_freeze_and_predictions_unchanged": true,
+  "protected_prior_stage_files": 9949,
+  "protected_prior_stage_files_unchanged": true,
+  "protected_prior_stage_tree_fingerprint": "541a98d232fce593fa528ef49fe907d0780cc6b3760769943c1c2a82024b3f9a"
+}

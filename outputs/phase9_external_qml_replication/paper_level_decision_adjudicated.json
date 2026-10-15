@@ -1,0 +1,10 @@
+{
+  "adjudicated_classification": "NO_EXTERNAL_QML_REPLICATION",
+  "asset_pass_count": 0,
+  "reason": "Neither BTC nor ETH satisfies the frozen asset-level PASS rule. The written decision tree assigns NO_EXTERNAL_QML_REPLICATION when neither asset passes.",
+  "preserved_frozen_script_classification": "ALGORITHMIC_QML_GAIN_WITHOUT_INCREMENTAL_INFORMATION",
+  "classification_audit_file": "classification_audit.json",
+  "interpretation": "The frozen script label was triggered by BTC's positive point-estimate Delta_Q while its Delta_I confidence interval crossed zero. Delta_Q itself is not supported by paired bootstrap/Holm inference and only 3/5 seeds favor QML; therefore this is not a robust algorithmic QML gain. ETH has negative Delta_Q and only 1/5 seeds favor QML.",
+  "estimates_or_thresholds_changed": false,
+  "quantum_hardware_advantage": "NOT_TESTED / NOT CLAIMED"
+}

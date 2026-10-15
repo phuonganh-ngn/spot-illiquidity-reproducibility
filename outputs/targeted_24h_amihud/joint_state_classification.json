@@ -1,0 +1,569 @@
+{
+  "assets": {
+    "BTC": {
+      "drop_one_mae": {
+        "drop_basis": 5.12176308580887e-06,
+        "drop_flow": 5.670377951856206e-06,
+        "drop_funding": 5.486145842772536e-06,
+        "drop_oi": 6.8296261702894384e-06
+      },
+      "full_mae": 6.167479275316192e-06,
+      "joint_state_rule_passed": false,
+      "paired_full_vs_component_comparisons": [
+        {
+          "asset": "BTC",
+          "comparison": "full_vs_funding_only",
+          "delta_reference_loss_minus_full_loss_positive_favors_joint_state": -1.4947441264359402e-06,
+          "full_transformed_mae": 6.167479275316192e-06,
+          "n_asset_day_rows": 905,
+          "n_unique_dates": 905,
+          "paired_block_bootstrap": {
+            "42": {
+              "block_length_intervals": 42,
+              "ci95": [
+                -2.4349287875309716e-06,
+                -7.002015594282937e-07
+              ],
+              "delta_mean": -1.4947441264359402e-06,
+              "p_two_sided": 0.001998001998001998,
+              "probability_positive": 0.0,
+              "replications": 1000
+            },
+            "84": {
+              "block_length_intervals": 84,
+              "ci95": [
+                -2.616910634428798e-06,
+                -7.014050112062873e-07
+              ],
+              "delta_mean": -1.4947441264359402e-06,
+              "p_two_sided": 0.001998001998001998,
+              "probability_positive": 0.0,
+              "replications": 1000
+            }
+          },
+          "reference_transformed_mae": 4.672735148880251e-06
+        },
+        {
+          "asset": "BTC",
+          "comparison": "full_vs_oi_only",
+          "delta_reference_loss_minus_full_loss_positive_favors_joint_state": -1.505081285686171e-06,
+          "full_transformed_mae": 6.167479275316192e-06,
+          "n_asset_day_rows": 905,
+          "n_unique_dates": 905,
+          "paired_block_bootstrap": {
+            "42": {
+              "block_length_intervals": 42,
+              "ci95": [
+                -2.581237314175477e-06,
+                -7.10220149262225e-07
+              ],
+              "delta_mean": -1.505081285686171e-06,
+              "p_two_sided": 0.001998001998001998,
+              "probability_positive": 0.0,
+              "replications": 1000
+            },
+            "84": {
+              "block_length_intervals": 84,
+              "ci95": [
+                -2.742821625960386e-06,
+                -5.146718110073958e-07
+              ],
+              "delta_mean": -1.505081285686171e-06,
+              "p_two_sided": 0.001998001998001998,
+              "probability_positive": 0.0,
+              "replications": 1000
+            }
+          },
+          "reference_transformed_mae": 4.66239798963002e-06
+        },
+        {
+          "asset": "BTC",
+          "comparison": "full_vs_flow_only",
+          "delta_reference_loss_minus_full_loss_positive_favors_joint_state": -1.3014391552711194e-06,
+          "full_transformed_mae": 6.167479275316192e-06,
+          "n_asset_day_rows": 905,
+          "n_unique_dates": 905,
+          "paired_block_bootstrap": {
+            "42": {
+              "block_length_intervals": 42,
+              "ci95": [
+                -2.3807219861008404e-06,
+                -4.140068729634127e-07
+              ],
+              "delta_mean": -1.3014391552711194e-06,
+              "p_two_sided": 0.003996003996003996,
+              "probability_positive": 0.001,
+              "replications": 1000
+            },
+            "84": {
+              "block_length_intervals": 84,
+              "ci95": [
+                -2.5969129292965897e-06,
+                -1.546561267086499e-07
+              ],
+              "delta_mean": -1.3014391552711194e-06,
+              "p_two_sided": 0.02197802197802198,
+              "probability_positive": 0.01,
+              "replications": 1000
+            }
+          },
+          "reference_transformed_mae": 4.866040120045072e-06
+        },
+        {
+          "asset": "BTC",
+          "comparison": "full_vs_basis_only",
+          "delta_reference_loss_minus_full_loss_positive_favors_joint_state": -8.187290211904715e-07,
+          "full_transformed_mae": 6.167479275316192e-06,
+          "n_asset_day_rows": 905,
+          "n_unique_dates": 905,
+          "paired_block_bootstrap": {
+            "42": {
+              "block_length_intervals": 42,
+              "ci95": [
+                -1.5912280585993603e-06,
+                -1.5646182543046295e-07
+              ],
+              "delta_mean": -8.187290211904715e-07,
+              "p_two_sided": 0.02197802197802198,
+              "probability_positive": 0.01,
+              "replications": 1000
+            },
+            "84": {
+              "block_length_intervals": 84,
+              "ci95": [
+                -1.7997253198655897e-06,
+                -5.8569198598026175e-08
+              ],
+              "delta_mean": -8.187290211904715e-07,
+              "p_two_sided": 0.03396603396603397,
+              "probability_positive": 0.016,
+              "replications": 1000
+            }
+          },
+          "reference_transformed_mae": 5.34875025412572e-06
+        },
+        {
+          "asset": "BTC",
+          "comparison": "full_vs_drop_funding",
+          "delta_reference_loss_minus_full_loss_positive_favors_joint_state": -6.813334325436536e-07,
+          "full_transformed_mae": 6.167479275316192e-06,
+          "n_asset_day_rows": 905,
+          "n_unique_dates": 905,
+          "paired_block_bootstrap": {
+            "42": {
+              "block_length_intervals": 42,
+              "ci95": [
+                -1.1393868939827732e-06,
+                -3.2367691959705065e-07
+              ],
+              "delta_mean": -6.813334325436536e-07,
+              "p_two_sided": 0.001998001998001998,
+              "probability_positive": 0.0,
+              "replications": 1000
+            },
+            "84": {
+              "block_length_intervals": 84,
+              "ci95": [
+                -1.2753530644906425e-06,
+                -2.148297645087746e-07
+              ],
+              "delta_mean": -6.813334325436536e-07,
+              "p_two_sided": 0.001998001998001998,
+              "probability_positive": 0.0,
+              "replications": 1000
+            }
+          },
+          "reference_transformed_mae": 5.486145842772536e-06
+        },
+        {
+          "asset": "BTC",
+          "comparison": "full_vs_drop_oi",
+          "delta_reference_loss_minus_full_loss_positive_favors_joint_state": 6.621468949732474e-07,
+          "full_transformed_mae": 6.167479275316192e-06,
+          "n_asset_day_rows": 905,
+          "n_unique_dates": 905,
+          "paired_block_bootstrap": {
+            "42": {
+              "block_length_intervals": 42,
+              "ci95": [
+                1.6871133213618698e-07,
+                1.1341689744284688e-06
+              ],
+              "delta_mean": 6.621468949732474e-07,
+              "p_two_sided": 0.003996003996003996,
+              "probability_positive": 0.999,
+              "replications": 1000
+            },
+            "84": {
+              "block_length_intervals": 84,
+              "ci95": [
+                1.5507948010638554e-07,
+                1.221055290861863e-06
+              ],
+              "delta_mean": 6.621468949732474e-07,
+              "p_two_sided": 0.01998001998001998,
+              "probability_positive": 0.991,
+              "replications": 1000
+            }
+          },
+          "reference_transformed_mae": 6.8296261702894384e-06
+        },
+        {
+          "asset": "BTC",
+          "comparison": "full_vs_drop_flow",
+          "delta_reference_loss_minus_full_loss_positive_favors_joint_state": -4.971013234599844e-07,
+          "full_transformed_mae": 6.167479275316192e-06,
+          "n_asset_day_rows": 905,
+          "n_unique_dates": 905,
+          "paired_block_bootstrap": {
+            "42": {
+              "block_length_intervals": 42,
+              "ci95": [
+                -8.765105810065516e-07,
+                -1.5464138355301265e-07
+              ],
+              "delta_mean": -4.971013234599844e-07,
+              "p_two_sided": 0.005994005994005994,
+              "probability_positive": 0.002,
+              "replications": 1000
+            },
+            "84": {
+              "block_length_intervals": 84,
+              "ci95": [
+                -9.48070027878933e-07,
+                -1.3574295476313128e-07
+              ],
+              "delta_mean": -4.971013234599844e-07,
+              "p_two_sided": 0.011988011988011988,
+              "probability_positive": 0.005,
+              "replications": 1000
+            }
+          },
+          "reference_transformed_mae": 5.670377951856206e-06
+        },
+        {
+          "asset": "BTC",
+          "comparison": "full_vs_drop_basis",
+          "delta_reference_loss_minus_full_loss_positive_favors_joint_state": -1.0457161895073208e-06,
+          "full_transformed_mae": 6.167479275316192e-06,
+          "n_asset_day_rows": 905,
+          "n_unique_dates": 905,
+          "paired_block_bootstrap": {
+            "42": {
+              "block_length_intervals": 42,
+              "ci95": [
+                -2.2439858034878714e-06,
+                -3.077886959062531e-08
+              ],
+              "delta_mean": -1.0457161895073208e-06,
+              "p_two_sided": 0.04195804195804196,
+              "probability_positive": 0.02,
+              "replications": 1000
+            },
+            "84": {
+              "block_length_intervals": 84,
+              "ci95": [
+                -2.461447579178168e-06,
+                8.225621155151507e-08
+              ],
+              "delta_mean": -1.0457161895073208e-06,
+              "p_two_sided": 0.0919080919080919,
+              "probability_positive": 0.045,
+              "replications": 1000
+            }
+          },
+          "reference_transformed_mae": 5.12176308580887e-06
+        }
+      ],
+      "single_component_mae": {
+        "basis_only": 5.34875025412572e-06,
+        "flow_only": 4.866040120045072e-06,
+        "funding_only": 4.672735148880251e-06,
+        "oi_only": 4.66239798963002e-06
+      }
+    },
+    "ETH": {
+      "drop_one_mae": {
+        "drop_basis": 2.113378162769339e-05,
+        "drop_flow": 2.1558628186392514e-05,
+        "drop_funding": 2.1173790463088016e-05,
+        "drop_oi": 2.11222479995106e-05
+      },
+      "full_mae": 2.1157533541932993e-05,
+      "joint_state_rule_passed": false,
+      "paired_full_vs_component_comparisons": [
+        {
+          "asset": "ETH",
+          "comparison": "full_vs_funding_only",
+          "delta_reference_loss_minus_full_loss_positive_favors_joint_state": 5.038581702393379e-07,
+          "full_transformed_mae": 2.1157533541932993e-05,
+          "n_asset_day_rows": 922,
+          "n_unique_dates": 922,
+          "paired_block_bootstrap": {
+            "42": {
+              "block_length_intervals": 42,
+              "ci95": [
+                9.760882547455383e-08,
+                9.895794142517053e-07
+              ],
+              "delta_mean": 5.038581702393379e-07,
+              "p_two_sided": 0.007992007992007992,
+              "probability_positive": 0.997,
+              "replications": 1000
+            },
+            "84": {
+              "block_length_intervals": 84,
+              "ci95": [
+                3.73389496880319e-08,
+                1.0713245305055964e-06
+              ],
+              "delta_mean": 5.038581702393379e-07,
+              "p_two_sided": 0.03196803196803197,
+              "probability_positive": 0.985,
+              "replications": 1000
+            }
+          },
+          "reference_transformed_mae": 2.166139171217233e-05
+        },
+        {
+          "asset": "ETH",
+          "comparison": "full_vs_oi_only",
+          "delta_reference_loss_minus_full_loss_positive_favors_joint_state": 1.2393789382825692e-07,
+          "full_transformed_mae": 2.1157533541932993e-05,
+          "n_asset_day_rows": 922,
+          "n_unique_dates": 922,
+          "paired_block_bootstrap": {
+            "42": {
+              "block_length_intervals": 42,
+              "ci95": [
+                -1.2858859751957944e-07,
+                5.719875455442803e-07
+              ],
+              "delta_mean": 1.2393789382825692e-07,
+              "p_two_sided": 0.3276723276723277,
+              "probability_positive": 0.837,
+              "replications": 1000
+            },
+            "84": {
+              "block_length_intervals": 84,
+              "ci95": [
+                -1.0709210295446832e-07,
+                5.387554360317471e-07
+              ],
+              "delta_mean": 1.2393789382825692e-07,
+              "p_two_sided": 0.3276723276723277,
+              "probability_positive": 0.837,
+              "replications": 1000
+            }
+          },
+          "reference_transformed_mae": 2.1281471435761246e-05
+        },
+        {
+          "asset": "ETH",
+          "comparison": "full_vs_flow_only",
+          "delta_reference_loss_minus_full_loss_positive_favors_joint_state": -6.797032071960465e-08,
+          "full_transformed_mae": 2.1157533541932993e-05,
+          "n_asset_day_rows": 922,
+          "n_unique_dates": 922,
+          "paired_block_bootstrap": {
+            "42": {
+              "block_length_intervals": 42,
+              "ci95": [
+                -2.4221200497772453e-07,
+                1.1885387573181388e-07
+              ],
+              "delta_mean": -6.797032071960465e-08,
+              "p_two_sided": 0.6093906093906094,
+              "probability_positive": 0.304,
+              "replications": 1000
+            },
+            "84": {
+              "block_length_intervals": 84,
+              "ci95": [
+                -2.1780867133392748e-07,
+                4.411082228853622e-08
+              ],
+              "delta_mean": -6.797032071960465e-08,
+              "p_two_sided": 0.4275724275724276,
+              "probability_positive": 0.197,
+              "replications": 1000
+            }
+          },
+          "reference_transformed_mae": 2.1089563221213385e-05
+        },
+        {
+          "asset": "ETH",
+          "comparison": "full_vs_basis_only",
+          "delta_reference_loss_minus_full_loss_positive_favors_joint_state": 2.1877405667882208e-08,
+          "full_transformed_mae": 2.1157533541932993e-05,
+          "n_asset_day_rows": 922,
+          "n_unique_dates": 922,
+          "paired_block_bootstrap": {
+            "42": {
+              "block_length_intervals": 42,
+              "ci95": [
+                -1.434474196841172e-07,
+                3.037921915180345e-07
+              ],
+              "delta_mean": 2.1877405667882208e-08,
+              "p_two_sided": 0.5354645354645354,
+              "probability_positive": 0.733,
+              "replications": 1000
+            },
+            "84": {
+              "block_length_intervals": 84,
+              "ci95": [
+                -1.1943330536359215e-07,
+                2.653301721743363e-07
+              ],
+              "delta_mean": 2.1877405667882208e-08,
+              "p_two_sided": 0.5074925074925075,
+              "probability_positive": 0.747,
+              "replications": 1000
+            }
+          },
+          "reference_transformed_mae": 2.117941094760087e-05
+        },
+        {
+          "asset": "ETH",
+          "comparison": "full_vs_drop_funding",
+          "delta_reference_loss_minus_full_loss_positive_favors_joint_state": 1.6256921155028198e-08,
+          "full_transformed_mae": 2.1157533541932993e-05,
+          "n_asset_day_rows": 922,
+          "n_unique_dates": 922,
+          "paired_block_bootstrap": {
+            "42": {
+              "block_length_intervals": 42,
+              "ci95": [
+                -2.39004888869981e-07,
+                2.0489606163696046e-07
+              ],
+              "delta_mean": 1.6256921155028198e-08,
+              "p_two_sided": 0.7832167832167832,
+              "probability_positive": 0.391,
+              "replications": 1000
+            },
+            "84": {
+              "block_length_intervals": 84,
+              "ci95": [
+                -2.395439390539462e-07,
+                1.7903691543981415e-07
+              ],
+              "delta_mean": 1.6256921155028198e-08,
+              "p_two_sided": 0.7672327672327672,
+              "probability_positive": 0.365,
+              "replications": 1000
+            }
+          },
+          "reference_transformed_mae": 2.1173790463088016e-05
+        },
+        {
+          "asset": "ETH",
+          "comparison": "full_vs_drop_oi",
+          "delta_reference_loss_minus_full_loss_positive_favors_joint_state": -3.5285542422391576e-08,
+          "full_transformed_mae": 2.1157533541932993e-05,
+          "n_asset_day_rows": 922,
+          "n_unique_dates": 922,
+          "paired_block_bootstrap": {
+            "42": {
+              "block_length_intervals": 42,
+              "ci95": [
+                -3.3564873660405867e-07,
+                2.0794574664994022e-07
+              ],
+              "delta_mean": -3.5285542422391576e-08,
+              "p_two_sided": 0.7232767232767233,
+              "probability_positive": 0.361,
+              "replications": 1000
+            },
+            "84": {
+              "block_length_intervals": 84,
+              "ci95": [
+                -2.6220765757096547e-07,
+                5.153186891801414e-08
+              ],
+              "delta_mean": -3.5285542422391576e-08,
+              "p_two_sided": 0.3096903096903097,
+              "probability_positive": 0.131,
+              "replications": 1000
+            }
+          },
+          "reference_transformed_mae": 2.11222479995106e-05
+        },
+        {
+          "asset": "ETH",
+          "comparison": "full_vs_drop_flow",
+          "delta_reference_loss_minus_full_loss_positive_favors_joint_state": 4.010946444595225e-07,
+          "full_transformed_mae": 2.1157533541932993e-05,
+          "n_asset_day_rows": 922,
+          "n_unique_dates": 922,
+          "paired_block_bootstrap": {
+            "42": {
+              "block_length_intervals": 42,
+              "ci95": [
+                -1.1391558322678783e-07,
+                9.146513567917617e-07
+              ],
+              "delta_mean": 4.010946444595225e-07,
+              "p_two_sided": 0.15784215784215785,
+              "probability_positive": 0.922,
+              "replications": 1000
+            },
+            "84": {
+              "block_length_intervals": 84,
+              "ci95": [
+                -1.0810045278522503e-07,
+                8.912020225280884e-07
+              ],
+              "delta_mean": 4.010946444595225e-07,
+              "p_two_sided": 0.24975024975024976,
+              "probability_positive": 0.876,
+              "replications": 1000
+            }
+          },
+          "reference_transformed_mae": 2.1558628186392514e-05
+        },
+        {
+          "asset": "ETH",
+          "comparison": "full_vs_drop_basis",
+          "delta_reference_loss_minus_full_loss_positive_favors_joint_state": -2.3751914239601906e-08,
+          "full_transformed_mae": 2.1157533541932993e-05,
+          "n_asset_day_rows": 922,
+          "n_unique_dates": 922,
+          "paired_block_bootstrap": {
+            "42": {
+              "block_length_intervals": 42,
+              "ci95": [
+                -3.520399816111699e-07,
+                1.5091053945282761e-07
+              ],
+              "delta_mean": -2.3751914239601906e-08,
+              "p_two_sided": 0.48151848151848153,
+              "probability_positive": 0.24,
+              "replications": 1000
+            },
+            "84": {
+              "block_length_intervals": 84,
+              "ci95": [
+                -3.767789389371587e-07,
+                1.396715785324511e-07
+              ],
+              "delta_mean": -2.3751914239601906e-08,
+              "p_two_sided": 0.4115884115884116,
+              "probability_positive": 0.191,
+              "replications": 1000
+            }
+          },
+          "reference_transformed_mae": 2.113378162769339e-05
+        }
+      ],
+      "single_component_mae": {
+        "basis_only": 2.117941094760087e-05,
+        "flow_only": 2.1089563221213385e-05,
+        "funding_only": 2.166139171217233e-05,
+        "oi_only": 2.1281471435761246e-05
+      }
+    }
+  },
+  "rule": "Joint state requires full S1 OOF MAE below every single-component variant and at least three of four drop-one variants, using the same inner-CV-selected model/config per fold with no retuning."
+}

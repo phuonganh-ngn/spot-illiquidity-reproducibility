@@ -1,0 +1,17 @@
+{
+  "model_fitting_performed": false,
+  "packages": {
+    "catboost": "1.2.10",
+    "numpy": "2.5.3",
+    "pandas": "3.0.6",
+    "pennylane": "0.45.1",
+    "pyarrow": "25.0.1",
+    "scikit-learn": "1.9.1",
+    "threadpoolctl": "3.7.0",
+    "torch": "2.14.1",
+    "xgboost": "3.4.1"
+  },
+  "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "python": "3.12.3",
+  "qml_backend": "PennyLane default.qubit exact CPU statevector; shots=null"
+}

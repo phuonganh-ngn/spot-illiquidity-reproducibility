@@ -1,0 +1,305 @@
+{
+  "protocol_sha256": "32d6c332ce86e2043709b15aec316b11c67ae730d8482b93d42aee8b7134ff9f",
+  "tests": [
+    {
+      "asset": "BTC",
+      "derivative_offset_intervals": 12,
+      "fixed_model": "Ridge(alpha=1.0); training-only scaling; development fit",
+      "n_external_dates": 5518,
+      "note": "Impossible-time information is used only as a falsification diagnostic; predictive association is not causal evidence.",
+      "placebo": "after_target_t_plus_7_to_t_plus_12",
+      "target": "future_amihud_24h_mean",
+      "transformed_mae_with_future_derivatives": 0.1848570974654888
+    },
+    {
+      "asset": "BTC",
+      "derivative_offset_intervals": 42,
+      "fixed_model": "Ridge(alpha=1.0); training-only scaling; development fit",
+      "n_external_dates": 5488,
+      "note": "Impossible-time information is used only as a falsification diagnostic; predictive association is not causal evidence.",
+      "placebo": "fixed_42_interval_displacement",
+      "target": "future_amihud_24h_mean",
+      "transformed_mae_with_future_derivatives": 0.1853496281614877
+    },
+    {
+      "asset": "BTC",
+      "derivative_offset_intervals": 12,
+      "fixed_model": "Ridge(alpha=1.0); training-only scaling; development fit",
+      "n_external_dates": 5518,
+      "note": "Impossible-time information is used only as a falsification diagnostic; predictive association is not causal evidence.",
+      "placebo": "after_target_t_plus_7_to_t_plus_12",
+      "target": "future_kyle_abs_lambda_24h",
+      "transformed_mae_with_future_derivatives": 0.2835436792099874
+    },
+    {
+      "asset": "BTC",
+      "derivative_offset_intervals": 42,
+      "fixed_model": "Ridge(alpha=1.0); training-only scaling; development fit",
+      "n_external_dates": 5488,
+      "note": "Impossible-time information is used only as a falsification diagnostic; predictive association is not causal evidence.",
+      "placebo": "fixed_42_interval_displacement",
+      "target": "future_kyle_abs_lambda_24h",
+      "transformed_mae_with_future_derivatives": 0.28164132381184737
+    },
+    {
+      "asset": "BTC",
+      "derivative_offset_intervals": 12,
+      "fixed_model": "Ridge(alpha=1.0); training-only scaling; development fit",
+      "n_external_dates": 5518,
+      "note": "Impossible-time information is used only as a falsification diagnostic; predictive association is not causal evidence.",
+      "placebo": "after_target_t_plus_7_to_t_plus_12",
+      "target": "future_corwin_schultz_spread_24h",
+      "transformed_mae_with_future_derivatives": 0.2053624978404227
+    },
+    {
+      "asset": "BTC",
+      "derivative_offset_intervals": 42,
+      "fixed_model": "Ridge(alpha=1.0); training-only scaling; development fit",
+      "n_external_dates": 5488,
+      "note": "Impossible-time information is used only as a falsification diagnostic; predictive association is not causal evidence.",
+      "placebo": "fixed_42_interval_displacement",
+      "target": "future_corwin_schultz_spread_24h",
+      "transformed_mae_with_future_derivatives": 0.20639121589025797
+    },
+    {
+      "asset": "ETH",
+      "derivative_offset_intervals": 12,
+      "fixed_model": "Ridge(alpha=1.0); training-only scaling; development fit",
+      "n_external_dates": 5526,
+      "note": "Impossible-time information is used only as a falsification diagnostic; predictive association is not causal evidence.",
+      "placebo": "after_target_t_plus_7_to_t_plus_12",
+      "target": "future_amihud_24h_mean",
+      "transformed_mae_with_future_derivatives": 0.15669769414598803
+    },
+    {
+      "asset": "ETH",
+      "derivative_offset_intervals": 42,
+      "fixed_model": "Ridge(alpha=1.0); training-only scaling; development fit",
+      "n_external_dates": 5496,
+      "note": "Impossible-time information is used only as a falsification diagnostic; predictive association is not causal evidence.",
+      "placebo": "fixed_42_interval_displacement",
+      "target": "future_amihud_24h_mean",
+      "transformed_mae_with_future_derivatives": 0.15892493277295316
+    },
+    {
+      "asset": "ETH",
+      "derivative_offset_intervals": 12,
+      "fixed_model": "Ridge(alpha=1.0); training-only scaling; development fit",
+      "n_external_dates": 5526,
+      "note": "Impossible-time information is used only as a falsification diagnostic; predictive association is not causal evidence.",
+      "placebo": "after_target_t_plus_7_to_t_plus_12",
+      "target": "future_kyle_abs_lambda_24h",
+      "transformed_mae_with_future_derivatives": 0.1746460862945758
+    },
+    {
+      "asset": "ETH",
+      "derivative_offset_intervals": 42,
+      "fixed_model": "Ridge(alpha=1.0); training-only scaling; development fit",
+      "n_external_dates": 5496,
+      "note": "Impossible-time information is used only as a falsification diagnostic; predictive association is not causal evidence.",
+      "placebo": "fixed_42_interval_displacement",
+      "target": "future_kyle_abs_lambda_24h",
+      "transformed_mae_with_future_derivatives": 0.17126993795932147
+    },
+    {
+      "asset": "ETH",
+      "derivative_offset_intervals": 12,
+      "fixed_model": "Ridge(alpha=1.0); training-only scaling; development fit",
+      "n_external_dates": 5526,
+      "note": "Impossible-time information is used only as a falsification diagnostic; predictive association is not causal evidence.",
+      "placebo": "after_target_t_plus_7_to_t_plus_12",
+      "target": "future_corwin_schultz_spread_24h",
+      "transformed_mae_with_future_derivatives": 0.2075500892463012
+    },
+    {
+      "asset": "ETH",
+      "derivative_offset_intervals": 42,
+      "fixed_model": "Ridge(alpha=1.0); training-only scaling; development fit",
+      "n_external_dates": 5496,
+      "note": "Impossible-time information is used only as a falsification diagnostic; predictive association is not causal evidence.",
+      "placebo": "fixed_42_interval_displacement",
+      "target": "future_corwin_schultz_spread_24h",
+      "transformed_mae_with_future_derivatives": 0.2083388125658143
+    },
+    {
+      "asset": "SOL",
+      "derivative_offset_intervals": 12,
+      "fixed_model": "Ridge(alpha=1.0); training-only scaling; development fit",
+      "n_external_dates": 5495,
+      "note": "Impossible-time information is used only as a falsification diagnostic; predictive association is not causal evidence.",
+      "placebo": "after_target_t_plus_7_to_t_plus_12",
+      "target": "future_amihud_24h_mean",
+      "transformed_mae_with_future_derivatives": 0.0002568603587887611
+    },
+    {
+      "asset": "SOL",
+      "derivative_offset_intervals": 42,
+      "fixed_model": "Ridge(alpha=1.0); training-only scaling; development fit",
+      "n_external_dates": 5465,
+      "note": "Impossible-time information is used only as a falsification diagnostic; predictive association is not causal evidence.",
+      "placebo": "fixed_42_interval_displacement",
+      "target": "future_amihud_24h_mean",
+      "transformed_mae_with_future_derivatives": 0.0002659940119181196
+    },
+    {
+      "asset": "SOL",
+      "derivative_offset_intervals": 12,
+      "fixed_model": "Ridge(alpha=1.0); training-only scaling; development fit",
+      "n_external_dates": 5495,
+      "note": "Impossible-time information is used only as a falsification diagnostic; predictive association is not causal evidence.",
+      "placebo": "after_target_t_plus_7_to_t_plus_12",
+      "target": "future_kyle_abs_lambda_24h",
+      "transformed_mae_with_future_derivatives": 0.3218262760466862
+    },
+    {
+      "asset": "SOL",
+      "derivative_offset_intervals": 42,
+      "fixed_model": "Ridge(alpha=1.0); training-only scaling; development fit",
+      "n_external_dates": 5465,
+      "note": "Impossible-time information is used only as a falsification diagnostic; predictive association is not causal evidence.",
+      "placebo": "fixed_42_interval_displacement",
+      "target": "future_kyle_abs_lambda_24h",
+      "transformed_mae_with_future_derivatives": 0.3150618354924171
+    },
+    {
+      "asset": "SOL",
+      "derivative_offset_intervals": 12,
+      "fixed_model": "Ridge(alpha=1.0); training-only scaling; development fit",
+      "n_external_dates": 5495,
+      "note": "Impossible-time information is used only as a falsification diagnostic; predictive association is not causal evidence.",
+      "placebo": "after_target_t_plus_7_to_t_plus_12",
+      "target": "future_corwin_schultz_spread_24h",
+      "transformed_mae_with_future_derivatives": 0.0027682109777070743
+    },
+    {
+      "asset": "SOL",
+      "derivative_offset_intervals": 42,
+      "fixed_model": "Ridge(alpha=1.0); training-only scaling; development fit",
+      "n_external_dates": 5465,
+      "note": "Impossible-time information is used only as a falsification diagnostic; predictive association is not causal evidence.",
+      "placebo": "fixed_42_interval_displacement",
+      "target": "future_corwin_schultz_spread_24h",
+      "transformed_mae_with_future_derivatives": 0.0028598282229855662
+    },
+    {
+      "asset": "BNB",
+      "derivative_offset_intervals": 12,
+      "fixed_model": "Ridge(alpha=1.0); training-only scaling; development fit",
+      "n_external_dates": 5513,
+      "note": "Impossible-time information is used only as a falsification diagnostic; predictive association is not causal evidence.",
+      "placebo": "after_target_t_plus_7_to_t_plus_12",
+      "target": "future_amihud_24h_mean",
+      "transformed_mae_with_future_derivatives": 0.152913182324211
+    },
+    {
+      "asset": "BNB",
+      "derivative_offset_intervals": 42,
+      "fixed_model": "Ridge(alpha=1.0); training-only scaling; development fit",
+      "n_external_dates": 5483,
+      "note": "Impossible-time information is used only as a falsification diagnostic; predictive association is not causal evidence.",
+      "placebo": "fixed_42_interval_displacement",
+      "target": "future_amihud_24h_mean",
+      "transformed_mae_with_future_derivatives": 0.15214810389964212
+    },
+    {
+      "asset": "BNB",
+      "derivative_offset_intervals": 12,
+      "fixed_model": "Ridge(alpha=1.0); training-only scaling; development fit",
+      "n_external_dates": 5513,
+      "note": "Impossible-time information is used only as a falsification diagnostic; predictive association is not causal evidence.",
+      "placebo": "after_target_t_plus_7_to_t_plus_12",
+      "target": "future_kyle_abs_lambda_24h",
+      "transformed_mae_with_future_derivatives": 0.19736588509841516
+    },
+    {
+      "asset": "BNB",
+      "derivative_offset_intervals": 42,
+      "fixed_model": "Ridge(alpha=1.0); training-only scaling; development fit",
+      "n_external_dates": 5483,
+      "note": "Impossible-time information is used only as a falsification diagnostic; predictive association is not causal evidence.",
+      "placebo": "fixed_42_interval_displacement",
+      "target": "future_kyle_abs_lambda_24h",
+      "transformed_mae_with_future_derivatives": 0.18712080706331596
+    },
+    {
+      "asset": "BNB",
+      "derivative_offset_intervals": 12,
+      "fixed_model": "Ridge(alpha=1.0); training-only scaling; development fit",
+      "n_external_dates": 5513,
+      "note": "Impossible-time information is used only as a falsification diagnostic; predictive association is not causal evidence.",
+      "placebo": "after_target_t_plus_7_to_t_plus_12",
+      "target": "future_corwin_schultz_spread_24h",
+      "transformed_mae_with_future_derivatives": 0.2041267727989461
+    },
+    {
+      "asset": "BNB",
+      "derivative_offset_intervals": 42,
+      "fixed_model": "Ridge(alpha=1.0); training-only scaling; development fit",
+      "n_external_dates": 5483,
+      "note": "Impossible-time information is used only as a falsification diagnostic; predictive association is not causal evidence.",
+      "placebo": "fixed_42_interval_displacement",
+      "target": "future_corwin_schultz_spread_24h",
+      "transformed_mae_with_future_derivatives": 0.20542180542200453
+    },
+    {
+      "asset": "XRP",
+      "derivative_offset_intervals": 12,
+      "fixed_model": "Ridge(alpha=1.0); training-only scaling; development fit",
+      "n_external_dates": 5510,
+      "note": "Impossible-time information is used only as a falsification diagnostic; predictive association is not causal evidence.",
+      "placebo": "after_target_t_plus_7_to_t_plus_12",
+      "target": "future_amihud_24h_mean",
+      "transformed_mae_with_future_derivatives": 0.16873335155965913
+    },
+    {
+      "asset": "XRP",
+      "derivative_offset_intervals": 42,
+      "fixed_model": "Ridge(alpha=1.0); training-only scaling; development fit",
+      "n_external_dates": 5480,
+      "note": "Impossible-time information is used only as a falsification diagnostic; predictive association is not causal evidence.",
+      "placebo": "fixed_42_interval_displacement",
+      "target": "future_amihud_24h_mean",
+      "transformed_mae_with_future_derivatives": 0.17058860003137394
+    },
+    {
+      "asset": "XRP",
+      "derivative_offset_intervals": 12,
+      "fixed_model": "Ridge(alpha=1.0); training-only scaling; development fit",
+      "n_external_dates": 5510,
+      "note": "Impossible-time information is used only as a falsification diagnostic; predictive association is not causal evidence.",
+      "placebo": "after_target_t_plus_7_to_t_plus_12",
+      "target": "future_kyle_abs_lambda_24h",
+      "transformed_mae_with_future_derivatives": 0.2659409652982932
+    },
+    {
+      "asset": "XRP",
+      "derivative_offset_intervals": 42,
+      "fixed_model": "Ridge(alpha=1.0); training-only scaling; development fit",
+      "n_external_dates": 5480,
+      "note": "Impossible-time information is used only as a falsification diagnostic; predictive association is not causal evidence.",
+      "placebo": "fixed_42_interval_displacement",
+      "target": "future_kyle_abs_lambda_24h",
+      "transformed_mae_with_future_derivatives": 0.26086739682872995
+    },
+    {
+      "asset": "XRP",
+      "derivative_offset_intervals": 12,
+      "fixed_model": "Ridge(alpha=1.0); training-only scaling; development fit",
+      "n_external_dates": 5510,
+      "note": "Impossible-time information is used only as a falsification diagnostic; predictive association is not causal evidence.",
+      "placebo": "after_target_t_plus_7_to_t_plus_12",
+      "target": "future_corwin_schultz_spread_24h",
+      "transformed_mae_with_future_derivatives": 0.2077495624568955
+    },
+    {
+      "asset": "XRP",
+      "derivative_offset_intervals": 42,
+      "fixed_model": "Ridge(alpha=1.0); training-only scaling; development fit",
+      "n_external_dates": 5480,
+      "note": "Impossible-time information is used only as a falsification diagnostic; predictive association is not causal evidence.",
+      "placebo": "fixed_42_interval_displacement",
+      "target": "future_corwin_schultz_spread_24h",
+      "transformed_mae_with_future_derivatives": 0.20934408543320263
+    }
+  ]
+}

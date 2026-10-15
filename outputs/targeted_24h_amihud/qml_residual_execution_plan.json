@@ -1,0 +1,38 @@
+{
+  "status": "FROZEN_BEFORE_QML_EVALUATION",
+  "scope": "Residual-learning methodological extension only; does not alter the primary S0/S1 evaluation or its frozen model registry.",
+  "target": "Strict forward OOF residuals of T2_log1p 24-hour future spot Amihud from the nested selected SpotOnly model.",
+  "features": "Derivative-only t-5..t histories for Funding, OI Log Change, Futures Taker Imbalance, Basis; frozen derivative innovations/interactions and calendar controls. No spot inputs.",
+  "training": "Use earlier strict OOF residual rows only. Final evaluation uses F3 (2023-04-01 through 2023-06-30 20:00 UTC); training residual rows are F1 and F2. No F3 target is used for tuning.",
+  "quantum_kernel": {
+    "qubits": [4, 6, 8],
+    "feature_map": "fixed Hadamard + Y-angle embedding + RZ(x/2) + cyclic CNOT ring fidelity kernel",
+    "landmarks": 128,
+    "landmark_rule": "equally spaced row indices from the training block",
+    "solver": "Nyström feature map followed by Ridge alpha=0.001",
+    "matched_classical": "RBF Nyström kernel ridge, same training rows, PCA dimension, landmark count/rule and alpha"
+  },
+  "qnn": {
+    "qubits": [4, 6, 8],
+    "seeds": [101, 211, 307, 401, 503],
+    "circuit": "Y-angle embedding + two StronglyEntanglingLayers; Pauli-Z readout and linear scalar head",
+    "epochs": 40,
+    "batch_size": 64,
+    "learning_rate": 0.01,
+    "backend": "PennyLane default.qubit exact statevector CPU",
+    "matched_classical": "one-hidden-layer MLP with hidden width equal to qubit count, training-only PCA/scaling, same five seeds"
+  },
+  "hybrid_qnn": {
+    "qubits": [4, 6, 8],
+    "seeds": [101, 211, 307, 401, 503],
+    "encoder": "single linear layer from at most 16 training-only PCA features",
+    "circuit": "same shallow two-layer variational circuit as QNN",
+    "epochs": 40,
+    "batch_size": 64,
+    "learning_rate": 0.01,
+    "matched_classical": "one-hidden-layer MLP from the same 16 training-only PCA features, hidden width equal to qubit count, same five seeds"
+  },
+  "inference": "For seed-based QNN/hybrid comparisons use the five-seed ensemble mean prediction and paired moving-block bootstrap with 1,000 draws and lengths 42/84. Report individual-seed dispersion; never select the best seed. Holm correct each asset within each QML family across the three qubit counts.",
+  "target_scaling": "For QNN and matched classical MLP optimization, center and scale the residual target using only the training fold, then inverse-transform predictions before evaluation.",
+  "interpretation": "Predictive comparison only. No hardware run and no quantum-advantage claim. This development holdout is not external confirmation."
+}

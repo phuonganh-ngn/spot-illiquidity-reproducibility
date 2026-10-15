@@ -1,0 +1,241 @@
+{
+  "evaluation": "F3 only; residual training F1+F2, no F3 tuning",
+  "matched_design": "same rows and dimensions; quantum fidelity kernel vs RBF Nystr\u00f6m with identical 128 training landmarks",
+  "results": [
+    {
+      "asset": "BTC",
+      "delta_positive_favors_quantum": -1.3605829516410278e-07,
+      "holm_p_within_asset_family": 0.03596403596403597,
+      "matched_rbf_corrected_metrics": {
+        "mae": 7.70452614100255e-06,
+        "rmse": 9.433311693920361e-06
+      },
+      "n": 199,
+      "paired_bootstrap": {
+        "42": {
+          "block_length": 42,
+          "ci95": [
+            -2.4084131993843257e-07,
+            -2.192745745544529e-08
+          ],
+          "mean_delta": -1.3605829516410278e-07,
+          "p_two_sided": 0.011988011988011988,
+          "probability_positive": 0.005,
+          "replications": 1000
+        },
+        "84": {
+          "block_length": 84,
+          "ci95": [
+            -2.1282714361538928e-07,
+            -4.037114074451769e-08
+          ],
+          "mean_delta": -1.3605829516410278e-07,
+          "p_two_sided": 0.00999000999000999,
+          "probability_positive": 0.004,
+          "replications": 1000
+        }
+      },
+      "quantum_kernel_corrected_metrics": {
+        "mae": 7.840584436166652e-06,
+        "rmse": 9.564123753947575e-06
+      },
+      "qubits": 4
+    },
+    {
+      "asset": "BTC",
+      "delta_positive_favors_quantum": 3.7416819749779494e-10,
+      "holm_p_within_asset_family": 0.5814185814185814,
+      "matched_rbf_corrected_metrics": {
+        "mae": 7.815001709931552e-06,
+        "rmse": 9.500710319523151e-06
+      },
+      "n": 199,
+      "paired_bootstrap": {
+        "42": {
+          "block_length": 42,
+          "ci95": [
+            -1.2521322265843554e-07,
+            7.935792020468168e-08
+          ],
+          "mean_delta": 3.7416819749779494e-10,
+          "p_two_sided": 0.5814185814185814,
+          "probability_positive": 0.29,
+          "replications": 1000
+        },
+        "84": {
+          "block_length": 84,
+          "ci95": [
+            -1.3550535344580589e-07,
+            4.9182182670999385e-08
+          ],
+          "mean_delta": 3.7416819749779494e-10,
+          "p_two_sided": 0.2957042957042957,
+          "probability_positive": 0.147,
+          "replications": 1000
+        }
+      },
+      "quantum_kernel_corrected_metrics": {
+        "mae": 7.814627541734054e-06,
+        "rmse": 9.495141046539897e-06
+      },
+      "qubits": 6
+    },
+    {
+      "asset": "BTC",
+      "delta_positive_favors_quantum": 4.324802243662909e-08,
+      "holm_p_within_asset_family": 0.21978021978021978,
+      "matched_rbf_corrected_metrics": {
+        "mae": 7.829987421208567e-06,
+        "rmse": 9.601105418535089e-06
+      },
+      "n": 199,
+      "paired_bootstrap": {
+        "42": {
+          "block_length": 42,
+          "ci95": [
+            -1.4867769907379322e-08,
+            1.1592253942869646e-07
+          ],
+          "mean_delta": 4.324802243662909e-08,
+          "p_two_sided": 0.10989010989010989,
+          "probability_positive": 0.946,
+          "replications": 1000
+        },
+        "84": {
+          "block_length": 84,
+          "ci95": [
+            1.1471545859337073e-08,
+            1.2915589142355935e-07
+          ],
+          "mean_delta": 4.324802243662909e-08,
+          "p_two_sided": 0.02197802197802198,
+          "probability_positive": 0.99,
+          "replications": 1000
+        }
+      },
+      "quantum_kernel_corrected_metrics": {
+        "mae": 7.78673939877194e-06,
+        "rmse": 9.54305698899948e-06
+      },
+      "qubits": 8
+    },
+    {
+      "asset": "ETH",
+      "delta_positive_favors_quantum": 1.7013807052812065e-07,
+      "holm_p_within_asset_family": 0.9250749250749251,
+      "matched_rbf_corrected_metrics": {
+        "mae": 2.3022634742831942e-05,
+        "rmse": 2.7126744606041983e-05
+      },
+      "n": 216,
+      "paired_bootstrap": {
+        "42": {
+          "block_length": 42,
+          "ci95": [
+            -5.158390064195021e-07,
+            7.497562817160983e-07
+          ],
+          "mean_delta": 1.7013807052812065e-07,
+          "p_two_sided": 0.9250749250749251,
+          "probability_positive": 0.538,
+          "replications": 1000
+        },
+        "84": {
+          "block_length": 84,
+          "ci95": [
+            -4.91075523171598e-07,
+            8.150858179467773e-07
+          ],
+          "mean_delta": 1.7013807052812065e-07,
+          "p_two_sided": 0.961038961038961,
+          "probability_positive": 0.52,
+          "replications": 1000
+        }
+      },
+      "quantum_kernel_corrected_metrics": {
+        "mae": 2.2852496672303827e-05,
+        "rmse": 2.7086701745728673e-05
+      },
+      "qubits": 4
+    },
+    {
+      "asset": "ETH",
+      "delta_positive_favors_quantum": 2.21205223795751e-07,
+      "holm_p_within_asset_family": 0.16183816183816183,
+      "matched_rbf_corrected_metrics": {
+        "mae": 2.5367886035864974e-05,
+        "rmse": 2.9790718797511615e-05
+      },
+      "n": 216,
+      "paired_bootstrap": {
+        "42": {
+          "block_length": 42,
+          "ci95": [
+            -4.08512442983133e-09,
+            8.970338356483955e-07
+          ],
+          "mean_delta": 2.21205223795751e-07,
+          "p_two_sided": 0.053946053946053944,
+          "probability_positive": 0.974,
+          "replications": 1000
+        },
+        "84": {
+          "block_length": 84,
+          "ci95": [
+            4.789546758267055e-08,
+            8.35246301968254e-07
+          ],
+          "mean_delta": 2.21205223795751e-07,
+          "p_two_sided": 0.03396603396603397,
+          "probability_positive": 0.984,
+          "replications": 1000
+        }
+      },
+      "quantum_kernel_corrected_metrics": {
+        "mae": 2.514668081206922e-05,
+        "rmse": 2.9602672720077742e-05
+      },
+      "qubits": 6
+    },
+    {
+      "asset": "ETH",
+      "delta_positive_favors_quantum": 2.2893652797160885e-07,
+      "holm_p_within_asset_family": 0.5674325674325674,
+      "matched_rbf_corrected_metrics": {
+        "mae": 2.5993763744498454e-05,
+        "rmse": 3.0146559577782964e-05
+      },
+      "n": 216,
+      "paired_bootstrap": {
+        "42": {
+          "block_length": 42,
+          "ci95": [
+            -2.4783439632232883e-07,
+            9.053769016633109e-07
+          ],
+          "mean_delta": 2.2893652797160885e-07,
+          "p_two_sided": 0.2837162837162837,
+          "probability_positive": 0.859,
+          "replications": 1000
+        },
+        "84": {
+          "block_length": 84,
+          "ci95": [
+            -1.3297427507395672e-07,
+            7.272160229862626e-07
+          ],
+          "mean_delta": 2.2893652797160885e-07,
+          "p_two_sided": 0.3076923076923077,
+          "probability_positive": 0.847,
+          "replications": 1000
+        }
+      },
+      "quantum_kernel_corrected_metrics": {
+        "mae": 2.5764827216526844e-05,
+        "rmse": 3.0238328000950562e-05
+      },
+      "qubits": 8
+    }
+  ],
+  "status": "COMPLETE"
+}

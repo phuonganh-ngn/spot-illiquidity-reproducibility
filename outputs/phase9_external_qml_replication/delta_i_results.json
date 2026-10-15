@@ -1,0 +1,91 @@
+{
+  "by_asset": {
+    "BTC": {
+      "bootstrap": {
+        "42": {
+          "block_length_4h_intervals": 42,
+          "bootstrap_draws_crossing_zero": 39,
+          "ci95": [
+            -3.9301147647779404e-08,
+            6.959473947088667e-07
+          ],
+          "mean_delta": 3.592009504958662e-07,
+          "p_two_sided": 0.057942057942057944,
+          "p_two_sided_centered_block_bootstrap": 0.057942057942057944,
+          "p_value_method": "plus-one corrected two-sided centered moving-block bootstrap under zero-mean null",
+          "probability_delta_positive": 0.961,
+          "replications": 1000,
+          "seed": 1781863028
+        },
+        "84": {
+          "block_length_4h_intervals": 84,
+          "bootstrap_draws_crossing_zero": 61,
+          "ci95": [
+            -8.802611160965063e-08,
+            6.95138426223774e-07
+          ],
+          "mean_delta": 3.592009504958662e-07,
+          "p_two_sided": 0.08391608391608392,
+          "p_two_sided_centered_block_bootstrap": 0.08391608391608392,
+          "p_value_method": "plus-one corrected two-sided centered moving-block bootstrap under zero-mean null",
+          "probability_delta_positive": 0.939,
+          "replications": 1000,
+          "seed": 1509073587
+        }
+      },
+      "hac": {
+        "hac_lags": 6,
+        "hac_se": 1.74108252296897e-07,
+        "mean_loss_delta": 3.592009504958662e-07,
+        "p_two_sided_normal": 0.039104101957754274,
+        "z_statistic": 2.063089748803756
+      },
+      "holm_p_block42": 0.057942057942057944,
+      "mean": 3.592009504958662e-07
+    },
+    "ETH": {
+      "bootstrap": {
+        "42": {
+          "block_length_4h_intervals": 42,
+          "bootstrap_draws_crossing_zero": 4,
+          "ci95": [
+            -3.590651220072142e-06,
+            -2.986881949008769e-07
+          ],
+          "mean_delta": -1.9259230369914844e-06,
+          "p_two_sided": 0.014985014985014986,
+          "p_two_sided_centered_block_bootstrap": 0.014985014985014986,
+          "p_value_method": "plus-one corrected two-sided centered moving-block bootstrap under zero-mean null",
+          "probability_delta_positive": 0.004,
+          "replications": 1000,
+          "seed": 847755432
+        },
+        "84": {
+          "block_length_4h_intervals": 84,
+          "bootstrap_draws_crossing_zero": 12,
+          "ci95": [
+            -3.5058717972355982e-06,
+            -3.08645295268452e-07
+          ],
+          "mean_delta": -1.9259230369914844e-06,
+          "p_two_sided": 0.022977022977022976,
+          "p_two_sided_centered_block_bootstrap": 0.022977022977022976,
+          "p_value_method": "plus-one corrected two-sided centered moving-block bootstrap under zero-mean null",
+          "probability_delta_positive": 0.012,
+          "replications": 1000,
+          "seed": 1920492658
+        }
+      },
+      "hac": {
+        "hac_lags": 6,
+        "hac_se": 7.045916911509376e-07,
+        "mean_loss_delta": -1.9259230369914844e-06,
+        "p_two_sided_normal": 0.006268628661953235,
+        "z_statistic": -2.7333887997536905
+      },
+      "holm_p_block42": 0.029970029970029972,
+      "mean": -1.9259230369914844e-06
+    }
+  },
+  "definition": "MAE(SpotOnly)-MAE(SpotOnly+QML residual correction); positive favors incremental predictive information."
+}

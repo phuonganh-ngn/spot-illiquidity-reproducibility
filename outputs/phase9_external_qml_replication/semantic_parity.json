@@ -1,0 +1,231 @@
+{
+  "aggregate_source_equivalence": {
+    "can_replace_transaction_level_taker_flow": false,
+    "candidate": "Bybit 5m/4h kline aggregate candles",
+    "comparison_performed": "Trade archive total base and quote volumes were compared with official 4h candles on 2024-10-06 for both assets and markets. This validates base/quote units, not an alternative imbalance measure.",
+    "reason": "Official kline response supplies OHLC, total volume and turnover but no taker buy/sell split; it cannot reproduce the frozen signed-flow feature. Therefore transaction-level archives remain necessary.",
+    "volume_probe_file": "outputs/phase9_external_qml_replication/volume_parity_probe.json"
+  },
+  "comparison_venue": "Binance frozen targeted study",
+  "created_utc": "2026-10-08T10:09:34.703370+00:00",
+  "primary_venue": "Bybit",
+  "sample_window_sha256": "371eef13cb0c8edde1374d7aadf9687162dbc9a95624538332976d4aa0ed4d16",
+  "source_documentation": [
+    {
+      "dataset": "Kline OHLCV/turnover",
+      "url": "https://bybit-exchange.github.io/docs/v5/market/kline"
+    },
+    {
+      "dataset": "Funding history",
+      "url": "https://bybit-exchange.github.io/docs/v5/market/history-fund-rate"
+    },
+    {
+      "dataset": "Open interest",
+      "url": "https://bybit-exchange.github.io/docs/v5/market/open-interest"
+    },
+    {
+      "dataset": "Mark price kline",
+      "url": "https://bybit-exchange.github.io/docs/v5/market/mark-kline"
+    },
+    {
+      "dataset": "Index price kline",
+      "url": "https://bybit-exchange.github.io/docs/v5/market/index-kline"
+    },
+    {
+      "dataset": "Public trade aggressor side",
+      "url": "https://bybit-exchange.github.io/docs/v5/websocket/public/trade"
+    },
+    {
+      "dataset": "Official Bybit public archive",
+      "url": "https://public.bybit.com"
+    }
+  ],
+  "status_rule": "PASS denotes same economic concept and compatible transformation/aggregation; venue-specific scale/population differences are documented. Coverage is separately evaluated in panel_audit.json.",
+  "variables": {
+    "Basis": {
+      "aggregation_rule": "Join exact five-minute timestamps; require 48 matched observations; average mark/index-1.",
+      "binance_original_definition": "Mean((mark close / index close)-1) over 48 matched five-minute observations in each 4h interval.",
+      "bybit_fields": [
+        "mark-price kline closePrice",
+        "index-price kline closePrice"
+      ],
+      "bybit_timestamp_semantics": "Five-minute startTime in UTC milliseconds; each record is a candle interval, closePrice is the interval close/latest trade if still open.",
+      "justification": "Same formula, units and interval aggregation. Official docs: https://bybit-exchange.github.io/docs/v5/market/mark-kline and https://bybit-exchange.github.io/docs/v5/market/index-kline",
+      "known_differences": [
+        "Mark/index construction is venue-specific, but both are provider-defined components and formula matches the frozen Binance feature."
+      ],
+      "status": "PASS",
+      "transformation": "basis_mean and frozen basis_change = current 4h basis minus previous 4h basis.",
+      "units": "Nonannualized ratio (dimensionless)."
+    },
+    "Funding": {
+      "aggregation_rule": "As-of interval end; maximum age 12 hours; no interpolation or synthetic settlement.",
+      "binance_original_definition": "Settlement funding-rate observation; latest event at or before the 4h interval end, carried forward no more than 12 hours.",
+      "bybit_fields": [
+        "fundingRate",
+        "fundingRateTimestamp"
+      ],
+      "bybit_timestamp_semantics": "Funding settlement timestamp (Unix ms); API documentation explains a rate stamped at settlement is the latest settled rate.",
+      "justification": "Bybit returns a settled rate with an explicit settlement timestamp and the same event-state/as-of rule can be applied. Official docs: https://bybit-exchange.github.io/docs/v5/market/history-fund-rate",
+      "known_differences": [
+        "Funding interval can vary by symbol or regime; actual historical settlement gaps are audited and retained."
+      ],
+      "status": "PASS",
+      "transformation": "funding_rate_state; frozen funding_change = current state minus prior 4h state.",
+      "units": "Decimal rate per funding settlement interval; not annualized."
+    },
+    "Futures Taker Imbalance": {
+      "aggregation_rule": "Within each 4h bin, sum homeNotional base quantity separately for Buy/Sell aggressor sides; (buy-sell)/(buy+sell), denominator must be positive.",
+      "binance_original_definition": "(taker buy base volume - taker sell base volume)/(taker buy base volume + taker sell base volume); Binance source reconstructs sell as total base volume minus taker-buy base volume.",
+      "bybit_fields": [
+        "side (Buy/Sell)",
+        "homeNotional",
+        "price",
+        "timestamp"
+      ],
+      "bybit_timestamp_semantics": "Trade execution/match timestamp; archive stores fractional Unix seconds for linear trades; assigned to 4h UTC bin by flooring to millisecond time.",
+      "justification": "Same aggressor-side base-volume imbalance; flow remains transaction-level. Official docs: https://bybit-exchange.github.io/docs/v5/websocket/public/trade and https://bybit-exchange.github.io/docs/v5/market/kline",
+      "known_differences": [
+        "Bybit raw archive field names differ. `side` is documented as side of taker in Bybit public trades. Bybit linear kline volume is base coin. Archive homeNotional summed to linear kline base volume with mean relative absolute error <= 4.6e-13 in a fixed in-window six-bar check for both BTC and ETH. The kline source lacks buyer/seller split, so it cannot replace trade-level flow."
+      ],
+      "status": "PASS",
+      "transformation": "futures_taker_imbalance; frozen flow_shock uses the 180 prior 4h values with median/MAD and scale 1.4826.",
+      "unit_crosscheck": {
+        "BTC": {
+          "futures": {
+            "bars_compared": 6,
+            "max_relative_abs_error_base": 7.342255983575424e-13,
+            "max_relative_abs_error_quote": 1.0875144263352219e-14,
+            "mean_relative_abs_error_base": 4.5401458928321987e-13,
+            "mean_relative_abs_error_quote": 6.173752046692514e-15
+          },
+          "spot": {
+            "bars_compared": 6,
+            "max_relative_abs_error_base": 2.756550470706173e-13,
+            "max_relative_abs_error_quote": 2.757330730535605e-14,
+            "mean_relative_abs_error_base": 1.9868423664570935e-13,
+            "mean_relative_abs_error_quote": 9.713884906979898e-15
+          }
+        },
+        "ETH": {
+          "futures": {
+            "bars_compared": 6,
+            "max_relative_abs_error_base": 6.322620029900876e-13,
+            "max_relative_abs_error_quote": 1.3707112434690493e-14,
+            "mean_relative_abs_error_base": 2.2491322480966487e-13,
+            "mean_relative_abs_error_quote": 1.029986060316388e-14
+          },
+          "spot": {
+            "bars_compared": 6,
+            "max_relative_abs_error_base": 2.769257263431496e-13,
+            "max_relative_abs_error_quote": 7.117447627958434e-15,
+            "mean_relative_abs_error_base": 1.2223620813757304e-13,
+            "mean_relative_abs_error_quote": 3.508308216466511e-15
+          }
+        }
+      },
+      "units": "Base coin quantity in numerator and denominator; normalized imbalance is dimensionless, [-1,1]."
+    },
+    "OI Log Change": {
+      "aggregation_rule": "As-of interval end with age <=4h, then consecutive 4h log difference.",
+      "binance_original_definition": "First log difference of 4h open-interest level.",
+      "bybit_fields": [
+        "openInterest",
+        "timestamp"
+      ],
+      "bybit_timestamp_semantics": "4h UTC snapshot time, milliseconds.",
+      "justification": "The identical within-series log-difference operation removes constant scale differences.",
+      "known_differences": [
+        "Per-venue positions are not directly comparable in level; this variable compares within-venue growth only."
+      ],
+      "status": "PASS",
+      "transformation": "log(openInterest_t)-log(openInterest_{t-1}).",
+      "units": "Log change (dimensionless)."
+    },
+    "Open Interest": {
+      "aggregation_rule": "Use openInterest (not singleOpenInterest), last available snapshot at or before interval end, maximum age 4h.",
+      "binance_original_definition": "4h open-interest level reconstructed from Binance USD\u24c8-M perpetual open-interest metrics; both-side aggregate.",
+      "bybit_fields": [
+        "openInterest",
+        "singleOpenInterest",
+        "timestamp"
+      ],
+      "bybit_timestamp_semantics": "UTC millisecond snapshot timestamp; selected intervalTime=4h.",
+      "justification": "The transformed economic concept is percentage change in outstanding linear-perpetual exposure, and Bybit\u2019s unit difference cancels under log differences. Official docs: https://bybit-exchange.github.io/docs/v5/market/open-interest",
+      "known_differences": [
+        "Raw unit and endpoint sampling convention differ; only log changes enter the feature set. Any contract multiplier/unit break would invalidate parity and is checked in the snapshot series."
+      ],
+      "status": "PASS",
+      "transformation": "OI Log Change = log(OI_t/OI_{t-1}); invariant to fixed unit scale.",
+      "units": "Bybit linear BTCUSDT openInterest is BTC; ETHUSDT is ETH; provider documents openInterest as both-side sum. Binance reports exchange contract units; levels are not compared."
+    },
+    "Spot Price": {
+      "aggregation_rule": "4h UTC OHLC from 48 5m candles; close is the final 5m candle close.",
+      "binance_original_definition": "Spot traded price from 5m candles; 4h open/high/low/close reconstructed on UTC boundaries; 4h close is last 5m close.",
+      "bybit_fields": [
+        "spot kline openPrice",
+        "highPrice",
+        "lowPrice",
+        "closePrice",
+        "startTime"
+      ],
+      "bybit_timestamp_semantics": "5m candle startTime in UTC milliseconds; closePrice is last traded price for a closed candle.",
+      "justification": "Same traded-price candle concept and UTC aggregation. Official docs: https://bybit-exchange.github.io/docs/v5/market/kline",
+      "known_differences": [
+        "Bybit spot represents one venue, not global spot market; same-venue spot/futures dependence remains an interpretation limitation."
+      ],
+      "status": "PASS",
+      "transformation": "4h log return from consecutive 4h closes; input to target and spot-only state features.",
+      "units": "USDT per BTC or ETH."
+    },
+    "Spot Quote Volume": {
+      "aggregation_rule": "Sum turnover across 48 five-minute spot candles; require complete 48-bar interval.",
+      "binance_original_definition": "4h sum of spot quote-asset volume, USDT-denominated.",
+      "bybit_fields": [
+        "spot kline turnover (quote turnover in USDT); cross-check against trade-level price*base quantity."
+      ],
+      "bybit_timestamp_semantics": "5m candle startTime, UTC milliseconds.",
+      "justification": "Bybit kline turnover is quote-currency turnover; archive trades independently reconcile to aggregated candle turnover to numerical precision in the fixed audit day. Official docs: https://bybit-exchange.github.io/docs/v5/market/kline",
+      "known_differences": [
+        "Venue-specific trade population and fees/market operation; baseline remains Bybit spot only."
+      ],
+      "status": "PASS",
+      "transformation": "Used as Amihud denominator; quote_volume_growth = diff(log(positive 4h quote turnover)).",
+      "unit_crosscheck": {
+        "BTC": {
+          "futures": {
+            "bars_compared": 6,
+            "max_relative_abs_error_base": 7.342255983575424e-13,
+            "max_relative_abs_error_quote": 1.0875144263352219e-14,
+            "mean_relative_abs_error_base": 4.5401458928321987e-13,
+            "mean_relative_abs_error_quote": 6.173752046692514e-15
+          },
+          "spot": {
+            "bars_compared": 6,
+            "max_relative_abs_error_base": 2.756550470706173e-13,
+            "max_relative_abs_error_quote": 2.757330730535605e-14,
+            "mean_relative_abs_error_base": 1.9868423664570935e-13,
+            "mean_relative_abs_error_quote": 9.713884906979898e-15
+          }
+        },
+        "ETH": {
+          "futures": {
+            "bars_compared": 6,
+            "max_relative_abs_error_base": 6.322620029900876e-13,
+            "max_relative_abs_error_quote": 1.3707112434690493e-14,
+            "mean_relative_abs_error_base": 2.2491322480966487e-13,
+            "mean_relative_abs_error_quote": 1.029986060316388e-14
+          },
+          "spot": {
+            "bars_compared": 6,
+            "max_relative_abs_error_base": 2.769257263431496e-13,
+            "max_relative_abs_error_quote": 7.117447627958434e-15,
+            "mean_relative_abs_error_base": 1.2223620813757304e-13,
+            "mean_relative_abs_error_quote": 3.508308216466511e-15
+          }
+        }
+      },
+      "units": "USDT turnover."
+    }
+  }
+}

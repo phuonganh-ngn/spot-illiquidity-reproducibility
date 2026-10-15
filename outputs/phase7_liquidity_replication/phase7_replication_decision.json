@@ -1,0 +1,709 @@
+{
+  "amihud_replication": {
+    "conditions": {
+      "at_least_2_of_3_segments_improve_without_material_deterioration": true,
+      "at_least_3_of_5_categories_improve_for_btc_and_eth": false,
+      "at_least_4_of_5_assets_improve": false,
+      "btc_and_eth_bootstrap_ci_upper_below_zero": false,
+      "btc_and_eth_equal_category_delta_below_zero": true
+    },
+    "legacy_asset_results": [
+      {
+        "asset": "BTC",
+        "bootstrap_ci95": [
+          -0.006738564054443379,
+          -0.002148980039384867
+        ],
+        "categories_improving": 2,
+        "delta": -0.004434152150869245
+      },
+      {
+        "asset": "ETH",
+        "bootstrap_ci95": [
+          -0.0040807982521863535,
+          0.0003612410181851809
+        ],
+        "categories_improving": 3,
+        "delta": -0.0019360077709490162
+      },
+      {
+        "asset": "SOL",
+        "bootstrap_ci95": [
+          0.004467172528420095,
+          0.005023644203564798
+        ],
+        "categories_improving": 0,
+        "delta": 0.004756647268742194
+      },
+      {
+        "asset": "BNB",
+        "bootstrap_ci95": [
+          -0.0029485285490903615,
+          0.004910279188039138
+        ],
+        "categories_improving": 1,
+        "delta": 0.0009156399433638839
+      },
+      {
+        "asset": "XRP",
+        "bootstrap_ci95": [
+          -0.007488519391755404,
+          0.0026587289996823278
+        ],
+        "categories_improving": 3,
+        "delta": -0.0023696329525121295
+      }
+    ],
+    "legacy_segments": [
+      {
+        "asset": "BTC",
+        "categories_improving": 1,
+        "delta_over_spot_mae": -0.03119225208104441,
+        "equal_category_delta": -0.00568035157842458,
+        "n_dates": 1756,
+        "segment": "2024-03_to_2024-12",
+        "spot_only_mae": 0.18210777354792346
+      },
+      {
+        "asset": "BTC",
+        "categories_improving": 2,
+        "delta_over_spot_mae": 0.008800513602932908,
+        "equal_category_delta": 0.0018006496857014948,
+        "n_dates": 2140,
+        "segment": "2025",
+        "spot_only_mae": 0.20460734076945242
+      },
+      {
+        "asset": "BTC",
+        "categories_improving": 2,
+        "delta_over_spot_mae": -0.05094218564590244,
+        "equal_category_delta": -0.011315182215936623,
+        "n_dates": 1621,
+        "segment": "2026_partial",
+        "spot_only_mae": 0.22211811433824424
+      },
+      {
+        "asset": "ETH",
+        "categories_improving": 4,
+        "delta_over_spot_mae": -0.02981166718952074,
+        "equal_category_delta": -0.004463730288935178,
+        "n_dates": 1757,
+        "segment": "2024-03_to_2024-12",
+        "spot_only_mae": 0.14973098487105907
+      },
+      {
+        "asset": "ETH",
+        "categories_improving": 2,
+        "delta_over_spot_mae": 0.009088482362507196,
+        "equal_category_delta": 0.0014750539322295178,
+        "n_dates": 2147,
+        "segment": "2025",
+        "spot_only_mae": 0.16229925672899712
+      },
+      {
+        "asset": "ETH",
+        "categories_improving": 4,
+        "delta_over_spot_mae": -0.02056405546310243,
+        "equal_category_delta": -0.0037141330100746357,
+        "n_dates": 1621,
+        "segment": "2026_partial",
+        "spot_only_mae": 0.18061286679268163
+      },
+      {
+        "asset": "SOL",
+        "categories_improving": 0,
+        "delta_over_spot_mae": 2.7045888119304373,
+        "equal_category_delta": 0.0040499416527620315,
+        "n_dates": 1747,
+        "segment": "2024-03_to_2024-12",
+        "spot_only_mae": 0.0014974334120207095
+      },
+      {
+        "asset": "SOL",
+        "categories_improving": 0,
+        "delta_over_spot_mae": 3.1591451287841585,
+        "equal_category_delta": 0.0048516141311518044,
+        "n_dates": 2147,
+        "segment": "2025",
+        "spot_only_mae": 0.0015357363886030196
+      },
+      {
+        "asset": "SOL",
+        "categories_improving": 0,
+        "delta_over_spot_mae": 3.9990790061212085,
+        "equal_category_delta": 0.005400847804694625,
+        "n_dates": 1600,
+        "segment": "2026_partial",
+        "spot_only_mae": 0.0013505229070062863
+      },
+      {
+        "asset": "BNB",
+        "categories_improving": 2,
+        "delta_over_spot_mae": -0.05397889809634054,
+        "equal_category_delta": -0.008380813047021748,
+        "n_dates": 1746,
+        "segment": "2024-03_to_2024-12",
+        "spot_only_mae": 0.15526091384940516
+      },
+      {
+        "asset": "BNB",
+        "categories_improving": 3,
+        "delta_over_spot_mae": -0.050086578300278455,
+        "equal_category_delta": -0.00759763075800939,
+        "n_dates": 2147,
+        "segment": "2025",
+        "spot_only_mae": 0.1516899539924681
+      },
+      {
+        "asset": "BNB",
+        "categories_improving": 0,
+        "delta_over_spot_mae": 0.13263520831868325,
+        "equal_category_delta": 0.02223101926211727,
+        "n_dates": 1619,
+        "segment": "2026_partial",
+        "spot_only_mae": 0.16761024123174514
+      },
+      {
+        "asset": "XRP",
+        "categories_improving": 3,
+        "delta_over_spot_mae": -0.08987852723242462,
+        "equal_category_delta": -0.017651422974030544,
+        "n_dates": 1756,
+        "segment": "2024-03_to_2024-12",
+        "spot_only_mae": 0.1963919916976856
+      },
+      {
+        "asset": "XRP",
+        "categories_improving": 0,
+        "delta_over_spot_mae": 0.10475288071501682,
+        "equal_category_delta": 0.021851751448522187,
+        "n_dates": 2134,
+        "segment": "2025",
+        "spot_only_mae": 0.20860286895565666
+      },
+      {
+        "asset": "XRP",
+        "categories_improving": 1,
+        "delta_over_spot_mae": -0.106892152758559,
+        "equal_category_delta": -0.017720844215032762,
+        "n_dates": 1619,
+        "segment": "2026_partial",
+        "spot_only_mae": 0.16578246164673516
+      }
+    ],
+    "passed": false
+  },
+  "classification": "NOT_EXTERNALLY_REPLICATED_UNDER_FROZEN_CRITERIA",
+  "distinct_liquidity_proxy_generalization": {
+    "passed": false,
+    "proxy_conditions": {
+      "future_corwin_schultz_spread_24h": {
+        "at_least_3_of_5_categories_improve_for_btc_and_eth": false,
+        "btc_and_eth_bootstrap_ci_upper_below_zero": false,
+        "btc_and_eth_delta_below_zero": false
+      },
+      "future_kyle_abs_lambda_24h": {
+        "at_least_3_of_5_categories_improve_for_btc_and_eth": false,
+        "btc_and_eth_bootstrap_ci_upper_below_zero": false,
+        "btc_and_eth_delta_below_zero": false
+      }
+    }
+  },
+  "external_evaluation_sha256": "efac76de989f044b75d81b85658d76c50a4b75ee93851284bfaffcabc26f299b",
+  "external_freeze_sha256": "c8193edd93fd1dc9183c2c1a1c2f4765f076058e260935539f975b5a34cc7756",
+  "external_predictions_sha256": "3c54d0190702affc96a62220770cdfe4b63a19c863bace303ec6917983ee5540",
+  "family_sensitivity_amihud_legacy_btc_eth": [
+    {
+      "asset": "BTC",
+      "families_holm_significant_improving": 1,
+      "families_improving": 2,
+      "families_total": 6,
+      "per_family": [
+        {
+          "bootstrap_ci95": [
+            0.0016707509134536152,
+            0.005630912355647721
+          ],
+          "delta": 0.003579939436538889,
+          "family": "Ridge",
+          "holm_p": 0.0
+        },
+        {
+          "bootstrap_ci95": [
+            0.014101505753371862,
+            0.028144760460061247
+          ],
+          "delta": 0.02124121408915991,
+          "family": "RBF_SVR",
+          "holm_p": 0.0
+        },
+        {
+          "bootstrap_ci95": [
+            -0.0012125813232059834,
+            0.0009315667853719186
+          ],
+          "delta": -0.00012619388722837175,
+          "family": "ExtraTrees",
+          "holm_p": 0.796
+        },
+        {
+          "bootstrap_ci95": [
+            0.0003933871343902442,
+            0.0027073747099804276
+          ],
+          "delta": 0.0014896064431842502,
+          "family": "HistGradientBoosting",
+          "holm_p": 0.008
+        },
+        {
+          "bootstrap_ci95": [
+            0.016561664144535238,
+            0.030999163590527668
+          ],
+          "delta": 0.023587425837204155,
+          "family": "MLP",
+          "holm_p": 0.0
+        },
+        {
+          "bootstrap_ci95": [
+            -0.13608797892906002,
+            -0.10310776051823524
+          ],
+          "delta": -0.12029807950920597,
+          "family": "GRU",
+          "holm_p": 0.0
+        }
+      ]
+    },
+    {
+      "asset": "ETH",
+      "families_holm_significant_improving": 2,
+      "families_improving": 3,
+      "families_total": 6,
+      "per_family": [
+        {
+          "bootstrap_ci95": [
+            -0.009363570819145118,
+            -0.003612372416799415
+          ],
+          "delta": -0.00631969039849417,
+          "family": "Ridge",
+          "holm_p": 0.0
+        },
+        {
+          "bootstrap_ci95": [
+            -0.003518248540819115,
+            0.0035231572119465487
+          ],
+          "delta": -0.0002336385234131203,
+          "family": "RBF_SVR",
+          "holm_p": 1.0
+        },
+        {
+          "bootstrap_ci95": [
+            -0.0019649953947478427,
+            0.0033976990162836135
+          ],
+          "delta": 0.0006016994994947897,
+          "family": "ExtraTrees",
+          "holm_p": 1.0
+        },
+        {
+          "bootstrap_ci95": [
+            -0.001484784360316343,
+            0.003317505209113541
+          ],
+          "delta": 0.0009026413022735359,
+          "family": "HistGradientBoosting",
+          "holm_p": 1.0
+        },
+        {
+          "bootstrap_ci95": [
+            0.0038578651660247203,
+            0.0141859926325874
+          ],
+          "delta": 0.008905520378936197,
+          "family": "MLP",
+          "holm_p": 0.01
+        },
+        {
+          "bootstrap_ci95": [
+            -0.031198868783479047,
+            -0.005169448129015536
+          ],
+          "delta": -0.018167621848148432,
+          "family": "GRU",
+          "holm_p": 0.012
+        }
+      ]
+    }
+  ],
+  "interpretation": "Forecasting/predictive association only; no causal or structural interpretation.",
+  "measurement_note": "Kyle absolute signed-flow price-impact slope and Corwin-Schultz range-based spread are distinct proxies. Neither reproduces Amihud incremental value in both BTC and ETH under the frozen legacy comparison.",
+  "negative_control_status": "LIMITED_DIAGNOSTIC_ONLY; outputs contain fixed-Ridge raw MAE for impossible-time features but no paired spot-only incremental-loss benchmark, so they cannot establish whether future derivatives add predictive value.",
+  "protocol_sha256": "32d6c332ce86e2043709b15aec316b11c67ae730d8482b93d42aee8b7134ff9f",
+  "sample": {
+    "end_date": "2026-09-29",
+    "per_asset_target_pair_date_counts": [
+      {
+        "asset": "BNB",
+        "feature_pair": "enhanced",
+        "first_model_date": "2024-03-05",
+        "last_model_date": "2026-09-29",
+        "max_model_dates": 5512,
+        "min_model_dates": 5512,
+        "target": "future_amihud_24h_mean"
+      },
+      {
+        "asset": "BNB",
+        "feature_pair": "legacy",
+        "first_model_date": "2024-03-05",
+        "last_model_date": "2026-09-29",
+        "max_model_dates": 5512,
+        "min_model_dates": 5512,
+        "target": "future_amihud_24h_mean"
+      },
+      {
+        "asset": "BNB",
+        "feature_pair": "enhanced",
+        "first_model_date": "2024-03-05",
+        "last_model_date": "2026-09-29",
+        "max_model_dates": 5512,
+        "min_model_dates": 5512,
+        "target": "future_corwin_schultz_spread_24h"
+      },
+      {
+        "asset": "BNB",
+        "feature_pair": "legacy",
+        "first_model_date": "2024-03-05",
+        "last_model_date": "2026-09-29",
+        "max_model_dates": 5512,
+        "min_model_dates": 5512,
+        "target": "future_corwin_schultz_spread_24h"
+      },
+      {
+        "asset": "BNB",
+        "feature_pair": "enhanced",
+        "first_model_date": "2024-03-05",
+        "last_model_date": "2026-09-29",
+        "max_model_dates": 5512,
+        "min_model_dates": 5512,
+        "target": "future_kyle_abs_lambda_24h"
+      },
+      {
+        "asset": "BNB",
+        "feature_pair": "legacy",
+        "first_model_date": "2024-03-05",
+        "last_model_date": "2026-09-29",
+        "max_model_dates": 5512,
+        "min_model_dates": 5512,
+        "target": "future_kyle_abs_lambda_24h"
+      },
+      {
+        "asset": "BTC",
+        "feature_pair": "enhanced",
+        "first_model_date": "2024-03-05",
+        "last_model_date": "2026-09-29",
+        "max_model_dates": 5517,
+        "min_model_dates": 5517,
+        "target": "future_amihud_24h_mean"
+      },
+      {
+        "asset": "BTC",
+        "feature_pair": "legacy",
+        "first_model_date": "2024-03-05",
+        "last_model_date": "2026-09-29",
+        "max_model_dates": 5517,
+        "min_model_dates": 5517,
+        "target": "future_amihud_24h_mean"
+      },
+      {
+        "asset": "BTC",
+        "feature_pair": "enhanced",
+        "first_model_date": "2024-03-05",
+        "last_model_date": "2026-09-29",
+        "max_model_dates": 5517,
+        "min_model_dates": 5517,
+        "target": "future_corwin_schultz_spread_24h"
+      },
+      {
+        "asset": "BTC",
+        "feature_pair": "legacy",
+        "first_model_date": "2024-03-05",
+        "last_model_date": "2026-09-29",
+        "max_model_dates": 5517,
+        "min_model_dates": 5517,
+        "target": "future_corwin_schultz_spread_24h"
+      },
+      {
+        "asset": "BTC",
+        "feature_pair": "enhanced",
+        "first_model_date": "2024-03-05",
+        "last_model_date": "2026-09-29",
+        "max_model_dates": 5517,
+        "min_model_dates": 5517,
+        "target": "future_kyle_abs_lambda_24h"
+      },
+      {
+        "asset": "BTC",
+        "feature_pair": "legacy",
+        "first_model_date": "2024-03-05",
+        "last_model_date": "2026-09-29",
+        "max_model_dates": 5517,
+        "min_model_dates": 5517,
+        "target": "future_kyle_abs_lambda_24h"
+      },
+      {
+        "asset": "ETH",
+        "feature_pair": "enhanced",
+        "first_model_date": "2024-03-05",
+        "last_model_date": "2026-09-29",
+        "max_model_dates": 5525,
+        "min_model_dates": 5525,
+        "target": "future_amihud_24h_mean"
+      },
+      {
+        "asset": "ETH",
+        "feature_pair": "legacy",
+        "first_model_date": "2024-03-05",
+        "last_model_date": "2026-09-29",
+        "max_model_dates": 5525,
+        "min_model_dates": 5525,
+        "target": "future_amihud_24h_mean"
+      },
+      {
+        "asset": "ETH",
+        "feature_pair": "enhanced",
+        "first_model_date": "2024-03-05",
+        "last_model_date": "2026-09-29",
+        "max_model_dates": 5525,
+        "min_model_dates": 5525,
+        "target": "future_corwin_schultz_spread_24h"
+      },
+      {
+        "asset": "ETH",
+        "feature_pair": "legacy",
+        "first_model_date": "2024-03-05",
+        "last_model_date": "2026-09-29",
+        "max_model_dates": 5525,
+        "min_model_dates": 5525,
+        "target": "future_corwin_schultz_spread_24h"
+      },
+      {
+        "asset": "ETH",
+        "feature_pair": "enhanced",
+        "first_model_date": "2024-03-05",
+        "last_model_date": "2026-09-29",
+        "max_model_dates": 5525,
+        "min_model_dates": 5525,
+        "target": "future_kyle_abs_lambda_24h"
+      },
+      {
+        "asset": "ETH",
+        "feature_pair": "legacy",
+        "first_model_date": "2024-03-05",
+        "last_model_date": "2026-09-29",
+        "max_model_dates": 5525,
+        "min_model_dates": 5525,
+        "target": "future_kyle_abs_lambda_24h"
+      },
+      {
+        "asset": "SOL",
+        "feature_pair": "enhanced",
+        "first_model_date": "2024-03-05",
+        "last_model_date": "2026-09-29",
+        "max_model_dates": 5494,
+        "min_model_dates": 5494,
+        "target": "future_amihud_24h_mean"
+      },
+      {
+        "asset": "SOL",
+        "feature_pair": "legacy",
+        "first_model_date": "2024-03-05",
+        "last_model_date": "2026-09-29",
+        "max_model_dates": 5494,
+        "min_model_dates": 5494,
+        "target": "future_amihud_24h_mean"
+      },
+      {
+        "asset": "SOL",
+        "feature_pair": "enhanced",
+        "first_model_date": "2024-03-05",
+        "last_model_date": "2026-09-29",
+        "max_model_dates": 5494,
+        "min_model_dates": 5494,
+        "target": "future_corwin_schultz_spread_24h"
+      },
+      {
+        "asset": "SOL",
+        "feature_pair": "legacy",
+        "first_model_date": "2024-03-05",
+        "last_model_date": "2026-09-29",
+        "max_model_dates": 5494,
+        "min_model_dates": 5494,
+        "target": "future_corwin_schultz_spread_24h"
+      },
+      {
+        "asset": "SOL",
+        "feature_pair": "enhanced",
+        "first_model_date": "2024-03-05",
+        "last_model_date": "2026-09-29",
+        "max_model_dates": 5494,
+        "min_model_dates": 5494,
+        "target": "future_kyle_abs_lambda_24h"
+      },
+      {
+        "asset": "SOL",
+        "feature_pair": "legacy",
+        "first_model_date": "2024-03-05",
+        "last_model_date": "2026-09-29",
+        "max_model_dates": 5494,
+        "min_model_dates": 5494,
+        "target": "future_kyle_abs_lambda_24h"
+      },
+      {
+        "asset": "XRP",
+        "feature_pair": "enhanced",
+        "first_model_date": "2024-03-05",
+        "last_model_date": "2026-09-29",
+        "max_model_dates": 5509,
+        "min_model_dates": 5509,
+        "target": "future_amihud_24h_mean"
+      },
+      {
+        "asset": "XRP",
+        "feature_pair": "legacy",
+        "first_model_date": "2024-03-05",
+        "last_model_date": "2026-09-29",
+        "max_model_dates": 5509,
+        "min_model_dates": 5509,
+        "target": "future_amihud_24h_mean"
+      },
+      {
+        "asset": "XRP",
+        "feature_pair": "enhanced",
+        "first_model_date": "2024-03-05",
+        "last_model_date": "2026-09-29",
+        "max_model_dates": 5509,
+        "min_model_dates": 5509,
+        "target": "future_corwin_schultz_spread_24h"
+      },
+      {
+        "asset": "XRP",
+        "feature_pair": "legacy",
+        "first_model_date": "2024-03-05",
+        "last_model_date": "2026-09-29",
+        "max_model_dates": 5509,
+        "min_model_dates": 5509,
+        "target": "future_corwin_schultz_spread_24h"
+      },
+      {
+        "asset": "XRP",
+        "feature_pair": "enhanced",
+        "first_model_date": "2024-03-05",
+        "last_model_date": "2026-09-29",
+        "max_model_dates": 5509,
+        "min_model_dates": 5509,
+        "target": "future_kyle_abs_lambda_24h"
+      },
+      {
+        "asset": "XRP",
+        "feature_pair": "legacy",
+        "first_model_date": "2024-03-05",
+        "last_model_date": "2026-09-29",
+        "max_model_dates": 5509,
+        "min_model_dates": 5509,
+        "target": "future_kyle_abs_lambda_24h"
+      }
+    ],
+    "start_date": "2024-03-05",
+    "unique_prediction_rows": 2149446
+  },
+  "stress_warning_amihud_legacy_equal_category_means": [
+    {
+      "asset": "BTC",
+      "spot_only": {
+        "event_prevalence": 0.06561537067246692,
+        "f1": 0.18880391155965104,
+        "lift": 1.8026030060471634,
+        "precision": 0.11827846441708778,
+        "recall": 0.52255985267035
+      },
+      "spot_plus_derivatives": {
+        "event_prevalence": 0.06561537067246692,
+        "f1": 0.2074803615173159,
+        "lift": 1.94180347020339,
+        "precision": 0.12741215447047802,
+        "recall": 0.6224677716390424
+      }
+    },
+    {
+      "asset": "ETH",
+      "spot_only": {
+        "event_prevalence": 0.12723981900452488,
+        "f1": 0.2701101292603902,
+        "lift": 3.14745523900624,
+        "precision": 0.4004816349359976,
+        "recall": 0.21906116642958748
+      },
+      "spot_plus_derivatives": {
+        "event_prevalence": 0.12723981900452488,
+        "f1": 0.3462053947909496,
+        "lift": 3.0164283639414182,
+        "precision": 0.3838097990680211,
+        "recall": 0.3442389758179232
+      }
+    },
+    {
+      "asset": "SOL",
+      "spot_only": {
+        "event_prevalence": 0.0,
+        "f1": 0.0,
+        "lift": null,
+        "precision": 0.0,
+        "recall": 0.0
+      },
+      "spot_plus_derivatives": {
+        "event_prevalence": 0.0,
+        "f1": 0.0,
+        "lift": null,
+        "precision": 0.0,
+        "recall": 0.0
+      }
+    },
+    {
+      "asset": "BNB",
+      "spot_only": {
+        "event_prevalence": 0.07093613933236574,
+        "f1": 0.24036568770377145,
+        "lift": 4.78047054936427,
+        "precision": 0.33910812496397486,
+        "recall": 0.21781756180733167
+      },
+      "spot_plus_derivatives": {
+        "event_prevalence": 0.07093613933236574,
+        "f1": 0.12001638268477051,
+        "lift": 2.9132479044341255,
+        "precision": 0.2066545592586616,
+        "recall": 0.09207161125319692
+      }
+    },
+    {
+      "asset": "XRP",
+      "spot_only": {
+        "event_prevalence": 0.018152114721365038,
+        "f1": 0.17384703406797408,
+        "lift": 6.798137867158324,
+        "precision": 0.12340057845631373,
+        "recall": 0.3116666666666667
+      },
+      "spot_plus_derivatives": {
+        "event_prevalence": 0.018152114721365038,
+        "f1": 0.1927159218765452,
+        "lift": 8.498875432950562,
+        "precision": 0.1542725618615096,
+        "recall": 0.275
+      }
+    }
+  ]
+}

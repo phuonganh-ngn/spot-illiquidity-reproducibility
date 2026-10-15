@@ -1,0 +1,2172 @@
+{
+  "best_model_dominance": {
+    "competitive_under_frozen_operational_rule": false,
+    "delta": -1.9591276088716945e-06,
+    "families_by_outer_fold": {
+      "spot_only": {
+        "F1": "LightGBM",
+        "F2": "LightGBM",
+        "F3": "LightGBM"
+      },
+      "spot_plus_derivatives": {
+        "F1": "GRU",
+        "F2": "GRU",
+        "F3": "LightGBM"
+      }
+    },
+    "paired_bootstrap_42": {
+      "block_length_intervals": 42,
+      "bootstrap_mean_sd": 2.603373345406103e-07,
+      "ci95": [
+        -2.6454228824865106e-06,
+        -1.6471733167848345e-06
+      ],
+      "mean_delta": -1.9591276088716945e-06,
+      "p_two_sided_bootstrap": 0.001998001998001998,
+      "probability_improvement": 0.0,
+      "replications": 1000
+    },
+    "relative_change_pct": 48.77279348094126,
+    "spot_only_mae": 4.016845189802907e-06,
+    "spot_plus_derivatives_mae": 5.975972798674602e-06
+  },
+  "component_state": {
+    "drop_one_mae": {
+      "drop_basis": 5.12176308580887e-06,
+      "drop_flow": 5.670377951856206e-06,
+      "drop_funding": 5.486145842772536e-06,
+      "drop_oi": 6.8296261702894384e-06
+    },
+    "full_mae": 6.167479275316192e-06,
+    "joint_state_rule_passed": false,
+    "paired_full_vs_component_comparisons": [
+      {
+        "asset": "BTC",
+        "comparison": "full_vs_funding_only",
+        "delta_reference_loss_minus_full_loss_positive_favors_joint_state": -1.4947441264359402e-06,
+        "full_transformed_mae": 6.167479275316192e-06,
+        "n_asset_day_rows": 905,
+        "n_unique_dates": 905,
+        "paired_block_bootstrap": {
+          "42": {
+            "block_length_intervals": 42,
+            "ci95": [
+              -2.4349287875309716e-06,
+              -7.002015594282937e-07
+            ],
+            "delta_mean": -1.4947441264359402e-06,
+            "p_two_sided": 0.001998001998001998,
+            "probability_positive": 0.0,
+            "replications": 1000
+          },
+          "84": {
+            "block_length_intervals": 84,
+            "ci95": [
+              -2.616910634428798e-06,
+              -7.014050112062873e-07
+            ],
+            "delta_mean": -1.4947441264359402e-06,
+            "p_two_sided": 0.001998001998001998,
+            "probability_positive": 0.0,
+            "replications": 1000
+          }
+        },
+        "reference_transformed_mae": 4.672735148880251e-06
+      },
+      {
+        "asset": "BTC",
+        "comparison": "full_vs_oi_only",
+        "delta_reference_loss_minus_full_loss_positive_favors_joint_state": -1.505081285686171e-06,
+        "full_transformed_mae": 6.167479275316192e-06,
+        "n_asset_day_rows": 905,
+        "n_unique_dates": 905,
+        "paired_block_bootstrap": {
+          "42": {
+            "block_length_intervals": 42,
+            "ci95": [
+              -2.581237314175477e-06,
+              -7.10220149262225e-07
+            ],
+            "delta_mean": -1.505081285686171e-06,
+            "p_two_sided": 0.001998001998001998,
+            "probability_positive": 0.0,
+            "replications": 1000
+          },
+          "84": {
+            "block_length_intervals": 84,
+            "ci95": [
+              -2.742821625960386e-06,
+              -5.146718110073958e-07
+            ],
+            "delta_mean": -1.505081285686171e-06,
+            "p_two_sided": 0.001998001998001998,
+            "probability_positive": 0.0,
+            "replications": 1000
+          }
+        },
+        "reference_transformed_mae": 4.66239798963002e-06
+      },
+      {
+        "asset": "BTC",
+        "comparison": "full_vs_flow_only",
+        "delta_reference_loss_minus_full_loss_positive_favors_joint_state": -1.3014391552711194e-06,
+        "full_transformed_mae": 6.167479275316192e-06,
+        "n_asset_day_rows": 905,
+        "n_unique_dates": 905,
+        "paired_block_bootstrap": {
+          "42": {
+            "block_length_intervals": 42,
+            "ci95": [
+              -2.3807219861008404e-06,
+              -4.140068729634127e-07
+            ],
+            "delta_mean": -1.3014391552711194e-06,
+            "p_two_sided": 0.003996003996003996,
+            "probability_positive": 0.001,
+            "replications": 1000
+          },
+          "84": {
+            "block_length_intervals": 84,
+            "ci95": [
+              -2.5969129292965897e-06,
+              -1.546561267086499e-07
+            ],
+            "delta_mean": -1.3014391552711194e-06,
+            "p_two_sided": 0.02197802197802198,
+            "probability_positive": 0.01,
+            "replications": 1000
+          }
+        },
+        "reference_transformed_mae": 4.866040120045072e-06
+      },
+      {
+        "asset": "BTC",
+        "comparison": "full_vs_basis_only",
+        "delta_reference_loss_minus_full_loss_positive_favors_joint_state": -8.187290211904715e-07,
+        "full_transformed_mae": 6.167479275316192e-06,
+        "n_asset_day_rows": 905,
+        "n_unique_dates": 905,
+        "paired_block_bootstrap": {
+          "42": {
+            "block_length_intervals": 42,
+            "ci95": [
+              -1.5912280585993603e-06,
+              -1.5646182543046295e-07
+            ],
+            "delta_mean": -8.187290211904715e-07,
+            "p_two_sided": 0.02197802197802198,
+            "probability_positive": 0.01,
+            "replications": 1000
+          },
+          "84": {
+            "block_length_intervals": 84,
+            "ci95": [
+              -1.7997253198655897e-06,
+              -5.8569198598026175e-08
+            ],
+            "delta_mean": -8.187290211904715e-07,
+            "p_two_sided": 0.03396603396603397,
+            "probability_positive": 0.016,
+            "replications": 1000
+          }
+        },
+        "reference_transformed_mae": 5.34875025412572e-06
+      },
+      {
+        "asset": "BTC",
+        "comparison": "full_vs_drop_funding",
+        "delta_reference_loss_minus_full_loss_positive_favors_joint_state": -6.813334325436536e-07,
+        "full_transformed_mae": 6.167479275316192e-06,
+        "n_asset_day_rows": 905,
+        "n_unique_dates": 905,
+        "paired_block_bootstrap": {
+          "42": {
+            "block_length_intervals": 42,
+            "ci95": [
+              -1.1393868939827732e-06,
+              -3.2367691959705065e-07
+            ],
+            "delta_mean": -6.813334325436536e-07,
+            "p_two_sided": 0.001998001998001998,
+            "probability_positive": 0.0,
+            "replications": 1000
+          },
+          "84": {
+            "block_length_intervals": 84,
+            "ci95": [
+              -1.2753530644906425e-06,
+              -2.148297645087746e-07
+            ],
+            "delta_mean": -6.813334325436536e-07,
+            "p_two_sided": 0.001998001998001998,
+            "probability_positive": 0.0,
+            "replications": 1000
+          }
+        },
+        "reference_transformed_mae": 5.486145842772536e-06
+      },
+      {
+        "asset": "BTC",
+        "comparison": "full_vs_drop_oi",
+        "delta_reference_loss_minus_full_loss_positive_favors_joint_state": 6.621468949732474e-07,
+        "full_transformed_mae": 6.167479275316192e-06,
+        "n_asset_day_rows": 905,
+        "n_unique_dates": 905,
+        "paired_block_bootstrap": {
+          "42": {
+            "block_length_intervals": 42,
+            "ci95": [
+              1.6871133213618698e-07,
+              1.1341689744284688e-06
+            ],
+            "delta_mean": 6.621468949732474e-07,
+            "p_two_sided": 0.003996003996003996,
+            "probability_positive": 0.999,
+            "replications": 1000
+          },
+          "84": {
+            "block_length_intervals": 84,
+            "ci95": [
+              1.5507948010638554e-07,
+              1.221055290861863e-06
+            ],
+            "delta_mean": 6.621468949732474e-07,
+            "p_two_sided": 0.01998001998001998,
+            "probability_positive": 0.991,
+            "replications": 1000
+          }
+        },
+        "reference_transformed_mae": 6.8296261702894384e-06
+      },
+      {
+        "asset": "BTC",
+        "comparison": "full_vs_drop_flow",
+        "delta_reference_loss_minus_full_loss_positive_favors_joint_state": -4.971013234599844e-07,
+        "full_transformed_mae": 6.167479275316192e-06,
+        "n_asset_day_rows": 905,
+        "n_unique_dates": 905,
+        "paired_block_bootstrap": {
+          "42": {
+            "block_length_intervals": 42,
+            "ci95": [
+              -8.765105810065516e-07,
+              -1.5464138355301265e-07
+            ],
+            "delta_mean": -4.971013234599844e-07,
+            "p_two_sided": 0.005994005994005994,
+            "probability_positive": 0.002,
+            "replications": 1000
+          },
+          "84": {
+            "block_length_intervals": 84,
+            "ci95": [
+              -9.48070027878933e-07,
+              -1.3574295476313128e-07
+            ],
+            "delta_mean": -4.971013234599844e-07,
+            "p_two_sided": 0.011988011988011988,
+            "probability_positive": 0.005,
+            "replications": 1000
+          }
+        },
+        "reference_transformed_mae": 5.670377951856206e-06
+      },
+      {
+        "asset": "BTC",
+        "comparison": "full_vs_drop_basis",
+        "delta_reference_loss_minus_full_loss_positive_favors_joint_state": -1.0457161895073208e-06,
+        "full_transformed_mae": 6.167479275316192e-06,
+        "n_asset_day_rows": 905,
+        "n_unique_dates": 905,
+        "paired_block_bootstrap": {
+          "42": {
+            "block_length_intervals": 42,
+            "ci95": [
+              -2.2439858034878714e-06,
+              -3.077886959062531e-08
+            ],
+            "delta_mean": -1.0457161895073208e-06,
+            "p_two_sided": 0.04195804195804196,
+            "probability_positive": 0.02,
+            "replications": 1000
+          },
+          "84": {
+            "block_length_intervals": 84,
+            "ci95": [
+              -2.461447579178168e-06,
+              8.225621155151507e-08
+            ],
+            "delta_mean": -1.0457161895073208e-06,
+            "p_two_sided": 0.0919080919080919,
+            "probability_positive": 0.045,
+            "replications": 1000
+          }
+        },
+        "reference_transformed_mae": 5.12176308580887e-06
+      }
+    ],
+    "single_component_mae": {
+      "basis_only": 5.34875025412572e-06,
+      "flow_only": 4.866040120045072e-06,
+      "funding_only": 4.672735148880251e-06,
+      "oi_only": 4.66239798963002e-06
+    }
+  },
+  "direct_information_set": {
+    "families_improving": 0,
+    "families_total": 9,
+    "group_median_deltas": {
+      "bagged_trees": -5.214755120732175e-07,
+      "boosting": -4.055353983244668e-07,
+      "feedforward_neural": -0.05538808162729287,
+      "kernel": 0.0,
+      "recurrent_neural": -1.3068228402583937e-06,
+      "regularized_linear": 0.0
+    },
+    "holm_significant_improvements": 0,
+    "holm_survivors": [],
+    "independent_holm_supported_groups": [],
+    "median_family_delta_s0_minus_s1": -4.41688588560521e-07,
+    "positive_broad_groups": 0
+  },
+  "negative_control": {
+    "folds": [
+      {
+        "asset": "BTC",
+        "bootstrap": {
+          "42": {
+            "block_length_intervals": 42,
+            "ci95": [
+              -1.5960929955393642e-07,
+              -1.7224122930109434e-08
+            ],
+            "delta_mean": -7.067316215953615e-08,
+            "p_two_sided": 0.00999000999000999,
+            "probability_positive": 0.004,
+            "replications": 1000
+          },
+          "84": {
+            "block_length_intervals": 84,
+            "ci95": [
+              -1.7640479956819246e-07,
+              -1.4664545362329083e-08
+            ],
+            "delta_mean": -7.067316215953615e-08,
+            "p_two_sided": 0.013986013986013986,
+            "probability_positive": 0.006,
+            "replications": 1000
+          }
+        },
+        "delta_s0_minus_s1": -7.067316215953615e-08,
+        "derivative_features": "four certified raw derivative variables at t+7..t+12 (strictly after target interval t-6..t-1 and primary target t+1..t+6)",
+        "first_date": "2022-10-02T00:00:00+00:00",
+        "fold": "F1",
+        "last_date": "2022-12-29T20:00:00+00:00",
+        "n": 534,
+        "n_dates": 534,
+        "spot_features": "certified spot history t-5..t, same Ridge(StandardScaler), alpha=1 in S0/S1",
+        "target": "mean Amihud at t-6..t-1"
+      },
+      {
+        "asset": "BTC",
+        "bootstrap": {
+          "42": {
+            "block_length_intervals": 42,
+            "ci95": [
+              -2.1170478762857206e-07,
+              -8.462771266300113e-08
+            ],
+            "delta_mean": -1.360917720296296e-07,
+            "p_two_sided": 0.001998001998001998,
+            "probability_positive": 0.0,
+            "replications": 1000
+          },
+          "84": {
+            "block_length_intervals": 84,
+            "ci95": [
+              -2.0262426847451844e-07,
+              -9.416421465951656e-08
+            ],
+            "delta_mean": -1.360917720296296e-07,
+            "p_two_sided": 0.001998001998001998,
+            "probability_positive": 0.0,
+            "replications": 1000
+          }
+        },
+        "delta_s0_minus_s1": -1.360917720296296e-07,
+        "derivative_features": "four certified raw derivative variables at t+7..t+12 (strictly after target interval t-6..t-1 and primary target t+1..t+6)",
+        "first_date": "2023-01-01T00:00:00+00:00",
+        "fold": "F2",
+        "last_date": "2023-03-29T20:00:00+00:00",
+        "n": 508,
+        "n_dates": 508,
+        "spot_features": "certified spot history t-5..t, same Ridge(StandardScaler), alpha=1 in S0/S1",
+        "target": "mean Amihud at t-6..t-1"
+      },
+      {
+        "asset": "BTC",
+        "bootstrap": {
+          "42": {
+            "block_length_intervals": 42,
+            "ci95": [
+              -2.6003090677275087e-08,
+              4.66890707790862e-09
+            ],
+            "delta_mean": -1.0081174821434297e-08,
+            "p_two_sided": 0.1918081918081918,
+            "probability_positive": 0.095,
+            "replications": 1000
+          },
+          "84": {
+            "block_length_intervals": 84,
+            "ci95": [
+              -2.3454459407130304e-08,
+              3.2156504829799904e-09
+            ],
+            "delta_mean": -1.0081174821434297e-08,
+            "p_two_sided": 0.15384615384615385,
+            "probability_positive": 0.076,
+            "replications": 1000
+          }
+        },
+        "delta_s0_minus_s1": -1.0081174821434297e-08,
+        "derivative_features": "four certified raw derivative variables at t+7..t+12 (strictly after target interval t-6..t-1 and primary target t+1..t+6)",
+        "first_date": "2023-04-01T00:00:00+00:00",
+        "fold": "F3",
+        "last_date": "2023-06-28T20:00:00+00:00",
+        "n": 503,
+        "n_dates": 503,
+        "spot_features": "certified spot history t-5..t, same Ridge(StandardScaler), alpha=1 in S0/S1",
+        "target": "mean Amihud at t-6..t-1"
+      }
+    ],
+    "positive_future_derivative_placebo_with_bootstrap_support": false,
+    "temporal_warning": false
+  },
+  "primary_classification": "QUANTUM_INCREMENTAL_VALUE",
+  "quantum": {
+    "quantum_incremental_value_supported_for_asset": true,
+    "results_by_family": {
+      "hybrid_qnn": [
+        {
+          "asset": "BTC",
+          "holm_p_within_asset_family": 0.005994005994005994,
+          "matched_mlp_metadata": [
+            {
+              "alpha": 0.01,
+              "converged": true,
+              "hidden_width": 4,
+              "input_components": 16,
+              "input_scaler": "training-only StandardScaler",
+              "matched_classical": "one-hidden-layer MLP",
+              "max_iter": 2000,
+              "n_iter": 1643,
+              "pca_components": 16,
+              "pca_explained_variance_ratio_sum": 0.745954598365553,
+              "post_pca_scaler": "training-only StandardScaler",
+              "seed": 927195332,
+              "tolerance": 1e-05,
+              "warnings": []
+            },
+            {
+              "alpha": 0.01,
+              "converged": true,
+              "hidden_width": 4,
+              "input_components": 16,
+              "input_scaler": "training-only StandardScaler",
+              "matched_classical": "one-hidden-layer MLP",
+              "max_iter": 2000,
+              "n_iter": 1073,
+              "pca_components": 16,
+              "pca_explained_variance_ratio_sum": 0.745954598365553,
+              "post_pca_scaler": "training-only StandardScaler",
+              "seed": 1778310776,
+              "tolerance": 1e-05,
+              "warnings": []
+            },
+            {
+              "alpha": 0.01,
+              "converged": true,
+              "hidden_width": 4,
+              "input_components": 16,
+              "input_scaler": "training-only StandardScaler",
+              "matched_classical": "one-hidden-layer MLP",
+              "max_iter": 2000,
+              "n_iter": 1528,
+              "pca_components": 16,
+              "pca_explained_variance_ratio_sum": 0.745954598365553,
+              "post_pca_scaler": "training-only StandardScaler",
+              "seed": 766736717,
+              "tolerance": 1e-05,
+              "warnings": []
+            },
+            {
+              "alpha": 0.01,
+              "converged": true,
+              "hidden_width": 4,
+              "input_components": 16,
+              "input_scaler": "training-only StandardScaler",
+              "matched_classical": "one-hidden-layer MLP",
+              "max_iter": 2000,
+              "n_iter": 1208,
+              "pca_components": 16,
+              "pca_explained_variance_ratio_sum": 0.745954598365553,
+              "post_pca_scaler": "training-only StandardScaler",
+              "seed": 870829452,
+              "tolerance": 1e-05,
+              "warnings": []
+            },
+            {
+              "alpha": 0.01,
+              "converged": true,
+              "hidden_width": 4,
+              "input_components": 16,
+              "input_scaler": "training-only StandardScaler",
+              "matched_classical": "one-hidden-layer MLP",
+              "max_iter": 2000,
+              "n_iter": 845,
+              "pca_components": 16,
+              "pca_explained_variance_ratio_sum": 0.745954598365553,
+              "post_pca_scaler": "training-only StandardScaler",
+              "seed": 1414450591,
+              "tolerance": 1e-05,
+              "warnings": []
+            }
+          ],
+          "matched_mlp_seed_ensemble_metrics": {
+            "mae": 8.09641113449315e-06,
+            "rmse": 9.755106581656743e-06
+          },
+          "mean_seed_loss_delta_positive_favors_quantum": 2.0261868838213908e-07,
+          "n": 199,
+          "paired_bootstrap": {
+            "42": {
+              "block_length": 42,
+              "ci95": [
+                5.4346090927130995e-08,
+                3.499812992624961e-07
+              ],
+              "mean_delta": 2.0261868838213908e-07,
+              "p_two_sided": 0.001998001998001998,
+              "probability_positive": 1.0,
+              "replications": 1000
+            },
+            "84": {
+              "block_length": 84,
+              "ci95": [
+                1.2829158994657302e-07,
+                3.510532363648462e-07
+              ],
+              "mean_delta": 2.0261868838213908e-07,
+              "p_two_sided": 0.001998001998001998,
+              "probability_positive": 1.0,
+              "replications": 1000
+            }
+          },
+          "qnn_metadata": [
+            {
+              "backend": "default.qubit exact statevector",
+              "batch_size": 64,
+              "circuit": "AngleEmbedding(Y) plus 2 StronglyEntanglingLayers; Pauli-Z vector, trainable linear output",
+              "epochs": 40,
+              "hybrid_encoder": "single linear layer from training-only PCA scores",
+              "input_scaler": "training-only StandardScaler",
+              "learning_rate": 0.01,
+              "method": "hybrid variational quantum regressor",
+              "n_qubits": 4,
+              "pca_components": 16,
+              "pca_explained_variance_ratio_sum": 0.745954598365553,
+              "post_pca_scaler": "training-only StandardScaler",
+              "seed": 927195332,
+              "seeds": [
+                927195332
+              ],
+              "shots": null
+            },
+            {
+              "backend": "default.qubit exact statevector",
+              "batch_size": 64,
+              "circuit": "AngleEmbedding(Y) plus 2 StronglyEntanglingLayers; Pauli-Z vector, trainable linear output",
+              "epochs": 40,
+              "hybrid_encoder": "single linear layer from training-only PCA scores",
+              "input_scaler": "training-only StandardScaler",
+              "learning_rate": 0.01,
+              "method": "hybrid variational quantum regressor",
+              "n_qubits": 4,
+              "pca_components": 16,
+              "pca_explained_variance_ratio_sum": 0.745954598365553,
+              "post_pca_scaler": "training-only StandardScaler",
+              "seed": 1778310776,
+              "seeds": [
+                1778310776
+              ],
+              "shots": null
+            },
+            {
+              "backend": "default.qubit exact statevector",
+              "batch_size": 64,
+              "circuit": "AngleEmbedding(Y) plus 2 StronglyEntanglingLayers; Pauli-Z vector, trainable linear output",
+              "epochs": 40,
+              "hybrid_encoder": "single linear layer from training-only PCA scores",
+              "input_scaler": "training-only StandardScaler",
+              "learning_rate": 0.01,
+              "method": "hybrid variational quantum regressor",
+              "n_qubits": 4,
+              "pca_components": 16,
+              "pca_explained_variance_ratio_sum": 0.745954598365553,
+              "post_pca_scaler": "training-only StandardScaler",
+              "seed": 766736717,
+              "seeds": [
+                766736717
+              ],
+              "shots": null
+            },
+            {
+              "backend": "default.qubit exact statevector",
+              "batch_size": 64,
+              "circuit": "AngleEmbedding(Y) plus 2 StronglyEntanglingLayers; Pauli-Z vector, trainable linear output",
+              "epochs": 40,
+              "hybrid_encoder": "single linear layer from training-only PCA scores",
+              "input_scaler": "training-only StandardScaler",
+              "learning_rate": 0.01,
+              "method": "hybrid variational quantum regressor",
+              "n_qubits": 4,
+              "pca_components": 16,
+              "pca_explained_variance_ratio_sum": 0.745954598365553,
+              "post_pca_scaler": "training-only StandardScaler",
+              "seed": 870829452,
+              "seeds": [
+                870829452
+              ],
+              "shots": null
+            },
+            {
+              "backend": "default.qubit exact statevector",
+              "batch_size": 64,
+              "circuit": "AngleEmbedding(Y) plus 2 StronglyEntanglingLayers; Pauli-Z vector, trainable linear output",
+              "epochs": 40,
+              "hybrid_encoder": "single linear layer from training-only PCA scores",
+              "input_scaler": "training-only StandardScaler",
+              "learning_rate": 0.01,
+              "method": "hybrid variational quantum regressor",
+              "n_qubits": 4,
+              "pca_components": 16,
+              "pca_explained_variance_ratio_sum": 0.745954598365553,
+              "post_pca_scaler": "training-only StandardScaler",
+              "seed": 1414450591,
+              "seeds": [
+                1414450591
+              ],
+              "shots": null
+            }
+          ],
+          "quantum_seed_ensemble_metrics": {
+            "mae": 7.860462824636944e-06,
+            "rmse": 9.538211303577528e-06
+          },
+          "qubits": 4,
+          "seed_delta_mean": 2.0261868838213918e-07,
+          "seed_delta_median": 1.8801694500258329e-07,
+          "seed_deltas_positive_favor_quantum": [
+            1.8801694500258329e-07,
+            -1.4915013312770617e-08,
+            3.346579478657232e-07,
+            1.5907066451571922e-07,
+            3.462628978394407e-07
+          ],
+          "seed_fraction_positive": 0.8
+        },
+        {
+          "asset": "BTC",
+          "holm_p_within_asset_family": 0.4195804195804196,
+          "matched_mlp_metadata": [
+            {
+              "alpha": 0.01,
+              "converged": true,
+              "hidden_width": 6,
+              "input_components": 16,
+              "input_scaler": "training-only StandardScaler",
+              "matched_classical": "one-hidden-layer MLP",
+              "max_iter": 2000,
+              "n_iter": 1375,
+              "pca_components": 16,
+              "pca_explained_variance_ratio_sum": 0.745954598365553,
+              "post_pca_scaler": "training-only StandardScaler",
+              "seed": 478544421,
+              "tolerance": 1e-05,
+              "warnings": []
+            },
+            {
+              "alpha": 0.01,
+              "converged": true,
+              "hidden_width": 6,
+              "input_components": 16,
+              "input_scaler": "training-only StandardScaler",
+              "matched_classical": "one-hidden-layer MLP",
+              "max_iter": 2000,
+              "n_iter": 1960,
+              "pca_components": 16,
+              "pca_explained_variance_ratio_sum": 0.745954598365553,
+              "post_pca_scaler": "training-only StandardScaler",
+              "seed": 1685361934,
+              "tolerance": 1e-05,
+              "warnings": []
+            },
+            {
+              "alpha": 0.01,
+              "converged": false,
+              "hidden_width": 6,
+              "input_components": 16,
+              "input_scaler": "training-only StandardScaler",
+              "matched_classical": "one-hidden-layer MLP",
+              "max_iter": 2000,
+              "n_iter": 2000,
+              "pca_components": 16,
+              "pca_explained_variance_ratio_sum": 0.745954598365553,
+              "post_pca_scaler": "training-only StandardScaler",
+              "seed": 1366321493,
+              "tolerance": 1e-05,
+              "warnings": [
+                "ConvergenceWarning:Stochastic Optimizer: Maximum iterations (2000) reached and the optimization hasn't converged yet."
+              ]
+            },
+            {
+              "alpha": 0.01,
+              "converged": true,
+              "hidden_width": 6,
+              "input_components": 16,
+              "input_scaler": "training-only StandardScaler",
+              "matched_classical": "one-hidden-layer MLP",
+              "max_iter": 2000,
+              "n_iter": 1747,
+              "pca_components": 16,
+              "pca_explained_variance_ratio_sum": 0.745954598365553,
+              "post_pca_scaler": "training-only StandardScaler",
+              "seed": 1643536870,
+              "tolerance": 1e-05,
+              "warnings": []
+            },
+            {
+              "alpha": 0.01,
+              "converged": true,
+              "hidden_width": 6,
+              "input_components": 16,
+              "input_scaler": "training-only StandardScaler",
+              "matched_classical": "one-hidden-layer MLP",
+              "max_iter": 2000,
+              "n_iter": 1236,
+              "pca_components": 16,
+              "pca_explained_variance_ratio_sum": 0.745954598365553,
+              "post_pca_scaler": "training-only StandardScaler",
+              "seed": 261832611,
+              "tolerance": 1e-05,
+              "warnings": []
+            }
+          ],
+          "matched_mlp_seed_ensemble_metrics": {
+            "mae": 8.082805611621163e-06,
+            "rmse": 9.792721959803884e-06
+          },
+          "mean_seed_loss_delta_positive_favors_quantum": 8.943802935530684e-08,
+          "n": 199,
+          "paired_bootstrap": {
+            "42": {
+              "block_length": 42,
+              "ci95": [
+                -4.454936497151285e-08,
+                1.8964096421748548e-07
+              ],
+              "mean_delta": 8.943802935530684e-08,
+              "p_two_sided": 0.2097902097902098,
+              "probability_positive": 0.896,
+              "replications": 1000
+            },
+            "84": {
+              "block_length": 84,
+              "ci95": [
+                -3.085345478996742e-08,
+                1.767837099024931e-07
+              ],
+              "mean_delta": 8.943802935530684e-08,
+              "p_two_sided": 0.18181818181818182,
+              "probability_positive": 0.91,
+              "replications": 1000
+            }
+          },
+          "qnn_metadata": [
+            {
+              "backend": "default.qubit exact statevector",
+              "batch_size": 64,
+              "circuit": "AngleEmbedding(Y) plus 2 StronglyEntanglingLayers; Pauli-Z vector, trainable linear output",
+              "epochs": 40,
+              "hybrid_encoder": "single linear layer from training-only PCA scores",
+              "input_scaler": "training-only StandardScaler",
+              "learning_rate": 0.01,
+              "method": "hybrid variational quantum regressor",
+              "n_qubits": 6,
+              "pca_components": 16,
+              "pca_explained_variance_ratio_sum": 0.745954598365553,
+              "post_pca_scaler": "training-only StandardScaler",
+              "seed": 478544421,
+              "seeds": [
+                478544421
+              ],
+              "shots": null
+            },
+            {
+              "backend": "default.qubit exact statevector",
+              "batch_size": 64,
+              "circuit": "AngleEmbedding(Y) plus 2 StronglyEntanglingLayers; Pauli-Z vector, trainable linear output",
+              "epochs": 40,
+              "hybrid_encoder": "single linear layer from training-only PCA scores",
+              "input_scaler": "training-only StandardScaler",
+              "learning_rate": 0.01,
+              "method": "hybrid variational quantum regressor",
+              "n_qubits": 6,
+              "pca_components": 16,
+              "pca_explained_variance_ratio_sum": 0.745954598365553,
+              "post_pca_scaler": "training-only StandardScaler",
+              "seed": 1685361934,
+              "seeds": [
+                1685361934
+              ],
+              "shots": null
+            },
+            {
+              "backend": "default.qubit exact statevector",
+              "batch_size": 64,
+              "circuit": "AngleEmbedding(Y) plus 2 StronglyEntanglingLayers; Pauli-Z vector, trainable linear output",
+              "epochs": 40,
+              "hybrid_encoder": "single linear layer from training-only PCA scores",
+              "input_scaler": "training-only StandardScaler",
+              "learning_rate": 0.01,
+              "method": "hybrid variational quantum regressor",
+              "n_qubits": 6,
+              "pca_components": 16,
+              "pca_explained_variance_ratio_sum": 0.745954598365553,
+              "post_pca_scaler": "training-only StandardScaler",
+              "seed": 1366321493,
+              "seeds": [
+                1366321493
+              ],
+              "shots": null
+            },
+            {
+              "backend": "default.qubit exact statevector",
+              "batch_size": 64,
+              "circuit": "AngleEmbedding(Y) plus 2 StronglyEntanglingLayers; Pauli-Z vector, trainable linear output",
+              "epochs": 40,
+              "hybrid_encoder": "single linear layer from training-only PCA scores",
+              "input_scaler": "training-only StandardScaler",
+              "learning_rate": 0.01,
+              "method": "hybrid variational quantum regressor",
+              "n_qubits": 6,
+              "pca_components": 16,
+              "pca_explained_variance_ratio_sum": 0.745954598365553,
+              "post_pca_scaler": "training-only StandardScaler",
+              "seed": 1643536870,
+              "seeds": [
+                1643536870
+              ],
+              "shots": null
+            },
+            {
+              "backend": "default.qubit exact statevector",
+              "batch_size": 64,
+              "circuit": "AngleEmbedding(Y) plus 2 StronglyEntanglingLayers; Pauli-Z vector, trainable linear output",
+              "epochs": 40,
+              "hybrid_encoder": "single linear layer from training-only PCA scores",
+              "input_scaler": "training-only StandardScaler",
+              "learning_rate": 0.01,
+              "method": "hybrid variational quantum regressor",
+              "n_qubits": 6,
+              "pca_components": 16,
+              "pca_explained_variance_ratio_sum": 0.745954598365553,
+              "post_pca_scaler": "training-only StandardScaler",
+              "seed": 261832611,
+              "seeds": [
+                261832611
+              ],
+              "shots": null
+            }
+          ],
+          "quantum_seed_ensemble_metrics": {
+            "mae": 7.93117308124764e-06,
+            "rmse": 9.614376568063385e-06
+          },
+          "qubits": 6,
+          "seed_delta_mean": 8.943802935530677e-08,
+          "seed_delta_median": 7.460171923413311e-08,
+          "seed_deltas_positive_favor_quantum": [
+            2.592972441899075e-07,
+            -1.3205052088648182e-08,
+            1.0940923165040819e-07,
+            7.460171923413311e-08,
+            1.7087003790733262e-08
+          ],
+          "seed_fraction_positive": 0.8
+        },
+        {
+          "asset": "BTC",
+          "holm_p_within_asset_family": 0.7072927072927073,
+          "matched_mlp_metadata": [
+            {
+              "alpha": 0.01,
+              "converged": true,
+              "hidden_width": 8,
+              "input_components": 16,
+              "input_scaler": "training-only StandardScaler",
+              "matched_classical": "one-hidden-layer MLP",
+              "max_iter": 2000,
+              "n_iter": 1120,
+              "pca_components": 16,
+              "pca_explained_variance_ratio_sum": 0.745954598365553,
+              "post_pca_scaler": "training-only StandardScaler",
+              "seed": 205050467,
+              "tolerance": 1e-05,
+              "warnings": []
+            },
+            {
+              "alpha": 0.01,
+              "converged": true,
+              "hidden_width": 8,
+              "input_components": 16,
+              "input_scaler": "training-only StandardScaler",
+              "matched_classical": "one-hidden-layer MLP",
+              "max_iter": 2000,
+              "n_iter": 1204,
+              "pca_components": 16,
+              "pca_explained_variance_ratio_sum": 0.745954598365553,
+              "post_pca_scaler": "training-only StandardScaler",
+              "seed": 675499491,
+              "tolerance": 1e-05,
+              "warnings": []
+            },
+            {
+              "alpha": 0.01,
+              "converged": true,
+              "hidden_width": 8,
+              "input_components": 16,
+              "input_scaler": "training-only StandardScaler",
+              "matched_classical": "one-hidden-layer MLP",
+              "max_iter": 2000,
+              "n_iter": 1881,
+              "pca_components": 16,
+              "pca_explained_variance_ratio_sum": 0.745954598365553,
+              "post_pca_scaler": "training-only StandardScaler",
+              "seed": 480439577,
+              "tolerance": 1e-05,
+              "warnings": []
+            },
+            {
+              "alpha": 0.01,
+              "converged": true,
+              "hidden_width": 8,
+              "input_components": 16,
+              "input_scaler": "training-only StandardScaler",
+              "matched_classical": "one-hidden-layer MLP",
+              "max_iter": 2000,
+              "n_iter": 1452,
+              "pca_components": 16,
+              "pca_explained_variance_ratio_sum": 0.745954598365553,
+              "post_pca_scaler": "training-only StandardScaler",
+              "seed": 1732385244,
+              "tolerance": 1e-05,
+              "warnings": []
+            },
+            {
+              "alpha": 0.01,
+              "converged": true,
+              "hidden_width": 8,
+              "input_components": 16,
+              "input_scaler": "training-only StandardScaler",
+              "matched_classical": "one-hidden-layer MLP",
+              "max_iter": 2000,
+              "n_iter": 1632,
+              "pca_components": 16,
+              "pca_explained_variance_ratio_sum": 0.745954598365553,
+              "post_pca_scaler": "training-only StandardScaler",
+              "seed": 1970910914,
+              "tolerance": 1e-05,
+              "warnings": []
+            }
+          ],
+          "matched_mlp_seed_ensemble_metrics": {
+            "mae": 8.043141448011006e-06,
+            "rmse": 9.732669480499098e-06
+          },
+          "mean_seed_loss_delta_positive_favors_quantum": 2.8480847735260623e-08,
+          "n": 199,
+          "paired_bootstrap": {
+            "42": {
+              "block_length": 42,
+              "ci95": [
+                -9.204036726033739e-08,
+                1.726813549349249e-07
+              ],
+              "mean_delta": 2.8480847735260623e-08,
+              "p_two_sided": 0.7072927072927073,
+              "probability_positive": 0.647,
+              "replications": 1000
+            },
+            "84": {
+              "block_length": 84,
+              "ci95": [
+                -6.614958197329594e-08,
+                1.5122373320202177e-07
+              ],
+              "mean_delta": 2.8480847735260623e-08,
+              "p_two_sided": 0.43756243756243757,
+              "probability_positive": 0.782,
+              "replications": 1000
+            }
+          },
+          "qnn_metadata": [
+            {
+              "backend": "default.qubit exact statevector",
+              "batch_size": 64,
+              "circuit": "AngleEmbedding(Y) plus 2 StronglyEntanglingLayers; Pauli-Z vector, trainable linear output",
+              "epochs": 40,
+              "hybrid_encoder": "single linear layer from training-only PCA scores",
+              "input_scaler": "training-only StandardScaler",
+              "learning_rate": 0.01,
+              "method": "hybrid variational quantum regressor",
+              "n_qubits": 8,
+              "pca_components": 16,
+              "pca_explained_variance_ratio_sum": 0.745954598365553,
+              "post_pca_scaler": "training-only StandardScaler",
+              "seed": 205050467,
+              "seeds": [
+                205050467
+              ],
+              "shots": null
+            },
+            {
+              "backend": "default.qubit exact statevector",
+              "batch_size": 64,
+              "circuit": "AngleEmbedding(Y) plus 2 StronglyEntanglingLayers; Pauli-Z vector, trainable linear output",
+              "epochs": 40,
+              "hybrid_encoder": "single linear layer from training-only PCA scores",
+              "input_scaler": "training-only StandardScaler",
+              "learning_rate": 0.01,
+              "method": "hybrid variational quantum regressor",
+              "n_qubits": 8,
+              "pca_components": 16,
+              "pca_explained_variance_ratio_sum": 0.745954598365553,
+              "post_pca_scaler": "training-only StandardScaler",
+              "seed": 675499491,
+              "seeds": [
+                675499491
+              ],
+              "shots": null
+            },
+            {
+              "backend": "default.qubit exact statevector",
+              "batch_size": 64,
+              "circuit": "AngleEmbedding(Y) plus 2 StronglyEntanglingLayers; Pauli-Z vector, trainable linear output",
+              "epochs": 40,
+              "hybrid_encoder": "single linear layer from training-only PCA scores",
+              "input_scaler": "training-only StandardScaler",
+              "learning_rate": 0.01,
+              "method": "hybrid variational quantum regressor",
+              "n_qubits": 8,
+              "pca_components": 16,
+              "pca_explained_variance_ratio_sum": 0.745954598365553,
+              "post_pca_scaler": "training-only StandardScaler",
+              "seed": 480439577,
+              "seeds": [
+                480439577
+              ],
+              "shots": null
+            },
+            {
+              "backend": "default.qubit exact statevector",
+              "batch_size": 64,
+              "circuit": "AngleEmbedding(Y) plus 2 StronglyEntanglingLayers; Pauli-Z vector, trainable linear output",
+              "epochs": 40,
+              "hybrid_encoder": "single linear layer from training-only PCA scores",
+              "input_scaler": "training-only StandardScaler",
+              "learning_rate": 0.01,
+              "method": "hybrid variational quantum regressor",
+              "n_qubits": 8,
+              "pca_components": 16,
+              "pca_explained_variance_ratio_sum": 0.745954598365553,
+              "post_pca_scaler": "training-only StandardScaler",
+              "seed": 1732385244,
+              "seeds": [
+                1732385244
+              ],
+              "shots": null
+            },
+            {
+              "backend": "default.qubit exact statevector",
+              "batch_size": 64,
+              "circuit": "AngleEmbedding(Y) plus 2 StronglyEntanglingLayers; Pauli-Z vector, trainable linear output",
+              "epochs": 40,
+              "hybrid_encoder": "single linear layer from training-only PCA scores",
+              "input_scaler": "training-only StandardScaler",
+              "learning_rate": 0.01,
+              "method": "hybrid variational quantum regressor",
+              "n_qubits": 8,
+              "pca_components": 16,
+              "pca_explained_variance_ratio_sum": 0.745954598365553,
+              "post_pca_scaler": "training-only StandardScaler",
+              "seed": 1970910914,
+              "seeds": [
+                1970910914
+              ],
+              "shots": null
+            }
+          ],
+          "quantum_seed_ensemble_metrics": {
+            "mae": 7.9412344795944e-06,
+            "rmse": 9.569284072012693e-06
+          },
+          "qubits": 8,
+          "seed_delta_mean": 2.848084773526066e-08,
+          "seed_delta_median": 5.9604492044543544e-08,
+          "seed_deltas_positive_favor_quantum": [
+            1.051333625892805e-07,
+            8.809229588410365e-08,
+            5.9604492044543544e-08,
+            3.5002849997033794e-08,
+            -1.454287618386582e-07
+          ],
+          "seed_fraction_positive": 0.8
+        }
+      ],
+      "kernel": [
+        {
+          "asset": "BTC",
+          "delta_positive_favors_quantum": -1.3605829516410278e-07,
+          "holm_p_within_asset_family": 0.03596403596403597,
+          "matched_rbf_corrected_metrics": {
+            "mae": 7.70452614100255e-06,
+            "rmse": 9.433311693920361e-06
+          },
+          "n": 199,
+          "paired_bootstrap": {
+            "42": {
+              "block_length": 42,
+              "ci95": [
+                -2.4084131993843257e-07,
+                -2.192745745544529e-08
+              ],
+              "mean_delta": -1.3605829516410278e-07,
+              "p_two_sided": 0.011988011988011988,
+              "probability_positive": 0.005,
+              "replications": 1000
+            },
+            "84": {
+              "block_length": 84,
+              "ci95": [
+                -2.1282714361538928e-07,
+                -4.037114074451769e-08
+              ],
+              "mean_delta": -1.3605829516410278e-07,
+              "p_two_sided": 0.00999000999000999,
+              "probability_positive": 0.004,
+              "replications": 1000
+            }
+          },
+          "quantum_kernel_corrected_metrics": {
+            "mae": 7.840584436166652e-06,
+            "rmse": 9.564123753947575e-06
+          },
+          "qubits": 4
+        },
+        {
+          "asset": "BTC",
+          "delta_positive_favors_quantum": 3.7416819749779494e-10,
+          "holm_p_within_asset_family": 0.5814185814185814,
+          "matched_rbf_corrected_metrics": {
+            "mae": 7.815001709931552e-06,
+            "rmse": 9.500710319523151e-06
+          },
+          "n": 199,
+          "paired_bootstrap": {
+            "42": {
+              "block_length": 42,
+              "ci95": [
+                -1.2521322265843554e-07,
+                7.935792020468168e-08
+              ],
+              "mean_delta": 3.7416819749779494e-10,
+              "p_two_sided": 0.5814185814185814,
+              "probability_positive": 0.29,
+              "replications": 1000
+            },
+            "84": {
+              "block_length": 84,
+              "ci95": [
+                -1.3550535344580589e-07,
+                4.9182182670999385e-08
+              ],
+              "mean_delta": 3.7416819749779494e-10,
+              "p_two_sided": 0.2957042957042957,
+              "probability_positive": 0.147,
+              "replications": 1000
+            }
+          },
+          "quantum_kernel_corrected_metrics": {
+            "mae": 7.814627541734054e-06,
+            "rmse": 9.495141046539897e-06
+          },
+          "qubits": 6
+        },
+        {
+          "asset": "BTC",
+          "delta_positive_favors_quantum": 4.324802243662909e-08,
+          "holm_p_within_asset_family": 0.21978021978021978,
+          "matched_rbf_corrected_metrics": {
+            "mae": 7.829987421208567e-06,
+            "rmse": 9.601105418535089e-06
+          },
+          "n": 199,
+          "paired_bootstrap": {
+            "42": {
+              "block_length": 42,
+              "ci95": [
+                -1.4867769907379322e-08,
+                1.1592253942869646e-07
+              ],
+              "mean_delta": 4.324802243662909e-08,
+              "p_two_sided": 0.10989010989010989,
+              "probability_positive": 0.946,
+              "replications": 1000
+            },
+            "84": {
+              "block_length": 84,
+              "ci95": [
+                1.1471545859337073e-08,
+                1.2915589142355935e-07
+              ],
+              "mean_delta": 4.324802243662909e-08,
+              "p_two_sided": 0.02197802197802198,
+              "probability_positive": 0.99,
+              "replications": 1000
+            }
+          },
+          "quantum_kernel_corrected_metrics": {
+            "mae": 7.78673939877194e-06,
+            "rmse": 9.54305698899948e-06
+          },
+          "qubits": 8
+        }
+      ],
+      "qnn": [
+        {
+          "asset": "BTC",
+          "holm_p_within_asset_family": 0.023976023976023976,
+          "matched_mlp_metadata": [
+            {
+              "alpha": 0.01,
+              "converged": true,
+              "hidden_width": 4,
+              "input_components": 4,
+              "input_scaler": "training-only StandardScaler",
+              "matched_classical": "one-hidden-layer MLP",
+              "max_iter": 2000,
+              "n_iter": 1013,
+              "pca_components": 4,
+              "pca_explained_variance_ratio_sum": 0.36186152427275714,
+              "post_pca_scaler": "training-only StandardScaler",
+              "seed": 1750276071,
+              "tolerance": 1e-05,
+              "warnings": []
+            },
+            {
+              "alpha": 0.01,
+              "converged": true,
+              "hidden_width": 4,
+              "input_components": 4,
+              "input_scaler": "training-only StandardScaler",
+              "matched_classical": "one-hidden-layer MLP",
+              "max_iter": 2000,
+              "n_iter": 1148,
+              "pca_components": 4,
+              "pca_explained_variance_ratio_sum": 0.36186152427275714,
+              "post_pca_scaler": "training-only StandardScaler",
+              "seed": 1801824193,
+              "tolerance": 1e-05,
+              "warnings": []
+            },
+            {
+              "alpha": 0.01,
+              "converged": true,
+              "hidden_width": 4,
+              "input_components": 4,
+              "input_scaler": "training-only StandardScaler",
+              "matched_classical": "one-hidden-layer MLP",
+              "max_iter": 2000,
+              "n_iter": 670,
+              "pca_components": 4,
+              "pca_explained_variance_ratio_sum": 0.36186152427275714,
+              "post_pca_scaler": "training-only StandardScaler",
+              "seed": 167182246,
+              "tolerance": 1e-05,
+              "warnings": []
+            },
+            {
+              "alpha": 0.01,
+              "converged": true,
+              "hidden_width": 4,
+              "input_components": 4,
+              "input_scaler": "training-only StandardScaler",
+              "matched_classical": "one-hidden-layer MLP",
+              "max_iter": 2000,
+              "n_iter": 1122,
+              "pca_components": 4,
+              "pca_explained_variance_ratio_sum": 0.36186152427275714,
+              "post_pca_scaler": "training-only StandardScaler",
+              "seed": 987300228,
+              "tolerance": 1e-05,
+              "warnings": []
+            },
+            {
+              "alpha": 0.01,
+              "converged": true,
+              "hidden_width": 4,
+              "input_components": 4,
+              "input_scaler": "training-only StandardScaler",
+              "matched_classical": "one-hidden-layer MLP",
+              "max_iter": 2000,
+              "n_iter": 998,
+              "pca_components": 4,
+              "pca_explained_variance_ratio_sum": 0.36186152427275714,
+              "post_pca_scaler": "training-only StandardScaler",
+              "seed": 1724191238,
+              "tolerance": 1e-05,
+              "warnings": []
+            }
+          ],
+          "matched_mlp_seed_ensemble_metrics": {
+            "mae": 7.90071397078626e-06,
+            "rmse": 9.513975311665645e-06
+          },
+          "mean_seed_loss_delta_positive_favors_quantum": 4.8078669942033245e-08,
+          "n": 199,
+          "paired_bootstrap": {
+            "42": {
+              "block_length": 42,
+              "ci95": [
+                1.135294779248777e-08,
+                1.0343787547865952e-07
+              ],
+              "mean_delta": 4.8078669942033245e-08,
+              "p_two_sided": 0.011988011988011988,
+              "probability_positive": 0.995,
+              "replications": 1000
+            },
+            "84": {
+              "block_length": 84,
+              "ci95": [
+                1.3503799299369245e-08,
+                8.803887910974652e-08
+              ],
+              "mean_delta": 4.8078669942033245e-08,
+              "p_two_sided": 0.007992007992007992,
+              "probability_positive": 0.997,
+              "replications": 1000
+            }
+          },
+          "qnn_metadata": [
+            {
+              "backend": "default.qubit exact statevector",
+              "batch_size": 64,
+              "circuit": "AngleEmbedding(Y) plus 2 StronglyEntanglingLayers; Pauli-Z vector, trainable linear output",
+              "epochs": 40,
+              "hybrid_encoder": null,
+              "input_scaler": "training-only StandardScaler",
+              "learning_rate": 0.01,
+              "method": "variational quantum regressor",
+              "n_qubits": 4,
+              "pca_components": 4,
+              "pca_explained_variance_ratio_sum": 0.36186152427275714,
+              "post_pca_scaler": "training-only StandardScaler",
+              "seed": 1750276071,
+              "seeds": [
+                1750276071
+              ],
+              "shots": null
+            },
+            {
+              "backend": "default.qubit exact statevector",
+              "batch_size": 64,
+              "circuit": "AngleEmbedding(Y) plus 2 StronglyEntanglingLayers; Pauli-Z vector, trainable linear output",
+              "epochs": 40,
+              "hybrid_encoder": null,
+              "input_scaler": "training-only StandardScaler",
+              "learning_rate": 0.01,
+              "method": "variational quantum regressor",
+              "n_qubits": 4,
+              "pca_components": 4,
+              "pca_explained_variance_ratio_sum": 0.36186152427275714,
+              "post_pca_scaler": "training-only StandardScaler",
+              "seed": 1801824193,
+              "seeds": [
+                1801824193
+              ],
+              "shots": null
+            },
+            {
+              "backend": "default.qubit exact statevector",
+              "batch_size": 64,
+              "circuit": "AngleEmbedding(Y) plus 2 StronglyEntanglingLayers; Pauli-Z vector, trainable linear output",
+              "epochs": 40,
+              "hybrid_encoder": null,
+              "input_scaler": "training-only StandardScaler",
+              "learning_rate": 0.01,
+              "method": "variational quantum regressor",
+              "n_qubits": 4,
+              "pca_components": 4,
+              "pca_explained_variance_ratio_sum": 0.36186152427275714,
+              "post_pca_scaler": "training-only StandardScaler",
+              "seed": 167182246,
+              "seeds": [
+                167182246
+              ],
+              "shots": null
+            },
+            {
+              "backend": "default.qubit exact statevector",
+              "batch_size": 64,
+              "circuit": "AngleEmbedding(Y) plus 2 StronglyEntanglingLayers; Pauli-Z vector, trainable linear output",
+              "epochs": 40,
+              "hybrid_encoder": null,
+              "input_scaler": "training-only StandardScaler",
+              "learning_rate": 0.01,
+              "method": "variational quantum regressor",
+              "n_qubits": 4,
+              "pca_components": 4,
+              "pca_explained_variance_ratio_sum": 0.36186152427275714,
+              "post_pca_scaler": "training-only StandardScaler",
+              "seed": 987300228,
+              "seeds": [
+                987300228
+              ],
+              "shots": null
+            },
+            {
+              "backend": "default.qubit exact statevector",
+              "batch_size": 64,
+              "circuit": "AngleEmbedding(Y) plus 2 StronglyEntanglingLayers; Pauli-Z vector, trainable linear output",
+              "epochs": 40,
+              "hybrid_encoder": null,
+              "input_scaler": "training-only StandardScaler",
+              "learning_rate": 0.01,
+              "method": "variational quantum regressor",
+              "n_qubits": 4,
+              "pca_components": 4,
+              "pca_explained_variance_ratio_sum": 0.36186152427275714,
+              "post_pca_scaler": "training-only StandardScaler",
+              "seed": 1724191238,
+              "seeds": [
+                1724191238
+              ],
+              "shots": null
+            }
+          ],
+          "quantum_seed_ensemble_metrics": {
+            "mae": 7.853951670387056e-06,
+            "rmse": 9.477924642128986e-06
+          },
+          "qubits": 4,
+          "seed_delta_mean": 4.807866994203327e-08,
+          "seed_delta_median": 6.722817525606327e-08,
+          "seed_deltas_positive_favor_quantum": [
+            8.222206971587613e-08,
+            6.722817525606327e-08,
+            7.084434316682372e-08,
+            -5.874363966145017e-09,
+            2.597312553754824e-08
+          ],
+          "seed_fraction_positive": 0.8
+        },
+        {
+          "asset": "BTC",
+          "holm_p_within_asset_family": 0.005994005994005994,
+          "matched_mlp_metadata": [
+            {
+              "alpha": 0.01,
+              "converged": true,
+              "hidden_width": 6,
+              "input_components": 6,
+              "input_scaler": "training-only StandardScaler",
+              "matched_classical": "one-hidden-layer MLP",
+              "max_iter": 2000,
+              "n_iter": 1306,
+              "pca_components": 6,
+              "pca_explained_variance_ratio_sum": 0.4550415314787196,
+              "post_pca_scaler": "training-only StandardScaler",
+              "seed": 1692041621,
+              "tolerance": 1e-05,
+              "warnings": []
+            },
+            {
+              "alpha": 0.01,
+              "converged": true,
+              "hidden_width": 6,
+              "input_components": 6,
+              "input_scaler": "training-only StandardScaler",
+              "matched_classical": "one-hidden-layer MLP",
+              "max_iter": 2000,
+              "n_iter": 828,
+              "pca_components": 6,
+              "pca_explained_variance_ratio_sum": 0.4550415314787196,
+              "post_pca_scaler": "training-only StandardScaler",
+              "seed": 727516651,
+              "tolerance": 1e-05,
+              "warnings": []
+            },
+            {
+              "alpha": 0.01,
+              "converged": false,
+              "hidden_width": 6,
+              "input_components": 6,
+              "input_scaler": "training-only StandardScaler",
+              "matched_classical": "one-hidden-layer MLP",
+              "max_iter": 2000,
+              "n_iter": 2000,
+              "pca_components": 6,
+              "pca_explained_variance_ratio_sum": 0.4550415314787196,
+              "post_pca_scaler": "training-only StandardScaler",
+              "seed": 1998983592,
+              "tolerance": 1e-05,
+              "warnings": [
+                "ConvergenceWarning:Stochastic Optimizer: Maximum iterations (2000) reached and the optimization hasn't converged yet."
+              ]
+            },
+            {
+              "alpha": 0.01,
+              "converged": true,
+              "hidden_width": 6,
+              "input_components": 6,
+              "input_scaler": "training-only StandardScaler",
+              "matched_classical": "one-hidden-layer MLP",
+              "max_iter": 2000,
+              "n_iter": 963,
+              "pca_components": 6,
+              "pca_explained_variance_ratio_sum": 0.4550415314787196,
+              "post_pca_scaler": "training-only StandardScaler",
+              "seed": 1056900856,
+              "tolerance": 1e-05,
+              "warnings": []
+            },
+            {
+              "alpha": 0.01,
+              "converged": true,
+              "hidden_width": 6,
+              "input_components": 6,
+              "input_scaler": "training-only StandardScaler",
+              "matched_classical": "one-hidden-layer MLP",
+              "max_iter": 2000,
+              "n_iter": 1558,
+              "pca_components": 6,
+              "pca_explained_variance_ratio_sum": 0.4550415314787196,
+              "post_pca_scaler": "training-only StandardScaler",
+              "seed": 1468441661,
+              "tolerance": 1e-05,
+              "warnings": []
+            }
+          ],
+          "matched_mlp_seed_ensemble_metrics": {
+            "mae": 7.94476339421766e-06,
+            "rmse": 9.59832741953871e-06
+          },
+          "mean_seed_loss_delta_positive_favors_quantum": 8.68675846126233e-08,
+          "n": 199,
+          "paired_bootstrap": {
+            "42": {
+              "block_length": 42,
+              "ci95": [
+                5.4829465577257765e-08,
+                1.6823565101311697e-07
+              ],
+              "mean_delta": 8.68675846126233e-08,
+              "p_two_sided": 0.001998001998001998,
+              "probability_positive": 1.0,
+              "replications": 1000
+            },
+            "84": {
+              "block_length": 84,
+              "ci95": [
+                8.179639193041794e-08,
+                1.4830754595088247e-07
+              ],
+              "mean_delta": 8.68675846126233e-08,
+              "p_two_sided": 0.001998001998001998,
+              "probability_positive": 1.0,
+              "replications": 1000
+            }
+          },
+          "qnn_metadata": [
+            {
+              "backend": "default.qubit exact statevector",
+              "batch_size": 64,
+              "circuit": "AngleEmbedding(Y) plus 2 StronglyEntanglingLayers; Pauli-Z vector, trainable linear output",
+              "epochs": 40,
+              "hybrid_encoder": null,
+              "input_scaler": "training-only StandardScaler",
+              "learning_rate": 0.01,
+              "method": "variational quantum regressor",
+              "n_qubits": 6,
+              "pca_components": 6,
+              "pca_explained_variance_ratio_sum": 0.4550415314787196,
+              "post_pca_scaler": "training-only StandardScaler",
+              "seed": 1692041621,
+              "seeds": [
+                1692041621
+              ],
+              "shots": null
+            },
+            {
+              "backend": "default.qubit exact statevector",
+              "batch_size": 64,
+              "circuit": "AngleEmbedding(Y) plus 2 StronglyEntanglingLayers; Pauli-Z vector, trainable linear output",
+              "epochs": 40,
+              "hybrid_encoder": null,
+              "input_scaler": "training-only StandardScaler",
+              "learning_rate": 0.01,
+              "method": "variational quantum regressor",
+              "n_qubits": 6,
+              "pca_components": 6,
+              "pca_explained_variance_ratio_sum": 0.4550415314787196,
+              "post_pca_scaler": "training-only StandardScaler",
+              "seed": 727516651,
+              "seeds": [
+                727516651
+              ],
+              "shots": null
+            },
+            {
+              "backend": "default.qubit exact statevector",
+              "batch_size": 64,
+              "circuit": "AngleEmbedding(Y) plus 2 StronglyEntanglingLayers; Pauli-Z vector, trainable linear output",
+              "epochs": 40,
+              "hybrid_encoder": null,
+              "input_scaler": "training-only StandardScaler",
+              "learning_rate": 0.01,
+              "method": "variational quantum regressor",
+              "n_qubits": 6,
+              "pca_components": 6,
+              "pca_explained_variance_ratio_sum": 0.4550415314787196,
+              "post_pca_scaler": "training-only StandardScaler",
+              "seed": 1998983592,
+              "seeds": [
+                1998983592
+              ],
+              "shots": null
+            },
+            {
+              "backend": "default.qubit exact statevector",
+              "batch_size": 64,
+              "circuit": "AngleEmbedding(Y) plus 2 StronglyEntanglingLayers; Pauli-Z vector, trainable linear output",
+              "epochs": 40,
+              "hybrid_encoder": null,
+              "input_scaler": "training-only StandardScaler",
+              "learning_rate": 0.01,
+              "method": "variational quantum regressor",
+              "n_qubits": 6,
+              "pca_components": 6,
+              "pca_explained_variance_ratio_sum": 0.4550415314787196,
+              "post_pca_scaler": "training-only StandardScaler",
+              "seed": 1056900856,
+              "seeds": [
+                1056900856
+              ],
+              "shots": null
+            },
+            {
+              "backend": "default.qubit exact statevector",
+              "batch_size": 64,
+              "circuit": "AngleEmbedding(Y) plus 2 StronglyEntanglingLayers; Pauli-Z vector, trainable linear output",
+              "epochs": 40,
+              "hybrid_encoder": null,
+              "input_scaler": "training-only StandardScaler",
+              "learning_rate": 0.01,
+              "method": "variational quantum regressor",
+              "n_qubits": 6,
+              "pca_components": 6,
+              "pca_explained_variance_ratio_sum": 0.4550415314787196,
+              "post_pca_scaler": "training-only StandardScaler",
+              "seed": 1468441661,
+              "seeds": [
+                1468441661
+              ],
+              "shots": null
+            }
+          ],
+          "quantum_seed_ensemble_metrics": {
+            "mae": 7.85903924235434e-06,
+            "rmse": 9.510665605250353e-06
+          },
+          "qubits": 6,
+          "seed_delta_mean": 8.686758461262334e-08,
+          "seed_delta_median": 7.896828659600662e-08,
+          "seed_deltas_positive_favor_quantum": [
+            1.2204935612732536e-07,
+            1.8375807370062028e-07,
+            -3.2580511490009675e-09,
+            5.28202577881653e-08,
+            7.896828659600662e-08
+          ],
+          "seed_fraction_positive": 0.8
+        },
+        {
+          "asset": "BTC",
+          "holm_p_within_asset_family": 0.11388611388611389,
+          "matched_mlp_metadata": [
+            {
+              "alpha": 0.01,
+              "converged": true,
+              "hidden_width": 8,
+              "input_components": 8,
+              "input_scaler": "training-only StandardScaler",
+              "matched_classical": "one-hidden-layer MLP",
+              "max_iter": 2000,
+              "n_iter": 977,
+              "pca_components": 8,
+              "pca_explained_variance_ratio_sum": 0.5261670817335384,
+              "post_pca_scaler": "training-only StandardScaler",
+              "seed": 471682298,
+              "tolerance": 1e-05,
+              "warnings": []
+            },
+            {
+              "alpha": 0.01,
+              "converged": true,
+              "hidden_width": 8,
+              "input_components": 8,
+              "input_scaler": "training-only StandardScaler",
+              "matched_classical": "one-hidden-layer MLP",
+              "max_iter": 2000,
+              "n_iter": 1450,
+              "pca_components": 8,
+              "pca_explained_variance_ratio_sum": 0.5261670817335384,
+              "post_pca_scaler": "training-only StandardScaler",
+              "seed": 2079834901,
+              "tolerance": 1e-05,
+              "warnings": []
+            },
+            {
+              "alpha": 0.01,
+              "converged": true,
+              "hidden_width": 8,
+              "input_components": 8,
+              "input_scaler": "training-only StandardScaler",
+              "matched_classical": "one-hidden-layer MLP",
+              "max_iter": 2000,
+              "n_iter": 1378,
+              "pca_components": 8,
+              "pca_explained_variance_ratio_sum": 0.5261670817335384,
+              "post_pca_scaler": "training-only StandardScaler",
+              "seed": 405122595,
+              "tolerance": 1e-05,
+              "warnings": []
+            },
+            {
+              "alpha": 0.01,
+              "converged": true,
+              "hidden_width": 8,
+              "input_components": 8,
+              "input_scaler": "training-only StandardScaler",
+              "matched_classical": "one-hidden-layer MLP",
+              "max_iter": 2000,
+              "n_iter": 1280,
+              "pca_components": 8,
+              "pca_explained_variance_ratio_sum": 0.5261670817335384,
+              "post_pca_scaler": "training-only StandardScaler",
+              "seed": 1264240569,
+              "tolerance": 1e-05,
+              "warnings": []
+            },
+            {
+              "alpha": 0.01,
+              "converged": true,
+              "hidden_width": 8,
+              "input_components": 8,
+              "input_scaler": "training-only StandardScaler",
+              "matched_classical": "one-hidden-layer MLP",
+              "max_iter": 2000,
+              "n_iter": 1090,
+              "pca_components": 8,
+              "pca_explained_variance_ratio_sum": 0.5261670817335384,
+              "post_pca_scaler": "training-only StandardScaler",
+              "seed": 1919312585,
+              "tolerance": 1e-05,
+              "warnings": []
+            }
+          ],
+          "matched_mlp_seed_ensemble_metrics": {
+            "mae": 7.909783240793744e-06,
+            "rmse": 9.56721562189621e-06
+          },
+          "mean_seed_loss_delta_positive_favors_quantum": 3.6653817516697354e-08,
+          "n": 199,
+          "paired_bootstrap": {
+            "42": {
+              "block_length": 42,
+              "ci95": [
+                -5.5795899054470945e-09,
+                6.915186018300489e-08
+              ],
+              "mean_delta": 3.6653817516697354e-08,
+              "p_two_sided": 0.11388611388611389,
+              "probability_positive": 0.944,
+              "replications": 1000
+            },
+            "84": {
+              "block_length": 84,
+              "ci95": [
+                -1.0604195364003741e-08,
+                6.169972926231222e-08
+              ],
+              "mean_delta": 3.6653817516697354e-08,
+              "p_two_sided": 0.16183816183816183,
+              "probability_positive": 0.92,
+              "replications": 1000
+            }
+          },
+          "qnn_metadata": [
+            {
+              "backend": "default.qubit exact statevector",
+              "batch_size": 64,
+              "circuit": "AngleEmbedding(Y) plus 2 StronglyEntanglingLayers; Pauli-Z vector, trainable linear output",
+              "epochs": 40,
+              "hybrid_encoder": null,
+              "input_scaler": "training-only StandardScaler",
+              "learning_rate": 0.01,
+              "method": "variational quantum regressor",
+              "n_qubits": 8,
+              "pca_components": 8,
+              "pca_explained_variance_ratio_sum": 0.5261670817335384,
+              "post_pca_scaler": "training-only StandardScaler",
+              "seed": 471682298,
+              "seeds": [
+                471682298
+              ],
+              "shots": null
+            },
+            {
+              "backend": "default.qubit exact statevector",
+              "batch_size": 64,
+              "circuit": "AngleEmbedding(Y) plus 2 StronglyEntanglingLayers; Pauli-Z vector, trainable linear output",
+              "epochs": 40,
+              "hybrid_encoder": null,
+              "input_scaler": "training-only StandardScaler",
+              "learning_rate": 0.01,
+              "method": "variational quantum regressor",
+              "n_qubits": 8,
+              "pca_components": 8,
+              "pca_explained_variance_ratio_sum": 0.5261670817335384,
+              "post_pca_scaler": "training-only StandardScaler",
+              "seed": 2079834901,
+              "seeds": [
+                2079834901
+              ],
+              "shots": null
+            },
+            {
+              "backend": "default.qubit exact statevector",
+              "batch_size": 64,
+              "circuit": "AngleEmbedding(Y) plus 2 StronglyEntanglingLayers; Pauli-Z vector, trainable linear output",
+              "epochs": 40,
+              "hybrid_encoder": null,
+              "input_scaler": "training-only StandardScaler",
+              "learning_rate": 0.01,
+              "method": "variational quantum regressor",
+              "n_qubits": 8,
+              "pca_components": 8,
+              "pca_explained_variance_ratio_sum": 0.5261670817335384,
+              "post_pca_scaler": "training-only StandardScaler",
+              "seed": 405122595,
+              "seeds": [
+                405122595
+              ],
+              "shots": null
+            },
+            {
+              "backend": "default.qubit exact statevector",
+              "batch_size": 64,
+              "circuit": "AngleEmbedding(Y) plus 2 StronglyEntanglingLayers; Pauli-Z vector, trainable linear output",
+              "epochs": 40,
+              "hybrid_encoder": null,
+              "input_scaler": "training-only StandardScaler",
+              "learning_rate": 0.01,
+              "method": "variational quantum regressor",
+              "n_qubits": 8,
+              "pca_components": 8,
+              "pca_explained_variance_ratio_sum": 0.5261670817335384,
+              "post_pca_scaler": "training-only StandardScaler",
+              "seed": 1264240569,
+              "seeds": [
+                1264240569
+              ],
+              "shots": null
+            },
+            {
+              "backend": "default.qubit exact statevector",
+              "batch_size": 64,
+              "circuit": "AngleEmbedding(Y) plus 2 StronglyEntanglingLayers; Pauli-Z vector, trainable linear output",
+              "epochs": 40,
+              "hybrid_encoder": null,
+              "input_scaler": "training-only StandardScaler",
+              "learning_rate": 0.01,
+              "method": "variational quantum regressor",
+              "n_qubits": 8,
+              "pca_components": 8,
+              "pca_explained_variance_ratio_sum": 0.5261670817335384,
+              "post_pca_scaler": "training-only StandardScaler",
+              "seed": 1919312585,
+              "seeds": [
+                1919312585
+              ],
+              "shots": null
+            }
+          ],
+          "quantum_seed_ensemble_metrics": {
+            "mae": 7.885974592635727e-06,
+            "rmse": 9.523861658366589e-06
+          },
+          "qubits": 8,
+          "seed_delta_mean": 3.665381751669738e-08,
+          "seed_delta_median": 3.69653981135918e-08,
+          "seed_deltas_positive_favor_quantum": [
+            -5.6448895576913235e-08,
+            1.4675641574103674e-07,
+            -2.2881354480048143e-08,
+            3.69653981135918e-08,
+            7.887752378581976e-08
+          ],
+          "seed_fraction_positive": 0.6
+        }
+      ]
+    },
+    "supported_comparisons": [
+      {
+        "delta": 4.8078669942033245e-08,
+        "family": "qnn",
+        "global_holm_p": 0.08391608391608392,
+        "holm_p": 0.023976023976023976,
+        "matched_classical_converged": true,
+        "qubits": 4,
+        "seed_stability": 0.8
+      },
+      {
+        "delta": 2.0261868838213908e-07,
+        "family": "hybrid_qnn",
+        "global_holm_p": 0.017982017982017984,
+        "holm_p": 0.005994005994005994,
+        "matched_classical_converged": true,
+        "qubits": 4,
+        "seed_stability": 0.8
+      }
+    ]
+  },
+  "residual_learning": {
+    "holm_supported_families": [],
+    "independent_holm_supported_groups": [],
+    "models": [
+      {
+        "asset": "BTC",
+        "delta_positive_favors_derivatives": 1.1010583017752828e-07,
+        "family": "ElasticNet",
+        "folds": [
+          "F2",
+          "F3"
+        ],
+        "holm_p_within_asset_residual_families": 0.16383616383616384,
+        "n_asset_day_rows": 546,
+        "n_unique_dates": 546,
+        "paired_block_bootstrap": {
+          "42": {
+            "block_length_intervals": 42,
+            "ci95": [
+              -1.2725365477748495e-08,
+              2.455470893754168e-07
+            ],
+            "delta_mean": 1.1010583017752828e-07,
+            "p_two_sided": 0.08391608391608392,
+            "probability_positive": 0.959,
+            "replications": 1000
+          },
+          "84": {
+            "block_length_intervals": 84,
+            "ci95": [
+              7.509936117432679e-10,
+              2.537808857096017e-07
+            ],
+            "delta_mean": 1.1010583017752828e-07,
+            "p_two_sided": 0.05194805194805195,
+            "probability_positive": 0.975,
+            "replications": 1000
+          }
+        },
+        "residual_model_mae": 4.421676380971416e-06,
+        "spot_only_residual_mae": 4.531782211148944e-06
+      },
+      {
+        "asset": "BTC",
+        "delta_positive_favors_derivatives": -5.026974324492801e-07,
+        "family": "RBF_SVR",
+        "folds": [
+          "F2",
+          "F3"
+        ],
+        "holm_p_within_asset_residual_families": 0.11988011988011987,
+        "n_asset_day_rows": 546,
+        "n_unique_dates": 546,
+        "paired_block_bootstrap": {
+          "42": {
+            "block_length_intervals": 42,
+            "ci95": [
+              -8.791572077680253e-07,
+              -3.321871557961556e-08
+            ],
+            "delta_mean": -5.026974324492801e-07,
+            "p_two_sided": 0.03996003996003996,
+            "probability_positive": 0.019,
+            "replications": 1000
+          },
+          "84": {
+            "block_length_intervals": 84,
+            "ci95": [
+              -9.92920567291483e-07,
+              7.704484605676878e-08
+            ],
+            "delta_mean": -5.026974324492801e-07,
+            "p_two_sided": 0.0959040959040959,
+            "probability_positive": 0.047,
+            "replications": 1000
+          }
+        },
+        "residual_model_mae": 5.034479643598224e-06,
+        "spot_only_residual_mae": 4.531782211148944e-06
+      },
+      {
+        "asset": "BTC",
+        "delta_positive_favors_derivatives": -3.2575318475794554e-07,
+        "family": "HistGradientBoosting",
+        "folds": [
+          "F2",
+          "F3"
+        ],
+        "holm_p_within_asset_residual_families": 0.03196803196803197,
+        "n_asset_day_rows": 546,
+        "n_unique_dates": 546,
+        "paired_block_bootstrap": {
+          "42": {
+            "block_length_intervals": 42,
+            "ci95": [
+              -6.377553925204438e-07,
+              -7.793469767297056e-08
+            ],
+            "delta_mean": -3.2575318475794554e-07,
+            "p_two_sided": 0.007992007992007992,
+            "probability_positive": 0.003,
+            "replications": 1000
+          },
+          "84": {
+            "block_length_intervals": 84,
+            "ci95": [
+              -6.552984010260302e-07,
+              -6.263850039086132e-09
+            ],
+            "delta_mean": -3.2575318475794554e-07,
+            "p_two_sided": 0.04395604395604396,
+            "probability_positive": 0.021,
+            "replications": 1000
+          }
+        },
+        "residual_model_mae": 4.85753539590689e-06,
+        "spot_only_residual_mae": 4.531782211148944e-06
+      },
+      {
+        "asset": "BTC",
+        "delta_positive_favors_derivatives": 1.091526154342847e-07,
+        "family": "XGBoost",
+        "folds": [
+          "F2",
+          "F3"
+        ],
+        "holm_p_within_asset_residual_families": 0.16383616383616384,
+        "n_asset_day_rows": 546,
+        "n_unique_dates": 546,
+        "paired_block_bootstrap": {
+          "42": {
+            "block_length_intervals": 42,
+            "ci95": [
+              -1.4118976780684712e-08,
+              2.6521476658326176e-07
+            ],
+            "delta_mean": 1.091526154342847e-07,
+            "p_two_sided": 0.08191808191808192,
+            "probability_positive": 0.96,
+            "replications": 1000
+          },
+          "84": {
+            "block_length_intervals": 84,
+            "ci95": [
+              -6.266417025678849e-09,
+              2.474806641217323e-07
+            ],
+            "delta_mean": 1.091526154342847e-07,
+            "p_two_sided": 0.07392607392607392,
+            "probability_positive": 0.964,
+            "replications": 1000
+          }
+        },
+        "residual_model_mae": 4.42262959571466e-06,
+        "spot_only_residual_mae": 4.531782211148944e-06
+      },
+      {
+        "asset": "BTC",
+        "delta_positive_favors_derivatives": -0.15721651923072882,
+        "family": "MLP",
+        "folds": [
+          "F2",
+          "F3"
+        ],
+        "holm_p_within_asset_residual_families": 0.00999000999000999,
+        "n_asset_day_rows": 546,
+        "n_unique_dates": 546,
+        "paired_block_bootstrap": {
+          "42": {
+            "block_length_intervals": 42,
+            "ci95": [
+              -0.19856191690562242,
+              -0.12419468237995498
+            ],
+            "delta_mean": -0.15721651923072882,
+            "p_two_sided": 0.001998001998001998,
+            "probability_positive": 0.0,
+            "replications": 1000
+          },
+          "84": {
+            "block_length_intervals": 84,
+            "ci95": [
+              -0.20561454768682103,
+              -0.1172325352901027
+            ],
+            "delta_mean": -0.15721651923072882,
+            "p_two_sided": 0.001998001998001998,
+            "probability_positive": 0.0,
+            "replications": 1000
+          }
+        },
+        "residual_model_mae": 0.15722105101293996,
+        "spot_only_residual_mae": 4.531782211148944e-06
+      }
+    ],
+    "residual_incremental_information_supported": false
+  },
+  "seasonality": {
+    "calendar_controls_help_under_fixed_model": true,
+    "full_mae": 6.167479275316192e-06,
+    "without_calendar_mae": 6.95347122986409e-06
+  },
+  "secondary_labels": [
+    "QUANTUM_INCREMENTAL_VALUE"
+  ]
+}

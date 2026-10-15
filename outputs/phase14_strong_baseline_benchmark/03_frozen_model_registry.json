@@ -1,0 +1,305 @@
+{
+  "feature_preprocessing": "Phase 6 training-only StandardScaler. For GRU fit feature scaler on training rows x six time steps; for other models fit on flattened frozen lag features. No imputation, clipping, feature selection, or global standardization.",
+  "inference": {
+    "ci": "nominal percentile interval from moving-block resampling of paired loss differences",
+    "holm_family": "two primary BTC/ETH tests, separately for block 42 and block 84; only 42-bar family is primary",
+    "p": "two-sided null-centered moving-block bootstrap; center d_t by observed mean, inclusive absolute-tail comparison, add-one finite-resample p=(1+count)/(B+1)",
+    "primary_block_length": 42,
+    "replications": 1000,
+    "seeds": {
+      "BTC_block42": 20261442,
+      "BTC_block84": 20261484,
+      "ETH_block42": 20261443,
+      "ETH_block84": 20261485
+    },
+    "sensitivity_block_length": 84
+  },
+  "information_sets": [
+    "SPOT_ONLY",
+    "SPOT_PLUS_ALL_DERIVATIVES"
+  ],
+  "model_family_config_selection": "For each model family and information set, choose the registered config with lowest pooled chronological F1-F3 MAE. Ties use the locked configuration order.",
+  "model_selection": "For each asset x information set, select each tunable family configuration by pooled concatenated F1-F3 validation MAE, then select the system with lowest pooled development MAE across references and selected family configurations. Test data are not inputs to selection.",
+  "models": {
+    "CatBoost": {
+      "complexity_rank": 5,
+      "configs": [
+        {
+          "allow_writing_files": false,
+          "depth": 4,
+          "iterations": 200,
+          "l2_leaf_reg": 3.0,
+          "learning_rate": 0.05,
+          "loss_function": "RMSE",
+          "random_strength": 1.0,
+          "thread_count": 1,
+          "verbose": false
+        },
+        {
+          "allow_writing_files": false,
+          "depth": 6,
+          "iterations": 200,
+          "l2_leaf_reg": 3.0,
+          "learning_rate": 0.05,
+          "loss_function": "RMSE",
+          "random_strength": 1.0,
+          "thread_count": 1,
+          "verbose": false
+        },
+        {
+          "allow_writing_files": false,
+          "depth": 8,
+          "iterations": 200,
+          "l2_leaf_reg": 3.0,
+          "learning_rate": 0.05,
+          "loss_function": "RMSE",
+          "random_strength": 1.0,
+          "thread_count": 1,
+          "verbose": false
+        }
+      ],
+      "registry_status": "fixed grid authored for Phase 14 because Phase 6 excluded this family"
+    },
+    "ExtraTrees": {
+      "complexity_rank": 4,
+      "configs": [
+        {
+          "min_samples_leaf": 2,
+          "n_estimators": 200
+        },
+        {
+          "min_samples_leaf": 5,
+          "n_estimators": 200
+        },
+        {
+          "min_samples_leaf": 10,
+          "n_estimators": 200
+        }
+      ]
+    },
+    "GRU": {
+      "complexity_rank": 8,
+      "fixed_configs": {
+        "BTC__GRU__SPOT_ONLY": {
+          "epochs": 20,
+          "hidden_size": 16,
+          "weight_decay": 0.001
+        },
+        "BTC__GRU__SPOT_PLUS_ALL_DERIVATIVES": {
+          "epochs": 20,
+          "hidden_size": 16,
+          "weight_decay": 0.001
+        },
+        "ETH__GRU__SPOT_ONLY": {
+          "epochs": 20,
+          "hidden_size": 16,
+          "weight_decay": 0.001
+        },
+        "ETH__GRU__SPOT_PLUS_ALL_DERIVATIVES": {
+          "epochs": 20,
+          "hidden_size": 16,
+          "weight_decay": 0.001
+        }
+      },
+      "registry_status": "exact Phase 13 selected architecture per asset/information set; not retuned"
+    },
+    "HistGradientBoosting": {
+      "complexity_rank": 3,
+      "configs": [
+        {
+          "learning_rate": 0.05,
+          "max_iter": 100,
+          "max_leaf_nodes": 7
+        },
+        {
+          "learning_rate": 0.05,
+          "max_iter": 100,
+          "max_leaf_nodes": 15
+        },
+        {
+          "learning_rate": 0.05,
+          "max_iter": 100,
+          "max_leaf_nodes": 31
+        }
+      ]
+    },
+    "MLP": {
+      "complexity_rank": 7,
+      "fixed_configs": {
+        "BTC__MLP__SPOT_ONLY": {
+          "alpha": 0.001,
+          "hidden_layer_sizes": [
+            8
+          ],
+          "max_iter": 400
+        },
+        "BTC__MLP__SPOT_PLUS_ALL_DERIVATIVES": {
+          "alpha": 0.001,
+          "hidden_layer_sizes": [
+            8
+          ],
+          "max_iter": 400
+        },
+        "ETH__MLP__SPOT_ONLY": {
+          "alpha": 0.001,
+          "hidden_layer_sizes": [
+            8
+          ],
+          "max_iter": 400
+        },
+        "ETH__MLP__SPOT_PLUS_ALL_DERIVATIVES": {
+          "alpha": 0.001,
+          "hidden_layer_sizes": [
+            8
+          ],
+          "max_iter": 400
+        }
+      },
+      "registry_status": "exact Phase 13 selected architecture per asset/information set; not retuned"
+    },
+    "Persistence": {
+      "complexity_rank": 1,
+      "configs": [
+        {
+          "rule": "log1p current spot Amihud, using frozen Phase 6 persistence definition"
+        }
+      ]
+    },
+    "Ridge": {
+      "complexity_rank": 2,
+      "configs": [
+        {
+          "alpha": 0.1
+        },
+        {
+          "alpha": 1.0
+        },
+        {
+          "alpha": 10.0
+        }
+      ]
+    },
+    "TrainingMean": {
+      "complexity_rank": 0,
+      "configs": [
+        {
+          "rule": "mean of training-fold Z labels"
+        }
+      ]
+    },
+    "XGBoost": {
+      "complexity_rank": 6,
+      "configs": [
+        {
+          "colsample_bytree": 1.0,
+          "learning_rate": 0.05,
+          "max_depth": 2,
+          "min_child_weight": 1.0,
+          "n_estimators": 200,
+          "n_jobs": 1,
+          "objective": "reg:squarederror",
+          "reg_lambda": 1.0,
+          "subsample": 1.0,
+          "tree_method": "hist"
+        },
+        {
+          "colsample_bytree": 1.0,
+          "learning_rate": 0.05,
+          "max_depth": 4,
+          "min_child_weight": 1.0,
+          "n_estimators": 200,
+          "n_jobs": 1,
+          "objective": "reg:squarederror",
+          "reg_lambda": 1.0,
+          "subsample": 1.0,
+          "tree_method": "hist"
+        },
+        {
+          "colsample_bytree": 1.0,
+          "learning_rate": 0.05,
+          "max_depth": 6,
+          "min_child_weight": 1.0,
+          "n_estimators": 200,
+          "n_jobs": 1,
+          "objective": "reg:squarederror",
+          "reg_lambda": 1.0,
+          "subsample": 1.0,
+          "tree_method": "hist"
+        }
+      ],
+      "registry_status": "fixed grid authored for Phase 14 because Phase 6 excluded this family"
+    }
+  },
+  "models_to_evaluate": [
+    "TrainingMean",
+    "Persistence",
+    "Ridge",
+    "ExtraTrees",
+    "HistGradientBoosting",
+    "CatBoost",
+    "XGBoost",
+    "MLP",
+    "GRU"
+  ],
+  "neural": {
+    "GRU": {
+      "batch": "full batch",
+      "early_stopping": false,
+      "epochs": 20,
+      "gradient_clipping": false,
+      "layers": 1,
+      "learning_rate": 0.005,
+      "optimizer": "Adam",
+      "output": "linear scalar from final hidden state",
+      "sequence_length": 6,
+      "weight_decay": 0.001
+    },
+    "MLP": {
+      "alpha": 0.001,
+      "architecture": "one hidden ReLU layer",
+      "early_stopping": false,
+      "learning_rate_init": 0.001,
+      "max_iter": 400,
+      "n_iter_no_change": 30,
+      "optimizer": "Adam",
+      "shuffle": true,
+      "tol": 1e-05
+    },
+    "target_standardization": "StandardScaler on training labels only; inverse transform predictions before MAE."
+  },
+  "primary_metric": "MAE on original log1p target Z; lower is better",
+  "retrospective_status": "Historical final-test period was inspected in Phases 6/13. Phase 14 is a retrospective reanalysis and not independent confirmation.",
+  "seeds": {
+    "base_seed": 20261007,
+    "development": "Phase 6 stable_seed(task_id, information_set, family, config_index, fold_name); fixed-config neural models use Phase 13 archived selected config index.",
+    "final": "Phase 6 stable_seed('final', asset, 'future_amihud', 6, information_set, model_family); the selected config is locked before test parsing."
+  },
+  "sources": {
+    "phase13_final_manifest_sha256": "4314bc939b04160d182ce3ab95bfd8717a5f3b748ff03999ffc4b8307374c3fc",
+    "phase6_protocol_sha256": "69affa8f08f3943e9c0914dc276bdd5821410f5d401825e0299487ef13a01028",
+    "phase6_selected_models_sha256": "93d8d2d15d0a03ccebd2cea4ce115a8d4dbfabe3d8dfbde8f9dac845757a6313"
+  },
+  "status": "FROZEN_BEFORE_PHASE14_FITTING",
+  "system_selection_complexity_order": [
+    "TrainingMean",
+    "Persistence",
+    "Ridge",
+    "HistGradientBoosting",
+    "ExtraTrees",
+    "CatBoost",
+    "XGBoost",
+    "MLP",
+    "GRU"
+  ],
+  "target": "frozen Phase 6 future_amihud = arithmetic mean of spot_amihud[t+1..t+6]; Z=log1p(max(Y,0)). Only MLP/GRU use StandardScaler fitted on eligible training Z; inverse transform before scoring. Predictions from every model are scored raw on Z without clipping.",
+  "training_budget": {
+    "CatBoost_configs": 3,
+    "Phase13_GRU_configs_per_asset_info": 1,
+    "Phase13_MLP_configs_per_asset_info": 1,
+    "Phase6_candidate_configs": 3,
+    "XGBoost_configs": 3,
+    "development_folds": 3,
+    "early_stopping": false,
+    "training_per_fit_only": true
+  }
+}

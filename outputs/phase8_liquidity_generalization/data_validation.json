@@ -1,0 +1,36 @@
+{
+  "all_frozen_phase7_predictions_verified": true,
+  "amihud_reconstruction_max_abs_error": 9.993633524885137e-17,
+  "archive_integrity": {
+    "archive_count": 6195,
+    "manifest_sha256": "98c99d218ac810269bf70cfb48301b0630fba22f6383f071cc5e0d29cecb164a",
+    "pass": true,
+    "sha256_verified": 6195
+  },
+  "assets": [
+    "BTC",
+    "ETH",
+    "SOL",
+    "BNB",
+    "XRP"
+  ],
+  "external_prediction_end": "2026-09-29T20:00:00+00:00",
+  "external_prediction_hash": "3c54d0190702affc96a62220770cdfe4b63a19c863bace303ec6917983ee5540",
+  "external_prediction_start": "2024-03-05T04:00:00+00:00",
+  "future_amihud_reconstruction_max_abs_error": 9.578926193909432e-17,
+  "future_corwin_schultz_reconstruction_max_abs_error": 9.386480308293255e-17,
+  "offline_only": true,
+  "panel_duplicate_asset_dates": 0,
+  "panel_rows": 54780,
+  "phase7_asset_eligibility_pass": true,
+  "phase7_asset_selection_performance_blind": true,
+  "phase7_panel_hash": "5a339c5c4a8778ceb74344a10c67806c2323ffac80556be18bf7a9c99de8dcf6",
+  "prediction_duplicate_keys": 0,
+  "prediction_rows": 2149446,
+  "status": "PASS",
+  "targets": [
+    "future_amihud_24h_mean",
+    "future_kyle_abs_lambda_24h",
+    "future_corwin_schultz_spread_24h"
+  ]
+}

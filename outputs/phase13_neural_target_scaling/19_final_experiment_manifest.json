@@ -1,0 +1,1585 @@
+{
+  "descriptive_classifications": {
+    "DERIVATIVES_INFORMATION_SENSITIVITY": "MIXED_ACROSS_ASSETS",
+    "ENSEMBLE_RELIABILITY": "SUBSTANTIALLY_IMPROVED",
+    "NEURAL_COMPETITIVENESS": "MIXED_ACROSS_ASSETS",
+    "NEURAL_SCALING_RESPONSE": "CLEAR_ABSOLUTE_IMPROVEMENT"
+  },
+  "experiment_type": "RETROSPECTIVE_SENSITIVITY",
+  "generated_output_files_excluding_final_manifest_and_checksum": [
+    {
+      "path": "00_locked_experiment_protocol.md",
+      "sha256": "86c4e37b707aeb6f8d1db881dbf12c44fe846a7e4d16f42c7b328a9a84f5b92e",
+      "size_bytes": 6151
+    },
+    {
+      "path": "01_frozen_configuration_registry.json",
+      "sha256": "856f8b304240a0c42be6727a1cc0c7c3ad5b40f0a181311cc27a82e250e73eb2",
+      "size_bytes": 9486
+    },
+    {
+      "path": "02_training_plan.md",
+      "sha256": "e22cad5c7ee5d9dfe8abf407a255770caf5f61b763836cf850e8bd381a5f6fbb",
+      "size_bytes": 1594
+    },
+    {
+      "path": "03_source_manifest_before.json",
+      "sha256": "28739fae311eb12884614722c4de5ab37049b3aef2289604ec66fd26a793ef67",
+      "size_bytes": 61778
+    },
+    {
+      "path": "04_training_execution_log.md",
+      "sha256": "388b2ff9985a5e836735c7e75a972be35315e5954a7c48f21b63cbe619ecc9be",
+      "size_bytes": 5241
+    },
+    {
+      "path": "05_mlp_sensitivity_results.csv",
+      "sha256": "365cff76d1d184029a789978609fac5966654e1b5fa35c2088beb97d2cc6cfbc",
+      "size_bytes": 888
+    },
+    {
+      "path": "06_gru_sensitivity_results.csv",
+      "sha256": "5698e08ff09f00366390986d3a1c0b7fd38e1a8edae7d4c8e56b66882075325f",
+      "size_bytes": 895
+    },
+    {
+      "path": "07_neural_prediction_diagnostics.csv",
+      "sha256": "13a88aa5ad132ff04b23190b638ddc3007b92c392e51f8778731c848bc4419ea",
+      "size_bytes": 12095
+    },
+    {
+      "path": "08_fold_level_results.csv",
+      "sha256": "1a1cc86226da86ae15cc29b7898db72d39f76a876fc3881f0ae35d170221e648",
+      "size_bytes": 401155
+    },
+    {
+      "path": "09_strong_baseline_comparison.csv",
+      "sha256": "ce6dec3f8dfe647341a634f286c2f794db24ba087605b47a6dfdf9438d763a6c",
+      "size_bytes": 4940
+    },
+    {
+      "path": "10_ensemble_sensitivity.csv",
+      "sha256": "79a0cdf24a6f71fd35461ce761c5bc5099be3cfe3ffe3f936fc6ba415481a21d",
+      "size_bytes": 3365
+    },
+    {
+      "path": "11_category_average_sensitivity.csv",
+      "sha256": "f5387424866bc32890df48fb03801a1e53b4f879e8d8b573e25350a0bd88a793",
+      "size_bytes": 2909
+    },
+    {
+      "path": "12_exploratory_uncertainty.md",
+      "sha256": "b0bcc94d6742dfeb430fca023bc67197980a495f959cffbe3d9eae184be7224a",
+      "size_bytes": 5969
+    },
+    {
+      "path": "13_scientific_interpretation.md",
+      "sha256": "4af993dcd877695557c0cb85210806275507d5346c568dad9b24016f01782ec2",
+      "size_bytes": 4179
+    },
+    {
+      "path": "14_manuscript_revision_recommendations.md",
+      "sha256": "0241c265099e7ef0ef07014e8f6fa79bf53c7ff3bd985c100da9ad71fd0d4ecb",
+      "size_bytes": 2491
+    },
+    {
+      "path": "15_limitations_and_integrity.md",
+      "sha256": "66d593fe918508e94a8bf95ccf2044b9baf0a33a48a80bb6b8db3da431aeee5c",
+      "size_bytes": 1173
+    },
+    {
+      "path": "16_source_manifest_after.json",
+      "sha256": "307b66be0883cb7b91eabaa9059c850793fcc4dc972c17e570db6fe4d22c271e",
+      "size_bytes": 93936
+    },
+    {
+      "path": "17_reproducibility_validation.md",
+      "sha256": "2018e2041cff100313cc51114936b8400d317105bbe79e754f6a1350c70f05a2",
+      "size_bytes": 1660
+    },
+    {
+      "path": "18_executive_summary.md",
+      "sha256": "8fee99502ab70466ed6a6c6566afe52c5d653f3cea7f55d163d220ceb8df6777",
+      "size_bytes": 1786
+    },
+    {
+      "path": "analysis_attempt_001/05_mlp_sensitivity_results.csv",
+      "sha256": "95c8afa8f955664b5948e5a99fe7ea2506f9e689a8c819e92e83ba30d87acd68",
+      "size_bytes": 1739
+    },
+    {
+      "path": "analysis_attempt_001/06_gru_sensitivity_results.csv",
+      "sha256": "6d5444f0dbc923d0e57a63a261e19647b5576e67f066e8cdac92083c1aef5c68",
+      "size_bytes": 1741
+    },
+    {
+      "path": "analysis_attempt_001/07_neural_prediction_diagnostics.csv",
+      "sha256": "9ab4b674f575b4203f7726e1aa06fc2b2259689e99f2bdb3358ae8e2e01229fa",
+      "size_bytes": 14955
+    },
+    {
+      "path": "analysis_attempt_001/09_strong_baseline_comparison.csv",
+      "sha256": "38a87225e0eae84c6c5d75164b66d07053b84ac812ba335cc3b92f7e734166f0",
+      "size_bytes": 4942
+    },
+    {
+      "path": "analysis_attempt_001/archive_manifest.json",
+      "sha256": "8da017f6b703af2e8cf3c689c3163bec078c5b9e387b285cc0d55bf306aa3a74",
+      "size_bytes": 1296
+    },
+    {
+      "path": "analysis_summary.json",
+      "sha256": "856dfd31e5afed77f261e13f37c761544c3f620f250f4817ba33a4aea8b30a30",
+      "size_bytes": 23151
+    },
+    {
+      "path": "attempt_001/04_training_execution_log.md",
+      "sha256": "584ecde894e50e59c2af68f352c898fdb9c1a3c40960d3d9e2774f7973128f30",
+      "size_bytes": 6421
+    },
+    {
+      "path": "attempt_001/08_fold_level_results.csv",
+      "sha256": "071c415e84fc05604e72850f976c4feeb4d2097cb6a4023e03f5cfe9fa95a8c5",
+      "size_bytes": 63355
+    },
+    {
+      "path": "attempt_001/predictions/BTC_GRU_SPOT_ONLY_F1_TARGET_SCALED.csv",
+      "sha256": "f32813e29ebefe78f9fcdd52d12b461249ea4015c442ffbda23cb278c95afa03",
+      "size_bytes": 129166
+    },
+    {
+      "path": "attempt_001/predictions/BTC_GRU_SPOT_ONLY_F1_UNSCALED_CONTROL.csv",
+      "sha256": "3d780044eac397219136bf2ec1fc36b48039804bd64f7a5c8bf98df95bc1f72e",
+      "size_bytes": 112601
+    },
+    {
+      "path": "attempt_001/predictions/BTC_GRU_SPOT_ONLY_F2_TARGET_SCALED.csv",
+      "sha256": "2b9766e9d59bbc6e16aaa817a408b773125e5fb4c3fd192f5cfa1129e5acb210",
+      "size_bytes": 129612
+    },
+    {
+      "path": "attempt_001/predictions/BTC_GRU_SPOT_ONLY_F2_UNSCALED_CONTROL.csv",
+      "sha256": "2015d9179bb44ca756a2c6c873540fb22825feeeb24167c4b113126b8d535971",
+      "size_bytes": 120019
+    },
+    {
+      "path": "attempt_001/predictions/BTC_GRU_SPOT_ONLY_F3_TARGET_SCALED.csv",
+      "sha256": "4e906fb139451ce9b23a88675d87068b775cfcce43e1eeb7fdcae839178b81ee",
+      "size_bytes": 123631
+    },
+    {
+      "path": "attempt_001/predictions/BTC_GRU_SPOT_ONLY_F3_UNSCALED_CONTROL.csv",
+      "sha256": "d8ca4a8ed84e37b0181fdcac97079fae96370d40dcdb2eb23665eb99c8d51e56",
+      "size_bytes": 107559
+    },
+    {
+      "path": "attempt_001/predictions/BTC_GRU_SPOT_ONLY_FINAL_TEST_TARGET_SCALED.csv",
+      "sha256": "6a676b958ad9d77758b59349211985e9d45356f6fd0ce7840388b867a64774f0",
+      "size_bytes": 374392
+    },
+    {
+      "path": "attempt_001/predictions/BTC_GRU_SPOT_ONLY_FINAL_TEST_UNSCALED_CONTROL.csv",
+      "sha256": "79fe9efa2e8d2be96511ce135a315e17544ac087a96ded0c84532d6abd3c8afc",
+      "size_bytes": 346710
+    },
+    {
+      "path": "attempt_001/predictions/BTC_GRU_SPOT_PLUS_ALL_DERIVATIVES_F1_TARGET_SCALED.csv",
+      "sha256": "bed4c0d0d08335467d2dc15a3e2ba78e13e7dabad4ef16d5048e06411a96d9a0",
+      "size_bytes": 141727
+    },
+    {
+      "path": "attempt_001/predictions/BTC_GRU_SPOT_PLUS_ALL_DERIVATIVES_F1_UNSCALED_CONTROL.csv",
+      "sha256": "ae5638726b7e7bae5c40f881e330c5c85924fd7317d87df557d5c5b55c6ac022",
+      "size_bytes": 129157
+    },
+    {
+      "path": "attempt_001/predictions/BTC_GRU_SPOT_PLUS_ALL_DERIVATIVES_F2_TARGET_SCALED.csv",
+      "sha256": "03e5ca769b25f8cb7f975e10a8e766f60f037baac92844ba9320b3273a4ee146",
+      "size_bytes": 136669
+    },
+    {
+      "path": "attempt_001/predictions/BTC_GRU_SPOT_PLUS_ALL_DERIVATIVES_F2_UNSCALED_CONTROL.csv",
+      "sha256": "cf9746a43598022b2de85eb6552a90079e83de3c6112b5d5151a8ac959a93ca1",
+      "size_bytes": 125663
+    },
+    {
+      "path": "attempt_001/predictions/BTC_GRU_SPOT_PLUS_ALL_DERIVATIVES_F3_TARGET_SCALED.csv",
+      "sha256": "5685386143d7c74990a81145abcc683219e5632f10eaca12ddebbeaff1e09664",
+      "size_bytes": 135076
+    },
+    {
+      "path": "attempt_001/predictions/BTC_GRU_SPOT_PLUS_ALL_DERIVATIVES_F3_UNSCALED_CONTROL.csv",
+      "sha256": "d73f81482a189643ce4d9217aa6632128c9779725220f641c088bc48edf7038a",
+      "size_bytes": 123063
+    },
+    {
+      "path": "attempt_001/predictions/BTC_GRU_SPOT_PLUS_ALL_DERIVATIVES_FINAL_TEST_TARGET_SCALED.csv",
+      "sha256": "ca60f2641559b4fdc4b094beafb99654d4f698107516c7c7f6d0633e241d71e2",
+      "size_bytes": 387343
+    },
+    {
+      "path": "attempt_001/predictions/BTC_GRU_SPOT_PLUS_ALL_DERIVATIVES_FINAL_TEST_UNSCALED_CONTROL.csv",
+      "sha256": "2ed84ab4433e80abf43c89f545e9802a329469e61a4af7f5ae1648fb3f834e63",
+      "size_bytes": 352202
+    },
+    {
+      "path": "attempt_001/predictions/ETH_GRU_SPOT_ONLY_F1_TARGET_SCALED.csv",
+      "sha256": "89e76c76d00ba8867e428298f0f966419c97de5d9998b993e642467df6bbede6",
+      "size_bytes": 133324
+    },
+    {
+      "path": "attempt_001/predictions/ETH_GRU_SPOT_ONLY_F1_UNSCALED_CONTROL.csv",
+      "sha256": "08480b2bd96cc7517319c2158900ca4227b9a8a13fb33eb54dd589e0caac3525",
+      "size_bytes": 121327
+    },
+    {
+      "path": "attempt_001/predictions/ETH_GRU_SPOT_ONLY_F2_TARGET_SCALED.csv",
+      "sha256": "81c1e71feda148ad945d706bbdca681f02847372d42842222b470acc461efae8",
+      "size_bytes": 129287
+    },
+    {
+      "path": "attempt_001/predictions/ETH_GRU_SPOT_ONLY_F2_UNSCALED_CONTROL.csv",
+      "sha256": "3b02f4e6c845f237bac134e6574f68a825659f81d93f45077598fd9f93bf6d1f",
+      "size_bytes": 119924
+    },
+    {
+      "path": "attempt_001/predictions/ETH_GRU_SPOT_ONLY_F3_TARGET_SCALED.csv",
+      "sha256": "8ab135f15e06394d719e611203e679f82e5b6ac025fccc8d0c76d1fa80e73311",
+      "size_bytes": 128388
+    },
+    {
+      "path": "attempt_001/predictions/ETH_GRU_SPOT_ONLY_F3_UNSCALED_CONTROL.csv",
+      "sha256": "a3a0e69ec2de5095ca3e8930414ce7a53fce6aeb9fdbca10199864f9f0e07bf4",
+      "size_bytes": 113402
+    },
+    {
+      "path": "attempt_001/predictions/ETH_GRU_SPOT_ONLY_FINAL_TEST_TARGET_SCALED.csv",
+      "sha256": "6c20461d8f7dd03ea2423d129db3f784458f3a607d7448f9bb595e2c2264b14b",
+      "size_bytes": 360506
+    },
+    {
+      "path": "attempt_001/predictions/ETH_GRU_SPOT_ONLY_FINAL_TEST_UNSCALED_CONTROL.csv",
+      "sha256": "a8d2bc9339cf2ea6c7010adf6b44dc6f71e7f80d79e2c755772d84fd7d253709",
+      "size_bytes": 332744
+    },
+    {
+      "path": "attempt_001/predictions/ETH_GRU_SPOT_PLUS_ALL_DERIVATIVES_F1_TARGET_SCALED.csv",
+      "sha256": "138a8ad3053d574032d92386fbd0636dc77a9c2f90e6bf72ab28be4160c961e9",
+      "size_bytes": 140653
+    },
+    {
+      "path": "attempt_001/predictions/ETH_GRU_SPOT_PLUS_ALL_DERIVATIVES_F1_UNSCALED_CONTROL.csv",
+      "sha256": "4ab5b20004e832bd49aefd1327a7fc2966c5ae5b685514ab532b981a3644f0df",
+      "size_bytes": 128343
+    },
+    {
+      "path": "attempt_001/predictions/ETH_GRU_SPOT_PLUS_ALL_DERIVATIVES_F2_TARGET_SCALED.csv",
+      "sha256": "14c9e02da847fb6d1d9b996a830d715c373cf89b3d6f202ec7624457c0385523",
+      "size_bytes": 136893
+    },
+    {
+      "path": "attempt_001/predictions/ETH_GRU_SPOT_PLUS_ALL_DERIVATIVES_F2_UNSCALED_CONTROL.csv",
+      "sha256": "b6a256aed70593124b656ca1a8faae06e27b9dcb007a84da2ad61436ebb58469",
+      "size_bytes": 127374
+    },
+    {
+      "path": "attempt_001/predictions/ETH_GRU_SPOT_PLUS_ALL_DERIVATIVES_F3_TARGET_SCALED.csv",
+      "sha256": "8b0e06a6ccf4c1b0db3e832bb91d0fa480a59149b54beb4bb83ece79786e5210",
+      "size_bytes": 141475
+    },
+    {
+      "path": "attempt_001/predictions/ETH_GRU_SPOT_PLUS_ALL_DERIVATIVES_F3_UNSCALED_CONTROL.csv",
+      "sha256": "b70ee7cadf39edd502e713bc615ccbb75753359df2c302a3fd60e8b1160911ad",
+      "size_bytes": 130270
+    },
+    {
+      "path": "attempt_001/predictions/ETH_GRU_SPOT_PLUS_ALL_DERIVATIVES_FINAL_TEST_TARGET_SCALED.csv",
+      "sha256": "305d416a19600db0e34e960ba9fe968786aa7f2c3003323bcc0008459646c165",
+      "size_bytes": 373376
+    },
+    {
+      "path": "attempt_001/predictions/ETH_GRU_SPOT_PLUS_ALL_DERIVATIVES_FINAL_TEST_UNSCALED_CONTROL.csv",
+      "sha256": "61d68279f68cba1d20d0614bedba4dd179065c8f298c1a7b7655ccf1d882e021",
+      "size_bytes": 335908
+    },
+    {
+      "path": "attempt_001/predictions/all_origin_predictions.csv.gz",
+      "sha256": "9f5af41cda9816e32dd4f101506748dc888b23e5ab661b7561ff0f88036db088",
+      "size_bytes": 1111235
+    },
+    {
+      "path": "attempt_001/training_logs/BTC_GRU_SPOT_ONLY_F1_TARGET_SCALED.json",
+      "sha256": "7523b37a486fa9698893891600359769f928b43336ed69e22bb41f90a36054b5",
+      "size_bytes": 2141
+    },
+    {
+      "path": "attempt_001/training_logs/BTC_GRU_SPOT_ONLY_F1_UNSCALED_CONTROL.json",
+      "sha256": "30d36819fe4cbc3b0ea39689cc1d1cb7dd062b945c6064fb823281a411c5b4fb",
+      "size_bytes": 2172
+    },
+    {
+      "path": "attempt_001/training_logs/BTC_GRU_SPOT_ONLY_F2_TARGET_SCALED.json",
+      "sha256": "47de108839a2d6cb60aa7728f77168529855ae4979d944c8dbb40bc708ca8065",
+      "size_bytes": 2143
+    },
+    {
+      "path": "attempt_001/training_logs/BTC_GRU_SPOT_ONLY_F2_UNSCALED_CONTROL.json",
+      "sha256": "1c653539890692b24d1c6e61aa891d0fafe182ec4b4ea1009fe09784efe19ec6",
+      "size_bytes": 2188
+    },
+    {
+      "path": "attempt_001/training_logs/BTC_GRU_SPOT_ONLY_F3_TARGET_SCALED.json",
+      "sha256": "f8628428d241b7fae7ca0443f5c9cf678a01f482dc3581adde08cac7234060a6",
+      "size_bytes": 2138
+    },
+    {
+      "path": "attempt_001/training_logs/BTC_GRU_SPOT_ONLY_F3_UNSCALED_CONTROL.json",
+      "sha256": "bf0e2da3ceed65ccf275537d8136831b64fb4ee865c3e5fa4ba3855e3debd709",
+      "size_bytes": 2172
+    },
+    {
+      "path": "attempt_001/training_logs/BTC_GRU_SPOT_ONLY_FINAL_TEST_TARGET_SCALED.json",
+      "sha256": "c15cddbe94331f3647e94bd46517a84a9ee7a7f13f454ccf89eebef3161b1b86",
+      "size_bytes": 2148
+    },
+    {
+      "path": "attempt_001/training_logs/BTC_GRU_SPOT_ONLY_FINAL_TEST_UNSCALED_CONTROL.json",
+      "sha256": "5d8ae2fa1e910a114c52b1e105cf633d215190319629c44bd5e0de29b1d7eda8",
+      "size_bytes": 2204
+    },
+    {
+      "path": "attempt_001/training_logs/BTC_GRU_SPOT_PLUS_ALL_DERIVATIVES_F1_TARGET_SCALED.json",
+      "sha256": "c0b5946250ae795eeb8b2db84fba6ea3e37c5b7757f42fb82f5f0db473d9f5de",
+      "size_bytes": 2168
+    },
+    {
+      "path": "attempt_001/training_logs/BTC_GRU_SPOT_PLUS_ALL_DERIVATIVES_F1_UNSCALED_CONTROL.json",
+      "sha256": "f33d66637439c64e2cda931ed8d312b43f6d620258790c3b5efd0cf862e554af",
+      "size_bytes": 2213
+    },
+    {
+      "path": "attempt_001/training_logs/BTC_GRU_SPOT_PLUS_ALL_DERIVATIVES_F2_TARGET_SCALED.json",
+      "sha256": "652c2d2f10bf3c4fb297e873782710b21957908b689387134654798d3be3e52b",
+      "size_bytes": 2168
+    },
+    {
+      "path": "attempt_001/training_logs/BTC_GRU_SPOT_PLUS_ALL_DERIVATIVES_F2_UNSCALED_CONTROL.json",
+      "sha256": "6ae633c879eca4183a7e2f36b16e8feea719e533f3a6f59ea9343a9e6a2f8058",
+      "size_bytes": 2201
+    },
+    {
+      "path": "attempt_001/training_logs/BTC_GRU_SPOT_PLUS_ALL_DERIVATIVES_F3_TARGET_SCALED.json",
+      "sha256": "ad794145d7f9db9d2f655e6afaf26d79acbd79dc5a290286b9a0d444506c82b1",
+      "size_bytes": 2171
+    },
+    {
+      "path": "attempt_001/training_logs/BTC_GRU_SPOT_PLUS_ALL_DERIVATIVES_F3_UNSCALED_CONTROL.json",
+      "sha256": "ad2f50083d9f89b5b92fd4d5fd93aef10bae187ffae7482c3b01605cd91ae6be",
+      "size_bytes": 2231
+    },
+    {
+      "path": "attempt_001/training_logs/BTC_GRU_SPOT_PLUS_ALL_DERIVATIVES_FINAL_TEST_TARGET_SCALED.json",
+      "sha256": "59e95af351eb86d6db5bfac527aad46243d98ac5d566c43ba10ecd733b626622",
+      "size_bytes": 2186
+    },
+    {
+      "path": "attempt_001/training_logs/BTC_GRU_SPOT_PLUS_ALL_DERIVATIVES_FINAL_TEST_UNSCALED_CONTROL.json",
+      "sha256": "0487c660a25cc522eddb64f460798f46e14cae5439f1b0671ae154c9ca57e060",
+      "size_bytes": 2238
+    },
+    {
+      "path": "attempt_001/training_logs/BTC_MLP_SPOT_ONLY_F1_TARGET_SCALED.json",
+      "sha256": "406cb59e511776c6ab280ef1c579d70c790a861f97d43bf0fcc58ec8c9327098",
+      "size_bytes": 1190
+    },
+    {
+      "path": "attempt_001/training_logs/BTC_MLP_SPOT_ONLY_F1_UNSCALED_CONTROL.json",
+      "sha256": "a413d205c70cb38646997d75995c7c5482bba11f42dd0ff9ebb6819cae9e5818",
+      "size_bytes": 1053
+    },
+    {
+      "path": "attempt_001/training_logs/BTC_MLP_SPOT_ONLY_F2_TARGET_SCALED.json",
+      "sha256": "ee6159ec16579b770e3eaf6899cce84429341030180aac90f6fc93129e7e6ae9",
+      "size_bytes": 1191
+    },
+    {
+      "path": "attempt_001/training_logs/BTC_MLP_SPOT_ONLY_F2_UNSCALED_CONTROL.json",
+      "sha256": "5e3def6150cf7f6a055ec5e321eb275a708bd6277ec9bda3fdf986b1203e4456",
+      "size_bytes": 1053
+    },
+    {
+      "path": "attempt_001/training_logs/BTC_MLP_SPOT_ONLY_F3_TARGET_SCALED.json",
+      "sha256": "b07741f470fdc9c5762fcc3d2ffbdfc3428b8727f87c3f08a4e5ba7ecebacb10",
+      "size_bytes": 1188
+    },
+    {
+      "path": "attempt_001/training_logs/BTC_MLP_SPOT_ONLY_F3_UNSCALED_CONTROL.json",
+      "sha256": "75eaf33d22fc1d90d1e6e5ea85a9e7216ceb43e5b3b3f845f05b05f6e9f4bd9d",
+      "size_bytes": 1051
+    },
+    {
+      "path": "attempt_001/training_logs/BTC_MLP_SPOT_ONLY_FINAL_TEST_TARGET_SCALED.json",
+      "sha256": "56d82a22afa07859dfb9cc0cebb85a26dcb273c6af2f979c15c3c9cb7f7cf1f0",
+      "size_bytes": 1205
+    },
+    {
+      "path": "attempt_001/training_logs/BTC_MLP_SPOT_ONLY_FINAL_TEST_UNSCALED_CONTROL.json",
+      "sha256": "87de25983f5e2c8bc0a7e33de5cc96ac9b2bdd7803646df3a6cdd9130ca91d60",
+      "size_bytes": 1068
+    },
+    {
+      "path": "attempt_001/training_logs/BTC_MLP_SPOT_PLUS_ALL_DERIVATIVES_F1_TARGET_SCALED.json",
+      "sha256": "f37cbd7b94ad2d22fc7b8f41b6bea89fbce1b93697ba66f6deae8c02c7dd21fd",
+      "size_bytes": 1222
+    },
+    {
+      "path": "attempt_001/training_logs/BTC_MLP_SPOT_PLUS_ALL_DERIVATIVES_F1_UNSCALED_CONTROL.json",
+      "sha256": "da918d0ea002a64a9778a813d34fd48f5722d43d8aed4034dff6785358812f3e",
+      "size_bytes": 1085
+    },
+    {
+      "path": "attempt_001/training_logs/BTC_MLP_SPOT_PLUS_ALL_DERIVATIVES_F2_TARGET_SCALED.json",
+      "sha256": "c2dbbe4431811558eb410e4171ee42cd1a229b93303be640dc9307ed400d54a4",
+      "size_bytes": 1223
+    },
+    {
+      "path": "attempt_001/training_logs/BTC_MLP_SPOT_PLUS_ALL_DERIVATIVES_F2_UNSCALED_CONTROL.json",
+      "sha256": "b93c864ea4595055c3d7aea6f92157cfc7f6ade825364c47dbf4cdd0c2bd9b6c",
+      "size_bytes": 1084
+    },
+    {
+      "path": "attempt_001/training_logs/BTC_MLP_SPOT_PLUS_ALL_DERIVATIVES_F3_TARGET_SCALED.json",
+      "sha256": "868e04591f37d05bbfc59d2d76bdadc199793f2b4238fd5e51ec7096d5d4ce54",
+      "size_bytes": 1221
+    },
+    {
+      "path": "attempt_001/training_logs/BTC_MLP_SPOT_PLUS_ALL_DERIVATIVES_F3_UNSCALED_CONTROL.json",
+      "sha256": "0a396d3a4ebf248de1f21f8722a4397fd078dda916cd144cc52d9f0e90aeb8ff",
+      "size_bytes": 1083
+    },
+    {
+      "path": "attempt_001/training_logs/BTC_MLP_SPOT_PLUS_ALL_DERIVATIVES_FINAL_TEST_TARGET_SCALED.json",
+      "sha256": "998b0ca42310827ce4aa3c7d77a4f7b26c434c95ef2a214c0d93fd476ca73b96",
+      "size_bytes": 1237
+    },
+    {
+      "path": "attempt_001/training_logs/BTC_MLP_SPOT_PLUS_ALL_DERIVATIVES_FINAL_TEST_UNSCALED_CONTROL.json",
+      "sha256": "7072176cdda49c24f373169d0befd980158078273dc32282a3fc435a531c2543",
+      "size_bytes": 1099
+    },
+    {
+      "path": "attempt_001/training_logs/ETH_GRU_SPOT_ONLY_F1_TARGET_SCALED.json",
+      "sha256": "07caf0012ca084ac38bfdcca5c380b1785e96bda6f9b817a193af256711828b0",
+      "size_bytes": 2147
+    },
+    {
+      "path": "attempt_001/training_logs/ETH_GRU_SPOT_ONLY_F1_UNSCALED_CONTROL.json",
+      "sha256": "84b453d02d8c355a1b08491ab76c8e8032ec2cd1bc7b8683e519a5287bd3c87d",
+      "size_bytes": 2168
+    },
+    {
+      "path": "attempt_001/training_logs/ETH_GRU_SPOT_ONLY_F2_TARGET_SCALED.json",
+      "sha256": "a23607d3fcd9b0b6aed8ebb78f73499197e220def2d397b623fd049db3c29c4f",
+      "size_bytes": 2141
+    },
+    {
+      "path": "attempt_001/training_logs/ETH_GRU_SPOT_ONLY_F2_UNSCALED_CONTROL.json",
+      "sha256": "b3136f958bd99cb15cc6a529e14334197a75d23b00ba2cf9350fcb05d81b8c12",
+      "size_bytes": 2168
+    },
+    {
+      "path": "attempt_001/training_logs/ETH_GRU_SPOT_ONLY_F3_TARGET_SCALED.json",
+      "sha256": "bca446610279b5bcaa4a16efaf863ffa2e8590d27de4eb03057b7b00aae4aec7",
+      "size_bytes": 2151
+    },
+    {
+      "path": "attempt_001/training_logs/ETH_GRU_SPOT_ONLY_F3_UNSCALED_CONTROL.json",
+      "sha256": "1d0abc5e298c18b14fff8df4efc0fa90398efcf596d16355e5a10ee667d311b7",
+      "size_bytes": 2206
+    },
+    {
+      "path": "attempt_001/training_logs/ETH_GRU_SPOT_ONLY_FINAL_TEST_TARGET_SCALED.json",
+      "sha256": "e5474dc87398b371c124a873491ffea2c1e02518d88f06efa598325f63f1c990",
+      "size_bytes": 2167
+    },
+    {
+      "path": "attempt_001/training_logs/ETH_GRU_SPOT_ONLY_FINAL_TEST_UNSCALED_CONTROL.json",
+      "sha256": "fd9c793699dcb0436431deff68464be89d5ce1d59b67e874bc975980d3229f11",
+      "size_bytes": 2214
+    },
+    {
+      "path": "attempt_001/training_logs/ETH_GRU_SPOT_PLUS_ALL_DERIVATIVES_F1_TARGET_SCALED.json",
+      "sha256": "4f878b6ebdb9d2e1ec3e28d150f16c65395120525a51671d560601e64792ab48",
+      "size_bytes": 2181
+    },
+    {
+      "path": "attempt_001/training_logs/ETH_GRU_SPOT_PLUS_ALL_DERIVATIVES_F1_UNSCALED_CONTROL.json",
+      "sha256": "29e0a04d159450b612a6314c4146655c478c9f84ccffc2bf367fea8af1ae3a4d",
+      "size_bytes": 2223
+    },
+    {
+      "path": "attempt_001/training_logs/ETH_GRU_SPOT_PLUS_ALL_DERIVATIVES_F2_TARGET_SCALED.json",
+      "sha256": "4fbd1c851c27c0dd938cbd7d5bcac0759227c22965b25166c7df5ac1360b8fc4",
+      "size_bytes": 2183
+    },
+    {
+      "path": "attempt_001/training_logs/ETH_GRU_SPOT_PLUS_ALL_DERIVATIVES_F2_UNSCALED_CONTROL.json",
+      "sha256": "f0cbb372d7381922c74bd8c2d4f4188e86775e8b8c037fca192ce0d344e2c69a",
+      "size_bytes": 2212
+    },
+    {
+      "path": "attempt_001/training_logs/ETH_GRU_SPOT_PLUS_ALL_DERIVATIVES_F3_TARGET_SCALED.json",
+      "sha256": "b5ea0f20b799c5286dc6adc7bb92edd62273e8ed02833199a965d141964825c6",
+      "size_bytes": 2176
+    },
+    {
+      "path": "attempt_001/training_logs/ETH_GRU_SPOT_PLUS_ALL_DERIVATIVES_F3_UNSCALED_CONTROL.json",
+      "sha256": "dfb521301d33d68f1d5c5312c265399ff625cb14a0a8622ad4990c5acfd7db4c",
+      "size_bytes": 2196
+    },
+    {
+      "path": "attempt_001/training_logs/ETH_GRU_SPOT_PLUS_ALL_DERIVATIVES_FINAL_TEST_TARGET_SCALED.json",
+      "sha256": "cb1a16429b334b80b35fc278ad60326d1e1e25aaac604ae4109fde12679a9c8c",
+      "size_bytes": 2195
+    },
+    {
+      "path": "attempt_001/training_logs/ETH_GRU_SPOT_PLUS_ALL_DERIVATIVES_FINAL_TEST_UNSCALED_CONTROL.json",
+      "sha256": "d1e083a33a26d344421b6e62284991313bedabce543c243a869d24007112d5e0",
+      "size_bytes": 2236
+    },
+    {
+      "path": "attempt_001/training_logs/ETH_MLP_SPOT_ONLY_F1_TARGET_SCALED.json",
+      "sha256": "4bde6a767ecd2da2c7ad0e4f71012aca93c9becbed785030093cf6a3fe56936e",
+      "size_bytes": 1189
+    },
+    {
+      "path": "attempt_001/training_logs/ETH_MLP_SPOT_ONLY_F1_UNSCALED_CONTROL.json",
+      "sha256": "01fe43d69ba12ff1d1b38429defe4584ef7c47a86a25a10f1b95518b663ef386",
+      "size_bytes": 1053
+    },
+    {
+      "path": "attempt_001/training_logs/ETH_MLP_SPOT_ONLY_F2_TARGET_SCALED.json",
+      "sha256": "03802c9fffda1fc53b1939e88550ca60ccc84b7dbbeff31b52a72305ce340003",
+      "size_bytes": 1190
+    },
+    {
+      "path": "attempt_001/training_logs/ETH_MLP_SPOT_ONLY_F2_UNSCALED_CONTROL.json",
+      "sha256": "e94ef7ba902090ca5901dfffad7b793f53601ad05faa38a9a91e8ae5dc7b8939",
+      "size_bytes": 1053
+    },
+    {
+      "path": "attempt_001/training_logs/ETH_MLP_SPOT_ONLY_F3_TARGET_SCALED.json",
+      "sha256": "6c6bc69407c0ea74736be166d98f1e07683dd6db9de2510c1c432a4fb32b9ef8",
+      "size_bytes": 1191
+    },
+    {
+      "path": "attempt_001/training_logs/ETH_MLP_SPOT_ONLY_F3_UNSCALED_CONTROL.json",
+      "sha256": "a0a2e023638021eb3a73fe4e522d196ebbf608eba51b399c297dd63e7192f7c6",
+      "size_bytes": 1053
+    },
+    {
+      "path": "attempt_001/training_logs/ETH_MLP_SPOT_ONLY_FINAL_TEST_TARGET_SCALED.json",
+      "sha256": "f0efd2f9b0a08e4a7255b008dc1d8143514a3d4b037880c82fc84e711e642db8",
+      "size_bytes": 1200
+    },
+    {
+      "path": "attempt_001/training_logs/ETH_MLP_SPOT_ONLY_FINAL_TEST_UNSCALED_CONTROL.json",
+      "sha256": "886139210ce48bd25d44510b2a999777c6805a13a5ed47df1052d2583145e84b",
+      "size_bytes": 1066
+    },
+    {
+      "path": "attempt_001/training_logs/ETH_MLP_SPOT_PLUS_ALL_DERIVATIVES_F1_TARGET_SCALED.json",
+      "sha256": "bc9afeccda44ea11d211e6c3cc5b79d3bb83df441137675f481b3909cacabfee",
+      "size_bytes": 1222
+    },
+    {
+      "path": "attempt_001/training_logs/ETH_MLP_SPOT_PLUS_ALL_DERIVATIVES_F1_UNSCALED_CONTROL.json",
+      "sha256": "ad60a427497fbba85ada31ff652029dfc5471331b8857ee41031cbafca6b572f",
+      "size_bytes": 1083
+    },
+    {
+      "path": "attempt_001/training_logs/ETH_MLP_SPOT_PLUS_ALL_DERIVATIVES_F2_TARGET_SCALED.json",
+      "sha256": "4560ff0ae71009911a181ab7bafdde54d1b62040ae17a400726b37551654579c",
+      "size_bytes": 1222
+    },
+    {
+      "path": "attempt_001/training_logs/ETH_MLP_SPOT_PLUS_ALL_DERIVATIVES_F2_UNSCALED_CONTROL.json",
+      "sha256": "bfd82e98978a1a63073f6d683ae23df8236a5a57aba8b7661122aa757c1f4769",
+      "size_bytes": 1085
+    },
+    {
+      "path": "attempt_001/training_logs/ETH_MLP_SPOT_PLUS_ALL_DERIVATIVES_F3_TARGET_SCALED.json",
+      "sha256": "7a0a1e79d7789f4b42dd306692ac8572bbb1ef43e8e485d21edd5498eae6d1ff",
+      "size_bytes": 1223
+    },
+    {
+      "path": "attempt_001/training_logs/ETH_MLP_SPOT_PLUS_ALL_DERIVATIVES_F3_UNSCALED_CONTROL.json",
+      "sha256": "10eec923aaaa203bb6a14ca4c5475edfc2cd711af93e9be19d9cb537e4ed32e9",
+      "size_bytes": 1084
+    },
+    {
+      "path": "attempt_001/training_logs/ETH_MLP_SPOT_PLUS_ALL_DERIVATIVES_FINAL_TEST_TARGET_SCALED.json",
+      "sha256": "a8d5282cad13315e192149cccacee2f9e638880f853f20267f160d079a16de92",
+      "size_bytes": 1233
+    },
+    {
+      "path": "attempt_001/training_logs/ETH_MLP_SPOT_PLUS_ALL_DERIVATIVES_FINAL_TEST_UNSCALED_CONTROL.json",
+      "sha256": "8b18f212d4731b5cf8771319d62bb13eee0a6417c04ec5f3defd6350f291b91e",
+      "size_bytes": 1099
+    },
+    {
+      "path": "attempt_001/training_logs/all_fits.jsonl",
+      "sha256": "61de1340869d98c283f154acb73c9eda27e34a5e5f3b5a93508b5c839ee8d04a",
+      "size_bytes": 95657
+    },
+    {
+      "path": "attempt_001/training_logs/execution_summary.json",
+      "sha256": "421061508018443ff22947e6be1daf12d87d17110ea490985e0f094b70b391a7",
+      "size_bytes": 1827
+    },
+    {
+      "path": "attempt_001_manifest.json",
+      "sha256": "53b24dc6cee1c7db2b3fbce8fa73165112f94783171a45ea22063ffd6b154a8b",
+      "size_bytes": 21049
+    },
+    {
+      "path": "figures/figure_1_forecast_distributions.png",
+      "sha256": "b0d93cb7594bce1df535e840a24bd74cb8b2d3328e6d5735e82ac62f996bbc7b",
+      "size_bytes": 164159
+    },
+    {
+      "path": "figures/figure_2_neural_mae.png",
+      "sha256": "340d2dd488518ddce0ddeb724ae8f7d3957b05116f984e524eec50fbb31d7cd4",
+      "size_bytes": 90337
+    },
+    {
+      "path": "figures/figure_3_information_set_comparison.png",
+      "sha256": "6b080eccc6c995d9cc7f9ffaa5cc37c1987ad71b3716ec7e343593b274a818fd",
+      "size_bytes": 73950
+    },
+    {
+      "path": "figures/figure_4_ensemble_sensitivity.png",
+      "sha256": "6b9473fc006388e6255f5a2e0e0ea8a712cf49a85c3887844dd55e69d0b4ee4f",
+      "size_bytes": 38432
+    },
+    {
+      "path": "figures/figure_5_category_average.png",
+      "sha256": "3be25bb8d4895c24d7494cd1f16111c50c6d1a433218c02adf909feb124abb57",
+      "size_bytes": 63227
+    },
+    {
+      "path": "phase13_analysis_reconciliation.json",
+      "sha256": "f4d5e0fe8e9e7916ff022c0fe1df48379a2e5f138b95616f85ea86068bd882f1",
+      "size_bytes": 529
+    },
+    {
+      "path": "predictions/BTC_GRU_SPOT_ONLY_F1_TARGET_SCALED.csv",
+      "sha256": "f32813e29ebefe78f9fcdd52d12b461249ea4015c442ffbda23cb278c95afa03",
+      "size_bytes": 129166
+    },
+    {
+      "path": "predictions/BTC_GRU_SPOT_ONLY_F1_UNSCALED_CONTROL.csv",
+      "sha256": "3d780044eac397219136bf2ec1fc36b48039804bd64f7a5c8bf98df95bc1f72e",
+      "size_bytes": 112601
+    },
+    {
+      "path": "predictions/BTC_GRU_SPOT_ONLY_F2_TARGET_SCALED.csv",
+      "sha256": "2b9766e9d59bbc6e16aaa817a408b773125e5fb4c3fd192f5cfa1129e5acb210",
+      "size_bytes": 129612
+    },
+    {
+      "path": "predictions/BTC_GRU_SPOT_ONLY_F2_UNSCALED_CONTROL.csv",
+      "sha256": "2015d9179bb44ca756a2c6c873540fb22825feeeb24167c4b113126b8d535971",
+      "size_bytes": 120019
+    },
+    {
+      "path": "predictions/BTC_GRU_SPOT_ONLY_F3_TARGET_SCALED.csv",
+      "sha256": "4e906fb139451ce9b23a88675d87068b775cfcce43e1eeb7fdcae839178b81ee",
+      "size_bytes": 123631
+    },
+    {
+      "path": "predictions/BTC_GRU_SPOT_ONLY_F3_UNSCALED_CONTROL.csv",
+      "sha256": "d8ca4a8ed84e37b0181fdcac97079fae96370d40dcdb2eb23665eb99c8d51e56",
+      "size_bytes": 107559
+    },
+    {
+      "path": "predictions/BTC_GRU_SPOT_ONLY_FINAL_TEST_TARGET_SCALED.csv",
+      "sha256": "6a676b958ad9d77758b59349211985e9d45356f6fd0ce7840388b867a64774f0",
+      "size_bytes": 374392
+    },
+    {
+      "path": "predictions/BTC_GRU_SPOT_ONLY_FINAL_TEST_UNSCALED_CONTROL.csv",
+      "sha256": "79fe9efa2e8d2be96511ce135a315e17544ac087a96ded0c84532d6abd3c8afc",
+      "size_bytes": 346710
+    },
+    {
+      "path": "predictions/BTC_GRU_SPOT_PLUS_ALL_DERIVATIVES_F1_TARGET_SCALED.csv",
+      "sha256": "bed4c0d0d08335467d2dc15a3e2ba78e13e7dabad4ef16d5048e06411a96d9a0",
+      "size_bytes": 141727
+    },
+    {
+      "path": "predictions/BTC_GRU_SPOT_PLUS_ALL_DERIVATIVES_F1_UNSCALED_CONTROL.csv",
+      "sha256": "ae5638726b7e7bae5c40f881e330c5c85924fd7317d87df557d5c5b55c6ac022",
+      "size_bytes": 129157
+    },
+    {
+      "path": "predictions/BTC_GRU_SPOT_PLUS_ALL_DERIVATIVES_F2_TARGET_SCALED.csv",
+      "sha256": "03e5ca769b25f8cb7f975e10a8e766f60f037baac92844ba9320b3273a4ee146",
+      "size_bytes": 136669
+    },
+    {
+      "path": "predictions/BTC_GRU_SPOT_PLUS_ALL_DERIVATIVES_F2_UNSCALED_CONTROL.csv",
+      "sha256": "cf9746a43598022b2de85eb6552a90079e83de3c6112b5d5151a8ac959a93ca1",
+      "size_bytes": 125663
+    },
+    {
+      "path": "predictions/BTC_GRU_SPOT_PLUS_ALL_DERIVATIVES_F3_TARGET_SCALED.csv",
+      "sha256": "5685386143d7c74990a81145abcc683219e5632f10eaca12ddebbeaff1e09664",
+      "size_bytes": 135076
+    },
+    {
+      "path": "predictions/BTC_GRU_SPOT_PLUS_ALL_DERIVATIVES_F3_UNSCALED_CONTROL.csv",
+      "sha256": "d73f81482a189643ce4d9217aa6632128c9779725220f641c088bc48edf7038a",
+      "size_bytes": 123063
+    },
+    {
+      "path": "predictions/BTC_GRU_SPOT_PLUS_ALL_DERIVATIVES_FINAL_TEST_TARGET_SCALED.csv",
+      "sha256": "ca60f2641559b4fdc4b094beafb99654d4f698107516c7c7f6d0633e241d71e2",
+      "size_bytes": 387343
+    },
+    {
+      "path": "predictions/BTC_GRU_SPOT_PLUS_ALL_DERIVATIVES_FINAL_TEST_UNSCALED_CONTROL.csv",
+      "sha256": "2ed84ab4433e80abf43c89f545e9802a329469e61a4af7f5ae1648fb3f834e63",
+      "size_bytes": 352202
+    },
+    {
+      "path": "predictions/BTC_MLP_SPOT_ONLY_F1_TARGET_SCALED.csv",
+      "sha256": "a7174939a619913efb8f405753cac4cd7133cd56e086d6d2029ec3b63cbd8a05",
+      "size_bytes": 132664
+    },
+    {
+      "path": "predictions/BTC_MLP_SPOT_ONLY_F1_UNSCALED_CONTROL.csv",
+      "sha256": "4a2202439fcf8a854bcadb2c7ca9054e87c3c74e9484a1ef6ea33bc44e56148f",
+      "size_bytes": 119785
+    },
+    {
+      "path": "predictions/BTC_MLP_SPOT_ONLY_F2_TARGET_SCALED.csv",
+      "sha256": "aed68417e07b3dc19f59675b5fceba1b300c2d25e5698541a590ea2f1826ec29",
+      "size_bytes": 127334
+    },
+    {
+      "path": "predictions/BTC_MLP_SPOT_ONLY_F2_UNSCALED_CONTROL.csv",
+      "sha256": "f8947635c1935281d3dfa4422302aefc352b379b176df5dacfebc7c4c5310c59",
+      "size_bytes": 115982
+    },
+    {
+      "path": "predictions/BTC_MLP_SPOT_ONLY_F3_TARGET_SCALED.csv",
+      "sha256": "ded797e43e79445a1ad399542e85b096ab51a4dacb0e367d37a0f20ad201c713",
+      "size_bytes": 127877
+    },
+    {
+      "path": "predictions/BTC_MLP_SPOT_ONLY_F3_UNSCALED_CONTROL.csv",
+      "sha256": "7783d1513f98848f27fd85df9720a58a296a22301ca36c1cbee3e006630c018d",
+      "size_bytes": 116894
+    },
+    {
+      "path": "predictions/BTC_MLP_SPOT_ONLY_FINAL_TEST_TARGET_SCALED.csv",
+      "sha256": "6e96d52319080df1e979bdeba3655034e32dc0db9425cbe1798bf7dbfdca8f72",
+      "size_bytes": 367124
+    },
+    {
+      "path": "predictions/BTC_MLP_SPOT_ONLY_FINAL_TEST_UNSCALED_CONTROL.csv",
+      "sha256": "ecec745cdf54f20d4be1fc4e1432c4460ab03901b873bb0bad2909c81312d06c",
+      "size_bytes": 335710
+    },
+    {
+      "path": "predictions/BTC_MLP_SPOT_PLUS_ALL_DERIVATIVES_F1_TARGET_SCALED.csv",
+      "sha256": "7a1f532833f1787a3ab1ed829ab0a1d4bf3860ec274da0444afcc39cfd2387a8",
+      "size_bytes": 140817
+    },
+    {
+      "path": "predictions/BTC_MLP_SPOT_PLUS_ALL_DERIVATIVES_F1_UNSCALED_CONTROL.csv",
+      "sha256": "67a53270e844db0c46367f0b4926f3e5a41cb48c04b89b51958dded177a2c3d4",
+      "size_bytes": 127434
+    },
+    {
+      "path": "predictions/BTC_MLP_SPOT_PLUS_ALL_DERIVATIVES_F2_TARGET_SCALED.csv",
+      "sha256": "702a0d96d9410f5ffe1885c63cc1bc24501ed6aaa0667217f0620cc84d9f6c0e",
+      "size_bytes": 136745
+    },
+    {
+      "path": "predictions/BTC_MLP_SPOT_PLUS_ALL_DERIVATIVES_F2_UNSCALED_CONTROL.csv",
+      "sha256": "22f12f41c535a34ad4d53f886ac0c69265539b49f026055ec22392d51505aa3e",
+      "size_bytes": 126015
+    },
+    {
+      "path": "predictions/BTC_MLP_SPOT_PLUS_ALL_DERIVATIVES_F3_TARGET_SCALED.csv",
+      "sha256": "690bffc10bd1eed251dcb034a305a96418c5cfa5a9e7023515f5b1fa46ebc47c",
+      "size_bytes": 134883
+    },
+    {
+      "path": "predictions/BTC_MLP_SPOT_PLUS_ALL_DERIVATIVES_F3_UNSCALED_CONTROL.csv",
+      "sha256": "bc32fe28a55d737f95796f46e15c1d195b60d4c8ce58b1f227b55855ff1db342",
+      "size_bytes": 122761
+    },
+    {
+      "path": "predictions/BTC_MLP_SPOT_PLUS_ALL_DERIVATIVES_FINAL_TEST_TARGET_SCALED.csv",
+      "sha256": "2b7729a801fa8a41813b8295bbc39612010758a5741ca5a330bfee630a50e174",
+      "size_bytes": 386648
+    },
+    {
+      "path": "predictions/BTC_MLP_SPOT_PLUS_ALL_DERIVATIVES_FINAL_TEST_UNSCALED_CONTROL.csv",
+      "sha256": "435be774ca307c5cb8df7c010ea328e46e51c49d40df46bcdcdf6fc04f095938",
+      "size_bytes": 353748
+    },
+    {
+      "path": "predictions/ETH_GRU_SPOT_ONLY_F1_TARGET_SCALED.csv",
+      "sha256": "89e76c76d00ba8867e428298f0f966419c97de5d9998b993e642467df6bbede6",
+      "size_bytes": 133324
+    },
+    {
+      "path": "predictions/ETH_GRU_SPOT_ONLY_F1_UNSCALED_CONTROL.csv",
+      "sha256": "08480b2bd96cc7517319c2158900ca4227b9a8a13fb33eb54dd589e0caac3525",
+      "size_bytes": 121327
+    },
+    {
+      "path": "predictions/ETH_GRU_SPOT_ONLY_F2_TARGET_SCALED.csv",
+      "sha256": "81c1e71feda148ad945d706bbdca681f02847372d42842222b470acc461efae8",
+      "size_bytes": 129287
+    },
+    {
+      "path": "predictions/ETH_GRU_SPOT_ONLY_F2_UNSCALED_CONTROL.csv",
+      "sha256": "3b02f4e6c845f237bac134e6574f68a825659f81d93f45077598fd9f93bf6d1f",
+      "size_bytes": 119924
+    },
+    {
+      "path": "predictions/ETH_GRU_SPOT_ONLY_F3_TARGET_SCALED.csv",
+      "sha256": "8ab135f15e06394d719e611203e679f82e5b6ac025fccc8d0c76d1fa80e73311",
+      "size_bytes": 128388
+    },
+    {
+      "path": "predictions/ETH_GRU_SPOT_ONLY_F3_UNSCALED_CONTROL.csv",
+      "sha256": "a3a0e69ec2de5095ca3e8930414ce7a53fce6aeb9fdbca10199864f9f0e07bf4",
+      "size_bytes": 113402
+    },
+    {
+      "path": "predictions/ETH_GRU_SPOT_ONLY_FINAL_TEST_TARGET_SCALED.csv",
+      "sha256": "6c20461d8f7dd03ea2423d129db3f784458f3a607d7448f9bb595e2c2264b14b",
+      "size_bytes": 360506
+    },
+    {
+      "path": "predictions/ETH_GRU_SPOT_ONLY_FINAL_TEST_UNSCALED_CONTROL.csv",
+      "sha256": "a8d2bc9339cf2ea6c7010adf6b44dc6f71e7f80d79e2c755772d84fd7d253709",
+      "size_bytes": 332744
+    },
+    {
+      "path": "predictions/ETH_GRU_SPOT_PLUS_ALL_DERIVATIVES_F1_TARGET_SCALED.csv",
+      "sha256": "138a8ad3053d574032d92386fbd0636dc77a9c2f90e6bf72ab28be4160c961e9",
+      "size_bytes": 140653
+    },
+    {
+      "path": "predictions/ETH_GRU_SPOT_PLUS_ALL_DERIVATIVES_F1_UNSCALED_CONTROL.csv",
+      "sha256": "4ab5b20004e832bd49aefd1327a7fc2966c5ae5b685514ab532b981a3644f0df",
+      "size_bytes": 128343
+    },
+    {
+      "path": "predictions/ETH_GRU_SPOT_PLUS_ALL_DERIVATIVES_F2_TARGET_SCALED.csv",
+      "sha256": "14c9e02da847fb6d1d9b996a830d715c373cf89b3d6f202ec7624457c0385523",
+      "size_bytes": 136893
+    },
+    {
+      "path": "predictions/ETH_GRU_SPOT_PLUS_ALL_DERIVATIVES_F2_UNSCALED_CONTROL.csv",
+      "sha256": "b6a256aed70593124b656ca1a8faae06e27b9dcb007a84da2ad61436ebb58469",
+      "size_bytes": 127374
+    },
+    {
+      "path": "predictions/ETH_GRU_SPOT_PLUS_ALL_DERIVATIVES_F3_TARGET_SCALED.csv",
+      "sha256": "8b0e06a6ccf4c1b0db3e832bb91d0fa480a59149b54beb4bb83ece79786e5210",
+      "size_bytes": 141475
+    },
+    {
+      "path": "predictions/ETH_GRU_SPOT_PLUS_ALL_DERIVATIVES_F3_UNSCALED_CONTROL.csv",
+      "sha256": "b70ee7cadf39edd502e713bc615ccbb75753359df2c302a3fd60e8b1160911ad",
+      "size_bytes": 130270
+    },
+    {
+      "path": "predictions/ETH_GRU_SPOT_PLUS_ALL_DERIVATIVES_FINAL_TEST_TARGET_SCALED.csv",
+      "sha256": "305d416a19600db0e34e960ba9fe968786aa7f2c3003323bcc0008459646c165",
+      "size_bytes": 373376
+    },
+    {
+      "path": "predictions/ETH_GRU_SPOT_PLUS_ALL_DERIVATIVES_FINAL_TEST_UNSCALED_CONTROL.csv",
+      "sha256": "61d68279f68cba1d20d0614bedba4dd179065c8f298c1a7b7655ccf1d882e021",
+      "size_bytes": 335908
+    },
+    {
+      "path": "predictions/ETH_MLP_SPOT_ONLY_F1_TARGET_SCALED.csv",
+      "sha256": "4f3569770c50ef6cec47c6354f24ff2d36d6ff4f057693498fd2943d2fee965c",
+      "size_bytes": 132825
+    },
+    {
+      "path": "predictions/ETH_MLP_SPOT_ONLY_F1_UNSCALED_CONTROL.csv",
+      "sha256": "32f6013dc45f2101db65387d64fdccc1466cb6801dc0c16eebc05243a18176d5",
+      "size_bytes": 121501
+    },
+    {
+      "path": "predictions/ETH_MLP_SPOT_ONLY_F2_TARGET_SCALED.csv",
+      "sha256": "d80aad26f38ac62be64cd4b15ef54cedf14e556003c61058c8cefb992a23fca6",
+      "size_bytes": 126123
+    },
+    {
+      "path": "predictions/ETH_MLP_SPOT_ONLY_F2_UNSCALED_CONTROL.csv",
+      "sha256": "77b5bfcaada0e65f1a3ce3a8064b1f23bfadbdeabef038d268301fd136cb063f",
+      "size_bytes": 114629
+    },
+    {
+      "path": "predictions/ETH_MLP_SPOT_ONLY_F3_TARGET_SCALED.csv",
+      "sha256": "bc89a29d05e05d396010e4914666090b3119ced3f89a0d31ca5e0b3127af50d5",
+      "size_bytes": 130504
+    },
+    {
+      "path": "predictions/ETH_MLP_SPOT_ONLY_F3_UNSCALED_CONTROL.csv",
+      "sha256": "4bca63adf69d0fd6597a0192b3632d4b12b631a59b880c0f341e4939666bd846",
+      "size_bytes": 117707
+    },
+    {
+      "path": "predictions/ETH_MLP_SPOT_ONLY_FINAL_TEST_TARGET_SCALED.csv",
+      "sha256": "5fb76f17c10725a50676a29d40b66a098081d06bf7ff0a554c65acfb0a715348",
+      "size_bytes": 358445
+    },
+    {
+      "path": "predictions/ETH_MLP_SPOT_ONLY_FINAL_TEST_UNSCALED_CONTROL.csv",
+      "sha256": "18be6923e92b6652369b8533c03eb9974324517bf521549fa39130c84eaed2c9",
+      "size_bytes": 329452
+    },
+    {
+      "path": "predictions/ETH_MLP_SPOT_PLUS_ALL_DERIVATIVES_F1_TARGET_SCALED.csv",
+      "sha256": "8fe65c384cbf65a8c28ab9882bd2309ec01b93808b449fcbf6ec28e47be0452b",
+      "size_bytes": 141840
+    },
+    {
+      "path": "predictions/ETH_MLP_SPOT_PLUS_ALL_DERIVATIVES_F1_UNSCALED_CONTROL.csv",
+      "sha256": "6550c3642af6fa98f43cff1522978aabd2c4512a506e005eca7f7b0aea305104",
+      "size_bytes": 130560
+    },
+    {
+      "path": "predictions/ETH_MLP_SPOT_PLUS_ALL_DERIVATIVES_F2_TARGET_SCALED.csv",
+      "sha256": "6ab10037db3415ea578e4f0e2d2f3d81948abebb05e93a68574b1e97de953988",
+      "size_bytes": 134653
+    },
+    {
+      "path": "predictions/ETH_MLP_SPOT_PLUS_ALL_DERIVATIVES_F2_UNSCALED_CONTROL.csv",
+      "sha256": "a9da6dc179caafc9b2ff2f124402bc87b73857aa47dc4567f7727b715834907b",
+      "size_bytes": 123448
+    },
+    {
+      "path": "predictions/ETH_MLP_SPOT_PLUS_ALL_DERIVATIVES_F3_TARGET_SCALED.csv",
+      "sha256": "bba81661120eb6263483fe9f8f38897524364408375baca98763eef5353eb885",
+      "size_bytes": 138365
+    },
+    {
+      "path": "predictions/ETH_MLP_SPOT_PLUS_ALL_DERIVATIVES_F3_UNSCALED_CONTROL.csv",
+      "sha256": "3c665594beccc5f4a9a890bb923520fb1b3bd8290fc526683e77134544b7387c",
+      "size_bytes": 125579
+    },
+    {
+      "path": "predictions/ETH_MLP_SPOT_PLUS_ALL_DERIVATIVES_FINAL_TEST_TARGET_SCALED.csv",
+      "sha256": "d173b0cc01ec8d9f68a2e79e27c6b8416ecf3c2885afb796b60d98cf5e48d611",
+      "size_bytes": 384243
+    },
+    {
+      "path": "predictions/ETH_MLP_SPOT_PLUS_ALL_DERIVATIVES_FINAL_TEST_UNSCALED_CONTROL.csv",
+      "sha256": "16ad7bacc162b1b0418a2a0fae771f9f473a9030bb5761b146ba317f246649b7",
+      "size_bytes": 358010
+    },
+    {
+      "path": "predictions/all_origin_predictions.csv.gz",
+      "sha256": "d81cd94a612d3669714c2f0eb7525cab502bec70f80c3c7b9508d5aa7be767ee",
+      "size_bytes": 2239328
+    },
+    {
+      "path": "predictions/paired_block_bootstrap_intervals.csv",
+      "sha256": "0f63306b0ab52240989514c32b39245ea351a6078c9592f48c32868a422912bd",
+      "size_bytes": 6363
+    },
+    {
+      "path": "pretraining_lock_manifest.json",
+      "sha256": "b5505859dd9fd383dbb106e6845f0e3d1574030a923737c5af48ab0077d443cf",
+      "size_bytes": 628
+    },
+    {
+      "path": "pretraining_lock_manifest.sha256",
+      "sha256": "30bbe1fa4c2d9f3d9cf3dbdd367370cefbf7696d37f418be92a79cac09c48ce0",
+      "size_bytes": 97
+    },
+    {
+      "path": "protocol_amendment_001.md",
+      "sha256": "88e7d3c0df747bcf72b3709bb676efd8b19ccef0c4e12f1db415eb4b57bb0518",
+      "size_bytes": 1908
+    },
+    {
+      "path": "protocol_amendment_001.sha256",
+      "sha256": "54e2f61edf4be48082487727617b3fe24f7ecb72d536e2c8208aae825e2423c1",
+      "size_bytes": 92
+    },
+    {
+      "path": "protocol_amendment_001_manifest.json",
+      "sha256": "1914a3ad0abc01a38556a5a0a99c1e43c1d237f31df17ce3e6cc228bbe863508",
+      "size_bytes": 958
+    },
+    {
+      "path": "protocol_amendment_001_manifest.sha256",
+      "sha256": "b929024191b13407d41e429f7e265799599dc8a50ff171548bc76eedad5b39fb",
+      "size_bytes": 103
+    },
+    {
+      "path": "protocol_amendment_002.md",
+      "sha256": "7efc581064638d85252e1c452c38a79a66c0f51c1011b30171bc8e4e19e61150",
+      "size_bytes": 1928
+    },
+    {
+      "path": "protocol_amendment_002.sha256",
+      "sha256": "a8d92298d01e71e2b9909143144b72102066350987b87a11eb44fa2a1800c6fa",
+      "size_bytes": 92
+    },
+    {
+      "path": "protocol_amendment_002_manifest.json",
+      "sha256": "1102a89680838129c068a94eade8d0b5c986ce618c347de4b1bb3cef0389efd2",
+      "size_bytes": 2037
+    },
+    {
+      "path": "protocol_amendment_002_manifest.sha256",
+      "sha256": "4a67ae4f45ec511416f2124acd26aa16827de237dd824de8d2315f7f6fe035cb",
+      "size_bytes": 103
+    },
+    {
+      "path": "protocol_amendment_003.md",
+      "sha256": "ddc98921f439ca153badda978547f3648d3e7e9cc1f8f526499713eb87533d99",
+      "size_bytes": 994
+    },
+    {
+      "path": "protocol_amendment_003.sha256",
+      "sha256": "96bfdb6b31adf5cd6e6c97c2d55151b79cd748f152d26c0ee501bf90f24d8499",
+      "size_bytes": 92
+    },
+    {
+      "path": "protocol_amendment_003_manifest.json",
+      "sha256": "92b49fc328e356d5d75e265dc832b5a62ccec1d9b99913a62ebf8f3d61b735b7",
+      "size_bytes": 2010
+    },
+    {
+      "path": "protocol_amendment_003_manifest.sha256",
+      "sha256": "232fe53f097e951d8736c18565b6777f5e055be678bddcba6f55b8ebbc880a6e",
+      "size_bytes": 103
+    },
+    {
+      "path": "protocol_amendment_004.md",
+      "sha256": "c539056bff615bf4dd3ad773f72e65a6e6fa8bc7d66686b0518895ca5b2f6c79",
+      "size_bytes": 1198
+    },
+    {
+      "path": "protocol_amendment_004.sha256",
+      "sha256": "b39513ed021dcbb8d2dd4c68e7e21f3c564566c4b4c5ac7c462f968d28f09c1f",
+      "size_bytes": 92
+    },
+    {
+      "path": "protocol_amendment_004_manifest.json",
+      "sha256": "0f6d0512f007da83eca8a2cc5e7e5b0515e84ed67f1cc2e69922fc0007a3e825",
+      "size_bytes": 1998
+    },
+    {
+      "path": "protocol_amendment_004_manifest.sha256",
+      "sha256": "5ba39b7e471883d19258792950e32d112b29ce7544ecedd8a9c3cef9b229bf06",
+      "size_bytes": 103
+    },
+    {
+      "path": "protocol_amendment_005.md",
+      "sha256": "806fe897195f267b8826459dee3ce71d19325064f7fdd412eaa55347d6f0e168",
+      "size_bytes": 1000
+    },
+    {
+      "path": "protocol_amendment_005.sha256",
+      "sha256": "f9f62da1b8414948e3fa9f0c2f42bcb767465fa9c01b19a9bfaa11ce36052b2d",
+      "size_bytes": 92
+    },
+    {
+      "path": "protocol_amendment_005_manifest.json",
+      "sha256": "f3e63268af10c7408b85ac8e1e3be10356e6a65f752dcb9dfd49c1f23d5d3e7b",
+      "size_bytes": 2506
+    },
+    {
+      "path": "protocol_amendment_005_manifest.sha256",
+      "sha256": "57b0db5adf454ab17607af4ce8f731af090fa8eb3028dea7980474cb587e9aeb",
+      "size_bytes": 103
+    },
+    {
+      "path": "scripts/analyze_phase13_amendment002.py",
+      "sha256": "fd47292981359bf46a61d2c7482af8a8dfea7de41e2d3aafeff818104714c38a",
+      "size_bytes": 19066
+    },
+    {
+      "path": "scripts/analyze_phase13_amendment003.py",
+      "sha256": "d46e82fff1cf69f28cd91410a78b0f654db444cd22d60de894c11b85d5f23e4d",
+      "size_bytes": 19068
+    },
+    {
+      "path": "scripts/analyze_phase13_amendment004.py",
+      "sha256": "3dd1f6f1b909c15a1e748604ae4a4c9263f11bd4ea6dc1b0129d014b8b47c077",
+      "size_bytes": 19091
+    },
+    {
+      "path": "scripts/finalize_phase13.py",
+      "sha256": "076ea084fca9d29601dc72cf22df5dc8a36d1d9284a418fb2954f63c53836f8f",
+      "size_bytes": 26454
+    },
+    {
+      "path": "scripts/finalize_phase13_amendment005.py",
+      "sha256": "c1d14f590cf7f2f63265f492f02c2661381bbf415fc546eedfee1dade4d6a4e1",
+      "size_bytes": 26647
+    },
+    {
+      "path": "scripts/prepare_phase13_lock.py",
+      "sha256": "08a5445b4b560bccb937ac4a829886d65b15bd221fe8a27511a0b3e5826cc1b7",
+      "size_bytes": 17829
+    },
+    {
+      "path": "scripts/run_phase13_sensitivity.py",
+      "sha256": "1eaed32e5f0786ca27bbf358ec4ddc754889477d882ab9405fc7f4862ba42103",
+      "size_bytes": 43093
+    },
+    {
+      "path": "scripts/run_phase13_sensitivity_amendment001.py",
+      "sha256": "7b24d34f7eb6ce00c23b2a3dfe541b3efc06281b0b7b5aef26499b315f66c302",
+      "size_bytes": 43103
+    },
+    {
+      "path": "temporal_alignment_audit.json",
+      "sha256": "16f064c1b72dba89493fc757b6fe24953a958c6b45bba5de7e8c3ad6b6fcf68c",
+      "size_bytes": 1563
+    },
+    {
+      "path": "training_logs/BTC_GRU_SPOT_ONLY_F1_TARGET_SCALED.json",
+      "sha256": "5dcc8c1fe80baac48fb235019a1aa3fb5157d5986cc8060f2df726339a0442b8",
+      "size_bytes": 2141
+    },
+    {
+      "path": "training_logs/BTC_GRU_SPOT_ONLY_F1_UNSCALED_CONTROL.json",
+      "sha256": "981b2ead0b5ad2e5061f149637751de54ea63757c0fc5352b970af66f949eed4",
+      "size_bytes": 2172
+    },
+    {
+      "path": "training_logs/BTC_GRU_SPOT_ONLY_F2_TARGET_SCALED.json",
+      "sha256": "cee8aec1ae0c3a84fb951811b32ebf8cb1e682157e48f4a9a59808b4172b2b3f",
+      "size_bytes": 2143
+    },
+    {
+      "path": "training_logs/BTC_GRU_SPOT_ONLY_F2_UNSCALED_CONTROL.json",
+      "sha256": "0546880ed5c80d1bfb67c19c18025aabf8b7980ac363f44ce18e4f9f4eb6fd4a",
+      "size_bytes": 2188
+    },
+    {
+      "path": "training_logs/BTC_GRU_SPOT_ONLY_F3_TARGET_SCALED.json",
+      "sha256": "9aa7c7a505f3f3b0ef76e6408f26e94d6f4c0fb8c2dac61a7a5dcc16227a9e14",
+      "size_bytes": 2137
+    },
+    {
+      "path": "training_logs/BTC_GRU_SPOT_ONLY_F3_UNSCALED_CONTROL.json",
+      "sha256": "b7077f1ef760c15cd370ec7b19261965cbc9b9d70d5932b336c7e3487b72a35f",
+      "size_bytes": 2171
+    },
+    {
+      "path": "training_logs/BTC_GRU_SPOT_ONLY_FINAL_TEST_TARGET_SCALED.json",
+      "sha256": "7b5a0e1df465658b4e7172ac3044f61c63ccfd7f1b7e7a4dd5a8fbd1ac2d4643",
+      "size_bytes": 2148
+    },
+    {
+      "path": "training_logs/BTC_GRU_SPOT_ONLY_FINAL_TEST_UNSCALED_CONTROL.json",
+      "sha256": "7030f72eb4dbc6f70178ef34a119c1cabb6219cf6dfb7c878608e7d77cfe4a28",
+      "size_bytes": 2206
+    },
+    {
+      "path": "training_logs/BTC_GRU_SPOT_PLUS_ALL_DERIVATIVES_F1_TARGET_SCALED.json",
+      "sha256": "b5f5c20b457963a93f08e10e46c501ac090a1055e5b311f1016814e8aec4e972",
+      "size_bytes": 2168
+    },
+    {
+      "path": "training_logs/BTC_GRU_SPOT_PLUS_ALL_DERIVATIVES_F1_UNSCALED_CONTROL.json",
+      "sha256": "da2fba0a2631eefdc3aaa8b24c7273a79a79c80277b4843b545718d7dbfe01d6",
+      "size_bytes": 2213
+    },
+    {
+      "path": "training_logs/BTC_GRU_SPOT_PLUS_ALL_DERIVATIVES_F2_TARGET_SCALED.json",
+      "sha256": "d1e350fafbcf22e6cd6741c4668c8f135e347a8c19af7b4065cb0b0ffb910a60",
+      "size_bytes": 2168
+    },
+    {
+      "path": "training_logs/BTC_GRU_SPOT_PLUS_ALL_DERIVATIVES_F2_UNSCALED_CONTROL.json",
+      "sha256": "2ca71ada25f53448b91d2904e45be90b66fdd11016364256442bbc7ad6773a20",
+      "size_bytes": 2201
+    },
+    {
+      "path": "training_logs/BTC_GRU_SPOT_PLUS_ALL_DERIVATIVES_F3_TARGET_SCALED.json",
+      "sha256": "51f0ccafd2df8be358c72b2b0139a547256651f1c2c039b83a26bdf418858365",
+      "size_bytes": 2171
+    },
+    {
+      "path": "training_logs/BTC_GRU_SPOT_PLUS_ALL_DERIVATIVES_F3_UNSCALED_CONTROL.json",
+      "sha256": "397034d3046a507ea0696175a9aa65d61ac071262cbeb11b57f53619375b34e4",
+      "size_bytes": 2231
+    },
+    {
+      "path": "training_logs/BTC_GRU_SPOT_PLUS_ALL_DERIVATIVES_FINAL_TEST_TARGET_SCALED.json",
+      "sha256": "cda173175ad090c0a0c45bd9d2faa7c4c082868b5e3827b63deeeb647607cf72",
+      "size_bytes": 2186
+    },
+    {
+      "path": "training_logs/BTC_GRU_SPOT_PLUS_ALL_DERIVATIVES_FINAL_TEST_UNSCALED_CONTROL.json",
+      "sha256": "532bebc5e1bdf17d50a5cecaf686aee2ce02308eb72851947bf9d86b04a5fc83",
+      "size_bytes": 2238
+    },
+    {
+      "path": "training_logs/BTC_MLP_SPOT_ONLY_F1_TARGET_SCALED.json",
+      "sha256": "4b5d9c25e6cb8c07307db1dff0b50f8345e8b51bc7d2f9461616e89acbcfc92d",
+      "size_bytes": 11193
+    },
+    {
+      "path": "training_logs/BTC_MLP_SPOT_ONLY_F1_UNSCALED_CONTROL.json",
+      "sha256": "bd01e8b879c37f875fa09a4dced05bbddc607490f4d55e785c98a2dfd1e83d58",
+      "size_bytes": 7761
+    },
+    {
+      "path": "training_logs/BTC_MLP_SPOT_ONLY_F2_TARGET_SCALED.json",
+      "sha256": "19d9c48b98d8d1bf056053c5b921f9fef4b2db1a194e0f312c02554132c0e0a2",
+      "size_bytes": 11199
+    },
+    {
+      "path": "training_logs/BTC_MLP_SPOT_ONLY_F2_UNSCALED_CONTROL.json",
+      "sha256": "1aaba4ab17cb3d058b2b37a0f83ab159b2d8ea69f473f75d5107525348ca174e",
+      "size_bytes": 7056
+    },
+    {
+      "path": "training_logs/BTC_MLP_SPOT_ONLY_F3_TARGET_SCALED.json",
+      "sha256": "9f3580068342044b00b8f04a79d9665bb6b8817b53249100ffcebc405fbb8ebd",
+      "size_bytes": 11203
+    },
+    {
+      "path": "training_logs/BTC_MLP_SPOT_ONLY_F3_UNSCALED_CONTROL.json",
+      "sha256": "e46a4c60f5c33243804dd8dc499961506a8d501c746028799d5491d169956b25",
+      "size_bytes": 6620
+    },
+    {
+      "path": "training_logs/BTC_MLP_SPOT_ONLY_FINAL_TEST_TARGET_SCALED.json",
+      "sha256": "2ab2e9dea6700a06a1e6a75373e799571443527535dc774ef906123af75726a8",
+      "size_bytes": 11191
+    },
+    {
+      "path": "training_logs/BTC_MLP_SPOT_ONLY_FINAL_TEST_UNSCALED_CONTROL.json",
+      "sha256": "067f90f11d39d02d613ef516af73a7f2f383255c1971038b0a71070b623c9f30",
+      "size_bytes": 5442
+    },
+    {
+      "path": "training_logs/BTC_MLP_SPOT_PLUS_ALL_DERIVATIVES_F1_TARGET_SCALED.json",
+      "sha256": "e7c24357f22b0e27c865ab88c00d6bd2805c730ef759d8f2f1aa1d5fbeaf9307",
+      "size_bytes": 11239
+    },
+    {
+      "path": "training_logs/BTC_MLP_SPOT_PLUS_ALL_DERIVATIVES_F1_UNSCALED_CONTROL.json",
+      "sha256": "2c7767d2fae02079b5957a75f96fba206c6d77822d5dca004fd71d971a4222a3",
+      "size_bytes": 8507
+    },
+    {
+      "path": "training_logs/BTC_MLP_SPOT_PLUS_ALL_DERIVATIVES_F2_TARGET_SCALED.json",
+      "sha256": "d350f19327617cd5775c17792db889dbf1b2166bbf18022de9d2418b1e5af32c",
+      "size_bytes": 11236
+    },
+    {
+      "path": "training_logs/BTC_MLP_SPOT_PLUS_ALL_DERIVATIVES_F2_UNSCALED_CONTROL.json",
+      "sha256": "ed52b14cd5e5de93778689e1e6c7f5c5f61f7e01021df37feabc53809c99d9a6",
+      "size_bytes": 7554
+    },
+    {
+      "path": "training_logs/BTC_MLP_SPOT_PLUS_ALL_DERIVATIVES_F3_TARGET_SCALED.json",
+      "sha256": "dc40aa660b549dc05e1eea5bd7baa874fa8df545f8aad844f14a9fb28205a23e",
+      "size_bytes": 11263
+    },
+    {
+      "path": "training_logs/BTC_MLP_SPOT_PLUS_ALL_DERIVATIVES_F3_UNSCALED_CONTROL.json",
+      "sha256": "108390fc7533d4695262fe93d337e58e476923a3e2202abb1aa1a43dc9f60f75",
+      "size_bytes": 6464
+    },
+    {
+      "path": "training_logs/BTC_MLP_SPOT_PLUS_ALL_DERIVATIVES_FINAL_TEST_TARGET_SCALED.json",
+      "sha256": "8fb76e67595de1a6d8c8741c913fb31aa682994276491d9943da7779fe1a06fb",
+      "size_bytes": 11259
+    },
+    {
+      "path": "training_logs/BTC_MLP_SPOT_PLUS_ALL_DERIVATIVES_FINAL_TEST_UNSCALED_CONTROL.json",
+      "sha256": "f737c98ffcf647cd423434e5f5812c5b42380ac0dc94cd49112ddffe9762d5be",
+      "size_bytes": 8552
+    },
+    {
+      "path": "training_logs/ETH_GRU_SPOT_ONLY_F1_TARGET_SCALED.json",
+      "sha256": "694727ab51772e086f42d76ef006dfb303d12dc2c7363ad3203e4f618a7a9de4",
+      "size_bytes": 2147
+    },
+    {
+      "path": "training_logs/ETH_GRU_SPOT_ONLY_F1_UNSCALED_CONTROL.json",
+      "sha256": "71d55c24d4c885a5bb2b908c913ea2ccae4872422f3e779bd81ceb9c1adb545d",
+      "size_bytes": 2168
+    },
+    {
+      "path": "training_logs/ETH_GRU_SPOT_ONLY_F2_TARGET_SCALED.json",
+      "sha256": "df8420555910febc581f8d02834d45a266f539a04886293bd5dbd39328b6247e",
+      "size_bytes": 2141
+    },
+    {
+      "path": "training_logs/ETH_GRU_SPOT_ONLY_F2_UNSCALED_CONTROL.json",
+      "sha256": "05a3951308c22cf616594ccae51a8bf684c809a8b3d8f103f658c2d481f17a4d",
+      "size_bytes": 2168
+    },
+    {
+      "path": "training_logs/ETH_GRU_SPOT_ONLY_F3_TARGET_SCALED.json",
+      "sha256": "bfe56ca9a04d1f158cfc2caac7cf64d52a1896c906f70767fa87b1f717bb502f",
+      "size_bytes": 2152
+    },
+    {
+      "path": "training_logs/ETH_GRU_SPOT_ONLY_F3_UNSCALED_CONTROL.json",
+      "sha256": "e845ffe4194086ed28e936bbb0eedabfac3078fd3c2bf74ca7a8574324a6d780",
+      "size_bytes": 2206
+    },
+    {
+      "path": "training_logs/ETH_GRU_SPOT_ONLY_FINAL_TEST_TARGET_SCALED.json",
+      "sha256": "0784ac71f6d4a554a8623ea7107f989cb1a39a0be5f4fc054a191955ed47c261",
+      "size_bytes": 2167
+    },
+    {
+      "path": "training_logs/ETH_GRU_SPOT_ONLY_FINAL_TEST_UNSCALED_CONTROL.json",
+      "sha256": "94611cafaf4b61610035f98231bd9f542357eed9d5201efe0794577024496f54",
+      "size_bytes": 2214
+    },
+    {
+      "path": "training_logs/ETH_GRU_SPOT_PLUS_ALL_DERIVATIVES_F1_TARGET_SCALED.json",
+      "sha256": "535eb55f0fd0a8f3e59fee025aaca668ebd97ac121a4c479ee7fb056a91599a1",
+      "size_bytes": 2181
+    },
+    {
+      "path": "training_logs/ETH_GRU_SPOT_PLUS_ALL_DERIVATIVES_F1_UNSCALED_CONTROL.json",
+      "sha256": "8096fc0a8ed513a3524dfbdbb7b07dddb392d66ae722f8f7daaa610aad75d358",
+      "size_bytes": 2223
+    },
+    {
+      "path": "training_logs/ETH_GRU_SPOT_PLUS_ALL_DERIVATIVES_F2_TARGET_SCALED.json",
+      "sha256": "eb500720f2ee4b6d2069a4eed8c898ba878030462eac387b603f2788ab0a4627",
+      "size_bytes": 2183
+    },
+    {
+      "path": "training_logs/ETH_GRU_SPOT_PLUS_ALL_DERIVATIVES_F2_UNSCALED_CONTROL.json",
+      "sha256": "e12f8152a32a13f281514cb83886e29421bcbb2ee551fc430271b2b8633efb69",
+      "size_bytes": 2212
+    },
+    {
+      "path": "training_logs/ETH_GRU_SPOT_PLUS_ALL_DERIVATIVES_F3_TARGET_SCALED.json",
+      "sha256": "4032f3c7f09db2cf5375340e184a9ba5361f51289e2fdb461485bbb92a6d7bdf",
+      "size_bytes": 2176
+    },
+    {
+      "path": "training_logs/ETH_GRU_SPOT_PLUS_ALL_DERIVATIVES_F3_UNSCALED_CONTROL.json",
+      "sha256": "46ded63f7e007c64cdff1990f233fb9ad4817b83480966caea4c1c9d6d5dbc04",
+      "size_bytes": 2196
+    },
+    {
+      "path": "training_logs/ETH_GRU_SPOT_PLUS_ALL_DERIVATIVES_FINAL_TEST_TARGET_SCALED.json",
+      "sha256": "98407eebffa015f5d6c44e733f66d0e3391f657cde774458abcdbfad0ebf9848",
+      "size_bytes": 2195
+    },
+    {
+      "path": "training_logs/ETH_GRU_SPOT_PLUS_ALL_DERIVATIVES_FINAL_TEST_UNSCALED_CONTROL.json",
+      "sha256": "0397cee79b693859415b70ef656a4694ffad47b74a07aa59ef073233fdf0d76a",
+      "size_bytes": 2236
+    },
+    {
+      "path": "training_logs/ETH_MLP_SPOT_ONLY_F1_TARGET_SCALED.json",
+      "sha256": "6c981aa4005cc67987e532a7f9b8fe2e52ec35a0cbb8e46151a65007061dbe40",
+      "size_bytes": 11101
+    },
+    {
+      "path": "training_logs/ETH_MLP_SPOT_ONLY_F1_UNSCALED_CONTROL.json",
+      "sha256": "ee8675dbb101ba6d9e1c838c67f3869f83e9a93f0335a9e91a8b2840a816fcaa",
+      "size_bytes": 7010
+    },
+    {
+      "path": "training_logs/ETH_MLP_SPOT_ONLY_F2_TARGET_SCALED.json",
+      "sha256": "726e7c3fbcd029a09dce291603a2cbd3630e42957d1fcbd86aca3c97e88afc64",
+      "size_bytes": 11084
+    },
+    {
+      "path": "training_logs/ETH_MLP_SPOT_ONLY_F2_UNSCALED_CONTROL.json",
+      "sha256": "6dfd8f3d777739f971c246a3bb054474a3b2a8b58f06da133220556251349c5f",
+      "size_bytes": 7446
+    },
+    {
+      "path": "training_logs/ETH_MLP_SPOT_ONLY_F3_TARGET_SCALED.json",
+      "sha256": "b2665ff972d1338fedd9255aac67f64a44b62eaac1ec9194333ce1379a760d08",
+      "size_bytes": 11071
+    },
+    {
+      "path": "training_logs/ETH_MLP_SPOT_ONLY_F3_UNSCALED_CONTROL.json",
+      "sha256": "86386e9efada8e1fab64379372e9d9ae80d2e7b1a09adfafb9a710c71bdefe57",
+      "size_bytes": 6605
+    },
+    {
+      "path": "training_logs/ETH_MLP_SPOT_ONLY_FINAL_TEST_TARGET_SCALED.json",
+      "sha256": "af34fc530b2dc13d29cfe59976e55c8c4900fa0115e678e174b9849f90872da3",
+      "size_bytes": 11104
+    },
+    {
+      "path": "training_logs/ETH_MLP_SPOT_ONLY_FINAL_TEST_UNSCALED_CONTROL.json",
+      "sha256": "75bc4a1df867575d362989957f6ec0cccbfcda4ee91fbde8210dee7b4386e391",
+      "size_bytes": 5605
+    },
+    {
+      "path": "training_logs/ETH_MLP_SPOT_PLUS_ALL_DERIVATIVES_F1_TARGET_SCALED.json",
+      "sha256": "eddc0cc543c15da12c81c567a942f7f555e2114452890b6c1df442373f056c70",
+      "size_bytes": 11135
+    },
+    {
+      "path": "training_logs/ETH_MLP_SPOT_PLUS_ALL_DERIVATIVES_F1_UNSCALED_CONTROL.json",
+      "sha256": "8bbf06e88009023c565794c9ba085b8266827608448e924f541867d7c4542ffb",
+      "size_bytes": 8649
+    },
+    {
+      "path": "training_logs/ETH_MLP_SPOT_PLUS_ALL_DERIVATIVES_F2_TARGET_SCALED.json",
+      "sha256": "6a72483c3c22d93e4e0dd5d18ccefdf27fd0ac1679b8b18ecf056a76d29e7be4",
+      "size_bytes": 11124
+    },
+    {
+      "path": "training_logs/ETH_MLP_SPOT_PLUS_ALL_DERIVATIVES_F2_UNSCALED_CONTROL.json",
+      "sha256": "2f2718adffdea85c2fb8e6d8f8e77ceef7221feb6ec7ff9d3417df379374cb05",
+      "size_bytes": 7062
+    },
+    {
+      "path": "training_logs/ETH_MLP_SPOT_PLUS_ALL_DERIVATIVES_F3_TARGET_SCALED.json",
+      "sha256": "5523eaf7c261128c546dd01ab679009e26f9990a6e849064c5fcad1572ac746e",
+      "size_bytes": 11114
+    },
+    {
+      "path": "training_logs/ETH_MLP_SPOT_PLUS_ALL_DERIVATIVES_F3_UNSCALED_CONTROL.json",
+      "sha256": "27c2d3f6f1b3ba0124da18c71d115a09b278a83a9d4a16013015053ce207de9d",
+      "size_bytes": 6112
+    },
+    {
+      "path": "training_logs/ETH_MLP_SPOT_PLUS_ALL_DERIVATIVES_FINAL_TEST_TARGET_SCALED.json",
+      "sha256": "3aa10b5596fde75f30db17e538885761b856f7e4f1bb795d18d438904df58408",
+      "size_bytes": 11162
+    },
+    {
+      "path": "training_logs/ETH_MLP_SPOT_PLUS_ALL_DERIVATIVES_FINAL_TEST_UNSCALED_CONTROL.json",
+      "sha256": "d3e50a256d432973feb65c2d5aa064ed271989bd85e8cfeffceea0818da4df40",
+      "size_bytes": 5940
+    },
+    {
+      "path": "training_logs/all_fits.jsonl",
+      "sha256": "8eb25ad4f2dd8cc514ee40946816e94c7abec7b26c4c1a79f382fe1c69fa8d16",
+      "size_bytes": 308562
+    },
+    {
+      "path": "training_logs/execution_summary.json",
+      "sha256": "f89e27a07353f5f20711389c6de16a7391ca51baf52c31a8144df642f754e6fb",
+      "size_bytes": 111
+    },
+    {
+      "path": "training_started.marker",
+      "sha256": "9a7dec37a39027becc5059b7005ff20ed2a9b7b7e651eadd79fe86ad3fe34b5f",
+      "size_bytes": 33
+    },
+    {
+      "path": "training_started_amendment001.marker",
+      "sha256": "645a122f75a983a24d00818c8c1bd7354fb94684a27ddb98118e58b29e703779",
+      "size_bytes": 33
+    },
+    {
+      "path": "validation_checks.json",
+      "sha256": "2690ab45f291caff69c4b85f38c4723df9a49f0fe67c847ea1206dcdfe71cfd1",
+      "size_bytes": 1777
+    }
+  ],
+  "generated_utc": "2026-10-13T05:52:10.016232+00:00",
+  "historical_category_averages_reconstructed": {
+    "BTC": {
+      "reconstructed_pct": 18.56477335524347,
+      "reconstruction_matches": true,
+      "reported_pct": 18.56477335524347,
+      "target_scaled_sensitivity_pct": -0.9744155837036567
+    },
+    "ETH": {
+      "reconstructed_pct": 13.644812507260147,
+      "reconstruction_matches": true,
+      "reported_pct": 13.644812507260147,
+      "target_scaled_sensitivity_pct": 0.8080744892608575
+    }
+  },
+  "manuscript_modified": false,
+  "model_training": "MLP_AND_GRU_ONLY",
+  "new_confirmatory_tests": "NONE",
+  "new_market_data": "NONE",
+  "output_file_count_excluding_manifest_and_checksum": 299,
+  "phase": "13 controlled neural target-scaling sensitivity",
+  "phase6_frozen_status": "2/18 tasks passed; unchanged",
+  "pretraining_lock_sha256": "b5505859dd9fd383dbb106e6845f0e3d1574030a923737c5af48ab0077d443cf",
+  "source_integrity": {
+    "all_unchanged": true,
+    "count": 283,
+    "manuscript_unchanged": true,
+    "phase12_unchanged": true,
+    "phase6_unchanged": true,
+    "phase9_unchanged": true
+  },
+  "status": "COMPLETE",
+  "validation_checks": [
+    {
+      "check": "all_primary_test_predictions_on_original_registered_origins",
+      "evidence": "exact date-vector comparison against final_test_predictions.json for every asset/model/information-set/branch",
+      "status": "PASS"
+    },
+    {
+      "check": "target_scaler_inverse_transform_and_control_identity",
+      "evidence": "prediction_log1p = network_output × training-only scale + training-only mean; control output remains unscaled",
+      "status": "PASS"
+    },
+    {
+      "check": "all_primary_metrics_reconstruct_from_saved_predictions",
+      "evidence": "test MAE recomputed from saved origin-level predictions equals 08_fold_level_results.csv within 1e-14",
+      "status": "PASS"
+    },
+    {
+      "check": "target_scaler_fit_training_labels_only",
+      "evidence": "logged split masks end before evaluation; treatment scaler flag is true only for scaled branch",
+      "status": "PASS"
+    },
+    {
+      "check": "original_model_configs_and_scope_retained",
+      "evidence": "8 frozen asset×family×information-set configs; six-bar Amihud task only",
+      "status": "PASS"
+    },
+    {
+      "check": "all_locked_fit_units_completed",
+      "evidence": {
+        "failed_fit_ids": [],
+        "fit_count": 64,
+        "status": "PASS",
+        "wall_seconds_so_far": 17.373028704000035
+      },
+      "status": "PASS"
+    },
+    {
+      "check": "all_phase6_phase9_phase12_dataset_code_and_manuscript_hashes_unchanged",
+      "evidence": "283 paths compared to pre-training SHA256 inventory",
+      "status": "PASS"
+    },
+    {
+      "check": "pretraining_protocol_lock_unchanged",
+      "evidence": "pretraining_lock_manifest.sha256 and all four frozen file hashes",
+      "status": "PASS"
+    }
+  ]
+}

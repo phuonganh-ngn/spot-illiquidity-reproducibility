@@ -1,0 +1,69 @@
+{
+  "block_length_4h": 42,
+  "by_asset": {
+    "BTC": {
+      "delta_i": {
+        "block_length_4h_intervals": 42,
+        "bootstrap_draws_crossing_zero": 39,
+        "ci95": [
+          -3.9301147647779404e-08,
+          6.959473947088667e-07
+        ],
+        "mean_delta": 3.592009504958662e-07,
+        "p_two_sided": 0.057942057942057944,
+        "p_two_sided_centered_block_bootstrap": 0.057942057942057944,
+        "p_value_method": "plus-one corrected two-sided centered moving-block bootstrap under zero-mean null",
+        "probability_delta_positive": 0.961,
+        "replications": 1000,
+        "seed": 1781863028
+      },
+      "delta_q": {
+        "block_length_4h_intervals": 42,
+        "bootstrap_draws_crossing_zero": 65,
+        "ci95": [
+          -6.128829290986868e-08,
+          6.232505071190659e-07
+        ],
+        "mean_delta": 2.6475050637110474e-07,
+        "p_two_sided": 0.13186813186813187,
+        "p_two_sided_centered_block_bootstrap": 0.13186813186813187,
+        "p_value_method": "plus-one corrected two-sided centered moving-block bootstrap under zero-mean null",
+        "probability_delta_positive": 0.935,
+        "replications": 1000,
+        "seed": 142548048
+      }
+    },
+    "ETH": {
+      "delta_i": {
+        "block_length_4h_intervals": 42,
+        "bootstrap_draws_crossing_zero": 4,
+        "ci95": [
+          -3.590651220072142e-06,
+          -2.986881949008769e-07
+        ],
+        "mean_delta": -1.9259230369914844e-06,
+        "p_two_sided": 0.014985014985014986,
+        "p_two_sided_centered_block_bootstrap": 0.014985014985014986,
+        "p_value_method": "plus-one corrected two-sided centered moving-block bootstrap under zero-mean null",
+        "probability_delta_positive": 0.004,
+        "replications": 1000,
+        "seed": 847755432
+      },
+      "delta_q": {
+        "block_length_4h_intervals": 42,
+        "bootstrap_draws_crossing_zero": 205,
+        "ci95": [
+          -1.2309467060671176e-06,
+          4.3798405940782684e-07
+        ],
+        "mean_delta": -3.4300983657158433e-07,
+        "p_two_sided": 0.44255744255744256,
+        "p_two_sided_centered_block_bootstrap": 0.44255744255744256,
+        "p_value_method": "plus-one corrected two-sided centered moving-block bootstrap under zero-mean null",
+        "probability_delta_positive": 0.205,
+        "replications": 1000,
+        "seed": 65836684
+      }
+    }
+  }
+}

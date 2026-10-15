@@ -1,0 +1,25 @@
+{
+  "development_outcome_values_only": true,
+  "external_outcomes_parsed": false,
+  "files": {
+    "data/processed/phase7/market_liquidity_panel_4h.csv.gz": "5a339c5c4a8778ceb74344a10c67806c2323ffac80556be18bf7a9c99de8dcf6",
+    "outputs/phase7_liquidity_replication/phase7_data_audit.json": "c4708a21724837ee9f69bb2254ced6680bfa42342fe05c2937fc7753b2eb9fed",
+    "outputs/phase7_liquidity_replication/phase7_development_cv.json": "7059dfe144fc5d293029e08bfa6e47f8c90863a292d2a56ca17289f609603c74",
+    "outputs/phase7_liquidity_replication/phase7_development_oof_predictions.csv.gz": "1c0fbfc9773b3d520d3b11c92d84a3550c46214d331409d741ebb6c5d8dc8650",
+    "outputs/phase7_liquidity_replication/phase7_preexternal_protocol.md": "298170b4597942bed54c807ebc2af00fc25ad84aacea26137c8de018303a0161",
+    "outputs/phase7_liquidity_replication/phase7_protocol.json": "32d6c332ce86e2043709b15aec316b11c67ae730d8482b93d42aee8b7134ff9f",
+    "outputs/phase7_liquidity_replication/phase7_protocol_amendment_001.md": "0945827bb0e92cee774f388f134e7849edf784b8a7f88b7f5111717407900238",
+    "outputs/phase7_liquidity_replication/phase7_protocol_amendment_002.md": "f346f4a0363eff6fc441cd8b075db3152cd1257914cc0011544d93399a50e0ca",
+    "outputs/phase7_liquidity_replication/phase7_selected_models.json": "929a0b86bfcf694ec08264dc6b73a7d69f70c33aa5a55862d156d5f6dc2afaf5",
+    "src/phase7_liquidity/phase7_run_development.py": "dd93561cf4addc458caddb529530e9775bf1a992f646b60ca55a3b6740855175"
+  },
+  "fit_count": 8640,
+  "frozen_at_utc": "2026-10-07T14:01:09.558930+00:00",
+  "oof_first_date": "2022-10-01T00:00:00+00:00",
+  "oof_last_date": "2023-06-29T20:00:00+00:00",
+  "oof_rows": 559440,
+  "protocol_sha256": "32d6c332ce86e2043709b15aec316b11c67ae730d8482b93d42aee8b7134ff9f",
+  "selected_model_count": 360,
+  "selected_transform_count": 15,
+  "status": "DEVELOPMENT_FROZEN_PRE_EXTERNAL"
+}

@@ -1,0 +1,16 @@
+{
+  "status": "FROZEN_BEFORE_RESIDUAL_LEARNING",
+  "target": "Strict nested outer-fold SPOT_ONLY OOF prediction residual in frozen T2_log1p 24-hour future Amihud units.",
+  "asset_universe": ["BTC", "ETH"],
+  "features": "Derivative-only six-step histories (t-5..t) of funding_rate_state, oi_log_change, futures_taker_imbalance, basis_mean; frozen univariate transformations and four specified interactions; fixed UTC slot/weekday/funding-window controls; no spot predictors.",
+  "outcome_generation": "target_transformed minus the SPOT_ONLY prediction selected using inner chronological CV within that outcome's outer training fold; no in-sample residuals.",
+  "evaluation": "F2 and F3 only. F2 trains on earlier F1 strict OOF residuals; F3 trains on earlier F1+F2 strict OOF residuals. F1 is not evaluated because there are no earlier strict OOF residual labels. Six 4-hour intervals are purged before each inner validation window.",
+  "families": ["ElasticNet", "RBF_SVR", "HistGradientBoosting", "XGBoost", "MLP"],
+  "tuning": "Each family uses its unchanged 20-config frozen model_registry grid; choose by pooled chronological inner-fold transformed MAE; ties use registry order; scaler fit only inside each training fit.",
+  "forecast": "Correct the OOF SPOT_ONLY prediction by adding the derivative-only predicted residual in transformed-target units.",
+  "inference": "Paired moving-block bootstrap, 1,000 draws, lengths 42 and 84 four-hour intervals, seed derived deterministically from 20261007, asset, family and label. Holm within asset across five residual learner families.",
+  "component_ablation": "Use the inner-CV winning S1 family/config for each asset/outer fold without retuning. Single-component models retain common spot histories plus one derivative family and its own univariate transform, omit interactions. Drop-one models remove that component, its univariate transform and all interactions involving it. Seasonality ablation removes fixed calendar indicators only.",
+  "negative_control": "Fixed Ridge(alpha=1) with training-only StandardScaler; matched S0 spot history versus S1 adding only derivative values t+7..t+12 to predict past Amihud mean t-6..t-1. Purge 12 intervals at temporal boundaries. This is an exploratory temporal-confounding diagnostic.",
+  "regimes": "Exploratory descriptive OOF-loss differences; asset-specific thresholds estimated only on 2021-12 through 2022-09; high volatility/high illiquidity q75, absolute OI shock/absolute funding q90, basis sign relative to development median.",
+  "claims": "Predictive residual information only; no causal interpretation."
+}

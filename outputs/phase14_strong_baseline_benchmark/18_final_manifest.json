@@ -1,0 +1,1465 @@
+{
+  "created_utc": "2026-10-13T06:19:41.925520+00:00",
+  "development_selection_freeze_sha256": "086e74619225256873ad376c5dcb7ca21e74db29e29be9936b067a09410bbf8c",
+  "evidence_type": "RETROSPECTIVE_REANALYSIS",
+  "files": [
+    {
+      "path": "00_source_audit.md",
+      "sha256": "158dd0e75247e970bbe376bf6fff734ceea91fbd36631b60d35f67a69ab75370",
+      "size_bytes": 1929
+    },
+    {
+      "path": "01_source_manifest_before.json",
+      "sha256": "0677573e2b55ef2828d31e5439038a8c2be9206d8d33f8198d65a5408b1499de",
+      "size_bytes": 149371
+    },
+    {
+      "path": "02_locked_experiment_protocol.md",
+      "sha256": "84e47245395e0b37f03970d1141805dec26fabf83c1833572ab53ad59a36d532",
+      "size_bytes": 5731
+    },
+    {
+      "path": "03_frozen_model_registry.json",
+      "sha256": "d3db7b62c523ca894ad5b73bf5fb0daa8676edfc039585e69293421ab2135843",
+      "size_bytes": 9296
+    },
+    {
+      "path": "04_chronological_split_audit.md",
+      "sha256": "87881c04069939d8e4b9360670d3478eeebfa7aff8a4bbda1d610823c25a2185",
+      "size_bytes": 2517
+    },
+    {
+      "path": "05_development_model_selection.csv",
+      "sha256": "e716915da8c9476dfffd42449282a5aee342087591879a28f10d6e2513d3adc5",
+      "size_bytes": 29927
+    },
+    {
+      "path": "06_complete_model_test_results.csv",
+      "sha256": "1981d4110b619498ef503baf0c4609cb2590360431d5bf94177bfecca51fbfcb",
+      "size_bytes": 10232
+    },
+    {
+      "path": "07_primary_best_system_comparison.csv",
+      "sha256": "970297ad743d6a0c10f40b7ed61669b1467476eb3bfc5e589b41a6f045ce1a7a",
+      "size_bytes": 1015
+    },
+    {
+      "path": "08_within_model_information_effects.csv",
+      "sha256": "d243db81345ceaf2e4e133b36ffe24d6e3a974e00baac5f1b95dee6bb62cc46c",
+      "size_bytes": 3730
+    },
+    {
+      "path": "09_neural_reliability.csv",
+      "sha256": "77c30f3d9fa1d2bb5a9425723343b883cd47d0316b431960ceb4783d7df5a4d5",
+      "size_bytes": 3928
+    },
+    {
+      "path": "10_bootstrap_inference.csv",
+      "sha256": "6dd21af8d03e9b2f05ccc11d241944e21f6085895fc551f99ca292236cb6b47a",
+      "size_bytes": 1672
+    },
+    {
+      "path": "11_phase6_phase13_phase14_comparison.md",
+      "sha256": "d613b29e51c0ab89e06e78cba20d1fdb96e7f5f93d6c0e37a94fc5c9c7f810b9",
+      "size_bytes": 1097
+    },
+    {
+      "path": "12_scientific_interpretation.md",
+      "sha256": "5369c2bc47d26a282e45d8881d1e39de54e1ece5d6d6188b9c2c6f52ab58ab23",
+      "size_bytes": 3032
+    },
+    {
+      "path": "13_manuscript_revision_plan.md",
+      "sha256": "5889366cdd43f48bae009eef4d379c20c114cfb6ec4426eeff815beb2ceaf70e",
+      "size_bytes": 2654
+    },
+    {
+      "path": "14_limitations_and_integrity.md",
+      "sha256": "029ff2115d639afbbe85804184e41c7a5a75c94eeeab9e50739619cc5e6085de",
+      "size_bytes": 1655
+    },
+    {
+      "path": "15_reproducibility_validation.md",
+      "sha256": "a7531d162f5fec9aadfbec70e43e06beb3173e77088d95ef8efb3ca9b4d79994",
+      "size_bytes": 2125
+    },
+    {
+      "path": "16_source_manifest_after.json",
+      "sha256": "d22158416e97fdb5248ff51b0fdeb12726d83c8595c9ee072bd629e50b30fc54",
+      "size_bytes": 208828
+    },
+    {
+      "path": "17_executive_summary.md",
+      "sha256": "97cefa3f88c7e98493d4e0f29fc2d1b7937e4721f6d179fdf8f01bd944734ce0",
+      "size_bytes": 1624
+    },
+    {
+      "path": "development_folds/BTC_SPOT_ONLY_CatBoost_cfg01_F1.csv.gz",
+      "sha256": "040efed63e8ff685ea789ee7e88fdbb83e11c926f081574cd2a24eab5837ae78",
+      "size_bytes": 19850
+    },
+    {
+      "path": "development_folds/BTC_SPOT_ONLY_CatBoost_cfg01_F2.csv.gz",
+      "sha256": "facada74c7c8518f24d2edb5763c17796564bbbd36d8bf8d9b2d75670abd4b3c",
+      "size_bytes": 18916
+    },
+    {
+      "path": "development_folds/BTC_SPOT_ONLY_CatBoost_cfg01_F3.csv.gz",
+      "sha256": "3bab2dc6eb0a6cbae7fc9a1c45384f89ca9e68cb6838b71a4cdbd8a6218e6005",
+      "size_bytes": 18843
+    },
+    {
+      "path": "development_folds/BTC_SPOT_ONLY_CatBoost_cfg02_F1.csv.gz",
+      "sha256": "a6cdec38b3e35116031b3de14c2aef358daa273c6435aba0b0d2837673059a65",
+      "size_bytes": 19878
+    },
+    {
+      "path": "development_folds/BTC_SPOT_ONLY_CatBoost_cfg02_F2.csv.gz",
+      "sha256": "110288ee199fa73e645a741ffd9733803a62b174086e4689db817aad2d5e90a6",
+      "size_bytes": 18857
+    },
+    {
+      "path": "development_folds/BTC_SPOT_ONLY_CatBoost_cfg02_F3.csv.gz",
+      "sha256": "94a1e77f17290564c050f2ecd743f5dce226cb6272dbd70c5ca4bafee88ad1ca",
+      "size_bytes": 18846
+    },
+    {
+      "path": "development_folds/BTC_SPOT_ONLY_CatBoost_cfg03_F1.csv.gz",
+      "sha256": "ceccb18081ac9915a405c5a7ef68f78810ff240abcba1ee1a7e23cb7b4608b1e",
+      "size_bytes": 19920
+    },
+    {
+      "path": "development_folds/BTC_SPOT_ONLY_CatBoost_cfg03_F2.csv.gz",
+      "sha256": "f455c638343fa4dc2b7f053dec0ae8c845acb8e756c8f2d81a1d5afd483906e9",
+      "size_bytes": 18843
+    },
+    {
+      "path": "development_folds/BTC_SPOT_ONLY_CatBoost_cfg03_F3.csv.gz",
+      "sha256": "87fe39a47d436f87c85490d2970d5d3923a1f6a7c6fde2879363128963935862",
+      "size_bytes": 18865
+    },
+    {
+      "path": "development_folds/BTC_SPOT_ONLY_ExtraTrees_cfg01_F1.csv.gz",
+      "sha256": "832deadd85c1395f34c8b49a54d60c1b155d8d24b6397e6d02ad3e257c25701e",
+      "size_bytes": 19886
+    },
+    {
+      "path": "development_folds/BTC_SPOT_ONLY_ExtraTrees_cfg01_F2.csv.gz",
+      "sha256": "c298fb1ef029d47acc5e3dae0e34532bec5f92182dec671d891dbc8311ede3fe",
+      "size_bytes": 18971
+    },
+    {
+      "path": "development_folds/BTC_SPOT_ONLY_ExtraTrees_cfg01_F3.csv.gz",
+      "sha256": "04b4c7d387889cbe5bcdf2b8a9b788ad049dfa3b62eb8de5efa2425999f972cb",
+      "size_bytes": 18902
+    },
+    {
+      "path": "development_folds/BTC_SPOT_ONLY_ExtraTrees_cfg02_F1.csv.gz",
+      "sha256": "c5530bd3eb664cb67ca940ccece428ad8ab5eca9621833c6a534919bc12793b3",
+      "size_bytes": 19872
+    },
+    {
+      "path": "development_folds/BTC_SPOT_ONLY_ExtraTrees_cfg02_F2.csv.gz",
+      "sha256": "3330656732c7abb90ff5bfaa6df6d8d9aa2cde6771d54803b088715048ac3a21",
+      "size_bytes": 18956
+    },
+    {
+      "path": "development_folds/BTC_SPOT_ONLY_ExtraTrees_cfg02_F3.csv.gz",
+      "sha256": "e634a3a48a305338904de91f71093bfccf53b4ddd3eefbfee2ded6c59b9b5239",
+      "size_bytes": 18881
+    },
+    {
+      "path": "development_folds/BTC_SPOT_ONLY_ExtraTrees_cfg03_F1.csv.gz",
+      "sha256": "0cc11e336d24de1b7234d3ab0c92156ff087e53b84bc10048dcfeb640956f39a",
+      "size_bytes": 19896
+    },
+    {
+      "path": "development_folds/BTC_SPOT_ONLY_ExtraTrees_cfg03_F2.csv.gz",
+      "sha256": "86cd2229f2e2d9529374547f3cde130843f872c77e41edea1e9d4e17e0e91bd7",
+      "size_bytes": 18943
+    },
+    {
+      "path": "development_folds/BTC_SPOT_ONLY_ExtraTrees_cfg03_F3.csv.gz",
+      "sha256": "a6b57c6baa72c7ee830ac279a03ae988f9c7f2faf9b2464b8505f77baf943941",
+      "size_bytes": 18947
+    },
+    {
+      "path": "development_folds/BTC_SPOT_ONLY_GRU_cfg03_F1.csv.gz",
+      "sha256": "41d4575137680b95f901da426cce96b697e9ceda57b1c246fbfb65f44bdb898f",
+      "size_bytes": 19829
+    },
+    {
+      "path": "development_folds/BTC_SPOT_ONLY_GRU_cfg03_F2.csv.gz",
+      "sha256": "94e24c64e67f54c5981d37a2b57ecf511ea801df737876f36e7c65d6fe5ceab0",
+      "size_bytes": 19034
+    },
+    {
+      "path": "development_folds/BTC_SPOT_ONLY_GRU_cfg03_F3.csv.gz",
+      "sha256": "dbf68d9b4bb247a23200d4cbbd4605d545802e999bd080c6e4489cce1ffd5bf0",
+      "size_bytes": 18972
+    },
+    {
+      "path": "development_folds/BTC_SPOT_ONLY_HistGradientBoosting_cfg01_F1.csv.gz",
+      "sha256": "9083822b4cd140ebb5cf5034c8a9d76f223d3dfb3fd6a29b5f0c7d167d894c45",
+      "size_bytes": 19667
+    },
+    {
+      "path": "development_folds/BTC_SPOT_ONLY_HistGradientBoosting_cfg01_F2.csv.gz",
+      "sha256": "e0088b1ad488c9f6435ee835203d6da89dd2bd9f00057219fcdeed04aa64e28d",
+      "size_bytes": 18668
+    },
+    {
+      "path": "development_folds/BTC_SPOT_ONLY_HistGradientBoosting_cfg01_F3.csv.gz",
+      "sha256": "04b4b285a7b08402aebba3e50461f5553e28fb26eaba65477fdf6664d8254e3c",
+      "size_bytes": 18942
+    },
+    {
+      "path": "development_folds/BTC_SPOT_ONLY_HistGradientBoosting_cfg02_F1.csv.gz",
+      "sha256": "72373999880214ffb2eb8e85328049eadd400ddc5fc41f2d50167cdbff595791",
+      "size_bytes": 19981
+    },
+    {
+      "path": "development_folds/BTC_SPOT_ONLY_HistGradientBoosting_cfg02_F2.csv.gz",
+      "sha256": "2ced494a96f3ada29a62eb074cfa769f070bece66bac0cc812613603d5607842",
+      "size_bytes": 18891
+    },
+    {
+      "path": "development_folds/BTC_SPOT_ONLY_HistGradientBoosting_cfg02_F3.csv.gz",
+      "sha256": "b006ae9e12e64a64bf22293331d52cfe307651c01a7d8a6b0bdbd9b53d07e509",
+      "size_bytes": 18945
+    },
+    {
+      "path": "development_folds/BTC_SPOT_ONLY_HistGradientBoosting_cfg03_F1.csv.gz",
+      "sha256": "3dd4942cefa9f9c06172ee9b538f90d6452c8d4d6d1c3b95b9a07007af066767",
+      "size_bytes": 19965
+    },
+    {
+      "path": "development_folds/BTC_SPOT_ONLY_HistGradientBoosting_cfg03_F2.csv.gz",
+      "sha256": "b18b135b0d9958aa16fd0c647c7bc06e8997c0cc93a292fc57307794e3b760de",
+      "size_bytes": 19005
+    },
+    {
+      "path": "development_folds/BTC_SPOT_ONLY_HistGradientBoosting_cfg03_F3.csv.gz",
+      "sha256": "c3984cd1917b557cef619ee23426d48173b7ca31679642c5607a8f4450aaffc5",
+      "size_bytes": 18957
+    },
+    {
+      "path": "development_folds/BTC_SPOT_ONLY_MLP_cfg01_F1.csv.gz",
+      "sha256": "4ff5d43b5f2e263864ad6833ad4ae9c9d9dade0e366ab988901cc7373314f24b",
+      "size_bytes": 20003
+    },
+    {
+      "path": "development_folds/BTC_SPOT_ONLY_MLP_cfg01_F2.csv.gz",
+      "sha256": "08392c4dfc63669d05647cc064629c26a9b607e24b872e94342f1d0fd227ddd6",
+      "size_bytes": 19088
+    },
+    {
+      "path": "development_folds/BTC_SPOT_ONLY_MLP_cfg01_F3.csv.gz",
+      "sha256": "a5b4fef87fe15ae9586a7bd11e86fd24a31cc88cd139a5fd4dd25627dc63c886",
+      "size_bytes": 18904
+    },
+    {
+      "path": "development_folds/BTC_SPOT_ONLY_Persistence_fixed_F1.csv.gz",
+      "sha256": "5d9246c24342c321e0381ef5c05b32de2ef1d8f9aebc908fab2ae29b5bc86785",
+      "size_bytes": 20091
+    },
+    {
+      "path": "development_folds/BTC_SPOT_ONLY_Persistence_fixed_F2.csv.gz",
+      "sha256": "2e0b2233ed98437209ad8e6f43577a4bd833da7a22e98d5ddb55f7c830872159",
+      "size_bytes": 19240
+    },
+    {
+      "path": "development_folds/BTC_SPOT_ONLY_Persistence_fixed_F3.csv.gz",
+      "sha256": "7a56136b6e63805ca55ccacbe03c9b0eb7973cd0b9f8bd99c03dfd0cc26884fc",
+      "size_bytes": 19252
+    },
+    {
+      "path": "development_folds/BTC_SPOT_ONLY_Ridge_cfg01_F1.csv.gz",
+      "sha256": "9d65a4c087f4e96338208444b51ecc8b72e7662e06ceab1cb5db4fa007601d6a",
+      "size_bytes": 19875
+    },
+    {
+      "path": "development_folds/BTC_SPOT_ONLY_Ridge_cfg01_F2.csv.gz",
+      "sha256": "74d109edb45913230687ca9ce5fc4073ea119cc6a27a33cfe7677f1a2fb0a8e1",
+      "size_bytes": 19016
+    },
+    {
+      "path": "development_folds/BTC_SPOT_ONLY_Ridge_cfg01_F3.csv.gz",
+      "sha256": "8cc00350d989fd5e6cf42b9b8ffe77894afa662843ce08959ff13cab087377e9",
+      "size_bytes": 18895
+    },
+    {
+      "path": "development_folds/BTC_SPOT_ONLY_Ridge_cfg02_F1.csv.gz",
+      "sha256": "2d273a047460647aa677b101f6f67cdc0aff950854f73e934a740e3b5b811ee9",
+      "size_bytes": 19847
+    },
+    {
+      "path": "development_folds/BTC_SPOT_ONLY_Ridge_cfg02_F2.csv.gz",
+      "sha256": "cbb717d7488c3509e166a8896f1a1e278af708f2c8f59fa54370e6268903e11c",
+      "size_bytes": 19016
+    },
+    {
+      "path": "development_folds/BTC_SPOT_ONLY_Ridge_cfg02_F3.csv.gz",
+      "sha256": "2f58d1f7f962375bb11fb7224ad01a95e83ccd6886693f41fc28d8a37e45f6de",
+      "size_bytes": 18869
+    },
+    {
+      "path": "development_folds/BTC_SPOT_ONLY_Ridge_cfg03_F1.csv.gz",
+      "sha256": "aa791d0ad9d98e297389712dabf96e5e4449d0bc52da2ee79719c120709b1831",
+      "size_bytes": 19850
+    },
+    {
+      "path": "development_folds/BTC_SPOT_ONLY_Ridge_cfg03_F2.csv.gz",
+      "sha256": "66be54d4762890b541cda96144016e21798ffbe06da14c86e46af0036b0f9862",
+      "size_bytes": 18989
+    },
+    {
+      "path": "development_folds/BTC_SPOT_ONLY_Ridge_cfg03_F3.csv.gz",
+      "sha256": "509299dcfbbfb80e8d117ba20514b1f19766e752a534b1bc378689c569908a33",
+      "size_bytes": 18857
+    },
+    {
+      "path": "development_folds/BTC_SPOT_ONLY_TrainingMean_fixed_F1.csv.gz",
+      "sha256": "b372583af42cead9d1bdee290c0387842f40b93d0589be2d2e992f366eab6764",
+      "size_bytes": 14451
+    },
+    {
+      "path": "development_folds/BTC_SPOT_ONLY_TrainingMean_fixed_F2.csv.gz",
+      "sha256": "ffe9cbbdbe8979cdb7c275506b59bc7d9b2214cded8432bbfa6747ea99d02f0b",
+      "size_bytes": 13859
+    },
+    {
+      "path": "development_folds/BTC_SPOT_ONLY_TrainingMean_fixed_F3.csv.gz",
+      "sha256": "f158bc90bbd4c4626312148774b48cd80cdef1d9e77fa139f72ea694a156ee65",
+      "size_bytes": 13888
+    },
+    {
+      "path": "development_folds/BTC_SPOT_ONLY_XGBoost_cfg01_F1.csv.gz",
+      "sha256": "a2c800b6e8b72cccc630ba3b57edf0f1edac6e1e443c158b9b2a2d2a8c6e47c1",
+      "size_bytes": 14492
+    },
+    {
+      "path": "development_folds/BTC_SPOT_ONLY_XGBoost_cfg01_F2.csv.gz",
+      "sha256": "f21c54a00db498de92b30106035d12082ad1e064faf1de3ba6c1949860100b3f",
+      "size_bytes": 13892
+    },
+    {
+      "path": "development_folds/BTC_SPOT_ONLY_XGBoost_cfg01_F3.csv.gz",
+      "sha256": "c3bce7e04638031a05c9ff944c1138e58889bb716d24c1c1cddae077423fefe5",
+      "size_bytes": 13907
+    },
+    {
+      "path": "development_folds/BTC_SPOT_ONLY_XGBoost_cfg02_F1.csv.gz",
+      "sha256": "23f3dce3b01d7ba83b22bacd046060b31e266ed2b21362a593c9fa9403448872",
+      "size_bytes": 14492
+    },
+    {
+      "path": "development_folds/BTC_SPOT_ONLY_XGBoost_cfg02_F2.csv.gz",
+      "sha256": "6ac2bad0f67ea37d640be78e73e5028af2fce16dcad7cc6552ccd386073a4fbc",
+      "size_bytes": 13892
+    },
+    {
+      "path": "development_folds/BTC_SPOT_ONLY_XGBoost_cfg02_F3.csv.gz",
+      "sha256": "d8d192fa2d5ccb5d8d15cfb28b2ab8f9015a13debf6ded54c3d83c9a7988f6eb",
+      "size_bytes": 13907
+    },
+    {
+      "path": "development_folds/BTC_SPOT_ONLY_XGBoost_cfg03_F1.csv.gz",
+      "sha256": "566e522527dca30f8c674dccb836e207bf038fc0b236297ab89e518f7b223795",
+      "size_bytes": 14492
+    },
+    {
+      "path": "development_folds/BTC_SPOT_ONLY_XGBoost_cfg03_F2.csv.gz",
+      "sha256": "ba0772167e35b63207cadc2b751d565a3d060fab0819051e1ba1dea44276c509",
+      "size_bytes": 13892
+    },
+    {
+      "path": "development_folds/BTC_SPOT_ONLY_XGBoost_cfg03_F3.csv.gz",
+      "sha256": "273232a77ac6d32c52f182d5463ba3eedb8c35b49e8f4c559143c8a9f969d34f",
+      "size_bytes": 13907
+    },
+    {
+      "path": "development_folds/BTC_SPOT_ONLY_selection.json",
+      "sha256": "0aff199bce72a4c58013b914079e7c2002904a5c1829aa426df9003475f3c083",
+      "size_bytes": 16379
+    },
+    {
+      "path": "development_folds/BTC_SPOT_PLUS_ALL_DERIVATIVES_CatBoost_cfg01_F1.csv.gz",
+      "sha256": "171d7f48c65ad4edc7032d001019a164e1f233e87dc6afe9f00260391973fabc",
+      "size_bytes": 19970
+    },
+    {
+      "path": "development_folds/BTC_SPOT_PLUS_ALL_DERIVATIVES_CatBoost_cfg01_F2.csv.gz",
+      "sha256": "ee6c56eac984afb36fe2b0fda8db9a5e1035f57277a8268d4f8920fa059449c0",
+      "size_bytes": 19069
+    },
+    {
+      "path": "development_folds/BTC_SPOT_PLUS_ALL_DERIVATIVES_CatBoost_cfg01_F3.csv.gz",
+      "sha256": "aac7f828a859c389f534fea61630606a704f6966d0163d16bc0ae155ce70817f",
+      "size_bytes": 18980
+    },
+    {
+      "path": "development_folds/BTC_SPOT_PLUS_ALL_DERIVATIVES_CatBoost_cfg02_F1.csv.gz",
+      "sha256": "e7d241605498f747e12bb1652a8b96697b65310e080926d1a49aada5d6a84a24",
+      "size_bytes": 19967
+    },
+    {
+      "path": "development_folds/BTC_SPOT_PLUS_ALL_DERIVATIVES_CatBoost_cfg02_F2.csv.gz",
+      "sha256": "f1d518c83bf10de2af5d48f3c1dcb525d60cf578364f142fc0b01198dc6fcfe5",
+      "size_bytes": 19035
+    },
+    {
+      "path": "development_folds/BTC_SPOT_PLUS_ALL_DERIVATIVES_CatBoost_cfg02_F3.csv.gz",
+      "sha256": "e582ff5ba76baea4996a3ecc4e3e9c997c83d1c93cde06d1e1616087fc3d89d3",
+      "size_bytes": 18937
+    },
+    {
+      "path": "development_folds/BTC_SPOT_PLUS_ALL_DERIVATIVES_CatBoost_cfg03_F1.csv.gz",
+      "sha256": "ac743c20436ba877f3f0f890a184382dfe35553db58e474f5b2689bf59dab0d2",
+      "size_bytes": 19968
+    },
+    {
+      "path": "development_folds/BTC_SPOT_PLUS_ALL_DERIVATIVES_CatBoost_cfg03_F2.csv.gz",
+      "sha256": "9b8f2756fc313780061b493a2650d2a1a30779e2e1a8531653ab4cdeb2b91480",
+      "size_bytes": 19111
+    },
+    {
+      "path": "development_folds/BTC_SPOT_PLUS_ALL_DERIVATIVES_CatBoost_cfg03_F3.csv.gz",
+      "sha256": "29e6ea0b6186301584445c3f04094c0d5dd0966e1059a6b0e97feb8002733d34",
+      "size_bytes": 18924
+    },
+    {
+      "path": "development_folds/BTC_SPOT_PLUS_ALL_DERIVATIVES_ExtraTrees_cfg01_F1.csv.gz",
+      "sha256": "32189de766117c630840811b847c8093799ae70c30c799afb505c39350310d5d",
+      "size_bytes": 20056
+    },
+    {
+      "path": "development_folds/BTC_SPOT_PLUS_ALL_DERIVATIVES_ExtraTrees_cfg01_F2.csv.gz",
+      "sha256": "df60a47d67ea8e1202c3b7d7da842952557d3c5341c64d2d95228a43c030ed37",
+      "size_bytes": 19130
+    },
+    {
+      "path": "development_folds/BTC_SPOT_PLUS_ALL_DERIVATIVES_ExtraTrees_cfg01_F3.csv.gz",
+      "sha256": "9eea85cf045bdab185ddae856cfd01980911e6959fa52bec5c6eaeff3e601710",
+      "size_bytes": 19072
+    },
+    {
+      "path": "development_folds/BTC_SPOT_PLUS_ALL_DERIVATIVES_ExtraTrees_cfg02_F1.csv.gz",
+      "sha256": "bed3927cfc2278232933f9ebe884ea449cf4ce35dac2292cd6ea36c86b54aa7d",
+      "size_bytes": 20060
+    },
+    {
+      "path": "development_folds/BTC_SPOT_PLUS_ALL_DERIVATIVES_ExtraTrees_cfg02_F2.csv.gz",
+      "sha256": "294d31139cdb6fa1cc7b1fdfe1782dcf80a97c03a48144d7a99fb76fd6d0a495",
+      "size_bytes": 19131
+    },
+    {
+      "path": "development_folds/BTC_SPOT_PLUS_ALL_DERIVATIVES_ExtraTrees_cfg02_F3.csv.gz",
+      "sha256": "cb1d4110c1f2ec6fb73865c745c5bdeeffc02359997308942ac1f516e564dc7d",
+      "size_bytes": 19021
+    },
+    {
+      "path": "development_folds/BTC_SPOT_PLUS_ALL_DERIVATIVES_ExtraTrees_cfg03_F1.csv.gz",
+      "sha256": "bd8b95f8088c6a4a80f51010495c0fec950574d20f44000e473892860773c451",
+      "size_bytes": 19963
+    },
+    {
+      "path": "development_folds/BTC_SPOT_PLUS_ALL_DERIVATIVES_ExtraTrees_cfg03_F2.csv.gz",
+      "sha256": "8bca76b941f3a378b9d709badfb0c986fb9f9038e46c075581153d053ffb9057",
+      "size_bytes": 19125
+    },
+    {
+      "path": "development_folds/BTC_SPOT_PLUS_ALL_DERIVATIVES_ExtraTrees_cfg03_F3.csv.gz",
+      "sha256": "639621dfd64f2a1a363608e5936c80291e812633d8a4abf6448e45122ba38b4b",
+      "size_bytes": 19040
+    },
+    {
+      "path": "development_folds/BTC_SPOT_PLUS_ALL_DERIVATIVES_GRU_cfg03_F1.csv.gz",
+      "sha256": "6d2e10519d3786e91f7c502919cd419b19fde8692f290d1d79abdf5ce5d7e767",
+      "size_bytes": 19970
+    },
+    {
+      "path": "development_folds/BTC_SPOT_PLUS_ALL_DERIVATIVES_GRU_cfg03_F2.csv.gz",
+      "sha256": "b3171dc2a27885e99bb8081c7231ca61653c4f32f6f56e1a76a748a70cc50e35",
+      "size_bytes": 19101
+    },
+    {
+      "path": "development_folds/BTC_SPOT_PLUS_ALL_DERIVATIVES_GRU_cfg03_F3.csv.gz",
+      "sha256": "a37b0a607be85517e82c88110187eb67ee8ec234378a4399d7ea3658caa15303",
+      "size_bytes": 18997
+    },
+    {
+      "path": "development_folds/BTC_SPOT_PLUS_ALL_DERIVATIVES_HistGradientBoosting_cfg01_F1.csv.gz",
+      "sha256": "331595db07a247ec5735e321713f9d1f0c6b0c3e4891cbdc12cc239fbf99d136",
+      "size_bytes": 20093
+    },
+    {
+      "path": "development_folds/BTC_SPOT_PLUS_ALL_DERIVATIVES_HistGradientBoosting_cfg01_F2.csv.gz",
+      "sha256": "9bc354d3685084cb6436683ea86f2516af865f41e0073a6096e9c36eb1453013",
+      "size_bytes": 19092
+    },
+    {
+      "path": "development_folds/BTC_SPOT_PLUS_ALL_DERIVATIVES_HistGradientBoosting_cfg01_F3.csv.gz",
+      "sha256": "da0d57b1f4f568f5a8a247b8f30c4627f928dd42c76820995925dc2b26fcbf60",
+      "size_bytes": 19111
+    },
+    {
+      "path": "development_folds/BTC_SPOT_PLUS_ALL_DERIVATIVES_HistGradientBoosting_cfg02_F1.csv.gz",
+      "sha256": "43838a33353283709429a3ae756e10d646a2092706a908cf7e806bd2997a675b",
+      "size_bytes": 20107
+    },
+    {
+      "path": "development_folds/BTC_SPOT_PLUS_ALL_DERIVATIVES_HistGradientBoosting_cfg02_F2.csv.gz",
+      "sha256": "12494d31466504e6dd581c1a49fcd6294598a7bd8555d7d21cdeddd313790f1d",
+      "size_bytes": 19163
+    },
+    {
+      "path": "development_folds/BTC_SPOT_PLUS_ALL_DERIVATIVES_HistGradientBoosting_cfg02_F3.csv.gz",
+      "sha256": "248653628be5d14dbe5712836b6ee68ab72210530bb160bb2329e4389910b71b",
+      "size_bytes": 19073
+    },
+    {
+      "path": "development_folds/BTC_SPOT_PLUS_ALL_DERIVATIVES_HistGradientBoosting_cfg03_F1.csv.gz",
+      "sha256": "72a4c519fa0efebeebe731925bd0591292667c44cdc31848c085b35a653050bd",
+      "size_bytes": 20068
+    },
+    {
+      "path": "development_folds/BTC_SPOT_PLUS_ALL_DERIVATIVES_HistGradientBoosting_cfg03_F2.csv.gz",
+      "sha256": "7b244c052385313cbba0437bcfb0adb3f3d0fee18c9b9c8e718d4f5e50083949",
+      "size_bytes": 19204
+    },
+    {
+      "path": "development_folds/BTC_SPOT_PLUS_ALL_DERIVATIVES_HistGradientBoosting_cfg03_F3.csv.gz",
+      "sha256": "2cbdb294d148c3a78da88f8783a172843ec858b14c6bf71fe27d4d7e3b69e087",
+      "size_bytes": 19086
+    },
+    {
+      "path": "development_folds/BTC_SPOT_PLUS_ALL_DERIVATIVES_MLP_cfg01_F1.csv.gz",
+      "sha256": "08e21e514dc3760f5dae80fe3784b88987018fc21856fc708f5cbfbca5a6accd",
+      "size_bytes": 20205
+    },
+    {
+      "path": "development_folds/BTC_SPOT_PLUS_ALL_DERIVATIVES_MLP_cfg01_F2.csv.gz",
+      "sha256": "07403fc5aae69210b949c04ee386c920e5638fb454f25d86b344fabd7e20feda",
+      "size_bytes": 19268
+    },
+    {
+      "path": "development_folds/BTC_SPOT_PLUS_ALL_DERIVATIVES_MLP_cfg01_F3.csv.gz",
+      "sha256": "f0602c6cf4d853bb7fe6e0c4b4e218084d9d3fa9d1965ba20191d9fc22ef1347",
+      "size_bytes": 18985
+    },
+    {
+      "path": "development_folds/BTC_SPOT_PLUS_ALL_DERIVATIVES_Persistence_fixed_F1.csv.gz",
+      "sha256": "d6242dcc429b83d68cc3f02f68b23f879f1b120aba4475629ccb84808bbfe278",
+      "size_bytes": 20239
+    },
+    {
+      "path": "development_folds/BTC_SPOT_PLUS_ALL_DERIVATIVES_Persistence_fixed_F2.csv.gz",
+      "sha256": "ff9a96b7125a1d3bad1103a9e99c6905097556ffe39ac760340d09b72dfdd517",
+      "size_bytes": 19390
+    },
+    {
+      "path": "development_folds/BTC_SPOT_PLUS_ALL_DERIVATIVES_Persistence_fixed_F3.csv.gz",
+      "sha256": "4c488fab075e27ec443a69061abceec014b72d8c3074b42a28bd25a2863cde55",
+      "size_bytes": 19430
+    },
+    {
+      "path": "development_folds/BTC_SPOT_PLUS_ALL_DERIVATIVES_Ridge_cfg01_F1.csv.gz",
+      "sha256": "3571a59b27c75b209ed266c63093f70832613b24a3b2a9f2f1a91194b4c44eec",
+      "size_bytes": 19951
+    },
+    {
+      "path": "development_folds/BTC_SPOT_PLUS_ALL_DERIVATIVES_Ridge_cfg01_F2.csv.gz",
+      "sha256": "b9776068c81b1e9bd59a4d0c181064d06b1d4980d28d51664e199f0417c92ebb",
+      "size_bytes": 19126
+    },
+    {
+      "path": "development_folds/BTC_SPOT_PLUS_ALL_DERIVATIVES_Ridge_cfg01_F3.csv.gz",
+      "sha256": "dd1244a9da1be1ea047c2182bb309214fcc079ea57e68f246b66e6f1cebd324c",
+      "size_bytes": 18959
+    },
+    {
+      "path": "development_folds/BTC_SPOT_PLUS_ALL_DERIVATIVES_Ridge_cfg02_F1.csv.gz",
+      "sha256": "3f3d4cf996a0949ff69b9d35552d141b810a4faeaa7623a1eb6a7784b6100872",
+      "size_bytes": 19984
+    },
+    {
+      "path": "development_folds/BTC_SPOT_PLUS_ALL_DERIVATIVES_Ridge_cfg02_F2.csv.gz",
+      "sha256": "27aced8b00993c344e1190a7f799914dfaf23202efdf3c5946027206d86ae3bf",
+      "size_bytes": 19108
+    },
+    {
+      "path": "development_folds/BTC_SPOT_PLUS_ALL_DERIVATIVES_Ridge_cfg02_F3.csv.gz",
+      "sha256": "f946da04b82d69c05deb2f37e38492342da8034343bf3b5fc4c53d3f018af4ac",
+      "size_bytes": 18918
+    },
+    {
+      "path": "development_folds/BTC_SPOT_PLUS_ALL_DERIVATIVES_Ridge_cfg03_F1.csv.gz",
+      "sha256": "819fbe001bee8bd3fe54128e7831d8012173cd9ac1357e35f5d775209c828287",
+      "size_bytes": 19957
+    },
+    {
+      "path": "development_folds/BTC_SPOT_PLUS_ALL_DERIVATIVES_Ridge_cfg03_F2.csv.gz",
+      "sha256": "d06033b712517f5b40dc01a72b9d26380702117f0f3cc91567c7e002c96b4b0f",
+      "size_bytes": 19138
+    },
+    {
+      "path": "development_folds/BTC_SPOT_PLUS_ALL_DERIVATIVES_Ridge_cfg03_F3.csv.gz",
+      "sha256": "aaa091d93107d32b5b05bd399739c9333ef72a5c1e448edfce1c94df74d8ce7b",
+      "size_bytes": 18973
+    },
+    {
+      "path": "development_folds/BTC_SPOT_PLUS_ALL_DERIVATIVES_TrainingMean_fixed_F1.csv.gz",
+      "sha256": "6f4380f138ef1a9229a11054bd347caeed19e9ec9e9735b4d0956e726f5c3709",
+      "size_bytes": 14561
+    },
+    {
+      "path": "development_folds/BTC_SPOT_PLUS_ALL_DERIVATIVES_TrainingMean_fixed_F2.csv.gz",
+      "sha256": "ccff14b8b9494a92a3b720c8dab1d88421089e38724f14a755fb99b41a47230b",
+      "size_bytes": 13962
+    },
+    {
+      "path": "development_folds/BTC_SPOT_PLUS_ALL_DERIVATIVES_TrainingMean_fixed_F3.csv.gz",
+      "sha256": "49a1c3d82cad5ea65c48ec84828b656a509c76136e0118a2ba584774a446a5c6",
+      "size_bytes": 13982
+    },
+    {
+      "path": "development_folds/BTC_SPOT_PLUS_ALL_DERIVATIVES_XGBoost_cfg01_F1.csv.gz",
+      "sha256": "7951236f4125900b2b4c0d7e91878dea0fa45a16521570007177682f004bb62d",
+      "size_bytes": 14526
+    },
+    {
+      "path": "development_folds/BTC_SPOT_PLUS_ALL_DERIVATIVES_XGBoost_cfg01_F2.csv.gz",
+      "sha256": "81f3de2178daed878786f082eb2c1bd1098c5f2ac885ad6ac2af5640a4f3f826",
+      "size_bytes": 13926
+    },
+    {
+      "path": "development_folds/BTC_SPOT_PLUS_ALL_DERIVATIVES_XGBoost_cfg01_F3.csv.gz",
+      "sha256": "a6441e07e98b5d363f4931a4cc7643eafa084129bc16d2a71f0c513393b02c10",
+      "size_bytes": 13941
+    },
+    {
+      "path": "development_folds/BTC_SPOT_PLUS_ALL_DERIVATIVES_XGBoost_cfg02_F1.csv.gz",
+      "sha256": "31d179710738182acc93d157808e5feb0b79f8ec5d6897c495c2e43a92dca9ff",
+      "size_bytes": 14526
+    },
+    {
+      "path": "development_folds/BTC_SPOT_PLUS_ALL_DERIVATIVES_XGBoost_cfg02_F2.csv.gz",
+      "sha256": "63f90c7001f9a317deb99ccfcc0ce81b808126f1e74d4f952345e4a92fbeaccc",
+      "size_bytes": 13925
+    },
+    {
+      "path": "development_folds/BTC_SPOT_PLUS_ALL_DERIVATIVES_XGBoost_cfg02_F3.csv.gz",
+      "sha256": "e7586bcba048b6e1b038a0548586029e9d59eda9dfe24e2519c9fd3e6af12081",
+      "size_bytes": 13940
+    },
+    {
+      "path": "development_folds/BTC_SPOT_PLUS_ALL_DERIVATIVES_XGBoost_cfg03_F1.csv.gz",
+      "sha256": "fdd7bc9ca1bb25353f36c20ccce77897cf25577789fe17b06680f5bb823075b8",
+      "size_bytes": 14526
+    },
+    {
+      "path": "development_folds/BTC_SPOT_PLUS_ALL_DERIVATIVES_XGBoost_cfg03_F2.csv.gz",
+      "sha256": "9d6c0010995dcefe0a1afd9ade113312f8ae179c8b0458d51e45693568237fd9",
+      "size_bytes": 13925
+    },
+    {
+      "path": "development_folds/BTC_SPOT_PLUS_ALL_DERIVATIVES_XGBoost_cfg03_F3.csv.gz",
+      "sha256": "44b3eb0b06d840451e4c7204844e1e9413f30988271be47f5c66d1d4e44c33ef",
+      "size_bytes": 13941
+    },
+    {
+      "path": "development_folds/BTC_SPOT_PLUS_ALL_DERIVATIVES_selection.json",
+      "sha256": "e912eeeb874379398b70455f103005d3af25c6ee62769f490e51da30cbc37e04",
+      "size_bytes": 16411
+    },
+    {
+      "path": "development_folds/ETH_SPOT_ONLY_CatBoost_cfg01_F1.csv.gz",
+      "sha256": "de7aa64280c4e4cde28a3903d299698c9dd415a15ec0cc5c11b79c9880b315ef",
+      "size_bytes": 19790
+    },
+    {
+      "path": "development_folds/ETH_SPOT_ONLY_CatBoost_cfg01_F2.csv.gz",
+      "sha256": "bd060ae213ef894d617d93f5f30eb2832bac26dd174845293bf901e7204a7b02",
+      "size_bytes": 18869
+    },
+    {
+      "path": "development_folds/ETH_SPOT_ONLY_CatBoost_cfg01_F3.csv.gz",
+      "sha256": "bfcf8b2bdf863d0a4b4720bf458b3474c0a614925531341fbc905c61e36f7d54",
+      "size_bytes": 19480
+    },
+    {
+      "path": "development_folds/ETH_SPOT_ONLY_CatBoost_cfg02_F1.csv.gz",
+      "sha256": "cf4622efe4a56608d934107cf8597414727053a8d7f50e859a728b32bee41fbe",
+      "size_bytes": 19777
+    },
+    {
+      "path": "development_folds/ETH_SPOT_ONLY_CatBoost_cfg02_F2.csv.gz",
+      "sha256": "91957e34ad82112d9d8a29c8bb4852facade02f506e429e55a9927afd90c9d58",
+      "size_bytes": 18891
+    },
+    {
+      "path": "development_folds/ETH_SPOT_ONLY_CatBoost_cfg02_F3.csv.gz",
+      "sha256": "1868ddf7b661f83a4c030a6616bc6088e88558124956142427ce61a905131daa",
+      "size_bytes": 19473
+    },
+    {
+      "path": "development_folds/ETH_SPOT_ONLY_CatBoost_cfg03_F1.csv.gz",
+      "sha256": "c4fefb58bf02cae54736b02756f831541a9203e3cf44b5ed094eeb873d1289f0",
+      "size_bytes": 19765
+    },
+    {
+      "path": "development_folds/ETH_SPOT_ONLY_CatBoost_cfg03_F2.csv.gz",
+      "sha256": "bec55030a80c7d811ac38558c01457610b6ba7b738f34c7a1f738204aabd877f",
+      "size_bytes": 18878
+    },
+    {
+      "path": "development_folds/ETH_SPOT_ONLY_CatBoost_cfg03_F3.csv.gz",
+      "sha256": "3cdebdc74825ab2c30c7ea466979509e479400533fca8cbc411a501f4c51ef2a",
+      "size_bytes": 19441
+    },
+    {
+      "path": "development_folds/ETH_SPOT_ONLY_ExtraTrees_cfg01_F1.csv.gz",
+      "sha256": "6ee040b6c4f0cc5fe953719501572daaa37b0fc4b2fe331517d62320c2a8c8b7",
+      "size_bytes": 19839
+    },
+    {
+      "path": "development_folds/ETH_SPOT_ONLY_ExtraTrees_cfg01_F2.csv.gz",
+      "sha256": "0d792917ec8e4c23cab71ed0df053b1db90cce0d3492e440e27f43c88dab1bb7",
+      "size_bytes": 18943
+    },
+    {
+      "path": "development_folds/ETH_SPOT_ONLY_ExtraTrees_cfg01_F3.csv.gz",
+      "sha256": "4dcc0763a74f624a6c9f81379c4aa6a6e6df775c3b905532c903696652e7ea63",
+      "size_bytes": 19543
+    },
+    {
+      "path": "development_folds/ETH_SPOT_ONLY_ExtraTrees_cfg02_F1.csv.gz",
+      "sha256": "61dd85d7cd1ec4415ca04b232ccff5a3021cc15a6534df47f4a72f8e84be9f3d",
+      "size_bytes": 19822
+    },
+    {
+      "path": "development_folds/ETH_SPOT_ONLY_ExtraTrees_cfg02_F2.csv.gz",
+      "sha256": "45a707acb15e76f7d8114c64e2d62f9a8da854c63079b1b41132c4f2bed4618d",
+      "size_bytes": 18914
+    },
+    {
+      "path": "development_folds/ETH_SPOT_ONLY_ExtraTrees_cfg02_F3.csv.gz",
+      "sha256": "6de3e66b4d2ba4998752bd155e28348d53704a075f5d344490b0e386d547fed4",
+      "size_bytes": 19542
+    },
+    {
+      "path": "development_folds/ETH_SPOT_ONLY_ExtraTrees_cfg03_F1.csv.gz",
+      "sha256": "acab024d691e7c2d738b6074f03cd0a6896f2fca5d9f97a597a33c3701e05d17",
+      "size_bytes": 19823
+    },
+    {
+      "path": "development_folds/ETH_SPOT_ONLY_ExtraTrees_cfg03_F2.csv.gz",
+      "sha256": "4b76c3f635df774e14f115588255a5654765ca8eb09bfed92554fade665395b3",
+      "size_bytes": 18954
+    },
+    {
+      "path": "development_folds/ETH_SPOT_ONLY_ExtraTrees_cfg03_F3.csv.gz",
+      "sha256": "55938765d1940b115f943362640ffb6ab34e0c9fef59c5e404fb9c7358077baf",
+      "size_bytes": 19484
+    },
+    {
+      "path": "development_folds/ETH_SPOT_ONLY_GRU_cfg03_F1.csv.gz",
+      "sha256": "56bae1e599fac56c3ef7a2eea6c843a5b6b6351dfad77f66f59e72be981c02ee",
+      "size_bytes": 19712
+    },
+    {
+      "path": "development_folds/ETH_SPOT_ONLY_GRU_cfg03_F2.csv.gz",
+      "sha256": "f3b5523ee01bbf599819de82f3935efff0851a1d92a937885779fc64ac36258b",
+      "size_bytes": 18829
+    },
+    {
+      "path": "development_folds/ETH_SPOT_ONLY_GRU_cfg03_F3.csv.gz",
+      "sha256": "1898a7e1826b43b503dcdfa577d8021353d3d5a18fd9929c2c7f60e7b153febf",
+      "size_bytes": 19475
+    },
+    {
+      "path": "development_folds/ETH_SPOT_ONLY_HistGradientBoosting_cfg01_F1.csv.gz",
+      "sha256": "f96df997cdeab04b86ae59214bd8cac55d65baf693b9bf928ca77c974fe40b03",
+      "size_bytes": 19857
+    },
+    {
+      "path": "development_folds/ETH_SPOT_ONLY_HistGradientBoosting_cfg01_F2.csv.gz",
+      "sha256": "8c729d161e075deea83c88549cc69f4da26bdeb0b92c6b50ebd6f57825108888",
+      "size_bytes": 18959
+    },
+    {
+      "path": "development_folds/ETH_SPOT_ONLY_HistGradientBoosting_cfg01_F3.csv.gz",
+      "sha256": "842a2d934c325de11964466b8a92474bad6b4419f6bff0da0b2e4c847921da24",
+      "size_bytes": 19510
+    },
+    {
+      "path": "development_folds/ETH_SPOT_ONLY_HistGradientBoosting_cfg02_F1.csv.gz",
+      "sha256": "cfede5fe22ee5d1e276517ea67b34f0330ad00ed4f405a155fdf2cc4accf772f",
+      "size_bytes": 19836
+    },
+    {
+      "path": "development_folds/ETH_SPOT_ONLY_HistGradientBoosting_cfg02_F2.csv.gz",
+      "sha256": "aec362eb5f1e91039ea8f940879503737630dd03e0a051c41660a36f85658b6f",
+      "size_bytes": 18974
+    },
+    {
+      "path": "development_folds/ETH_SPOT_ONLY_HistGradientBoosting_cfg02_F3.csv.gz",
+      "sha256": "d45599a2227151c7772779c637658f6997e01f6735ef61fe5a4443067191ccb6",
+      "size_bytes": 19540
+    },
+    {
+      "path": "development_folds/ETH_SPOT_ONLY_HistGradientBoosting_cfg03_F1.csv.gz",
+      "sha256": "b158eb0f4ca5581c6cd3ecd6fb5c0cadeff80abeee8f2fd018d3eec57743dae7",
+      "size_bytes": 19883
+    },
+    {
+      "path": "development_folds/ETH_SPOT_ONLY_HistGradientBoosting_cfg03_F2.csv.gz",
+      "sha256": "ec42c019edcb6498a68d781c1880fc59cefa3f80fbdff1ba13b995d5ad56a9dd",
+      "size_bytes": 18983
+    },
+    {
+      "path": "development_folds/ETH_SPOT_ONLY_HistGradientBoosting_cfg03_F3.csv.gz",
+      "sha256": "a474b4e0f71a5637d76f0c2ad3c2a1ab6d666ca844cc0a94af70e816403ca145",
+      "size_bytes": 19566
+    },
+    {
+      "path": "development_folds/ETH_SPOT_ONLY_MLP_cfg01_F1.csv.gz",
+      "sha256": "a61a947b449cd4f195f31fea48aca5548a04f9972086a4d96e8cc9bb24c4df09",
+      "size_bytes": 19866
+    },
+    {
+      "path": "development_folds/ETH_SPOT_ONLY_MLP_cfg01_F2.csv.gz",
+      "sha256": "02ff5ec62c60ffdc1603c1ba11f0de7fa990a0c3b153cfb3ac604b3f593fc57a",
+      "size_bytes": 18907
+    },
+    {
+      "path": "development_folds/ETH_SPOT_ONLY_MLP_cfg01_F3.csv.gz",
+      "sha256": "b7dc87e2446377dddf03a94018dc17ee7083bf94f8d0f16ca760c7c4638a77ac",
+      "size_bytes": 19485
+    },
+    {
+      "path": "development_folds/ETH_SPOT_ONLY_Persistence_fixed_F1.csv.gz",
+      "sha256": "6321aa3281d7fd1664886e1330429c2e7a7eddc1a9943c9fd19acbe9d431bec5",
+      "size_bytes": 20225
+    },
+    {
+      "path": "development_folds/ETH_SPOT_ONLY_Persistence_fixed_F2.csv.gz",
+      "sha256": "098e4cd6b7629c90de79376b67170961083156a815d350136a4e9640e0accd4a",
+      "size_bytes": 19297
+    },
+    {
+      "path": "development_folds/ETH_SPOT_ONLY_Persistence_fixed_F3.csv.gz",
+      "sha256": "35ab6177f0f58c16b0badcf6a8de5e7e878ac54d977cceab9d92454b7be004db",
+      "size_bytes": 19928
+    },
+    {
+      "path": "development_folds/ETH_SPOT_ONLY_Ridge_cfg01_F1.csv.gz",
+      "sha256": "45c59103d1809c755a83f3dcb0c208e09a33e133d0a9d878c175d0dfce538773",
+      "size_bytes": 19789
+    },
+    {
+      "path": "development_folds/ETH_SPOT_ONLY_Ridge_cfg01_F2.csv.gz",
+      "sha256": "1262bc66670a933999e401ac7cb0bd8cfd5903ed4f4bdbbcbfd5756ca2e0f577",
+      "size_bytes": 18853
+    },
+    {
+      "path": "development_folds/ETH_SPOT_ONLY_Ridge_cfg01_F3.csv.gz",
+      "sha256": "960adb208c9115417462c2029c4f05b4dd61cfd38dc7dc4e122b6744ea1d0496",
+      "size_bytes": 19479
+    },
+    {
+      "path": "development_folds/ETH_SPOT_ONLY_Ridge_cfg02_F1.csv.gz",
+      "sha256": "b24a8b94ef78d51d8bf32a05beccd35974b7c607cae2c96245f3952aba7a5767",
+      "size_bytes": 19730
+    },
+    {
+      "path": "development_folds/ETH_SPOT_ONLY_Ridge_cfg02_F2.csv.gz",
+      "sha256": "14d40373370748b5c409bc3e044d6ad5795f39bffe0d4c4f100ea318bb32cc0d",
+      "size_bytes": 18867
+    },
+    {
+      "path": "development_folds/ETH_SPOT_ONLY_Ridge_cfg02_F3.csv.gz",
+      "sha256": "f5abe25482c524f0ebc9d26f2642cffccff590d79efa515a96ef1cfd03787b9a",
+      "size_bytes": 19474
+    },
+    {
+      "path": "development_folds/ETH_SPOT_ONLY_Ridge_cfg03_F1.csv.gz",
+      "sha256": "0f5abd2557ff944d6b9ca4e4717889333f8bce5229e7c551e85faa9080b7e88a",
+      "size_bytes": 19791
+    },
+    {
+      "path": "development_folds/ETH_SPOT_ONLY_Ridge_cfg03_F2.csv.gz",
+      "sha256": "a0285b2fec27c7622a415618a76439bcc4b354246733a713928e5beab3e38a41",
+      "size_bytes": 18867
+    },
+    {
+      "path": "development_folds/ETH_SPOT_ONLY_Ridge_cfg03_F3.csv.gz",
+      "sha256": "c773a364bb7d440ac26ead88dc83cddc3630ce6651789711e4dc70852e013cff",
+      "size_bytes": 19484
+    },
+    {
+      "path": "development_folds/ETH_SPOT_ONLY_TrainingMean_fixed_F1.csv.gz",
+      "sha256": "dc80cbe52fc5bfbf64a0e0b231d3efac7927dd9c0c71ff950b90cc183c997cb2",
+      "size_bytes": 14609
+    },
+    {
+      "path": "development_folds/ETH_SPOT_ONLY_TrainingMean_fixed_F2.csv.gz",
+      "sha256": "869290adfef01a18833f6e8b0e64ddae690761313166885ccd36eef3dcad182e",
+      "size_bytes": 13949
+    },
+    {
+      "path": "development_folds/ETH_SPOT_ONLY_TrainingMean_fixed_F3.csv.gz",
+      "sha256": "1a4faf6bf59cfdb4dab4ce0f86344145805440e814afd70f3937753fada839da",
+      "size_bytes": 14404
+    },
+    {
+      "path": "development_folds/ETH_SPOT_ONLY_XGBoost_cfg01_F1.csv.gz",
+      "sha256": "8a3c2e9909a27973eee7b363085f49ef6f7ea736018b15b547c00cb3bf327898",
+      "size_bytes": 14631
+    },
+    {
+      "path": "development_folds/ETH_SPOT_ONLY_XGBoost_cfg01_F2.csv.gz",
+      "sha256": "282cbf3d61491cb8b4b68b8bb8a90fc8b16ce975b26b4f578e916ff6583bbfeb",
+      "size_bytes": 13963
+    },
+    {
+      "path": "development_folds/ETH_SPOT_ONLY_XGBoost_cfg01_F3.csv.gz",
+      "sha256": "52e6efeee0879376b2563cfb04dabb2db548b965560daf29089958795a479000",
+      "size_bytes": 14426
+    },
+    {
+      "path": "development_folds/ETH_SPOT_ONLY_XGBoost_cfg02_F1.csv.gz",
+      "sha256": "8a72d9ca3f1ecb0989d2a9ef7a075eaea3da0a518b58f7ae33e6e3287aee79f4",
+      "size_bytes": 14631
+    },
+    {
+      "path": "development_folds/ETH_SPOT_ONLY_XGBoost_cfg02_F2.csv.gz",
+      "sha256": "35b7c0e3b16adef647dbea796a58c9c0bb9ecd5dd75acc165816a6a75d79fff5",
+      "size_bytes": 13963
+    },
+    {
+      "path": "development_folds/ETH_SPOT_ONLY_XGBoost_cfg02_F3.csv.gz",
+      "sha256": "07a2cd9f1bd1d96728df4515697a0ecba428bc3e391e24f6b7a3c7e4baec4c10",
+      "size_bytes": 14426
+    },
+    {
+      "path": "development_folds/ETH_SPOT_ONLY_XGBoost_cfg03_F1.csv.gz",
+      "sha256": "fa3d42e3c7cc615ac6ab7a94f4fc595cda69f76925201d2cf4f36d3288afa26a",
+      "size_bytes": 14631
+    },
+    {
+      "path": "development_folds/ETH_SPOT_ONLY_XGBoost_cfg03_F2.csv.gz",
+      "sha256": "d82cf20e8940bf286714d293fef2477f13e9da65b5d5a7ba9c118a0c6aed2d16",
+      "size_bytes": 13963
+    },
+    {
+      "path": "development_folds/ETH_SPOT_ONLY_XGBoost_cfg03_F3.csv.gz",
+      "sha256": "251eae33294895af50220d7e6de49ef32f1641f6cc94b5eaeca1fae7f7d53624",
+      "size_bytes": 14426
+    },
+    {
+      "path": "development_folds/ETH_SPOT_ONLY_selection.json",
+      "sha256": "bb445e3fbbb1ae716d8edce1d41946a82c4e18b20e5d5eb57ab6f00372adae6e",
+      "size_bytes": 16366
+    },
+    {
+      "path": "development_folds/ETH_SPOT_PLUS_ALL_DERIVATIVES_CatBoost_cfg01_F1.csv.gz",
+      "sha256": "6447635aef5d4fb5617cccd7f831ee8dcd564b72b7cda314eeb2328b688d812b",
+      "size_bytes": 19844
+    },
+    {
+      "path": "development_folds/ETH_SPOT_PLUS_ALL_DERIVATIVES_CatBoost_cfg01_F2.csv.gz",
+      "sha256": "9ca286ed160673c9fcde3ff316d891512eb0188df2b19e607d2b545567f4b45e",
+      "size_bytes": 18959
+    },
+    {
+      "path": "development_folds/ETH_SPOT_PLUS_ALL_DERIVATIVES_CatBoost_cfg01_F3.csv.gz",
+      "sha256": "f4fe1eda92c73900a384a57f972b22b1191802af11f17f75ba06e575d3eba639",
+      "size_bytes": 19522
+    },
+    {
+      "path": "development_folds/ETH_SPOT_PLUS_ALL_DERIVATIVES_CatBoost_cfg02_F1.csv.gz",
+      "sha256": "9a598f91170578088fed99563aefc3d552705b0b172d0e978809def2880da354",
+      "size_bytes": 19837
+    },
+    {
+      "path": "development_folds/ETH_SPOT_PLUS_ALL_DERIVATIVES_CatBoost_cfg02_F2.csv.gz",
+      "sha256": "3df0cb960eb3012cb7a5f02b10d76b8c502fc070bee8a8073e69d2fed2fb0d7d",
+      "size_bytes": 18986
+    },
+    {
+      "path": "development_folds/ETH_SPOT_PLUS_ALL_DERIVATIVES_CatBoost_cfg02_F3.csv.gz",
+      "sha256": "21f5b241963748a0b35608aefb7a0bb45883031ee3985f3f111e7b9806d3da86",
+      "size_bytes": 19497
+    },
+    {
+      "path": "development_folds/ETH_SPOT_PLUS_ALL_DERIVATIVES_CatBoost_cfg03_F1.csv.gz",
+      "sha256": "3a8724c5a91f6136aeb74736d44ddb1c829034fbcfe25405d29b39f015ab76c9",
+      "size_bytes": 19849
+    },
+    {
+      "path": "development_folds/ETH_SPOT_PLUS_ALL_DERIVATIVES_CatBoost_cfg03_F2.csv.gz",
+      "sha256": "692efe1cd1c45d67c5fac31dbd799a4db28b0f679fb418b2f9cb2d1811504565",
+      "size_bytes": 18979
+    },
+    {
+      "path": "development_folds/ETH_SPOT_PLUS_ALL_DERIVATIVES_CatBoost_cfg03_F3.csv.gz",
+      "sha256": "1c124dab40bd73d1858a9e96e7ecb1ed1dc1b7550477cca923a92733bbc2707f",
+      "size_bytes": 19544
+    },
+    {
+      "path": "development_folds/ETH_SPOT_PLUS_ALL_DERIVATIVES_ExtraTrees_cfg01_F1.csv.gz",
+      "sha256": "42d1b5707bd2fc767042a2b4e32fcd9287a00c27f11ba572bc7f39e1145e67da",
+      "size_bytes": 19942
+    },
+    {
+      "path": "development_folds/ETH_SPOT_PLUS_ALL_DERIVATIVES_ExtraTrees_cfg01_F2.csv.gz",
+      "sha256": "da9bafa88a93792eba049d3ee8832137af63302bf21c11ddf502b9e5e16b0fbf",
+      "size_bytes": 19087
+    },
+    {
+      "path": "development_folds/ETH_SPOT_PLUS_ALL_DERIVATIVES_ExtraTrees_cfg01_F3.csv.gz",
+      "sha256": "1c7485d48fa348abb0ef47a143f4d9a12d239c6d95c7235d108cadfa443c9bbd",
+      "size_bytes": 19626
+    },
+    {
+      "path": "development_folds/ETH_SPOT_PLUS_ALL_DERIVATIVES_ExtraTrees_cfg02_F1.csv.gz",
+      "sha256": "7807d6ee31a83ad420ae6e4ca29a4cad0a8cd7dfb109a71ec16e3d44f0a4da77",
+      "size_bytes": 19922
+    },
+    {
+      "path": "development_folds/ETH_SPOT_PLUS_ALL_DERIVATIVES_ExtraTrees_cfg02_F2.csv.gz",
+      "sha256": "029c183751b38071ea7fce78805f299abf87a2e15426bb22d7605b0e4a4d413e",
+      "size_bytes": 19064
+    },
+    {
+      "path": "development_folds/ETH_SPOT_PLUS_ALL_DERIVATIVES_ExtraTrees_cfg02_F3.csv.gz",
+      "sha256": "0ddee04e6f0c19094b8b935acf857551146b84dbe9c9b63116c6902cc1adcd74",
+      "size_bytes": 19622
+    },
+    {
+      "path": "development_folds/ETH_SPOT_PLUS_ALL_DERIVATIVES_ExtraTrees_cfg03_F1.csv.gz",
+      "sha256": "3277b564e81661b6b093ffb228a7ccb79c5bacb2fcc619e24aebbbc7ca7846f1",
+      "size_bytes": 19971
+    },
+    {
+      "path": "development_folds/ETH_SPOT_PLUS_ALL_DERIVATIVES_ExtraTrees_cfg03_F2.csv.gz",
+      "sha256": "32a8415d634b52406dc35ad912f7b4906f9b26a8c6d100c9f96d7a81b04a2f9f",
+      "size_bytes": 19061
+    },
+    {
+      "path": "development_folds/ETH_SPOT_PLUS_ALL_DERIVATIVES_ExtraTrees_cfg03_F3.csv.gz",
+      "sha256": "3943701a37b38f113e19bbccadf0bdf7323a12fb1a6e1fbe6eadceced8f77fac",
+      "size_bytes": 19689
+    },
+    {
+      "path": "development_folds/ETH_SPOT_PLUS_ALL_DERIVATIVES_GRU_cfg03_F1.csv.gz",
+      "sha256": "b2bfdf819d9354756e0447dc1d62edd217ff42ac0416ac8fb61e4a12a6915e9e",
+      "size_bytes": 19904
+    },
+    {
+      "path": "development_folds/ETH_SPOT_PLUS_ALL_DERIVATIVES_GRU_cfg03_F2.csv.gz",
+      "sha256": "3dc9d03b67e49ab45f464904f823a65ccd091650b416cd3cbbdd3cfa774b1a62",
+      "size_bytes": 19009
+    },
+    {
+      "path": "development_folds/ETH_SPOT_PLUS_ALL_DERIVATIVES_GRU_cfg03_F3.csv.gz",
+      "sha256": "28142a892fa6300b003f99610099ec6ad20b5db6914a394d912eff5b6f7dab73",
+      "size_bytes": 19518
+    },
+    {
+      "path": "development_folds/ETH_SPOT_PLUS_ALL_DERIVATIVES_HistGradientBoosting_cfg01_F1.csv.gz",
+      "sha256": "b07949ce9dc6d3149d7d07d8812e71d009d7a7d39a3ecfda880979d823fc1525",
+      "size_bytes": 20016
+    },
+    {
+      "path": "development_folds/ETH_SPOT_PLUS_ALL_DERIVATIVES_HistGradientBoosting_cfg01_F2.csv.gz",
+      "sha256": "250ab1e0653c52d3d645e243d019a6c2414b924a35d517754c252b88e7ad9962",
+      "size_bytes": 19128
+    },
+    {
+      "path": "development_folds/ETH_SPOT_PLUS_ALL_DERIVATIVES_HistGradientBoosting_cfg01_F3.csv.gz",
+      "sha256": "3757df5ba2b053257482697d3e836015c763500435df917161d97a8659e2a5ab",
+      "size_bytes": 19694
+    },
+    {
+      "path": "development_folds/ETH_SPOT_PLUS_ALL_DERIVATIVES_HistGradientBoosting_cfg02_F1.csv.gz",
+      "sha256": "15d09e3b07d90cb9c9f5711f67ba04575f86f5d8edb5761a4f785c1f362c1a7b",
+      "size_bytes": 20035
+    },
+    {
+      "path": "development_folds/ETH_SPOT_PLUS_ALL_DERIVATIVES_HistGradientBoosting_cfg02_F2.csv.gz",
+      "sha256": "da9116790613113662506833b10549b95e3430549fab7aa32d634f5b261b1d3f",
+      "size_bytes": 19166
+    },
+    {
+      "path": "development_folds/ETH_SPOT_PLUS_ALL_DERIVATIVES_HistGradientBoosting_cfg02_F3.csv.gz",
+      "sha256": "bfd68e2ce75915f9d3700b498cdc5416069da8fd9073a219b0401d6c50be4aa2",
+      "size_bytes": 19751
+    },
+    {
+      "path": "development_folds/ETH_SPOT_PLUS_ALL_DERIVATIVES_HistGradientBoosting_cfg03_F1.csv.gz",
+      "sha256": "744d88ff09685e1ea3e4793333a91e648403515d2482e5533ca624be3b738d23",
+      "size_bytes": 19999
+    },
+    {
+      "path": "development_folds/ETH_SPOT_PLUS_ALL_DERIVATIVES_HistGradientBoosting_cfg03_F2.csv.gz",
+      "sha256": "ccdeed3351b6a2efbcca8840e6dc8f218478235e5b3b8a468c32d84cde6e37f6",
+      "size_bytes": 19130
+    },
+    {
+      "path": "development_folds/ETH_SPOT_PLUS_ALL_DERIVATIVES_HistGradientBoosting_cfg03_F3.csv.gz",
+      "sha256": "3198f61ab7839924bf3e449857dc7581e3a3c570874cd4b0f7b600f94253103f",
+      "size_bytes": 19713
+    },
+    {
+      "path": "development_folds/ETH_SPOT_PLUS_ALL_DERIVATIVES_MLP_cfg01_F1.csv.gz",
+      "sha256": "7681187421b4c0560eb07b9ab12603516adcd5482d1c70761834a8371093ff70",
+      "size_bytes": 19924
+    },
+    {
+      "path": "development_folds/ETH_SPOT_PLUS_ALL_DERIVATIVES_MLP_cfg01_F2.csv.gz",
+      "sha256": "e82e6076891883092a6b80d5707e10146ec878f2f4682598c732905c70772dc2",
+      "size_bytes": 19048
+    },
+    {
+      "path": "development_folds/ETH_SPOT_PLUS_ALL_DERIVATIVES_MLP_cfg01_F3.csv.gz",
+      "sha256": "bd2cc7bad457df4029b852bf1196e24e6ca5b4fa987eee9e2b9c0944b90084b6",
+      "size_bytes": 19640
+    },
+    {
+      "path": "development_folds/ETH_SPOT_PLUS_ALL_DERIVATIVES_Persistence_fixed_F1.csv.gz",
+      "sha256": "bc7b11fc8313eb28a0bbce9afd4de1393abd922f04975de44eb8eb02fd40a82a",
+      "size_bytes": 20359
+    },
+    {
+      "path": "development_folds/ETH_SPOT_PLUS_ALL_DERIVATIVES_Persistence_fixed_F2.csv.gz",
+      "sha256": "f2fb01c71dcdc202aefed4dc6c23c823204a4ddb4a9401d0b941b614916a44a7",
+      "size_bytes": 19437
+    },
+    {
+      "path": "development_folds/ETH_SPOT_PLUS_ALL_DERIVATIVES_Persistence_fixed_F3.csv.gz",
+      "sha256": "2f4b230b0bc8a9a43aa76e207a66b97512328b13e804fc7754732c5eb612c264",
+      "size_bytes": 20077
+    },
+    {
+      "path": "development_folds/ETH_SPOT_PLUS_ALL_DERIVATIVES_Ridge_cfg01_F1.csv.gz",
+      "sha256": "7a30a19c445e5d0de9838c2ce03f146f19539598742cf610ae132e31bcc836d3",
+      "size_bytes": 19858
+    },
+    {
+      "path": "development_folds/ETH_SPOT_PLUS_ALL_DERIVATIVES_Ridge_cfg01_F2.csv.gz",
+      "sha256": "43bd9d0f360741552b4e296c7784a2ef98faca707b4ac12a383375695722b485",
+      "size_bytes": 18990
+    },
+    {
+      "path": "development_folds/ETH_SPOT_PLUS_ALL_DERIVATIVES_Ridge_cfg01_F3.csv.gz",
+      "sha256": "cd2197300710bc790e50ecdb2e7520071bfc83c3f68bd0fd15df0e1b6c88dec5",
+      "size_bytes": 19552
+    },
+    {
+      "path": "development_folds/ETH_SPOT_PLUS_ALL_DERIVATIVES_Ridge_cfg02_F1.csv.gz",
+      "sha256": "86bd30cb9436e4fb56940559a2f7dc03733dd03bb1b32e019735f1ba8007095b",
+      "size_bytes": 19851
+    },
+    {
+      "path": "development_folds/ETH_SPOT_PLUS_ALL_DERIVATIVES_Ridge_cfg02_F2.csv.gz",
+      "sha256": "6eb367d0c608d346a12bc6a3f1b6d8cdc151f644b2fb34f6fb30a881f772bcfb",
+      "size_bytes": 19028
+    },
+    {
+      "path": "development_folds/ETH_SPOT_PLUS_ALL_DERIVATIVES_Ridge_cfg02_F3.csv.gz",
+      "sha256": "a8d75e098656f21c463612ebd2466c3db0e1f131fd7784ca0dc7b54521e00bdb",
+      "size_bytes": 19587
+    },
+    {
+      "path": "development_folds/ETH_SPOT_PLUS_ALL_DERIVATIVES_Ridge_cfg03_F1.csv.gz",
+      "sha256": "b05ecccc6d4f1a480ad9ec736e202ad59b672729f0ec123a3c2701bd77157bc5",
+      "size_bytes": 19824
+    },
+    {
+      "path": "development_folds/ETH_SPOT_PLUS_ALL_DERIVATIVES_Ridge_cfg03_F2.csv.gz",
+      "sha256": "a6735679879a9adb9a041a01386cd84571cdd07f7cb42b224228e174ed270753",
+      "size_bytes": 18993
+    },
+    {
+      "path": "development_folds/ETH_SPOT_PLUS_ALL_DERIVATIVES_Ridge_cfg03_F3.csv.gz",
+      "sha256": "929f1990bf241613fe852c3f3f20b6673ec0437ef1e0cfee3d26984cc4aaed5d",
+      "size_bytes": 19575
+    },
+    {
+      "path": "development_folds/ETH_SPOT_PLUS_ALL_DERIVATIVES_TrainingMean_fixed_F1.csv.gz",
+      "sha256": "cc17fa14ad9120ab69b00c873661169cf75c2e03425ccb77a61d49eec5d50c8a",
+      "size_bytes": 14664
+    },
+    {
+      "path": "development_folds/ETH_SPOT_PLUS_ALL_DERIVATIVES_TrainingMean_fixed_F2.csv.gz",
+      "sha256": "102b51af64fb8e40bfd3f09979970333c6c22ed03fad6645d3684a4a4566e2bd",
+      "size_bytes": 14021
+    },
+    {
+      "path": "development_folds/ETH_SPOT_PLUS_ALL_DERIVATIVES_TrainingMean_fixed_F3.csv.gz",
+      "sha256": "b1e6f2a7dffad3f1ef639e9542d005bfa09f10d84664da9bdc8d3d70c75e45e5",
+      "size_bytes": 14477
+    },
+    {
+      "path": "development_folds/ETH_SPOT_PLUS_ALL_DERIVATIVES_XGBoost_cfg01_F1.csv.gz",
+      "sha256": "1dae08f1fd6685717e0db72b868429efbcd597db06aa58d647e8f4659a7f866c",
+      "size_bytes": 14649
+    },
+    {
+      "path": "development_folds/ETH_SPOT_PLUS_ALL_DERIVATIVES_XGBoost_cfg01_F2.csv.gz",
+      "sha256": "48869e92d75642fe53354b7977fa3226d1db9eca74045b73a0b6c4018508afb7",
+      "size_bytes": 14011
+    },
+    {
+      "path": "development_folds/ETH_SPOT_PLUS_ALL_DERIVATIVES_XGBoost_cfg01_F3.csv.gz",
+      "sha256": "45ea7ef9a0513c2ae02e301f6eeae822444d081a1704ca89a5eca9c70fa8a7a2",
+      "size_bytes": 14458
+    },
+    {
+      "path": "development_folds/ETH_SPOT_PLUS_ALL_DERIVATIVES_XGBoost_cfg02_F1.csv.gz",
+      "sha256": "a9959f048b29f23d126e349424920a5f04c6631d0d9427a28c33ae58054b96b6",
+      "size_bytes": 14648
+    },
+    {
+      "path": "development_folds/ETH_SPOT_PLUS_ALL_DERIVATIVES_XGBoost_cfg02_F2.csv.gz",
+      "sha256": "fc3300510d70514d7696d38069bcf1ddce5b288de72fbc8668bfb6a144c0f96b",
+      "size_bytes": 14011
+    },
+    {
+      "path": "development_folds/ETH_SPOT_PLUS_ALL_DERIVATIVES_XGBoost_cfg02_F3.csv.gz",
+      "sha256": "9df18cae5a972a4d74630b62c7767133d39de03b6ec2649ad50f93ce988cca9b",
+      "size_bytes": 14458
+    },
+    {
+      "path": "development_folds/ETH_SPOT_PLUS_ALL_DERIVATIVES_XGBoost_cfg03_F1.csv.gz",
+      "sha256": "5c0477da6b6968d9776430105fef731a132055cf4dab0a7d9089467264894e5e",
+      "size_bytes": 14648
+    },
+    {
+      "path": "development_folds/ETH_SPOT_PLUS_ALL_DERIVATIVES_XGBoost_cfg03_F2.csv.gz",
+      "sha256": "fa2163ae15873f8d2e20947d9e6d6f34ca6765f92400e522fc41ea47bcbbbd60",
+      "size_bytes": 14011
+    },
+    {
+      "path": "development_folds/ETH_SPOT_PLUS_ALL_DERIVATIVES_XGBoost_cfg03_F3.csv.gz",
+      "sha256": "7ef82cfa5eaca0ec392fe05c0f26de053e604b06520602e36f4a8ecda2e18263",
+      "size_bytes": 14458
+    },
+    {
+      "path": "development_folds/ETH_SPOT_PLUS_ALL_DERIVATIVES_selection.json",
+      "sha256": "fd765002ec1458b270b017c0cea03d135ed2b3aa8e27edfdfea2d5fa69e8434c",
+      "size_bytes": 16432
+    },
+    {
+      "path": "development_metric_reconstruction.csv",
+      "sha256": "be2bab461d5a879b4778a7d7f5e3ae605fbd7cd27ba0ac4db26724fad7914df3",
+      "size_bytes": 7575
+    },
+    {
+      "path": "figures/figure_1_timeline.png",
+      "sha256": "dadc38c755f9660a4a308e39f8c97644a1f60e4538704a9c3d48feebb5ebeb12",
+      "size_bytes": 56927
+    },
+    {
+      "path": "figures/figure_2_development_mae.png",
+      "sha256": "e4da2431bf2b41b19ad5ea852d5e9009257fbd4d3127eee91461bdd6691d02e6",
+      "size_bytes": 124359
+    },
+    {
+      "path": "figures/figure_3_test_mae.png",
+      "sha256": "4dd74e8d1ad85d7f47a0bf8fa8615ed0f8c8bbc387b64fd262d4abe59e93d33d",
+      "size_bytes": 120690
+    },
+    {
+      "path": "figures/figure_4_paired_loss_difference.png",
+      "sha256": "2f6ea35c4011eef4774bd628d2c56b61037ebfed0b80d844cb5518047f280c67",
+      "size_bytes": 491101
+    },
+    {
+      "path": "figures/figure_5_primary_delta_intervals.png",
+      "sha256": "df1e7053eaac8010b03c0e6b755ce5fae27539152a49bc9affa38dd531875caf",
+      "size_bytes": 42860
+    },
+    {
+      "path": "figures/figure_6_phase_evidence_map.png",
+      "sha256": "3f0dd7a81a908306459f9d7c55c37584ba0159a5a327f02349f58555da043e72",
+      "size_bytes": 92919
+    },
+    {
+      "path": "final_test_metrics_and_selection.json",
+      "sha256": "7e0363be80396831ac31635c92f38a26f1b2f8573485090b1f31f1e83021b068",
+      "size_bytes": 21788
+    },
+    {
+      "path": "final_validation.json",
+      "sha256": "35df383d6a7f2b1fbaea3a12a6a5f918d5f6ebc6ca4230e6f3b206505ea11685",
+      "size_bytes": 1106
+    },
+    {
+      "path": "phase14_summary.json",
+      "sha256": "7629798e50dbe71abc1188f5a0c93fb9d34d2e074208c93b28f86fecc9e594f8",
+      "size_bytes": 19966
+    },
+    {
+      "path": "predictions/all_development_validation_predictions.csv.gz",
+      "sha256": "10e31e30ff2721114912a491ca07e56eb037dab7d8b695b4e90fba92efa371c7",
+      "size_bytes": 4030653
+    },
+    {
+      "path": "predictions/development_reference_predictions.csv.gz",
+      "sha256": "dc2557aef4212a06116cfb0f17037420407a8569eafb79bb3d80259beea66ad2",
+      "size_bytes": 398675
+    },
+    {
+      "path": "predictions/final_test_predictions.csv.gz",
+      "sha256": "b61979de8c82733f675e2851f833cd74e82e449fb37135f0dc0428ade0fac89f",
+      "size_bytes": 2256546
+    },
+    {
+      "path": "pretraining_lock.json",
+      "sha256": "f36f1be8a3b6768a7d873c8a77087ed9d6b48df185974de97f7151b1b3add603",
+      "size_bytes": 626
+    },
+    {
+      "path": "pretraining_lock.sha256",
+      "sha256": "ef36acc57f59326e12ffeff6792a43241b27fc764787fe38611b11b48d2a813f",
+      "size_bytes": 88
+    },
+    {
+      "path": "scripts/__pycache__/evaluate_frozen_test.cpython-312.pyc",
+      "sha256": "41c07c7dc5290d861a4a2f080a142aa357121332dca62e92bef7c6f3e791d283",
+      "size_bytes": 38476
+    },
+    {
+      "path": "scripts/__pycache__/finalize_phase14.cpython-312.pyc",
+      "sha256": "7b8c0033c64a4a637aa476013cd2c8cbca4e787fd7c419617f610d0406b19abf",
+      "size_bytes": 57458
+    },
+    {
+      "path": "scripts/__pycache__/run_development.cpython-312.pyc",
+      "sha256": "e1ddb1137193c8682e01570ca6de1bdc09d18b1ceb0932a3d9751f4e8c3cc129",
+      "size_bytes": 30901
+    },
+    {
+      "path": "scripts/evaluate_frozen_test.py",
+      "sha256": "e105e3e03327e25b3c2ef6f8a53d8716073d914292fd11a2915d23474e62a64d",
+      "size_bytes": 18511
+    },
+    {
+      "path": "scripts/finalize_phase14.py",
+      "sha256": "d615a7ea3f411108142fbfd1ed5ebc6cea0316fce87571ccb978d5ad10e12761",
+      "size_bytes": 37521
+    },
+    {
+      "path": "scripts/prepare_lock.py",
+      "sha256": "25d1aa4b930769b5c9154486a9043c8791374233b2b1d098bb9fbef3f709c8b0",
+      "size_bytes": 23789
+    },
+    {
+      "path": "scripts/run_development.py",
+      "sha256": "37147a00a70ed731a0f3d1f7643cdb46ab6de2bc0b7470ad2ed0340cf01d0800",
+      "size_bytes": 16039
+    },
+    {
+      "path": "scripts/save_dev_reference_predictions.py",
+      "sha256": "24506284dafcf2e214c729ae8e34f646a4a13054798c3c28b8f2f7e6b1bb2371",
+      "size_bytes": 1556
+    },
+    {
+      "path": "selection_freeze.json",
+      "sha256": "086e74619225256873ad376c5dcb7ca21e74db29e29be9936b067a09410bbf8c",
+      "size_bytes": 18057
+    },
+    {
+      "path": "selection_freeze.sha256",
+      "sha256": "3ac9f7ae2f8ed51c7fa12c50af7e60d6c7b5605028a16c8ac36aeadad55001d0",
+      "size_bytes": 88
+    },
+    {
+      "path": "tables/table1_development_selection.csv",
+      "sha256": "55170dd739a7327c8c234e1441b7773c4ae89fd60404122283d9622164dde123",
+      "size_bytes": 5545
+    },
+    {
+      "path": "tables/table1_development_selection.md",
+      "sha256": "f770887faa97530f4702a335a059e6b391bf05d1637c6cbf90ec9e0cca9462cd",
+      "size_bytes": 12285
+    },
+    {
+      "path": "tables/table2_complete_test_results.csv",
+      "sha256": "85ac017168ba1a6010ce8bb7135e9f5e78c77e08f50f238a9f0ea1a413b9fb3c",
+      "size_bytes": 2076
+    },
+    {
+      "path": "tables/table2_complete_test_results.md",
+      "sha256": "669cb78086f61f716d2f3b3353ed199eb76506ec9999650c5e105f5e22c57c6d",
+      "size_bytes": 3359
+    },
+    {
+      "path": "tables/table3_primary_comparison.csv",
+      "sha256": "970297ad743d6a0c10f40b7ed61669b1467476eb3bfc5e589b41a6f045ce1a7a",
+      "size_bytes": 1015
+    },
+    {
+      "path": "tables/table3_primary_comparison.md",
+      "sha256": "99daa88cc921cdeb6faccafdb335ed27ad81e52e3cebebde57f204690f4ee06e",
+      "size_bytes": 1280
+    },
+    {
+      "path": "tables/table4_prior_phase_comparison.csv",
+      "sha256": "23b5a8d700c1bf082c11f3d5d3f09b0f8a7814e72a0beceffe6c16b226cf8f46",
+      "size_bytes": 525
+    },
+    {
+      "path": "tables/table4_prior_phase_comparison.md",
+      "sha256": "cfd8841d0174edbb7552c38e4958bc095b62130a880a7d53f90f9a8ca3057044",
+      "size_bytes": 1290
+    },
+    {
+      "path": "tables/table5_neural_reliability.csv",
+      "sha256": "9c7417c884e379e0d6b7d6a00b22d8d19502c0428fe5a4d7d23b2f7e32eaf5d9",
+      "size_bytes": 3884
+    },
+    {
+      "path": "tables/table5_neural_reliability.md",
+      "sha256": "8f6f2b0885b194801581bd9ec56333dbc4d59e4272e9ba9443798f0f5ebb21c8",
+      "size_bytes": 3762
+    },
+    {
+      "path": "test_metric_reconstruction.csv",
+      "sha256": "176af6399b26c0b5ad4d470b35e4c6526baf256ff8eaf726033315812e146b5b",
+      "size_bytes": 13289
+    },
+    {
+      "path": "training_logs/development_fit_log.jsonl",
+      "sha256": "f3500e2ab69ea4a791d54a5baa4b06c8a97f8ab840f5b5a6d6eaa62cef8481e1",
+      "size_bytes": 550817
+    },
+    {
+      "path": "training_logs/final_test_fit_log.jsonl",
+      "sha256": "beeb50533a54d1fbdd49ed09ef32139bb6968da06e95185cc62c4e6e60779ade",
+      "size_bytes": 81840
+    },
+    {
+      "path": "training_logs/finalization_retry_log.md",
+      "sha256": "38a0ed8cc8ac4424f57930a4593fd12b9fce06c393a7e9481e14fe6acd43c443",
+      "size_bytes": 905
+    }
+  ],
+  "files_count_excluding_manifest": 289,
+  "new_market_data": "NONE",
+  "new_training": "Phase 14 registered models only; 204 development fits + 28 final fits; all succeeded",
+  "original_phase6_decision": "2/18 passed; unchanged",
+  "phase": "Phase 14 — Strong-baseline benchmark",
+  "pretraining_lock_sha256": "f36f1be8a3b6768a7d873c8a77087ed9d6b48df185974de97f7151b1b3add603",
+  "primary_classification": {
+    "BTC": "INCONCLUSIVE",
+    "ETH": "FAVORABLE"
+  },
+  "prior_outputs_modified": "NONE",
+  "source_manifest_after_sha256": "d22158416e97fdb5248ff51b0fdeb12726d83c8595c9ee072bd629e50b30fc54",
+  "status": "COMPLETE"
+}

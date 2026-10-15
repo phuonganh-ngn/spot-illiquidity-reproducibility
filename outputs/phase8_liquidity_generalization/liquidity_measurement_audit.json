@@ -1,0 +1,48 @@
+{
+  "amihud": {
+    "definition": "1e6 * abs(4-hour log return) / positive Binance spot quote turnover in USDT",
+    "larger_means": "greater measured price impact / illiquidity",
+    "max_abs_reconstruction_error": 9.993633524885137e-17,
+    "missingness_identical": true,
+    "negative_count_external": 0,
+    "nonpositive_quote_volume_missing": true,
+    "numerical_tail_quantiles_external": {
+      "0.001": 0.0,
+      "0.01": 8.325664957041467e-07,
+      "0.5": 7.73493632640646e-05,
+      "0.99": 0.0010018255391994373,
+      "0.999": 0.001558376993893525
+    },
+    "zero_count_external": 53
+  },
+  "asset_audit_pass": true,
+  "future_amihud": {
+    "definition": "arithmetic mean of six 4-hour Amihud observations t+1:t+6",
+    "max_abs_reconstruction_error": 9.578926193909432e-17,
+    "missingness_identical": true
+  },
+  "future_corwin_schultz_spread_24h": {
+    "coverage_external_pct": 100.0,
+    "definition": "mean of five consecutive 4-hour Corwin-Schultz high-low estimates based on adjacent bars wholly within t+1:t+6",
+    "interpretation_limit": "range-based spread proxy can also reflect volatility; not an observed bid-ask quote",
+    "max_abs_reconstruction_error": 9.386480308293255e-17,
+    "missingness_identical": true
+  },
+  "future_kyle_abs_lambda_24h": {
+    "construction_evidence": "verified deterministic Phase-7 builder source and 6,195 cached archive hashes; Phase-7 offline panel rebuild and full source audit passed; not independently reconstructed from 5-minute bars in this reanalysis",
+    "coverage_external_pct": 100.0,
+    "definition": "absolute intercept-adjusted OLS slope of 288 following 5-minute spot log returns on signed spot USDT quote flow (2*taker-buy quote volume - total quote volume)",
+    "nonnegative": true,
+    "unit": "return per USDT signed quote flow"
+  },
+  "future_window": {
+    "exclusive_end_equals_t_plus_28h_on_valid_labels": true,
+    "labels_with_metadata": 54701,
+    "no_future_labels_after_sample_end": true,
+    "start_equals_t_plus_4h_on_valid_labels": true,
+    "terminal_unlabelled_rows_with_missing_window_metadata": 30
+  },
+  "panel_rows": 54780,
+  "panel_unique_asset_dates": true,
+  "post_2024_timestamp_audit": "valid under frozen per-date OI offset mapping; unresolved concern is piecewise source timestamp harmonization, retained as measurement limitation"
+}

@@ -1,0 +1,115 @@
+{
+  "deterministic_seed_outputs_match": true,
+  "frozen_input_hash_mismatches": [],
+  "json_outputs": {
+    "bootstrap_42.json": "BYTE_IDENTICAL",
+    "bootstrap_84.json": "BYTE_IDENTICAL",
+    "btc_decision.json": "BYTE_IDENTICAL",
+    "delta_i_results.json": "BYTE_IDENTICAL",
+    "delta_q_results.json": "BYTE_IDENTICAL",
+    "eth_decision.json": "BYTE_IDENTICAL",
+    "negative_controls.json": "BYTE_IDENTICAL",
+    "paper_level_decision.json": "BYTE_IDENTICAL",
+    "primary_holm.json": "BYTE_IDENTICAL"
+  },
+  "network_disabled": true,
+  "network_guard": "offline_guard/sitecustomize.py",
+  "note": "Execution timing and run_tag fields are expected to differ; predictions, primary metrics, bootstrap outputs, decisions, and frozen inputs were compared.",
+  "parquet_outputs": {
+    "holdout_mlp_corrected_predictions.parquet": {
+      "max_abs_numeric_difference": 0.0,
+      "offline_sha256": "31359139d4ea99b2d03cf25aa8b3850c2e1841eaf1997778a51fd93ec9ad825d",
+      "primary_sha256": "31359139d4ea99b2d03cf25aa8b3850c2e1841eaf1997778a51fd93ec9ad825d",
+      "shape": [
+        2630,
+        11
+      ],
+      "status": "BYTE_IDENTICAL"
+    },
+    "holdout_qml_corrected_predictions.parquet": {
+      "max_abs_numeric_difference": 0.0,
+      "offline_sha256": "810f7c69e0268b34b7e672106f8580fe4d71775d43e5ad073c789b6556ef165e",
+      "primary_sha256": "810f7c69e0268b34b7e672106f8580fe4d71775d43e5ad073c789b6556ef165e",
+      "shape": [
+        2630,
+        11
+      ],
+      "status": "BYTE_IDENTICAL"
+    },
+    "holdout_spotonly_predictions.parquet": {
+      "max_abs_numeric_difference": 0.0,
+      "offline_sha256": "73d192b6f8bcb611139e43f9a43c099a0712c827d82d4a177baf8142ba1528fb",
+      "primary_sha256": "73d192b6f8bcb611139e43f9a43c099a0712c827d82d4a177baf8142ba1528fb",
+      "shape": [
+        2630,
+        5
+      ],
+      "status": "BYTE_IDENTICAL"
+    },
+    "negative_control_predictions.parquet": {
+      "max_abs_numeric_difference": 0.0,
+      "offline_sha256": "514caf82f7ebfdda0ddb9c9f3816bf4de65a146965ce765c58d5492b7c954863",
+      "primary_sha256": "514caf82f7ebfdda0ddb9c9f3816bf4de65a146965ce765c58d5492b7c954863",
+      "shape": [
+        2594,
+        7
+      ],
+      "status": "BYTE_IDENTICAL"
+    },
+    "residual_training_data.parquet": {
+      "max_abs_numeric_difference": 0.0,
+      "offline_sha256": "2a4464b1e671d86d085a4cdd32713dfa05f62d29009df7cc6d0491edac852a7f",
+      "primary_sha256": "2a4464b1e671d86d085a4cdd32713dfa05f62d29009df7cc6d0491edac852a7f",
+      "shape": [
+        2880,
+        51
+      ],
+      "status": "BYTE_IDENTICAL"
+    },
+    "spot_oof_predictions.parquet": {
+      "max_abs_numeric_difference": 0.0,
+      "offline_sha256": "5cdbc36aef6c0845aa8430e6d8e12463aa4d8dfe29328ff4e130e6dca622c821",
+      "primary_sha256": "5cdbc36aef6c0845aa8430e6d8e12463aa4d8dfe29328ff4e130e6dca622c821",
+      "shape": [
+        2880,
+        8
+      ],
+      "status": "BYTE_IDENTICAL"
+    }
+  },
+  "pre_model_freeze_sha256": "11344198427465e1b28e99694520252b1a7c1dea8d8f08f64ead1f76119dcb68",
+  "primary_metric_field_checks": {
+    "BTC": {
+      "delta_i_bootstrap": true,
+      "delta_i_positive_favors_incremental_information": true,
+      "delta_q_bootstrap": true,
+      "delta_q_positive_favors_qml": true,
+      "first_holdout_origin_utc": true,
+      "last_holdout_origin_utc": true,
+      "n_holdout": true,
+      "seed_deltas_qml_vs_mlp": true,
+      "seeds_favoring_qml": true,
+      "spotonly_mae": true,
+      "spotonly_plus_mlp_mae": true,
+      "spotonly_plus_qml_mae": true
+    },
+    "ETH": {
+      "delta_i_bootstrap": true,
+      "delta_i_positive_favors_incremental_information": true,
+      "delta_q_bootstrap": true,
+      "delta_q_positive_favors_qml": true,
+      "first_holdout_origin_utc": true,
+      "last_holdout_origin_utc": true,
+      "n_holdout": true,
+      "seed_deltas_qml_vs_mlp": true,
+      "seeds_favoring_qml": true,
+      "spotonly_mae": true,
+      "spotonly_plus_mlp_mae": true,
+      "spotonly_plus_qml_mae": true
+    }
+  },
+  "primary_run_tag": "primary",
+  "prior_stage_hash_mismatches": [],
+  "reproduction_run_tag": "offline_reproduction",
+  "status": "PASS"
+}

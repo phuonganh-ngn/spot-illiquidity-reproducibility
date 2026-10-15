@@ -1,0 +1,91 @@
+{
+  "by_asset": {
+    "BTC": {
+      "bootstrap": {
+        "42": {
+          "block_length_4h_intervals": 42,
+          "bootstrap_draws_crossing_zero": 65,
+          "ci95": [
+            -6.128829290986868e-08,
+            6.232505071190659e-07
+          ],
+          "mean_delta": 2.6475050637110474e-07,
+          "p_two_sided": 0.13186813186813187,
+          "p_two_sided_centered_block_bootstrap": 0.13186813186813187,
+          "p_value_method": "plus-one corrected two-sided centered moving-block bootstrap under zero-mean null",
+          "probability_delta_positive": 0.935,
+          "replications": 1000,
+          "seed": 142548048
+        },
+        "84": {
+          "block_length_4h_intervals": 84,
+          "bootstrap_draws_crossing_zero": 91,
+          "ci95": [
+            -9.537541625186186e-08,
+            6.299807782181384e-07
+          ],
+          "mean_delta": 2.6475050637110474e-07,
+          "p_two_sided": 0.16783216783216784,
+          "p_two_sided_centered_block_bootstrap": 0.16783216783216784,
+          "p_value_method": "plus-one corrected two-sided centered moving-block bootstrap under zero-mean null",
+          "probability_delta_positive": 0.909,
+          "replications": 1000,
+          "seed": 156574736
+        }
+      },
+      "hac": {
+        "hac_lags": 6,
+        "hac_se": 1.7464474226695893e-07,
+        "mean_loss_delta": 2.6475050637110474e-07,
+        "p_two_sided_normal": 0.12953516792231198,
+        "z_statistic": 1.5159374564303327
+      },
+      "holm_p_block42": 0.26373626373626374,
+      "mean": 2.6475050637110474e-07
+    },
+    "ETH": {
+      "bootstrap": {
+        "42": {
+          "block_length_4h_intervals": 42,
+          "bootstrap_draws_crossing_zero": 205,
+          "ci95": [
+            -1.2309467060671176e-06,
+            4.3798405940782684e-07
+          ],
+          "mean_delta": -3.4300983657158433e-07,
+          "p_two_sided": 0.44255744255744256,
+          "p_two_sided_centered_block_bootstrap": 0.44255744255744256,
+          "p_value_method": "plus-one corrected two-sided centered moving-block bootstrap under zero-mean null",
+          "probability_delta_positive": 0.205,
+          "replications": 1000,
+          "seed": 65836684
+        },
+        "84": {
+          "block_length_4h_intervals": 84,
+          "bootstrap_draws_crossing_zero": 211,
+          "ci95": [
+            -1.2755212381663857e-06,
+            5.660304353195717e-07
+          ],
+          "mean_delta": -3.4300983657158433e-07,
+          "p_two_sided": 0.46353646353646355,
+          "p_two_sided_centered_block_bootstrap": 0.46353646353646355,
+          "p_value_method": "plus-one corrected two-sided centered moving-block bootstrap under zero-mean null",
+          "probability_delta_positive": 0.211,
+          "replications": 1000,
+          "seed": 2014281071
+        }
+      },
+      "hac": {
+        "hac_lags": 6,
+        "hac_se": 3.6204356714944197e-07,
+        "mean_loss_delta": -3.4300983657158433e-07,
+        "p_two_sided_normal": 0.34342125810429835,
+        "z_statistic": -0.9474269609933408
+      },
+      "holm_p_block42": 0.44255744255744256,
+      "mean": -3.4300983657158433e-07
+    }
+  },
+  "definition": "MAE(SpotOnly+matched MLP correction)-MAE(SpotOnly+QML correction); positive favors QML."
+}

@@ -1,0 +1,199 @@
+{
+  "excluded_families": [
+    {
+      "family": "Transformer/LSTM/large sequence architectures",
+      "reason": "The effective sample is about 3.2k development rows per asset/task; larger sequence models have an unfavorable parameter-to-sample ratio and are not needed beyond a small GRU."
+    },
+    {
+      "family": "XGBoost/LightGBM/CatBoost",
+      "reason": "HistGradientBoosting provides a maintained tree-boosting benchmark without another dependency or materially expanding the bounded model comparison."
+    },
+    {
+      "family": "Stacking/meta-learning",
+      "reason": "The sample and number of temporal folds do not justify a fitted meta learner; an equal-weight ensemble uses only development OOF predictions and has no extra tuning."
+    },
+    {
+      "family": "AutoML / deep hyperparameter search",
+      "reason": "Unbounded search would invalidate comparable tuning budgets and encourage selection on validation noise."
+    }
+  ],
+  "fairness": "Same rows, folds, transformations, scoring, test period, and three-configuration budget for each tunable family and each primary information set.",
+  "models": [
+    {
+      "configs": [
+        {
+          "rule": "future RV = current RV*sqrt(h); future downside = current downside*h; future Amihud = current Amihud"
+        }
+      ],
+      "family": "simple baseline",
+      "id": "persistence",
+      "included": true
+    },
+    {
+      "configs": [
+        {
+          "rule": "mean log1p target in that training fold"
+        }
+      ],
+      "family": "simple baseline",
+      "id": "training_mean",
+      "included": true
+    },
+    {
+      "configs": [
+        {
+          "fit_intercept": true
+        }
+      ],
+      "family": "linear",
+      "id": "OLS",
+      "included": true
+    },
+    {
+      "configs": [
+        {
+          "alpha": 0.1
+        },
+        {
+          "alpha": 1.0
+        },
+        {
+          "alpha": 10.0
+        }
+      ],
+      "family": "regularized linear",
+      "id": "Ridge",
+      "included": true
+    },
+    {
+      "configs": [
+        {
+          "C": 0.1,
+          "epsilon": 0.05,
+          "gamma": "scale"
+        },
+        {
+          "C": 1.0,
+          "epsilon": 0.05,
+          "gamma": "scale"
+        },
+        {
+          "C": 10.0,
+          "epsilon": 0.05,
+          "gamma": "scale"
+        }
+      ],
+      "family": "kernel",
+      "id": "RBF_SVR",
+      "included": true
+    },
+    {
+      "configs": [
+        {
+          "min_samples_leaf": 2,
+          "n_estimators": 200
+        },
+        {
+          "min_samples_leaf": 5,
+          "n_estimators": 200
+        },
+        {
+          "min_samples_leaf": 10,
+          "n_estimators": 200
+        }
+      ],
+      "family": "bagged trees",
+      "id": "ExtraTrees",
+      "included": true
+    },
+    {
+      "configs": [
+        {
+          "learning_rate": 0.05,
+          "max_iter": 100,
+          "max_leaf_nodes": 7
+        },
+        {
+          "learning_rate": 0.05,
+          "max_iter": 100,
+          "max_leaf_nodes": 15
+        },
+        {
+          "learning_rate": 0.05,
+          "max_iter": 100,
+          "max_leaf_nodes": 31
+        }
+      ],
+      "family": "gradient boosting",
+      "id": "HistGradientBoosting",
+      "included": true
+    },
+    {
+      "configs": [
+        {
+          "alpha": 0.001,
+          "hidden_layer_sizes": [
+            8
+          ],
+          "max_iter": 400
+        },
+        {
+          "alpha": 0.001,
+          "hidden_layer_sizes": [
+            16
+          ],
+          "max_iter": 400
+        },
+        {
+          "alpha": 0.001,
+          "hidden_layer_sizes": [
+            32
+          ],
+          "max_iter": 400
+        }
+      ],
+      "family": "neural feed-forward",
+      "id": "MLP",
+      "included": true
+    },
+    {
+      "configs": [
+        {
+          "epochs": 20,
+          "hidden_size": 4,
+          "weight_decay": 0.001
+        },
+        {
+          "epochs": 20,
+          "hidden_size": 8,
+          "weight_decay": 0.001
+        },
+        {
+          "epochs": 20,
+          "hidden_size": 16,
+          "weight_decay": 0.001
+        }
+      ],
+      "family": "compact temporal sequence",
+      "id": "GRU",
+      "included": true
+    },
+    {
+      "configs": [
+        {
+          "rule": "unweighted mean of selected OOF predictions from Ridge, RBF_SVR, ExtraTrees, HistGradientBoosting, MLP, GRU; no fitted meta learner"
+        }
+      ],
+      "family": "ensemble",
+      "id": "equal_weight_ensemble",
+      "included": true
+    }
+  ],
+  "preprocessing": "StandardScaler fitted within each training fold for linear, kernel, MLP and GRU models. Tree models receive training-fold-scaled features too for a uniform pipeline. No imputation, feature selection, or global normalization.",
+  "primary_metric": "MAE on log1p(target); lower is better. All model/information-set comparisons use the same target rows.",
+  "secondary_metrics": [
+    "RMSE on log1p(target)",
+    "MAE and RMSE on original scale",
+    "QLIKE on future realized variance (RV target squared)"
+  ]
+}

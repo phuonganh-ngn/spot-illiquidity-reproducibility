@@ -1,0 +1,40 @@
+{
+  "assets": [
+    "BTC",
+    "ETH"
+  ],
+  "classification": "Not selected. The primary question is incremental continuous predictive accuracy; event classification would require a training-fold threshold and adds a second estimand. No class imbalance applies to these regression tasks.",
+  "fit_separately": true,
+  "horizon_hours": [
+    4,
+    8,
+    24
+  ],
+  "horizons_intervals": [
+    1,
+    2,
+    6
+  ],
+  "sample": "4-hour UTC panel; development dates through 2023-06-30 20:00 UTC; final test feature dates from 2023-07-01 00:00 UTC.",
+  "targets": [
+    {
+      "formula": "sqrt(sum(spot_realized_volatility[t+k]^2 for k=1..h))",
+      "id": "future_realized_volatility",
+      "training_transform": "log1p",
+      "unit": "unannualized cumulative realized volatility"
+    },
+    {
+      "formula": "sum(spot_downside_semivariance[t+k] for k=1..h)",
+      "id": "future_downside_semivariance",
+      "training_transform": "log1p",
+      "unit": "squared log-return over future window"
+    },
+    {
+      "formula": "mean(spot_amihud[t+k] for k=1..h)",
+      "id": "future_amihud",
+      "training_transform": "log1p",
+      "unit": "scaled Amihud proxy averaged over future window"
+    }
+  ],
+  "task_type": "continuous regression"
+}

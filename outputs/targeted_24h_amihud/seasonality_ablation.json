@@ -1,0 +1,95 @@
+{
+  "definition": "Remove all frozen UTC slot, weekday and funding-window indicators from the full S1 model; all else fixed.",
+  "fit_records": [
+    {
+      "asset": "BTC",
+      "family": "GRU",
+      "first_test_date": "2022-10-01T00:00:00+00:00",
+      "fit_warnings": [],
+      "fold": "F1",
+      "last_test_date": "2022-12-30T20:00:00+00:00",
+      "n_test": 359,
+      "n_train": 841,
+      "selected_config_index": 4,
+      "specification": "no_calendar"
+    },
+    {
+      "asset": "BTC",
+      "family": "GRU",
+      "first_test_date": "2023-01-01T00:00:00+00:00",
+      "fit_warnings": [],
+      "fold": "F2",
+      "last_test_date": "2023-03-30T20:00:00+00:00",
+      "n_test": 347,
+      "n_train": 1206,
+      "selected_config_index": 16,
+      "specification": "no_calendar"
+    },
+    {
+      "asset": "BTC",
+      "family": "LightGBM",
+      "first_test_date": "2023-04-01T00:00:00+00:00",
+      "fit_warnings": [],
+      "fold": "F3",
+      "last_test_date": "2023-06-06T04:00:00+00:00",
+      "n_test": 199,
+      "n_train": 1559,
+      "selected_config_index": 1,
+      "specification": "no_calendar"
+    },
+    {
+      "asset": "ETH",
+      "family": "ElasticNet",
+      "first_test_date": "2022-10-01T00:00:00+00:00",
+      "fit_warnings": [],
+      "fold": "F1",
+      "last_test_date": "2022-12-30T20:00:00+00:00",
+      "n_test": 359,
+      "n_train": 748,
+      "selected_config_index": 0,
+      "specification": "no_calendar"
+    },
+    {
+      "asset": "ETH",
+      "family": "RBF_SVR",
+      "first_test_date": "2023-01-01T00:00:00+00:00",
+      "fit_warnings": [],
+      "fold": "F2",
+      "last_test_date": "2023-03-30T20:00:00+00:00",
+      "n_test": 347,
+      "n_train": 1113,
+      "selected_config_index": 0,
+      "specification": "no_calendar"
+    },
+    {
+      "asset": "ETH",
+      "family": "GRU",
+      "first_test_date": "2023-04-01T00:00:00+00:00",
+      "fit_warnings": [],
+      "fold": "F3",
+      "last_test_date": "2023-06-06T04:00:00+00:00",
+      "n_test": 216,
+      "n_train": 1466,
+      "selected_config_index": 4,
+      "specification": "no_calendar"
+    }
+  ],
+  "summary": [
+    {
+      "asset": "BTC",
+      "n": 905,
+      "n_dates": 905,
+      "original_scale_mae": 6.784146357023414e-06,
+      "specification": "no_calendar",
+      "transformed_mae": 6.95347122986409e-06
+    },
+    {
+      "asset": "ETH",
+      "n": 922,
+      "n_dates": 922,
+      "original_scale_mae": 2.134155572714405e-05,
+      "specification": "no_calendar",
+      "transformed_mae": 2.1340209904537188e-05
+    }
+  ]
+}

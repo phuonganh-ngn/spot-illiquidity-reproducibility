@@ -1,0 +1,223 @@
+{
+  "definition": "Matched impossible-time control: derivative information from t+7..t+12 predicts Amihud already realized over t-6..t-1; comparison is fixed Ridge alpha=1 with identical rows and spot histories. This is a timing/confounding diagnostic, not a causal test. Train folds purge 12 intervals.",
+  "interpretation_rule": "Any positive delta with block-bootstrap support is a temporal leakage/confounding warning; it cannot support forward transmission.",
+  "results": [
+    {
+      "asset": "BTC",
+      "bootstrap": {
+        "42": {
+          "block_length_intervals": 42,
+          "ci95": [
+            -1.5960929955393642e-07,
+            -1.7224122930109434e-08
+          ],
+          "delta_mean": -7.067316215953615e-08,
+          "p_two_sided": 0.00999000999000999,
+          "probability_positive": 0.004,
+          "replications": 1000
+        },
+        "84": {
+          "block_length_intervals": 84,
+          "ci95": [
+            -1.7640479956819246e-07,
+            -1.4664545362329083e-08
+          ],
+          "delta_mean": -7.067316215953615e-08,
+          "p_two_sided": 0.013986013986013986,
+          "probability_positive": 0.006,
+          "replications": 1000
+        }
+      },
+      "delta_s0_minus_s1": -7.067316215953615e-08,
+      "derivative_features": "four certified raw derivative variables at t+7..t+12 (strictly after target interval t-6..t-1 and primary target t+1..t+6)",
+      "first_date": "2022-10-02T00:00:00+00:00",
+      "fold": "F1",
+      "last_date": "2022-12-29T20:00:00+00:00",
+      "n": 534,
+      "n_dates": 534,
+      "spot_features": "certified spot history t-5..t, same Ridge(StandardScaler), alpha=1 in S0/S1",
+      "target": "mean Amihud at t-6..t-1"
+    },
+    {
+      "asset": "BTC",
+      "bootstrap": {
+        "42": {
+          "block_length_intervals": 42,
+          "ci95": [
+            -2.1170478762857206e-07,
+            -8.462771266300113e-08
+          ],
+          "delta_mean": -1.360917720296296e-07,
+          "p_two_sided": 0.001998001998001998,
+          "probability_positive": 0.0,
+          "replications": 1000
+        },
+        "84": {
+          "block_length_intervals": 84,
+          "ci95": [
+            -2.0262426847451844e-07,
+            -9.416421465951656e-08
+          ],
+          "delta_mean": -1.360917720296296e-07,
+          "p_two_sided": 0.001998001998001998,
+          "probability_positive": 0.0,
+          "replications": 1000
+        }
+      },
+      "delta_s0_minus_s1": -1.360917720296296e-07,
+      "derivative_features": "four certified raw derivative variables at t+7..t+12 (strictly after target interval t-6..t-1 and primary target t+1..t+6)",
+      "first_date": "2023-01-01T00:00:00+00:00",
+      "fold": "F2",
+      "last_date": "2023-03-29T20:00:00+00:00",
+      "n": 508,
+      "n_dates": 508,
+      "spot_features": "certified spot history t-5..t, same Ridge(StandardScaler), alpha=1 in S0/S1",
+      "target": "mean Amihud at t-6..t-1"
+    },
+    {
+      "asset": "BTC",
+      "bootstrap": {
+        "42": {
+          "block_length_intervals": 42,
+          "ci95": [
+            -2.6003090677275087e-08,
+            4.66890707790862e-09
+          ],
+          "delta_mean": -1.0081174821434297e-08,
+          "p_two_sided": 0.1918081918081918,
+          "probability_positive": 0.095,
+          "replications": 1000
+        },
+        "84": {
+          "block_length_intervals": 84,
+          "ci95": [
+            -2.3454459407130304e-08,
+            3.2156504829799904e-09
+          ],
+          "delta_mean": -1.0081174821434297e-08,
+          "p_two_sided": 0.15384615384615385,
+          "probability_positive": 0.076,
+          "replications": 1000
+        }
+      },
+      "delta_s0_minus_s1": -1.0081174821434297e-08,
+      "derivative_features": "four certified raw derivative variables at t+7..t+12 (strictly after target interval t-6..t-1 and primary target t+1..t+6)",
+      "first_date": "2023-04-01T00:00:00+00:00",
+      "fold": "F3",
+      "last_date": "2023-06-28T20:00:00+00:00",
+      "n": 503,
+      "n_dates": 503,
+      "spot_features": "certified spot history t-5..t, same Ridge(StandardScaler), alpha=1 in S0/S1",
+      "target": "mean Amihud at t-6..t-1"
+    },
+    {
+      "asset": "ETH",
+      "bootstrap": {
+        "42": {
+          "block_length_intervals": 42,
+          "ci95": [
+            -2.9241957793332714e-08,
+            1.5097848486039209e-07
+          ],
+          "delta_mean": 5.474086910044719e-08,
+          "p_two_sided": 0.18181818181818182,
+          "probability_positive": 0.91,
+          "replications": 1000
+        },
+        "84": {
+          "block_length_intervals": 84,
+          "ci95": [
+            -3.22692054146531e-08,
+            1.586540525389766e-07
+          ],
+          "delta_mean": 5.474086910044719e-08,
+          "p_two_sided": 0.21178821178821178,
+          "probability_positive": 0.895,
+          "replications": 1000
+        }
+      },
+      "delta_s0_minus_s1": 5.474086910044719e-08,
+      "derivative_features": "four certified raw derivative variables at t+7..t+12 (strictly after target interval t-6..t-1 and primary target t+1..t+6)",
+      "first_date": "2022-10-02T00:00:00+00:00",
+      "fold": "F1",
+      "last_date": "2022-12-29T20:00:00+00:00",
+      "n": 534,
+      "n_dates": 534,
+      "spot_features": "certified spot history t-5..t, same Ridge(StandardScaler), alpha=1 in S0/S1",
+      "target": "mean Amihud at t-6..t-1"
+    },
+    {
+      "asset": "ETH",
+      "bootstrap": {
+        "42": {
+          "block_length_intervals": 42,
+          "ci95": [
+            -3.090123329580513e-07,
+            -5.0185748072783506e-08
+          ],
+          "delta_mean": -1.5804234020376457e-07,
+          "p_two_sided": 0.001998001998001998,
+          "probability_positive": 0.0,
+          "replications": 1000
+        },
+        "84": {
+          "block_length_intervals": 84,
+          "ci95": [
+            -3.1904406127066895e-07,
+            -4.7127824389579484e-08
+          ],
+          "delta_mean": -1.5804234020376457e-07,
+          "p_two_sided": 0.011988011988011988,
+          "probability_positive": 0.005,
+          "replications": 1000
+        }
+      },
+      "delta_s0_minus_s1": -1.5804234020376457e-07,
+      "derivative_features": "four certified raw derivative variables at t+7..t+12 (strictly after target interval t-6..t-1 and primary target t+1..t+6)",
+      "first_date": "2023-01-01T00:00:00+00:00",
+      "fold": "F2",
+      "last_date": "2023-03-29T20:00:00+00:00",
+      "n": 508,
+      "n_dates": 508,
+      "spot_features": "certified spot history t-5..t, same Ridge(StandardScaler), alpha=1 in S0/S1",
+      "target": "mean Amihud at t-6..t-1"
+    },
+    {
+      "asset": "ETH",
+      "bootstrap": {
+        "42": {
+          "block_length_intervals": 42,
+          "ci95": [
+            -9.478486823221755e-08,
+            -5.993810581065462e-09
+          ],
+          "delta_mean": -3.251796880182988e-08,
+          "p_two_sided": 0.027972027972027972,
+          "probability_positive": 0.013,
+          "replications": 1000
+        },
+        "84": {
+          "block_length_intervals": 84,
+          "ci95": [
+            -8.398186436952424e-08,
+            -1.6386159656398742e-08
+          ],
+          "delta_mean": -3.251796880182988e-08,
+          "p_two_sided": 0.007992007992007992,
+          "probability_positive": 0.003,
+          "replications": 1000
+        }
+      },
+      "delta_s0_minus_s1": -3.251796880182988e-08,
+      "derivative_features": "four certified raw derivative variables at t+7..t+12 (strictly after target interval t-6..t-1 and primary target t+1..t+6)",
+      "first_date": "2023-04-01T00:00:00+00:00",
+      "fold": "F3",
+      "last_date": "2023-06-28T20:00:00+00:00",
+      "n": 520,
+      "n_dates": 520,
+      "spot_features": "certified spot history t-5..t, same Ridge(StandardScaler), alpha=1 in S0/S1",
+      "target": "mean Amihud at t-6..t-1"
+    }
+  ],
+  "status": "EXPLORATORY_NEGATIVE_CONTROL"
+}

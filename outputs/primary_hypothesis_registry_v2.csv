@@ -1,0 +1,109 @@
+test_id,channel_id,channel_name,asset,direction,exposure,outcome,horizon,status,holm_family,confirmatory
+FWD_BTC_FUNDING_RV_h1,C1,POSITIONING / RISK,BTC,FORWARD,funding_mean,spot_realized_volatility_fwd_1d,1,PRIMARY_CONFIRMATORY,C1_BTC_FORWARD_FUNDING_RV,True
+FWD_BTC_FUNDING_RV_h3,C1,POSITIONING / RISK,BTC,FORWARD,funding_mean,spot_realized_volatility_fwd_3d,3,PRIMARY_CONFIRMATORY,C1_BTC_FORWARD_FUNDING_RV,True
+FWD_BTC_FUNDING_RV_h7,C1,POSITIONING / RISK,BTC,FORWARD,funding_mean,spot_realized_volatility_fwd_7d,7,PRIMARY_CONFIRMATORY,C1_BTC_FORWARD_FUNDING_RV,True
+FWD_BTC_FUNDING_AMIHUD_h1,,,BTC,FORWARD,funding_mean,spot_amihud_mean_fwd_1d,1,SECONDARY,,False
+FWD_BTC_FUNDING_AMIHUD_h3,,,BTC,FORWARD,funding_mean,spot_amihud_mean_fwd_3d,3,SECONDARY,,False
+FWD_BTC_FUNDING_AMIHUD_h7,,,BTC,FORWARD,funding_mean,spot_amihud_mean_fwd_7d,7,SECONDARY,,False
+FWD_BTC_FUNDING_DOWNSIDE_h1,,,BTC,FORWARD,funding_mean,spot_downside_semivariance_fwd_1d,1,SECONDARY,,False
+FWD_BTC_FUNDING_DOWNSIDE_h3,,,BTC,FORWARD,funding_mean,spot_downside_semivariance_fwd_3d,3,SECONDARY,,False
+FWD_BTC_FUNDING_DOWNSIDE_h7,,,BTC,FORWARD,funding_mean,spot_downside_semivariance_fwd_7d,7,SECONDARY,,False
+FWD_BTC_OI_RV_h1,C2,LEVERAGE / RISK,BTC,FORWARD,oi_log_change_1d,spot_realized_volatility_fwd_1d,1,PRIMARY_CONFIRMATORY,C2_BTC_FORWARD_OI_RV,True
+FWD_BTC_OI_RV_h3,C2,LEVERAGE / RISK,BTC,FORWARD,oi_log_change_1d,spot_realized_volatility_fwd_3d,3,PRIMARY_CONFIRMATORY,C2_BTC_FORWARD_OI_RV,True
+FWD_BTC_OI_RV_h7,C2,LEVERAGE / RISK,BTC,FORWARD,oi_log_change_1d,spot_realized_volatility_fwd_7d,7,PRIMARY_CONFIRMATORY,C2_BTC_FORWARD_OI_RV,True
+FWD_BTC_OI_AMIHUD_h1,,,BTC,FORWARD,oi_log_change_1d,spot_amihud_mean_fwd_1d,1,SECONDARY,,False
+FWD_BTC_OI_AMIHUD_h3,,,BTC,FORWARD,oi_log_change_1d,spot_amihud_mean_fwd_3d,3,SECONDARY,,False
+FWD_BTC_OI_AMIHUD_h7,,,BTC,FORWARD,oi_log_change_1d,spot_amihud_mean_fwd_7d,7,SECONDARY,,False
+FWD_BTC_OI_DOWNSIDE_h1,C3,LEVERAGE / TAIL RISK,BTC,FORWARD,oi_log_change_1d,spot_downside_semivariance_fwd_1d,1,PRIMARY_CONFIRMATORY,C3_BTC_FORWARD_OI_DOWNSIDE,True
+FWD_BTC_OI_DOWNSIDE_h3,C3,LEVERAGE / TAIL RISK,BTC,FORWARD,oi_log_change_1d,spot_downside_semivariance_fwd_3d,3,PRIMARY_CONFIRMATORY,C3_BTC_FORWARD_OI_DOWNSIDE,True
+FWD_BTC_OI_DOWNSIDE_h7,C3,LEVERAGE / TAIL RISK,BTC,FORWARD,oi_log_change_1d,spot_downside_semivariance_fwd_7d,7,PRIMARY_CONFIRMATORY,C3_BTC_FORWARD_OI_DOWNSIDE,True
+FWD_BTC_FLOW_RV_h1,,,BTC,FORWARD,futures_taker_imbalance,spot_realized_volatility_fwd_1d,1,SECONDARY,,False
+FWD_BTC_FLOW_RV_h3,,,BTC,FORWARD,futures_taker_imbalance,spot_realized_volatility_fwd_3d,3,SECONDARY,,False
+FWD_BTC_FLOW_RV_h7,,,BTC,FORWARD,futures_taker_imbalance,spot_realized_volatility_fwd_7d,7,SECONDARY,,False
+FWD_BTC_FLOW_AMIHUD_h1,C4,ORDER FLOW / LIQUIDITY,BTC,FORWARD,futures_taker_imbalance,spot_amihud_mean_fwd_1d,1,PRIMARY_CONFIRMATORY,C4_BTC_FORWARD_FLOW_AMIHUD,True
+FWD_BTC_FLOW_AMIHUD_h3,C4,ORDER FLOW / LIQUIDITY,BTC,FORWARD,futures_taker_imbalance,spot_amihud_mean_fwd_3d,3,PRIMARY_CONFIRMATORY,C4_BTC_FORWARD_FLOW_AMIHUD,True
+FWD_BTC_FLOW_AMIHUD_h7,C4,ORDER FLOW / LIQUIDITY,BTC,FORWARD,futures_taker_imbalance,spot_amihud_mean_fwd_7d,7,PRIMARY_CONFIRMATORY,C4_BTC_FORWARD_FLOW_AMIHUD,True
+FWD_BTC_FLOW_DOWNSIDE_h1,,,BTC,FORWARD,futures_taker_imbalance,spot_downside_semivariance_fwd_1d,1,SECONDARY,,False
+FWD_BTC_FLOW_DOWNSIDE_h3,,,BTC,FORWARD,futures_taker_imbalance,spot_downside_semivariance_fwd_3d,3,SECONDARY,,False
+FWD_BTC_FLOW_DOWNSIDE_h7,,,BTC,FORWARD,futures_taker_imbalance,spot_downside_semivariance_fwd_7d,7,SECONDARY,,False
+REV_BTC_FUNDING_RV_h1,C1,POSITIONING / RISK,BTC,REVERSE,spot_realized_volatility,funding_mean_fwd_1d,1,PRIMARY_CONFIRMATORY,C1_BTC_REVERSE_FUNDING_RV,True
+REV_BTC_FUNDING_RV_h3,C1,POSITIONING / RISK,BTC,REVERSE,spot_realized_volatility,funding_mean_fwd_3d,3,PRIMARY_CONFIRMATORY,C1_BTC_REVERSE_FUNDING_RV,True
+REV_BTC_FUNDING_RV_h7,C1,POSITIONING / RISK,BTC,REVERSE,spot_realized_volatility,funding_mean_fwd_7d,7,PRIMARY_CONFIRMATORY,C1_BTC_REVERSE_FUNDING_RV,True
+REV_BTC_FUNDING_AMIHUD_h1,,,BTC,REVERSE,spot_amihud,funding_mean_fwd_1d,1,SECONDARY,,False
+REV_BTC_FUNDING_AMIHUD_h3,,,BTC,REVERSE,spot_amihud,funding_mean_fwd_3d,3,SECONDARY,,False
+REV_BTC_FUNDING_AMIHUD_h7,,,BTC,REVERSE,spot_amihud,funding_mean_fwd_7d,7,SECONDARY,,False
+REV_BTC_FUNDING_DOWNSIDE_h1,,,BTC,REVERSE,spot_downside_semivariance,funding_mean_fwd_1d,1,SECONDARY,,False
+REV_BTC_FUNDING_DOWNSIDE_h3,,,BTC,REVERSE,spot_downside_semivariance,funding_mean_fwd_3d,3,SECONDARY,,False
+REV_BTC_FUNDING_DOWNSIDE_h7,,,BTC,REVERSE,spot_downside_semivariance,funding_mean_fwd_7d,7,SECONDARY,,False
+REV_BTC_OI_RV_h1,C2,LEVERAGE / RISK,BTC,REVERSE,spot_realized_volatility,oi_log_change_fwd_1d,1,PRIMARY_CONFIRMATORY,C2_BTC_REVERSE_OI_RV,True
+REV_BTC_OI_RV_h3,C2,LEVERAGE / RISK,BTC,REVERSE,spot_realized_volatility,oi_log_change_fwd_3d,3,PRIMARY_CONFIRMATORY,C2_BTC_REVERSE_OI_RV,True
+REV_BTC_OI_RV_h7,C2,LEVERAGE / RISK,BTC,REVERSE,spot_realized_volatility,oi_log_change_fwd_7d,7,PRIMARY_CONFIRMATORY,C2_BTC_REVERSE_OI_RV,True
+REV_BTC_OI_AMIHUD_h1,,,BTC,REVERSE,spot_amihud,oi_log_change_fwd_1d,1,SECONDARY,,False
+REV_BTC_OI_AMIHUD_h3,,,BTC,REVERSE,spot_amihud,oi_log_change_fwd_3d,3,SECONDARY,,False
+REV_BTC_OI_AMIHUD_h7,,,BTC,REVERSE,spot_amihud,oi_log_change_fwd_7d,7,SECONDARY,,False
+REV_BTC_OI_DOWNSIDE_h1,C3,LEVERAGE / TAIL RISK,BTC,REVERSE,spot_downside_semivariance,oi_log_change_fwd_1d,1,PRIMARY_CONFIRMATORY,C3_BTC_REVERSE_OI_DOWNSIDE,True
+REV_BTC_OI_DOWNSIDE_h3,C3,LEVERAGE / TAIL RISK,BTC,REVERSE,spot_downside_semivariance,oi_log_change_fwd_3d,3,PRIMARY_CONFIRMATORY,C3_BTC_REVERSE_OI_DOWNSIDE,True
+REV_BTC_OI_DOWNSIDE_h7,C3,LEVERAGE / TAIL RISK,BTC,REVERSE,spot_downside_semivariance,oi_log_change_fwd_7d,7,PRIMARY_CONFIRMATORY,C3_BTC_REVERSE_OI_DOWNSIDE,True
+REV_BTC_FLOW_RV_h1,,,BTC,REVERSE,spot_realized_volatility,futures_taker_imbalance_mean_fwd_1d,1,SECONDARY,,False
+REV_BTC_FLOW_RV_h3,,,BTC,REVERSE,spot_realized_volatility,futures_taker_imbalance_mean_fwd_3d,3,SECONDARY,,False
+REV_BTC_FLOW_RV_h7,,,BTC,REVERSE,spot_realized_volatility,futures_taker_imbalance_mean_fwd_7d,7,SECONDARY,,False
+REV_BTC_FLOW_AMIHUD_h1,C4,ORDER FLOW / LIQUIDITY,BTC,REVERSE,spot_amihud,futures_taker_imbalance_mean_fwd_1d,1,PRIMARY_CONFIRMATORY,C4_BTC_REVERSE_FLOW_AMIHUD,True
+REV_BTC_FLOW_AMIHUD_h3,C4,ORDER FLOW / LIQUIDITY,BTC,REVERSE,spot_amihud,futures_taker_imbalance_mean_fwd_3d,3,PRIMARY_CONFIRMATORY,C4_BTC_REVERSE_FLOW_AMIHUD,True
+REV_BTC_FLOW_AMIHUD_h7,C4,ORDER FLOW / LIQUIDITY,BTC,REVERSE,spot_amihud,futures_taker_imbalance_mean_fwd_7d,7,PRIMARY_CONFIRMATORY,C4_BTC_REVERSE_FLOW_AMIHUD,True
+REV_BTC_FLOW_DOWNSIDE_h1,,,BTC,REVERSE,spot_downside_semivariance,futures_taker_imbalance_mean_fwd_1d,1,SECONDARY,,False
+REV_BTC_FLOW_DOWNSIDE_h3,,,BTC,REVERSE,spot_downside_semivariance,futures_taker_imbalance_mean_fwd_3d,3,SECONDARY,,False
+REV_BTC_FLOW_DOWNSIDE_h7,,,BTC,REVERSE,spot_downside_semivariance,futures_taker_imbalance_mean_fwd_7d,7,SECONDARY,,False
+FWD_ETH_FUNDING_RV_h1,C1,POSITIONING / RISK,ETH,FORWARD,funding_mean,spot_realized_volatility_fwd_1d,1,PRIMARY_CONFIRMATORY,C1_ETH_FORWARD_FUNDING_RV,True
+FWD_ETH_FUNDING_RV_h3,C1,POSITIONING / RISK,ETH,FORWARD,funding_mean,spot_realized_volatility_fwd_3d,3,PRIMARY_CONFIRMATORY,C1_ETH_FORWARD_FUNDING_RV,True
+FWD_ETH_FUNDING_RV_h7,C1,POSITIONING / RISK,ETH,FORWARD,funding_mean,spot_realized_volatility_fwd_7d,7,PRIMARY_CONFIRMATORY,C1_ETH_FORWARD_FUNDING_RV,True
+FWD_ETH_FUNDING_AMIHUD_h1,,,ETH,FORWARD,funding_mean,spot_amihud_mean_fwd_1d,1,SECONDARY,,False
+FWD_ETH_FUNDING_AMIHUD_h3,,,ETH,FORWARD,funding_mean,spot_amihud_mean_fwd_3d,3,SECONDARY,,False
+FWD_ETH_FUNDING_AMIHUD_h7,,,ETH,FORWARD,funding_mean,spot_amihud_mean_fwd_7d,7,SECONDARY,,False
+FWD_ETH_FUNDING_DOWNSIDE_h1,,,ETH,FORWARD,funding_mean,spot_downside_semivariance_fwd_1d,1,SECONDARY,,False
+FWD_ETH_FUNDING_DOWNSIDE_h3,,,ETH,FORWARD,funding_mean,spot_downside_semivariance_fwd_3d,3,SECONDARY,,False
+FWD_ETH_FUNDING_DOWNSIDE_h7,,,ETH,FORWARD,funding_mean,spot_downside_semivariance_fwd_7d,7,SECONDARY,,False
+FWD_ETH_OI_RV_h1,C2,LEVERAGE / RISK,ETH,FORWARD,oi_log_change_1d,spot_realized_volatility_fwd_1d,1,PRIMARY_CONFIRMATORY,C2_ETH_FORWARD_OI_RV,True
+FWD_ETH_OI_RV_h3,C2,LEVERAGE / RISK,ETH,FORWARD,oi_log_change_1d,spot_realized_volatility_fwd_3d,3,PRIMARY_CONFIRMATORY,C2_ETH_FORWARD_OI_RV,True
+FWD_ETH_OI_RV_h7,C2,LEVERAGE / RISK,ETH,FORWARD,oi_log_change_1d,spot_realized_volatility_fwd_7d,7,PRIMARY_CONFIRMATORY,C2_ETH_FORWARD_OI_RV,True
+FWD_ETH_OI_AMIHUD_h1,,,ETH,FORWARD,oi_log_change_1d,spot_amihud_mean_fwd_1d,1,SECONDARY,,False
+FWD_ETH_OI_AMIHUD_h3,,,ETH,FORWARD,oi_log_change_1d,spot_amihud_mean_fwd_3d,3,SECONDARY,,False
+FWD_ETH_OI_AMIHUD_h7,,,ETH,FORWARD,oi_log_change_1d,spot_amihud_mean_fwd_7d,7,SECONDARY,,False
+FWD_ETH_OI_DOWNSIDE_h1,C3,LEVERAGE / TAIL RISK,ETH,FORWARD,oi_log_change_1d,spot_downside_semivariance_fwd_1d,1,PRIMARY_CONFIRMATORY,C3_ETH_FORWARD_OI_DOWNSIDE,True
+FWD_ETH_OI_DOWNSIDE_h3,C3,LEVERAGE / TAIL RISK,ETH,FORWARD,oi_log_change_1d,spot_downside_semivariance_fwd_3d,3,PRIMARY_CONFIRMATORY,C3_ETH_FORWARD_OI_DOWNSIDE,True
+FWD_ETH_OI_DOWNSIDE_h7,C3,LEVERAGE / TAIL RISK,ETH,FORWARD,oi_log_change_1d,spot_downside_semivariance_fwd_7d,7,PRIMARY_CONFIRMATORY,C3_ETH_FORWARD_OI_DOWNSIDE,True
+FWD_ETH_FLOW_RV_h1,,,ETH,FORWARD,futures_taker_imbalance,spot_realized_volatility_fwd_1d,1,SECONDARY,,False
+FWD_ETH_FLOW_RV_h3,,,ETH,FORWARD,futures_taker_imbalance,spot_realized_volatility_fwd_3d,3,SECONDARY,,False
+FWD_ETH_FLOW_RV_h7,,,ETH,FORWARD,futures_taker_imbalance,spot_realized_volatility_fwd_7d,7,SECONDARY,,False
+FWD_ETH_FLOW_AMIHUD_h1,C4,ORDER FLOW / LIQUIDITY,ETH,FORWARD,futures_taker_imbalance,spot_amihud_mean_fwd_1d,1,PRIMARY_CONFIRMATORY,C4_ETH_FORWARD_FLOW_AMIHUD,True
+FWD_ETH_FLOW_AMIHUD_h3,C4,ORDER FLOW / LIQUIDITY,ETH,FORWARD,futures_taker_imbalance,spot_amihud_mean_fwd_3d,3,PRIMARY_CONFIRMATORY,C4_ETH_FORWARD_FLOW_AMIHUD,True
+FWD_ETH_FLOW_AMIHUD_h7,C4,ORDER FLOW / LIQUIDITY,ETH,FORWARD,futures_taker_imbalance,spot_amihud_mean_fwd_7d,7,PRIMARY_CONFIRMATORY,C4_ETH_FORWARD_FLOW_AMIHUD,True
+FWD_ETH_FLOW_DOWNSIDE_h1,,,ETH,FORWARD,futures_taker_imbalance,spot_downside_semivariance_fwd_1d,1,SECONDARY,,False
+FWD_ETH_FLOW_DOWNSIDE_h3,,,ETH,FORWARD,futures_taker_imbalance,spot_downside_semivariance_fwd_3d,3,SECONDARY,,False
+FWD_ETH_FLOW_DOWNSIDE_h7,,,ETH,FORWARD,futures_taker_imbalance,spot_downside_semivariance_fwd_7d,7,SECONDARY,,False
+REV_ETH_FUNDING_RV_h1,C1,POSITIONING / RISK,ETH,REVERSE,spot_realized_volatility,funding_mean_fwd_1d,1,PRIMARY_CONFIRMATORY,C1_ETH_REVERSE_FUNDING_RV,True
+REV_ETH_FUNDING_RV_h3,C1,POSITIONING / RISK,ETH,REVERSE,spot_realized_volatility,funding_mean_fwd_3d,3,PRIMARY_CONFIRMATORY,C1_ETH_REVERSE_FUNDING_RV,True
+REV_ETH_FUNDING_RV_h7,C1,POSITIONING / RISK,ETH,REVERSE,spot_realized_volatility,funding_mean_fwd_7d,7,PRIMARY_CONFIRMATORY,C1_ETH_REVERSE_FUNDING_RV,True
+REV_ETH_FUNDING_AMIHUD_h1,,,ETH,REVERSE,spot_amihud,funding_mean_fwd_1d,1,SECONDARY,,False
+REV_ETH_FUNDING_AMIHUD_h3,,,ETH,REVERSE,spot_amihud,funding_mean_fwd_3d,3,SECONDARY,,False
+REV_ETH_FUNDING_AMIHUD_h7,,,ETH,REVERSE,spot_amihud,funding_mean_fwd_7d,7,SECONDARY,,False
+REV_ETH_FUNDING_DOWNSIDE_h1,,,ETH,REVERSE,spot_downside_semivariance,funding_mean_fwd_1d,1,SECONDARY,,False
+REV_ETH_FUNDING_DOWNSIDE_h3,,,ETH,REVERSE,spot_downside_semivariance,funding_mean_fwd_3d,3,SECONDARY,,False
+REV_ETH_FUNDING_DOWNSIDE_h7,,,ETH,REVERSE,spot_downside_semivariance,funding_mean_fwd_7d,7,SECONDARY,,False
+REV_ETH_OI_RV_h1,C2,LEVERAGE / RISK,ETH,REVERSE,spot_realized_volatility,oi_log_change_fwd_1d,1,PRIMARY_CONFIRMATORY,C2_ETH_REVERSE_OI_RV,True
+REV_ETH_OI_RV_h3,C2,LEVERAGE / RISK,ETH,REVERSE,spot_realized_volatility,oi_log_change_fwd_3d,3,PRIMARY_CONFIRMATORY,C2_ETH_REVERSE_OI_RV,True
+REV_ETH_OI_RV_h7,C2,LEVERAGE / RISK,ETH,REVERSE,spot_realized_volatility,oi_log_change_fwd_7d,7,PRIMARY_CONFIRMATORY,C2_ETH_REVERSE_OI_RV,True
+REV_ETH_OI_AMIHUD_h1,,,ETH,REVERSE,spot_amihud,oi_log_change_fwd_1d,1,SECONDARY,,False
+REV_ETH_OI_AMIHUD_h3,,,ETH,REVERSE,spot_amihud,oi_log_change_fwd_3d,3,SECONDARY,,False
+REV_ETH_OI_AMIHUD_h7,,,ETH,REVERSE,spot_amihud,oi_log_change_fwd_7d,7,SECONDARY,,False
+REV_ETH_OI_DOWNSIDE_h1,C3,LEVERAGE / TAIL RISK,ETH,REVERSE,spot_downside_semivariance,oi_log_change_fwd_1d,1,PRIMARY_CONFIRMATORY,C3_ETH_REVERSE_OI_DOWNSIDE,True
+REV_ETH_OI_DOWNSIDE_h3,C3,LEVERAGE / TAIL RISK,ETH,REVERSE,spot_downside_semivariance,oi_log_change_fwd_3d,3,PRIMARY_CONFIRMATORY,C3_ETH_REVERSE_OI_DOWNSIDE,True
+REV_ETH_OI_DOWNSIDE_h7,C3,LEVERAGE / TAIL RISK,ETH,REVERSE,spot_downside_semivariance,oi_log_change_fwd_7d,7,PRIMARY_CONFIRMATORY,C3_ETH_REVERSE_OI_DOWNSIDE,True
+REV_ETH_FLOW_RV_h1,,,ETH,REVERSE,spot_realized_volatility,futures_taker_imbalance_mean_fwd_1d,1,SECONDARY,,False
+REV_ETH_FLOW_RV_h3,,,ETH,REVERSE,spot_realized_volatility,futures_taker_imbalance_mean_fwd_3d,3,SECONDARY,,False
+REV_ETH_FLOW_RV_h7,,,ETH,REVERSE,spot_realized_volatility,futures_taker_imbalance_mean_fwd_7d,7,SECONDARY,,False
+REV_ETH_FLOW_AMIHUD_h1,C4,ORDER FLOW / LIQUIDITY,ETH,REVERSE,spot_amihud,futures_taker_imbalance_mean_fwd_1d,1,PRIMARY_CONFIRMATORY,C4_ETH_REVERSE_FLOW_AMIHUD,True
+REV_ETH_FLOW_AMIHUD_h3,C4,ORDER FLOW / LIQUIDITY,ETH,REVERSE,spot_amihud,futures_taker_imbalance_mean_fwd_3d,3,PRIMARY_CONFIRMATORY,C4_ETH_REVERSE_FLOW_AMIHUD,True
+REV_ETH_FLOW_AMIHUD_h7,C4,ORDER FLOW / LIQUIDITY,ETH,REVERSE,spot_amihud,futures_taker_imbalance_mean_fwd_7d,7,PRIMARY_CONFIRMATORY,C4_ETH_REVERSE_FLOW_AMIHUD,True
+REV_ETH_FLOW_DOWNSIDE_h1,,,ETH,REVERSE,spot_downside_semivariance,futures_taker_imbalance_mean_fwd_1d,1,SECONDARY,,False
+REV_ETH_FLOW_DOWNSIDE_h3,,,ETH,REVERSE,spot_downside_semivariance,futures_taker_imbalance_mean_fwd_3d,3,SECONDARY,,False
+REV_ETH_FLOW_DOWNSIDE_h7,,,ETH,REVERSE,spot_downside_semivariance,futures_taker_imbalance_mean_fwd_7d,7,SECONDARY,,False

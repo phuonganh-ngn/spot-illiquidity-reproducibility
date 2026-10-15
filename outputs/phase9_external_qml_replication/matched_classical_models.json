@@ -1,0 +1,85 @@
+{
+  "matched_residual_model": {
+    "family": "one-hidden-layer MLP",
+    "per_asset": {
+      "BTC": {
+        "alpha": 0.01,
+        "early_stopping": false,
+        "family": "one-hidden-layer MLP",
+        "hidden_width": 4,
+        "input_scaler": "training-only StandardScaler",
+        "learning_rate_init": 0.001,
+        "max_iter": 2000,
+        "pca_components": 16,
+        "post_pca_scaler": "training-only StandardScaler",
+        "same_seed_for_each_pair": true,
+        "solver": "adam",
+        "tol": 1e-05
+      },
+      "ETH": {
+        "alpha": 0.01,
+        "early_stopping": false,
+        "family": "one-hidden-layer MLP",
+        "hidden_width": 6,
+        "input_scaler": "training-only StandardScaler",
+        "learning_rate_init": 0.001,
+        "max_iter": 2000,
+        "pca_components": 6,
+        "post_pca_scaler": "training-only StandardScaler",
+        "same_seed_for_each_pair": true,
+        "solver": "adam",
+        "tol": 1e-05
+      }
+    }
+  },
+  "selection_basis": "prior targeted-study frozen development evidence only; external-venue performance is prohibited from selection",
+  "spot_only": {
+    "BTC": {
+      "config": {
+        "allow_writing_files": false,
+        "depth": 6,
+        "iterations": 250,
+        "l2_leaf_reg": 3.0,
+        "learning_rate": 0.1,
+        "loss_function": "RMSE",
+        "thread_count": 1,
+        "verbose": false
+      },
+      "config_index_in_original_registry": 6,
+      "family": "CatBoost",
+      "selection_source": "prior frozen development CV; not reselected on external holdout"
+    },
+    "ETH": {
+      "config": {
+        "colsample_bytree": 0.8,
+        "learning_rate": 0.1,
+        "max_depth": 6,
+        "n_estimators": 250,
+        "n_jobs": 1,
+        "objective": "reg:squarederror",
+        "reg_lambda": 1.0,
+        "subsample": 0.7,
+        "tree_method": "hist"
+      },
+      "config_index_in_original_registry": 18,
+      "family": "XGBoost",
+      "selection_source": "prior frozen development CV; not reselected on external holdout"
+    }
+  },
+  "strongest_previously_frozen_classical_residual_learner": {
+    "BTC": {
+      "delta_positive_favors_derivatives": 1.1010583017752828e-07,
+      "family": "ElasticNet",
+      "holm_p_within_asset_residual_families": 0.16383616383616384,
+      "residual_model_mae": 4.421676380971416e-06,
+      "spot_only_residual_mae": 4.531782211148944e-06
+    },
+    "ETH": {
+      "delta_positive_favors_derivatives": -1.1748919521854919e-05,
+      "family": "XGBoost",
+      "holm_p_within_asset_residual_families": 0.00999000999000999,
+      "residual_model_mae": 3.070058521405977e-05,
+      "spot_only_residual_mae": 1.8951665692204853e-05
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "by_asset": {
+    "BTC": {
+      "delta_i_supported": false,
+      "delta_q_supported": false,
+      "material_placebo_warning": false,
+      "primary_model": "Hybrid QNN 4 qubits",
+      "requirements": {
+        "at_least_four_of_five_seeds_favor_qml": false,
+        "delta_i_positive_and_42block_ci_positive_and_holm_lt_0_05": false,
+        "delta_q_positive_and_42block_ci_positive_and_holm_lt_0_05": false,
+        "no_material_impossible_time_placebo": true
+      },
+      "seed_requirement_pass": false,
+      "seeds_favoring_qml": 3,
+      "status": "FAIL"
+    },
+    "ETH": {
+      "delta_i_supported": false,
+      "delta_q_supported": false,
+      "material_placebo_warning": false,
+      "primary_model": "QNN 6 qubits",
+      "requirements": {
+        "at_least_four_of_five_seeds_favor_qml": false,
+        "delta_i_positive_and_42block_ci_positive_and_holm_lt_0_05": false,
+        "delta_q_positive_and_42block_ci_positive_and_holm_lt_0_05": false,
+        "no_material_impossible_time_placebo": true
+      },
+      "seed_requirement_pass": false,
+      "seeds_favoring_qml": 1,
+      "status": "FAIL"
+    }
+  },
+  "classification": "ALGORITHMIC_QML_GAIN_WITHOUT_INCREMENTAL_INFORMATION",
+  "quantum_hardware_advantage": "NOT_TESTED / NOT CLAIMED"
+}

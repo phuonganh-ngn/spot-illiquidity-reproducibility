@@ -1,0 +1,245 @@
+{
+  "definition": "Thresholds are asset-specific empirical quantiles from the pre-outer-evaluation period ending 2022-09-30; summaries use only nested OOF errors and selected families. Descriptive only.",
+  "results": [
+    {
+      "asset": "BTC",
+      "mean_delta_s0_minus_s1": -1.0585283864881747e-06,
+      "median_delta": -4.910520646922313e-07,
+      "n": 74,
+      "regime": "high_volatility",
+      "status": "EXPLORATORY_DESCRIPTIVE",
+      "thresholds_learned_pre_outer_evaluation": {
+        "abs_funding_q90": 0.0001,
+        "abs_oishock_q90": 2.2485512578737903,
+        "basis_median": -0.00038774853766514997,
+        "high_amihud_q75": 3.809098093001942e-05,
+        "high_rv_q75": 0.0155559744091371
+      }
+    },
+    {
+      "asset": "BTC",
+      "mean_delta_s0_minus_s1": -2.0393253735604797e-06,
+      "median_delta": -1.5871892640844871e-06,
+      "n": 831,
+      "regime": "low_volatility",
+      "status": "EXPLORATORY_DESCRIPTIVE",
+      "thresholds_learned_pre_outer_evaluation": {
+        "abs_funding_q90": 0.0001,
+        "abs_oishock_q90": 2.2485512578737903,
+        "basis_median": -0.00038774853766514997,
+        "high_amihud_q75": 3.809098093001942e-05,
+        "high_rv_q75": 0.0155559744091371
+      }
+    },
+    {
+      "asset": "BTC",
+      "mean_delta_s0_minus_s1": -1.0809366436645163e-06,
+      "median_delta": -1.2978225973650596e-06,
+      "n": 41,
+      "regime": "high_illiquidity",
+      "status": "EXPLORATORY_DESCRIPTIVE",
+      "thresholds_learned_pre_outer_evaluation": {
+        "abs_funding_q90": 0.0001,
+        "abs_oishock_q90": 2.2485512578737903,
+        "basis_median": -0.00038774853766514997,
+        "high_amihud_q75": 3.809098093001942e-05,
+        "high_rv_q75": 0.0155559744091371
+      }
+    },
+    {
+      "asset": "BTC",
+      "mean_delta_s0_minus_s1": -2.0008010227299053e-06,
+      "median_delta": -1.5600506719934693e-06,
+      "n": 864,
+      "regime": "low_illiquidity",
+      "status": "EXPLORATORY_DESCRIPTIVE",
+      "thresholds_learned_pre_outer_evaluation": {
+        "abs_funding_q90": 0.0001,
+        "abs_oishock_q90": 2.2485512578737903,
+        "basis_median": -0.00038774853766514997,
+        "high_amihud_q75": 3.809098093001942e-05,
+        "high_rv_q75": 0.0155559744091371
+      }
+    },
+    {
+      "asset": "BTC",
+      "mean_delta_s0_minus_s1": -1.905342549070471e-06,
+      "median_delta": -1.368548177738732e-06,
+      "n": 92,
+      "regime": "extreme_oi_shock",
+      "status": "EXPLORATORY_DESCRIPTIVE",
+      "thresholds_learned_pre_outer_evaluation": {
+        "abs_funding_q90": 0.0001,
+        "abs_oishock_q90": 2.2485512578737903,
+        "basis_median": -0.00038774853766514997,
+        "high_amihud_q75": 3.809098093001942e-05,
+        "high_rv_q75": 0.0155559744091371
+      }
+    },
+    {
+      "asset": "BTC",
+      "mean_delta_s0_minus_s1": -2.15549897827857e-06,
+      "median_delta": -5.865162583260168e-07,
+      "n": 28,
+      "regime": "extreme_funding",
+      "status": "EXPLORATORY_DESCRIPTIVE",
+      "thresholds_learned_pre_outer_evaluation": {
+        "abs_funding_q90": 0.0001,
+        "abs_oishock_q90": 2.2485512578737903,
+        "basis_median": -0.00038774853766514997,
+        "high_amihud_q75": 3.809098093001942e-05,
+        "high_rv_q75": 0.0155559744091371
+      }
+    },
+    {
+      "asset": "BTC",
+      "mean_delta_s0_minus_s1": -2.7958203937705744e-06,
+      "median_delta": -2.3639221052877307e-06,
+      "n": 408,
+      "regime": "positive_basis",
+      "status": "EXPLORATORY_DESCRIPTIVE",
+      "thresholds_learned_pre_outer_evaluation": {
+        "abs_funding_q90": 0.0001,
+        "abs_oishock_q90": 2.2485512578737903,
+        "basis_median": -0.00038774853766514997,
+        "high_amihud_q75": 3.809098093001942e-05,
+        "high_rv_q75": 0.0155559744091371
+      }
+    },
+    {
+      "asset": "BTC",
+      "mean_delta_s0_minus_s1": -1.272265121469797e-06,
+      "median_delta": -1.1474311746320475e-06,
+      "n": 497,
+      "regime": "negative_basis",
+      "status": "EXPLORATORY_DESCRIPTIVE",
+      "thresholds_learned_pre_outer_evaluation": {
+        "abs_funding_q90": 0.0001,
+        "abs_oishock_q90": 2.2485512578737903,
+        "basis_median": -0.00038774853766514997,
+        "high_amihud_q75": 3.809098093001942e-05,
+        "high_rv_q75": 0.0155559744091371
+      }
+    },
+    {
+      "asset": "ETH",
+      "mean_delta_s0_minus_s1": 3.847422444128565e-09,
+      "median_delta": 0.0,
+      "n": 70,
+      "regime": "high_volatility",
+      "status": "EXPLORATORY_DESCRIPTIVE",
+      "thresholds_learned_pre_outer_evaluation": {
+        "abs_funding_q90": 0.00010414700000000002,
+        "abs_oishock_q90": 2.3594598091986483,
+        "basis_median": -0.0004066792805241,
+        "high_amihud_q75": 7.753326461865674e-05,
+        "high_rv_q75": 0.020241351836897653
+      }
+    },
+    {
+      "asset": "ETH",
+      "mean_delta_s0_minus_s1": -2.902811213953594e-07,
+      "median_delta": 0.0,
+      "n": 852,
+      "regime": "low_volatility",
+      "status": "EXPLORATORY_DESCRIPTIVE",
+      "thresholds_learned_pre_outer_evaluation": {
+        "abs_funding_q90": 0.00010414700000000002,
+        "abs_oishock_q90": 2.3594598091986483,
+        "basis_median": -0.0004066792805241,
+        "high_amihud_q75": 7.753326461865674e-05,
+        "high_rv_q75": 0.020241351836897653
+      }
+    },
+    {
+      "asset": "ETH",
+      "mean_delta_s0_minus_s1": -3.202401834712474e-08,
+      "median_delta": 0.0,
+      "n": 263,
+      "regime": "high_illiquidity",
+      "status": "EXPLORATORY_DESCRIPTIVE",
+      "thresholds_learned_pre_outer_evaluation": {
+        "abs_funding_q90": 0.00010414700000000002,
+        "abs_oishock_q90": 2.3594598091986483,
+        "basis_median": -0.0004066792805241,
+        "high_amihud_q75": 7.753326461865674e-05,
+        "high_rv_q75": 0.020241351836897653
+      }
+    },
+    {
+      "asset": "ETH",
+      "mean_delta_s0_minus_s1": -3.621060379855287e-07,
+      "median_delta": 0.0,
+      "n": 659,
+      "regime": "low_illiquidity",
+      "status": "EXPLORATORY_DESCRIPTIVE",
+      "thresholds_learned_pre_outer_evaluation": {
+        "abs_funding_q90": 0.00010414700000000002,
+        "abs_oishock_q90": 2.3594598091986483,
+        "basis_median": -0.0004066792805241,
+        "high_amihud_q75": 7.753326461865674e-05,
+        "high_rv_q75": 0.020241351836897653
+      }
+    },
+    {
+      "asset": "ETH",
+      "mean_delta_s0_minus_s1": 1.1416516106503157e-07,
+      "median_delta": 0.0,
+      "n": 77,
+      "regime": "extreme_oi_shock",
+      "status": "EXPLORATORY_DESCRIPTIVE",
+      "thresholds_learned_pre_outer_evaluation": {
+        "abs_funding_q90": 0.00010414700000000002,
+        "abs_oishock_q90": 2.3594598091986483,
+        "basis_median": -0.0004066792805241,
+        "high_amihud_q75": 7.753326461865674e-05,
+        "high_rv_q75": 0.020241351836897653
+      }
+    },
+    {
+      "asset": "ETH",
+      "mean_delta_s0_minus_s1": 0.0,
+      "median_delta": 0.0,
+      "n": 41,
+      "regime": "extreme_funding",
+      "status": "EXPLORATORY_DESCRIPTIVE",
+      "thresholds_learned_pre_outer_evaluation": {
+        "abs_funding_q90": 0.00010414700000000002,
+        "abs_oishock_q90": 2.3594598091986483,
+        "basis_median": -0.0004066792805241,
+        "high_amihud_q75": 7.753326461865674e-05,
+        "high_rv_q75": 0.020241351836897653
+      }
+    },
+    {
+      "asset": "ETH",
+      "mean_delta_s0_minus_s1": -2.3376900254369612e-07,
+      "median_delta": 0.0,
+      "n": 497,
+      "regime": "positive_basis",
+      "status": "EXPLORATORY_DESCRIPTIVE",
+      "thresholds_learned_pre_outer_evaluation": {
+        "abs_funding_q90": 0.00010414700000000002,
+        "abs_oishock_q90": 2.3594598091986483,
+        "basis_median": -0.0004066792805241,
+        "high_amihud_q75": 7.753326461865674e-05,
+        "high_rv_q75": 0.020241351836897653
+      }
+    },
+    {
+      "asset": "ETH",
+      "mean_delta_s0_minus_s1": -3.0792235669068294e-07,
+      "median_delta": 0.0,
+      "n": 425,
+      "regime": "negative_basis",
+      "status": "EXPLORATORY_DESCRIPTIVE",
+      "thresholds_learned_pre_outer_evaluation": {
+        "abs_funding_q90": 0.00010414700000000002,
+        "abs_oishock_q90": 2.3594598091986483,
+        "basis_median": -0.0004066792805241,
+        "high_amihud_q75": 7.753326461865674e-05,
+        "high_rv_q75": 0.020241351836897653
+      }
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "package": "spot-illiquidity-reproducibility",
+  "paper_title": "Forecasting Cryptocurrency Spot Illiquidity with Perpetual-Futures Information: Multi-Model Benchmarks, Residual Corrections, and Cross-Venue Evaluation",
+  "scope": "Archived evidence, compact frozen panels, research source, and report-level verification for the paper.",
+  "source_artifact_count": 786,
+  "model_training_during_package_assembly": false,
+  "market_data_download_during_package_assembly": false,
+  "original_research_artifacts_modified": false,
+  "raw_exchange_archives_bundled": false,
+  "frozen_compact_panels_bundled": true,
+  "license": "NOT_SPECIFIED_IN_SOURCE_PROJECT",
+  "manuscript_source": {
+    "status": "NOT_FOUND_IN_PROJECT",
+    "included": false,
+    "note": "The author-approved current LaTeX source, PDF, and bibliography were absent; no older draft was substituted."
+  },
+  "integrity": {
+    "source_map": "source_manifest.csv",
+    "package_checksums": "SHA256SUMS"
+  }
+}

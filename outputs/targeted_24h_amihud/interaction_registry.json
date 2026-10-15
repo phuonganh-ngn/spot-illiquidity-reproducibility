@@ -1,0 +1,10 @@
+{
+  "frozen": true,
+  "other_interactions": "none",
+  "terms": [
+    "funding_rate_state[t]*oi_shock_30d_robust[t]",
+    "oi_shock_30d_robust[t]*flow_shock_30d_robust[t]",
+    "funding_rate_state[t]*basis_mean[t]",
+    "futures_taker_imbalance[t]*basis_mean[t]"
+  ]
+}

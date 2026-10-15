@@ -1,0 +1,150 @@
+{
+  "inner_by_outer": [
+    {
+      "inner_folds": [
+        {
+          "id": "F1_I1",
+          "purge_intervals_after": 6,
+          "purge_intervals_before": 6,
+          "train_end_exclusive": "2022-04-03T00:00:00Z",
+          "train_start": "2021-12-01T00:00:00Z",
+          "validation_end_exclusive": "2022-06-03T00:00:00Z",
+          "validation_feature_end_exclusive": "2022-06-02T00:00:00Z",
+          "validation_start": "2022-04-04T00:00:00Z"
+        },
+        {
+          "id": "F1_I2",
+          "purge_intervals_after": 6,
+          "purge_intervals_before": 6,
+          "train_end_exclusive": "2022-06-02T00:00:00Z",
+          "train_start": "2021-12-01T00:00:00Z",
+          "validation_end_exclusive": "2022-08-02T00:00:00Z",
+          "validation_feature_end_exclusive": "2022-08-01T00:00:00Z",
+          "validation_start": "2022-06-03T00:00:00Z"
+        },
+        {
+          "id": "F1_I3",
+          "purge_intervals_after": 6,
+          "purge_intervals_before": 6,
+          "train_end_exclusive": "2022-08-01T00:00:00Z",
+          "train_start": "2021-12-01T00:00:00Z",
+          "validation_end_exclusive": "2022-10-01T00:00:00Z",
+          "validation_feature_end_exclusive": "2022-09-30T00:00:00Z",
+          "validation_start": "2022-08-02T00:00:00Z"
+        }
+      ],
+      "outer_fold": "F1"
+    },
+    {
+      "inner_folds": [
+        {
+          "id": "F2_I1",
+          "purge_intervals_after": 6,
+          "purge_intervals_before": 6,
+          "train_end_exclusive": "2022-07-04T00:00:00Z",
+          "train_start": "2021-12-01T00:00:00Z",
+          "validation_end_exclusive": "2022-09-03T00:00:00Z",
+          "validation_feature_end_exclusive": "2022-09-02T00:00:00Z",
+          "validation_start": "2022-07-05T00:00:00Z"
+        },
+        {
+          "id": "F2_I2",
+          "purge_intervals_after": 6,
+          "purge_intervals_before": 6,
+          "train_end_exclusive": "2022-09-02T00:00:00Z",
+          "train_start": "2021-12-01T00:00:00Z",
+          "validation_end_exclusive": "2022-11-02T00:00:00Z",
+          "validation_feature_end_exclusive": "2022-11-01T00:00:00Z",
+          "validation_start": "2022-09-03T00:00:00Z"
+        },
+        {
+          "id": "F2_I3",
+          "purge_intervals_after": 6,
+          "purge_intervals_before": 6,
+          "train_end_exclusive": "2022-11-01T00:00:00Z",
+          "train_start": "2021-12-01T00:00:00Z",
+          "validation_end_exclusive": "2023-01-01T00:00:00Z",
+          "validation_feature_end_exclusive": "2022-12-31T00:00:00Z",
+          "validation_start": "2022-11-02T00:00:00Z"
+        }
+      ],
+      "outer_fold": "F2"
+    },
+    {
+      "inner_folds": [
+        {
+          "id": "F3_I1",
+          "purge_intervals_after": 6,
+          "purge_intervals_before": 6,
+          "train_end_exclusive": "2022-10-02T00:00:00Z",
+          "train_start": "2021-12-01T00:00:00Z",
+          "validation_end_exclusive": "2022-12-02T00:00:00Z",
+          "validation_feature_end_exclusive": "2022-12-01T00:00:00Z",
+          "validation_start": "2022-10-03T00:00:00Z"
+        },
+        {
+          "id": "F3_I2",
+          "purge_intervals_after": 6,
+          "purge_intervals_before": 6,
+          "train_end_exclusive": "2022-12-01T00:00:00Z",
+          "train_start": "2021-12-01T00:00:00Z",
+          "validation_end_exclusive": "2023-01-31T00:00:00Z",
+          "validation_feature_end_exclusive": "2023-01-30T00:00:00Z",
+          "validation_start": "2022-12-02T00:00:00Z"
+        },
+        {
+          "id": "F3_I3",
+          "purge_intervals_after": 6,
+          "purge_intervals_before": 6,
+          "train_end_exclusive": "2023-01-30T00:00:00Z",
+          "train_start": "2021-12-01T00:00:00Z",
+          "validation_end_exclusive": "2023-04-01T00:00:00Z",
+          "validation_feature_end_exclusive": "2023-03-31T00:00:00Z",
+          "validation_start": "2023-01-31T00:00:00Z"
+        }
+      ],
+      "outer_fold": "F3"
+    }
+  ],
+  "outer": [
+    {
+      "id": "F1",
+      "train_start": "2021-12-01T00:00:00Z",
+      "validation_end_exclusive": "2023-01-01T00:00:00Z",
+      "validation_start": "2022-10-01T00:00:00Z"
+    },
+    {
+      "id": "F2",
+      "train_start": "2021-12-01T00:00:00Z",
+      "validation_end_exclusive": "2023-04-01T00:00:00Z",
+      "validation_start": "2023-01-01T00:00:00Z"
+    },
+    {
+      "id": "F3",
+      "train_start": "2021-12-01T00:00:00Z",
+      "validation_end_exclusive": "2023-07-01T00:00:00Z",
+      "validation_start": "2023-04-01T00:00:00Z"
+    }
+  ],
+  "purge_intervals": 6,
+  "target_transform_calibration": [
+    {
+      "id": "T1",
+      "train_start": "2021-12-01T00:00:00Z",
+      "validation_end_exclusive": "2022-06-01T00:00:00Z",
+      "validation_start": "2022-04-01T00:00:00Z"
+    },
+    {
+      "id": "T2",
+      "train_start": "2021-12-01T00:00:00Z",
+      "validation_end_exclusive": "2022-08-01T00:00:00Z",
+      "validation_start": "2022-06-01T00:00:00Z"
+    },
+    {
+      "id": "T3",
+      "train_start": "2021-12-01T00:00:00Z",
+      "validation_end_exclusive": "2022-10-01T00:00:00Z",
+      "validation_start": "2022-08-01T00:00:00Z"
+    }
+  ]
+}

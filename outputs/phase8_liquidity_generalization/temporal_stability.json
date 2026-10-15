@@ -1,0 +1,5680 @@
+{
+  "primary_target": "future_amihud_24h_mean",
+  "results": [
+    {
+      "asset": "BTC",
+      "categories_improving": 1,
+      "category_deltas": [
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": 0.010430206840720666
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.003523325670515186
+        },
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": 0.0029666522455080563
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": 0.0002822813740752547
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": -0.04560422402294208
+        }
+      ],
+      "equal_category_delta_plus_minus_spot": -0.005680351578424583,
+      "family_deltas": [
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": 0.0029666522455080563,
+          "family": "ExtraTrees"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": -0.113579078991118,
+          "family": "GRU"
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": 0.0002822813740752547,
+          "family": "HistGradientBoosting"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.022370630945233845,
+          "family": "MLP"
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.003523325670515186,
+          "family": "RBF_SVR"
+        },
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": 0.010430206840720666,
+          "family": "Ridge"
+        }
+      ],
+      "feature_pair": "legacy",
+      "n_unique_dates": 1756,
+      "segment": "2024-03_to_2024-12",
+      "target": "future_amihud_24h_mean"
+    },
+    {
+      "asset": "BTC",
+      "categories_improving": 2,
+      "category_deltas": [
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": 0.00026834431804369956
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.03238221588579964
+        },
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": -0.0025064702755352116
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": 0.003129145549395456
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": -0.02426998704919611
+        }
+      ],
+      "equal_category_delta_plus_minus_spot": 0.0018006496857014948,
+      "family_deltas": [
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": -0.0025064702755352116,
+          "family": "ExtraTrees"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": -0.07350071247355858,
+          "family": "GRU"
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": 0.003129145549395456,
+          "family": "HistGradientBoosting"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.02496073837516636,
+          "family": "MLP"
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.03238221588579964,
+          "family": "RBF_SVR"
+        },
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": 0.00026834431804369956,
+          "family": "Ridge"
+        }
+      ],
+      "feature_pair": "legacy",
+      "n_unique_dates": 2140,
+      "segment": "2025",
+      "target": "future_amihud_24h_mean"
+    },
+    {
+      "asset": "BTC",
+      "categories_improving": 2,
+      "category_deltas": [
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": 0.000531046155747099
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.02572663556869791
+        },
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": -0.0003342422142539929
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": 0.0006330050453208421
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": -0.08313235563519497
+        }
+      ],
+      "equal_category_delta_plus_minus_spot": -0.011315182215936623,
+      "family_deltas": [
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": -0.0003342422142539929,
+          "family": "ExtraTrees"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": -0.18935725925383762,
+          "family": "GRU"
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": 0.0006330050453208421,
+          "family": "HistGradientBoosting"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.023092547983447675,
+          "family": "MLP"
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.02572663556869791,
+          "family": "RBF_SVR"
+        },
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": 0.000531046155747099,
+          "family": "Ridge"
+        }
+      ],
+      "feature_pair": "legacy",
+      "n_unique_dates": 1621,
+      "segment": "2026_partial",
+      "target": "future_amihud_24h_mean"
+    },
+    {
+      "asset": "BTC",
+      "categories_improving": 2,
+      "category_deltas": [
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": 0.014787316496591247
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": -0.006146881137876046
+        },
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": 0.003696609657899319
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": 0.0020672416995557714
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": -0.029772437940393488
+        }
+      ],
+      "equal_category_delta_plus_minus_spot": -0.0030736302448446393,
+      "family_deltas": [
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": 0.003696609657899319,
+          "family": "ExtraTrees"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": -0.08787754079327602,
+          "family": "GRU"
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": 0.0020672416995557714,
+          "family": "HistGradientBoosting"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.028332664912489043,
+          "family": "MLP"
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": -0.006146881137876046,
+          "family": "RBF_SVR"
+        },
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": 0.014787316496591247,
+          "family": "Ridge"
+        }
+      ],
+      "feature_pair": "enhanced",
+      "n_unique_dates": 1756,
+      "segment": "2024-03_to_2024-12",
+      "target": "future_amihud_24h_mean"
+    },
+    {
+      "asset": "BTC",
+      "categories_improving": 2,
+      "category_deltas": [
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": 0.0061733434204771205
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.018949057178134485
+        },
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": -0.0017248049863445212
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": 0.006273116086952789
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": -0.04904052699986029
+        }
+      ],
+      "equal_category_delta_plus_minus_spot": -0.003873963060128084,
+      "family_deltas": [
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": -0.0017248049863445212,
+          "family": "ExtraTrees"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": -0.09548253845160748,
+          "family": "GRU"
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": 0.006273116086952789,
+          "family": "HistGradientBoosting"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": -0.0025985155481131113,
+          "family": "MLP"
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.018949057178134485,
+          "family": "RBF_SVR"
+        },
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": 0.0061733434204771205,
+          "family": "Ridge"
+        }
+      ],
+      "feature_pair": "enhanced",
+      "n_unique_dates": 2140,
+      "segment": "2025",
+      "target": "future_amihud_24h_mean"
+    },
+    {
+      "asset": "BTC",
+      "categories_improving": 1,
+      "category_deltas": [
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": 0.008956606571575727
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.01804461662687147
+        },
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": 0.0004889198040393563
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": 0.0013622443160728514
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": -0.09963124045545435
+        }
+      ],
+      "equal_category_delta_plus_minus_spot": -0.014155770627378989,
+      "family_deltas": [
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": 0.0004889198040393563,
+          "family": "ExtraTrees"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": -0.20599302455662277,
+          "family": "GRU"
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": 0.0013622443160728514,
+          "family": "HistGradientBoosting"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.006730543645714078,
+          "family": "MLP"
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.01804461662687147,
+          "family": "RBF_SVR"
+        },
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": 0.008956606571575727,
+          "family": "Ridge"
+        }
+      ],
+      "feature_pair": "enhanced",
+      "n_unique_dates": 1621,
+      "segment": "2026_partial",
+      "target": "future_amihud_24h_mean"
+    },
+    {
+      "asset": "BTC",
+      "categories_improving": 4,
+      "category_deltas": [
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": -0.042696271288387176
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.010937703204608042
+        },
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": -0.018493799843533495
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": -0.0172649591171982
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": -0.06481199316325297
+        }
+      ],
+      "equal_category_delta_plus_minus_spot": -0.026465864041552756,
+      "family_deltas": [
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": -0.018493799843533495,
+          "family": "ExtraTrees"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": -0.1475083107713728,
+          "family": "GRU"
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": -0.0172649591171982,
+          "family": "HistGradientBoosting"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.017884324444866862,
+          "family": "MLP"
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.010937703204608042,
+          "family": "RBF_SVR"
+        },
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": -0.042696271288387176,
+          "family": "Ridge"
+        }
+      ],
+      "feature_pair": "legacy",
+      "n_unique_dates": 1756,
+      "segment": "2024-03_to_2024-12",
+      "target": "future_kyle_abs_lambda_24h"
+    },
+    {
+      "asset": "BTC",
+      "categories_improving": 1,
+      "category_deltas": [
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": 0.006895120037068424
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.009739752391584248
+        },
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": 0.018538796641172806
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": 0.025761197267069703
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": -0.016757860344044185
+        }
+      ],
+      "equal_category_delta_plus_minus_spot": 0.0088354011985702,
+      "family_deltas": [
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": 0.018538796641172806,
+          "family": "ExtraTrees"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": -0.0923828955733922,
+          "family": "GRU"
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": 0.025761197267069703,
+          "family": "HistGradientBoosting"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.05886717488530383,
+          "family": "MLP"
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.009739752391584248,
+          "family": "RBF_SVR"
+        },
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": 0.006895120037068424,
+          "family": "Ridge"
+        }
+      ],
+      "feature_pair": "legacy",
+      "n_unique_dates": 2140,
+      "segment": "2025",
+      "target": "future_kyle_abs_lambda_24h"
+    },
+    {
+      "asset": "BTC",
+      "categories_improving": 1,
+      "category_deltas": [
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": 0.016470496839520128
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.013749830202309476
+        },
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": 0.03212511962073543
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": 0.03797983391094405
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": -0.033979968592003175
+        }
+      ],
+      "equal_category_delta_plus_minus_spot": 0.01326906239630118,
+      "family_deltas": [
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": 0.03212511962073543,
+          "family": "ExtraTrees"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": -0.1463537329407725,
+          "family": "GRU"
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": 0.03797983391094405,
+          "family": "HistGradientBoosting"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.07839379575676615,
+          "family": "MLP"
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.013749830202309476,
+          "family": "RBF_SVR"
+        },
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": 0.016470496839520128,
+          "family": "Ridge"
+        }
+      ],
+      "feature_pair": "legacy",
+      "n_unique_dates": 1621,
+      "segment": "2026_partial",
+      "target": "future_kyle_abs_lambda_24h"
+    },
+    {
+      "asset": "BTC",
+      "categories_improving": 4,
+      "category_deltas": [
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": -0.044745892154986956
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.0034122340178125467
+        },
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": -0.016814087159918684
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": -0.01448674921104496
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": -0.017746890421151674
+        }
+      ],
+      "equal_category_delta_plus_minus_spot": -0.018076276985857946,
+      "family_deltas": [
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": -0.016814087159918684,
+          "family": "ExtraTrees"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": -0.043050878840431954,
+          "family": "GRU"
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": -0.01448674921104496,
+          "family": "HistGradientBoosting"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.007557097998128605,
+          "family": "MLP"
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.0034122340178125467,
+          "family": "RBF_SVR"
+        },
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": -0.044745892154986956,
+          "family": "Ridge"
+        }
+      ],
+      "feature_pair": "enhanced",
+      "n_unique_dates": 1756,
+      "segment": "2024-03_to_2024-12",
+      "target": "future_kyle_abs_lambda_24h"
+    },
+    {
+      "asset": "BTC",
+      "categories_improving": 0,
+      "category_deltas": [
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": 0.006948094338861389
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.007312891778404571
+        },
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": 0.01616489420317869
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": 0.02605004619171773
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.028779204199105412
+        }
+      ],
+      "equal_category_delta_plus_minus_spot": 0.01705102614225356,
+      "family_deltas": [
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": 0.01616489420317869,
+          "family": "ExtraTrees"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.11032374712964965,
+          "family": "GRU"
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": 0.02605004619171773,
+          "family": "HistGradientBoosting"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": -0.05276533873143883,
+          "family": "MLP"
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.007312891778404571,
+          "family": "RBF_SVR"
+        },
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": 0.006948094338861389,
+          "family": "Ridge"
+        }
+      ],
+      "feature_pair": "enhanced",
+      "n_unique_dates": 2140,
+      "segment": "2025",
+      "target": "future_kyle_abs_lambda_24h"
+    },
+    {
+      "asset": "BTC",
+      "categories_improving": 0,
+      "category_deltas": [
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": 0.016772080874769203
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.014026519385653061
+        },
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": 0.031164110425007337
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": 0.03832994743565883
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.026916025209336218
+        }
+      ],
+      "equal_category_delta_plus_minus_spot": 0.02544173666608493,
+      "family_deltas": [
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": 0.031164110425007337,
+          "family": "ExtraTrees"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.08158697256055777,
+          "family": "GRU"
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": 0.03832994743565883,
+          "family": "HistGradientBoosting"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": -0.027754922141885338,
+          "family": "MLP"
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.014026519385653061,
+          "family": "RBF_SVR"
+        },
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": 0.016772080874769203,
+          "family": "Ridge"
+        }
+      ],
+      "feature_pair": "enhanced",
+      "n_unique_dates": 1621,
+      "segment": "2026_partial",
+      "target": "future_kyle_abs_lambda_24h"
+    },
+    {
+      "asset": "BTC",
+      "categories_improving": 1,
+      "category_deltas": [
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": 0.0021052080110038423
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.020062449398217823
+        },
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": 0.002954555217551798
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": 0.0038850623124597286
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": -0.004838921646138828
+        }
+      ],
+      "equal_category_delta_plus_minus_spot": 0.004833670658618873,
+      "family_deltas": [
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": 0.002954555217551798,
+          "family": "ExtraTrees"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": -0.03430770197034989,
+          "family": "GRU"
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": 0.0038850623124597286,
+          "family": "HistGradientBoosting"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.02462985867807223,
+          "family": "MLP"
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.020062449398217823,
+          "family": "RBF_SVR"
+        },
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": 0.0021052080110038423,
+          "family": "Ridge"
+        }
+      ],
+      "feature_pair": "legacy",
+      "n_unique_dates": 1756,
+      "segment": "2024-03_to_2024-12",
+      "target": "future_corwin_schultz_spread_24h"
+    },
+    {
+      "asset": "BTC",
+      "categories_improving": 2,
+      "category_deltas": [
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": 0.0013499427322242897
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": -0.01707735356616995
+        },
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": 0.0007957808744376753
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": -0.0007396719693299867
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.021896000816514556
+        }
+      ],
+      "equal_category_delta_plus_minus_spot": 0.0012449397775353172,
+      "family_deltas": [
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": 0.0007957808744376753,
+          "family": "ExtraTrees"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.03461167341575977,
+          "family": "GRU"
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": -0.0007396719693299867,
+          "family": "HistGradientBoosting"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.00918032821726934,
+          "family": "MLP"
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": -0.01707735356616995,
+          "family": "RBF_SVR"
+        },
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": 0.0013499427322242897,
+          "family": "Ridge"
+        }
+      ],
+      "feature_pair": "legacy",
+      "n_unique_dates": 2140,
+      "segment": "2025",
+      "target": "future_corwin_schultz_spread_24h"
+    },
+    {
+      "asset": "BTC",
+      "categories_improving": 2,
+      "category_deltas": [
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": -0.00054874754739724
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": -0.017793277141603225
+        },
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": 0.0013751386333914412
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": 0.001629007205762482
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.018913707850481378
+        }
+      ],
+      "equal_category_delta_plus_minus_spot": 0.000715165800126967,
+      "family_deltas": [
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": 0.0013751386333914412,
+          "family": "ExtraTrees"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.02435360938006236,
+          "family": "GRU"
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": 0.001629007205762482,
+          "family": "HistGradientBoosting"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.013473806320900396,
+          "family": "MLP"
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": -0.017793277141603225,
+          "family": "RBF_SVR"
+        },
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": -0.00054874754739724,
+          "family": "Ridge"
+        }
+      ],
+      "feature_pair": "legacy",
+      "n_unique_dates": 1621,
+      "segment": "2026_partial",
+      "target": "future_corwin_schultz_spread_24h"
+    },
+    {
+      "asset": "BTC",
+      "categories_improving": 0,
+      "category_deltas": [
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": 0.004733734129708858
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.01820881616961614
+        },
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": 0.003015426561278422
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": 0.0035945637490108527
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.05344151628381694
+        }
+      ],
+      "equal_category_delta_plus_minus_spot": 0.01659881137868624,
+      "family_deltas": [
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": 0.003015426561278422,
+          "family": "ExtraTrees"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.08926767316605062,
+          "family": "GRU"
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": 0.0035945637490108527,
+          "family": "HistGradientBoosting"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.017615359401583253,
+          "family": "MLP"
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.01820881616961614,
+          "family": "RBF_SVR"
+        },
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": 0.004733734129708858,
+          "family": "Ridge"
+        }
+      ],
+      "feature_pair": "enhanced",
+      "n_unique_dates": 1756,
+      "segment": "2024-03_to_2024-12",
+      "target": "future_corwin_schultz_spread_24h"
+    },
+    {
+      "asset": "BTC",
+      "categories_improving": 2,
+      "category_deltas": [
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": 0.006244798066148588
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": -0.017011769785123802
+        },
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": 3.85324380517869e-05
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": -0.0011466232398281437
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.008333223042103748
+        }
+      ],
+      "equal_category_delta_plus_minus_spot": -0.0007083678957295649,
+      "family_deltas": [
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": 3.85324380517869e-05,
+          "family": "ExtraTrees"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.012807611443590935,
+          "family": "GRU"
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": -0.0011466232398281437,
+          "family": "HistGradientBoosting"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.0038588346406165626,
+          "family": "MLP"
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": -0.017011769785123802,
+          "family": "RBF_SVR"
+        },
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": 0.006244798066148588,
+          "family": "Ridge"
+        }
+      ],
+      "feature_pair": "enhanced",
+      "n_unique_dates": 2140,
+      "segment": "2025",
+      "target": "future_corwin_schultz_spread_24h"
+    },
+    {
+      "asset": "BTC",
+      "categories_improving": 2,
+      "category_deltas": [
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": 0.00370272504161284
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": -0.017959954088276317
+        },
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": 0.0004424438211236439
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": -0.002444970762470457
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.012994125317216809
+        }
+      ],
+      "equal_category_delta_plus_minus_spot": -0.0006531261341586961,
+      "family_deltas": [
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": 0.0004424438211236439,
+          "family": "ExtraTrees"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.023579758840436896,
+          "family": "GRU"
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": -0.002444970762470457,
+          "family": "HistGradientBoosting"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.0024084917939967217,
+          "family": "MLP"
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": -0.017959954088276317,
+          "family": "RBF_SVR"
+        },
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": 0.00370272504161284,
+          "family": "Ridge"
+        }
+      ],
+      "feature_pair": "enhanced",
+      "n_unique_dates": 1621,
+      "segment": "2026_partial",
+      "target": "future_corwin_schultz_spread_24h"
+    },
+    {
+      "asset": "ETH",
+      "categories_improving": 4,
+      "category_deltas": [
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": -0.014751301731660069
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.012360267482928919
+        },
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": -0.005346940861753744
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": -0.0023761639614994796
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": -0.012204512372691517
+        }
+      ],
+      "equal_category_delta_plus_minus_spot": -0.004463730288935179,
+      "family_deltas": [
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": -0.005346940861753744,
+          "family": "ExtraTrees"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": -0.03291779933060374,
+          "family": "GRU"
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": -0.0023761639614994796,
+          "family": "HistGradientBoosting"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.008508774585220709,
+          "family": "MLP"
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.012360267482928919,
+          "family": "RBF_SVR"
+        },
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": -0.014751301731660069,
+          "family": "Ridge"
+        }
+      ],
+      "feature_pair": "legacy",
+      "n_unique_dates": 1757,
+      "segment": "2024-03_to_2024-12",
+      "target": "future_amihud_24h_mean"
+    },
+    {
+      "asset": "ETH",
+      "categories_improving": 2,
+      "category_deltas": [
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": -0.004302038640578783
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": -0.00796887463699512
+        },
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": 0.007040280379100089
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": 0.005202413761733446
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.00740348879788796
+        }
+      ],
+      "equal_category_delta_plus_minus_spot": 0.0014750539322295184,
+      "family_deltas": [
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": 0.007040280379100089,
+          "family": "ExtraTrees"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": -0.0038135225640505625,
+          "family": "GRU"
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": 0.005202413761733446,
+          "family": "HistGradientBoosting"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.018620500159826484,
+          "family": "MLP"
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": -0.00796887463699512,
+          "family": "RBF_SVR"
+        },
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": -0.004302038640578783,
+          "family": "Ridge"
+        }
+      ],
+      "feature_pair": "legacy",
+      "n_unique_dates": 2147,
+      "segment": "2025",
+      "target": "future_amihud_24h_mean"
+    },
+    {
+      "asset": "ETH",
+      "categories_improving": 4,
+      "category_deltas": [
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": 0.00014696153742695364
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": -0.003638907442156121
+        },
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": -0.0014784189667599317
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": -0.0012384756761417866
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": -0.012361824502742294
+        }
+      ],
+      "equal_category_delta_plus_minus_spot": -0.003714133010074636,
+      "family_deltas": [
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": -0.0014784189667599317,
+          "family": "ExtraTrees"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": -0.02119179786683082,
+          "family": "GRU"
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": -0.0012384756761417866,
+          "family": "HistGradientBoosting"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": -0.0035318511386537685,
+          "family": "MLP"
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": -0.003638907442156121,
+          "family": "RBF_SVR"
+        },
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": 0.00014696153742695364,
+          "family": "Ridge"
+        }
+      ],
+      "feature_pair": "legacy",
+      "n_unique_dates": 1621,
+      "segment": "2026_partial",
+      "target": "future_amihud_24h_mean"
+    },
+    {
+      "asset": "ETH",
+      "categories_improving": 4,
+      "category_deltas": [
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": -0.014699496522352836
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.014945431159316762
+        },
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": -0.005129323473936996
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": -0.004255468354187765
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": -0.0070221047177114
+        }
+      ],
+      "equal_category_delta_plus_minus_spot": -0.003232192381774447,
+      "family_deltas": [
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": -0.005129323473936996,
+          "family": "ExtraTrees"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": -0.02296948249815925,
+          "family": "GRU"
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": -0.004255468354187765,
+          "family": "HistGradientBoosting"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.008925273062736449,
+          "family": "MLP"
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.014945431159316762,
+          "family": "RBF_SVR"
+        },
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": -0.014699496522352836,
+          "family": "Ridge"
+        }
+      ],
+      "feature_pair": "enhanced",
+      "n_unique_dates": 1757,
+      "segment": "2024-03_to_2024-12",
+      "target": "future_amihud_24h_mean"
+    },
+    {
+      "asset": "ETH",
+      "categories_improving": 3,
+      "category_deltas": [
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": -0.015001217181261102
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": -0.010931333570699503
+        },
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": 0.0031106960234457393
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": 0.0026874209370380945
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": -0.03728312740593043
+        }
+      ],
+      "equal_category_delta_plus_minus_spot": -0.01148351223948144,
+      "family_deltas": [
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": 0.0031106960234457393,
+          "family": "ExtraTrees"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": -0.05789958285689907,
+          "family": "GRU"
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": 0.0026874209370380945,
+          "family": "HistGradientBoosting"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": -0.016666671954961788,
+          "family": "MLP"
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": -0.010931333570699503,
+          "family": "RBF_SVR"
+        },
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": -0.015001217181261102,
+          "family": "Ridge"
+        }
+      ],
+      "feature_pair": "enhanced",
+      "n_unique_dates": 2147,
+      "segment": "2025",
+      "target": "future_amihud_24h_mean"
+    },
+    {
+      "asset": "ETH",
+      "categories_improving": 4,
+      "category_deltas": [
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": 0.0023277898225549263
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": -0.0031474164860240523
+        },
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": -0.0023049620363819966
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": -0.001396504338725509
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": -0.012446317698551255
+        }
+      ],
+      "equal_category_delta_plus_minus_spot": -0.0033934821474255776,
+      "family_deltas": [
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": -0.0023049620363819966,
+          "family": "ExtraTrees"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": -0.03137012791257422,
+          "family": "GRU"
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": -0.001396504338725509,
+          "family": "HistGradientBoosting"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.006477492515471713,
+          "family": "MLP"
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": -0.0031474164860240523,
+          "family": "RBF_SVR"
+        },
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": 0.0023277898225549263,
+          "family": "Ridge"
+        }
+      ],
+      "feature_pair": "enhanced",
+      "n_unique_dates": 1621,
+      "segment": "2026_partial",
+      "target": "future_amihud_24h_mean"
+    },
+    {
+      "asset": "ETH",
+      "categories_improving": 0,
+      "category_deltas": [
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": 0.015671413312712688
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.05360698687603513
+        },
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": 0.02926018069596037
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": 0.02912753477567313
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.011943985032002762
+        }
+      ],
+      "equal_category_delta_plus_minus_spot": 0.027922020138476812,
+      "family_deltas": [
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": 0.02926018069596037,
+          "family": "ExtraTrees"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": -0.019128391682076105,
+          "family": "GRU"
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": 0.02912753477567313,
+          "family": "HistGradientBoosting"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.04301636174608163,
+          "family": "MLP"
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.05360698687603513,
+          "family": "RBF_SVR"
+        },
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": 0.015671413312712688,
+          "family": "Ridge"
+        }
+      ],
+      "feature_pair": "legacy",
+      "n_unique_dates": 1757,
+      "segment": "2024-03_to_2024-12",
+      "target": "future_kyle_abs_lambda_24h"
+    },
+    {
+      "asset": "ETH",
+      "categories_improving": 3,
+      "category_deltas": [
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": -0.009959435557006624
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": -0.009347825337059502
+        },
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": 0.00016988887207487733
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": 0.0037243417080593125
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": -0.033765749463298474
+        }
+      ],
+      "equal_category_delta_plus_minus_spot": -0.009835755955446081,
+      "family_deltas": [
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": 0.00016988887207487733,
+          "family": "ExtraTrees"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": -0.055232559464827115,
+          "family": "GRU"
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": 0.0037243417080593125,
+          "family": "HistGradientBoosting"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": -0.012298939461769829,
+          "family": "MLP"
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": -0.009347825337059502,
+          "family": "RBF_SVR"
+        },
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": -0.009959435557006624,
+          "family": "Ridge"
+        }
+      ],
+      "feature_pair": "legacy",
+      "n_unique_dates": 2147,
+      "segment": "2025",
+      "target": "future_kyle_abs_lambda_24h"
+    },
+    {
+      "asset": "ETH",
+      "categories_improving": 1,
+      "category_deltas": [
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": -0.0002642640992316898
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.0012760976560136099
+        },
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": 0.00040589166329712596
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": 0.0028652512570573846
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.005329805927704933
+        }
+      ],
+      "equal_category_delta_plus_minus_spot": 0.0019225564809682723,
+      "family_deltas": [
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": 0.00040589166329712596,
+          "family": "ExtraTrees"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.0039730666812575425,
+          "family": "GRU"
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": 0.0028652512570573846,
+          "family": "HistGradientBoosting"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.006686545174152323,
+          "family": "MLP"
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.0012760976560136099,
+          "family": "RBF_SVR"
+        },
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": -0.0002642640992316898,
+          "family": "Ridge"
+        }
+      ],
+      "feature_pair": "legacy",
+      "n_unique_dates": 1621,
+      "segment": "2026_partial",
+      "target": "future_kyle_abs_lambda_24h"
+    },
+    {
+      "asset": "ETH",
+      "categories_improving": 0,
+      "category_deltas": [
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": 0.011463105095776253
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.06696613554881732
+        },
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": 0.06519219384409343
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": 0.06275446216415866
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.002926463242956496
+        }
+      ],
+      "equal_category_delta_plus_minus_spot": 0.04186047197916044,
+      "family_deltas": [
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": 0.06519219384409343,
+          "family": "ExtraTrees"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": -0.03733540783439497,
+          "family": "GRU"
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": 0.06275446216415866,
+          "family": "HistGradientBoosting"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.04318833432030796,
+          "family": "MLP"
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.06696613554881732,
+          "family": "RBF_SVR"
+        },
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": 0.011463105095776253,
+          "family": "Ridge"
+        }
+      ],
+      "feature_pair": "enhanced",
+      "n_unique_dates": 1757,
+      "segment": "2024-03_to_2024-12",
+      "target": "future_kyle_abs_lambda_24h"
+    },
+    {
+      "asset": "ETH",
+      "categories_improving": 4,
+      "category_deltas": [
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": -0.031190381386579397
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": -0.01686183713629971
+        },
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": -0.0024449907791342707
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": 0.001840697350850035
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": -0.040300470681750265
+        }
+      ],
+      "equal_category_delta_plus_minus_spot": -0.017791396526582723,
+      "family_deltas": [
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": -0.0024449907791342707,
+          "family": "ExtraTrees"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": -0.06310053576756104,
+          "family": "GRU"
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": 0.001840697350850035,
+          "family": "HistGradientBoosting"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": -0.01750040559593949,
+          "family": "MLP"
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": -0.01686183713629971,
+          "family": "RBF_SVR"
+        },
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": -0.031190381386579397,
+          "family": "Ridge"
+        }
+      ],
+      "feature_pair": "enhanced",
+      "n_unique_dates": 2147,
+      "segment": "2025",
+      "target": "future_kyle_abs_lambda_24h"
+    },
+    {
+      "asset": "ETH",
+      "categories_improving": 2,
+      "category_deltas": [
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": 0.00529678862051311
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": -0.0005641966414794675
+        },
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": 0.0002853344628339862
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": 0.002350309877942074
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": -0.009682751748271396
+        }
+      ],
+      "equal_category_delta_plus_minus_spot": -0.0004629030856923387,
+      "family_deltas": [
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": 0.0002853344628339862,
+          "family": "ExtraTrees"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": -0.0232374630415202,
+          "family": "GRU"
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": 0.002350309877942074,
+          "family": "HistGradientBoosting"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.0038719595449774064,
+          "family": "MLP"
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": -0.0005641966414794675,
+          "family": "RBF_SVR"
+        },
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": 0.00529678862051311,
+          "family": "Ridge"
+        }
+      ],
+      "feature_pair": "enhanced",
+      "n_unique_dates": 1621,
+      "segment": "2026_partial",
+      "target": "future_kyle_abs_lambda_24h"
+    },
+    {
+      "asset": "ETH",
+      "categories_improving": 2,
+      "category_deltas": [
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": 0.0014134121956393983
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.008399900198683486
+        },
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": -0.0015125592311611882
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": -0.002022341694605205
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.009082285580770521
+        }
+      ],
+      "equal_category_delta_plus_minus_spot": 0.0030721394098654027,
+      "family_deltas": [
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": -0.0015125592311611882,
+          "family": "ExtraTrees"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.005782161359093618,
+          "family": "GRU"
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": -0.002022341694605205,
+          "family": "HistGradientBoosting"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.012382409802447423,
+          "family": "MLP"
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.008399900198683486,
+          "family": "RBF_SVR"
+        },
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": 0.0014134121956393983,
+          "family": "Ridge"
+        }
+      ],
+      "feature_pair": "legacy",
+      "n_unique_dates": 1757,
+      "segment": "2024-03_to_2024-12",
+      "target": "future_corwin_schultz_spread_24h"
+    },
+    {
+      "asset": "ETH",
+      "categories_improving": 3,
+      "category_deltas": [
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": -0.00024659534066888585
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.0015685837425691517
+        },
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": -0.0014104880271909653
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": -0.0014673003924492486
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.006030457758822156
+        }
+      ],
+      "equal_category_delta_plus_minus_spot": 0.0008949315482164415,
+      "family_deltas": [
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": -0.0014104880271909653,
+          "family": "ExtraTrees"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.005012549821224964,
+          "family": "GRU"
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": -0.0014673003924492486,
+          "family": "HistGradientBoosting"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.0070483656964193475,
+          "family": "MLP"
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.0015685837425691517,
+          "family": "RBF_SVR"
+        },
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": -0.00024659534066888585,
+          "family": "Ridge"
+        }
+      ],
+      "feature_pair": "legacy",
+      "n_unique_dates": 2147,
+      "segment": "2025",
+      "target": "future_corwin_schultz_spread_24h"
+    },
+    {
+      "asset": "ETH",
+      "categories_improving": 3,
+      "category_deltas": [
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": -0.00029045735883800303
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.0013575806361875201
+        },
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": -0.0007641899460374012
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": -0.000977689711086276
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.017962273040544194
+        }
+      ],
+      "equal_category_delta_plus_minus_spot": 0.003457503332154007,
+      "family_deltas": [
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": -0.0007641899460374012,
+          "family": "ExtraTrees"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.027520341024270714,
+          "family": "GRU"
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": -0.000977689711086276,
+          "family": "HistGradientBoosting"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.008404205056817675,
+          "family": "MLP"
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.0013575806361875201,
+          "family": "RBF_SVR"
+        },
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": -0.00029045735883800303,
+          "family": "Ridge"
+        }
+      ],
+      "feature_pair": "legacy",
+      "n_unique_dates": 1621,
+      "segment": "2026_partial",
+      "target": "future_corwin_schultz_spread_24h"
+    },
+    {
+      "asset": "ETH",
+      "categories_improving": 1,
+      "category_deltas": [
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": 0.0027338011649948703
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.006244458621301198
+        },
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": -0.000628177816223094
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": 0.002135600922056902
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.012253064275795401
+        }
+      ],
+      "equal_category_delta_plus_minus_spot": 0.004547749433585055,
+      "family_deltas": [
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": -0.000628177816223094,
+          "family": "ExtraTrees"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.007444946443291085,
+          "family": "GRU"
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": 0.002135600922056902,
+          "family": "HistGradientBoosting"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.017061182108299718,
+          "family": "MLP"
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.006244458621301198,
+          "family": "RBF_SVR"
+        },
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": 0.0027338011649948703,
+          "family": "Ridge"
+        }
+      ],
+      "feature_pair": "enhanced",
+      "n_unique_dates": 1757,
+      "segment": "2024-03_to_2024-12",
+      "target": "future_corwin_schultz_spread_24h"
+    },
+    {
+      "asset": "ETH",
+      "categories_improving": 4,
+      "category_deltas": [
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": -0.00024070161835308636
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.0004287167772693593
+        },
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": -0.0016926518490915615
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": -0.0010897291564785066
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": -0.004244386253066038
+        }
+      ],
+      "equal_category_delta_plus_minus_spot": -0.0013677504199439666,
+      "family_deltas": [
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": -0.0016926518490915615,
+          "family": "ExtraTrees"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": -0.011991879875104125,
+          "family": "GRU"
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": -0.0010897291564785066,
+          "family": "HistGradientBoosting"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.0035031073689720496,
+          "family": "MLP"
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.0004287167772693593,
+          "family": "RBF_SVR"
+        },
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": -0.00024070161835308636,
+          "family": "Ridge"
+        }
+      ],
+      "feature_pair": "enhanced",
+      "n_unique_dates": 2147,
+      "segment": "2025",
+      "target": "future_corwin_schultz_spread_24h"
+    },
+    {
+      "asset": "ETH",
+      "categories_improving": 0,
+      "category_deltas": [
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": 0.0019775453278765348
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.001880039947457359
+        },
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": 0.0006359818407722089
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": 0.0028813090412506317
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.016968545296757245
+        }
+      ],
+      "equal_category_delta_plus_minus_spot": 0.004868684290822796,
+      "family_deltas": [
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": 0.0006359818407722089,
+          "family": "ExtraTrees"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.021182828116622365,
+          "family": "GRU"
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": 0.0028813090412506317,
+          "family": "HistGradientBoosting"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.012754262476892127,
+          "family": "MLP"
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.001880039947457359,
+          "family": "RBF_SVR"
+        },
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": 0.0019775453278765348,
+          "family": "Ridge"
+        }
+      ],
+      "feature_pair": "enhanced",
+      "n_unique_dates": 1621,
+      "segment": "2026_partial",
+      "target": "future_corwin_schultz_spread_24h"
+    },
+    {
+      "asset": "SOL",
+      "categories_improving": 0,
+      "category_deltas": [
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": 1.3865226700983202e-05
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.0
+        },
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": 5.3422009251407215e-05
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": 2.3371223279083513e-05
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.020159049804578683
+        }
+      ],
+      "equal_category_delta_plus_minus_spot": 0.0040499416527620315,
+      "family_deltas": [
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": 5.3422009251407215e-05,
+          "family": "ExtraTrees"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.04085460801308232,
+          "family": "GRU"
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": 2.3371223279083513e-05,
+          "family": "HistGradientBoosting"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": -0.0005365084039249517,
+          "family": "MLP"
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.0,
+          "family": "RBF_SVR"
+        },
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": 1.3865226700983202e-05,
+          "family": "Ridge"
+        }
+      ],
+      "feature_pair": "legacy",
+      "n_unique_dates": 1747,
+      "segment": "2024-03_to_2024-12",
+      "target": "future_amihud_24h_mean"
+    },
+    {
+      "asset": "SOL",
+      "categories_improving": 0,
+      "category_deltas": [
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": 5.083075317761311e-05
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.0
+        },
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": 7.316059812008587e-05
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": 5.829772847357507e-05
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.024075781575987748
+        }
+      ],
+      "equal_category_delta_plus_minus_spot": 0.0048516141311518044,
+      "family_deltas": [
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": 7.316059812008587e-05,
+          "family": "ExtraTrees"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.04751055907046396,
+          "family": "GRU"
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": 5.829772847357507e-05,
+          "family": "HistGradientBoosting"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.0006410040815115341,
+          "family": "MLP"
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.0,
+          "family": "RBF_SVR"
+        },
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": 5.083075317761311e-05,
+          "family": "Ridge"
+        }
+      ],
+      "feature_pair": "legacy",
+      "n_unique_dates": 2147,
+      "segment": "2025",
+      "target": "future_amihud_24h_mean"
+    },
+    {
+      "asset": "SOL",
+      "categories_improving": 0,
+      "category_deltas": [
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": 6.995434916820858e-05
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.0
+        },
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": 5.547322035695549e-05
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": 7.849423202203532e-05
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.026800317221925923
+        }
+      ],
+      "equal_category_delta_plus_minus_spot": 0.005400847804694625,
+      "family_deltas": [
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": 5.547322035695549e-05,
+          "family": "ExtraTrees"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.05096563205083873,
+          "family": "GRU"
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": 7.849423202203532e-05,
+          "family": "HistGradientBoosting"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.002635002393013113,
+          "family": "MLP"
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.0,
+          "family": "RBF_SVR"
+        },
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": 6.995434916820858e-05,
+          "family": "Ridge"
+        }
+      ],
+      "feature_pair": "legacy",
+      "n_unique_dates": 1600,
+      "segment": "2026_partial",
+      "target": "future_amihud_24h_mean"
+    },
+    {
+      "asset": "SOL",
+      "categories_improving": 0,
+      "category_deltas": [
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": 1.9194819868531013e-05
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.0
+        },
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": 4.908640297808506e-05
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": 2.0151752336194795e-05
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.024347501165490802
+        }
+      ],
+      "equal_category_delta_plus_minus_spot": 0.004887186828134723,
+      "family_deltas": [
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": 4.908640297808506e-05,
+          "family": "ExtraTrees"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.050329938276784746,
+          "family": "GRU"
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": 2.0151752336194795e-05,
+          "family": "HistGradientBoosting"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": -0.0016349359458031414,
+          "family": "MLP"
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.0,
+          "family": "RBF_SVR"
+        },
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": 1.9194819868531013e-05,
+          "family": "Ridge"
+        }
+      ],
+      "feature_pair": "enhanced",
+      "n_unique_dates": 1747,
+      "segment": "2024-03_to_2024-12",
+      "target": "future_amihud_24h_mean"
+    },
+    {
+      "asset": "SOL",
+      "categories_improving": 0,
+      "category_deltas": [
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": 6.66844048959301e-05
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.0
+        },
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": 7.078818934642351e-05
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": 4.7929981041509735e-05
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.027455552906064933
+        }
+      ],
+      "equal_category_delta_plus_minus_spot": 0.0055281910962697595,
+      "family_deltas": [
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": 7.078818934642351e-05,
+          "family": "ExtraTrees"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.0561490341206598,
+          "family": "GRU"
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": 4.7929981041509735e-05,
+          "family": "HistGradientBoosting"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": -0.001237928308529935,
+          "family": "MLP"
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.0,
+          "family": "RBF_SVR"
+        },
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": 6.66844048959301e-05,
+          "family": "Ridge"
+        }
+      ],
+      "feature_pair": "enhanced",
+      "n_unique_dates": 2147,
+      "segment": "2025",
+      "target": "future_amihud_24h_mean"
+    },
+    {
+      "asset": "SOL",
+      "categories_improving": 0,
+      "category_deltas": [
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": 0.00011095932936912851
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.0
+        },
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": 6.846441488886568e-05
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": 7.13726843159252e-05
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.030027903926351247
+        }
+      ],
+      "equal_category_delta_plus_minus_spot": 0.006055740070985033,
+      "family_deltas": [
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": 6.846441488886568e-05,
+          "family": "ExtraTrees"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.05939529050746994,
+          "family": "GRU"
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": 7.13726843159252e-05,
+          "family": "HistGradientBoosting"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.0006605173452325598,
+          "family": "MLP"
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.0,
+          "family": "RBF_SVR"
+        },
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": 0.00011095932936912851,
+          "family": "Ridge"
+        }
+      ],
+      "feature_pair": "enhanced",
+      "n_unique_dates": 1600,
+      "segment": "2026_partial",
+      "target": "future_amihud_24h_mean"
+    },
+    {
+      "asset": "SOL",
+      "categories_improving": 0,
+      "category_deltas": [
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": 0.015614468437025842
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.05900460504901465
+        },
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": 0.10529162715489217
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": 0.10793003020786882
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.1856455378359377
+        }
+      ],
+      "equal_category_delta_plus_minus_spot": 0.09469725373694785,
+      "family_deltas": [
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": 0.10529162715489217,
+          "family": "ExtraTrees"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.2842409778357741,
+          "family": "GRU"
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": 0.10793003020786882,
+          "family": "HistGradientBoosting"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.08705009783610129,
+          "family": "MLP"
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.05900460504901465,
+          "family": "RBF_SVR"
+        },
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": 0.015614468437025842,
+          "family": "Ridge"
+        }
+      ],
+      "feature_pair": "legacy",
+      "n_unique_dates": 1747,
+      "segment": "2024-03_to_2024-12",
+      "target": "future_kyle_abs_lambda_24h"
+    },
+    {
+      "asset": "SOL",
+      "categories_improving": 0,
+      "category_deltas": [
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": 0.03623303212404495
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.0561266701035971
+        },
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": 0.1329491498484057
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": 0.12280986931799075
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.2785559436970777
+        }
+      ],
+      "equal_category_delta_plus_minus_spot": 0.12533493301822324,
+      "family_deltas": [
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": 0.1329491498484057,
+          "family": "ExtraTrees"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.42561046621692056,
+          "family": "GRU"
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": 0.12280986931799075,
+          "family": "HistGradientBoosting"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.13150142117723487,
+          "family": "MLP"
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.0561266701035971,
+          "family": "RBF_SVR"
+        },
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": 0.03623303212404495,
+          "family": "Ridge"
+        }
+      ],
+      "feature_pair": "legacy",
+      "n_unique_dates": 2147,
+      "segment": "2025",
+      "target": "future_kyle_abs_lambda_24h"
+    },
+    {
+      "asset": "SOL",
+      "categories_improving": 0,
+      "category_deltas": [
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": 0.05154255402739445
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.07367189340219847
+        },
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": 0.11399577879830856
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": 0.10269797483586304
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.2749553715679116
+        }
+      ],
+      "equal_category_delta_plus_minus_spot": 0.12337271452633522,
+      "family_deltas": [
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": 0.11399577879830856,
+          "family": "ExtraTrees"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.43211282102030535,
+          "family": "GRU"
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": 0.10269797483586304,
+          "family": "HistGradientBoosting"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.11779792211551784,
+          "family": "MLP"
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.07367189340219847,
+          "family": "RBF_SVR"
+        },
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": 0.05154255402739445,
+          "family": "Ridge"
+        }
+      ],
+      "feature_pair": "legacy",
+      "n_unique_dates": 1600,
+      "segment": "2026_partial",
+      "target": "future_kyle_abs_lambda_24h"
+    },
+    {
+      "asset": "SOL",
+      "categories_improving": 0,
+      "category_deltas": [
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": 0.018041482210338248
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.04339443149137993
+        },
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": 0.07279815313307389
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": 0.09077307196654526
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.04076362874527461
+        }
+      ],
+      "equal_category_delta_plus_minus_spot": 0.053154153509322385,
+      "family_deltas": [
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": 0.07279815313307389,
+          "family": "ExtraTrees"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.011238120203761272,
+          "family": "GRU"
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": 0.09077307196654526,
+          "family": "HistGradientBoosting"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.07028913728678794,
+          "family": "MLP"
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.04339443149137993,
+          "family": "RBF_SVR"
+        },
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": 0.018041482210338248,
+          "family": "Ridge"
+        }
+      ],
+      "feature_pair": "enhanced",
+      "n_unique_dates": 1747,
+      "segment": "2024-03_to_2024-12",
+      "target": "future_kyle_abs_lambda_24h"
+    },
+    {
+      "asset": "SOL",
+      "categories_improving": 0,
+      "category_deltas": [
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": 0.04423025167072176
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.0443522066741521
+        },
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": 0.09048483779579373
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": 0.10000796749647885
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.08998785624901283
+        }
+      ],
+      "equal_category_delta_plus_minus_spot": 0.07381262397723184,
+      "family_deltas": [
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": 0.09048483779579373,
+          "family": "ExtraTrees"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.1032566517138916,
+          "family": "GRU"
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": 0.10000796749647885,
+          "family": "HistGradientBoosting"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.07671906078413405,
+          "family": "MLP"
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.0443522066741521,
+          "family": "RBF_SVR"
+        },
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": 0.04423025167072176,
+          "family": "Ridge"
+        }
+      ],
+      "feature_pair": "enhanced",
+      "n_unique_dates": 2147,
+      "segment": "2025",
+      "target": "future_kyle_abs_lambda_24h"
+    },
+    {
+      "asset": "SOL",
+      "categories_improving": 0,
+      "category_deltas": [
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": 0.0809587817755623
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.0724420814475725
+        },
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": 0.0886148318560523
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": 0.09479436156065316
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.11671158970726703
+        }
+      ],
+      "equal_category_delta_plus_minus_spot": 0.09070432926942144,
+      "family_deltas": [
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": 0.0886148318560523,
+          "family": "ExtraTrees"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.10120508952983713,
+          "family": "GRU"
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": 0.09479436156065316,
+          "family": "HistGradientBoosting"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.13221808988469694,
+          "family": "MLP"
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.0724420814475725,
+          "family": "RBF_SVR"
+        },
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": 0.0809587817755623,
+          "family": "Ridge"
+        }
+      ],
+      "feature_pair": "enhanced",
+      "n_unique_dates": 1600,
+      "segment": "2026_partial",
+      "target": "future_kyle_abs_lambda_24h"
+    },
+    {
+      "asset": "SOL",
+      "categories_improving": 0,
+      "category_deltas": [
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": 1.3308353081434465e-05
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.0
+        },
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": 4.466791776261307e-05
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": 6.37023478095834e-05
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.0179477656106773
+        }
+      ],
+      "equal_category_delta_plus_minus_spot": 0.0036138888458661866,
+      "family_deltas": [
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": 4.466791776261307e-05,
+          "family": "ExtraTrees"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.03785715573184813,
+          "family": "GRU"
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": 6.37023478095834e-05,
+          "family": "HistGradientBoosting"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": -0.0019616245104935215,
+          "family": "MLP"
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.0,
+          "family": "RBF_SVR"
+        },
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": 1.3308353081434465e-05,
+          "family": "Ridge"
+        }
+      ],
+      "feature_pair": "legacy",
+      "n_unique_dates": 1747,
+      "segment": "2024-03_to_2024-12",
+      "target": "future_corwin_schultz_spread_24h"
+    },
+    {
+      "asset": "SOL",
+      "categories_improving": 2,
+      "category_deltas": [
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": 3.4914314877532293e-06
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.0
+        },
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": -5.358916855914852e-05
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": -3.1913424114864936e-05
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.01890018994307241
+        }
+      ],
+      "equal_category_delta_plus_minus_spot": 0.0037636357563772304,
+      "family_deltas": [
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": -5.358916855914852e-05,
+          "family": "ExtraTrees"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.038587916812277155,
+          "family": "GRU"
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": -3.1913424114864936e-05,
+          "family": "HistGradientBoosting"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": -0.0007875369261323382,
+          "family": "MLP"
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.0,
+          "family": "RBF_SVR"
+        },
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": 3.4914314877532293e-06,
+          "family": "Ridge"
+        }
+      ],
+      "feature_pair": "legacy",
+      "n_unique_dates": 2147,
+      "segment": "2025",
+      "target": "future_corwin_schultz_spread_24h"
+    },
+    {
+      "asset": "SOL",
+      "categories_improving": 3,
+      "category_deltas": [
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": -6.592356288000609e-06
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.0
+        },
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": -3.822407585850576e-05
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": -8.56947808439907e-06
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.009094840034171952
+        }
+      ],
+      "equal_category_delta_plus_minus_spot": 0.0018082908247882092,
+      "family_deltas": [
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": -3.822407585850576e-05,
+          "family": "ExtraTrees"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.017986546423826088,
+          "family": "GRU"
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": -8.56947808439907e-06,
+          "family": "HistGradientBoosting"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.00020313364451781434,
+          "family": "MLP"
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.0,
+          "family": "RBF_SVR"
+        },
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": -6.592356288000609e-06,
+          "family": "Ridge"
+        }
+      ],
+      "feature_pair": "legacy",
+      "n_unique_dates": 1600,
+      "segment": "2026_partial",
+      "target": "future_corwin_schultz_spread_24h"
+    },
+    {
+      "asset": "SOL",
+      "categories_improving": 0,
+      "category_deltas": [
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": 2.7477302437516096e-05
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.0
+        },
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": 7.05859047237447e-05
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": 0.00012886163016469343
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.006656757590363751
+        }
+      ],
+      "equal_category_delta_plus_minus_spot": 0.001376736485537941,
+      "family_deltas": [
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": 7.05859047237447e-05,
+          "family": "ExtraTrees"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.011572920664435566,
+          "family": "GRU"
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": 0.00012886163016469343,
+          "family": "HistGradientBoosting"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.0017405945162919361,
+          "family": "MLP"
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.0,
+          "family": "RBF_SVR"
+        },
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": 2.7477302437516096e-05,
+          "family": "Ridge"
+        }
+      ],
+      "feature_pair": "enhanced",
+      "n_unique_dates": 1747,
+      "segment": "2024-03_to_2024-12",
+      "target": "future_corwin_schultz_spread_24h"
+    },
+    {
+      "asset": "SOL",
+      "categories_improving": 3,
+      "category_deltas": [
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": -1.649650650623145e-07
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.0
+        },
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": -3.068034048387023e-05
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": -5.3760174824598015e-05
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.006446029014526088
+        }
+      ],
+      "equal_category_delta_plus_minus_spot": 0.0012722847068305115,
+      "family_deltas": [
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": -3.068034048387023e-05,
+          "family": "ExtraTrees"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.011640228141840526,
+          "family": "GRU"
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": -5.3760174824598015e-05,
+          "family": "HistGradientBoosting"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.0012518298872116484,
+          "family": "MLP"
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.0,
+          "family": "RBF_SVR"
+        },
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": -1.649650650623145e-07,
+          "family": "Ridge"
+        }
+      ],
+      "feature_pair": "enhanced",
+      "n_unique_dates": 2147,
+      "segment": "2025",
+      "target": "future_corwin_schultz_spread_24h"
+    },
+    {
+      "asset": "SOL",
+      "categories_improving": 3,
+      "category_deltas": [
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": -2.1538520944210495e-05
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.0
+        },
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": -1.2163823491835122e-05
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": 1.7822992772553073e-06
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": -0.00248661855133936
+        }
+      ],
+      "equal_category_delta_plus_minus_spot": -0.00050370771929963,
+      "family_deltas": [
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": -1.2163823491835122e-05,
+          "family": "ExtraTrees"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": -0.005710444436811335,
+          "family": "GRU"
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": 1.7822992772553073e-06,
+          "family": "HistGradientBoosting"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.0007372073341326154,
+          "family": "MLP"
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.0,
+          "family": "RBF_SVR"
+        },
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": -2.1538520944210495e-05,
+          "family": "Ridge"
+        }
+      ],
+      "feature_pair": "enhanced",
+      "n_unique_dates": 1600,
+      "segment": "2026_partial",
+      "target": "future_corwin_schultz_spread_24h"
+    },
+    {
+      "asset": "BNB",
+      "categories_improving": 2,
+      "category_deltas": [
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": -0.008519262021408751
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.010225647562684384
+        },
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": 0.00972713217242296
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": 0.003410288898735323
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": -0.05674787184754266
+        }
+      ],
+      "equal_category_delta_plus_minus_spot": -0.008380813047021748,
+      "family_deltas": [
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": 0.00972713217242296,
+          "family": "ExtraTrees"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": -0.11437939558500639,
+          "family": "GRU"
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": 0.003410288898735323,
+          "family": "HistGradientBoosting"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.0008836518899210601,
+          "family": "MLP"
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.010225647562684384,
+          "family": "RBF_SVR"
+        },
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": -0.008519262021408751,
+          "family": "Ridge"
+        }
+      ],
+      "feature_pair": "legacy",
+      "n_unique_dates": 1746,
+      "segment": "2024-03_to_2024-12",
+      "target": "future_amihud_24h_mean"
+    },
+    {
+      "asset": "BNB",
+      "categories_improving": 3,
+      "category_deltas": [
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": -0.003279247357810045
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.0034916527289574166
+        },
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": -0.000249032746951455
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": 0.004667569841141142
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": -0.04261909625538401
+        }
+      ],
+      "equal_category_delta_plus_minus_spot": -0.00759763075800939,
+      "family_deltas": [
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": -0.000249032746951455,
+          "family": "ExtraTrees"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": -0.10953494433581386,
+          "family": "GRU"
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": 0.004667569841141142,
+          "family": "HistGradientBoosting"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.024296751825045843,
+          "family": "MLP"
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.0034916527289574166,
+          "family": "RBF_SVR"
+        },
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": -0.003279247357810045,
+          "family": "Ridge"
+        }
+      ],
+      "feature_pair": "legacy",
+      "n_unique_dates": 2147,
+      "segment": "2025",
+      "target": "future_amihud_24h_mean"
+    },
+    {
+      "asset": "BNB",
+      "categories_improving": 0,
+      "category_deltas": [
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": 0.016993075600834278
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.02319343912219424
+        },
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": 0.015110274372885377
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": 0.015377850189711547
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.040480457024960906
+        }
+      ],
+      "equal_category_delta_plus_minus_spot": 0.02223101926211727,
+      "family_deltas": [
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": 0.015110274372885377,
+          "family": "ExtraTrees"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.056916984585897654,
+          "family": "GRU"
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": 0.015377850189711547,
+          "family": "HistGradientBoosting"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.024043929464024165,
+          "family": "MLP"
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.02319343912219424,
+          "family": "RBF_SVR"
+        },
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": 0.016993075600834278,
+          "family": "Ridge"
+        }
+      ],
+      "feature_pair": "legacy",
+      "n_unique_dates": 1619,
+      "segment": "2026_partial",
+      "target": "future_amihud_24h_mean"
+    },
+    {
+      "asset": "BNB",
+      "categories_improving": 2,
+      "category_deltas": [
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": -0.007004246961355333
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.007187947921149288
+        },
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": 0.01241442827473836
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": 0.011860365861763074
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": -0.03620848629050922
+        }
+      ],
+      "equal_category_delta_plus_minus_spot": -0.0023499982388427653,
+      "family_deltas": [
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": 0.01241442827473836,
+          "family": "ExtraTrees"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": -0.08056298824341399,
+          "family": "GRU"
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": 0.011860365861763074,
+          "family": "HistGradientBoosting"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.008146015662395542,
+          "family": "MLP"
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.007187947921149288,
+          "family": "RBF_SVR"
+        },
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": -0.007004246961355333,
+          "family": "Ridge"
+        }
+      ],
+      "feature_pair": "enhanced",
+      "n_unique_dates": 1746,
+      "segment": "2024-03_to_2024-12",
+      "target": "future_amihud_24h_mean"
+    },
+    {
+      "asset": "BNB",
+      "categories_improving": 2,
+      "category_deltas": [
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": 0.006923743769575984
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.0008387150856801745
+        },
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": -0.0008483668301927061
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": 0.010204235959703946
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": -0.036524991014492976
+        }
+      ],
+      "equal_category_delta_plus_minus_spot": -0.0038813326059451156,
+      "family_deltas": [
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": -0.0008483668301927061,
+          "family": "ExtraTrees"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": -0.08523294875206948,
+          "family": "GRU"
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": 0.010204235959703946,
+          "family": "HistGradientBoosting"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.012182966723083525,
+          "family": "MLP"
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.0008387150856801745,
+          "family": "RBF_SVR"
+        },
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": 0.006923743769575984,
+          "family": "Ridge"
+        }
+      ],
+      "feature_pair": "enhanced",
+      "n_unique_dates": 2147,
+      "segment": "2025",
+      "target": "future_amihud_24h_mean"
+    },
+    {
+      "asset": "BNB",
+      "categories_improving": 0,
+      "category_deltas": [
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": 0.040690610685076914
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.024444692154898917
+        },
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": 0.014192242835692887
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": 0.014039435455653086
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.06897866265011422
+        }
+      ],
+      "equal_category_delta_plus_minus_spot": 0.0324691287562872,
+      "family_deltas": [
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": 0.014192242835692887,
+          "family": "ExtraTrees"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.09189415669707905,
+          "family": "GRU"
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": 0.014039435455653086,
+          "family": "HistGradientBoosting"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.0460631686031494,
+          "family": "MLP"
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.024444692154898917,
+          "family": "RBF_SVR"
+        },
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": 0.040690610685076914,
+          "family": "Ridge"
+        }
+      ],
+      "feature_pair": "enhanced",
+      "n_unique_dates": 1619,
+      "segment": "2026_partial",
+      "target": "future_amihud_24h_mean"
+    },
+    {
+      "asset": "BNB",
+      "categories_improving": 4,
+      "category_deltas": [
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": -0.008905203761408392
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.0023899500593626247
+        },
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": -0.008795641398282128
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": -0.00121411109371491
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": -0.016367913470136046
+        }
+      ],
+      "equal_category_delta_plus_minus_spot": -0.00657858393283577,
+      "family_deltas": [
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": -0.008795641398282128,
+          "family": "ExtraTrees"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": -0.06306494498923876,
+          "family": "GRU"
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": -0.00121411109371491,
+          "family": "HistGradientBoosting"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.030329118048966666,
+          "family": "MLP"
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.0023899500593626247,
+          "family": "RBF_SVR"
+        },
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": -0.008905203761408392,
+          "family": "Ridge"
+        }
+      ],
+      "feature_pair": "legacy",
+      "n_unique_dates": 1746,
+      "segment": "2024-03_to_2024-12",
+      "target": "future_kyle_abs_lambda_24h"
+    },
+    {
+      "asset": "BNB",
+      "categories_improving": 3,
+      "category_deltas": [
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": -0.0049404590741582025
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.0030700797448986526
+        },
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": -0.0018086559889541002
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": 0.005705366979239629
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": -0.06973765681075841
+        }
+      ],
+      "equal_category_delta_plus_minus_spot": -0.013542265029946488,
+      "family_deltas": [
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": -0.0018086559889541002,
+          "family": "ExtraTrees"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": -0.17543164456809954,
+          "family": "GRU"
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": 0.005705366979239629,
+          "family": "HistGradientBoosting"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.035956330946582724,
+          "family": "MLP"
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.0030700797448986526,
+          "family": "RBF_SVR"
+        },
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": -0.0049404590741582025,
+          "family": "Ridge"
+        }
+      ],
+      "feature_pair": "legacy",
+      "n_unique_dates": 2147,
+      "segment": "2025",
+      "target": "future_kyle_abs_lambda_24h"
+    },
+    {
+      "asset": "BNB",
+      "categories_improving": 5,
+      "category_deltas": [
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": -0.0282477796924449
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": -0.031025722013118373
+        },
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": -0.02575525480992604
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": -0.02347672734346464
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": -0.0052839803560857795
+        }
+      ],
+      "equal_category_delta_plus_minus_spot": -0.022757892843007946,
+      "family_deltas": [
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": -0.02575525480992604,
+          "family": "ExtraTrees"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": -0.007409569784305098,
+          "family": "GRU"
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": -0.02347672734346464,
+          "family": "HistGradientBoosting"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": -0.0031583909278664617,
+          "family": "MLP"
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": -0.031025722013118373,
+          "family": "RBF_SVR"
+        },
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": -0.0282477796924449,
+          "family": "Ridge"
+        }
+      ],
+      "feature_pair": "legacy",
+      "n_unique_dates": 1619,
+      "segment": "2026_partial",
+      "target": "future_kyle_abs_lambda_24h"
+    },
+    {
+      "asset": "BNB",
+      "categories_improving": 4,
+      "category_deltas": [
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": -0.01210097364947266
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.008315310058837927
+        },
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": -0.0020312157921182922
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": -0.005024627665706954
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": -0.011503352228522834
+        }
+      ],
+      "equal_category_delta_plus_minus_spot": -0.004468971855396563,
+      "family_deltas": [
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": -0.0020312157921182922,
+          "family": "ExtraTrees"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": -0.03221032652878828,
+          "family": "GRU"
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": -0.005024627665706954,
+          "family": "HistGradientBoosting"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.009203622071742612,
+          "family": "MLP"
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.008315310058837927,
+          "family": "RBF_SVR"
+        },
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": -0.01210097364947266,
+          "family": "Ridge"
+        }
+      ],
+      "feature_pair": "enhanced",
+      "n_unique_dates": 1746,
+      "segment": "2024-03_to_2024-12",
+      "target": "future_kyle_abs_lambda_24h"
+    },
+    {
+      "asset": "BNB",
+      "categories_improving": 2,
+      "category_deltas": [
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": 0.0017617978435932075
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.004517516284634106
+        },
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": -0.0015968013266079554
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": -0.0036061181423891584
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.0015810974143137015
+        }
+      ],
+      "equal_category_delta_plus_minus_spot": 0.0005314984147087803,
+      "family_deltas": [
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": -0.0015968013266079554,
+          "family": "ExtraTrees"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": -0.027929084616097766,
+          "family": "GRU"
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": -0.0036061181423891584,
+          "family": "HistGradientBoosting"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.03109127944472517,
+          "family": "MLP"
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.004517516284634106,
+          "family": "RBF_SVR"
+        },
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": 0.0017617978435932075,
+          "family": "Ridge"
+        }
+      ],
+      "feature_pair": "enhanced",
+      "n_unique_dates": 2147,
+      "segment": "2025",
+      "target": "future_kyle_abs_lambda_24h"
+    },
+    {
+      "asset": "BNB",
+      "categories_improving": 5,
+      "category_deltas": [
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": -0.03826830905551115
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": -0.02944146258561101
+        },
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": -0.02324050056625047
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": -0.023944331028512317
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": -0.038547747599318435
+        }
+      ],
+      "equal_category_delta_plus_minus_spot": -0.030688470167040675,
+      "family_deltas": [
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": -0.02324050056625047,
+          "family": "ExtraTrees"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": -0.05601594024459539,
+          "family": "GRU"
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": -0.023944331028512317,
+          "family": "HistGradientBoosting"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": -0.021079554954041475,
+          "family": "MLP"
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": -0.02944146258561101,
+          "family": "RBF_SVR"
+        },
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": -0.03826830905551115,
+          "family": "Ridge"
+        }
+      ],
+      "feature_pair": "enhanced",
+      "n_unique_dates": 1619,
+      "segment": "2026_partial",
+      "target": "future_kyle_abs_lambda_24h"
+    },
+    {
+      "asset": "BNB",
+      "categories_improving": 1,
+      "category_deltas": [
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": 0.002176338973784376
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.007761125964101497
+        },
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": 0.002589313322208114
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": 0.001808356162449896
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": -0.023770345910655043
+        }
+      ],
+      "equal_category_delta_plus_minus_spot": -0.001887042297622232,
+      "family_deltas": [
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": 0.002589313322208114,
+          "family": "ExtraTrees"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": -0.06297474890783848,
+          "family": "GRU"
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": 0.001808356162449896,
+          "family": "HistGradientBoosting"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.015434057086528398,
+          "family": "MLP"
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.007761125964101497,
+          "family": "RBF_SVR"
+        },
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": 0.002176338973784376,
+          "family": "Ridge"
+        }
+      ],
+      "feature_pair": "legacy",
+      "n_unique_dates": 1746,
+      "segment": "2024-03_to_2024-12",
+      "target": "future_corwin_schultz_spread_24h"
+    },
+    {
+      "asset": "BNB",
+      "categories_improving": 3,
+      "category_deltas": [
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": 0.0016896182134846997
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.002874189055261771
+        },
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": -0.0006196309376326798
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": -0.0005670468419638065
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": -5.650377263200857e-05
+        }
+      ],
+      "equal_category_delta_plus_minus_spot": 0.0006641251433035952,
+      "family_deltas": [
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": -0.0006196309376326798,
+          "family": "ExtraTrees"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": -0.00612726203304417,
+          "family": "GRU"
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": -0.0005670468419638065,
+          "family": "HistGradientBoosting"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.006014254487780153,
+          "family": "MLP"
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.002874189055261771,
+          "family": "RBF_SVR"
+        },
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": 0.0016896182134846997,
+          "family": "Ridge"
+        }
+      ],
+      "feature_pair": "legacy",
+      "n_unique_dates": 2147,
+      "segment": "2025",
+      "target": "future_corwin_schultz_spread_24h"
+    },
+    {
+      "asset": "BNB",
+      "categories_improving": 4,
+      "category_deltas": [
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": -0.007596567136974449
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": -0.010007838108415157
+        },
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": 0.0010192716840358434
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": -0.0008789778703735292
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": -0.039175302995718746
+        }
+      ],
+      "equal_category_delta_plus_minus_spot": -0.011327882885489207,
+      "family_deltas": [
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": 0.0010192716840358434,
+          "family": "ExtraTrees"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": -0.07881072216145348,
+          "family": "GRU"
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": -0.0008789778703735292,
+          "family": "HistGradientBoosting"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.0004601161700159774,
+          "family": "MLP"
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": -0.010007838108415157,
+          "family": "RBF_SVR"
+        },
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": -0.007596567136974449,
+          "family": "Ridge"
+        }
+      ],
+      "feature_pair": "legacy",
+      "n_unique_dates": 1619,
+      "segment": "2026_partial",
+      "target": "future_corwin_schultz_spread_24h"
+    },
+    {
+      "asset": "BNB",
+      "categories_improving": 0,
+      "category_deltas": [
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": 0.0021000169500044108
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.010572820814685652
+        },
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": 0.003028586423806699
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": 0.003829238394418093
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.05732970601044508
+        }
+      ],
+      "equal_category_delta_plus_minus_spot": 0.015372073718671988,
+      "family_deltas": [
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": 0.003028586423806699,
+          "family": "ExtraTrees"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.09652984812901935,
+          "family": "GRU"
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": 0.003829238394418093,
+          "family": "HistGradientBoosting"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.018129563891870818,
+          "family": "MLP"
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.010572820814685652,
+          "family": "RBF_SVR"
+        },
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": 0.0021000169500044108,
+          "family": "Ridge"
+        }
+      ],
+      "feature_pair": "enhanced",
+      "n_unique_dates": 1746,
+      "segment": "2024-03_to_2024-12",
+      "target": "future_corwin_schultz_spread_24h"
+    },
+    {
+      "asset": "BNB",
+      "categories_improving": 0,
+      "category_deltas": [
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": 0.004040644185168075
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.003899997939734696
+        },
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": 0.0009048636233543141
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": 0.0006924740592786625
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.03165450337208054
+        }
+      ],
+      "equal_category_delta_plus_minus_spot": 0.008238496635923258,
+      "family_deltas": [
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": 0.0009048636233543141,
+          "family": "ExtraTrees"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.05885961995197041,
+          "family": "GRU"
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": 0.0006924740592786625,
+          "family": "HistGradientBoosting"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.004449386792190668,
+          "family": "MLP"
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.003899997939734696,
+          "family": "RBF_SVR"
+        },
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": 0.004040644185168075,
+          "family": "Ridge"
+        }
+      ],
+      "feature_pair": "enhanced",
+      "n_unique_dates": 2147,
+      "segment": "2025",
+      "target": "future_corwin_schultz_spread_24h"
+    },
+    {
+      "asset": "BNB",
+      "categories_improving": 2,
+      "category_deltas": [
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": -0.005355270859080326
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": -0.009591933485283964
+        },
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": 0.0013711317298466777
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": 0.0001830154034927345
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.04322697613243193
+        }
+      ],
+      "equal_category_delta_plus_minus_spot": 0.00596678378428141,
+      "family_deltas": [
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": 0.0013711317298466777,
+          "family": "ExtraTrees"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.07710875916591797,
+          "family": "GRU"
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": 0.0001830154034927345,
+          "family": "HistGradientBoosting"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.009345193098945881,
+          "family": "MLP"
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": -0.009591933485283964,
+          "family": "RBF_SVR"
+        },
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": -0.005355270859080326,
+          "family": "Ridge"
+        }
+      ],
+      "feature_pair": "enhanced",
+      "n_unique_dates": 1619,
+      "segment": "2026_partial",
+      "target": "future_corwin_schultz_spread_24h"
+    },
+    {
+      "asset": "XRP",
+      "categories_improving": 3,
+      "category_deltas": [
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": -0.023555354904555653
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.020375070523787012
+        },
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": 0.00488406501047695
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": -0.009306685155320307
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": -0.0806542103445407
+        }
+      ],
+      "equal_category_delta_plus_minus_spot": -0.01765142297403054,
+      "family_deltas": [
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": 0.00488406501047695,
+          "family": "ExtraTrees"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": -0.13212577541803855,
+          "family": "GRU"
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": -0.009306685155320307,
+          "family": "HistGradientBoosting"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": -0.029182645271042848,
+          "family": "MLP"
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.020375070523787012,
+          "family": "RBF_SVR"
+        },
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": -0.023555354904555653,
+          "family": "Ridge"
+        }
+      ],
+      "feature_pair": "legacy",
+      "n_unique_dates": 1756,
+      "segment": "2024-03_to_2024-12",
+      "target": "future_amihud_24h_mean"
+    },
+    {
+      "asset": "XRP",
+      "categories_improving": 0,
+      "category_deltas": [
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": 0.008848984302589104
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.012048777612071657
+        },
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": 0.029779802898976967
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": 0.0037957715468686427
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.05478542088210456
+        }
+      ],
+      "equal_category_delta_plus_minus_spot": 0.021851751448522187,
+      "family_deltas": [
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": 0.029779802898976967,
+          "family": "ExtraTrees"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.13737039598961515,
+          "family": "GRU"
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": 0.0037957715468686427,
+          "family": "HistGradientBoosting"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": -0.02779955422540603,
+          "family": "MLP"
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.012048777612071657,
+          "family": "RBF_SVR"
+        },
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": 0.008848984302589104,
+          "family": "Ridge"
+        }
+      ],
+      "feature_pair": "legacy",
+      "n_unique_dates": 2134,
+      "segment": "2025",
+      "target": "future_amihud_24h_mean"
+    },
+    {
+      "asset": "XRP",
+      "categories_improving": 1,
+      "category_deltas": [
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": 0.00438893523265716
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.00776855086362872
+        },
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": 0.005434792028273125
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": 0.003786719005725386
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": -0.10998321820544821
+        }
+      ],
+      "equal_category_delta_plus_minus_spot": -0.017720844215032762,
+      "family_deltas": [
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": 0.005434792028273125,
+          "family": "ExtraTrees"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": -0.22778432503547336,
+          "family": "GRU"
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": 0.003786719005725386,
+          "family": "HistGradientBoosting"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.007817888624576932,
+          "family": "MLP"
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.00776855086362872,
+          "family": "RBF_SVR"
+        },
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": 0.00438893523265716,
+          "family": "Ridge"
+        }
+      ],
+      "feature_pair": "legacy",
+      "n_unique_dates": 1619,
+      "segment": "2026_partial",
+      "target": "future_amihud_24h_mean"
+    },
+    {
+      "asset": "XRP",
+      "categories_improving": 3,
+      "category_deltas": [
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": -0.016749718802590165
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.02280918698334903
+        },
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": 0.0032168576785428977
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": -0.00942868544067423
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": -0.0015689678748276523
+        }
+      ],
+      "equal_category_delta_plus_minus_spot": -0.0003442654912400242,
+      "family_deltas": [
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": 0.0032168576785428977,
+          "family": "ExtraTrees"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": -0.054379380010119834,
+          "family": "GRU"
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": -0.00942868544067423,
+          "family": "HistGradientBoosting"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.05124144426046453,
+          "family": "MLP"
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.02280918698334903,
+          "family": "RBF_SVR"
+        },
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": -0.016749718802590165,
+          "family": "Ridge"
+        }
+      ],
+      "feature_pair": "enhanced",
+      "n_unique_dates": 1756,
+      "segment": "2024-03_to_2024-12",
+      "target": "future_amihud_24h_mean"
+    },
+    {
+      "asset": "XRP",
+      "categories_improving": 0,
+      "category_deltas": [
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": 0.008662053536275936
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.013278836230467255
+        },
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": 0.02907075002737924
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": 0.003472446907223249
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.03145060474080998
+        }
+      ],
+      "equal_category_delta_plus_minus_spot": 0.017186938288431132,
+      "family_deltas": [
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": 0.02907075002737924,
+          "family": "ExtraTrees"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.01706420257229284,
+          "family": "GRU"
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": 0.003472446907223249,
+          "family": "HistGradientBoosting"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.04583700690932713,
+          "family": "MLP"
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.013278836230467255,
+          "family": "RBF_SVR"
+        },
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": 0.008662053536275936,
+          "family": "Ridge"
+        }
+      ],
+      "feature_pair": "enhanced",
+      "n_unique_dates": 2134,
+      "segment": "2025",
+      "target": "future_amihud_24h_mean"
+    },
+    {
+      "asset": "XRP",
+      "categories_improving": 1,
+      "category_deltas": [
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": 0.00549756867714146
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.004879654745089517
+        },
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": 0.005695292032688634
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": 0.002802956857746922
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": -0.09081502726377345
+        }
+      ],
+      "equal_category_delta_plus_minus_spot": -0.014387910990221384,
+      "family_deltas": [
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": 0.005695292032688634,
+          "family": "ExtraTrees"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": -0.19309631434251615,
+          "family": "GRU"
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": 0.002802956857746922,
+          "family": "HistGradientBoosting"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.01146625981496925,
+          "family": "MLP"
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.004879654745089517,
+          "family": "RBF_SVR"
+        },
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": 0.00549756867714146,
+          "family": "Ridge"
+        }
+      ],
+      "feature_pair": "enhanced",
+      "n_unique_dates": 1619,
+      "segment": "2026_partial",
+      "target": "future_amihud_24h_mean"
+    },
+    {
+      "asset": "XRP",
+      "categories_improving": 3,
+      "category_deltas": [
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": -0.02998978980288785
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.013355849843110749
+        },
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": -0.0084125029833117
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": -0.0144706908989131
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.08961173502236869
+        }
+      ],
+      "equal_category_delta_plus_minus_spot": 0.01001892023607336,
+      "family_deltas": [
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": -0.0084125029833117,
+          "family": "ExtraTrees"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.18294923445355266,
+          "family": "GRU"
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": -0.0144706908989131,
+          "family": "HistGradientBoosting"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": -0.003725764408815287,
+          "family": "MLP"
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.013355849843110749,
+          "family": "RBF_SVR"
+        },
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": -0.02998978980288785,
+          "family": "Ridge"
+        }
+      ],
+      "feature_pair": "legacy",
+      "n_unique_dates": 1756,
+      "segment": "2024-03_to_2024-12",
+      "target": "future_kyle_abs_lambda_24h"
+    },
+    {
+      "asset": "XRP",
+      "categories_improving": 1,
+      "category_deltas": [
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": 0.007374345146179544
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.013939051707624552
+        },
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": 0.0362732656637443
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": 0.009937596400496617
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": -0.11231379334643124
+        }
+      ],
+      "equal_category_delta_plus_minus_spot": -0.008957906885677245,
+      "family_deltas": [
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": 0.0362732656637443,
+          "family": "ExtraTrees"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": -0.24453461172848293,
+          "family": "GRU"
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": 0.009937596400496617,
+          "family": "HistGradientBoosting"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.019907025035620453,
+          "family": "MLP"
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.013939051707624552,
+          "family": "RBF_SVR"
+        },
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": 0.007374345146179544,
+          "family": "Ridge"
+        }
+      ],
+      "feature_pair": "legacy",
+      "n_unique_dates": 2134,
+      "segment": "2025",
+      "target": "future_kyle_abs_lambda_24h"
+    },
+    {
+      "asset": "XRP",
+      "categories_improving": 1,
+      "category_deltas": [
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": 0.019387716816349865
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.0077960613219621375
+        },
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": 0.022280382842404804
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": 0.012510633284696534
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": -0.04892052100392666
+        }
+      ],
+      "equal_category_delta_plus_minus_spot": 0.002610854652297337,
+      "family_deltas": [
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": 0.022280382842404804,
+          "family": "ExtraTrees"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": -0.10466858353122534,
+          "family": "GRU"
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": 0.012510633284696534,
+          "family": "HistGradientBoosting"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.006827541523372022,
+          "family": "MLP"
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.0077960613219621375,
+          "family": "RBF_SVR"
+        },
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": 0.019387716816349865,
+          "family": "Ridge"
+        }
+      ],
+      "feature_pair": "legacy",
+      "n_unique_dates": 1619,
+      "segment": "2026_partial",
+      "target": "future_kyle_abs_lambda_24h"
+    },
+    {
+      "asset": "XRP",
+      "categories_improving": 2,
+      "category_deltas": [
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": -0.025528730137099435
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.01959963004973774
+        },
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": 0.009511033215687477
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": -0.006670432516214486
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.06442766839122702
+        }
+      ],
+      "equal_category_delta_plus_minus_spot": 0.012267833800667663,
+      "family_deltas": [
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": 0.009511033215687477,
+          "family": "ExtraTrees"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.10906231491868108,
+          "family": "GRU"
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": -0.006670432516214486,
+          "family": "HistGradientBoosting"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.019793021863772953,
+          "family": "MLP"
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.01959963004973774,
+          "family": "RBF_SVR"
+        },
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": -0.025528730137099435,
+          "family": "Ridge"
+        }
+      ],
+      "feature_pair": "enhanced",
+      "n_unique_dates": 1756,
+      "segment": "2024-03_to_2024-12",
+      "target": "future_kyle_abs_lambda_24h"
+    },
+    {
+      "asset": "XRP",
+      "categories_improving": 2,
+      "category_deltas": [
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": -0.0021366718815974775
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.01179561355017928
+        },
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": 0.034997743819403945
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": 0.01181694575143662
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": -0.17865740042924722
+        }
+      ],
+      "equal_category_delta_plus_minus_spot": -0.02443675383796497,
+      "family_deltas": [
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": 0.034997743819403945,
+          "family": "ExtraTrees"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": -0.3202674326795848,
+          "family": "GRU"
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": 0.01181694575143662,
+          "family": "HistGradientBoosting"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": -0.03704736817890964,
+          "family": "MLP"
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.01179561355017928,
+          "family": "RBF_SVR"
+        },
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": -0.0021366718815974775,
+          "family": "Ridge"
+        }
+      ],
+      "feature_pair": "enhanced",
+      "n_unique_dates": 2134,
+      "segment": "2025",
+      "target": "future_kyle_abs_lambda_24h"
+    },
+    {
+      "asset": "XRP",
+      "categories_improving": 1,
+      "category_deltas": [
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": 0.031367534340464354
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.010513796190528946
+        },
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": 0.020433015886079323
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": 0.013002643743024305
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": -0.08012010451167369
+        }
+      ],
+      "equal_category_delta_plus_minus_spot": -0.0009606228703153529,
+      "family_deltas": [
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": 0.020433015886079323,
+          "family": "ExtraTrees"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": -0.16715165257934486,
+          "family": "GRU"
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": 0.013002643743024305,
+          "family": "HistGradientBoosting"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.006911443555997484,
+          "family": "MLP"
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.010513796190528946,
+          "family": "RBF_SVR"
+        },
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": 0.031367534340464354,
+          "family": "Ridge"
+        }
+      ],
+      "feature_pair": "enhanced",
+      "n_unique_dates": 1619,
+      "segment": "2026_partial",
+      "target": "future_kyle_abs_lambda_24h"
+    },
+    {
+      "asset": "XRP",
+      "categories_improving": 2,
+      "category_deltas": [
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": 0.002540370655515441
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.007134571842996239
+        },
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": 0.0005480845492908649
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": -0.000792974848850182
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": -0.056928647435777274
+        }
+      ],
+      "equal_category_delta_plus_minus_spot": -0.009499719047364982,
+      "family_deltas": [
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": 0.0005480845492908649,
+          "family": "ExtraTrees"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": -0.14993165303063521,
+          "family": "GRU"
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": -0.000792974848850182,
+          "family": "HistGradientBoosting"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.03607435815908067,
+          "family": "MLP"
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.007134571842996239,
+          "family": "RBF_SVR"
+        },
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": 0.002540370655515441,
+          "family": "Ridge"
+        }
+      ],
+      "feature_pair": "legacy",
+      "n_unique_dates": 1756,
+      "segment": "2024-03_to_2024-12",
+      "target": "future_corwin_schultz_spread_24h"
+    },
+    {
+      "asset": "XRP",
+      "categories_improving": 2,
+      "category_deltas": [
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": 0.0007674581533770552
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.0018267460596435485
+        },
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": -0.0004142700626933135
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": 0.000329094223806239
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": -0.06969918084437274
+        }
+      ],
+      "equal_category_delta_plus_minus_spot": -0.013438030494047843,
+      "family_deltas": [
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": -0.0004142700626933135,
+          "family": "ExtraTrees"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": -0.15454971436522563,
+          "family": "GRU"
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": 0.000329094223806239,
+          "family": "HistGradientBoosting"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.015151352676480167,
+          "family": "MLP"
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.0018267460596435485,
+          "family": "RBF_SVR"
+        },
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": 0.0007674581533770552,
+          "family": "Ridge"
+        }
+      ],
+      "feature_pair": "legacy",
+      "n_unique_dates": 2134,
+      "segment": "2025",
+      "target": "future_corwin_schultz_spread_24h"
+    },
+    {
+      "asset": "XRP",
+      "categories_improving": 3,
+      "category_deltas": [
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": -2.9342937291314503e-05
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": -0.0004291366158936387
+        },
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": 0.0006105901224099375
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": 0.0015135230893827019
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": -0.048037569290008936
+        }
+      ],
+      "equal_category_delta_plus_minus_spot": -0.009274387126280249,
+      "family_deltas": [
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": 0.0006105901224099375,
+          "family": "ExtraTrees"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": -0.11218190065471088,
+          "family": "GRU"
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": 0.0015135230893827019,
+          "family": "HistGradientBoosting"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.01610676207469302,
+          "family": "MLP"
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": -0.0004291366158936387,
+          "family": "RBF_SVR"
+        },
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": -2.9342937291314503e-05,
+          "family": "Ridge"
+        }
+      ],
+      "feature_pair": "legacy",
+      "n_unique_dates": 1619,
+      "segment": "2026_partial",
+      "target": "future_corwin_schultz_spread_24h"
+    },
+    {
+      "asset": "XRP",
+      "categories_improving": 2,
+      "category_deltas": [
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": 0.004470073288730067
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.011207920700025215
+        },
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": -6.949606581838283e-05
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": 0.0015952911486297018
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": -0.042609798473340996
+        }
+      ],
+      "equal_category_delta_plus_minus_spot": -0.005081201880354879,
+      "family_deltas": [
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": -6.949606581838283e-05,
+          "family": "ExtraTrees"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": -0.11717058148377577,
+          "family": "GRU"
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": 0.0015952911486297018,
+          "family": "HistGradientBoosting"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.03195098453709377,
+          "family": "MLP"
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.011207920700025215,
+          "family": "RBF_SVR"
+        },
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": 0.004470073288730067,
+          "family": "Ridge"
+        }
+      ],
+      "feature_pair": "enhanced",
+      "n_unique_dates": 1756,
+      "segment": "2024-03_to_2024-12",
+      "target": "future_corwin_schultz_spread_24h"
+    },
+    {
+      "asset": "XRP",
+      "categories_improving": 1,
+      "category_deltas": [
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": 0.0009445013121795079
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.004038929091295874
+        },
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": 0.000431376662237656
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": 0.001008682724859538
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": -0.05602566138608934
+        }
+      ],
+      "equal_category_delta_plus_minus_spot": -0.009920434319103352,
+      "family_deltas": [
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": 0.000431376662237656,
+          "family": "ExtraTrees"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": -0.13548981579799035,
+          "family": "GRU"
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": 0.001008682724859538,
+          "family": "HistGradientBoosting"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.023438493025811673,
+          "family": "MLP"
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": 0.004038929091295874,
+          "family": "RBF_SVR"
+        },
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": 0.0009445013121795079,
+          "family": "Ridge"
+        }
+      ],
+      "feature_pair": "enhanced",
+      "n_unique_dates": 2134,
+      "segment": "2025",
+      "target": "future_corwin_schultz_spread_24h"
+    },
+    {
+      "asset": "XRP",
+      "categories_improving": 2,
+      "category_deltas": [
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": 7.803295544589555e-05
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": -0.0002816605021725511
+        },
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": 7.560511081682377e-05
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": 0.0012118897368885116
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": -0.031183467610304487
+        }
+      ],
+      "equal_category_delta_plus_minus_spot": -0.006019920061865161,
+      "family_deltas": [
+        {
+          "category": "bagged_trees",
+          "delta_plus_minus_spot": 7.560511081682377e-05,
+          "family": "ExtraTrees"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": -0.07336723778745806,
+          "family": "GRU"
+        },
+        {
+          "category": "boosting",
+          "delta_plus_minus_spot": 0.0012118897368885116,
+          "family": "HistGradientBoosting"
+        },
+        {
+          "category": "neural",
+          "delta_plus_minus_spot": 0.011000302566849082,
+          "family": "MLP"
+        },
+        {
+          "category": "kernel",
+          "delta_plus_minus_spot": -0.0002816605021725511,
+          "family": "RBF_SVR"
+        },
+        {
+          "category": "linear",
+          "delta_plus_minus_spot": 7.803295544589555e-05,
+          "family": "Ridge"
+        }
+      ],
+      "feature_pair": "enhanced",
+      "n_unique_dates": 1619,
+      "segment": "2026_partial",
+      "target": "future_corwin_schultz_spread_24h"
+    }
+  ],
+  "segments": [
+    "2024-03_to_2024-12",
+    "2025",
+    "2026_partial"
+  ]
+}

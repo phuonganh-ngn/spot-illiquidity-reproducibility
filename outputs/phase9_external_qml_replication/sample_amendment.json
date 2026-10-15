@@ -1,0 +1,20 @@
+{
+  "amended_sample_rule": "latest complete common 24-month interval",
+  "amendment_timing": "before panel construction and before any predictive model evaluation",
+  "assets": [
+    "BTC",
+    "ETH"
+  ],
+  "created_utc": "2026-10-08T10:03:42.097642+00:00",
+  "forecast_results_viewed": false,
+  "immutability_note": "No forecasting, model fitting, holdout loss, MAE, bootstrap, or model comparison has been run or viewed.",
+  "original_sample_rule": "longest common eligible sample",
+  "panel_constructed_before_amendment": false,
+  "phase": "Phase 9 external QML replication",
+  "primary_venue": "Bybit",
+  "protocol_status": "FROZEN_BEFORE_MODEL_RESULTS",
+  "reason": "computational feasibility of transaction-level external venue reconstruction",
+  "target_frequency": "4h UTC",
+  "target_horizon": "24h",
+  "train_holdout_rule": "common calendar 70/30 split"
+}

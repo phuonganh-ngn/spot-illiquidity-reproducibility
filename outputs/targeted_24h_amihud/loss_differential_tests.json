@@ -1,0 +1,186 @@
+{
+  "direction": "positive mean S0 loss minus S1 loss favors derivatives",
+  "method": "paired forecast absolute-loss differential, Bartlett/Newey-West HAC with six 4-hour lags",
+  "results": [
+    {
+      "asset": "BTC",
+      "family": "ElasticNet",
+      "hac_lags": 6,
+      "hac_se": 0.0,
+      "mean_loss_advantage_s0_minus_s1": 0.0,
+      "n": 905,
+      "p_two_sided_normal": 1.0,
+      "z_statistic": 0.0
+    },
+    {
+      "asset": "BTC",
+      "family": "RBF_SVR",
+      "hac_lags": 6,
+      "hac_se": 0.0,
+      "mean_loss_advantage_s0_minus_s1": 0.0,
+      "n": 905,
+      "p_two_sided_normal": 1.0,
+      "z_statistic": 0.0
+    },
+    {
+      "asset": "BTC",
+      "family": "ExtraTrees",
+      "hac_lags": 6,
+      "hac_se": 9.505188520375257e-08,
+      "mean_loss_advantage_s0_minus_s1": -5.214755120732175e-07,
+      "n": 905,
+      "p_two_sided_normal": 4.106264708927605e-08,
+      "z_statistic": -5.486219562667128
+    },
+    {
+      "asset": "BTC",
+      "family": "HistGradientBoosting",
+      "hac_lags": 6,
+      "hac_se": 8.772617494191873e-08,
+      "mean_loss_advantage_s0_minus_s1": -3.693822080884127e-07,
+      "n": 905,
+      "p_two_sided_normal": 2.546628200445396e-05,
+      "z_statistic": -4.21062708288571
+    },
+    {
+      "asset": "BTC",
+      "family": "XGBoost",
+      "hac_lags": 6,
+      "hac_se": 0.0,
+      "mean_loss_advantage_s0_minus_s1": 0.0,
+      "n": 905,
+      "p_two_sided_normal": 1.0,
+      "z_statistic": 0.0
+    },
+    {
+      "asset": "BTC",
+      "family": "LightGBM",
+      "hac_lags": 6,
+      "hac_se": 8.863417666361781e-08,
+      "mean_loss_advantage_s0_minus_s1": -5.180946990732858e-07,
+      "n": 905,
+      "p_two_sided_normal": 5.056099990819549e-09,
+      "z_statistic": -5.845315188514085
+    },
+    {
+      "asset": "BTC",
+      "family": "CatBoost",
+      "hac_lags": 6,
+      "hac_se": 9.924886620862208e-08,
+      "mean_loss_advantage_s0_minus_s1": -4.41688588560521e-07,
+      "n": 905,
+      "p_two_sided_normal": 8.574495013391318e-06,
+      "z_statistic": -4.450313695595145
+    },
+    {
+      "asset": "BTC",
+      "family": "MLP",
+      "hac_lags": 6,
+      "hac_se": 0.008036433292765587,
+      "mean_loss_advantage_s0_minus_s1": -0.05538808162729287,
+      "n": 905,
+      "p_two_sided_normal": 5.496605958818093e-12,
+      "z_statistic": -6.892122364426683
+    },
+    {
+      "asset": "BTC",
+      "family": "GRU",
+      "hac_lags": 6,
+      "hac_se": 2.734436696625342e-07,
+      "mean_loss_advantage_s0_minus_s1": -1.3068228402583937e-06,
+      "n": 905,
+      "p_two_sided_normal": 1.7605535324001624e-06,
+      "z_statistic": -4.779129982680479
+    },
+    {
+      "asset": "ETH",
+      "family": "ElasticNet",
+      "hac_lags": 6,
+      "hac_se": 0.0,
+      "mean_loss_advantage_s0_minus_s1": 0.0,
+      "n": 922,
+      "p_two_sided_normal": 1.0,
+      "z_statistic": 0.0
+    },
+    {
+      "asset": "ETH",
+      "family": "RBF_SVR",
+      "hac_lags": 6,
+      "hac_se": 0.0,
+      "mean_loss_advantage_s0_minus_s1": 0.0,
+      "n": 922,
+      "p_two_sided_normal": 1.0,
+      "z_statistic": 0.0
+    },
+    {
+      "asset": "ETH",
+      "family": "ExtraTrees",
+      "hac_lags": 6,
+      "hac_se": 1.25021057921594e-07,
+      "mean_loss_advantage_s0_minus_s1": 1.7786518687110387e-07,
+      "n": 922,
+      "p_two_sided_normal": 0.15482841163210662,
+      "z_statistic": 1.4226818251902067
+    },
+    {
+      "asset": "ETH",
+      "family": "HistGradientBoosting",
+      "hac_lags": 6,
+      "hac_se": 3.1906953757109547e-07,
+      "mean_loss_advantage_s0_minus_s1": -4.846085640009982e-07,
+      "n": 922,
+      "p_two_sided_normal": 0.12880830820296182,
+      "z_statistic": -1.5188180222093972
+    },
+    {
+      "asset": "ETH",
+      "family": "XGBoost",
+      "hac_lags": 6,
+      "hac_se": 0.0,
+      "mean_loss_advantage_s0_minus_s1": 0.0,
+      "n": 922,
+      "p_two_sided_normal": 1.0,
+      "z_statistic": 0.0
+    },
+    {
+      "asset": "ETH",
+      "family": "LightGBM",
+      "hac_lags": 6,
+      "hac_se": 3.558313394693044e-07,
+      "mean_loss_advantage_s0_minus_s1": -1.26797036145728e-06,
+      "n": 922,
+      "p_two_sided_normal": 0.0003660784031502408,
+      "z_statistic": -3.563402715871969
+    },
+    {
+      "asset": "ETH",
+      "family": "CatBoost",
+      "hac_lags": 6,
+      "hac_se": 2.401277737225992e-07,
+      "mean_loss_advantage_s0_minus_s1": -5.124260895363054e-07,
+      "n": 922,
+      "p_two_sided_normal": 0.032845023822467914,
+      "z_statistic": -2.1339725996388537
+    },
+    {
+      "asset": "ETH",
+      "family": "MLP",
+      "hac_lags": 6,
+      "hac_se": 0.007089838630743862,
+      "mean_loss_advantage_s0_minus_s1": -0.0750181131815075,
+      "n": 922,
+      "p_two_sided_normal": 3.647496251515045e-26,
+      "z_statistic": -10.581074843679009
+    },
+    {
+      "asset": "ETH",
+      "family": "GRU",
+      "hac_lags": 6,
+      "hac_se": 4.907664432139101e-07,
+      "mean_loss_advantage_s0_minus_s1": 6.211089206495649e-07,
+      "n": 922,
+      "p_two_sided_normal": 0.20566004112182223,
+      "z_statistic": 1.2655896287082582
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+{"claim_scope":"Predictive information only; no causal interpretation.","classification":"C_DERIVATIVES_PROVIDE_TARGET_SPECIFIC_PREDICTIVE_VALUE","cross_asset_replicated_task_ids":["future_amihud__h6"],"protocol_sha256":"69affa8f08f3943e9c0914dc276bdd5821410f5d401825e0299487ef13a01028","robust_task_ids":["BTC__future_amihud__h6","ETH__future_amihud__h6"]}

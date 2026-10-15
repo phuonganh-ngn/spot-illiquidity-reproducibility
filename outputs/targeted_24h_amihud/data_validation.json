@@ -1,0 +1,70 @@
+{
+  "amihud_recalculation_max_abs_error": 9.952975943416931e-17,
+  "analysis_panel_sha256": "1dc8090d5f0e06d11cfaa7a51697db4590c7a5fc3bba48d983b1849a76897a9c",
+  "asset_date_duplicates": 0,
+  "asset_rows": {
+    "BTC": {
+      "complete_case_rows": 10390,
+      "coverage_grid_pct": 100.0,
+      "duplicate_asset_date_rows": 0,
+      "expected_grid_intervals": 10584,
+      "first_interval": "2021-12-01T00:00:00+00:00",
+      "last_interval": "2026-09-29T20:00:00+00:00",
+      "longest_streak_with_any_required_missing": 36,
+      "missing_required_rows": 194,
+      "observed_intervals": 10584
+    },
+    "ETH": {
+      "complete_case_rows": 10428,
+      "coverage_grid_pct": 100.0,
+      "duplicate_asset_date_rows": 0,
+      "expected_grid_intervals": 10584,
+      "first_interval": "2021-12-01T00:00:00+00:00",
+      "last_interval": "2026-09-29T20:00:00+00:00",
+      "longest_streak_with_any_required_missing": 17,
+      "missing_required_rows": 156,
+      "observed_intervals": 10584
+    }
+  },
+  "expected_source_hashes": {
+    "phase5": "e50637340052f505c585bbce70c86ac7f4d3f607b6ef127a24c1317d1d99402d",
+    "phase7": "5a339c5c4a8778ceb74344a10c67806c2323ffac80556be18bf7a9c99de8dcf6"
+  },
+  "fresh_external_confirmation_available": false,
+  "future_target_recalculation_max_abs_error": 9.578926193909432e-17,
+  "future_window_end_exclusive_offset_unique_hours": [
+    28.0
+  ],
+  "future_window_start_offset_unique_hours": [
+    4.0
+  ],
+  "matched_information_set_fields": true,
+  "negative_target_count": 0,
+  "no_market_data_downloaded": true,
+  "nonfinite_target_count": 28,
+  "panel_rows": 21168,
+  "sample_roles": {
+    "development": {
+      "end": "2023-06-30T20:00:00Z",
+      "start": "2021-12-01T00:00:00Z",
+      "status": "previously used in Stage 6 development; nested reanalysis, not pristine"
+    },
+    "phase6_reuse": {
+      "end": "2024-03-03T20:00:00Z",
+      "start": "2023-07-01T00:00:00Z",
+      "status": "previously inspected; exploratory reuse"
+    },
+    "phase7_reuse": {
+      "end": "2026-09-29T20:00:00Z",
+      "start": "2024-03-04T00:00:00Z",
+      "status": "previously inspected; exploratory reuse"
+    }
+  },
+  "source_hashes": {
+    "phase5": "e50637340052f505c585bbce70c86ac7f4d3f607b6ef127a24c1317d1d99402d",
+    "phase7": "5a339c5c4a8778ceb74344a10c67806c2323ffac80556be18bf7a9c99de8dcf6"
+  },
+  "source_hashes_pass": true,
+  "status": "PASS",
+  "utc_step_violations": 0
+}

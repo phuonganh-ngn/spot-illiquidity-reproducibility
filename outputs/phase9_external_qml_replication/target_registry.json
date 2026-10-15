@@ -1,0 +1,10 @@
+{
+  "amihud_formula": "1e6 * abs(4-hour log return) / positive 4-hour spot quote volume in USDT",
+  "definition": "arithmetic mean of spot_amihud at t+1,...,t+6; all six future intervals required",
+  "frozen_before_external_model_comparison": true,
+  "future_window": "arithmetic mean of target-period Amihud for t+1 through t+6, all six intervals required",
+  "target": "future_amihud_24h_mean",
+  "target_transform": "T2_log1p",
+  "transform_formula": "log1p(target)",
+  "transform_selection_source": "outputs/targeted_24h_amihud/target_transform_selection.json"
+}

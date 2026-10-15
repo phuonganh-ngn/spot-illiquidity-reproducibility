@@ -1,0 +1,26 @@
+{
+  "data_audit_sha256": "c4708a21724837ee9f69bb2254ced6680bfa42342fe05c2937fc7753b2eb9fed",
+  "development_sample_only_for_selection": "2021-12-01T00:00:00Z through 2023-06-30T20:00:00Z feature intervals, with six-step labels fully inside the development window",
+  "external_outcome_distributions_or_forecast_scores_read": false,
+  "frozen_at_utc": "2026-10-07T12:31:03.049877+00:00",
+  "frozen_inputs_and_rules": {
+    "data/processed/phase7/market_liquidity_panel_4h.csv.gz": "5a339c5c4a8778ceb74344a10c67806c2323ffac80556be18bf7a9c99de8dcf6",
+    "outputs/phase7_liquidity_replication/asset_eligibility_amendment_001.md": "4480d1c9063f2943c8c1166d79a93bffda76df8d7a9182ce88ccc8e0fc854561",
+    "outputs/phase7_liquidity_replication/asset_eligibility_protocol.json": "725c7d5f42e1fa35c12452ddfbb3c9ba30ea624595e33e7e82069a589398b595",
+    "outputs/phase7_liquidity_replication/candidate_source_manifest.json": "04b771d19bedcba48e13cc6596f68e8a5e0b12ef1b2e6bcb5dbcd7950a46d29e",
+    "outputs/phase7_liquidity_replication/phase5_variable_parity.json": "83d48767f2d073e5f151ac72557af5b5c5ff6addc525fb03cc4d16f49795503b",
+    "outputs/phase7_liquidity_replication/phase7_data_audit.json": "c4708a21724837ee9f69bb2254ced6680bfa42342fe05c2937fc7753b2eb9fed",
+    "outputs/phase7_liquidity_replication/phase7_preexternal_protocol.md": "298170b4597942bed54c807ebc2af00fc25ad84aacea26137c8de018303a0161",
+    "outputs/phase7_liquidity_replication/phase7_protocol.json": "32d6c332ce86e2043709b15aec316b11c67ae730d8482b93d42aee8b7134ff9f",
+    "outputs/phase7_liquidity_replication/phase7_protocol_amendment_001.md": "0945827bb0e92cee774f388f134e7849edf784b8a7f88b7f5111717407900238",
+    "outputs/phase7_liquidity_replication/phase7_protocol_amendment_002.md": "f346f4a0363eff6fc441cd8b075db3152cd1257914cc0011544d93399a50e0ca"
+  },
+  "network_used_for_new_market_data": false,
+  "new_external_test": "2024-03-04T00:00:00Z through eligible 24-hour labels ending no later than 2026-09-30T20:00:00Z",
+  "phase7_protocol_amendment_001_sha256": "0945827bb0e92cee774f388f134e7849edf784b8a7f88b7f5111717407900238",
+  "phase7_protocol_amendment_002_sha256": "f346f4a0363eff6fc441cd8b075db3152cd1257914cc0011544d93399a50e0ca",
+  "phase7_protocol_markdown_sha256": "298170b4597942bed54c807ebc2af00fc25ad84aacea26137c8de018303a0161",
+  "phase7_protocol_sha256": "32d6c332ce86e2043709b15aec316b11c67ae730d8482b93d42aee8b7134ff9f",
+  "previously_seen_stage6_test_not_reused_for_selection": "2023-07-01 through 2024-03-03",
+  "protocol_frozen": true
+}

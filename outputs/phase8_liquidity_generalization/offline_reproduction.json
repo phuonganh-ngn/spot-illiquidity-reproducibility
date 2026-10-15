@@ -1,0 +1,32 @@
+{
+  "all_file_hashes_identical": true,
+  "file_manifest_sha256": "13035203b88c34c42c7da79c321dde26402705c943a5d24d29d3c3bd13829ab3",
+  "files": {
+    "outputs/phase8_liquidity_generalization/asset_replication.json": "577f8d3fd5b1db66d534ab4267167b5c94f1d5f79d52295a63e58a013bf48825",
+    "outputs/phase8_liquidity_generalization/best_model_dominance.json": "8194159b2e494321ee709540ba435c7f8a63c6fc0e203c39191f981aaebb9b0d",
+    "outputs/phase8_liquidity_generalization/data_validation.json": "8a7533c062f4351d84119766e4797d25fc41f709695413aa89eb8d43f75bd96e",
+    "outputs/phase8_liquidity_generalization/external_forecast_summary.json": "9cac0c1747c153da62d8e69643734c919b6cad9f3d5751cfc396e5047a036b6b",
+    "outputs/phase8_liquidity_generalization/final_classification.json": "d7bd25d318b8a2816ba316880edbc56f5cc466bc83143752ffba62e867c3b7d9",
+    "outputs/phase8_liquidity_generalization/freeze_manifest.json": "4347fecfccb4bdbb60d1f0963e6a20bf4fe960b6ea1cadf36e137f33e73a681f",
+    "outputs/phase8_liquidity_generalization/input_integrity.json": "2bc6ba26d9cc3948901c5edfda629667a22a5852c782c90915ce6e26ac1aea75",
+    "outputs/phase8_liquidity_generalization/liquidity_measurement_audit.json": "38209b69d5df558ed0db9345452e7c21a064f17484aeac02b1c578729a40a060",
+    "outputs/phase8_liquidity_generalization/matched_negative_controls.json": "b3cbbdfc48faa5f937787b98c190c8c0d503eacb2df5acf1e9ed9190d0d1d52a",
+    "outputs/phase8_liquidity_generalization/protocol.json": "7f73c094a919e8903e55d50a9ffc2c2bde834f5aa8a433c7451de7cbfd069208",
+    "outputs/phase8_liquidity_generalization/protocol.md": "9324a6ffa5c19b074b388d2ff334120328ff7a3bebc36e55e27017bdaf7e803c",
+    "outputs/phase8_liquidity_generalization/protocol.sha256": "bb70e7ee20b8070c0b06ede6b37f8e1458db7a25b7be47805e91aaf97c3311e4",
+    "outputs/phase8_liquidity_generalization/proxy_generalization.json": "ce2161adc5a08954b171099258445638d4cba973678b7d63ae191d8ec45a7b25",
+    "outputs/phase8_liquidity_generalization/reproducibility.json": "cb3d380ec636ef1a6dc7f0973d46969a596fcaf763e933578faf2e32e6a1cbe8",
+    "outputs/phase8_liquidity_generalization/research_summary.md": "2c84808b9c4478904e6c709cdf5b3f83d39db76e1ea005d1f396fdc7a696a0f6",
+    "outputs/phase8_liquidity_generalization/run.log": "dcc97a588546f76057c79580b3dc684aa0bf8dd5cf79631666327b7960427ae9",
+    "outputs/phase8_liquidity_generalization/run_audit_console.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "outputs/phase8_liquidity_generalization/stress_warning_utility.json": "3426b3cf28ba4ec1cb47099a77e71202856ac459b41cce9e980957b3963013d6",
+    "outputs/phase8_liquidity_generalization/temporal_stability.json": "6a3326ad82bcbd42b789e0c58a46395f6a3bc51e6fb254a883e60b9b0c6abad8"
+  },
+  "files_compared": 19,
+  "method": "sha256 over every direct file in outputs/phase8_liquidity_generalization before and after a second successful local-only run",
+  "mismatches": [],
+  "network_or_market_data_download": false,
+  "offline_local_only": true,
+  "run_command": "../.venv/bin/python -u src/phase8_liquidity_generalization/run_audit.py",
+  "status": "PASS"
+}

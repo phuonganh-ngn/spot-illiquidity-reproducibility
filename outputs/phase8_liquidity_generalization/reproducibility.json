@@ -1,0 +1,27 @@
+{
+  "bootstrap": {
+    "block_lengths_4h": [
+      42,
+      84
+    ],
+    "replications": 2000,
+    "seed_base": 724051
+  },
+  "deterministic_outputs": "All analysis JSON and Markdown are deterministically regenerated; elapsed runtime is excluded from byte-equivalence comparison.",
+  "external_period_previously_inspected": true,
+  "external_predictions_reused": true,
+  "input_manifest_sha256": "4347fecfccb4bdbb60d1f0963e6a20bf4fe960b6ea1cadf36e137f33e73a681f",
+  "network_used": false,
+  "phase7_frozen_evaluation_unchanged": true,
+  "phase8_protocol_sha256": "9324a6ffa5c19b074b388d2ff334120328ff7a3bebc36e55e27017bdaf7e803c",
+  "prior_stage_protected_files_unchanged": true,
+  "raw_data_downloaded": false,
+  "script_sha256": "89c3fe2af08048fef544d67e1dcf7c792600bac58e3bcd36d287229f7a143b72",
+  "software": {
+    "numpy": "2.3.5",
+    "pandas": "2.3.3",
+    "python": "3.12.3",
+    "scikit_learn": "1.9.1"
+  },
+  "status": "PASS"
+}

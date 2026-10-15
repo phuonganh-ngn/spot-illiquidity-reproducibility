@@ -1,0 +1,551 @@
+{
+  "block_lengths_intervals": [
+    42,
+    84
+  ],
+  "replications": 1000,
+  "results": [
+    {
+      "asset": "BTC",
+      "bootstrap": {
+        "42": {
+          "block_length_intervals": 42,
+          "bootstrap_mean_sd": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "mean_delta": 0.0,
+          "p_two_sided_bootstrap": 1.0,
+          "probability_improvement": 0.0,
+          "replications": 1000
+        },
+        "84": {
+          "block_length_intervals": 84,
+          "bootstrap_mean_sd": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "mean_delta": 0.0,
+          "p_two_sided_bootstrap": 1.0,
+          "probability_improvement": 0.0,
+          "replications": 1000
+        }
+      },
+      "family": "ElasticNet"
+    },
+    {
+      "asset": "BTC",
+      "bootstrap": {
+        "42": {
+          "block_length_intervals": 42,
+          "bootstrap_mean_sd": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "mean_delta": 0.0,
+          "p_two_sided_bootstrap": 1.0,
+          "probability_improvement": 0.0,
+          "replications": 1000
+        },
+        "84": {
+          "block_length_intervals": 84,
+          "bootstrap_mean_sd": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "mean_delta": 0.0,
+          "p_two_sided_bootstrap": 1.0,
+          "probability_improvement": 0.0,
+          "replications": 1000
+        }
+      },
+      "family": "RBF_SVR"
+    },
+    {
+      "asset": "BTC",
+      "bootstrap": {
+        "42": {
+          "block_length_intervals": 42,
+          "bootstrap_mean_sd": 1.1629116816348662e-07,
+          "ci95": [
+            -8.178610581074555e-07,
+            -3.518891653938547e-07
+          ],
+          "mean_delta": -5.214755120732175e-07,
+          "p_two_sided_bootstrap": 0.001998001998001998,
+          "probability_improvement": 0.0,
+          "replications": 1000
+        },
+        "84": {
+          "block_length_intervals": 84,
+          "bootstrap_mean_sd": 9.907544729626977e-08,
+          "ci95": [
+            -8.140411493798673e-07,
+            -4.179723513293855e-07
+          ],
+          "mean_delta": -5.214755120732175e-07,
+          "p_two_sided_bootstrap": 0.001998001998001998,
+          "probability_improvement": 0.0,
+          "replications": 1000
+        }
+      },
+      "family": "ExtraTrees"
+    },
+    {
+      "asset": "BTC",
+      "bootstrap": {
+        "42": {
+          "block_length_intervals": 42,
+          "bootstrap_mean_sd": 8.786794659184276e-08,
+          "ci95": [
+            -5.44325508339266e-07,
+            -1.9725497963382515e-07
+          ],
+          "mean_delta": -3.693822080884127e-07,
+          "p_two_sided_bootstrap": 0.001998001998001998,
+          "probability_improvement": 0.0,
+          "replications": 1000
+        },
+        "84": {
+          "block_length_intervals": 84,
+          "bootstrap_mean_sd": 7.966049749658572e-08,
+          "ci95": [
+            -5.32251751425313e-07,
+            -2.281832820769045e-07
+          ],
+          "mean_delta": -3.693822080884127e-07,
+          "p_two_sided_bootstrap": 0.001998001998001998,
+          "probability_improvement": 0.0,
+          "replications": 1000
+        }
+      },
+      "family": "HistGradientBoosting"
+    },
+    {
+      "asset": "BTC",
+      "bootstrap": {
+        "42": {
+          "block_length_intervals": 42,
+          "bootstrap_mean_sd": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "mean_delta": 0.0,
+          "p_two_sided_bootstrap": 1.0,
+          "probability_improvement": 0.0,
+          "replications": 1000
+        },
+        "84": {
+          "block_length_intervals": 84,
+          "bootstrap_mean_sd": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "mean_delta": 0.0,
+          "p_two_sided_bootstrap": 1.0,
+          "probability_improvement": 0.0,
+          "replications": 1000
+        }
+      },
+      "family": "XGBoost"
+    },
+    {
+      "asset": "BTC",
+      "bootstrap": {
+        "42": {
+          "block_length_intervals": 42,
+          "bootstrap_mean_sd": 6.473113072294576e-08,
+          "ci95": [
+            -6.57357993790666e-07,
+            -4.0918170981711465e-07
+          ],
+          "mean_delta": -5.180946990732858e-07,
+          "p_two_sided_bootstrap": 0.001998001998001998,
+          "probability_improvement": 0.0,
+          "replications": 1000
+        },
+        "84": {
+          "block_length_intervals": 84,
+          "bootstrap_mean_sd": 5.720282451587573e-08,
+          "ci95": [
+            -6.488937250342556e-07,
+            -4.2697013749691065e-07
+          ],
+          "mean_delta": -5.180946990732858e-07,
+          "p_two_sided_bootstrap": 0.001998001998001998,
+          "probability_improvement": 0.0,
+          "replications": 1000
+        }
+      },
+      "family": "LightGBM"
+    },
+    {
+      "asset": "BTC",
+      "bootstrap": {
+        "42": {
+          "block_length_intervals": 42,
+          "bootstrap_mean_sd": 1.143010297580254e-07,
+          "ci95": [
+            -6.574500297180427e-07,
+            -2.0342111073823388e-07
+          ],
+          "mean_delta": -4.41688588560521e-07,
+          "p_two_sided_bootstrap": 0.001998001998001998,
+          "probability_improvement": 0.0,
+          "replications": 1000
+        },
+        "84": {
+          "block_length_intervals": 84,
+          "bootstrap_mean_sd": 1.0141551574086545e-07,
+          "ci95": [
+            -6.340791195155217e-07,
+            -2.465123517629708e-07
+          ],
+          "mean_delta": -4.41688588560521e-07,
+          "p_two_sided_bootstrap": 0.001998001998001998,
+          "probability_improvement": 0.0,
+          "replications": 1000
+        }
+      },
+      "family": "CatBoost"
+    },
+    {
+      "asset": "BTC",
+      "bootstrap": {
+        "42": {
+          "block_length_intervals": 42,
+          "bootstrap_mean_sd": 0.008535679623216991,
+          "ci95": [
+            -0.07649504896856658,
+            -0.04289006573141569
+          ],
+          "mean_delta": -0.05538808162729287,
+          "p_two_sided_bootstrap": 0.001998001998001998,
+          "probability_improvement": 0.0,
+          "replications": 1000
+        },
+        "84": {
+          "block_length_intervals": 84,
+          "bootstrap_mean_sd": 0.007284747097447665,
+          "ci95": [
+            -0.07247434002825756,
+            -0.044965856793747164
+          ],
+          "mean_delta": -0.05538808162729287,
+          "p_two_sided_bootstrap": 0.001998001998001998,
+          "probability_improvement": 0.0,
+          "replications": 1000
+        }
+      },
+      "family": "MLP"
+    },
+    {
+      "asset": "BTC",
+      "bootstrap": {
+        "42": {
+          "block_length_intervals": 42,
+          "bootstrap_mean_sd": 2.7907325826456723e-07,
+          "ci95": [
+            -1.9723022746979443e-06,
+            -8.559054409317572e-07
+          ],
+          "mean_delta": -1.3068228402583937e-06,
+          "p_two_sided_bootstrap": 0.001998001998001998,
+          "probability_improvement": 0.0,
+          "replications": 1000
+        },
+        "84": {
+          "block_length_intervals": 84,
+          "bootstrap_mean_sd": 2.3930297480939024e-07,
+          "ci95": [
+            -1.959492997031395e-06,
+            -1.0306059188009838e-06
+          ],
+          "mean_delta": -1.3068228402583937e-06,
+          "p_two_sided_bootstrap": 0.001998001998001998,
+          "probability_improvement": 0.0,
+          "replications": 1000
+        }
+      },
+      "family": "GRU"
+    },
+    {
+      "asset": "ETH",
+      "bootstrap": {
+        "42": {
+          "block_length_intervals": 42,
+          "bootstrap_mean_sd": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "mean_delta": 0.0,
+          "p_two_sided_bootstrap": 1.0,
+          "probability_improvement": 0.0,
+          "replications": 1000
+        },
+        "84": {
+          "block_length_intervals": 84,
+          "bootstrap_mean_sd": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "mean_delta": 0.0,
+          "p_two_sided_bootstrap": 1.0,
+          "probability_improvement": 0.0,
+          "replications": 1000
+        }
+      },
+      "family": "ElasticNet"
+    },
+    {
+      "asset": "ETH",
+      "bootstrap": {
+        "42": {
+          "block_length_intervals": 42,
+          "bootstrap_mean_sd": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "mean_delta": 0.0,
+          "p_two_sided_bootstrap": 1.0,
+          "probability_improvement": 0.0,
+          "replications": 1000
+        },
+        "84": {
+          "block_length_intervals": 84,
+          "bootstrap_mean_sd": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "mean_delta": 0.0,
+          "p_two_sided_bootstrap": 1.0,
+          "probability_improvement": 0.0,
+          "replications": 1000
+        }
+      },
+      "family": "RBF_SVR"
+    },
+    {
+      "asset": "ETH",
+      "bootstrap": {
+        "42": {
+          "block_length_intervals": 42,
+          "bootstrap_mean_sd": 1.3535811099620656e-07,
+          "ci95": [
+            -8.541587796539763e-08,
+            4.341029774006586e-07
+          ],
+          "mean_delta": 1.7786518687110387e-07,
+          "p_two_sided_bootstrap": 0.18581418581418582,
+          "probability_improvement": 0.908,
+          "replications": 1000
+        },
+        "84": {
+          "block_length_intervals": 84,
+          "bootstrap_mean_sd": 1.2889842553469082e-07,
+          "ci95": [
+            -1.2219771791245306e-07,
+            3.9858832024748293e-07
+          ],
+          "mean_delta": 1.7786518687110387e-07,
+          "p_two_sided_bootstrap": 0.30569430569430567,
+          "probability_improvement": 0.848,
+          "replications": 1000
+        }
+      },
+      "family": "ExtraTrees"
+    },
+    {
+      "asset": "ETH",
+      "bootstrap": {
+        "42": {
+          "block_length_intervals": 42,
+          "bootstrap_mean_sd": 3.7676193611255895e-07,
+          "ci95": [
+            -1.2215744062840015e-06,
+            3.07209223271296e-07
+          ],
+          "mean_delta": -4.846085640009982e-07,
+          "p_two_sided_bootstrap": 0.25574425574425574,
+          "probability_improvement": 0.127,
+          "replications": 1000
+        },
+        "84": {
+          "block_length_intervals": 84,
+          "bootstrap_mean_sd": 3.8415878178625213e-07,
+          "ci95": [
+            -1.2830173358212248e-06,
+            1.896304811955589e-07
+          ],
+          "mean_delta": -4.846085640009982e-07,
+          "p_two_sided_bootstrap": 0.18981018981018982,
+          "probability_improvement": 0.094,
+          "replications": 1000
+        }
+      },
+      "family": "HistGradientBoosting"
+    },
+    {
+      "asset": "ETH",
+      "bootstrap": {
+        "42": {
+          "block_length_intervals": 42,
+          "bootstrap_mean_sd": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "mean_delta": 0.0,
+          "p_two_sided_bootstrap": 1.0,
+          "probability_improvement": 0.0,
+          "replications": 1000
+        },
+        "84": {
+          "block_length_intervals": 84,
+          "bootstrap_mean_sd": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "mean_delta": 0.0,
+          "p_two_sided_bootstrap": 1.0,
+          "probability_improvement": 0.0,
+          "replications": 1000
+        }
+      },
+      "family": "XGBoost"
+    },
+    {
+      "asset": "ETH",
+      "bootstrap": {
+        "42": {
+          "block_length_intervals": 42,
+          "bootstrap_mean_sd": 3.800343888602653e-07,
+          "ci95": [
+            -1.9597280299749607e-06,
+            -4.4394186286837915e-07
+          ],
+          "mean_delta": -1.26797036145728e-06,
+          "p_two_sided_bootstrap": 0.001998001998001998,
+          "probability_improvement": 0.0,
+          "replications": 1000
+        },
+        "84": {
+          "block_length_intervals": 84,
+          "bootstrap_mean_sd": 3.262800797011472e-07,
+          "ci95": [
+            -2.069817846225016e-06,
+            -8.179428622684987e-07
+          ],
+          "mean_delta": -1.26797036145728e-06,
+          "p_two_sided_bootstrap": 0.001998001998001998,
+          "probability_improvement": 0.0,
+          "replications": 1000
+        }
+      },
+      "family": "LightGBM"
+    },
+    {
+      "asset": "ETH",
+      "bootstrap": {
+        "42": {
+          "block_length_intervals": 42,
+          "bootstrap_mean_sd": 2.534790925871485e-07,
+          "ci95": [
+            -9.365462552265611e-07,
+            3.8557200969431494e-08
+          ],
+          "mean_delta": -5.124260895363054e-07,
+          "p_two_sided_bootstrap": 0.07992007992007992,
+          "probability_improvement": 0.039,
+          "replications": 1000
+        },
+        "84": {
+          "block_length_intervals": 84,
+          "bootstrap_mean_sd": 2.558403018611512e-07,
+          "ci95": [
+            -1.03520891360521e-06,
+            -2.7511164145095682e-08
+          ],
+          "mean_delta": -5.124260895363054e-07,
+          "p_two_sided_bootstrap": 0.04395604395604396,
+          "probability_improvement": 0.021,
+          "replications": 1000
+        }
+      },
+      "family": "CatBoost"
+    },
+    {
+      "asset": "ETH",
+      "bootstrap": {
+        "42": {
+          "block_length_intervals": 42,
+          "bootstrap_mean_sd": 0.006425192207694201,
+          "ci95": [
+            -0.0895287083844503,
+            -0.06395448083408356
+          ],
+          "mean_delta": -0.0750181131815075,
+          "p_two_sided_bootstrap": 0.001998001998001998,
+          "probability_improvement": 0.0,
+          "replications": 1000
+        },
+        "84": {
+          "block_length_intervals": 84,
+          "bootstrap_mean_sd": 0.006414874896560177,
+          "ci95": [
+            -0.0895169074865776,
+            -0.06511911458531837
+          ],
+          "mean_delta": -0.0750181131815075,
+          "p_two_sided_bootstrap": 0.001998001998001998,
+          "probability_improvement": 0.0,
+          "replications": 1000
+        }
+      },
+      "family": "MLP"
+    },
+    {
+      "asset": "ETH",
+      "bootstrap": {
+        "42": {
+          "block_length_intervals": 42,
+          "bootstrap_mean_sd": 6.247420674720389e-07,
+          "ci95": [
+            -6.223325909069998e-07,
+            1.812721957550303e-06
+          ],
+          "mean_delta": 6.211089206495649e-07,
+          "p_two_sided_bootstrap": 0.24775224775224775,
+          "probability_improvement": 0.877,
+          "replications": 1000
+        },
+        "84": {
+          "block_length_intervals": 84,
+          "bootstrap_mean_sd": 6.535099001952241e-07,
+          "ci95": [
+            -5.513872173242655e-07,
+            1.9485941579777955e-06
+          ],
+          "mean_delta": 6.211089206495649e-07,
+          "p_two_sided_bootstrap": 0.28771228771228774,
+          "probability_improvement": 0.857,
+          "replications": 1000
+        }
+      },
+      "family": "GRU"
+    }
+  ],
+  "sampling": "paired moving calendar blocks within each outer validation fold; same dates for S0/S1",
+  "seed": 20261007
+}

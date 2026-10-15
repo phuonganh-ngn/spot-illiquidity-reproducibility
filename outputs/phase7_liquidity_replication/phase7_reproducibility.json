@@ -1,0 +1,87 @@
+{
+  "execution_deviation": {
+    "complete_evaluation_reports": 1,
+    "final_prediction_sha256": "3c54d0190702affc96a62220770cdfe4b63a19c863bace303ec6917983ee5540",
+    "first_attempt_error": "Missing StandardScaler import in the fixed negative-control routine after primary predictions had been written.",
+    "first_attempt_metrics_inspected_before_retry": false,
+    "first_attempt_prediction_sha256": "3c54d0190702affc96a62220770cdfe4b63a19c863bace303ec6917983ee5540",
+    "frozen_configuration_changed": false,
+    "incomplete_engineering_attempts": 1,
+    "interpretation": "Engineering retry under the same frozen protocol, data, models and seeds; no model selection or protocol change followed external result inspection.",
+    "prediction_artifacts_byte_identical": true,
+    "primary_forecasts_executed_twice": true
+  },
+  "hashes": {
+    "development_freeze_sha256": "953955a474963efd8afd33f9a997b8b5605ea62ffbacfdb7a3cef662bae73ce2",
+    "development_runner_sha256": "dd93561cf4addc458caddb529530e9775bf1a992f646b60ca55a3b6740855175",
+    "external_evaluator_sha256": "cf18b674523e2580ed0ac419cc2b534924f1eac57e98bda4ec9384615a7525e8",
+    "external_freeze_sha256": "c8193edd93fd1dc9183c2c1a1c2f4765f076058e260935539f975b5a34cc7756",
+    "protocol_sha256": "32d6c332ce86e2043709b15aec316b11c67ae730d8482b93d42aee8b7134ff9f",
+    "summary_script_sha256": "7d161bbbeb014e8aea250fd556395c294b164b1b79a32b774f267d92f72f087e"
+  },
+  "offline_data_rebuild": {
+    "amihud_reconstruction_max_abs_error": 9.993633524885137e-17,
+    "archive_count_sha256_and_crc_pass": true,
+    "command": "python src/phase7_liquidity/build_and_audit.py; python src/phase7_liquidity/phase7_data_audit.py",
+    "data_audit_pass": true,
+    "network_requests": 0,
+    "panel_matches_frozen_sha256": true,
+    "panel_sha256": "5a339c5c4a8778ceb74344a10c67806c2323ffac80556be18bf7a9c99de8dcf6",
+    "phase5_variable_parity_pass": true,
+    "verified_archives": 6195
+  },
+  "offline_development_reproduction": {
+    "development_cv_json_equal_excluding_path_runtime_and_container_hash": true,
+    "oof_predictions_compressed_files_byte_identical": false,
+    "oof_predictions_decompressed_payload_byte_identical": true,
+    "oof_predictions_match_development_freeze": true,
+    "oof_rows": 559440,
+    "primary_fit_count": 8640,
+    "selected_models": 360,
+    "selected_models_byte_identical": true,
+    "selected_transforms": 15,
+    "source_change_only_output_path": true
+  },
+  "offline_external_reproduction": {
+    "external_prediction_rows": 2149446,
+    "numerical_sections_identical": {
+      "bootstrap": true,
+      "category_summary": true,
+      "dataset_sha256": true,
+      "equal_category_aggregate": true,
+      "external_sample": true,
+      "negative_controls": true,
+      "paired_comparison_results": true,
+      "protocol_sha256": true,
+      "selected_models": true,
+      "selected_transforms": true,
+      "simple_baselines": true,
+      "stress_warning": true,
+      "temporal_stability": true
+    },
+    "prediction_file_byte_identical": true,
+    "prediction_sha256": "3c54d0190702affc96a62220770cdfe4b63a19c863bace303ec6917983ee5540"
+  },
+  "preservation": {
+    "failed_paths": [],
+    "phase7_external_frozen_outputs_unchanged": true,
+    "phase7_frozen_inputs_unchanged": true,
+    "stage1_stage3_phase5_phase6_snapshot_file_count": 9947,
+    "stage1_stage3_phase5_phase6_snapshot_pass": true
+  },
+  "research_decision": {
+    "amihud_replication_pass": false,
+    "classification": "NOT_EXTERNALLY_REPLICATED_UNDER_FROZEN_CRITERIA",
+    "distinct_proxy_generalization_pass": false,
+    "negative_control_status": "LIMITED_DIAGNOSTIC_ONLY; outputs contain fixed-Ridge raw MAE for impossible-time features but no paired spot-only incremental-loss benchmark, so they cannot establish whether future derivatives add predictive value."
+  },
+  "software": {
+    "hist_gradient_boosting": "1.9.1",
+    "numpy": "2.2.6",
+    "pandas": "2.3.3",
+    "python": "3.12.3",
+    "scikit_learn": "1.9.1",
+    "torch": "2.14.1+cpu"
+  },
+  "status": "PASS"
+}

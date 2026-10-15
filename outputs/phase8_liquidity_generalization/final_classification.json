@@ -1,0 +1,19 @@
+{
+  "amihud_external_replication_pass": false,
+  "causal_claim_supported": false,
+  "development_selected_best_model_dominance": {
+    "BNB": false,
+    "BTC": false,
+    "ETH": true,
+    "SOL": false,
+    "XRP": true
+  },
+  "distinct_proxy_generalization_pass": false,
+  "interpretation": "Existing Phase-7 external replication criteria remain authoritative. New best-family, stress-warning, and paired negative-control diagnostics are secondary reanalysis on previously inspected dates.",
+  "overall_classification": "NO_ROBUST_GENERALIZATION",
+  "phase6_finding": "target-specific 24-hour future Amihud predictive signal, previously reported; not a causal result",
+  "phase7_frozen_external_classification": "NOT_EXTERNALLY_REPLICATED_UNDER_FROZEN_CRITERIA",
+  "quantum_or_other_algorithm_claim": "not relevant to this validation objective",
+  "supported_matched_impossible_time_controls": 0,
+  "total_matched_impossible_time_controls": 10
+}

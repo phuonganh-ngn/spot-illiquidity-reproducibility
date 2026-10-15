@@ -1,0 +1,27 @@
+{
+  "correction": "Holm across exactly the two primary asset hypotheses, separately for Delta_Q and Delta_I; primary p-values use 42-bar paired moving-block bootstrap.",
+  "delta_i": [
+    {
+      "asset": "BTC",
+      "holm_p": 0.057942057942057944,
+      "raw_p": 0.057942057942057944
+    },
+    {
+      "asset": "ETH",
+      "holm_p": 0.029970029970029972,
+      "raw_p": 0.014985014985014986
+    }
+  ],
+  "delta_q": [
+    {
+      "asset": "BTC",
+      "holm_p": 0.26373626373626374,
+      "raw_p": 0.13186813186813187
+    },
+    {
+      "asset": "ETH",
+      "holm_p": 0.44255744255744256,
+      "raw_p": 0.44255744255744256
+    }
+  ]
+}

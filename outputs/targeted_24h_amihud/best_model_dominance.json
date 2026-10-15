@@ -1,0 +1,118 @@
+{
+  "best_families_selected_on_development_cv": {
+    "BTC|SPOT_ONLY": "CatBoost",
+    "BTC|SPOT_PLUS_DERIVATIVES": "CatBoost",
+    "ETH|SPOT_ONLY": "XGBoost",
+    "ETH|SPOT_PLUS_DERIVATIVES": "XGBoost"
+  },
+  "development_nested_best_model": [
+    {
+      "asset": "BTC",
+      "delta_positive_favors_derivatives": -1.9591276088716945e-06,
+      "n_asset_day_rows": 905,
+      "n_unique_dates": 905,
+      "paired_block_bootstrap_42": {
+        "block_length_intervals": 42,
+        "bootstrap_mean_sd": 2.603373345406103e-07,
+        "ci95": [
+          -2.6454228824865106e-06,
+          -1.6471733167848345e-06
+        ],
+        "mean_delta": -1.9591276088716945e-06,
+        "p_two_sided_bootstrap": 0.001998001998001998,
+        "probability_improvement": 0.0,
+        "replications": 1000
+      },
+      "selection_rule": "best family selected solely by inner CV within each outer training fold",
+      "spot_only_families_by_fold": {
+        "F1": "LightGBM",
+        "F2": "LightGBM",
+        "F3": "LightGBM"
+      },
+      "spot_only_transformed_mae": 4.016845189802907e-06,
+      "spot_plus_derivatives_transformed_mae": 5.975972798674602e-06,
+      "spot_plus_families_by_fold": {
+        "F1": "GRU",
+        "F2": "GRU",
+        "F3": "LightGBM"
+      }
+    },
+    {
+      "asset": "ETH",
+      "delta_positive_favors_derivatives": -2.6795032088693837e-07,
+      "n_asset_day_rows": 922,
+      "n_unique_dates": 922,
+      "paired_block_bootstrap_42": {
+        "block_length_intervals": 42,
+        "bootstrap_mean_sd": 1.744256089603674e-07,
+        "ci95": [
+          -5.369251863357906e-07,
+          1.4128580586467145e-07
+        ],
+        "mean_delta": -2.6795032088693837e-07,
+        "p_two_sided_bootstrap": 0.3116883116883117,
+        "probability_improvement": 0.155,
+        "replications": 1000
+      },
+      "selection_rule": "best family selected solely by inner CV within each outer training fold",
+      "spot_only_families_by_fold": {
+        "F1": "ElasticNet",
+        "F2": "RBF_SVR",
+        "F3": "GRU"
+      },
+      "spot_only_transformed_mae": 2.0861789443763855e-05,
+      "spot_plus_derivatives_transformed_mae": 2.1129739764650793e-05,
+      "spot_plus_families_by_fold": {
+        "F1": "ElasticNet",
+        "F2": "RBF_SVR",
+        "F3": "GRU"
+      }
+    }
+  ],
+  "historical_reuse_only": [
+    {
+      "asset": "BTC",
+      "delta_positive_favors_derivatives": 1.3392248302588128e-07,
+      "n": 711,
+      "period": "phase6_reuse",
+      "spot_only_family_selected_on_development": "CatBoost",
+      "spot_only_mae": 6.616785267195575e-06,
+      "spot_plus_derivatives_mae": 6.482862784169693e-06,
+      "spot_plus_family_selected_on_development": "CatBoost",
+      "status": "EXPLORATORY_REUSE_NOT_FRESH_CONFIRMATION"
+    },
+    {
+      "asset": "BTC",
+      "delta_positive_favors_derivatives": 4.2432997760915275e-08,
+      "n": 3829,
+      "period": "phase7_reuse",
+      "spot_only_family_selected_on_development": "CatBoost",
+      "spot_only_mae": 7.74177809184277e-06,
+      "spot_plus_derivatives_mae": 7.699345094081854e-06,
+      "spot_plus_family_selected_on_development": "CatBoost",
+      "status": "EXPLORATORY_REUSE_NOT_FRESH_CONFIRMATION"
+    },
+    {
+      "asset": "ETH",
+      "delta_positive_favors_derivatives": 0.0,
+      "n": 711,
+      "period": "phase6_reuse",
+      "spot_only_family_selected_on_development": "XGBoost",
+      "spot_only_mae": 1.4521790872646464e-05,
+      "spot_plus_derivatives_mae": 1.4521790872646464e-05,
+      "spot_plus_family_selected_on_development": "XGBoost",
+      "status": "EXPLORATORY_REUSE_NOT_FRESH_CONFIRMATION"
+    },
+    {
+      "asset": "ETH",
+      "delta_positive_favors_derivatives": 0.0,
+      "n": 3949,
+      "period": "phase7_reuse",
+      "spot_only_family_selected_on_development": "XGBoost",
+      "spot_only_mae": 2.081555650285029e-05,
+      "spot_plus_derivatives_mae": 2.081555650285029e-05,
+      "spot_plus_family_selected_on_development": "XGBoost",
+      "status": "EXPLORATORY_REUSE_NOT_FRESH_CONFIRMATION"
+    }
+  ]
+}

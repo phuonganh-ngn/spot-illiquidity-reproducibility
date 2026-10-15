@@ -1,0 +1,38 @@
+{
+  "T_end": "2026-10-06T20:00:00Z",
+  "T_start": "2024-10-06T20:00:00Z",
+  "assets": [
+    "BTC",
+    "ETH"
+  ],
+  "calculation": "floor((T_end-T_start)/4h)+1 = 4381; elapsed interval = 730 days.",
+  "calendar_rule": "T_start is exactly T_end minus 24 calendar months; no market outcome or forecast result used.",
+  "coverage_evidence": {
+    "bybit_archive_head_2026-10-07": {
+      "BTC_futures": 200,
+      "BTC_spot": 200,
+      "ETH_futures": 200,
+      "ETH_spot": 200
+    },
+    "funding_last_settlement_utc": "2026-10-07T16:00:00Z",
+    "note": "Availability and timestamp checks only; no predictive outcomes were inspected.",
+    "oi_last_snapshot_utc": "2026-10-07T20:00:00Z",
+    "spot_kline_last_start_utc": "2026-10-07T23:55:00Z"
+  },
+  "endpoint_definition": "Latest forecast-origin bar whose six future 4h spot-Amihud bars are fully observable in the common certified Bybit API data. The last target bar starts 2026-10-07 20:00 UTC and closes 2026-10-08 00:00 UTC; 5m spot kline data are complete through 2026-10-07 23:55 UTC. Both assets have the same observed cutoff.",
+  "expected_4h_timestamps": 4381,
+  "forecast_results_viewed": false,
+  "frozen_at_utc": "2026-10-08T10:05:46.264557+00:00",
+  "interval_convention": "Inclusive forecast-origin timestamps, period_start_utc grid at 00:00/04:00/08:00/12:00/16:00/20:00 UTC.",
+  "panel_constructed_before_freeze": false,
+  "primary_venue": "Bybit",
+  "required_input_streams": [
+    "Bybit BTCUSDT and ETHUSDT spot 5m OHLCV/quote turnover",
+    "Bybit BTCUSDT and ETHUSDT USD\u24c8-M linear perpetual funding history",
+    "open interest 4h snapshots",
+    "5m mark and index prices for basis",
+    "spot and futures transaction archives for frozen taker imbalance features"
+  ],
+  "target_availability": "FutureAmihud24_t uses 4h spot Amihud at t+1,...,t+6; final origin 2026-10-06 20:00 uses bars starting 2026-10-07 00:00 through 20:00, all complete by 2026-10-08 00:00 UTC.",
+  "warmup_rule": "No transaction archives outside the interval are parsed. Frozen six-interval lags are missing where prior in-window history does not exist; 180-prior-interval robust shocks remain missing until 180 in-window observations are available."
+}

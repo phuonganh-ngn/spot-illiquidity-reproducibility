@@ -1,0 +1,18 @@
+{
+  "asset_decisions": {
+    "BTC": "FAIL",
+    "ETH": "FAIL"
+  },
+  "basis": "Strict asset PASS conditions require statistically supported positive Delta_Q and Delta_I, seed stability, and a passing positive-direction placebo check.",
+  "cross_venue_replication": "NOT_AVAILABLE; only Bybit passed the data-quality gate",
+  "eligible_venues": [
+    "Bybit"
+  ],
+  "ineligible_venues": {
+    "OKX": "insufficient historical open-interest coverage; all recorded probes empty"
+  },
+  "model_generated_paper_classification": "ALGORITHMIC_QML_GAIN_WITHOUT_INCREMENTAL_INFORMATION",
+  "primary_venue": "Bybit",
+  "status": "NO_EXTERNAL_QML_REPLICATION",
+  "strict_success_rule_outcome": "NO_EXTERNAL_QML_REPLICATION"
+}

@@ -1,0 +1,264 @@
+{
+  "architecture": {
+    "GRU": "Original selected one-layer GRU; selected hidden width from registry; sequence length 6 oldest-to-newest; linear scalar head on final hidden state; Adam lr=0.005; weight_decay=0.001; full batch; 20 epochs; no clipping or early stopping",
+    "MLP": "Original selected one-hidden-layer ReLU MLP; selected width from registry; Adam; alpha=0.001; learning_rate_init=0.001; max_iter=400; early_stopping=False; shuffle=True; tol=1e-5; n_iter_no_change=30"
+  },
+  "configs": {
+    "BTC__GRU__SPOT_ONLY": {
+      "asset": "BTC",
+      "horizon_intervals": 6,
+      "information_set": "SPOT_ONLY",
+      "model_family": "GRU",
+      "selected_config": {
+        "epochs": 20,
+        "hidden_size": 16,
+        "weight_decay": 0.001
+      },
+      "selected_config_index": 2,
+      "selected_development_mae_log1p": 0.004394894404758665,
+      "selection_source": "selected_models.json; frozen development-only pooled log1p MAE",
+      "selection_status": "FROZEN_BEFORE_FINAL_TEST",
+      "target": "future_amihud",
+      "task_id": "BTC__future_amihud__h6"
+    },
+    "BTC__GRU__SPOT_PLUS_ALL_DERIVATIVES": {
+      "asset": "BTC",
+      "horizon_intervals": 6,
+      "information_set": "SPOT_PLUS_ALL_DERIVATIVES",
+      "model_family": "GRU",
+      "selected_config": {
+        "epochs": 20,
+        "hidden_size": 16,
+        "weight_decay": 0.001
+      },
+      "selected_config_index": 2,
+      "selected_development_mae_log1p": 0.009001888281334948,
+      "selection_source": "selected_models.json; frozen development-only pooled log1p MAE",
+      "selection_status": "FROZEN_BEFORE_FINAL_TEST",
+      "target": "future_amihud",
+      "task_id": "BTC__future_amihud__h6"
+    },
+    "BTC__MLP__SPOT_ONLY": {
+      "asset": "BTC",
+      "horizon_intervals": 6,
+      "information_set": "SPOT_ONLY",
+      "model_family": "MLP",
+      "selected_config": {
+        "alpha": 0.001,
+        "hidden_layer_sizes": [
+          8
+        ],
+        "max_iter": 400
+      },
+      "selected_config_index": 0,
+      "selected_development_mae_log1p": 0.01045830332212474,
+      "selection_source": "selected_models.json; frozen development-only pooled log1p MAE",
+      "selection_status": "FROZEN_BEFORE_FINAL_TEST",
+      "target": "future_amihud",
+      "task_id": "BTC__future_amihud__h6"
+    },
+    "BTC__MLP__SPOT_PLUS_ALL_DERIVATIVES": {
+      "asset": "BTC",
+      "horizon_intervals": 6,
+      "information_set": "SPOT_PLUS_ALL_DERIVATIVES",
+      "model_family": "MLP",
+      "selected_config": {
+        "alpha": 0.001,
+        "hidden_layer_sizes": [
+          8
+        ],
+        "max_iter": 400
+      },
+      "selected_config_index": 0,
+      "selected_development_mae_log1p": 0.011125537725283666,
+      "selection_source": "selected_models.json; frozen development-only pooled log1p MAE",
+      "selection_status": "FROZEN_BEFORE_FINAL_TEST",
+      "target": "future_amihud",
+      "task_id": "BTC__future_amihud__h6"
+    },
+    "ETH__GRU__SPOT_ONLY": {
+      "asset": "ETH",
+      "horizon_intervals": 6,
+      "information_set": "SPOT_ONLY",
+      "model_family": "GRU",
+      "selected_config": {
+        "epochs": 20,
+        "hidden_size": 16,
+        "weight_decay": 0.001
+      },
+      "selected_config_index": 2,
+      "selected_development_mae_log1p": 0.008857453927296486,
+      "selection_source": "selected_models.json; frozen development-only pooled log1p MAE",
+      "selection_status": "FROZEN_BEFORE_FINAL_TEST",
+      "target": "future_amihud",
+      "task_id": "ETH__future_amihud__h6"
+    },
+    "ETH__GRU__SPOT_PLUS_ALL_DERIVATIVES": {
+      "asset": "ETH",
+      "horizon_intervals": 6,
+      "information_set": "SPOT_PLUS_ALL_DERIVATIVES",
+      "model_family": "GRU",
+      "selected_config": {
+        "epochs": 20,
+        "hidden_size": 16,
+        "weight_decay": 0.001
+      },
+      "selected_config_index": 2,
+      "selected_development_mae_log1p": 0.01864796897515714,
+      "selection_source": "selected_models.json; frozen development-only pooled log1p MAE",
+      "selection_status": "FROZEN_BEFORE_FINAL_TEST",
+      "target": "future_amihud",
+      "task_id": "ETH__future_amihud__h6"
+    },
+    "ETH__MLP__SPOT_ONLY": {
+      "asset": "ETH",
+      "horizon_intervals": 6,
+      "information_set": "SPOT_ONLY",
+      "model_family": "MLP",
+      "selected_config": {
+        "alpha": 0.001,
+        "hidden_layer_sizes": [
+          8
+        ],
+        "max_iter": 400
+      },
+      "selected_config_index": 0,
+      "selected_development_mae_log1p": 0.010043302232725562,
+      "selection_source": "selected_models.json; frozen development-only pooled log1p MAE",
+      "selection_status": "FROZEN_BEFORE_FINAL_TEST",
+      "target": "future_amihud",
+      "task_id": "ETH__future_amihud__h6"
+    },
+    "ETH__MLP__SPOT_PLUS_ALL_DERIVATIVES": {
+      "asset": "ETH",
+      "horizon_intervals": 6,
+      "information_set": "SPOT_PLUS_ALL_DERIVATIVES",
+      "model_family": "MLP",
+      "selected_config": {
+        "alpha": 0.001,
+        "hidden_layer_sizes": [
+          8
+        ],
+        "max_iter": 400
+      },
+      "selected_config_index": 0,
+      "selected_development_mae_log1p": 0.014759179277647387,
+      "selection_source": "selected_models.json; frozen development-only pooled log1p MAE",
+      "selection_status": "FROZEN_BEFORE_FINAL_TEST",
+      "target": "future_amihud",
+      "task_id": "ETH__future_amihud__h6"
+    }
+  },
+  "experiment": "Phase 13 retrospective neural target-scaling sensitivity",
+  "experimental_status": "RETROSPECTIVE_SENSITIVITY_NOT_INDEPENDENT_CONFIRMATION",
+  "exploratory_bootstrap": {
+    "block_lengths_intervals": [
+      42,
+      84
+    ],
+    "replications": 1000,
+    "rng_seed": 20261013,
+    "status": "POST_HOC_EXPLORATORY_INTERVALS_ONLY"
+  },
+  "feature_order_per_interval": {
+    "SPOT_ONLY": [
+      "spot_return",
+      "spot_realized_volatility",
+      "spot_downside_semivariance",
+      "spot_amihud",
+      "spot_taker_imbalance",
+      "spot_quote_volume_growth"
+    ],
+    "SPOT_PLUS_ALL_DERIVATIVES": [
+      "spot_return",
+      "spot_realized_volatility",
+      "spot_downside_semivariance",
+      "spot_amihud",
+      "spot_taker_imbalance",
+      "spot_quote_volume_growth",
+      "funding_rate_state",
+      "oi_log_change",
+      "futures_taker_imbalance",
+      "basis_mean"
+    ],
+    "sequence_order": "t-5,t-4,t-3,t-2,t-1,t; flattened MLP is row-major time then features"
+  },
+  "final_test_period": [
+    "2023-07-01T00:00:00Z",
+    "2024-03-03T20:00:00Z"
+  ],
+  "folds": [
+    {
+      "fold": "F1",
+      "train_feature_start": "2021-12-01T00:00:00Z",
+      "validation_end_exclusive": "2023-01-01T00:00:00Z",
+      "validation_start": "2022-10-01T00:00:00Z"
+    },
+    {
+      "fold": "F2",
+      "train_feature_start": "2021-12-01T00:00:00Z",
+      "validation_end_exclusive": "2023-04-01T00:00:00Z",
+      "validation_start": "2023-01-01T00:00:00Z"
+    },
+    {
+      "fold": "F3",
+      "train_feature_start": "2021-12-01T00:00:00Z",
+      "validation_end_exclusive": "2023-07-01T00:00:00Z",
+      "validation_start": "2023-04-01T00:00:00Z"
+    }
+  ],
+  "historical_phase6_test_metrics": {
+    "selected_rows": {
+      "BTC__SPOT_ONLY__GRU": 0.03490518800944083,
+      "BTC__SPOT_ONLY__MLP": 0.035047455784489825,
+      "BTC__SPOT_PLUS_ALL_DERIVATIVES__GRU": 0.015861982870231627,
+      "BTC__SPOT_PLUS_ALL_DERIVATIVES__MLP": 0.014367341534965793,
+      "ETH__SPOT_ONLY__GRU": 0.005360174812247077,
+      "ETH__SPOT_ONLY__MLP": 0.009431660086001539,
+      "ETH__SPOT_PLUS_ALL_DERIVATIVES__GRU": 0.0009132047935481241,
+      "ETH__SPOT_PLUS_ALL_DERIVATIVES__MLP": 0.007983413237777962
+    },
+    "source": "final_test_metrics.json; values on common log1p target"
+  },
+  "information_sets": [
+    "SPOT_ONLY",
+    "SPOT_PLUS_ALL_DERIVATIVES"
+  ],
+  "phase6_frozen_decision": {
+    "model_rows": 180,
+    "passed_task_ids": [
+      "BTC__future_amihud__h6",
+      "ETH__future_amihud__h6"
+    ],
+    "passes": 2,
+    "tasks": 18
+  },
+  "preprocessing": {
+    "prediction_postprocessing": "No clipping of negative log-scale forecasts in either matched replay branch; a separate frozen-output-clipped control score is retained solely to compare exact historical implementation.",
+    "predictors": "Original training-only StandardScaler; feature order and history unchanged",
+    "target_treatment": "Unscaled control or StandardScaler fit on training labels only; inverse using same training mean and population std"
+  },
+  "primary_assets": [
+    "BTC",
+    "ETH"
+  ],
+  "primary_horizon_intervals": 6,
+  "seed_rule": {
+    "base_seed": 20261007,
+    "development": "SEED + sum(sum(ord(c) for c in str(part)) for part in (task_id, information_set, family, selected_config_index, fold_name))",
+    "final_test": "SEED + sum(sum(ord(c) for c in str(part)) for part in ('final', asset, target, horizon, information_set, family))",
+    "source": "src/phase6_run_development.py and src/phase6_evaluate_final.py"
+  },
+  "source_protocol_sha256": "e50637340052f505c585bbce70c86ac7f4d3f607b6ef127a24c1317d1d99402d",
+  "source_selected_models_sha256": "93d8d2d15d0a03ccebd2cea4ce115a8d4dbfabe3d8dfbde8f9dac845757a6313",
+  "target": {
+    "formula": "mean(spot_amihud[t+1:t+6])",
+    "id": "future_amihud",
+    "scoring": "MAE on original log1p target",
+    "training_transform": "log1p(max(y,0))"
+  },
+  "training_regimes": [
+    "CONTROL_REPLAY_UNSCALED_RAW_OUTPUT",
+    "TREATMENT_TRAIN_ONLY_STANDARDIZED_TARGET_RAW_OUTPUT"
+  ]
+}

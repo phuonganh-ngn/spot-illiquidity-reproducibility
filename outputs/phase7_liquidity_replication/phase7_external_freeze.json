@@ -1,0 +1,14 @@
+{
+  "development_freeze_sha256": "953955a474963efd8afd33f9a997b8b5605ea62ffbacfdb7a3cef662bae73ce2",
+  "external_metadata_note": "Records one incomplete technical attempt and one completed report; both used identical frozen forecasts, verified by identical prediction artifact hash.",
+  "files": {
+    "phase7_external_evaluation.json": "efac76de989f044b75d81b85658d76c50a4b75ee93851284bfaffcabc26f299b",
+    "phase7_external_predictions.csv.gz": "3c54d0190702affc96a62220770cdfe4b63a19c863bace303ec6917983ee5540",
+    "phase7_negative_controls.json": "32415e6afe15e78046a2e49e08d9a5ad3e5598535d45851e0bd10519503e766b",
+    "phase7_temporal_stability.json": "3e70f01a43a0dd287e4a47780e3e5eced3f4929badd0731e827efbd63c2dc13c"
+  },
+  "frozen_at_utc": "2026-10-07T14:10:06.693415+00:00",
+  "protocol_sha256": "32d6c332ce86e2043709b15aec316b11c67ae730d8482b93d42aee8b7134ff9f",
+  "source_script_sha256": "cf18b674523e2580ed0ac419cc2b534924f1eac57e98bda4ec9384615a7525e8",
+  "status": "EXTERNAL_EVALUATION_FROZEN"
+}

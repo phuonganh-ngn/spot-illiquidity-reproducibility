@@ -1,0 +1,285 @@
+{
+  "candidate_venues": [
+    "Bybit",
+    "OKX"
+  ],
+  "claim_scope": "predictive replication only; no causal or quantum advantage claim",
+  "created_utc": "2026-10-08T05:53:33.149989+00:00",
+  "eligibility": {
+    "assets": [
+      "BTC",
+      "ETH"
+    ],
+    "complete_contiguous_common_period_required": true,
+    "coverage_minimum_pct": 95,
+    "frequency": "4-hour UTC",
+    "material_duplicate_timestamps_prohibited": true,
+    "minimum_common_history_months": 18,
+    "no_forward_fill": true,
+    "perpetual_pair": "USDT linear perpetual BTC and ETH",
+    "preferred_common_history_months": 24,
+    "required_derivatives": [
+      "funding rate",
+      "open interest",
+      "aggressive/taker flow",
+      "basis or premium with mark/index semantics"
+    ],
+    "required_spot": [
+      "price",
+      "USDT quote volume",
+      "trade count or source trade activity to verify Amihud ingredients"
+    ],
+    "spot_pair": "BTCUSDT or mechanically equivalent USDT spot instrument",
+    "symbol_migration_must_be_resolved": true,
+    "timestamp_semantics_required": true
+  },
+  "external_data_inspection_before_fit": "Allowed only for schema, coverage, timestamps, semantics, missingness, duplicates, contract definitions, and deterministic target construction. Forecast scores remain unopened until frozen protocol and split hashes exist.",
+  "feature_sets": {
+    "S0": "Exactly frozen targeted-study SpotOnly registry; six past/current 4-hour slots t-5..t of each registered spot feature plus calendar features.",
+    "derivatives_residual_input": "Exactly frozen derivative-only feature registry: funding, OI log change, futures taker imbalance, basis and registered transformations/interactions/calendar controls; no spot features in residual learner."
+  },
+  "inference": {
+    "block_lengths_4h_intervals": [
+      42,
+      84
+    ],
+    "fixed_seed_base": 20261007,
+    "paired_block_bootstrap_replications": 1000,
+    "primary_holm_families": [
+      "Delta_FULL across BTC/ETH",
+      "Delta_QML_MLP across BTC/ETH"
+    ]
+  },
+  "no_tuning_on_external_venue": true,
+  "primary_endpoints": {
+    "delta_full": "MAE(SpotOnly) - MAE(SpotOnly + QML residual correction); positive favors correction",
+    "delta_qml_mlp": "MAE(SpotOnly + matched MLP residual correction) - MAE(SpotOnly + QML residual correction); positive favors QML"
+  },
+  "primary_hypotheses": {
+    "BTC": "Hybrid QNN, 4 qubits",
+    "ETH": "Variational QNN, 6 qubits"
+  },
+  "prohibited": "No qubit/architecture/feature/transform/hyperparameter search, no performance-based venue selection, no hardware advantage claim.",
+  "qml_configs": {
+    "BTC": {
+      "asset": "BTC",
+      "backend": "PennyLane default.qubit exact CPU statevector",
+      "batch_size": 64,
+      "circuit": "AngleEmbedding(Y) plus 2 StronglyEntanglingLayers; Pauli-Z vector, trainable linear output",
+      "epochs": 40,
+      "frozen_primary_model": "Hybrid variational QNN",
+      "input_scaler": "training-only StandardScaler",
+      "layers": 2,
+      "learning_rate": 0.01,
+      "matched_classical": {
+        "alpha": 0.01,
+        "early_stopping": false,
+        "family": "one-hidden-layer MLP",
+        "hidden_width": 4,
+        "input_scaler": "training-only StandardScaler",
+        "learning_rate_init": 0.001,
+        "max_iter": 2000,
+        "pca_components": 16,
+        "post_pca_scaler": "training-only StandardScaler",
+        "same_seed_for_each_pair": true,
+        "solver": "adam",
+        "tol": 1e-05
+      },
+      "optimizer": "Adam",
+      "pca_components": 16,
+      "post_pca_scaler": "training-only StandardScaler",
+      "qubits": 4,
+      "seeds": [
+        927195332,
+        1778310776,
+        766736717,
+        870829452,
+        1414450591
+      ],
+      "shots": null
+    },
+    "ETH": {
+      "asset": "ETH",
+      "backend": "PennyLane default.qubit exact CPU statevector",
+      "batch_size": 64,
+      "circuit": "AngleEmbedding(Y) plus 2 StronglyEntanglingLayers; Pauli-Z vector, trainable linear output",
+      "epochs": 40,
+      "frozen_primary_model": "Variational QNN",
+      "input_scaler": "training-only StandardScaler",
+      "layers": 2,
+      "learning_rate": 0.01,
+      "matched_classical": {
+        "alpha": 0.01,
+        "early_stopping": false,
+        "family": "one-hidden-layer MLP",
+        "hidden_width": 6,
+        "input_scaler": "training-only StandardScaler",
+        "learning_rate_init": 0.001,
+        "max_iter": 2000,
+        "pca_components": 6,
+        "post_pca_scaler": "training-only StandardScaler",
+        "same_seed_for_each_pair": true,
+        "solver": "adam",
+        "tol": 1e-05
+      },
+      "optimizer": "Adam",
+      "pca_components": 6,
+      "post_pca_scaler": "training-only StandardScaler",
+      "qubits": 6,
+      "seeds": [
+        809355672,
+        1377247200,
+        456611996,
+        615602774,
+        2079287096
+      ],
+      "shots": null
+    }
+  },
+  "residual_comparators": {
+    "matched_residual_model": {
+      "family": "one-hidden-layer MLP",
+      "per_asset": {
+        "BTC": {
+          "alpha": 0.01,
+          "early_stopping": false,
+          "family": "one-hidden-layer MLP",
+          "hidden_width": 4,
+          "input_scaler": "training-only StandardScaler",
+          "learning_rate_init": 0.001,
+          "max_iter": 2000,
+          "pca_components": 16,
+          "post_pca_scaler": "training-only StandardScaler",
+          "same_seed_for_each_pair": true,
+          "solver": "adam",
+          "tol": 1e-05
+        },
+        "ETH": {
+          "alpha": 0.01,
+          "early_stopping": false,
+          "family": "one-hidden-layer MLP",
+          "hidden_width": 6,
+          "input_scaler": "training-only StandardScaler",
+          "learning_rate_init": 0.001,
+          "max_iter": 2000,
+          "pca_components": 6,
+          "post_pca_scaler": "training-only StandardScaler",
+          "same_seed_for_each_pair": true,
+          "solver": "adam",
+          "tol": 1e-05
+        }
+      }
+    },
+    "selection_basis": "prior targeted-study frozen development evidence only; external-venue performance is prohibited from selection",
+    "spot_only": {
+      "BTC": {
+        "config": {
+          "allow_writing_files": false,
+          "depth": 6,
+          "iterations": 250,
+          "l2_leaf_reg": 3.0,
+          "learning_rate": 0.1,
+          "loss_function": "RMSE",
+          "thread_count": 1,
+          "verbose": false
+        },
+        "config_index_in_original_registry": 6,
+        "family": "CatBoost",
+        "selection_source": "prior frozen development CV; not reselected on external holdout"
+      },
+      "ETH": {
+        "config": {
+          "colsample_bytree": 0.8,
+          "learning_rate": 0.1,
+          "max_depth": 6,
+          "n_estimators": 250,
+          "n_jobs": 1,
+          "objective": "reg:squarederror",
+          "reg_lambda": 1.0,
+          "subsample": 0.7,
+          "tree_method": "hist"
+        },
+        "config_index_in_original_registry": 18,
+        "family": "XGBoost",
+        "selection_source": "prior frozen development CV; not reselected on external holdout"
+      }
+    },
+    "strongest_previously_frozen_classical_residual_learner": {
+      "BTC": {
+        "delta_positive_favors_derivatives": 1.1010583017752828e-07,
+        "family": "ElasticNet",
+        "holm_p_within_asset_residual_families": 0.16383616383616384,
+        "residual_model_mae": 4.421676380971416e-06,
+        "spot_only_residual_mae": 4.531782211148944e-06
+      },
+      "ETH": {
+        "delta_positive_favors_derivatives": -1.1748919521854919e-05,
+        "family": "XGBoost",
+        "holm_p_within_asset_residual_families": 0.00999000999000999,
+        "residual_model_mae": 3.070058521405977e-05,
+        "spot_only_residual_mae": 1.8951665692204853e-05
+      }
+    }
+  },
+  "residual_construction": "Chronological training-only OOF SpotOnly predictions using frozen asset-specific family and frozen development-selected config; residual = transformed target minus OOF prediction. No in-sample residuals.",
+  "sources_to_audit": {
+    "Bybit": [
+      "https://bybit-exchange.github.io/docs/v5/market/kline",
+      "https://bybit-exchange.github.io/docs/v5/market/open-interest",
+      "https://bybit-exchange.github.io/docs/v5/market/funding-history",
+      "https://bybit-exchange.github.io/docs/v5/market/recent-trade",
+      "https://public.bybit.com/"
+    ],
+    "OKX": [
+      "https://www.okx.com/en-us/historical-data",
+      "https://www.okx.com/docs-v5/en/"
+    ]
+  },
+  "spot_only_configs": {
+    "BTC": {
+      "config": {
+        "allow_writing_files": false,
+        "depth": 6,
+        "iterations": 250,
+        "l2_leaf_reg": 3.0,
+        "learning_rate": 0.1,
+        "loss_function": "RMSE",
+        "thread_count": 1,
+        "verbose": false
+      },
+      "config_index_in_original_registry": 6,
+      "family": "CatBoost",
+      "selection_source": "prior frozen development CV; not reselected on external holdout"
+    },
+    "ETH": {
+      "config": {
+        "colsample_bytree": 0.8,
+        "learning_rate": 0.1,
+        "max_depth": 6,
+        "n_estimators": 250,
+        "n_jobs": 1,
+        "objective": "reg:squarederror",
+        "reg_lambda": 1.0,
+        "subsample": 0.7,
+        "tree_method": "hist"
+      },
+      "config_index_in_original_registry": 18,
+      "family": "XGBoost",
+      "selection_source": "prior frozen development CV; not reselected on external holdout"
+    }
+  },
+  "study": "Phase 9 external-venue replication of frozen QML residual learning for 24h spot illiquidity",
+  "target": {
+    "definition": "Frozen 24-hour future spot Amihud; arithmetic mean over next six 4-hour observations, t+1..t+6, complete window only.",
+    "primary_metric": "MAE on T2_log1p target",
+    "raw_formula": "1e6 * abs(4h log return) / USDT quote volume",
+    "transform": "T2_log1p = log1p(target)"
+  },
+  "temporal_split": {
+    "calendar_sensitivity": "Only if it uses no model results and loses no material common coverage.",
+    "fraction_holdout": 0.3,
+    "fraction_train": 0.7,
+    "rule": "Longest common contiguous valid 4-hour period for BTC and ETH after data-quality filtering; chronological 70% train / 30% untouched holdout; split computed before any model fitting. At least 18 months total."
+  },
+  "venue_selection_rule": "Include every candidate venue passing the prespecified data-quality and semantic-parity gates; do not inspect any forecast output before venue inclusion is frozen."
+}

@@ -1,0 +1,8 @@
+# Table 7
+
+Source-derived values; CSV retains full precision.
+
+| asset | qml_configuration | matched_classical | input_dimension | pca_components | quantum_trainable_parameters | matched_mlp_trainable_parameters | historical_actual_n | historical_first | historical_last | historical_mean_paired_delta_mlp_minus_qml | historical_42_ci_nominal | historical_84_ci_nominal | within_family_holm_p | all_nine_holm_p | seed_fraction_positive | bybit_primary_decision | strong_classical_bybit_comparison | source |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| BTC | hybrid_qnn_4q | one-hidden-layer MLP | 16 | 16 | 97 | 73 | 199 | 2023-04-01T00:00:00+00:00 | 2023-06-06T04:00:00+00:00 | 2.026186883821391e-07 | [5.4346090927130995e-08,3.499812992624961e-07] | [1.2829158994657302e-07,3.510532363648462e-07] | 0.0059940059940059 | 0.0179820179820179 | 4/5 | FAIL | PARTIALLY_RECOVERABLE: exact prior configs recovered, no Bybit prediction/metric | targeted qnn/hybrid results; qml checkpoints; Phase9 primary metrics; comparator configs only recoverable from prior development artifact |
+| ETH | qnn_6q | one-hidden-layer MLP | 6 | 6 | 43 | 49 | 216 | 2023-04-01T00:00:00+00:00 | 2023-06-06T04:00:00+00:00 | 7.82184078959513e-07 | [4.358511017731393e-07,1.4407510501989237e-06] | [4.825854508520329e-07,1.3953250917142612e-06] | 0.0059940059940059 | 0.0179820179820179 | 4/5 | FAIL | PARTIALLY_RECOVERABLE: exact prior configs recovered, no Bybit prediction/metric | targeted qnn/hybrid results; qml checkpoints; Phase9 primary metrics; comparator configs only recoverable from prior development artifact |

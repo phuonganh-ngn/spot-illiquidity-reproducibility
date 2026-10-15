@@ -1,0 +1,37 @@
+asset,information_set,family,config_id,config,pooled_dev_mae_log1p,selected_within_family,best_system_selected
+BTC,SPOT_ONLY,Ridge,cfg01,{'alpha': 0.1},5.933550808331027e-06,True,False
+BTC,SPOT_ONLY,ExtraTrees,cfg01,"{'min_samples_leaf': 2, 'n_estimators': 200}",4.982378216430016e-06,True,False
+BTC,SPOT_ONLY,HistGradientBoosting,cfg03,"{'learning_rate': 0.05, 'max_iter': 100, 'max_leaf_nodes': 31}",4.448661259720516e-06,True,True
+BTC,SPOT_ONLY,CatBoost,cfg02,"{'allow_writing_files': False, 'depth': 6, 'iterations': 200, 'l2_leaf_reg': 3.0, 'learning_rate': 0.05, 'loss_function': 'RMSE', 'random_strength': 1.0, 'thread_count': 1, 'verbose': False}",4.602003273468112e-06,True,False
+BTC,SPOT_ONLY,XGBoost,cfg01,"{'colsample_bytree': 1.0, 'learning_rate': 0.05, 'max_depth': 2, 'min_child_weight': 1.0, 'n_estimators': 200, 'n_jobs': 1, 'objective': 'reg:squarederror', 'reg_lambda': 1.0, 'subsample': 1.0, 'tree_method': 'hist'}",1.4085853238929583e-05,True,False
+BTC,SPOT_ONLY,MLP,cfg01,"{'alpha': 0.001, 'hidden_layer_sizes': [8], 'max_iter': 400}",4.7022653982268895e-06,True,False
+BTC,SPOT_ONLY,GRU,cfg03,"{'epochs': 20, 'hidden_size': 16, 'weight_decay': 0.001}",6.571966436600561e-06,True,False
+BTC,SPOT_ONLY,TrainingMean,fixed,{'rule': 'training mean'},1.4085853409360276e-05,True,False
+BTC,SPOT_ONLY,Persistence,fixed,{'rule': 'frozen persistence'},7.760604939385342e-06,True,False
+BTC,SPOT_PLUS_ALL_DERIVATIVES,Ridge,cfg01,{'alpha': 0.1},6.103574335740299e-06,True,False
+BTC,SPOT_PLUS_ALL_DERIVATIVES,ExtraTrees,cfg02,"{'min_samples_leaf': 5, 'n_estimators': 200}",5.492907242288692e-06,True,False
+BTC,SPOT_PLUS_ALL_DERIVATIVES,HistGradientBoosting,cfg02,"{'learning_rate': 0.05, 'max_iter': 100, 'max_leaf_nodes': 15}",4.728110277339056e-06,True,True
+BTC,SPOT_PLUS_ALL_DERIVATIVES,CatBoost,cfg02,"{'allow_writing_files': False, 'depth': 6, 'iterations': 200, 'l2_leaf_reg': 3.0, 'learning_rate': 0.05, 'loss_function': 'RMSE', 'random_strength': 1.0, 'thread_count': 1, 'verbose': False}",4.912574062595074e-06,True,False
+BTC,SPOT_PLUS_ALL_DERIVATIVES,XGBoost,cfg01,"{'colsample_bytree': 1.0, 'learning_rate': 0.05, 'max_depth': 2, 'min_child_weight': 1.0, 'n_estimators': 200, 'n_jobs': 1, 'objective': 'reg:squarederror', 'reg_lambda': 1.0, 'subsample': 1.0, 'tree_method': 'hist'}",1.4085853238929583e-05,True,False
+BTC,SPOT_PLUS_ALL_DERIVATIVES,MLP,cfg01,"{'alpha': 0.001, 'hidden_layer_sizes': [8], 'max_iter': 400}",6.155149611379958e-06,True,False
+BTC,SPOT_PLUS_ALL_DERIVATIVES,GRU,cfg03,"{'epochs': 20, 'hidden_size': 16, 'weight_decay': 0.001}",8.055878919719557e-06,True,False
+BTC,SPOT_PLUS_ALL_DERIVATIVES,TrainingMean,fixed,{'rule': 'training mean'},1.4085853409360276e-05,True,False
+BTC,SPOT_PLUS_ALL_DERIVATIVES,Persistence,fixed,{'rule': 'frozen persistence'},7.760604939385342e-06,True,False
+ETH,SPOT_ONLY,Ridge,cfg03,{'alpha': 10.0},1.468519076025601e-05,True,True
+ETH,SPOT_ONLY,ExtraTrees,cfg03,"{'min_samples_leaf': 10, 'n_estimators': 200}",1.5164429138491772e-05,True,False
+ETH,SPOT_ONLY,HistGradientBoosting,cfg03,"{'learning_rate': 0.05, 'max_iter': 100, 'max_leaf_nodes': 31}",1.5254995104425742e-05,True,False
+ETH,SPOT_ONLY,CatBoost,cfg03,"{'allow_writing_files': False, 'depth': 8, 'iterations': 200, 'l2_leaf_reg': 3.0, 'learning_rate': 0.05, 'loss_function': 'RMSE', 'random_strength': 1.0, 'thread_count': 1, 'verbose': False}",1.534043003544057e-05,True,False
+ETH,SPOT_ONLY,XGBoost,cfg01,"{'colsample_bytree': 1.0, 'learning_rate': 0.05, 'max_depth': 2, 'min_child_weight': 1.0, 'n_estimators': 200, 'n_jobs': 1, 'objective': 'reg:squarederror', 'reg_lambda': 1.0, 'subsample': 1.0, 'tree_method': 'hist'}",1.545863298050283e-05,True,False
+ETH,SPOT_ONLY,MLP,cfg01,"{'alpha': 0.001, 'hidden_layer_sizes': [8], 'max_iter': 400}",1.616535956201006e-05,True,False
+ETH,SPOT_ONLY,GRU,cfg03,"{'epochs': 20, 'hidden_size': 16, 'weight_decay': 0.001}",1.5525490762559962e-05,True,False
+ETH,SPOT_ONLY,TrainingMean,fixed,{'rule': 'training mean'},1.5458633147824744e-05,True,False
+ETH,SPOT_ONLY,Persistence,fixed,{'rule': 'frozen persistence'},3.521562264704893e-05,True,False
+ETH,SPOT_PLUS_ALL_DERIVATIVES,Ridge,cfg03,{'alpha': 10.0},1.530025532449805e-05,True,False
+ETH,SPOT_PLUS_ALL_DERIVATIVES,ExtraTrees,cfg02,"{'min_samples_leaf': 5, 'n_estimators': 200}",1.5276743221872918e-05,True,True
+ETH,SPOT_PLUS_ALL_DERIVATIVES,HistGradientBoosting,cfg03,"{'learning_rate': 0.05, 'max_iter': 100, 'max_leaf_nodes': 31}",1.5480332393670393e-05,True,False
+ETH,SPOT_PLUS_ALL_DERIVATIVES,CatBoost,cfg03,"{'allow_writing_files': False, 'depth': 8, 'iterations': 200, 'l2_leaf_reg': 3.0, 'learning_rate': 0.05, 'loss_function': 'RMSE', 'random_strength': 1.0, 'thread_count': 1, 'verbose': False}",1.5716012622359914e-05,True,False
+ETH,SPOT_PLUS_ALL_DERIVATIVES,XGBoost,cfg01,"{'colsample_bytree': 1.0, 'learning_rate': 0.05, 'max_depth': 2, 'min_child_weight': 1.0, 'n_estimators': 200, 'n_jobs': 1, 'objective': 'reg:squarederror', 'reg_lambda': 1.0, 'subsample': 1.0, 'tree_method': 'hist'}",1.545863298050283e-05,True,False
+ETH,SPOT_PLUS_ALL_DERIVATIVES,MLP,cfg01,"{'alpha': 0.001, 'hidden_layer_sizes': [8], 'max_iter': 400}",1.6919748394212455e-05,True,False
+ETH,SPOT_PLUS_ALL_DERIVATIVES,GRU,cfg03,"{'epochs': 20, 'hidden_size': 16, 'weight_decay': 0.001}",1.6030919960466137e-05,True,False
+ETH,SPOT_PLUS_ALL_DERIVATIVES,TrainingMean,fixed,{'rule': 'training mean'},1.5458633147824744e-05,True,False
+ETH,SPOT_PLUS_ALL_DERIVATIVES,Persistence,fixed,{'rule': 'frozen persistence'},3.521562264704893e-05,True,False

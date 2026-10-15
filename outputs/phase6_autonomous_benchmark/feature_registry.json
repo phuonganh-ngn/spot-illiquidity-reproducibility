@@ -1,0 +1,30 @@
+{
+  "complete_case_rule": "Use identical rows for every information set: all 10 features finite at each of t-5 through t, and the full future target window finite. No imputation.",
+  "derivatives_all": [
+    "funding_rate_state",
+    "oi_log_change",
+    "futures_taker_imbalance",
+    "basis_mean"
+  ],
+  "feature_indices": "t-5,t-4,t-3,t-2,t-1,t, ordered oldest to newest",
+  "history_hours": 24,
+  "history_window_intervals": 6,
+  "information_sets": {
+    "SPOT_ONLY": "six lags of the six frozen spot features",
+    "SPOT_PLUS_ALL_DERIVATIVES": "SPOT_ONLY plus six lags of all four frozen derivatives features",
+    "SPOT_PLUS_BASIS": "SPOT_ONLY plus six basis-mean lags",
+    "SPOT_PLUS_FUNDING": "SPOT_ONLY plus six funding lags",
+    "SPOT_PLUS_FUTURES_FLOW": "SPOT_ONLY plus six futures-taker-imbalance lags",
+    "SPOT_PLUS_OI": "SPOT_ONLY plus six OI-log-change lags"
+  },
+  "information_timing": "features through interval t only; targets begin at t+1",
+  "schema_version": "1.0",
+  "spot_only": [
+    "spot_return",
+    "spot_realized_volatility",
+    "spot_downside_semivariance",
+    "spot_amihud",
+    "spot_taker_imbalance",
+    "spot_quote_volume_growth"
+  ]
+}

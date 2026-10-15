@@ -1,0 +1,18 @@
+{
+  "BTC": [
+    927195332,
+    1778310776,
+    766736717,
+    870829452,
+    1414450591
+  ],
+  "ETH": [
+    809355672,
+    1377247200,
+    456611996,
+    615602774,
+    2079287096
+  ],
+  "provenance": "Exact five seeds copied from frozen BTC/ETH primary candidate configs; no new seeds.",
+  "seed_count_per_asset": 5
+}

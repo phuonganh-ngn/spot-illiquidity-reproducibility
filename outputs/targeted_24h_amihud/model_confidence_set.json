@@ -1,0 +1,701 @@
+{
+  "implementation": "arch.bootstrap.MCS; 10% size, 1,000 moving-block bootstrap replications, block length 42 four-hour intervals; computed separately within each outer fold and asset for SpotOnly, Spot+Derivatives, and combined 18 candidates.",
+  "results": [
+    {
+      "asset": "BTC",
+      "n_dates": 359,
+      "outer_fold": "F1",
+      "results": {
+        "SPOT_ONLY": {
+          "block_size": 42,
+          "excluded": [
+            "ElasticNet",
+            "ExtraTrees",
+            "GRU",
+            "MLP",
+            "RBF_SVR",
+            "XGBoost"
+          ],
+          "included": [
+            "CatBoost",
+            "HistGradientBoosting",
+            "LightGBM"
+          ],
+          "pvalues": {
+            "CatBoost": 1.0,
+            "ElasticNet": 0.0,
+            "ExtraTrees": 0.0,
+            "GRU": 0.008,
+            "HistGradientBoosting": 0.196,
+            "LightGBM": 0.552,
+            "MLP": 0.0,
+            "RBF_SVR": 0.0,
+            "XGBoost": 0.0
+          },
+          "reps": 1000,
+          "size": 0.1,
+          "status": "PASS"
+        },
+        "SPOT_PLUS_DERIVATIVES": {
+          "block_size": 42,
+          "excluded": [
+            "ElasticNet",
+            "ExtraTrees",
+            "GRU",
+            "MLP",
+            "RBF_SVR",
+            "XGBoost"
+          ],
+          "included": [
+            "CatBoost",
+            "HistGradientBoosting",
+            "LightGBM"
+          ],
+          "pvalues": {
+            "CatBoost": 1.0,
+            "ElasticNet": 0.0,
+            "ExtraTrees": 0.004,
+            "GRU": 0.001,
+            "HistGradientBoosting": 0.667,
+            "LightGBM": 0.394,
+            "MLP": 0.0,
+            "RBF_SVR": 0.0,
+            "XGBoost": 0.0
+          },
+          "reps": 1000,
+          "size": 0.1,
+          "status": "PASS"
+        },
+        "combined": {
+          "block_size": 42,
+          "exact_duplicate_aliases": {
+            "SPOT_PLUS_DERIVATIVES__ElasticNet": "SPOT_ONLY__ElasticNet",
+            "SPOT_PLUS_DERIVATIVES__RBF_SVR": "SPOT_ONLY__RBF_SVR",
+            "SPOT_PLUS_DERIVATIVES__XGBoost": "SPOT_ONLY__XGBoost"
+          },
+          "excluded": [
+            "SPOT_ONLY__ElasticNet",
+            "SPOT_ONLY__ExtraTrees",
+            "SPOT_ONLY__GRU",
+            "SPOT_ONLY__MLP",
+            "SPOT_ONLY__RBF_SVR",
+            "SPOT_ONLY__XGBoost",
+            "SPOT_PLUS_DERIVATIVES__CatBoost",
+            "SPOT_PLUS_DERIVATIVES__ExtraTrees",
+            "SPOT_PLUS_DERIVATIVES__GRU",
+            "SPOT_PLUS_DERIVATIVES__HistGradientBoosting",
+            "SPOT_PLUS_DERIVATIVES__LightGBM",
+            "SPOT_PLUS_DERIVATIVES__MLP"
+          ],
+          "included": [
+            "SPOT_ONLY__CatBoost",
+            "SPOT_ONLY__HistGradientBoosting",
+            "SPOT_ONLY__LightGBM"
+          ],
+          "original_candidate_count": 18,
+          "pvalues": {
+            "SPOT_ONLY__CatBoost": 1.0,
+            "SPOT_ONLY__ElasticNet": 0.0,
+            "SPOT_ONLY__ExtraTrees": 0.002,
+            "SPOT_ONLY__GRU": 0.008,
+            "SPOT_ONLY__HistGradientBoosting": 0.202,
+            "SPOT_ONLY__LightGBM": 0.52,
+            "SPOT_ONLY__MLP": 0.0,
+            "SPOT_ONLY__RBF_SVR": 0.0,
+            "SPOT_ONLY__XGBoost": 0.0,
+            "SPOT_PLUS_DERIVATIVES__CatBoost": 0.002,
+            "SPOT_PLUS_DERIVATIVES__ExtraTrees": 0.0,
+            "SPOT_PLUS_DERIVATIVES__GRU": 0.0,
+            "SPOT_PLUS_DERIVATIVES__HistGradientBoosting": 0.002,
+            "SPOT_PLUS_DERIVATIVES__LightGBM": 0.0,
+            "SPOT_PLUS_DERIVATIVES__MLP": 0.0
+          },
+          "reps": 1000,
+          "size": 0.1,
+          "status": "PASS",
+          "unique_loss_series_count": 15
+        }
+      }
+    },
+    {
+      "asset": "BTC",
+      "n_dates": 347,
+      "outer_fold": "F2",
+      "results": {
+        "SPOT_ONLY": {
+          "block_size": 42,
+          "excluded": [
+            "ElasticNet",
+            "ExtraTrees",
+            "MLP",
+            "RBF_SVR",
+            "XGBoost"
+          ],
+          "included": [
+            "CatBoost",
+            "GRU",
+            "HistGradientBoosting",
+            "LightGBM"
+          ],
+          "pvalues": {
+            "CatBoost": 1.0,
+            "ElasticNet": 0.0,
+            "ExtraTrees": 0.047,
+            "GRU": 0.456,
+            "HistGradientBoosting": 0.456,
+            "LightGBM": 0.456,
+            "MLP": 0.0,
+            "RBF_SVR": 0.0,
+            "XGBoost": 0.0
+          },
+          "reps": 1000,
+          "size": 0.1,
+          "status": "PASS"
+        },
+        "SPOT_PLUS_DERIVATIVES": {
+          "block_size": 42,
+          "excluded": [
+            "ElasticNet",
+            "ExtraTrees",
+            "GRU",
+            "LightGBM",
+            "MLP",
+            "RBF_SVR",
+            "XGBoost"
+          ],
+          "included": [
+            "CatBoost",
+            "HistGradientBoosting"
+          ],
+          "pvalues": {
+            "CatBoost": 1.0,
+            "ElasticNet": 0.0,
+            "ExtraTrees": 0.0,
+            "GRU": 0.0,
+            "HistGradientBoosting": 0.596,
+            "LightGBM": 0.069,
+            "MLP": 0.0,
+            "RBF_SVR": 0.0,
+            "XGBoost": 0.0
+          },
+          "reps": 1000,
+          "size": 0.1,
+          "status": "PASS"
+        },
+        "combined": {
+          "block_size": 42,
+          "exact_duplicate_aliases": {
+            "SPOT_PLUS_DERIVATIVES__ElasticNet": "SPOT_ONLY__ElasticNet",
+            "SPOT_PLUS_DERIVATIVES__RBF_SVR": "SPOT_ONLY__RBF_SVR",
+            "SPOT_PLUS_DERIVATIVES__XGBoost": "SPOT_ONLY__XGBoost"
+          },
+          "excluded": [
+            "SPOT_ONLY__ElasticNet",
+            "SPOT_ONLY__ExtraTrees",
+            "SPOT_ONLY__MLP",
+            "SPOT_ONLY__RBF_SVR",
+            "SPOT_ONLY__XGBoost",
+            "SPOT_PLUS_DERIVATIVES__ExtraTrees",
+            "SPOT_PLUS_DERIVATIVES__GRU",
+            "SPOT_PLUS_DERIVATIVES__HistGradientBoosting",
+            "SPOT_PLUS_DERIVATIVES__LightGBM",
+            "SPOT_PLUS_DERIVATIVES__MLP"
+          ],
+          "included": [
+            "SPOT_ONLY__CatBoost",
+            "SPOT_ONLY__GRU",
+            "SPOT_ONLY__HistGradientBoosting",
+            "SPOT_ONLY__LightGBM",
+            "SPOT_PLUS_DERIVATIVES__CatBoost"
+          ],
+          "original_candidate_count": 18,
+          "pvalues": {
+            "SPOT_ONLY__CatBoost": 1.0,
+            "SPOT_ONLY__ElasticNet": 0.0,
+            "SPOT_ONLY__ExtraTrees": 0.076,
+            "SPOT_ONLY__GRU": 0.425,
+            "SPOT_ONLY__HistGradientBoosting": 0.425,
+            "SPOT_ONLY__LightGBM": 0.425,
+            "SPOT_ONLY__MLP": 0.0,
+            "SPOT_ONLY__RBF_SVR": 0.0,
+            "SPOT_ONLY__XGBoost": 0.0,
+            "SPOT_PLUS_DERIVATIVES__CatBoost": 0.333,
+            "SPOT_PLUS_DERIVATIVES__ExtraTrees": 0.0,
+            "SPOT_PLUS_DERIVATIVES__GRU": 0.0,
+            "SPOT_PLUS_DERIVATIVES__HistGradientBoosting": 0.061,
+            "SPOT_PLUS_DERIVATIVES__LightGBM": 0.007,
+            "SPOT_PLUS_DERIVATIVES__MLP": 0.0
+          },
+          "reps": 1000,
+          "size": 0.1,
+          "status": "PASS",
+          "unique_loss_series_count": 15
+        }
+      }
+    },
+    {
+      "asset": "BTC",
+      "n_dates": 199,
+      "outer_fold": "F3",
+      "results": {
+        "SPOT_ONLY": {
+          "block_size": 42,
+          "excluded": [
+            "MLP",
+            "RBF_SVR",
+            "XGBoost"
+          ],
+          "included": [
+            "CatBoost",
+            "ElasticNet",
+            "ExtraTrees",
+            "GRU",
+            "HistGradientBoosting",
+            "LightGBM"
+          ],
+          "pvalues": {
+            "CatBoost": 0.91,
+            "ElasticNet": 0.91,
+            "ExtraTrees": 1.0,
+            "GRU": 0.124,
+            "HistGradientBoosting": 0.76,
+            "LightGBM": 0.429,
+            "MLP": 0.0,
+            "RBF_SVR": 0.066,
+            "XGBoost": 0.001
+          },
+          "reps": 1000,
+          "size": 0.1,
+          "status": "PASS"
+        },
+        "SPOT_PLUS_DERIVATIVES": {
+          "block_size": 42,
+          "excluded": [
+            "CatBoost",
+            "HistGradientBoosting",
+            "LightGBM",
+            "MLP",
+            "RBF_SVR",
+            "XGBoost"
+          ],
+          "included": [
+            "ElasticNet",
+            "ExtraTrees",
+            "GRU"
+          ],
+          "pvalues": {
+            "CatBoost": 0.004,
+            "ElasticNet": 0.552,
+            "ExtraTrees": 0.552,
+            "GRU": 1.0,
+            "HistGradientBoosting": 0.0,
+            "LightGBM": 0.0,
+            "MLP": 0.0,
+            "RBF_SVR": 0.01,
+            "XGBoost": 0.001
+          },
+          "reps": 1000,
+          "size": 0.1,
+          "status": "PASS"
+        },
+        "combined": {
+          "block_size": 42,
+          "exact_duplicate_aliases": {
+            "SPOT_PLUS_DERIVATIVES__ElasticNet": "SPOT_ONLY__ElasticNet",
+            "SPOT_PLUS_DERIVATIVES__RBF_SVR": "SPOT_ONLY__RBF_SVR",
+            "SPOT_PLUS_DERIVATIVES__XGBoost": "SPOT_ONLY__XGBoost"
+          },
+          "excluded": [
+            "SPOT_ONLY__GRU",
+            "SPOT_ONLY__MLP",
+            "SPOT_ONLY__RBF_SVR",
+            "SPOT_ONLY__XGBoost",
+            "SPOT_PLUS_DERIVATIVES__CatBoost",
+            "SPOT_PLUS_DERIVATIVES__HistGradientBoosting",
+            "SPOT_PLUS_DERIVATIVES__LightGBM",
+            "SPOT_PLUS_DERIVATIVES__MLP"
+          ],
+          "included": [
+            "SPOT_ONLY__CatBoost",
+            "SPOT_ONLY__ElasticNet",
+            "SPOT_ONLY__ExtraTrees",
+            "SPOT_ONLY__HistGradientBoosting",
+            "SPOT_ONLY__LightGBM",
+            "SPOT_PLUS_DERIVATIVES__ExtraTrees",
+            "SPOT_PLUS_DERIVATIVES__GRU"
+          ],
+          "original_candidate_count": 18,
+          "pvalues": {
+            "SPOT_ONLY__CatBoost": 0.67,
+            "SPOT_ONLY__ElasticNet": 0.67,
+            "SPOT_ONLY__ExtraTrees": 0.67,
+            "SPOT_ONLY__GRU": 0.047,
+            "SPOT_ONLY__HistGradientBoosting": 0.67,
+            "SPOT_ONLY__LightGBM": 0.452,
+            "SPOT_ONLY__MLP": 0.0,
+            "SPOT_ONLY__RBF_SVR": 0.033,
+            "SPOT_ONLY__XGBoost": 0.0,
+            "SPOT_PLUS_DERIVATIVES__CatBoost": 0.004,
+            "SPOT_PLUS_DERIVATIVES__ExtraTrees": 0.67,
+            "SPOT_PLUS_DERIVATIVES__GRU": 1.0,
+            "SPOT_PLUS_DERIVATIVES__HistGradientBoosting": 0.0,
+            "SPOT_PLUS_DERIVATIVES__LightGBM": 0.0,
+            "SPOT_PLUS_DERIVATIVES__MLP": 0.0
+          },
+          "reps": 1000,
+          "size": 0.1,
+          "status": "PASS",
+          "unique_loss_series_count": 15
+        }
+      }
+    },
+    {
+      "asset": "ETH",
+      "n_dates": 359,
+      "outer_fold": "F1",
+      "results": {
+        "SPOT_ONLY": {
+          "block_size": 42,
+          "excluded": [
+            "CatBoost",
+            "ElasticNet",
+            "ExtraTrees",
+            "GRU",
+            "HistGradientBoosting",
+            "LightGBM",
+            "MLP",
+            "XGBoost"
+          ],
+          "included": [
+            "RBF_SVR"
+          ],
+          "pvalues": {
+            "CatBoost": 0.022,
+            "ElasticNet": 0.0,
+            "ExtraTrees": 0.0,
+            "GRU": 0.02,
+            "HistGradientBoosting": 0.022,
+            "LightGBM": 0.022,
+            "MLP": 0.0,
+            "RBF_SVR": 1.0,
+            "XGBoost": 0.022
+          },
+          "reps": 1000,
+          "size": 0.1,
+          "status": "PASS"
+        },
+        "SPOT_PLUS_DERIVATIVES": {
+          "block_size": 42,
+          "excluded": [
+            "CatBoost",
+            "ElasticNet",
+            "ExtraTrees",
+            "GRU",
+            "HistGradientBoosting",
+            "LightGBM",
+            "MLP",
+            "XGBoost"
+          ],
+          "included": [
+            "RBF_SVR"
+          ],
+          "pvalues": {
+            "CatBoost": 0.031,
+            "ElasticNet": 0.0,
+            "ExtraTrees": 0.031,
+            "GRU": 0.031,
+            "HistGradientBoosting": 0.021,
+            "LightGBM": 0.0,
+            "MLP": 0.0,
+            "RBF_SVR": 1.0,
+            "XGBoost": 0.031
+          },
+          "reps": 1000,
+          "size": 0.1,
+          "status": "PASS"
+        },
+        "combined": {
+          "block_size": 42,
+          "exact_duplicate_aliases": {
+            "SPOT_PLUS_DERIVATIVES__ElasticNet": "SPOT_ONLY__ElasticNet",
+            "SPOT_PLUS_DERIVATIVES__RBF_SVR": "SPOT_ONLY__RBF_SVR",
+            "SPOT_PLUS_DERIVATIVES__XGBoost": "SPOT_ONLY__XGBoost"
+          },
+          "excluded": [
+            "SPOT_ONLY__CatBoost",
+            "SPOT_ONLY__ElasticNet",
+            "SPOT_ONLY__ExtraTrees",
+            "SPOT_ONLY__GRU",
+            "SPOT_ONLY__HistGradientBoosting",
+            "SPOT_ONLY__LightGBM",
+            "SPOT_ONLY__MLP",
+            "SPOT_ONLY__XGBoost",
+            "SPOT_PLUS_DERIVATIVES__CatBoost",
+            "SPOT_PLUS_DERIVATIVES__ExtraTrees",
+            "SPOT_PLUS_DERIVATIVES__GRU",
+            "SPOT_PLUS_DERIVATIVES__HistGradientBoosting",
+            "SPOT_PLUS_DERIVATIVES__LightGBM",
+            "SPOT_PLUS_DERIVATIVES__MLP"
+          ],
+          "included": [
+            "SPOT_ONLY__RBF_SVR"
+          ],
+          "original_candidate_count": 18,
+          "pvalues": {
+            "SPOT_ONLY__CatBoost": 0.057,
+            "SPOT_ONLY__ElasticNet": 0.0,
+            "SPOT_ONLY__ExtraTrees": 0.003,
+            "SPOT_ONLY__GRU": 0.057,
+            "SPOT_ONLY__HistGradientBoosting": 0.057,
+            "SPOT_ONLY__LightGBM": 0.057,
+            "SPOT_ONLY__MLP": 0.0,
+            "SPOT_ONLY__RBF_SVR": 1.0,
+            "SPOT_ONLY__XGBoost": 0.057,
+            "SPOT_PLUS_DERIVATIVES__CatBoost": 0.043,
+            "SPOT_PLUS_DERIVATIVES__ExtraTrees": 0.004,
+            "SPOT_PLUS_DERIVATIVES__GRU": 0.057,
+            "SPOT_PLUS_DERIVATIVES__HistGradientBoosting": 0.057,
+            "SPOT_PLUS_DERIVATIVES__LightGBM": 0.0,
+            "SPOT_PLUS_DERIVATIVES__MLP": 0.0
+          },
+          "reps": 1000,
+          "size": 0.1,
+          "status": "PASS",
+          "unique_loss_series_count": 15
+        }
+      }
+    },
+    {
+      "asset": "ETH",
+      "n_dates": 347,
+      "outer_fold": "F2",
+      "results": {
+        "SPOT_ONLY": {
+          "block_size": 42,
+          "excluded": [
+            "CatBoost",
+            "ExtraTrees",
+            "GRU",
+            "HistGradientBoosting",
+            "LightGBM",
+            "MLP",
+            "RBF_SVR"
+          ],
+          "included": [
+            "ElasticNet",
+            "XGBoost"
+          ],
+          "pvalues": {
+            "CatBoost": 0.013,
+            "ElasticNet": 0.194,
+            "ExtraTrees": 0.013,
+            "GRU": 0.013,
+            "HistGradientBoosting": 0.004,
+            "LightGBM": 0.007,
+            "MLP": 0.0,
+            "RBF_SVR": 0.0,
+            "XGBoost": 1.0
+          },
+          "reps": 1000,
+          "size": 0.1,
+          "status": "PASS"
+        },
+        "SPOT_PLUS_DERIVATIVES": {
+          "block_size": 42,
+          "excluded": [
+            "CatBoost",
+            "GRU",
+            "HistGradientBoosting",
+            "LightGBM",
+            "MLP",
+            "RBF_SVR"
+          ],
+          "included": [
+            "ElasticNet",
+            "ExtraTrees",
+            "XGBoost"
+          ],
+          "pvalues": {
+            "CatBoost": 0.0,
+            "ElasticNet": 0.229,
+            "ExtraTrees": 0.229,
+            "GRU": 0.001,
+            "HistGradientBoosting": 0.0,
+            "LightGBM": 0.0,
+            "MLP": 0.0,
+            "RBF_SVR": 0.0,
+            "XGBoost": 1.0
+          },
+          "reps": 1000,
+          "size": 0.1,
+          "status": "PASS"
+        },
+        "combined": {
+          "block_size": 42,
+          "exact_duplicate_aliases": {
+            "SPOT_PLUS_DERIVATIVES__ElasticNet": "SPOT_ONLY__ElasticNet",
+            "SPOT_PLUS_DERIVATIVES__RBF_SVR": "SPOT_ONLY__RBF_SVR",
+            "SPOT_PLUS_DERIVATIVES__XGBoost": "SPOT_ONLY__XGBoost"
+          },
+          "excluded": [
+            "SPOT_ONLY__CatBoost",
+            "SPOT_ONLY__ExtraTrees",
+            "SPOT_ONLY__GRU",
+            "SPOT_ONLY__HistGradientBoosting",
+            "SPOT_ONLY__LightGBM",
+            "SPOT_ONLY__MLP",
+            "SPOT_ONLY__RBF_SVR",
+            "SPOT_PLUS_DERIVATIVES__CatBoost",
+            "SPOT_PLUS_DERIVATIVES__GRU",
+            "SPOT_PLUS_DERIVATIVES__HistGradientBoosting",
+            "SPOT_PLUS_DERIVATIVES__LightGBM",
+            "SPOT_PLUS_DERIVATIVES__MLP"
+          ],
+          "included": [
+            "SPOT_ONLY__ElasticNet",
+            "SPOT_ONLY__XGBoost",
+            "SPOT_PLUS_DERIVATIVES__ExtraTrees"
+          ],
+          "original_candidate_count": 18,
+          "pvalues": {
+            "SPOT_ONLY__CatBoost": 0.014,
+            "SPOT_ONLY__ElasticNet": 0.201,
+            "SPOT_ONLY__ExtraTrees": 0.016,
+            "SPOT_ONLY__GRU": 0.016,
+            "SPOT_ONLY__HistGradientBoosting": 0.001,
+            "SPOT_ONLY__LightGBM": 0.007,
+            "SPOT_ONLY__MLP": 0.0,
+            "SPOT_ONLY__RBF_SVR": 0.0,
+            "SPOT_ONLY__XGBoost": 1.0,
+            "SPOT_PLUS_DERIVATIVES__CatBoost": 0.0,
+            "SPOT_PLUS_DERIVATIVES__ExtraTrees": 0.184,
+            "SPOT_PLUS_DERIVATIVES__GRU": 0.007,
+            "SPOT_PLUS_DERIVATIVES__HistGradientBoosting": 0.0,
+            "SPOT_PLUS_DERIVATIVES__LightGBM": 0.001,
+            "SPOT_PLUS_DERIVATIVES__MLP": 0.0
+          },
+          "reps": 1000,
+          "size": 0.1,
+          "status": "PASS",
+          "unique_loss_series_count": 15
+        }
+      }
+    },
+    {
+      "asset": "ETH",
+      "n_dates": 216,
+      "outer_fold": "F3",
+      "results": {
+        "SPOT_ONLY": {
+          "block_size": 42,
+          "excluded": [
+            "CatBoost",
+            "ExtraTrees",
+            "HistGradientBoosting",
+            "LightGBM",
+            "MLP",
+            "RBF_SVR",
+            "XGBoost"
+          ],
+          "included": [
+            "ElasticNet",
+            "GRU"
+          ],
+          "pvalues": {
+            "CatBoost": 0.0,
+            "ElasticNet": 0.437,
+            "ExtraTrees": 0.0,
+            "GRU": 1.0,
+            "HistGradientBoosting": 0.0,
+            "LightGBM": 0.0,
+            "MLP": 0.0,
+            "RBF_SVR": 0.0,
+            "XGBoost": 0.0
+          },
+          "reps": 1000,
+          "size": 0.1,
+          "status": "PASS"
+        },
+        "SPOT_PLUS_DERIVATIVES": {
+          "block_size": 42,
+          "excluded": [
+            "CatBoost",
+            "ExtraTrees",
+            "HistGradientBoosting",
+            "LightGBM",
+            "MLP",
+            "RBF_SVR",
+            "XGBoost"
+          ],
+          "included": [
+            "ElasticNet",
+            "GRU"
+          ],
+          "pvalues": {
+            "CatBoost": 0.0,
+            "ElasticNet": 1.0,
+            "ExtraTrees": 0.0,
+            "GRU": 0.788,
+            "HistGradientBoosting": 0.0,
+            "LightGBM": 0.0,
+            "MLP": 0.0,
+            "RBF_SVR": 0.0,
+            "XGBoost": 0.0
+          },
+          "reps": 1000,
+          "size": 0.1,
+          "status": "PASS"
+        },
+        "combined": {
+          "block_size": 42,
+          "exact_duplicate_aliases": {
+            "SPOT_PLUS_DERIVATIVES__ElasticNet": "SPOT_ONLY__ElasticNet",
+            "SPOT_PLUS_DERIVATIVES__RBF_SVR": "SPOT_ONLY__RBF_SVR",
+            "SPOT_PLUS_DERIVATIVES__XGBoost": "SPOT_ONLY__XGBoost"
+          },
+          "excluded": [
+            "SPOT_ONLY__CatBoost",
+            "SPOT_ONLY__ExtraTrees",
+            "SPOT_ONLY__HistGradientBoosting",
+            "SPOT_ONLY__LightGBM",
+            "SPOT_ONLY__MLP",
+            "SPOT_ONLY__RBF_SVR",
+            "SPOT_ONLY__XGBoost",
+            "SPOT_PLUS_DERIVATIVES__CatBoost",
+            "SPOT_PLUS_DERIVATIVES__ExtraTrees",
+            "SPOT_PLUS_DERIVATIVES__HistGradientBoosting",
+            "SPOT_PLUS_DERIVATIVES__LightGBM",
+            "SPOT_PLUS_DERIVATIVES__MLP"
+          ],
+          "included": [
+            "SPOT_ONLY__ElasticNet",
+            "SPOT_ONLY__GRU",
+            "SPOT_PLUS_DERIVATIVES__GRU"
+          ],
+          "original_candidate_count": 18,
+          "pvalues": {
+            "SPOT_ONLY__CatBoost": 0.0,
+            "SPOT_ONLY__ElasticNet": 0.428,
+            "SPOT_ONLY__ExtraTrees": 0.0,
+            "SPOT_ONLY__GRU": 1.0,
+            "SPOT_ONLY__HistGradientBoosting": 0.0,
+            "SPOT_ONLY__LightGBM": 0.001,
+            "SPOT_ONLY__MLP": 0.0,
+            "SPOT_ONLY__RBF_SVR": 0.0,
+            "SPOT_ONLY__XGBoost": 0.0,
+            "SPOT_PLUS_DERIVATIVES__CatBoost": 0.0,
+            "SPOT_PLUS_DERIVATIVES__ExtraTrees": 0.0,
+            "SPOT_PLUS_DERIVATIVES__GRU": 0.227,
+            "SPOT_PLUS_DERIVATIVES__HistGradientBoosting": 0.0,
+            "SPOT_PLUS_DERIVATIVES__LightGBM": 0.0,
+            "SPOT_PLUS_DERIVATIVES__MLP": 0.0
+          },
+          "reps": 1000,
+          "size": 0.1,
+          "status": "PASS",
+          "unique_loss_series_count": 15
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,528 @@
+{
+  "reanalysis_status": "previously inspected external period; secondary diagnostic",
+  "results": [
+    {
+      "asset": "BTC",
+      "delta_future_derivatives_minus_spot_only": -2.726154887831385e-05,
+      "interpretation": "impossible-time diagnostic only; negative incremental loss signals temporal persistence/confounding concern and is not forward predictive evidence",
+      "model": "Ridge(alpha=1.0), StandardScaler fit on development only",
+      "n_external_dates": 5518,
+      "n_train_dates": 3488,
+      "paired_block_bootstrap": {
+        "42": {
+          "block_length_4h": 42,
+          "ci95_percentile": [
+            -0.0007108265355664462,
+            0.0006716936755550836
+          ],
+          "probability_future_derivatives_improve_past_target": 0.5785,
+          "replications": 2000,
+          "valid_external_dates": 5518
+        },
+        "84": {
+          "block_length_4h": 84,
+          "ci95_percentile": [
+            -0.000863147623642956,
+            0.0007249941394028272
+          ],
+          "probability_future_derivatives_improve_past_target": 0.6225,
+          "replications": 2000,
+          "valid_external_dates": 5518
+        }
+      },
+      "placebo": "future_derivatives_t_plus_7_to_t_plus_12",
+      "source_rows": "t+7:t+12",
+      "spot_only_transformed_mae": 0.17250799441490652,
+      "spot_plus_future_derivatives_transformed_mae": 0.17248073286602816,
+      "target": "future_amihud_24h_mean",
+      "target_scale_training_median": 1.722503617078867e-05,
+      "test_dates": [
+        "2024-03-04T00:00:00+00:00",
+        "2026-09-28T20:00:00+00:00"
+      ],
+      "train_dates": [
+        "2021-10-02T00:00:00+00:00",
+        "2023-06-28T20:00:00+00:00"
+      ],
+      "transform": "log1p_y_over_train_median_positive"
+    },
+    {
+      "asset": "BTC",
+      "delta_future_derivatives_minus_spot_only": 0.000862035070808277,
+      "interpretation": "impossible-time diagnostic only; negative incremental loss signals temporal persistence/confounding concern and is not forward predictive evidence",
+      "model": "Ridge(alpha=1.0), StandardScaler fit on development only",
+      "n_external_dates": 5488,
+      "n_train_dates": 3464,
+      "paired_block_bootstrap": {
+        "42": {
+          "block_length_4h": 42,
+          "ci95_percentile": [
+            0.0004361478932807736,
+            0.0013229753811694928
+          ],
+          "probability_future_derivatives_improve_past_target": 0.0,
+          "replications": 2000,
+          "valid_external_dates": 5488
+        },
+        "84": {
+          "block_length_4h": 84,
+          "ci95_percentile": [
+            0.0003739740412797628,
+            0.0013391546021404494
+          ],
+          "probability_future_derivatives_improve_past_target": 0.0,
+          "replications": 2000,
+          "valid_external_dates": 5488
+        }
+      },
+      "placebo": "forward_displacement_42_intervals",
+      "source_rows": "t+37:t+42",
+      "spot_only_transformed_mae": 0.17164571214166555,
+      "spot_plus_future_derivatives_transformed_mae": 0.17250774721247386,
+      "target": "future_amihud_24h_mean",
+      "target_scale_training_median": 1.718398869710395e-05,
+      "test_dates": [
+        "2024-03-04T00:00:00+00:00",
+        "2026-09-23T20:00:00+00:00"
+      ],
+      "train_dates": [
+        "2021-10-02T00:00:00+00:00",
+        "2023-06-23T20:00:00+00:00"
+      ],
+      "transform": "log1p_y_over_train_median_positive"
+    },
+    {
+      "asset": "ETH",
+      "delta_future_derivatives_minus_spot_only": -0.0006494989475805595,
+      "interpretation": "impossible-time diagnostic only; negative incremental loss signals temporal persistence/confounding concern and is not forward predictive evidence",
+      "model": "Ridge(alpha=1.0), StandardScaler fit on development only",
+      "n_external_dates": 5526,
+      "n_train_dates": 3296,
+      "paired_block_bootstrap": {
+        "42": {
+          "block_length_4h": 42,
+          "ci95_percentile": [
+            -0.00240560377628314,
+            0.0011917457251396284
+          ],
+          "probability_future_derivatives_improve_past_target": 0.7495,
+          "replications": 2000,
+          "valid_external_dates": 5526
+        },
+        "84": {
+          "block_length_4h": 84,
+          "ci95_percentile": [
+            -0.0026229821869861525,
+            0.0014502126001331864
+          ],
+          "probability_future_derivatives_improve_past_target": 0.689,
+          "replications": 2000,
+          "valid_external_dates": 5526
+        }
+      },
+      "placebo": "future_derivatives_t_plus_7_to_t_plus_12",
+      "source_rows": "t+7:t+12",
+      "spot_only_transformed_mae": 0.16413040589250688,
+      "spot_plus_future_derivatives_transformed_mae": 0.1634809069449263,
+      "target": "future_amihud_24h_mean",
+      "target_scale_training_median": 5.254916536677621e-05,
+      "test_dates": [
+        "2024-03-04T00:00:00+00:00",
+        "2026-09-28T20:00:00+00:00"
+      ],
+      "train_dates": [
+        "2021-11-30T00:00:00+00:00",
+        "2023-06-28T20:00:00+00:00"
+      ],
+      "transform": "log1p_y_over_train_median_positive"
+    },
+    {
+      "asset": "ETH",
+      "delta_future_derivatives_minus_spot_only": -0.000538066292737968,
+      "interpretation": "impossible-time diagnostic only; negative incremental loss signals temporal persistence/confounding concern and is not forward predictive evidence",
+      "model": "Ridge(alpha=1.0), StandardScaler fit on development only",
+      "n_external_dates": 5496,
+      "n_train_dates": 3302,
+      "paired_block_bootstrap": {
+        "42": {
+          "block_length_4h": 42,
+          "ci95_percentile": [
+            -0.0019192631490874822,
+            0.0009106382724997496
+          ],
+          "probability_future_derivatives_improve_past_target": 0.7495,
+          "replications": 2000,
+          "valid_external_dates": 5496
+        },
+        "84": {
+          "block_length_4h": 84,
+          "ci95_percentile": [
+            -0.0020554498117031977,
+            0.000992868212318453
+          ],
+          "probability_future_derivatives_improve_past_target": 0.747,
+          "replications": 2000,
+          "valid_external_dates": 5496
+        }
+      },
+      "placebo": "forward_displacement_42_intervals",
+      "source_rows": "t+37:t+42",
+      "spot_only_transformed_mae": 0.16477304670477086,
+      "spot_plus_future_derivatives_transformed_mae": 0.16423498041203288,
+      "target": "future_amihud_24h_mean",
+      "target_scale_training_median": 5.260359856811026e-05,
+      "test_dates": [
+        "2024-03-04T00:00:00+00:00",
+        "2026-09-23T20:00:00+00:00"
+      ],
+      "train_dates": [
+        "2021-11-25T00:00:00+00:00",
+        "2023-06-23T20:00:00+00:00"
+      ],
+      "transform": "log1p_y_over_train_median_positive"
+    },
+    {
+      "asset": "SOL",
+      "delta_future_derivatives_minus_spot_only": 3.589694785578158e-05,
+      "interpretation": "impossible-time diagnostic only; negative incremental loss signals temporal persistence/confounding concern and is not forward predictive evidence",
+      "model": "Ridge(alpha=1.0), StandardScaler fit on development only",
+      "n_external_dates": 5495,
+      "n_train_dates": 3160,
+      "paired_block_bootstrap": {
+        "42": {
+          "block_length_4h": 42,
+          "ci95_percentile": [
+            2.9554056928883478e-05,
+            4.2491136441860214e-05
+          ],
+          "probability_future_derivatives_improve_past_target": 0.0,
+          "replications": 2000,
+          "valid_external_dates": 5495
+        },
+        "84": {
+          "block_length_4h": 84,
+          "ci95_percentile": [
+            2.8393503347622667e-05,
+            4.489180003447451e-05
+          ],
+          "probability_future_derivatives_improve_past_target": 0.0,
+          "replications": 2000,
+          "valid_external_dates": 5495
+        }
+      },
+      "placebo": "future_derivatives_t_plus_7_to_t_plus_12",
+      "source_rows": "t+7:t+12",
+      "spot_only_transformed_mae": 0.00022098090857100488,
+      "spot_plus_future_derivatives_transformed_mae": 0.00025687785642678645,
+      "target": "future_amihud_24h_mean",
+      "target_scale_training_median": 1.0,
+      "test_dates": [
+        "2024-03-04T00:00:00+00:00",
+        "2026-09-28T20:00:00+00:00"
+      ],
+      "train_dates": [
+        "2021-11-30T00:00:00+00:00",
+        "2023-06-28T20:00:00+00:00"
+      ],
+      "transform": "raw_nonnegative"
+    },
+    {
+      "asset": "SOL",
+      "delta_future_derivatives_minus_spot_only": 4.473626131563351e-05,
+      "interpretation": "impossible-time diagnostic only; negative incremental loss signals temporal persistence/confounding concern and is not forward predictive evidence",
+      "model": "Ridge(alpha=1.0), StandardScaler fit on development only",
+      "n_external_dates": 5465,
+      "n_train_dates": 3160,
+      "paired_block_bootstrap": {
+        "42": {
+          "block_length_4h": 42,
+          "ci95_percentile": [
+            3.765754398522979e-05,
+            5.208756258186017e-05
+          ],
+          "probability_future_derivatives_improve_past_target": 0.0,
+          "replications": 2000,
+          "valid_external_dates": 5465
+        },
+        "84": {
+          "block_length_4h": 84,
+          "ci95_percentile": [
+            3.645936512293224e-05,
+            5.3908650625867126e-05
+          ],
+          "probability_future_derivatives_improve_past_target": 0.0,
+          "replications": 2000,
+          "valid_external_dates": 5465
+        }
+      },
+      "placebo": "forward_displacement_42_intervals",
+      "source_rows": "t+37:t+42",
+      "spot_only_transformed_mae": 0.00021892272660663546,
+      "spot_plus_future_derivatives_transformed_mae": 0.00026365898792226895,
+      "target": "future_amihud_24h_mean",
+      "target_scale_training_median": 1.0,
+      "test_dates": [
+        "2024-03-04T00:00:00+00:00",
+        "2026-09-23T20:00:00+00:00"
+      ],
+      "train_dates": [
+        "2021-11-25T00:00:00+00:00",
+        "2023-06-23T20:00:00+00:00"
+      ],
+      "transform": "raw_nonnegative"
+    },
+    {
+      "asset": "BNB",
+      "delta_future_derivatives_minus_spot_only": 0.01169832858243287,
+      "interpretation": "impossible-time diagnostic only; negative incremental loss signals temporal persistence/confounding concern and is not forward predictive evidence",
+      "model": "Ridge(alpha=1.0), StandardScaler fit on development only",
+      "n_external_dates": 5513,
+      "n_train_dates": 3235,
+      "paired_block_bootstrap": {
+        "42": {
+          "block_length_4h": 42,
+          "ci95_percentile": [
+            0.0080465020081342,
+            0.01555773057843682
+          ],
+          "probability_future_derivatives_improve_past_target": 0.0,
+          "replications": 2000,
+          "valid_external_dates": 5513
+        },
+        "84": {
+          "block_length_4h": 84,
+          "ci95_percentile": [
+            0.00706581475253804,
+            0.01621828027945296
+          ],
+          "probability_future_derivatives_improve_past_target": 0.0,
+          "replications": 2000,
+          "valid_external_dates": 5513
+        }
+      },
+      "placebo": "future_derivatives_t_plus_7_to_t_plus_12",
+      "source_rows": "t+7:t+12",
+      "spot_only_transformed_mae": 0.15898269194957107,
+      "spot_plus_future_derivatives_transformed_mae": 0.1706810205320039,
+      "target": "future_amihud_24h_mean",
+      "target_scale_training_median": 0.000315888894684,
+      "test_dates": [
+        "2024-03-04T00:00:00+00:00",
+        "2026-09-28T20:00:00+00:00"
+      ],
+      "train_dates": [
+        "2021-11-30T00:00:00+00:00",
+        "2023-06-28T20:00:00+00:00"
+      ],
+      "transform": "log1p_y_over_train_median_positive"
+    },
+    {
+      "asset": "BNB",
+      "delta_future_derivatives_minus_spot_only": 0.0039361973881367335,
+      "interpretation": "impossible-time diagnostic only; negative incremental loss signals temporal persistence/confounding concern and is not forward predictive evidence",
+      "model": "Ridge(alpha=1.0), StandardScaler fit on development only",
+      "n_external_dates": 5483,
+      "n_train_dates": 3235,
+      "paired_block_bootstrap": {
+        "42": {
+          "block_length_4h": 42,
+          "ci95_percentile": [
+            0.0011873960043416888,
+            0.006666838317412176
+          ],
+          "probability_future_derivatives_improve_past_target": 0.0035,
+          "replications": 2000,
+          "valid_external_dates": 5483
+        },
+        "84": {
+          "block_length_4h": 84,
+          "ci95_percentile": [
+            0.0008154957326057528,
+            0.007285018313906177
+          ],
+          "probability_future_derivatives_improve_past_target": 0.007,
+          "replications": 2000,
+          "valid_external_dates": 5483
+        }
+      },
+      "placebo": "forward_displacement_42_intervals",
+      "source_rows": "t+37:t+42",
+      "spot_only_transformed_mae": 0.15901590020614062,
+      "spot_plus_future_derivatives_transformed_mae": 0.16295209759427734,
+      "target": "future_amihud_24h_mean",
+      "target_scale_training_median": 0.0003136784187776,
+      "test_dates": [
+        "2024-03-04T00:00:00+00:00",
+        "2026-09-23T20:00:00+00:00"
+      ],
+      "train_dates": [
+        "2021-11-25T00:00:00+00:00",
+        "2023-06-23T20:00:00+00:00"
+      ],
+      "transform": "log1p_y_over_train_median_positive"
+    },
+    {
+      "asset": "XRP",
+      "delta_future_derivatives_minus_spot_only": 0.005754047000483161,
+      "interpretation": "impossible-time diagnostic only; negative incremental loss signals temporal persistence/confounding concern and is not forward predictive evidence",
+      "model": "Ridge(alpha=1.0), StandardScaler fit on development only",
+      "n_external_dates": 5510,
+      "n_train_dates": 3232,
+      "paired_block_bootstrap": {
+        "42": {
+          "block_length_4h": 42,
+          "ci95_percentile": [
+            -0.0033782784454096867,
+            0.014105335497508175
+          ],
+          "probability_future_derivatives_improve_past_target": 0.123,
+          "replications": 2000,
+          "valid_external_dates": 5510
+        },
+        "84": {
+          "block_length_4h": 84,
+          "ci95_percentile": [
+            -0.0061968457798716545,
+            0.016349829015798466
+          ],
+          "probability_future_derivatives_improve_past_target": 0.218,
+          "replications": 2000,
+          "valid_external_dates": 5510
+        }
+      },
+      "placebo": "future_derivatives_t_plus_7_to_t_plus_12",
+      "source_rows": "t+7:t+12",
+      "spot_only_transformed_mae": 0.19444128787394596,
+      "spot_plus_future_derivatives_transformed_mae": 0.20019533487442914,
+      "target": "future_amihud_24h_mean",
+      "target_scale_training_median": 0.00036617537513920003,
+      "test_dates": [
+        "2024-03-04T00:00:00+00:00",
+        "2026-09-28T20:00:00+00:00"
+      ],
+      "train_dates": [
+        "2021-11-30T00:00:00+00:00",
+        "2023-06-28T20:00:00+00:00"
+      ],
+      "transform": "log1p_y_over_train_median_positive"
+    },
+    {
+      "asset": "XRP",
+      "delta_future_derivatives_minus_spot_only": 0.006685509712082285,
+      "interpretation": "impossible-time diagnostic only; negative incremental loss signals temporal persistence/confounding concern and is not forward predictive evidence",
+      "model": "Ridge(alpha=1.0), StandardScaler fit on development only",
+      "n_external_dates": 5480,
+      "n_train_dates": 3232,
+      "paired_block_bootstrap": {
+        "42": {
+          "block_length_4h": 42,
+          "ci95_percentile": [
+            -0.0001366848014142169,
+            0.013337500086839853
+          ],
+          "probability_future_derivatives_improve_past_target": 0.028,
+          "replications": 2000,
+          "valid_external_dates": 5480
+        },
+        "84": {
+          "block_length_4h": 84,
+          "ci95_percentile": [
+            -0.002507272327492545,
+            0.01552913668410023
+          ],
+          "probability_future_derivatives_improve_past_target": 0.096,
+          "replications": 2000,
+          "valid_external_dates": 5480
+        }
+      },
+      "placebo": "forward_displacement_42_intervals",
+      "source_rows": "t+37:t+42",
+      "spot_only_transformed_mae": 0.19486014957021325,
+      "spot_plus_future_derivatives_transformed_mae": 0.20154565928229548,
+      "target": "future_amihud_24h_mean",
+      "target_scale_training_median": 0.0003641964948801,
+      "test_dates": [
+        "2024-03-04T00:00:00+00:00",
+        "2026-09-23T20:00:00+00:00"
+      ],
+      "train_dates": [
+        "2021-11-25T00:00:00+00:00",
+        "2023-06-23T20:00:00+00:00"
+      ],
+      "transform": "log1p_y_over_train_median_positive"
+    }
+  ],
+  "sample_diagnostics": [
+    {
+      "asset": "BTC",
+      "complete_case_rows_match_model_pair": true,
+      "external_rows": 5518,
+      "placebo": "future_derivatives_t_plus_7_to_t_plus_12",
+      "train_rows": 3488
+    },
+    {
+      "asset": "BTC",
+      "complete_case_rows_match_model_pair": true,
+      "external_rows": 5488,
+      "placebo": "forward_displacement_42_intervals",
+      "train_rows": 3464
+    },
+    {
+      "asset": "ETH",
+      "complete_case_rows_match_model_pair": true,
+      "external_rows": 5526,
+      "placebo": "future_derivatives_t_plus_7_to_t_plus_12",
+      "train_rows": 3296
+    },
+    {
+      "asset": "ETH",
+      "complete_case_rows_match_model_pair": true,
+      "external_rows": 5496,
+      "placebo": "forward_displacement_42_intervals",
+      "train_rows": 3302
+    },
+    {
+      "asset": "SOL",
+      "complete_case_rows_match_model_pair": true,
+      "external_rows": 5495,
+      "placebo": "future_derivatives_t_plus_7_to_t_plus_12",
+      "train_rows": 3160
+    },
+    {
+      "asset": "SOL",
+      "complete_case_rows_match_model_pair": true,
+      "external_rows": 5465,
+      "placebo": "forward_displacement_42_intervals",
+      "train_rows": 3160
+    },
+    {
+      "asset": "BNB",
+      "complete_case_rows_match_model_pair": true,
+      "external_rows": 5513,
+      "placebo": "future_derivatives_t_plus_7_to_t_plus_12",
+      "train_rows": 3235
+    },
+    {
+      "asset": "BNB",
+      "complete_case_rows_match_model_pair": true,
+      "external_rows": 5483,
+      "placebo": "forward_displacement_42_intervals",
+      "train_rows": 3235
+    },
+    {
+      "asset": "XRP",
+      "complete_case_rows_match_model_pair": true,
+      "external_rows": 5510,
+      "placebo": "future_derivatives_t_plus_7_to_t_plus_12",
+      "train_rows": 3232
+    },
+    {
+      "asset": "XRP",
+      "complete_case_rows_match_model_pair": true,
+      "external_rows": 5480,
+      "placebo": "forward_displacement_42_intervals",
+      "train_rows": 3232
+    }
+  ],
+  "status": "COMPLETE"
+}
